@@ -27,10 +27,27 @@ namespace UnitsNet.Tests.CustomCode
 {
     public class ReactiveEnergyTests : ReactiveEnergyTestsBase
     {
+        protected override double FemtovoltampereReactiveHoursInOneVoltampereReactiveHour => 1e15;
+        protected override double PicovoltampereReactiveHoursInOneVoltampereReactiveHour => 1e12;
+        protected override double NanovoltampereReactiveHoursInOneVoltampereReactiveHour => 1e9;
+        protected override double MicrovoltampereReactiveHoursInOneVoltampereReactiveHour => 1e6;
+        protected override double MillivoltampereReactiveHoursInOneVoltampereReactiveHour => 1e3;
+        protected override double CentivoltampereReactiveHoursInOneVoltampereReactiveHour => 1e2;
+        protected override double DecivoltampereReactiveHoursInOneVoltampereReactiveHour => 10;
         protected override double VoltampereReactiveHoursInOneVoltampereReactiveHour => 1;
-
+        protected override double DecavoltampereReactiveHoursInOneVoltampereReactiveHour => 0.1;
+        protected override double HectovoltampereReactiveHoursInOneVoltampereReactiveHour => 1e-2;
         protected override double KilovoltampereReactiveHoursInOneVoltampereReactiveHour => 1E-3;
-
         protected override double MegavoltampereReactiveHoursInOneVoltampereReactiveHour => 1E-6;
+        protected override double GigavoltampereReactiveHoursInOneVoltampereReactiveHour => 1e-9;
+        protected override double TeravoltampereReactiveHoursInOneVoltampereReactiveHour => 1e-12;
+        protected override double PetavoltampereReactiveHoursInOneVoltampereReactiveHour => 1e-15;
+        protected override double ExavoltampereReactiveHoursInOneVoltampereReactiveHour => 1e-18;
+        protected override double ZettavoltampereReactiveHoursInOneVoltampereReactiveHour => 1e-21;
+        protected override double YottavoltampereReactiveHoursInOneVoltampereReactiveHour => 1e-24;
+        protected override double QutravoltampereReactiveHoursInOneVoltampereReactiveHour => 1e-27;
+        protected override double VettavoltampereReactiveHoursInOneVoltampereReactiveHour => 1e-30;
+
+
     }
 }

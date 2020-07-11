@@ -27,12 +27,25 @@ namespace UnitsNet.Tests.CustomCode
 {
     public class IlluminanceTests : IlluminanceTestsBase
     {
+        protected override double FemtoluxInOneLux => 1e15;
+        protected override double PicoluxInOneLux => 1e12;
+        protected override double NanoluxInOneLux => 1e9;
+        protected override double MicroluxInOneLux => 1e6;
         protected override double MilliluxInOneLux => 1E3;
-
+        protected override double CentiluxInOneLux => 1e2;
+        protected override double DeciluxInOneLux => 1e1;
         protected override double LuxInOneLux => 1;
-
+        protected override double DecaluxInOneLux => 1e-1;
+        protected override double HectoluxInOneLux => 1e-2;
         protected override double KiloluxInOneLux => 1E-3;
-
         protected override double MegaluxInOneLux => 1E-6;
+        protected override double GigaluxInOneLux => 1e-9;
+        protected override double TeraluxInOneLux => 1e-12;
+        protected override double PetaluxInOneLux => 1e-15;
+        protected override double ExaluxInOneLux => 1e-18;
+        protected override double ZettaluxInOneLux => 1e-21;
+        protected override double YottaluxInOneLux => 1e-24;
+        protected override double QutraluxInOneLux => 1e-27;
+        protected override double VettaluxInOneLux => 1e-30;
     }
 }

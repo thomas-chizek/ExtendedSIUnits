@@ -53,9 +53,6 @@ namespace UnitsNet
 
             Info = new QuantityInfo<SpecificEnergyUnit>(QuantityType.SpecificEnergy,
                 new UnitInfo<SpecificEnergyUnit>[] {
-                    new UnitInfo<SpecificEnergyUnit>(SpecificEnergyUnit.AttocaloriePerGram, BaseUnits.Undefined),
-                    new UnitInfo<SpecificEnergyUnit>(SpecificEnergyUnit.AttojoulePerKilogram, BaseUnits.Undefined),
-                    new UnitInfo<SpecificEnergyUnit>(SpecificEnergyUnit.AttowattHourPerKilogram, BaseUnits.Undefined),
                     new UnitInfo<SpecificEnergyUnit>(SpecificEnergyUnit.BtuPerPound, BaseUnits.Undefined),
                     new UnitInfo<SpecificEnergyUnit>(SpecificEnergyUnit.CaloriePerGram, BaseUnits.Undefined),
                     new UnitInfo<SpecificEnergyUnit>(SpecificEnergyUnit.CenticaloriePerGram, BaseUnits.Undefined),
@@ -111,15 +108,9 @@ namespace UnitsNet
                     new UnitInfo<SpecificEnergyUnit>(SpecificEnergyUnit.VettajoulePerKilogram, BaseUnits.Undefined),
                     new UnitInfo<SpecificEnergyUnit>(SpecificEnergyUnit.VettawattHourPerKilogram, BaseUnits.Undefined),
                     new UnitInfo<SpecificEnergyUnit>(SpecificEnergyUnit.WattHourPerKilogram, BaseUnits.Undefined),
-                    new UnitInfo<SpecificEnergyUnit>(SpecificEnergyUnit.YoctocaloriePerGram, BaseUnits.Undefined),
-                    new UnitInfo<SpecificEnergyUnit>(SpecificEnergyUnit.YoctojoulePerKilogram, BaseUnits.Undefined),
-                    new UnitInfo<SpecificEnergyUnit>(SpecificEnergyUnit.YoctowattHourPerKilogram, BaseUnits.Undefined),
                     new UnitInfo<SpecificEnergyUnit>(SpecificEnergyUnit.YottacaloriePerGram, BaseUnits.Undefined),
                     new UnitInfo<SpecificEnergyUnit>(SpecificEnergyUnit.YottajoulePerKilogram, BaseUnits.Undefined),
                     new UnitInfo<SpecificEnergyUnit>(SpecificEnergyUnit.YottawattHourPerKilogram, BaseUnits.Undefined),
-                    new UnitInfo<SpecificEnergyUnit>(SpecificEnergyUnit.ZeptocaloriePerGram, BaseUnits.Undefined),
-                    new UnitInfo<SpecificEnergyUnit>(SpecificEnergyUnit.ZeptojoulePerKilogram, BaseUnits.Undefined),
-                    new UnitInfo<SpecificEnergyUnit>(SpecificEnergyUnit.ZeptowattHourPerKilogram, BaseUnits.Undefined),
                     new UnitInfo<SpecificEnergyUnit>(SpecificEnergyUnit.ZettacaloriePerGram, BaseUnits.Undefined),
                     new UnitInfo<SpecificEnergyUnit>(SpecificEnergyUnit.ZettajoulePerKilogram, BaseUnits.Undefined),
                     new UnitInfo<SpecificEnergyUnit>(SpecificEnergyUnit.ZettawattHourPerKilogram, BaseUnits.Undefined),
@@ -234,21 +225,6 @@ namespace UnitsNet
         #endregion
 
         #region Conversion Properties
-
-        /// <summary>
-        ///     Get SpecificEnergy in AttocaloriesPerGram.
-        /// </summary>
-        public double AttocaloriesPerGram => As(SpecificEnergyUnit.AttocaloriePerGram);
-
-        /// <summary>
-        ///     Get SpecificEnergy in AttojoulesPerKilogram.
-        /// </summary>
-        public double AttojoulesPerKilogram => As(SpecificEnergyUnit.AttojoulePerKilogram);
-
-        /// <summary>
-        ///     Get SpecificEnergy in AttowattHoursPerKilogram.
-        /// </summary>
-        public double AttowattHoursPerKilogram => As(SpecificEnergyUnit.AttowattHourPerKilogram);
 
         /// <summary>
         ///     Get SpecificEnergy in BtuPerPound.
@@ -526,21 +502,6 @@ namespace UnitsNet
         public double WattHoursPerKilogram => As(SpecificEnergyUnit.WattHourPerKilogram);
 
         /// <summary>
-        ///     Get SpecificEnergy in YoctocaloriesPerGram.
-        /// </summary>
-        public double YoctocaloriesPerGram => As(SpecificEnergyUnit.YoctocaloriePerGram);
-
-        /// <summary>
-        ///     Get SpecificEnergy in YoctojoulesPerKilogram.
-        /// </summary>
-        public double YoctojoulesPerKilogram => As(SpecificEnergyUnit.YoctojoulePerKilogram);
-
-        /// <summary>
-        ///     Get SpecificEnergy in YoctowattHoursPerKilogram.
-        /// </summary>
-        public double YoctowattHoursPerKilogram => As(SpecificEnergyUnit.YoctowattHourPerKilogram);
-
-        /// <summary>
         ///     Get SpecificEnergy in YottacaloriesPerGram.
         /// </summary>
         public double YottacaloriesPerGram => As(SpecificEnergyUnit.YottacaloriePerGram);
@@ -554,21 +515,6 @@ namespace UnitsNet
         ///     Get SpecificEnergy in YottawattHoursPerKilogram.
         /// </summary>
         public double YottawattHoursPerKilogram => As(SpecificEnergyUnit.YottawattHourPerKilogram);
-
-        /// <summary>
-        ///     Get SpecificEnergy in ZeptocaloriesPerGram.
-        /// </summary>
-        public double ZeptocaloriesPerGram => As(SpecificEnergyUnit.ZeptocaloriePerGram);
-
-        /// <summary>
-        ///     Get SpecificEnergy in ZeptojoulesPerKilogram.
-        /// </summary>
-        public double ZeptojoulesPerKilogram => As(SpecificEnergyUnit.ZeptojoulePerKilogram);
-
-        /// <summary>
-        ///     Get SpecificEnergy in ZeptowattHoursPerKilogram.
-        /// </summary>
-        public double ZeptowattHoursPerKilogram => As(SpecificEnergyUnit.ZeptowattHourPerKilogram);
 
         /// <summary>
         ///     Get SpecificEnergy in ZettacaloriesPerGram.
@@ -614,33 +560,6 @@ namespace UnitsNet
 
         #region Static Factory Methods
 
-        /// <summary>
-        ///     Get SpecificEnergy from AttocaloriesPerGram.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificEnergy FromAttocaloriesPerGram(QuantityValue attocaloriespergram)
-        {
-            double value = (double) attocaloriespergram;
-            return new SpecificEnergy(value, SpecificEnergyUnit.AttocaloriePerGram);
-        }
-        /// <summary>
-        ///     Get SpecificEnergy from AttojoulesPerKilogram.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificEnergy FromAttojoulesPerKilogram(QuantityValue attojoulesperkilogram)
-        {
-            double value = (double) attojoulesperkilogram;
-            return new SpecificEnergy(value, SpecificEnergyUnit.AttojoulePerKilogram);
-        }
-        /// <summary>
-        ///     Get SpecificEnergy from AttowattHoursPerKilogram.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificEnergy FromAttowattHoursPerKilogram(QuantityValue attowatthoursperkilogram)
-        {
-            double value = (double) attowatthoursperkilogram;
-            return new SpecificEnergy(value, SpecificEnergyUnit.AttowattHourPerKilogram);
-        }
         /// <summary>
         ///     Get SpecificEnergy from BtuPerPound.
         /// </summary>
@@ -1137,33 +1056,6 @@ namespace UnitsNet
             return new SpecificEnergy(value, SpecificEnergyUnit.WattHourPerKilogram);
         }
         /// <summary>
-        ///     Get SpecificEnergy from YoctocaloriesPerGram.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificEnergy FromYoctocaloriesPerGram(QuantityValue yoctocaloriespergram)
-        {
-            double value = (double) yoctocaloriespergram;
-            return new SpecificEnergy(value, SpecificEnergyUnit.YoctocaloriePerGram);
-        }
-        /// <summary>
-        ///     Get SpecificEnergy from YoctojoulesPerKilogram.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificEnergy FromYoctojoulesPerKilogram(QuantityValue yoctojoulesperkilogram)
-        {
-            double value = (double) yoctojoulesperkilogram;
-            return new SpecificEnergy(value, SpecificEnergyUnit.YoctojoulePerKilogram);
-        }
-        /// <summary>
-        ///     Get SpecificEnergy from YoctowattHoursPerKilogram.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificEnergy FromYoctowattHoursPerKilogram(QuantityValue yoctowatthoursperkilogram)
-        {
-            double value = (double) yoctowatthoursperkilogram;
-            return new SpecificEnergy(value, SpecificEnergyUnit.YoctowattHourPerKilogram);
-        }
-        /// <summary>
         ///     Get SpecificEnergy from YottacaloriesPerGram.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -1189,33 +1081,6 @@ namespace UnitsNet
         {
             double value = (double) yottawatthoursperkilogram;
             return new SpecificEnergy(value, SpecificEnergyUnit.YottawattHourPerKilogram);
-        }
-        /// <summary>
-        ///     Get SpecificEnergy from ZeptocaloriesPerGram.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificEnergy FromZeptocaloriesPerGram(QuantityValue zeptocaloriespergram)
-        {
-            double value = (double) zeptocaloriespergram;
-            return new SpecificEnergy(value, SpecificEnergyUnit.ZeptocaloriePerGram);
-        }
-        /// <summary>
-        ///     Get SpecificEnergy from ZeptojoulesPerKilogram.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificEnergy FromZeptojoulesPerKilogram(QuantityValue zeptojoulesperkilogram)
-        {
-            double value = (double) zeptojoulesperkilogram;
-            return new SpecificEnergy(value, SpecificEnergyUnit.ZeptojoulePerKilogram);
-        }
-        /// <summary>
-        ///     Get SpecificEnergy from ZeptowattHoursPerKilogram.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificEnergy FromZeptowattHoursPerKilogram(QuantityValue zeptowatthoursperkilogram)
-        {
-            double value = (double) zeptowatthoursperkilogram;
-            return new SpecificEnergy(value, SpecificEnergyUnit.ZeptowattHourPerKilogram);
         }
         /// <summary>
         ///     Get SpecificEnergy from ZettacaloriesPerGram.
@@ -1673,9 +1538,6 @@ namespace UnitsNet
         {
             switch(Unit)
             {
-                case SpecificEnergyUnit.AttocaloriePerGram: return (_value*4.184e3) * 1e-18d;
-                case SpecificEnergyUnit.AttojoulePerKilogram: return (_value) * 1e-18d;
-                case SpecificEnergyUnit.AttowattHourPerKilogram: return (_value*3.6e3) * 1e-18d;
                 case SpecificEnergyUnit.BtuPerPound: return _value*2326.000075362;
                 case SpecificEnergyUnit.CaloriePerGram: return _value*4.184e3;
                 case SpecificEnergyUnit.CenticaloriePerGram: return (_value*4.184e3) * 1e-2d;
@@ -1731,15 +1593,9 @@ namespace UnitsNet
                 case SpecificEnergyUnit.VettajoulePerKilogram: return (_value) * 1e30d;
                 case SpecificEnergyUnit.VettawattHourPerKilogram: return (_value*3.6e3) * 1e30d;
                 case SpecificEnergyUnit.WattHourPerKilogram: return _value*3.6e3;
-                case SpecificEnergyUnit.YoctocaloriePerGram: return (_value*4.184e3) * 1e-24d;
-                case SpecificEnergyUnit.YoctojoulePerKilogram: return (_value) * 1e-24d;
-                case SpecificEnergyUnit.YoctowattHourPerKilogram: return (_value*3.6e3) * 1e-24d;
                 case SpecificEnergyUnit.YottacaloriePerGram: return (_value*4.184e3) * 1e24d;
                 case SpecificEnergyUnit.YottajoulePerKilogram: return (_value) * 1e24d;
                 case SpecificEnergyUnit.YottawattHourPerKilogram: return (_value*3.6e3) * 1e24d;
-                case SpecificEnergyUnit.ZeptocaloriePerGram: return (_value*4.184e3) * 1e-21d;
-                case SpecificEnergyUnit.ZeptojoulePerKilogram: return (_value) * 1e-21d;
-                case SpecificEnergyUnit.ZeptowattHourPerKilogram: return (_value*3.6e3) * 1e-21d;
                 case SpecificEnergyUnit.ZettacaloriePerGram: return (_value*4.184e3) * 1e21d;
                 case SpecificEnergyUnit.ZettajoulePerKilogram: return (_value) * 1e21d;
                 case SpecificEnergyUnit.ZettawattHourPerKilogram: return (_value*3.6e3) * 1e21d;
@@ -1757,9 +1613,6 @@ namespace UnitsNet
 
             switch(unit)
             {
-                case SpecificEnergyUnit.AttocaloriePerGram: return (baseUnitValue/4.184e3) / 1e-18d;
-                case SpecificEnergyUnit.AttojoulePerKilogram: return (baseUnitValue) / 1e-18d;
-                case SpecificEnergyUnit.AttowattHourPerKilogram: return (baseUnitValue/3.6e3) / 1e-18d;
                 case SpecificEnergyUnit.BtuPerPound: return baseUnitValue/2326.000075362;
                 case SpecificEnergyUnit.CaloriePerGram: return baseUnitValue/4.184e3;
                 case SpecificEnergyUnit.CenticaloriePerGram: return (baseUnitValue/4.184e3) / 1e-2d;
@@ -1815,15 +1668,9 @@ namespace UnitsNet
                 case SpecificEnergyUnit.VettajoulePerKilogram: return (baseUnitValue) / 1e30d;
                 case SpecificEnergyUnit.VettawattHourPerKilogram: return (baseUnitValue/3.6e3) / 1e30d;
                 case SpecificEnergyUnit.WattHourPerKilogram: return baseUnitValue/3.6e3;
-                case SpecificEnergyUnit.YoctocaloriePerGram: return (baseUnitValue/4.184e3) / 1e-24d;
-                case SpecificEnergyUnit.YoctojoulePerKilogram: return (baseUnitValue) / 1e-24d;
-                case SpecificEnergyUnit.YoctowattHourPerKilogram: return (baseUnitValue/3.6e3) / 1e-24d;
                 case SpecificEnergyUnit.YottacaloriePerGram: return (baseUnitValue/4.184e3) / 1e24d;
                 case SpecificEnergyUnit.YottajoulePerKilogram: return (baseUnitValue) / 1e24d;
                 case SpecificEnergyUnit.YottawattHourPerKilogram: return (baseUnitValue/3.6e3) / 1e24d;
-                case SpecificEnergyUnit.ZeptocaloriePerGram: return (baseUnitValue/4.184e3) / 1e-21d;
-                case SpecificEnergyUnit.ZeptojoulePerKilogram: return (baseUnitValue) / 1e-21d;
-                case SpecificEnergyUnit.ZeptowattHourPerKilogram: return (baseUnitValue/3.6e3) / 1e-21d;
                 case SpecificEnergyUnit.ZettacaloriePerGram: return (baseUnitValue/4.184e3) / 1e21d;
                 case SpecificEnergyUnit.ZettajoulePerKilogram: return (baseUnitValue) / 1e21d;
                 case SpecificEnergyUnit.ZettawattHourPerKilogram: return (baseUnitValue/3.6e3) / 1e21d;

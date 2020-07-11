@@ -9,53 +9,77 @@ namespace UnitsNet.Tests.CustomCode
 {
     public class MassTests : MassTestsBase
     {
-        protected override double CentigramsInOneKilogram => 1E5;
 
-        protected override double DecagramsInOneKilogram => 1E2;
 
-        protected override double DecigramsInOneKilogram => 1E4;
 
-        protected override double GrainsInOneKilogram => 15432.358352941431d;
-
-        protected override double GramsInOneKilogram => 1E3;
-
-        protected override double HectogramsInOneKilogram => 10;
-
-        protected override double KilogramsInOneKilogram => 1;
-
-        protected override double KilopoundsInOneKilogram => 2.2046226218487757e-3;
-
-        protected override double KilotonnesInOneKilogram => 1E-6;
-
-        protected override double LongTonsInOneKilogram => 9.842065276110606e-4;
-
-        protected override double MegapoundsInOneKilogram => 2.2046226218487757e-6;
-
-        protected override double MegatonnesInOneKilogram => 1E-9;
-
-        protected override double MicrogramsInOneKilogram => 1E9;
-
-        protected override double MilligramsInOneKilogram => 1E6;
-
+        protected override double FemtogramsInOneKilogram => 1e18;
+        protected override double PicogramsInOneKilogram => 1e15;
         protected override double NanogramsInOneKilogram => 1E12;
+        protected override double MicrogramsInOneKilogram => 1E9;
+        protected override double MilligramsInOneKilogram => 1E6;
+        protected override double CentigramsInOneKilogram => 1E5;
+        protected override double DecigramsInOneKilogram => 1E4;
+        protected override double GramsInOneKilogram => 1E3;
+        protected override double DecagramsInOneKilogram => 1E2;
+        protected override double HectogramsInOneKilogram => 10;
+        protected override double KilogramsInOneKilogram => 1;
+        protected override double MegagramsInOneKilogram => 1e-3;
+        protected override double GigagramsInOneKilogram => 1e-6;
+        protected override double TeragramsInOneKilogram => 1e-9;
+        protected override double PetagramsInOneKilogram => 1e-12;
+        protected override double ExagramsInOneKilogram => 1e-15;
+        protected override double ZettagramsInOneKilogram => 1e-18;
+        protected override double YottagramsInOneKilogram => 1e-21;
+        protected override double QutragramsInOneKilogram => 1e-24;
+        protected override double VettagramsInOneKilogram => 1e-27;
 
-        protected override double NanogramsTolerance => 1E-3;
 
-        protected override double OuncesInOneKilogram => 35.2739619;
-
-        protected override double PoundsInOneKilogram => 2.2046226218487757d;
-
-        protected override double ShortTonsInOneKilogram => 1.102311310924388e-3;
-
-        protected override double SlugsInOneKilogram => 6.852176556196105e-2;
-
-        protected override double StoneInOneKilogram => 0.1574731728702698;
 
         protected override double TonnesInOneKilogram => 1E-3;
+        protected override double KilotonnesInOneKilogram => 1E-6;
+        protected override double MegatonnesInOneKilogram => 1E-9;
+        protected override double GigatonnesInOneKilogram => 1E-12;
+        protected override double TeratonnesInOneKilogram => 1E-15;
+        protected override double PetatonnesInOneKilogram => 1E-18;
+        protected override double ExatonnesInOneKilogram => 1E-21;
+        protected override double ZettatonnesInOneKilogram => 1E-24;
+        protected override double YottatonnesInOneKilogram => 1E-27;
+        protected override double QutratonnesInOneKilogram => 1E-30;
+        protected override double VettatonnesInOneKilogram => 1e-33;
 
+
+        protected override double GrainsInOneKilogram => 15432.358352941431d;
+        protected override double KilopoundsInOneKilogram => 2.2046226218487757e-3;
+        protected override double LongTonsInOneKilogram => 9.842065276110606e-4;
+        protected override double MegapoundsInOneKilogram => 2.2046226218487757e-6;
+        protected override double NanogramsTolerance => 1E-3;
+        protected override double OuncesInOneKilogram => 35.2739619;
+        protected override double PoundsInOneKilogram => 2.2046226218487757d;
+        protected override double ShortTonsInOneKilogram => 1.102311310924388e-3;
+        protected override double SlugsInOneKilogram => 6.852176556196105e-2;
+        protected override double StoneInOneKilogram => 0.1574731728702698;
         protected override double LongHundredweightInOneKilogram => 0.01968413055222121;
-
         protected override double ShortHundredweightInOneKilogram => 0.022046226218487758;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         [Fact]
         public void AccelerationTimesMassEqualsForce()

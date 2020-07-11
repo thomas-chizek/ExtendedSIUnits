@@ -50,7 +50,6 @@ namespace UnitsNet
 
             Info = new QuantityInfo<PowerUnit>(QuantityType.Power,
                 new UnitInfo<PowerUnit>[] {
-                    new UnitInfo<PowerUnit>(PowerUnit.Attowatt, BaseUnits.Undefined),
                     new UnitInfo<PowerUnit>(PowerUnit.BoilerHorsepower, BaseUnits.Undefined),
                     new UnitInfo<PowerUnit>(PowerUnit.BritishThermalUnitPerHour, BaseUnits.Undefined),
                     new UnitInfo<PowerUnit>(PowerUnit.Centiwatt, BaseUnits.Undefined),
@@ -76,9 +75,7 @@ namespace UnitsNet
                     new UnitInfo<PowerUnit>(PowerUnit.Terawatt, BaseUnits.Undefined),
                     new UnitInfo<PowerUnit>(PowerUnit.Vettawatt, BaseUnits.Undefined),
                     new UnitInfo<PowerUnit>(PowerUnit.Watt, BaseUnits.Undefined),
-                    new UnitInfo<PowerUnit>(PowerUnit.Yoctowatt, BaseUnits.Undefined),
                     new UnitInfo<PowerUnit>(PowerUnit.Yottawatt, BaseUnits.Undefined),
-                    new UnitInfo<PowerUnit>(PowerUnit.Zeptowatt, BaseUnits.Undefined),
                     new UnitInfo<PowerUnit>(PowerUnit.Zettawatt, BaseUnits.Undefined),
                 },
                 BaseUnit, Zero, BaseDimensions);
@@ -191,11 +188,6 @@ namespace UnitsNet
         #endregion
 
         #region Conversion Properties
-
-        /// <summary>
-        ///     Get Power in Attowatts.
-        /// </summary>
-        public double Attowatts => As(PowerUnit.Attowatt);
 
         /// <summary>
         ///     Get Power in BoilerHorsepower.
@@ -323,19 +315,9 @@ namespace UnitsNet
         public double Watts => As(PowerUnit.Watt);
 
         /// <summary>
-        ///     Get Power in Yoctowatts.
-        /// </summary>
-        public double Yoctowatts => As(PowerUnit.Yoctowatt);
-
-        /// <summary>
         ///     Get Power in Yottawatts.
         /// </summary>
         public double Yottawatts => As(PowerUnit.Yottawatt);
-
-        /// <summary>
-        ///     Get Power in Zeptowatts.
-        /// </summary>
-        public double Zeptowatts => As(PowerUnit.Zeptowatt);
 
         /// <summary>
         ///     Get Power in Zettawatts.
@@ -371,15 +353,6 @@ namespace UnitsNet
 
         #region Static Factory Methods
 
-        /// <summary>
-        ///     Get Power from Attowatts.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static Power FromAttowatts(QuantityValue attowatts)
-        {
-            double value = (double) attowatts;
-            return new Power(value, PowerUnit.Attowatt);
-        }
         /// <summary>
         ///     Get Power from BoilerHorsepower.
         /// </summary>
@@ -606,15 +579,6 @@ namespace UnitsNet
             return new Power(value, PowerUnit.Watt);
         }
         /// <summary>
-        ///     Get Power from Yoctowatts.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static Power FromYoctowatts(QuantityValue yoctowatts)
-        {
-            double value = (double) yoctowatts;
-            return new Power(value, PowerUnit.Yoctowatt);
-        }
-        /// <summary>
         ///     Get Power from Yottawatts.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -622,15 +586,6 @@ namespace UnitsNet
         {
             double value = (double) yottawatts;
             return new Power(value, PowerUnit.Yottawatt);
-        }
-        /// <summary>
-        ///     Get Power from Zeptowatts.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static Power FromZeptowatts(QuantityValue zeptowatts)
-        {
-            double value = (double) zeptowatts;
-            return new Power(value, PowerUnit.Zeptowatt);
         }
         /// <summary>
         ///     Get Power from Zettawatts.
@@ -1070,7 +1025,6 @@ namespace UnitsNet
         {
             switch(Unit)
             {
-                case PowerUnit.Attowatt: return (_value) * 1e-18d;
                 case PowerUnit.BoilerHorsepower: return _value*9812.5;
                 case PowerUnit.BritishThermalUnitPerHour: return _value*0.293071;
                 case PowerUnit.Centiwatt: return (_value) * 1e-2d;
@@ -1096,9 +1050,7 @@ namespace UnitsNet
                 case PowerUnit.Terawatt: return (_value) * 1e12d;
                 case PowerUnit.Vettawatt: return (_value) * 1e30d;
                 case PowerUnit.Watt: return _value;
-                case PowerUnit.Yoctowatt: return (_value) * 1e-24d;
                 case PowerUnit.Yottawatt: return (_value) * 1e24d;
-                case PowerUnit.Zeptowatt: return (_value) * 1e-21d;
                 case PowerUnit.Zettawatt: return (_value) * 1e21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to base units.");
@@ -1114,7 +1066,6 @@ namespace UnitsNet
 
             switch(unit)
             {
-                case PowerUnit.Attowatt: return (baseUnitValue) / 1e-18d;
                 case PowerUnit.BoilerHorsepower: return baseUnitValue/9812.5;
                 case PowerUnit.BritishThermalUnitPerHour: return baseUnitValue/0.293071;
                 case PowerUnit.Centiwatt: return (baseUnitValue) / 1e-2d;
@@ -1140,9 +1091,7 @@ namespace UnitsNet
                 case PowerUnit.Terawatt: return (baseUnitValue) / 1e12d;
                 case PowerUnit.Vettawatt: return (baseUnitValue) / 1e30d;
                 case PowerUnit.Watt: return baseUnitValue;
-                case PowerUnit.Yoctowatt: return (baseUnitValue) / 1e-24d;
                 case PowerUnit.Yottawatt: return (baseUnitValue) / 1e24d;
-                case PowerUnit.Zeptowatt: return (baseUnitValue) / 1e-21d;
                 case PowerUnit.Zettawatt: return (baseUnitValue) / 1e21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to {unit}.");

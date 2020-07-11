@@ -35,6 +35,7 @@ namespace UnitsNet.Tests
     public abstract partial class AccelerationTestsBase
     {
         protected abstract double CentimetersPerSecondSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double DecametersPerSecondSquaredInOneMeterPerSecondSquared { get; }
         protected abstract double DecimetersPerSecondSquaredInOneMeterPerSecondSquared { get; }
         protected abstract double FeetPerSecondSquaredInOneMeterPerSecondSquared { get; }
         protected abstract double InchesPerSecondSquaredInOneMeterPerSecondSquared { get; }
@@ -50,6 +51,7 @@ namespace UnitsNet.Tests
 
 // ReSharper disable VirtualMemberNeverOverriden.Global
         protected virtual double CentimetersPerSecondSquaredTolerance { get { return 1e-5; } }
+        protected virtual double DecametersPerSecondSquaredTolerance { get { return 1e-5; } }
         protected virtual double DecimetersPerSecondSquaredTolerance { get { return 1e-5; } }
         protected virtual double FeetPerSecondSquaredTolerance { get { return 1e-5; } }
         protected virtual double InchesPerSecondSquaredTolerance { get { return 1e-5; } }
@@ -88,6 +90,7 @@ namespace UnitsNet.Tests
         {
             Acceleration meterpersecondsquared = Acceleration.FromMetersPerSecondSquared(1);
             AssertEx.EqualTolerance(CentimetersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.CentimetersPerSecondSquared, CentimetersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(DecametersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.DecametersPerSecondSquared, DecametersPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(DecimetersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.DecimetersPerSecondSquared, DecimetersPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(FeetPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.FeetPerSecondSquared, FeetPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(InchesPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.InchesPerSecondSquared, InchesPerSecondSquaredTolerance);
@@ -106,6 +109,7 @@ namespace UnitsNet.Tests
         public void FromValueAndUnit()
         {
             AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.CentimeterPerSecondSquared).CentimetersPerSecondSquared, CentimetersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.DecameterPerSecondSquared).DecametersPerSecondSquared, DecametersPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.DecimeterPerSecondSquared).DecimetersPerSecondSquared, DecimetersPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.FootPerSecondSquared).FeetPerSecondSquared, FeetPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.InchPerSecondSquared).InchesPerSecondSquared, InchesPerSecondSquaredTolerance);
@@ -138,6 +142,7 @@ namespace UnitsNet.Tests
         {
             var meterpersecondsquared = Acceleration.FromMetersPerSecondSquared(1);
             AssertEx.EqualTolerance(CentimetersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.CentimeterPerSecondSquared), CentimetersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(DecametersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.DecameterPerSecondSquared), DecametersPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(DecimetersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.DecimeterPerSecondSquared), DecimetersPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(FeetPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.FootPerSecondSquared), FeetPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(InchesPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.InchPerSecondSquared), InchesPerSecondSquaredTolerance);
@@ -160,6 +165,10 @@ namespace UnitsNet.Tests
             var centimeterpersecondsquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.CentimeterPerSecondSquared);
             AssertEx.EqualTolerance(CentimetersPerSecondSquaredInOneMeterPerSecondSquared, (double)centimeterpersecondsquaredQuantity.Value, CentimetersPerSecondSquaredTolerance);
             Assert.Equal(AccelerationUnit.CentimeterPerSecondSquared, centimeterpersecondsquaredQuantity.Unit);
+
+            var decameterpersecondsquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.DecameterPerSecondSquared);
+            AssertEx.EqualTolerance(DecametersPerSecondSquaredInOneMeterPerSecondSquared, (double)decameterpersecondsquaredQuantity.Value, DecametersPerSecondSquaredTolerance);
+            Assert.Equal(AccelerationUnit.DecameterPerSecondSquared, decameterpersecondsquaredQuantity.Unit);
 
             var decimeterpersecondsquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.DecimeterPerSecondSquared);
             AssertEx.EqualTolerance(DecimetersPerSecondSquaredInOneMeterPerSecondSquared, (double)decimeterpersecondsquaredQuantity.Value, DecimetersPerSecondSquaredTolerance);
@@ -215,6 +224,7 @@ namespace UnitsNet.Tests
         {
             Acceleration meterpersecondsquared = Acceleration.FromMetersPerSecondSquared(1);
             AssertEx.EqualTolerance(1, Acceleration.FromCentimetersPerSecondSquared(meterpersecondsquared.CentimetersPerSecondSquared).MetersPerSecondSquared, CentimetersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromDecametersPerSecondSquared(meterpersecondsquared.DecametersPerSecondSquared).MetersPerSecondSquared, DecametersPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.FromDecimetersPerSecondSquared(meterpersecondsquared.DecimetersPerSecondSquared).MetersPerSecondSquared, DecimetersPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.FromFeetPerSecondSquared(meterpersecondsquared.FeetPerSecondSquared).MetersPerSecondSquared, FeetPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.FromInchesPerSecondSquared(meterpersecondsquared.InchesPerSecondSquared).MetersPerSecondSquared, InchesPerSecondSquaredTolerance);

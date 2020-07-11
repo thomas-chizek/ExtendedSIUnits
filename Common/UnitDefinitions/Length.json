@@ -14,7 +14,7 @@
       },
       "FromUnitToBaseFunc": "x",
       "FromBaseToUnitFunc": "x",
-      "Prefixes": [ "Yocto", "Zepto", "Atto", "Femto", "Pico", "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta", "Qutra", "Vetta" ],
+      "Prefixes": [ "Femto", "Pico", "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta", "Qutra", "Vetta" ],
       "Localization": [
         {
           "Culture": "en-US",
@@ -295,6 +295,22 @@
       ]
     },
     {
+      "SingularName": "AU",
+      "PluralName": "AUs",
+      "BaseUnits": {
+        "L": "AU"
+      },
+      "FromUnitToBaseFunc": "x*1.496e11",
+      "FromBaseToUnitFunc": "x/1.496e11",
+      "Prefixes": [ "Micro", "Milli", "Deca", "Kilo", "Mega", "Giga", "Tera" ],
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "ls" ]
+        }
+      ]
+    },
+    {
       "SingularName": "LightSecond",
       "PluralName": "LightSeconds",
       "BaseUnits": {
@@ -302,7 +318,55 @@
       },
       "FromUnitToBaseFunc": "x*299792458",
       "FromBaseToUnitFunc": "x/299792458",
-      "Prefixes": [ "Micro", "Milli", "Deca", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta" ],
+      "Prefixes": [ "Micro", "Milli", "Deca", "Kilo", "Mega", "Giga", "Tera" ],
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "ls" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "LightMinute",
+      "PluralName": "LightMinutes",
+      "BaseUnits": {
+        "L": "LightMinute"
+      },
+      "FromUnitToBaseFunc": "x*1.799e10",
+      "FromBaseToUnitFunc": "x/1.799e10",
+      "Prefixes": [ "Micro", "Milli", "Deca", "Kilo", "Mega", "Giga", "Tera" ],
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "ls" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "LightHour",
+      "PluralName": "LightHours",
+      "BaseUnits": {
+        "L": "LightHour"
+      },
+      "FromUnitToBaseFunc": "x*1.079e12",
+      "FromBaseToUnitFunc": "x/1.079e12",
+      "Prefixes": [ "Micro", "Milli", "Deca", "Kilo", "Mega", "Giga", "Tera" ],
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "ls" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "LightDay",
+      "PluralName": "LightDays",
+      "BaseUnits": {
+        "L": "LightDay"
+      },
+      "FromUnitToBaseFunc": "x*2.59e13",
+      "FromBaseToUnitFunc": "x/2.59e13",
+      "Prefixes": [ "Micro", "Milli", "Deca", "Kilo", "Mega", "Giga", "Tera" ],
       "Localization": [
         {
           "Culture": "en-US",

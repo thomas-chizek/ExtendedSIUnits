@@ -50,9 +50,6 @@ namespace UnitsNet
 
             Info = new QuantityInfo<SpecificEntropyUnit>(QuantityType.SpecificEntropy,
                 new UnitInfo<SpecificEntropyUnit>[] {
-                    new UnitInfo<SpecificEntropyUnit>(SpecificEntropyUnit.AttocaloriePerGramKelvin, BaseUnits.Undefined),
-                    new UnitInfo<SpecificEntropyUnit>(SpecificEntropyUnit.AttojoulePerKilogramDegreeCelsius, BaseUnits.Undefined),
-                    new UnitInfo<SpecificEntropyUnit>(SpecificEntropyUnit.AttojoulePerKilogramKelvin, BaseUnits.Undefined),
                     new UnitInfo<SpecificEntropyUnit>(SpecificEntropyUnit.BtuPerPoundFahrenheit, BaseUnits.Undefined),
                     new UnitInfo<SpecificEntropyUnit>(SpecificEntropyUnit.CaloriePerGramKelvin, BaseUnits.Undefined),
                     new UnitInfo<SpecificEntropyUnit>(SpecificEntropyUnit.CenticaloriePerGramKelvin, BaseUnits.Undefined),
@@ -108,15 +105,9 @@ namespace UnitsNet
                     new UnitInfo<SpecificEntropyUnit>(SpecificEntropyUnit.VettacaloriePerGramKelvin, BaseUnits.Undefined),
                     new UnitInfo<SpecificEntropyUnit>(SpecificEntropyUnit.VettajoulePerKilogramDegreeCelsius, BaseUnits.Undefined),
                     new UnitInfo<SpecificEntropyUnit>(SpecificEntropyUnit.VettajoulePerKilogramKelvin, BaseUnits.Undefined),
-                    new UnitInfo<SpecificEntropyUnit>(SpecificEntropyUnit.YoctocaloriePerGramKelvin, BaseUnits.Undefined),
-                    new UnitInfo<SpecificEntropyUnit>(SpecificEntropyUnit.YoctojoulePerKilogramDegreeCelsius, BaseUnits.Undefined),
-                    new UnitInfo<SpecificEntropyUnit>(SpecificEntropyUnit.YoctojoulePerKilogramKelvin, BaseUnits.Undefined),
                     new UnitInfo<SpecificEntropyUnit>(SpecificEntropyUnit.YottacaloriePerGramKelvin, BaseUnits.Undefined),
                     new UnitInfo<SpecificEntropyUnit>(SpecificEntropyUnit.YottajoulePerKilogramDegreeCelsius, BaseUnits.Undefined),
                     new UnitInfo<SpecificEntropyUnit>(SpecificEntropyUnit.YottajoulePerKilogramKelvin, BaseUnits.Undefined),
-                    new UnitInfo<SpecificEntropyUnit>(SpecificEntropyUnit.ZeptocaloriePerGramKelvin, BaseUnits.Undefined),
-                    new UnitInfo<SpecificEntropyUnit>(SpecificEntropyUnit.ZeptojoulePerKilogramDegreeCelsius, BaseUnits.Undefined),
-                    new UnitInfo<SpecificEntropyUnit>(SpecificEntropyUnit.ZeptojoulePerKilogramKelvin, BaseUnits.Undefined),
                     new UnitInfo<SpecificEntropyUnit>(SpecificEntropyUnit.ZettacaloriePerGramKelvin, BaseUnits.Undefined),
                     new UnitInfo<SpecificEntropyUnit>(SpecificEntropyUnit.ZettajoulePerKilogramDegreeCelsius, BaseUnits.Undefined),
                     new UnitInfo<SpecificEntropyUnit>(SpecificEntropyUnit.ZettajoulePerKilogramKelvin, BaseUnits.Undefined),
@@ -231,21 +222,6 @@ namespace UnitsNet
         #endregion
 
         #region Conversion Properties
-
-        /// <summary>
-        ///     Get SpecificEntropy in AttocaloriesPerGramKelvin.
-        /// </summary>
-        public double AttocaloriesPerGramKelvin => As(SpecificEntropyUnit.AttocaloriePerGramKelvin);
-
-        /// <summary>
-        ///     Get SpecificEntropy in AttojoulesPerKilogramDegreeCelsius.
-        /// </summary>
-        public double AttojoulesPerKilogramDegreeCelsius => As(SpecificEntropyUnit.AttojoulePerKilogramDegreeCelsius);
-
-        /// <summary>
-        ///     Get SpecificEntropy in AttojoulesPerKilogramKelvin.
-        /// </summary>
-        public double AttojoulesPerKilogramKelvin => As(SpecificEntropyUnit.AttojoulePerKilogramKelvin);
 
         /// <summary>
         ///     Get SpecificEntropy in BtusPerPoundFahrenheit.
@@ -523,21 +499,6 @@ namespace UnitsNet
         public double VettajoulesPerKilogramKelvin => As(SpecificEntropyUnit.VettajoulePerKilogramKelvin);
 
         /// <summary>
-        ///     Get SpecificEntropy in YoctocaloriesPerGramKelvin.
-        /// </summary>
-        public double YoctocaloriesPerGramKelvin => As(SpecificEntropyUnit.YoctocaloriePerGramKelvin);
-
-        /// <summary>
-        ///     Get SpecificEntropy in YoctojoulesPerKilogramDegreeCelsius.
-        /// </summary>
-        public double YoctojoulesPerKilogramDegreeCelsius => As(SpecificEntropyUnit.YoctojoulePerKilogramDegreeCelsius);
-
-        /// <summary>
-        ///     Get SpecificEntropy in YoctojoulesPerKilogramKelvin.
-        /// </summary>
-        public double YoctojoulesPerKilogramKelvin => As(SpecificEntropyUnit.YoctojoulePerKilogramKelvin);
-
-        /// <summary>
         ///     Get SpecificEntropy in YottacaloriesPerGramKelvin.
         /// </summary>
         public double YottacaloriesPerGramKelvin => As(SpecificEntropyUnit.YottacaloriePerGramKelvin);
@@ -551,21 +512,6 @@ namespace UnitsNet
         ///     Get SpecificEntropy in YottajoulesPerKilogramKelvin.
         /// </summary>
         public double YottajoulesPerKilogramKelvin => As(SpecificEntropyUnit.YottajoulePerKilogramKelvin);
-
-        /// <summary>
-        ///     Get SpecificEntropy in ZeptocaloriesPerGramKelvin.
-        /// </summary>
-        public double ZeptocaloriesPerGramKelvin => As(SpecificEntropyUnit.ZeptocaloriePerGramKelvin);
-
-        /// <summary>
-        ///     Get SpecificEntropy in ZeptojoulesPerKilogramDegreeCelsius.
-        /// </summary>
-        public double ZeptojoulesPerKilogramDegreeCelsius => As(SpecificEntropyUnit.ZeptojoulePerKilogramDegreeCelsius);
-
-        /// <summary>
-        ///     Get SpecificEntropy in ZeptojoulesPerKilogramKelvin.
-        /// </summary>
-        public double ZeptojoulesPerKilogramKelvin => As(SpecificEntropyUnit.ZeptojoulePerKilogramKelvin);
 
         /// <summary>
         ///     Get SpecificEntropy in ZettacaloriesPerGramKelvin.
@@ -611,33 +557,6 @@ namespace UnitsNet
 
         #region Static Factory Methods
 
-        /// <summary>
-        ///     Get SpecificEntropy from AttocaloriesPerGramKelvin.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificEntropy FromAttocaloriesPerGramKelvin(QuantityValue attocaloriespergramkelvin)
-        {
-            double value = (double) attocaloriespergramkelvin;
-            return new SpecificEntropy(value, SpecificEntropyUnit.AttocaloriePerGramKelvin);
-        }
-        /// <summary>
-        ///     Get SpecificEntropy from AttojoulesPerKilogramDegreeCelsius.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificEntropy FromAttojoulesPerKilogramDegreeCelsius(QuantityValue attojoulesperkilogramdegreecelsius)
-        {
-            double value = (double) attojoulesperkilogramdegreecelsius;
-            return new SpecificEntropy(value, SpecificEntropyUnit.AttojoulePerKilogramDegreeCelsius);
-        }
-        /// <summary>
-        ///     Get SpecificEntropy from AttojoulesPerKilogramKelvin.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificEntropy FromAttojoulesPerKilogramKelvin(QuantityValue attojoulesperkilogramkelvin)
-        {
-            double value = (double) attojoulesperkilogramkelvin;
-            return new SpecificEntropy(value, SpecificEntropyUnit.AttojoulePerKilogramKelvin);
-        }
         /// <summary>
         ///     Get SpecificEntropy from BtusPerPoundFahrenheit.
         /// </summary>
@@ -1134,33 +1053,6 @@ namespace UnitsNet
             return new SpecificEntropy(value, SpecificEntropyUnit.VettajoulePerKilogramKelvin);
         }
         /// <summary>
-        ///     Get SpecificEntropy from YoctocaloriesPerGramKelvin.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificEntropy FromYoctocaloriesPerGramKelvin(QuantityValue yoctocaloriespergramkelvin)
-        {
-            double value = (double) yoctocaloriespergramkelvin;
-            return new SpecificEntropy(value, SpecificEntropyUnit.YoctocaloriePerGramKelvin);
-        }
-        /// <summary>
-        ///     Get SpecificEntropy from YoctojoulesPerKilogramDegreeCelsius.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificEntropy FromYoctojoulesPerKilogramDegreeCelsius(QuantityValue yoctojoulesperkilogramdegreecelsius)
-        {
-            double value = (double) yoctojoulesperkilogramdegreecelsius;
-            return new SpecificEntropy(value, SpecificEntropyUnit.YoctojoulePerKilogramDegreeCelsius);
-        }
-        /// <summary>
-        ///     Get SpecificEntropy from YoctojoulesPerKilogramKelvin.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificEntropy FromYoctojoulesPerKilogramKelvin(QuantityValue yoctojoulesperkilogramkelvin)
-        {
-            double value = (double) yoctojoulesperkilogramkelvin;
-            return new SpecificEntropy(value, SpecificEntropyUnit.YoctojoulePerKilogramKelvin);
-        }
-        /// <summary>
         ///     Get SpecificEntropy from YottacaloriesPerGramKelvin.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -1186,33 +1078,6 @@ namespace UnitsNet
         {
             double value = (double) yottajoulesperkilogramkelvin;
             return new SpecificEntropy(value, SpecificEntropyUnit.YottajoulePerKilogramKelvin);
-        }
-        /// <summary>
-        ///     Get SpecificEntropy from ZeptocaloriesPerGramKelvin.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificEntropy FromZeptocaloriesPerGramKelvin(QuantityValue zeptocaloriespergramkelvin)
-        {
-            double value = (double) zeptocaloriespergramkelvin;
-            return new SpecificEntropy(value, SpecificEntropyUnit.ZeptocaloriePerGramKelvin);
-        }
-        /// <summary>
-        ///     Get SpecificEntropy from ZeptojoulesPerKilogramDegreeCelsius.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificEntropy FromZeptojoulesPerKilogramDegreeCelsius(QuantityValue zeptojoulesperkilogramdegreecelsius)
-        {
-            double value = (double) zeptojoulesperkilogramdegreecelsius;
-            return new SpecificEntropy(value, SpecificEntropyUnit.ZeptojoulePerKilogramDegreeCelsius);
-        }
-        /// <summary>
-        ///     Get SpecificEntropy from ZeptojoulesPerKilogramKelvin.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificEntropy FromZeptojoulesPerKilogramKelvin(QuantityValue zeptojoulesperkilogramkelvin)
-        {
-            double value = (double) zeptojoulesperkilogramkelvin;
-            return new SpecificEntropy(value, SpecificEntropyUnit.ZeptojoulePerKilogramKelvin);
         }
         /// <summary>
         ///     Get SpecificEntropy from ZettacaloriesPerGramKelvin.
@@ -1670,9 +1535,6 @@ namespace UnitsNet
         {
             switch(Unit)
             {
-                case SpecificEntropyUnit.AttocaloriePerGramKelvin: return (_value*4.184e3) * 1e-18d;
-                case SpecificEntropyUnit.AttojoulePerKilogramDegreeCelsius: return (_value) * 1e-18d;
-                case SpecificEntropyUnit.AttojoulePerKilogramKelvin: return (_value) * 1e-18d;
                 case SpecificEntropyUnit.BtuPerPoundFahrenheit: return _value * 4.1868e3;
                 case SpecificEntropyUnit.CaloriePerGramKelvin: return _value*4.184e3;
                 case SpecificEntropyUnit.CenticaloriePerGramKelvin: return (_value*4.184e3) * 1e-2d;
@@ -1728,15 +1590,9 @@ namespace UnitsNet
                 case SpecificEntropyUnit.VettacaloriePerGramKelvin: return (_value*4.184e3) * 1e30d;
                 case SpecificEntropyUnit.VettajoulePerKilogramDegreeCelsius: return (_value) * 1e30d;
                 case SpecificEntropyUnit.VettajoulePerKilogramKelvin: return (_value) * 1e30d;
-                case SpecificEntropyUnit.YoctocaloriePerGramKelvin: return (_value*4.184e3) * 1e-24d;
-                case SpecificEntropyUnit.YoctojoulePerKilogramDegreeCelsius: return (_value) * 1e-24d;
-                case SpecificEntropyUnit.YoctojoulePerKilogramKelvin: return (_value) * 1e-24d;
                 case SpecificEntropyUnit.YottacaloriePerGramKelvin: return (_value*4.184e3) * 1e24d;
                 case SpecificEntropyUnit.YottajoulePerKilogramDegreeCelsius: return (_value) * 1e24d;
                 case SpecificEntropyUnit.YottajoulePerKilogramKelvin: return (_value) * 1e24d;
-                case SpecificEntropyUnit.ZeptocaloriePerGramKelvin: return (_value*4.184e3) * 1e-21d;
-                case SpecificEntropyUnit.ZeptojoulePerKilogramDegreeCelsius: return (_value) * 1e-21d;
-                case SpecificEntropyUnit.ZeptojoulePerKilogramKelvin: return (_value) * 1e-21d;
                 case SpecificEntropyUnit.ZettacaloriePerGramKelvin: return (_value*4.184e3) * 1e21d;
                 case SpecificEntropyUnit.ZettajoulePerKilogramDegreeCelsius: return (_value) * 1e21d;
                 case SpecificEntropyUnit.ZettajoulePerKilogramKelvin: return (_value) * 1e21d;
@@ -1754,9 +1610,6 @@ namespace UnitsNet
 
             switch(unit)
             {
-                case SpecificEntropyUnit.AttocaloriePerGramKelvin: return (baseUnitValue/4.184e3) / 1e-18d;
-                case SpecificEntropyUnit.AttojoulePerKilogramDegreeCelsius: return (baseUnitValue) / 1e-18d;
-                case SpecificEntropyUnit.AttojoulePerKilogramKelvin: return (baseUnitValue) / 1e-18d;
                 case SpecificEntropyUnit.BtuPerPoundFahrenheit: return baseUnitValue / 4.1868e3;
                 case SpecificEntropyUnit.CaloriePerGramKelvin: return baseUnitValue/4.184e3;
                 case SpecificEntropyUnit.CenticaloriePerGramKelvin: return (baseUnitValue/4.184e3) / 1e-2d;
@@ -1812,15 +1665,9 @@ namespace UnitsNet
                 case SpecificEntropyUnit.VettacaloriePerGramKelvin: return (baseUnitValue/4.184e3) / 1e30d;
                 case SpecificEntropyUnit.VettajoulePerKilogramDegreeCelsius: return (baseUnitValue) / 1e30d;
                 case SpecificEntropyUnit.VettajoulePerKilogramKelvin: return (baseUnitValue) / 1e30d;
-                case SpecificEntropyUnit.YoctocaloriePerGramKelvin: return (baseUnitValue/4.184e3) / 1e-24d;
-                case SpecificEntropyUnit.YoctojoulePerKilogramDegreeCelsius: return (baseUnitValue) / 1e-24d;
-                case SpecificEntropyUnit.YoctojoulePerKilogramKelvin: return (baseUnitValue) / 1e-24d;
                 case SpecificEntropyUnit.YottacaloriePerGramKelvin: return (baseUnitValue/4.184e3) / 1e24d;
                 case SpecificEntropyUnit.YottajoulePerKilogramDegreeCelsius: return (baseUnitValue) / 1e24d;
                 case SpecificEntropyUnit.YottajoulePerKilogramKelvin: return (baseUnitValue) / 1e24d;
-                case SpecificEntropyUnit.ZeptocaloriePerGramKelvin: return (baseUnitValue/4.184e3) / 1e-21d;
-                case SpecificEntropyUnit.ZeptojoulePerKilogramDegreeCelsius: return (baseUnitValue) / 1e-21d;
-                case SpecificEntropyUnit.ZeptojoulePerKilogramKelvin: return (baseUnitValue) / 1e-21d;
                 case SpecificEntropyUnit.ZettacaloriePerGramKelvin: return (baseUnitValue/4.184e3) / 1e21d;
                 case SpecificEntropyUnit.ZettajoulePerKilogramDegreeCelsius: return (baseUnitValue) / 1e21d;
                 case SpecificEntropyUnit.ZettajoulePerKilogramKelvin: return (baseUnitValue) / 1e21d;

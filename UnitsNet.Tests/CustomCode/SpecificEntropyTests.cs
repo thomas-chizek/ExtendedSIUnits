@@ -27,14 +27,69 @@ namespace UnitsNet.Tests.CustomCode
 {
     public class SpecificEntropyTests : SpecificEntropyTestsBase
     {
-        protected override double JoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin => 1e0;
-        protected override double JoulesPerKilogramKelvinInOneJoulePerKilogramKelvin => 1e0;
-        protected override double KilojoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin => 1e-3;
-        protected override double KilojoulesPerKilogramKelvinInOneJoulePerKilogramKelvin => 1e-3;
-        protected override double MegajoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin => 1e-6;
-        protected override double MegajoulesPerKilogramKelvinInOneJoulePerKilogramKelvin => 1e-6;
+         protected override double BtusPerPoundFahrenheitInOneJoulePerKilogramKelvin => 2.3884589662749594e-4;
+
+        protected override double FemtocaloriesPerGramKelvinInOneJoulePerKilogramKelvin =>2.390057e11;
+        protected override double PicocaloriesPerGramKelvinInOneJoulePerKilogramKelvin =>2.390057e8;
+        protected override double NanocaloriesPerGramKelvinInOneJoulePerKilogramKelvin =>2.390057e5;
+        protected override double MicrocaloriesPerGramKelvinInOneJoulePerKilogramKelvin =>2.390057e2;
+        protected override double MillicaloriesPerGramKelvinInOneJoulePerKilogramKelvin => 2.390057e-1;
+        protected override double CenticaloriesPerGramKelvinInOneJoulePerKilogramKelvin => 2.390057e-2;
+        protected override double DecicaloriesPerGramKelvinInOneJoulePerKilogramKelvin => 2.390057e-3;
         protected override double CaloriesPerGramKelvinInOneJoulePerKilogramKelvin => 2.390057e-4;
+        protected override double DecacaloriesPerGramKelvinInOneJoulePerKilogramKelvin =>2.390057e-5;
+        protected override double HectocaloriesPerGramKelvinInOneJoulePerKilogramKelvin =>2.390057e-6;
         protected override double KilocaloriesPerGramKelvinInOneJoulePerKilogramKelvin => 2.390057e-7;
-        protected override double BtusPerPoundFahrenheitInOneJoulePerKilogramKelvin => 2.3884589662749594e-4;
+        protected override double MegacaloriesPerGramKelvinInOneJoulePerKilogramKelvin =>2.390057e-10;
+        protected override double GigacaloriesPerGramKelvinInOneJoulePerKilogramKelvin =>2.390057e-13;
+        protected override double TeracaloriesPerGramKelvinInOneJoulePerKilogramKelvin =>2.390057e-16;
+        protected override double PetacaloriesPerGramKelvinInOneJoulePerKilogramKelvin =>2.390057e-19;
+        protected override double ExacaloriesPerGramKelvinInOneJoulePerKilogramKelvin =>2.390057e-22;
+        protected override double ZettacaloriesPerGramKelvinInOneJoulePerKilogramKelvin =>2.390057e-25;
+        protected override double YottacaloriesPerGramKelvinInOneJoulePerKilogramKelvin =>2.390057e-28;
+        protected override double QutracaloriesPerGramKelvinInOneJoulePerKilogramKelvin =>2.390057e-31;
+        protected override double VettacaloriesPerGramKelvinInOneJoulePerKilogramKelvin =>2.390057e-34;
+
+        protected override double FemtojoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin => 1e15;
+        protected override double PicojoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin => 1e12;
+        protected override double NanojoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin => 1e9;
+        protected override double MicrojoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin => 1e6;
+        protected override double MillijoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin => 1e3;
+        protected override double CentijoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin => 1e2;
+        protected override double DecijoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin => 1e1;
+        protected override double JoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin => 1e0;
+        protected override double DecajoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin => 1e-1;
+        protected override double HectojoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin => 1e-2;
+        protected override double KilojoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin => 1e-3;
+        protected override double MegajoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin => 1e-6;
+        protected override double GigajoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin => 1e-9;
+        protected override double TerajoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin => 1e-12;
+        protected override double PetajoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin => 1e-15;
+        protected override double ExajoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin => 1e-18;
+        protected override double ZettajoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin => 1e-21;
+        protected override double YottajoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin => 1e-24;
+        protected override double QutrajoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin => 1e-27;
+        protected override double VettajoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin => 1e-30;
+
+        protected override double FemtojoulesPerKilogramKelvinInOneJoulePerKilogramKelvin => 1e15;
+        protected override double PicojoulesPerKilogramKelvinInOneJoulePerKilogramKelvin => 1e12;
+        protected override double NanojoulesPerKilogramKelvinInOneJoulePerKilogramKelvin => 1e9;
+        protected override double MicrojoulesPerKilogramKelvinInOneJoulePerKilogramKelvin => 1e6;
+        protected override double MillijoulesPerKilogramKelvinInOneJoulePerKilogramKelvin => 1e3;
+        protected override double CentijoulesPerKilogramKelvinInOneJoulePerKilogramKelvin => 1e2;
+        protected override double DecijoulesPerKilogramKelvinInOneJoulePerKilogramKelvin => 1e1;
+        protected override double JoulesPerKilogramKelvinInOneJoulePerKilogramKelvin => 1e0;
+        protected override double DecajoulesPerKilogramKelvinInOneJoulePerKilogramKelvin  => 1e-1;
+        protected override double HectojoulesPerKilogramKelvinInOneJoulePerKilogramKelvin => 1e-2;
+        protected override double KilojoulesPerKilogramKelvinInOneJoulePerKilogramKelvin  => 1e-3;
+        protected override double MegajoulesPerKilogramKelvinInOneJoulePerKilogramKelvin  => 1e-6;
+        protected override double GigajoulesPerKilogramKelvinInOneJoulePerKilogramKelvin  => 1e-9;
+        protected override double TerajoulesPerKilogramKelvinInOneJoulePerKilogramKelvin  => 1e-12;
+        protected override double PetajoulesPerKilogramKelvinInOneJoulePerKilogramKelvin  => 1e-15;
+        protected override double ExajoulesPerKilogramKelvinInOneJoulePerKilogramKelvin   => 1e-18;
+        protected override double ZettajoulesPerKilogramKelvinInOneJoulePerKilogramKelvin => 1e-21;
+        protected override double YottajoulesPerKilogramKelvinInOneJoulePerKilogramKelvin => 1e-24;
+        protected override double QutrajoulesPerKilogramKelvinInOneJoulePerKilogramKelvin => 1e-27;
+        protected override double VettajoulesPerKilogramKelvinInOneJoulePerKilogramKelvin => 1e-30;
     }
 }

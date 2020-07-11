@@ -34,7 +34,6 @@ namespace UnitsNet.Tests
 // ReSharper disable once PartialTypeWithSinglePart
     public abstract partial class TemperatureChangeRateTestsBase
     {
-        protected abstract double AttodegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond { get; }
         protected abstract double CentidegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond { get; }
         protected abstract double DecadegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond { get; }
         protected abstract double DecidegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond { get; }
@@ -54,13 +53,10 @@ namespace UnitsNet.Tests
         protected abstract double QutradegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond { get; }
         protected abstract double TeradegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond { get; }
         protected abstract double VettadegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond { get; }
-        protected abstract double YoctodegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond { get; }
         protected abstract double YottadegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond { get; }
-        protected abstract double ZeptodegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond { get; }
         protected abstract double ZettadegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond { get; }
 
 // ReSharper disable VirtualMemberNeverOverriden.Global
-        protected virtual double AttodegreesCelsiusPerSecondTolerance { get { return 1e-5; } }
         protected virtual double CentidegreesCelsiusPerSecondTolerance { get { return 1e-5; } }
         protected virtual double DecadegreesCelsiusPerSecondTolerance { get { return 1e-5; } }
         protected virtual double DecidegreesCelsiusPerSecondTolerance { get { return 1e-5; } }
@@ -80,9 +76,7 @@ namespace UnitsNet.Tests
         protected virtual double QutradegreesCelsiusPerSecondTolerance { get { return 1e-5; } }
         protected virtual double TeradegreesCelsiusPerSecondTolerance { get { return 1e-5; } }
         protected virtual double VettadegreesCelsiusPerSecondTolerance { get { return 1e-5; } }
-        protected virtual double YoctodegreesCelsiusPerSecondTolerance { get { return 1e-5; } }
         protected virtual double YottadegreesCelsiusPerSecondTolerance { get { return 1e-5; } }
-        protected virtual double ZeptodegreesCelsiusPerSecondTolerance { get { return 1e-5; } }
         protected virtual double ZettadegreesCelsiusPerSecondTolerance { get { return 1e-5; } }
 // ReSharper restore VirtualMemberNeverOverriden.Global
 
@@ -109,7 +103,6 @@ namespace UnitsNet.Tests
         public void DegreeCelsiusPerSecondToTemperatureChangeRateUnits()
         {
             TemperatureChangeRate degreecelsiuspersecond = TemperatureChangeRate.FromDegreesCelsiusPerSecond(1);
-            AssertEx.EqualTolerance(AttodegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, degreecelsiuspersecond.AttodegreesCelsiusPerSecond, AttodegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(CentidegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, degreecelsiuspersecond.CentidegreesCelsiusPerSecond, CentidegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(DecadegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, degreecelsiuspersecond.DecadegreesCelsiusPerSecond, DecadegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(DecidegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, degreecelsiuspersecond.DecidegreesCelsiusPerSecond, DecidegreesCelsiusPerSecondTolerance);
@@ -129,16 +122,13 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(QutradegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, degreecelsiuspersecond.QutradegreesCelsiusPerSecond, QutradegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(TeradegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, degreecelsiuspersecond.TeradegreesCelsiusPerSecond, TeradegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(VettadegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, degreecelsiuspersecond.VettadegreesCelsiusPerSecond, VettadegreesCelsiusPerSecondTolerance);
-            AssertEx.EqualTolerance(YoctodegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, degreecelsiuspersecond.YoctodegreesCelsiusPerSecond, YoctodegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(YottadegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, degreecelsiuspersecond.YottadegreesCelsiusPerSecond, YottadegreesCelsiusPerSecondTolerance);
-            AssertEx.EqualTolerance(ZeptodegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, degreecelsiuspersecond.ZeptodegreesCelsiusPerSecond, ZeptodegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(ZettadegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, degreecelsiuspersecond.ZettadegreesCelsiusPerSecond, ZettadegreesCelsiusPerSecondTolerance);
         }
 
         [Fact]
         public void FromValueAndUnit()
         {
-            AssertEx.EqualTolerance(1, TemperatureChangeRate.From(1, TemperatureChangeRateUnit.AttodegreeCelsiusPerSecond).AttodegreesCelsiusPerSecond, AttodegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(1, TemperatureChangeRate.From(1, TemperatureChangeRateUnit.CentidegreeCelsiusPerSecond).CentidegreesCelsiusPerSecond, CentidegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(1, TemperatureChangeRate.From(1, TemperatureChangeRateUnit.DecadegreeCelsiusPerSecond).DecadegreesCelsiusPerSecond, DecadegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(1, TemperatureChangeRate.From(1, TemperatureChangeRateUnit.DecidegreeCelsiusPerSecond).DecidegreesCelsiusPerSecond, DecidegreesCelsiusPerSecondTolerance);
@@ -158,9 +148,7 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, TemperatureChangeRate.From(1, TemperatureChangeRateUnit.QutradegreeCelsiusPerSecond).QutradegreesCelsiusPerSecond, QutradegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(1, TemperatureChangeRate.From(1, TemperatureChangeRateUnit.TeradegreeCelsiusPerSecond).TeradegreesCelsiusPerSecond, TeradegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(1, TemperatureChangeRate.From(1, TemperatureChangeRateUnit.VettadegreeCelsiusPerSecond).VettadegreesCelsiusPerSecond, VettadegreesCelsiusPerSecondTolerance);
-            AssertEx.EqualTolerance(1, TemperatureChangeRate.From(1, TemperatureChangeRateUnit.YoctodegreeCelsiusPerSecond).YoctodegreesCelsiusPerSecond, YoctodegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(1, TemperatureChangeRate.From(1, TemperatureChangeRateUnit.YottadegreeCelsiusPerSecond).YottadegreesCelsiusPerSecond, YottadegreesCelsiusPerSecondTolerance);
-            AssertEx.EqualTolerance(1, TemperatureChangeRate.From(1, TemperatureChangeRateUnit.ZeptodegreeCelsiusPerSecond).ZeptodegreesCelsiusPerSecond, ZeptodegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(1, TemperatureChangeRate.From(1, TemperatureChangeRateUnit.ZettadegreeCelsiusPerSecond).ZettadegreesCelsiusPerSecond, ZettadegreesCelsiusPerSecondTolerance);
         }
 
@@ -181,7 +169,6 @@ namespace UnitsNet.Tests
         public void As()
         {
             var degreecelsiuspersecond = TemperatureChangeRate.FromDegreesCelsiusPerSecond(1);
-            AssertEx.EqualTolerance(AttodegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, degreecelsiuspersecond.As(TemperatureChangeRateUnit.AttodegreeCelsiusPerSecond), AttodegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(CentidegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, degreecelsiuspersecond.As(TemperatureChangeRateUnit.CentidegreeCelsiusPerSecond), CentidegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(DecadegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, degreecelsiuspersecond.As(TemperatureChangeRateUnit.DecadegreeCelsiusPerSecond), DecadegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(DecidegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, degreecelsiuspersecond.As(TemperatureChangeRateUnit.DecidegreeCelsiusPerSecond), DecidegreesCelsiusPerSecondTolerance);
@@ -201,9 +188,7 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(QutradegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, degreecelsiuspersecond.As(TemperatureChangeRateUnit.QutradegreeCelsiusPerSecond), QutradegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(TeradegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, degreecelsiuspersecond.As(TemperatureChangeRateUnit.TeradegreeCelsiusPerSecond), TeradegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(VettadegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, degreecelsiuspersecond.As(TemperatureChangeRateUnit.VettadegreeCelsiusPerSecond), VettadegreesCelsiusPerSecondTolerance);
-            AssertEx.EqualTolerance(YoctodegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, degreecelsiuspersecond.As(TemperatureChangeRateUnit.YoctodegreeCelsiusPerSecond), YoctodegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(YottadegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, degreecelsiuspersecond.As(TemperatureChangeRateUnit.YottadegreeCelsiusPerSecond), YottadegreesCelsiusPerSecondTolerance);
-            AssertEx.EqualTolerance(ZeptodegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, degreecelsiuspersecond.As(TemperatureChangeRateUnit.ZeptodegreeCelsiusPerSecond), ZeptodegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(ZettadegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, degreecelsiuspersecond.As(TemperatureChangeRateUnit.ZettadegreeCelsiusPerSecond), ZettadegreesCelsiusPerSecondTolerance);
         }
 
@@ -211,10 +196,6 @@ namespace UnitsNet.Tests
         public void ToUnit()
         {
             var degreecelsiuspersecond = TemperatureChangeRate.FromDegreesCelsiusPerSecond(1);
-
-            var attodegreecelsiuspersecondQuantity = degreecelsiuspersecond.ToUnit(TemperatureChangeRateUnit.AttodegreeCelsiusPerSecond);
-            AssertEx.EqualTolerance(AttodegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, (double)attodegreecelsiuspersecondQuantity.Value, AttodegreesCelsiusPerSecondTolerance);
-            Assert.Equal(TemperatureChangeRateUnit.AttodegreeCelsiusPerSecond, attodegreecelsiuspersecondQuantity.Unit);
 
             var centidegreecelsiuspersecondQuantity = degreecelsiuspersecond.ToUnit(TemperatureChangeRateUnit.CentidegreeCelsiusPerSecond);
             AssertEx.EqualTolerance(CentidegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, (double)centidegreecelsiuspersecondQuantity.Value, CentidegreesCelsiusPerSecondTolerance);
@@ -292,17 +273,9 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettadegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, (double)vettadegreecelsiuspersecondQuantity.Value, VettadegreesCelsiusPerSecondTolerance);
             Assert.Equal(TemperatureChangeRateUnit.VettadegreeCelsiusPerSecond, vettadegreecelsiuspersecondQuantity.Unit);
 
-            var yoctodegreecelsiuspersecondQuantity = degreecelsiuspersecond.ToUnit(TemperatureChangeRateUnit.YoctodegreeCelsiusPerSecond);
-            AssertEx.EqualTolerance(YoctodegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, (double)yoctodegreecelsiuspersecondQuantity.Value, YoctodegreesCelsiusPerSecondTolerance);
-            Assert.Equal(TemperatureChangeRateUnit.YoctodegreeCelsiusPerSecond, yoctodegreecelsiuspersecondQuantity.Unit);
-
             var yottadegreecelsiuspersecondQuantity = degreecelsiuspersecond.ToUnit(TemperatureChangeRateUnit.YottadegreeCelsiusPerSecond);
             AssertEx.EqualTolerance(YottadegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, (double)yottadegreecelsiuspersecondQuantity.Value, YottadegreesCelsiusPerSecondTolerance);
             Assert.Equal(TemperatureChangeRateUnit.YottadegreeCelsiusPerSecond, yottadegreecelsiuspersecondQuantity.Unit);
-
-            var zeptodegreecelsiuspersecondQuantity = degreecelsiuspersecond.ToUnit(TemperatureChangeRateUnit.ZeptodegreeCelsiusPerSecond);
-            AssertEx.EqualTolerance(ZeptodegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, (double)zeptodegreecelsiuspersecondQuantity.Value, ZeptodegreesCelsiusPerSecondTolerance);
-            Assert.Equal(TemperatureChangeRateUnit.ZeptodegreeCelsiusPerSecond, zeptodegreecelsiuspersecondQuantity.Unit);
 
             var zettadegreecelsiuspersecondQuantity = degreecelsiuspersecond.ToUnit(TemperatureChangeRateUnit.ZettadegreeCelsiusPerSecond);
             AssertEx.EqualTolerance(ZettadegreesCelsiusPerSecondInOneDegreeCelsiusPerSecond, (double)zettadegreecelsiuspersecondQuantity.Value, ZettadegreesCelsiusPerSecondTolerance);
@@ -313,7 +286,6 @@ namespace UnitsNet.Tests
         public void ConversionRoundTrip()
         {
             TemperatureChangeRate degreecelsiuspersecond = TemperatureChangeRate.FromDegreesCelsiusPerSecond(1);
-            AssertEx.EqualTolerance(1, TemperatureChangeRate.FromAttodegreesCelsiusPerSecond(degreecelsiuspersecond.AttodegreesCelsiusPerSecond).DegreesCelsiusPerSecond, AttodegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(1, TemperatureChangeRate.FromCentidegreesCelsiusPerSecond(degreecelsiuspersecond.CentidegreesCelsiusPerSecond).DegreesCelsiusPerSecond, CentidegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(1, TemperatureChangeRate.FromDecadegreesCelsiusPerSecond(degreecelsiuspersecond.DecadegreesCelsiusPerSecond).DegreesCelsiusPerSecond, DecadegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(1, TemperatureChangeRate.FromDecidegreesCelsiusPerSecond(degreecelsiuspersecond.DecidegreesCelsiusPerSecond).DegreesCelsiusPerSecond, DecidegreesCelsiusPerSecondTolerance);
@@ -333,9 +305,7 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, TemperatureChangeRate.FromQutradegreesCelsiusPerSecond(degreecelsiuspersecond.QutradegreesCelsiusPerSecond).DegreesCelsiusPerSecond, QutradegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(1, TemperatureChangeRate.FromTeradegreesCelsiusPerSecond(degreecelsiuspersecond.TeradegreesCelsiusPerSecond).DegreesCelsiusPerSecond, TeradegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(1, TemperatureChangeRate.FromVettadegreesCelsiusPerSecond(degreecelsiuspersecond.VettadegreesCelsiusPerSecond).DegreesCelsiusPerSecond, VettadegreesCelsiusPerSecondTolerance);
-            AssertEx.EqualTolerance(1, TemperatureChangeRate.FromYoctodegreesCelsiusPerSecond(degreecelsiuspersecond.YoctodegreesCelsiusPerSecond).DegreesCelsiusPerSecond, YoctodegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(1, TemperatureChangeRate.FromYottadegreesCelsiusPerSecond(degreecelsiuspersecond.YottadegreesCelsiusPerSecond).DegreesCelsiusPerSecond, YottadegreesCelsiusPerSecondTolerance);
-            AssertEx.EqualTolerance(1, TemperatureChangeRate.FromZeptodegreesCelsiusPerSecond(degreecelsiuspersecond.ZeptodegreesCelsiusPerSecond).DegreesCelsiusPerSecond, ZeptodegreesCelsiusPerSecondTolerance);
             AssertEx.EqualTolerance(1, TemperatureChangeRate.FromZettadegreesCelsiusPerSecond(degreecelsiuspersecond.ZettadegreesCelsiusPerSecond).DegreesCelsiusPerSecond, ZettadegreesCelsiusPerSecondTolerance);
         }
 

@@ -35,8 +35,6 @@ namespace UnitsNet.Tests
     public abstract partial class PressureChangeRateTestsBase
     {
         protected abstract double AtmospheresPerSecondInOnePascalPerSecond { get; }
-        protected abstract double AttopascalsPerMinuteInOnePascalPerSecond { get; }
-        protected abstract double AttopascalsPerSecondInOnePascalPerSecond { get; }
         protected abstract double CentipascalsPerMinuteInOnePascalPerSecond { get; }
         protected abstract double CentipascalsPerSecondInOnePascalPerSecond { get; }
         protected abstract double DecapascalsPerMinuteInOnePascalPerSecond { get; }
@@ -73,19 +71,13 @@ namespace UnitsNet.Tests
         protected abstract double TerapascalsPerSecondInOnePascalPerSecond { get; }
         protected abstract double VettapascalsPerMinuteInOnePascalPerSecond { get; }
         protected abstract double VettapascalsPerSecondInOnePascalPerSecond { get; }
-        protected abstract double YoctopascalsPerMinuteInOnePascalPerSecond { get; }
-        protected abstract double YoctopascalsPerSecondInOnePascalPerSecond { get; }
         protected abstract double YottapascalsPerMinuteInOnePascalPerSecond { get; }
         protected abstract double YottapascalsPerSecondInOnePascalPerSecond { get; }
-        protected abstract double ZeptopascalsPerMinuteInOnePascalPerSecond { get; }
-        protected abstract double ZeptopascalsPerSecondInOnePascalPerSecond { get; }
         protected abstract double ZettapascalsPerMinuteInOnePascalPerSecond { get; }
         protected abstract double ZettapascalsPerSecondInOnePascalPerSecond { get; }
 
 // ReSharper disable VirtualMemberNeverOverriden.Global
         protected virtual double AtmospheresPerSecondTolerance { get { return 1e-5; } }
-        protected virtual double AttopascalsPerMinuteTolerance { get { return 1e-5; } }
-        protected virtual double AttopascalsPerSecondTolerance { get { return 1e-5; } }
         protected virtual double CentipascalsPerMinuteTolerance { get { return 1e-5; } }
         protected virtual double CentipascalsPerSecondTolerance { get { return 1e-5; } }
         protected virtual double DecapascalsPerMinuteTolerance { get { return 1e-5; } }
@@ -122,12 +114,8 @@ namespace UnitsNet.Tests
         protected virtual double TerapascalsPerSecondTolerance { get { return 1e-5; } }
         protected virtual double VettapascalsPerMinuteTolerance { get { return 1e-5; } }
         protected virtual double VettapascalsPerSecondTolerance { get { return 1e-5; } }
-        protected virtual double YoctopascalsPerMinuteTolerance { get { return 1e-5; } }
-        protected virtual double YoctopascalsPerSecondTolerance { get { return 1e-5; } }
         protected virtual double YottapascalsPerMinuteTolerance { get { return 1e-5; } }
         protected virtual double YottapascalsPerSecondTolerance { get { return 1e-5; } }
-        protected virtual double ZeptopascalsPerMinuteTolerance { get { return 1e-5; } }
-        protected virtual double ZeptopascalsPerSecondTolerance { get { return 1e-5; } }
         protected virtual double ZettapascalsPerMinuteTolerance { get { return 1e-5; } }
         protected virtual double ZettapascalsPerSecondTolerance { get { return 1e-5; } }
 // ReSharper restore VirtualMemberNeverOverriden.Global
@@ -156,8 +144,6 @@ namespace UnitsNet.Tests
         {
             PressureChangeRate pascalpersecond = PressureChangeRate.FromPascalsPerSecond(1);
             AssertEx.EqualTolerance(AtmospheresPerSecondInOnePascalPerSecond, pascalpersecond.AtmospheresPerSecond, AtmospheresPerSecondTolerance);
-            AssertEx.EqualTolerance(AttopascalsPerMinuteInOnePascalPerSecond, pascalpersecond.AttopascalsPerMinute, AttopascalsPerMinuteTolerance);
-            AssertEx.EqualTolerance(AttopascalsPerSecondInOnePascalPerSecond, pascalpersecond.AttopascalsPerSecond, AttopascalsPerSecondTolerance);
             AssertEx.EqualTolerance(CentipascalsPerMinuteInOnePascalPerSecond, pascalpersecond.CentipascalsPerMinute, CentipascalsPerMinuteTolerance);
             AssertEx.EqualTolerance(CentipascalsPerSecondInOnePascalPerSecond, pascalpersecond.CentipascalsPerSecond, CentipascalsPerSecondTolerance);
             AssertEx.EqualTolerance(DecapascalsPerMinuteInOnePascalPerSecond, pascalpersecond.DecapascalsPerMinute, DecapascalsPerMinuteTolerance);
@@ -194,12 +180,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(TerapascalsPerSecondInOnePascalPerSecond, pascalpersecond.TerapascalsPerSecond, TerapascalsPerSecondTolerance);
             AssertEx.EqualTolerance(VettapascalsPerMinuteInOnePascalPerSecond, pascalpersecond.VettapascalsPerMinute, VettapascalsPerMinuteTolerance);
             AssertEx.EqualTolerance(VettapascalsPerSecondInOnePascalPerSecond, pascalpersecond.VettapascalsPerSecond, VettapascalsPerSecondTolerance);
-            AssertEx.EqualTolerance(YoctopascalsPerMinuteInOnePascalPerSecond, pascalpersecond.YoctopascalsPerMinute, YoctopascalsPerMinuteTolerance);
-            AssertEx.EqualTolerance(YoctopascalsPerSecondInOnePascalPerSecond, pascalpersecond.YoctopascalsPerSecond, YoctopascalsPerSecondTolerance);
             AssertEx.EqualTolerance(YottapascalsPerMinuteInOnePascalPerSecond, pascalpersecond.YottapascalsPerMinute, YottapascalsPerMinuteTolerance);
             AssertEx.EqualTolerance(YottapascalsPerSecondInOnePascalPerSecond, pascalpersecond.YottapascalsPerSecond, YottapascalsPerSecondTolerance);
-            AssertEx.EqualTolerance(ZeptopascalsPerMinuteInOnePascalPerSecond, pascalpersecond.ZeptopascalsPerMinute, ZeptopascalsPerMinuteTolerance);
-            AssertEx.EqualTolerance(ZeptopascalsPerSecondInOnePascalPerSecond, pascalpersecond.ZeptopascalsPerSecond, ZeptopascalsPerSecondTolerance);
             AssertEx.EqualTolerance(ZettapascalsPerMinuteInOnePascalPerSecond, pascalpersecond.ZettapascalsPerMinute, ZettapascalsPerMinuteTolerance);
             AssertEx.EqualTolerance(ZettapascalsPerSecondInOnePascalPerSecond, pascalpersecond.ZettapascalsPerSecond, ZettapascalsPerSecondTolerance);
         }
@@ -208,8 +190,6 @@ namespace UnitsNet.Tests
         public void FromValueAndUnit()
         {
             AssertEx.EqualTolerance(1, PressureChangeRate.From(1, PressureChangeRateUnit.AtmospherePerSecond).AtmospheresPerSecond, AtmospheresPerSecondTolerance);
-            AssertEx.EqualTolerance(1, PressureChangeRate.From(1, PressureChangeRateUnit.AttopascalPerMinute).AttopascalsPerMinute, AttopascalsPerMinuteTolerance);
-            AssertEx.EqualTolerance(1, PressureChangeRate.From(1, PressureChangeRateUnit.AttopascalPerSecond).AttopascalsPerSecond, AttopascalsPerSecondTolerance);
             AssertEx.EqualTolerance(1, PressureChangeRate.From(1, PressureChangeRateUnit.CentipascalPerMinute).CentipascalsPerMinute, CentipascalsPerMinuteTolerance);
             AssertEx.EqualTolerance(1, PressureChangeRate.From(1, PressureChangeRateUnit.CentipascalPerSecond).CentipascalsPerSecond, CentipascalsPerSecondTolerance);
             AssertEx.EqualTolerance(1, PressureChangeRate.From(1, PressureChangeRateUnit.DecapascalPerMinute).DecapascalsPerMinute, DecapascalsPerMinuteTolerance);
@@ -246,12 +226,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, PressureChangeRate.From(1, PressureChangeRateUnit.TerapascalPerSecond).TerapascalsPerSecond, TerapascalsPerSecondTolerance);
             AssertEx.EqualTolerance(1, PressureChangeRate.From(1, PressureChangeRateUnit.VettapascalPerMinute).VettapascalsPerMinute, VettapascalsPerMinuteTolerance);
             AssertEx.EqualTolerance(1, PressureChangeRate.From(1, PressureChangeRateUnit.VettapascalPerSecond).VettapascalsPerSecond, VettapascalsPerSecondTolerance);
-            AssertEx.EqualTolerance(1, PressureChangeRate.From(1, PressureChangeRateUnit.YoctopascalPerMinute).YoctopascalsPerMinute, YoctopascalsPerMinuteTolerance);
-            AssertEx.EqualTolerance(1, PressureChangeRate.From(1, PressureChangeRateUnit.YoctopascalPerSecond).YoctopascalsPerSecond, YoctopascalsPerSecondTolerance);
             AssertEx.EqualTolerance(1, PressureChangeRate.From(1, PressureChangeRateUnit.YottapascalPerMinute).YottapascalsPerMinute, YottapascalsPerMinuteTolerance);
             AssertEx.EqualTolerance(1, PressureChangeRate.From(1, PressureChangeRateUnit.YottapascalPerSecond).YottapascalsPerSecond, YottapascalsPerSecondTolerance);
-            AssertEx.EqualTolerance(1, PressureChangeRate.From(1, PressureChangeRateUnit.ZeptopascalPerMinute).ZeptopascalsPerMinute, ZeptopascalsPerMinuteTolerance);
-            AssertEx.EqualTolerance(1, PressureChangeRate.From(1, PressureChangeRateUnit.ZeptopascalPerSecond).ZeptopascalsPerSecond, ZeptopascalsPerSecondTolerance);
             AssertEx.EqualTolerance(1, PressureChangeRate.From(1, PressureChangeRateUnit.ZettapascalPerMinute).ZettapascalsPerMinute, ZettapascalsPerMinuteTolerance);
             AssertEx.EqualTolerance(1, PressureChangeRate.From(1, PressureChangeRateUnit.ZettapascalPerSecond).ZettapascalsPerSecond, ZettapascalsPerSecondTolerance);
         }
@@ -274,8 +250,6 @@ namespace UnitsNet.Tests
         {
             var pascalpersecond = PressureChangeRate.FromPascalsPerSecond(1);
             AssertEx.EqualTolerance(AtmospheresPerSecondInOnePascalPerSecond, pascalpersecond.As(PressureChangeRateUnit.AtmospherePerSecond), AtmospheresPerSecondTolerance);
-            AssertEx.EqualTolerance(AttopascalsPerMinuteInOnePascalPerSecond, pascalpersecond.As(PressureChangeRateUnit.AttopascalPerMinute), AttopascalsPerMinuteTolerance);
-            AssertEx.EqualTolerance(AttopascalsPerSecondInOnePascalPerSecond, pascalpersecond.As(PressureChangeRateUnit.AttopascalPerSecond), AttopascalsPerSecondTolerance);
             AssertEx.EqualTolerance(CentipascalsPerMinuteInOnePascalPerSecond, pascalpersecond.As(PressureChangeRateUnit.CentipascalPerMinute), CentipascalsPerMinuteTolerance);
             AssertEx.EqualTolerance(CentipascalsPerSecondInOnePascalPerSecond, pascalpersecond.As(PressureChangeRateUnit.CentipascalPerSecond), CentipascalsPerSecondTolerance);
             AssertEx.EqualTolerance(DecapascalsPerMinuteInOnePascalPerSecond, pascalpersecond.As(PressureChangeRateUnit.DecapascalPerMinute), DecapascalsPerMinuteTolerance);
@@ -312,12 +286,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(TerapascalsPerSecondInOnePascalPerSecond, pascalpersecond.As(PressureChangeRateUnit.TerapascalPerSecond), TerapascalsPerSecondTolerance);
             AssertEx.EqualTolerance(VettapascalsPerMinuteInOnePascalPerSecond, pascalpersecond.As(PressureChangeRateUnit.VettapascalPerMinute), VettapascalsPerMinuteTolerance);
             AssertEx.EqualTolerance(VettapascalsPerSecondInOnePascalPerSecond, pascalpersecond.As(PressureChangeRateUnit.VettapascalPerSecond), VettapascalsPerSecondTolerance);
-            AssertEx.EqualTolerance(YoctopascalsPerMinuteInOnePascalPerSecond, pascalpersecond.As(PressureChangeRateUnit.YoctopascalPerMinute), YoctopascalsPerMinuteTolerance);
-            AssertEx.EqualTolerance(YoctopascalsPerSecondInOnePascalPerSecond, pascalpersecond.As(PressureChangeRateUnit.YoctopascalPerSecond), YoctopascalsPerSecondTolerance);
             AssertEx.EqualTolerance(YottapascalsPerMinuteInOnePascalPerSecond, pascalpersecond.As(PressureChangeRateUnit.YottapascalPerMinute), YottapascalsPerMinuteTolerance);
             AssertEx.EqualTolerance(YottapascalsPerSecondInOnePascalPerSecond, pascalpersecond.As(PressureChangeRateUnit.YottapascalPerSecond), YottapascalsPerSecondTolerance);
-            AssertEx.EqualTolerance(ZeptopascalsPerMinuteInOnePascalPerSecond, pascalpersecond.As(PressureChangeRateUnit.ZeptopascalPerMinute), ZeptopascalsPerMinuteTolerance);
-            AssertEx.EqualTolerance(ZeptopascalsPerSecondInOnePascalPerSecond, pascalpersecond.As(PressureChangeRateUnit.ZeptopascalPerSecond), ZeptopascalsPerSecondTolerance);
             AssertEx.EqualTolerance(ZettapascalsPerMinuteInOnePascalPerSecond, pascalpersecond.As(PressureChangeRateUnit.ZettapascalPerMinute), ZettapascalsPerMinuteTolerance);
             AssertEx.EqualTolerance(ZettapascalsPerSecondInOnePascalPerSecond, pascalpersecond.As(PressureChangeRateUnit.ZettapascalPerSecond), ZettapascalsPerSecondTolerance);
         }
@@ -330,14 +300,6 @@ namespace UnitsNet.Tests
             var atmospherepersecondQuantity = pascalpersecond.ToUnit(PressureChangeRateUnit.AtmospherePerSecond);
             AssertEx.EqualTolerance(AtmospheresPerSecondInOnePascalPerSecond, (double)atmospherepersecondQuantity.Value, AtmospheresPerSecondTolerance);
             Assert.Equal(PressureChangeRateUnit.AtmospherePerSecond, atmospherepersecondQuantity.Unit);
-
-            var attopascalperminuteQuantity = pascalpersecond.ToUnit(PressureChangeRateUnit.AttopascalPerMinute);
-            AssertEx.EqualTolerance(AttopascalsPerMinuteInOnePascalPerSecond, (double)attopascalperminuteQuantity.Value, AttopascalsPerMinuteTolerance);
-            Assert.Equal(PressureChangeRateUnit.AttopascalPerMinute, attopascalperminuteQuantity.Unit);
-
-            var attopascalpersecondQuantity = pascalpersecond.ToUnit(PressureChangeRateUnit.AttopascalPerSecond);
-            AssertEx.EqualTolerance(AttopascalsPerSecondInOnePascalPerSecond, (double)attopascalpersecondQuantity.Value, AttopascalsPerSecondTolerance);
-            Assert.Equal(PressureChangeRateUnit.AttopascalPerSecond, attopascalpersecondQuantity.Unit);
 
             var centipascalperminuteQuantity = pascalpersecond.ToUnit(PressureChangeRateUnit.CentipascalPerMinute);
             AssertEx.EqualTolerance(CentipascalsPerMinuteInOnePascalPerSecond, (double)centipascalperminuteQuantity.Value, CentipascalsPerMinuteTolerance);
@@ -483,14 +445,6 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettapascalsPerSecondInOnePascalPerSecond, (double)vettapascalpersecondQuantity.Value, VettapascalsPerSecondTolerance);
             Assert.Equal(PressureChangeRateUnit.VettapascalPerSecond, vettapascalpersecondQuantity.Unit);
 
-            var yoctopascalperminuteQuantity = pascalpersecond.ToUnit(PressureChangeRateUnit.YoctopascalPerMinute);
-            AssertEx.EqualTolerance(YoctopascalsPerMinuteInOnePascalPerSecond, (double)yoctopascalperminuteQuantity.Value, YoctopascalsPerMinuteTolerance);
-            Assert.Equal(PressureChangeRateUnit.YoctopascalPerMinute, yoctopascalperminuteQuantity.Unit);
-
-            var yoctopascalpersecondQuantity = pascalpersecond.ToUnit(PressureChangeRateUnit.YoctopascalPerSecond);
-            AssertEx.EqualTolerance(YoctopascalsPerSecondInOnePascalPerSecond, (double)yoctopascalpersecondQuantity.Value, YoctopascalsPerSecondTolerance);
-            Assert.Equal(PressureChangeRateUnit.YoctopascalPerSecond, yoctopascalpersecondQuantity.Unit);
-
             var yottapascalperminuteQuantity = pascalpersecond.ToUnit(PressureChangeRateUnit.YottapascalPerMinute);
             AssertEx.EqualTolerance(YottapascalsPerMinuteInOnePascalPerSecond, (double)yottapascalperminuteQuantity.Value, YottapascalsPerMinuteTolerance);
             Assert.Equal(PressureChangeRateUnit.YottapascalPerMinute, yottapascalperminuteQuantity.Unit);
@@ -498,14 +452,6 @@ namespace UnitsNet.Tests
             var yottapascalpersecondQuantity = pascalpersecond.ToUnit(PressureChangeRateUnit.YottapascalPerSecond);
             AssertEx.EqualTolerance(YottapascalsPerSecondInOnePascalPerSecond, (double)yottapascalpersecondQuantity.Value, YottapascalsPerSecondTolerance);
             Assert.Equal(PressureChangeRateUnit.YottapascalPerSecond, yottapascalpersecondQuantity.Unit);
-
-            var zeptopascalperminuteQuantity = pascalpersecond.ToUnit(PressureChangeRateUnit.ZeptopascalPerMinute);
-            AssertEx.EqualTolerance(ZeptopascalsPerMinuteInOnePascalPerSecond, (double)zeptopascalperminuteQuantity.Value, ZeptopascalsPerMinuteTolerance);
-            Assert.Equal(PressureChangeRateUnit.ZeptopascalPerMinute, zeptopascalperminuteQuantity.Unit);
-
-            var zeptopascalpersecondQuantity = pascalpersecond.ToUnit(PressureChangeRateUnit.ZeptopascalPerSecond);
-            AssertEx.EqualTolerance(ZeptopascalsPerSecondInOnePascalPerSecond, (double)zeptopascalpersecondQuantity.Value, ZeptopascalsPerSecondTolerance);
-            Assert.Equal(PressureChangeRateUnit.ZeptopascalPerSecond, zeptopascalpersecondQuantity.Unit);
 
             var zettapascalperminuteQuantity = pascalpersecond.ToUnit(PressureChangeRateUnit.ZettapascalPerMinute);
             AssertEx.EqualTolerance(ZettapascalsPerMinuteInOnePascalPerSecond, (double)zettapascalperminuteQuantity.Value, ZettapascalsPerMinuteTolerance);
@@ -521,8 +467,6 @@ namespace UnitsNet.Tests
         {
             PressureChangeRate pascalpersecond = PressureChangeRate.FromPascalsPerSecond(1);
             AssertEx.EqualTolerance(1, PressureChangeRate.FromAtmospheresPerSecond(pascalpersecond.AtmospheresPerSecond).PascalsPerSecond, AtmospheresPerSecondTolerance);
-            AssertEx.EqualTolerance(1, PressureChangeRate.FromAttopascalsPerMinute(pascalpersecond.AttopascalsPerMinute).PascalsPerSecond, AttopascalsPerMinuteTolerance);
-            AssertEx.EqualTolerance(1, PressureChangeRate.FromAttopascalsPerSecond(pascalpersecond.AttopascalsPerSecond).PascalsPerSecond, AttopascalsPerSecondTolerance);
             AssertEx.EqualTolerance(1, PressureChangeRate.FromCentipascalsPerMinute(pascalpersecond.CentipascalsPerMinute).PascalsPerSecond, CentipascalsPerMinuteTolerance);
             AssertEx.EqualTolerance(1, PressureChangeRate.FromCentipascalsPerSecond(pascalpersecond.CentipascalsPerSecond).PascalsPerSecond, CentipascalsPerSecondTolerance);
             AssertEx.EqualTolerance(1, PressureChangeRate.FromDecapascalsPerMinute(pascalpersecond.DecapascalsPerMinute).PascalsPerSecond, DecapascalsPerMinuteTolerance);
@@ -559,12 +503,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, PressureChangeRate.FromTerapascalsPerSecond(pascalpersecond.TerapascalsPerSecond).PascalsPerSecond, TerapascalsPerSecondTolerance);
             AssertEx.EqualTolerance(1, PressureChangeRate.FromVettapascalsPerMinute(pascalpersecond.VettapascalsPerMinute).PascalsPerSecond, VettapascalsPerMinuteTolerance);
             AssertEx.EqualTolerance(1, PressureChangeRate.FromVettapascalsPerSecond(pascalpersecond.VettapascalsPerSecond).PascalsPerSecond, VettapascalsPerSecondTolerance);
-            AssertEx.EqualTolerance(1, PressureChangeRate.FromYoctopascalsPerMinute(pascalpersecond.YoctopascalsPerMinute).PascalsPerSecond, YoctopascalsPerMinuteTolerance);
-            AssertEx.EqualTolerance(1, PressureChangeRate.FromYoctopascalsPerSecond(pascalpersecond.YoctopascalsPerSecond).PascalsPerSecond, YoctopascalsPerSecondTolerance);
             AssertEx.EqualTolerance(1, PressureChangeRate.FromYottapascalsPerMinute(pascalpersecond.YottapascalsPerMinute).PascalsPerSecond, YottapascalsPerMinuteTolerance);
             AssertEx.EqualTolerance(1, PressureChangeRate.FromYottapascalsPerSecond(pascalpersecond.YottapascalsPerSecond).PascalsPerSecond, YottapascalsPerSecondTolerance);
-            AssertEx.EqualTolerance(1, PressureChangeRate.FromZeptopascalsPerMinute(pascalpersecond.ZeptopascalsPerMinute).PascalsPerSecond, ZeptopascalsPerMinuteTolerance);
-            AssertEx.EqualTolerance(1, PressureChangeRate.FromZeptopascalsPerSecond(pascalpersecond.ZeptopascalsPerSecond).PascalsPerSecond, ZeptopascalsPerSecondTolerance);
             AssertEx.EqualTolerance(1, PressureChangeRate.FromZettapascalsPerMinute(pascalpersecond.ZettapascalsPerMinute).PascalsPerSecond, ZettapascalsPerMinuteTolerance);
             AssertEx.EqualTolerance(1, PressureChangeRate.FromZettapascalsPerSecond(pascalpersecond.ZettapascalsPerSecond).PascalsPerSecond, ZettapascalsPerSecondTolerance);
         }

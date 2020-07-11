@@ -34,7 +34,6 @@ namespace UnitsNet.Tests
 // ReSharper disable once PartialTypeWithSinglePart
     public abstract partial class SpecificVolumeTestsBase
     {
-        protected abstract double AttocubicMetersPerKilogramInOneCubicMeterPerKilogram { get; }
         protected abstract double CenticubicMetersPerKilogramInOneCubicMeterPerKilogram { get; }
         protected abstract double CubicFeetPerPoundInOneCubicMeterPerKilogram { get; }
         protected abstract double CubicMetersPerKilogramInOneCubicMeterPerKilogram { get; }
@@ -54,13 +53,10 @@ namespace UnitsNet.Tests
         protected abstract double QutracubicMetersPerKilogramInOneCubicMeterPerKilogram { get; }
         protected abstract double TeracubicMetersPerKilogramInOneCubicMeterPerKilogram { get; }
         protected abstract double VettacubicMetersPerKilogramInOneCubicMeterPerKilogram { get; }
-        protected abstract double YoctocubicMetersPerKilogramInOneCubicMeterPerKilogram { get; }
         protected abstract double YottacubicMetersPerKilogramInOneCubicMeterPerKilogram { get; }
-        protected abstract double ZeptocubicMetersPerKilogramInOneCubicMeterPerKilogram { get; }
         protected abstract double ZettacubicMetersPerKilogramInOneCubicMeterPerKilogram { get; }
 
 // ReSharper disable VirtualMemberNeverOverriden.Global
-        protected virtual double AttocubicMetersPerKilogramTolerance { get { return 1e-5; } }
         protected virtual double CenticubicMetersPerKilogramTolerance { get { return 1e-5; } }
         protected virtual double CubicFeetPerPoundTolerance { get { return 1e-5; } }
         protected virtual double CubicMetersPerKilogramTolerance { get { return 1e-5; } }
@@ -80,9 +76,7 @@ namespace UnitsNet.Tests
         protected virtual double QutracubicMetersPerKilogramTolerance { get { return 1e-5; } }
         protected virtual double TeracubicMetersPerKilogramTolerance { get { return 1e-5; } }
         protected virtual double VettacubicMetersPerKilogramTolerance { get { return 1e-5; } }
-        protected virtual double YoctocubicMetersPerKilogramTolerance { get { return 1e-5; } }
         protected virtual double YottacubicMetersPerKilogramTolerance { get { return 1e-5; } }
-        protected virtual double ZeptocubicMetersPerKilogramTolerance { get { return 1e-5; } }
         protected virtual double ZettacubicMetersPerKilogramTolerance { get { return 1e-5; } }
 // ReSharper restore VirtualMemberNeverOverriden.Global
 
@@ -109,7 +103,6 @@ namespace UnitsNet.Tests
         public void CubicMeterPerKilogramToSpecificVolumeUnits()
         {
             SpecificVolume cubicmeterperkilogram = SpecificVolume.FromCubicMetersPerKilogram(1);
-            AssertEx.EqualTolerance(AttocubicMetersPerKilogramInOneCubicMeterPerKilogram, cubicmeterperkilogram.AttocubicMetersPerKilogram, AttocubicMetersPerKilogramTolerance);
             AssertEx.EqualTolerance(CenticubicMetersPerKilogramInOneCubicMeterPerKilogram, cubicmeterperkilogram.CenticubicMetersPerKilogram, CenticubicMetersPerKilogramTolerance);
             AssertEx.EqualTolerance(CubicFeetPerPoundInOneCubicMeterPerKilogram, cubicmeterperkilogram.CubicFeetPerPound, CubicFeetPerPoundTolerance);
             AssertEx.EqualTolerance(CubicMetersPerKilogramInOneCubicMeterPerKilogram, cubicmeterperkilogram.CubicMetersPerKilogram, CubicMetersPerKilogramTolerance);
@@ -129,16 +122,13 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(QutracubicMetersPerKilogramInOneCubicMeterPerKilogram, cubicmeterperkilogram.QutracubicMetersPerKilogram, QutracubicMetersPerKilogramTolerance);
             AssertEx.EqualTolerance(TeracubicMetersPerKilogramInOneCubicMeterPerKilogram, cubicmeterperkilogram.TeracubicMetersPerKilogram, TeracubicMetersPerKilogramTolerance);
             AssertEx.EqualTolerance(VettacubicMetersPerKilogramInOneCubicMeterPerKilogram, cubicmeterperkilogram.VettacubicMetersPerKilogram, VettacubicMetersPerKilogramTolerance);
-            AssertEx.EqualTolerance(YoctocubicMetersPerKilogramInOneCubicMeterPerKilogram, cubicmeterperkilogram.YoctocubicMetersPerKilogram, YoctocubicMetersPerKilogramTolerance);
             AssertEx.EqualTolerance(YottacubicMetersPerKilogramInOneCubicMeterPerKilogram, cubicmeterperkilogram.YottacubicMetersPerKilogram, YottacubicMetersPerKilogramTolerance);
-            AssertEx.EqualTolerance(ZeptocubicMetersPerKilogramInOneCubicMeterPerKilogram, cubicmeterperkilogram.ZeptocubicMetersPerKilogram, ZeptocubicMetersPerKilogramTolerance);
             AssertEx.EqualTolerance(ZettacubicMetersPerKilogramInOneCubicMeterPerKilogram, cubicmeterperkilogram.ZettacubicMetersPerKilogram, ZettacubicMetersPerKilogramTolerance);
         }
 
         [Fact]
         public void FromValueAndUnit()
         {
-            AssertEx.EqualTolerance(1, SpecificVolume.From(1, SpecificVolumeUnit.AttocubicMeterPerKilogram).AttocubicMetersPerKilogram, AttocubicMetersPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificVolume.From(1, SpecificVolumeUnit.CenticubicMeterPerKilogram).CenticubicMetersPerKilogram, CenticubicMetersPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificVolume.From(1, SpecificVolumeUnit.CubicFootPerPound).CubicFeetPerPound, CubicFeetPerPoundTolerance);
             AssertEx.EqualTolerance(1, SpecificVolume.From(1, SpecificVolumeUnit.CubicMeterPerKilogram).CubicMetersPerKilogram, CubicMetersPerKilogramTolerance);
@@ -158,9 +148,7 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, SpecificVolume.From(1, SpecificVolumeUnit.QutracubicMeterPerKilogram).QutracubicMetersPerKilogram, QutracubicMetersPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificVolume.From(1, SpecificVolumeUnit.TeracubicMeterPerKilogram).TeracubicMetersPerKilogram, TeracubicMetersPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificVolume.From(1, SpecificVolumeUnit.VettacubicMeterPerKilogram).VettacubicMetersPerKilogram, VettacubicMetersPerKilogramTolerance);
-            AssertEx.EqualTolerance(1, SpecificVolume.From(1, SpecificVolumeUnit.YoctocubicMeterPerKilogram).YoctocubicMetersPerKilogram, YoctocubicMetersPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificVolume.From(1, SpecificVolumeUnit.YottacubicMeterPerKilogram).YottacubicMetersPerKilogram, YottacubicMetersPerKilogramTolerance);
-            AssertEx.EqualTolerance(1, SpecificVolume.From(1, SpecificVolumeUnit.ZeptocubicMeterPerKilogram).ZeptocubicMetersPerKilogram, ZeptocubicMetersPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificVolume.From(1, SpecificVolumeUnit.ZettacubicMeterPerKilogram).ZettacubicMetersPerKilogram, ZettacubicMetersPerKilogramTolerance);
         }
 
@@ -181,7 +169,6 @@ namespace UnitsNet.Tests
         public void As()
         {
             var cubicmeterperkilogram = SpecificVolume.FromCubicMetersPerKilogram(1);
-            AssertEx.EqualTolerance(AttocubicMetersPerKilogramInOneCubicMeterPerKilogram, cubicmeterperkilogram.As(SpecificVolumeUnit.AttocubicMeterPerKilogram), AttocubicMetersPerKilogramTolerance);
             AssertEx.EqualTolerance(CenticubicMetersPerKilogramInOneCubicMeterPerKilogram, cubicmeterperkilogram.As(SpecificVolumeUnit.CenticubicMeterPerKilogram), CenticubicMetersPerKilogramTolerance);
             AssertEx.EqualTolerance(CubicFeetPerPoundInOneCubicMeterPerKilogram, cubicmeterperkilogram.As(SpecificVolumeUnit.CubicFootPerPound), CubicFeetPerPoundTolerance);
             AssertEx.EqualTolerance(CubicMetersPerKilogramInOneCubicMeterPerKilogram, cubicmeterperkilogram.As(SpecificVolumeUnit.CubicMeterPerKilogram), CubicMetersPerKilogramTolerance);
@@ -201,9 +188,7 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(QutracubicMetersPerKilogramInOneCubicMeterPerKilogram, cubicmeterperkilogram.As(SpecificVolumeUnit.QutracubicMeterPerKilogram), QutracubicMetersPerKilogramTolerance);
             AssertEx.EqualTolerance(TeracubicMetersPerKilogramInOneCubicMeterPerKilogram, cubicmeterperkilogram.As(SpecificVolumeUnit.TeracubicMeterPerKilogram), TeracubicMetersPerKilogramTolerance);
             AssertEx.EqualTolerance(VettacubicMetersPerKilogramInOneCubicMeterPerKilogram, cubicmeterperkilogram.As(SpecificVolumeUnit.VettacubicMeterPerKilogram), VettacubicMetersPerKilogramTolerance);
-            AssertEx.EqualTolerance(YoctocubicMetersPerKilogramInOneCubicMeterPerKilogram, cubicmeterperkilogram.As(SpecificVolumeUnit.YoctocubicMeterPerKilogram), YoctocubicMetersPerKilogramTolerance);
             AssertEx.EqualTolerance(YottacubicMetersPerKilogramInOneCubicMeterPerKilogram, cubicmeterperkilogram.As(SpecificVolumeUnit.YottacubicMeterPerKilogram), YottacubicMetersPerKilogramTolerance);
-            AssertEx.EqualTolerance(ZeptocubicMetersPerKilogramInOneCubicMeterPerKilogram, cubicmeterperkilogram.As(SpecificVolumeUnit.ZeptocubicMeterPerKilogram), ZeptocubicMetersPerKilogramTolerance);
             AssertEx.EqualTolerance(ZettacubicMetersPerKilogramInOneCubicMeterPerKilogram, cubicmeterperkilogram.As(SpecificVolumeUnit.ZettacubicMeterPerKilogram), ZettacubicMetersPerKilogramTolerance);
         }
 
@@ -211,10 +196,6 @@ namespace UnitsNet.Tests
         public void ToUnit()
         {
             var cubicmeterperkilogram = SpecificVolume.FromCubicMetersPerKilogram(1);
-
-            var attocubicmeterperkilogramQuantity = cubicmeterperkilogram.ToUnit(SpecificVolumeUnit.AttocubicMeterPerKilogram);
-            AssertEx.EqualTolerance(AttocubicMetersPerKilogramInOneCubicMeterPerKilogram, (double)attocubicmeterperkilogramQuantity.Value, AttocubicMetersPerKilogramTolerance);
-            Assert.Equal(SpecificVolumeUnit.AttocubicMeterPerKilogram, attocubicmeterperkilogramQuantity.Unit);
 
             var centicubicmeterperkilogramQuantity = cubicmeterperkilogram.ToUnit(SpecificVolumeUnit.CenticubicMeterPerKilogram);
             AssertEx.EqualTolerance(CenticubicMetersPerKilogramInOneCubicMeterPerKilogram, (double)centicubicmeterperkilogramQuantity.Value, CenticubicMetersPerKilogramTolerance);
@@ -292,17 +273,9 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettacubicMetersPerKilogramInOneCubicMeterPerKilogram, (double)vettacubicmeterperkilogramQuantity.Value, VettacubicMetersPerKilogramTolerance);
             Assert.Equal(SpecificVolumeUnit.VettacubicMeterPerKilogram, vettacubicmeterperkilogramQuantity.Unit);
 
-            var yoctocubicmeterperkilogramQuantity = cubicmeterperkilogram.ToUnit(SpecificVolumeUnit.YoctocubicMeterPerKilogram);
-            AssertEx.EqualTolerance(YoctocubicMetersPerKilogramInOneCubicMeterPerKilogram, (double)yoctocubicmeterperkilogramQuantity.Value, YoctocubicMetersPerKilogramTolerance);
-            Assert.Equal(SpecificVolumeUnit.YoctocubicMeterPerKilogram, yoctocubicmeterperkilogramQuantity.Unit);
-
             var yottacubicmeterperkilogramQuantity = cubicmeterperkilogram.ToUnit(SpecificVolumeUnit.YottacubicMeterPerKilogram);
             AssertEx.EqualTolerance(YottacubicMetersPerKilogramInOneCubicMeterPerKilogram, (double)yottacubicmeterperkilogramQuantity.Value, YottacubicMetersPerKilogramTolerance);
             Assert.Equal(SpecificVolumeUnit.YottacubicMeterPerKilogram, yottacubicmeterperkilogramQuantity.Unit);
-
-            var zeptocubicmeterperkilogramQuantity = cubicmeterperkilogram.ToUnit(SpecificVolumeUnit.ZeptocubicMeterPerKilogram);
-            AssertEx.EqualTolerance(ZeptocubicMetersPerKilogramInOneCubicMeterPerKilogram, (double)zeptocubicmeterperkilogramQuantity.Value, ZeptocubicMetersPerKilogramTolerance);
-            Assert.Equal(SpecificVolumeUnit.ZeptocubicMeterPerKilogram, zeptocubicmeterperkilogramQuantity.Unit);
 
             var zettacubicmeterperkilogramQuantity = cubicmeterperkilogram.ToUnit(SpecificVolumeUnit.ZettacubicMeterPerKilogram);
             AssertEx.EqualTolerance(ZettacubicMetersPerKilogramInOneCubicMeterPerKilogram, (double)zettacubicmeterperkilogramQuantity.Value, ZettacubicMetersPerKilogramTolerance);
@@ -313,7 +286,6 @@ namespace UnitsNet.Tests
         public void ConversionRoundTrip()
         {
             SpecificVolume cubicmeterperkilogram = SpecificVolume.FromCubicMetersPerKilogram(1);
-            AssertEx.EqualTolerance(1, SpecificVolume.FromAttocubicMetersPerKilogram(cubicmeterperkilogram.AttocubicMetersPerKilogram).CubicMetersPerKilogram, AttocubicMetersPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificVolume.FromCenticubicMetersPerKilogram(cubicmeterperkilogram.CenticubicMetersPerKilogram).CubicMetersPerKilogram, CenticubicMetersPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificVolume.FromCubicFeetPerPound(cubicmeterperkilogram.CubicFeetPerPound).CubicMetersPerKilogram, CubicFeetPerPoundTolerance);
             AssertEx.EqualTolerance(1, SpecificVolume.FromCubicMetersPerKilogram(cubicmeterperkilogram.CubicMetersPerKilogram).CubicMetersPerKilogram, CubicMetersPerKilogramTolerance);
@@ -333,9 +305,7 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, SpecificVolume.FromQutracubicMetersPerKilogram(cubicmeterperkilogram.QutracubicMetersPerKilogram).CubicMetersPerKilogram, QutracubicMetersPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificVolume.FromTeracubicMetersPerKilogram(cubicmeterperkilogram.TeracubicMetersPerKilogram).CubicMetersPerKilogram, TeracubicMetersPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificVolume.FromVettacubicMetersPerKilogram(cubicmeterperkilogram.VettacubicMetersPerKilogram).CubicMetersPerKilogram, VettacubicMetersPerKilogramTolerance);
-            AssertEx.EqualTolerance(1, SpecificVolume.FromYoctocubicMetersPerKilogram(cubicmeterperkilogram.YoctocubicMetersPerKilogram).CubicMetersPerKilogram, YoctocubicMetersPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificVolume.FromYottacubicMetersPerKilogram(cubicmeterperkilogram.YottacubicMetersPerKilogram).CubicMetersPerKilogram, YottacubicMetersPerKilogramTolerance);
-            AssertEx.EqualTolerance(1, SpecificVolume.FromZeptocubicMetersPerKilogram(cubicmeterperkilogram.ZeptocubicMetersPerKilogram).CubicMetersPerKilogram, ZeptocubicMetersPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificVolume.FromZettacubicMetersPerKilogram(cubicmeterperkilogram.ZettacubicMetersPerKilogram).CubicMetersPerKilogram, ZettacubicMetersPerKilogramTolerance);
         }
 

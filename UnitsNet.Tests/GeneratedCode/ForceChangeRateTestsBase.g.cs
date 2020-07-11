@@ -34,8 +34,6 @@ namespace UnitsNet.Tests
 // ReSharper disable once PartialTypeWithSinglePart
     public abstract partial class ForceChangeRateTestsBase
     {
-        protected abstract double AttonewtonsPerMinuteInOneNewtonPerSecond { get; }
-        protected abstract double AttonewtonsPerSecondInOneNewtonPerSecond { get; }
         protected abstract double CentinewtonsPerMinuteInOneNewtonPerSecond { get; }
         protected abstract double CentinewtonsPerSecondInOneNewtonPerSecond { get; }
         protected abstract double DecanewtonsPerMinuteInOneNewtonPerSecond { get; }
@@ -72,18 +70,12 @@ namespace UnitsNet.Tests
         protected abstract double TeranewtonsPerSecondInOneNewtonPerSecond { get; }
         protected abstract double VettanewtonsPerMinuteInOneNewtonPerSecond { get; }
         protected abstract double VettanewtonsPerSecondInOneNewtonPerSecond { get; }
-        protected abstract double YoctonewtonsPerMinuteInOneNewtonPerSecond { get; }
-        protected abstract double YoctonewtonsPerSecondInOneNewtonPerSecond { get; }
         protected abstract double YottanewtonsPerMinuteInOneNewtonPerSecond { get; }
         protected abstract double YottanewtonsPerSecondInOneNewtonPerSecond { get; }
-        protected abstract double ZeptonewtonsPerMinuteInOneNewtonPerSecond { get; }
-        protected abstract double ZeptonewtonsPerSecondInOneNewtonPerSecond { get; }
         protected abstract double ZettanewtonsPerMinuteInOneNewtonPerSecond { get; }
         protected abstract double ZettanewtonsPerSecondInOneNewtonPerSecond { get; }
 
 // ReSharper disable VirtualMemberNeverOverriden.Global
-        protected virtual double AttonewtonsPerMinuteTolerance { get { return 1e-5; } }
-        protected virtual double AttonewtonsPerSecondTolerance { get { return 1e-5; } }
         protected virtual double CentinewtonsPerMinuteTolerance { get { return 1e-5; } }
         protected virtual double CentinewtonsPerSecondTolerance { get { return 1e-5; } }
         protected virtual double DecanewtonsPerMinuteTolerance { get { return 1e-5; } }
@@ -120,12 +112,8 @@ namespace UnitsNet.Tests
         protected virtual double TeranewtonsPerSecondTolerance { get { return 1e-5; } }
         protected virtual double VettanewtonsPerMinuteTolerance { get { return 1e-5; } }
         protected virtual double VettanewtonsPerSecondTolerance { get { return 1e-5; } }
-        protected virtual double YoctonewtonsPerMinuteTolerance { get { return 1e-5; } }
-        protected virtual double YoctonewtonsPerSecondTolerance { get { return 1e-5; } }
         protected virtual double YottanewtonsPerMinuteTolerance { get { return 1e-5; } }
         protected virtual double YottanewtonsPerSecondTolerance { get { return 1e-5; } }
-        protected virtual double ZeptonewtonsPerMinuteTolerance { get { return 1e-5; } }
-        protected virtual double ZeptonewtonsPerSecondTolerance { get { return 1e-5; } }
         protected virtual double ZettanewtonsPerMinuteTolerance { get { return 1e-5; } }
         protected virtual double ZettanewtonsPerSecondTolerance { get { return 1e-5; } }
 // ReSharper restore VirtualMemberNeverOverriden.Global
@@ -153,8 +141,6 @@ namespace UnitsNet.Tests
         public void NewtonPerSecondToForceChangeRateUnits()
         {
             ForceChangeRate newtonpersecond = ForceChangeRate.FromNewtonsPerSecond(1);
-            AssertEx.EqualTolerance(AttonewtonsPerMinuteInOneNewtonPerSecond, newtonpersecond.AttonewtonsPerMinute, AttonewtonsPerMinuteTolerance);
-            AssertEx.EqualTolerance(AttonewtonsPerSecondInOneNewtonPerSecond, newtonpersecond.AttonewtonsPerSecond, AttonewtonsPerSecondTolerance);
             AssertEx.EqualTolerance(CentinewtonsPerMinuteInOneNewtonPerSecond, newtonpersecond.CentinewtonsPerMinute, CentinewtonsPerMinuteTolerance);
             AssertEx.EqualTolerance(CentinewtonsPerSecondInOneNewtonPerSecond, newtonpersecond.CentinewtonsPerSecond, CentinewtonsPerSecondTolerance);
             AssertEx.EqualTolerance(DecanewtonsPerMinuteInOneNewtonPerSecond, newtonpersecond.DecanewtonsPerMinute, DecanewtonsPerMinuteTolerance);
@@ -191,12 +177,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(TeranewtonsPerSecondInOneNewtonPerSecond, newtonpersecond.TeranewtonsPerSecond, TeranewtonsPerSecondTolerance);
             AssertEx.EqualTolerance(VettanewtonsPerMinuteInOneNewtonPerSecond, newtonpersecond.VettanewtonsPerMinute, VettanewtonsPerMinuteTolerance);
             AssertEx.EqualTolerance(VettanewtonsPerSecondInOneNewtonPerSecond, newtonpersecond.VettanewtonsPerSecond, VettanewtonsPerSecondTolerance);
-            AssertEx.EqualTolerance(YoctonewtonsPerMinuteInOneNewtonPerSecond, newtonpersecond.YoctonewtonsPerMinute, YoctonewtonsPerMinuteTolerance);
-            AssertEx.EqualTolerance(YoctonewtonsPerSecondInOneNewtonPerSecond, newtonpersecond.YoctonewtonsPerSecond, YoctonewtonsPerSecondTolerance);
             AssertEx.EqualTolerance(YottanewtonsPerMinuteInOneNewtonPerSecond, newtonpersecond.YottanewtonsPerMinute, YottanewtonsPerMinuteTolerance);
             AssertEx.EqualTolerance(YottanewtonsPerSecondInOneNewtonPerSecond, newtonpersecond.YottanewtonsPerSecond, YottanewtonsPerSecondTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonsPerMinuteInOneNewtonPerSecond, newtonpersecond.ZeptonewtonsPerMinute, ZeptonewtonsPerMinuteTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonsPerSecondInOneNewtonPerSecond, newtonpersecond.ZeptonewtonsPerSecond, ZeptonewtonsPerSecondTolerance);
             AssertEx.EqualTolerance(ZettanewtonsPerMinuteInOneNewtonPerSecond, newtonpersecond.ZettanewtonsPerMinute, ZettanewtonsPerMinuteTolerance);
             AssertEx.EqualTolerance(ZettanewtonsPerSecondInOneNewtonPerSecond, newtonpersecond.ZettanewtonsPerSecond, ZettanewtonsPerSecondTolerance);
         }
@@ -204,8 +186,6 @@ namespace UnitsNet.Tests
         [Fact]
         public void FromValueAndUnit()
         {
-            AssertEx.EqualTolerance(1, ForceChangeRate.From(1, ForceChangeRateUnit.AttonewtonPerMinute).AttonewtonsPerMinute, AttonewtonsPerMinuteTolerance);
-            AssertEx.EqualTolerance(1, ForceChangeRate.From(1, ForceChangeRateUnit.AttonewtonPerSecond).AttonewtonsPerSecond, AttonewtonsPerSecondTolerance);
             AssertEx.EqualTolerance(1, ForceChangeRate.From(1, ForceChangeRateUnit.CentinewtonPerMinute).CentinewtonsPerMinute, CentinewtonsPerMinuteTolerance);
             AssertEx.EqualTolerance(1, ForceChangeRate.From(1, ForceChangeRateUnit.CentinewtonPerSecond).CentinewtonsPerSecond, CentinewtonsPerSecondTolerance);
             AssertEx.EqualTolerance(1, ForceChangeRate.From(1, ForceChangeRateUnit.DecanewtonPerMinute).DecanewtonsPerMinute, DecanewtonsPerMinuteTolerance);
@@ -242,12 +222,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, ForceChangeRate.From(1, ForceChangeRateUnit.TeranewtonPerSecond).TeranewtonsPerSecond, TeranewtonsPerSecondTolerance);
             AssertEx.EqualTolerance(1, ForceChangeRate.From(1, ForceChangeRateUnit.VettanewtonPerMinute).VettanewtonsPerMinute, VettanewtonsPerMinuteTolerance);
             AssertEx.EqualTolerance(1, ForceChangeRate.From(1, ForceChangeRateUnit.VettanewtonPerSecond).VettanewtonsPerSecond, VettanewtonsPerSecondTolerance);
-            AssertEx.EqualTolerance(1, ForceChangeRate.From(1, ForceChangeRateUnit.YoctonewtonPerMinute).YoctonewtonsPerMinute, YoctonewtonsPerMinuteTolerance);
-            AssertEx.EqualTolerance(1, ForceChangeRate.From(1, ForceChangeRateUnit.YoctonewtonPerSecond).YoctonewtonsPerSecond, YoctonewtonsPerSecondTolerance);
             AssertEx.EqualTolerance(1, ForceChangeRate.From(1, ForceChangeRateUnit.YottanewtonPerMinute).YottanewtonsPerMinute, YottanewtonsPerMinuteTolerance);
             AssertEx.EqualTolerance(1, ForceChangeRate.From(1, ForceChangeRateUnit.YottanewtonPerSecond).YottanewtonsPerSecond, YottanewtonsPerSecondTolerance);
-            AssertEx.EqualTolerance(1, ForceChangeRate.From(1, ForceChangeRateUnit.ZeptonewtonPerMinute).ZeptonewtonsPerMinute, ZeptonewtonsPerMinuteTolerance);
-            AssertEx.EqualTolerance(1, ForceChangeRate.From(1, ForceChangeRateUnit.ZeptonewtonPerSecond).ZeptonewtonsPerSecond, ZeptonewtonsPerSecondTolerance);
             AssertEx.EqualTolerance(1, ForceChangeRate.From(1, ForceChangeRateUnit.ZettanewtonPerMinute).ZettanewtonsPerMinute, ZettanewtonsPerMinuteTolerance);
             AssertEx.EqualTolerance(1, ForceChangeRate.From(1, ForceChangeRateUnit.ZettanewtonPerSecond).ZettanewtonsPerSecond, ZettanewtonsPerSecondTolerance);
         }
@@ -269,8 +245,6 @@ namespace UnitsNet.Tests
         public void As()
         {
             var newtonpersecond = ForceChangeRate.FromNewtonsPerSecond(1);
-            AssertEx.EqualTolerance(AttonewtonsPerMinuteInOneNewtonPerSecond, newtonpersecond.As(ForceChangeRateUnit.AttonewtonPerMinute), AttonewtonsPerMinuteTolerance);
-            AssertEx.EqualTolerance(AttonewtonsPerSecondInOneNewtonPerSecond, newtonpersecond.As(ForceChangeRateUnit.AttonewtonPerSecond), AttonewtonsPerSecondTolerance);
             AssertEx.EqualTolerance(CentinewtonsPerMinuteInOneNewtonPerSecond, newtonpersecond.As(ForceChangeRateUnit.CentinewtonPerMinute), CentinewtonsPerMinuteTolerance);
             AssertEx.EqualTolerance(CentinewtonsPerSecondInOneNewtonPerSecond, newtonpersecond.As(ForceChangeRateUnit.CentinewtonPerSecond), CentinewtonsPerSecondTolerance);
             AssertEx.EqualTolerance(DecanewtonsPerMinuteInOneNewtonPerSecond, newtonpersecond.As(ForceChangeRateUnit.DecanewtonPerMinute), DecanewtonsPerMinuteTolerance);
@@ -307,12 +281,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(TeranewtonsPerSecondInOneNewtonPerSecond, newtonpersecond.As(ForceChangeRateUnit.TeranewtonPerSecond), TeranewtonsPerSecondTolerance);
             AssertEx.EqualTolerance(VettanewtonsPerMinuteInOneNewtonPerSecond, newtonpersecond.As(ForceChangeRateUnit.VettanewtonPerMinute), VettanewtonsPerMinuteTolerance);
             AssertEx.EqualTolerance(VettanewtonsPerSecondInOneNewtonPerSecond, newtonpersecond.As(ForceChangeRateUnit.VettanewtonPerSecond), VettanewtonsPerSecondTolerance);
-            AssertEx.EqualTolerance(YoctonewtonsPerMinuteInOneNewtonPerSecond, newtonpersecond.As(ForceChangeRateUnit.YoctonewtonPerMinute), YoctonewtonsPerMinuteTolerance);
-            AssertEx.EqualTolerance(YoctonewtonsPerSecondInOneNewtonPerSecond, newtonpersecond.As(ForceChangeRateUnit.YoctonewtonPerSecond), YoctonewtonsPerSecondTolerance);
             AssertEx.EqualTolerance(YottanewtonsPerMinuteInOneNewtonPerSecond, newtonpersecond.As(ForceChangeRateUnit.YottanewtonPerMinute), YottanewtonsPerMinuteTolerance);
             AssertEx.EqualTolerance(YottanewtonsPerSecondInOneNewtonPerSecond, newtonpersecond.As(ForceChangeRateUnit.YottanewtonPerSecond), YottanewtonsPerSecondTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonsPerMinuteInOneNewtonPerSecond, newtonpersecond.As(ForceChangeRateUnit.ZeptonewtonPerMinute), ZeptonewtonsPerMinuteTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonsPerSecondInOneNewtonPerSecond, newtonpersecond.As(ForceChangeRateUnit.ZeptonewtonPerSecond), ZeptonewtonsPerSecondTolerance);
             AssertEx.EqualTolerance(ZettanewtonsPerMinuteInOneNewtonPerSecond, newtonpersecond.As(ForceChangeRateUnit.ZettanewtonPerMinute), ZettanewtonsPerMinuteTolerance);
             AssertEx.EqualTolerance(ZettanewtonsPerSecondInOneNewtonPerSecond, newtonpersecond.As(ForceChangeRateUnit.ZettanewtonPerSecond), ZettanewtonsPerSecondTolerance);
         }
@@ -321,14 +291,6 @@ namespace UnitsNet.Tests
         public void ToUnit()
         {
             var newtonpersecond = ForceChangeRate.FromNewtonsPerSecond(1);
-
-            var attonewtonperminuteQuantity = newtonpersecond.ToUnit(ForceChangeRateUnit.AttonewtonPerMinute);
-            AssertEx.EqualTolerance(AttonewtonsPerMinuteInOneNewtonPerSecond, (double)attonewtonperminuteQuantity.Value, AttonewtonsPerMinuteTolerance);
-            Assert.Equal(ForceChangeRateUnit.AttonewtonPerMinute, attonewtonperminuteQuantity.Unit);
-
-            var attonewtonpersecondQuantity = newtonpersecond.ToUnit(ForceChangeRateUnit.AttonewtonPerSecond);
-            AssertEx.EqualTolerance(AttonewtonsPerSecondInOneNewtonPerSecond, (double)attonewtonpersecondQuantity.Value, AttonewtonsPerSecondTolerance);
-            Assert.Equal(ForceChangeRateUnit.AttonewtonPerSecond, attonewtonpersecondQuantity.Unit);
 
             var centinewtonperminuteQuantity = newtonpersecond.ToUnit(ForceChangeRateUnit.CentinewtonPerMinute);
             AssertEx.EqualTolerance(CentinewtonsPerMinuteInOneNewtonPerSecond, (double)centinewtonperminuteQuantity.Value, CentinewtonsPerMinuteTolerance);
@@ -474,14 +436,6 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettanewtonsPerSecondInOneNewtonPerSecond, (double)vettanewtonpersecondQuantity.Value, VettanewtonsPerSecondTolerance);
             Assert.Equal(ForceChangeRateUnit.VettanewtonPerSecond, vettanewtonpersecondQuantity.Unit);
 
-            var yoctonewtonperminuteQuantity = newtonpersecond.ToUnit(ForceChangeRateUnit.YoctonewtonPerMinute);
-            AssertEx.EqualTolerance(YoctonewtonsPerMinuteInOneNewtonPerSecond, (double)yoctonewtonperminuteQuantity.Value, YoctonewtonsPerMinuteTolerance);
-            Assert.Equal(ForceChangeRateUnit.YoctonewtonPerMinute, yoctonewtonperminuteQuantity.Unit);
-
-            var yoctonewtonpersecondQuantity = newtonpersecond.ToUnit(ForceChangeRateUnit.YoctonewtonPerSecond);
-            AssertEx.EqualTolerance(YoctonewtonsPerSecondInOneNewtonPerSecond, (double)yoctonewtonpersecondQuantity.Value, YoctonewtonsPerSecondTolerance);
-            Assert.Equal(ForceChangeRateUnit.YoctonewtonPerSecond, yoctonewtonpersecondQuantity.Unit);
-
             var yottanewtonperminuteQuantity = newtonpersecond.ToUnit(ForceChangeRateUnit.YottanewtonPerMinute);
             AssertEx.EqualTolerance(YottanewtonsPerMinuteInOneNewtonPerSecond, (double)yottanewtonperminuteQuantity.Value, YottanewtonsPerMinuteTolerance);
             Assert.Equal(ForceChangeRateUnit.YottanewtonPerMinute, yottanewtonperminuteQuantity.Unit);
@@ -489,14 +443,6 @@ namespace UnitsNet.Tests
             var yottanewtonpersecondQuantity = newtonpersecond.ToUnit(ForceChangeRateUnit.YottanewtonPerSecond);
             AssertEx.EqualTolerance(YottanewtonsPerSecondInOneNewtonPerSecond, (double)yottanewtonpersecondQuantity.Value, YottanewtonsPerSecondTolerance);
             Assert.Equal(ForceChangeRateUnit.YottanewtonPerSecond, yottanewtonpersecondQuantity.Unit);
-
-            var zeptonewtonperminuteQuantity = newtonpersecond.ToUnit(ForceChangeRateUnit.ZeptonewtonPerMinute);
-            AssertEx.EqualTolerance(ZeptonewtonsPerMinuteInOneNewtonPerSecond, (double)zeptonewtonperminuteQuantity.Value, ZeptonewtonsPerMinuteTolerance);
-            Assert.Equal(ForceChangeRateUnit.ZeptonewtonPerMinute, zeptonewtonperminuteQuantity.Unit);
-
-            var zeptonewtonpersecondQuantity = newtonpersecond.ToUnit(ForceChangeRateUnit.ZeptonewtonPerSecond);
-            AssertEx.EqualTolerance(ZeptonewtonsPerSecondInOneNewtonPerSecond, (double)zeptonewtonpersecondQuantity.Value, ZeptonewtonsPerSecondTolerance);
-            Assert.Equal(ForceChangeRateUnit.ZeptonewtonPerSecond, zeptonewtonpersecondQuantity.Unit);
 
             var zettanewtonperminuteQuantity = newtonpersecond.ToUnit(ForceChangeRateUnit.ZettanewtonPerMinute);
             AssertEx.EqualTolerance(ZettanewtonsPerMinuteInOneNewtonPerSecond, (double)zettanewtonperminuteQuantity.Value, ZettanewtonsPerMinuteTolerance);
@@ -511,8 +457,6 @@ namespace UnitsNet.Tests
         public void ConversionRoundTrip()
         {
             ForceChangeRate newtonpersecond = ForceChangeRate.FromNewtonsPerSecond(1);
-            AssertEx.EqualTolerance(1, ForceChangeRate.FromAttonewtonsPerMinute(newtonpersecond.AttonewtonsPerMinute).NewtonsPerSecond, AttonewtonsPerMinuteTolerance);
-            AssertEx.EqualTolerance(1, ForceChangeRate.FromAttonewtonsPerSecond(newtonpersecond.AttonewtonsPerSecond).NewtonsPerSecond, AttonewtonsPerSecondTolerance);
             AssertEx.EqualTolerance(1, ForceChangeRate.FromCentinewtonsPerMinute(newtonpersecond.CentinewtonsPerMinute).NewtonsPerSecond, CentinewtonsPerMinuteTolerance);
             AssertEx.EqualTolerance(1, ForceChangeRate.FromCentinewtonsPerSecond(newtonpersecond.CentinewtonsPerSecond).NewtonsPerSecond, CentinewtonsPerSecondTolerance);
             AssertEx.EqualTolerance(1, ForceChangeRate.FromDecanewtonsPerMinute(newtonpersecond.DecanewtonsPerMinute).NewtonsPerSecond, DecanewtonsPerMinuteTolerance);
@@ -549,12 +493,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, ForceChangeRate.FromTeranewtonsPerSecond(newtonpersecond.TeranewtonsPerSecond).NewtonsPerSecond, TeranewtonsPerSecondTolerance);
             AssertEx.EqualTolerance(1, ForceChangeRate.FromVettanewtonsPerMinute(newtonpersecond.VettanewtonsPerMinute).NewtonsPerSecond, VettanewtonsPerMinuteTolerance);
             AssertEx.EqualTolerance(1, ForceChangeRate.FromVettanewtonsPerSecond(newtonpersecond.VettanewtonsPerSecond).NewtonsPerSecond, VettanewtonsPerSecondTolerance);
-            AssertEx.EqualTolerance(1, ForceChangeRate.FromYoctonewtonsPerMinute(newtonpersecond.YoctonewtonsPerMinute).NewtonsPerSecond, YoctonewtonsPerMinuteTolerance);
-            AssertEx.EqualTolerance(1, ForceChangeRate.FromYoctonewtonsPerSecond(newtonpersecond.YoctonewtonsPerSecond).NewtonsPerSecond, YoctonewtonsPerSecondTolerance);
             AssertEx.EqualTolerance(1, ForceChangeRate.FromYottanewtonsPerMinute(newtonpersecond.YottanewtonsPerMinute).NewtonsPerSecond, YottanewtonsPerMinuteTolerance);
             AssertEx.EqualTolerance(1, ForceChangeRate.FromYottanewtonsPerSecond(newtonpersecond.YottanewtonsPerSecond).NewtonsPerSecond, YottanewtonsPerSecondTolerance);
-            AssertEx.EqualTolerance(1, ForceChangeRate.FromZeptonewtonsPerMinute(newtonpersecond.ZeptonewtonsPerMinute).NewtonsPerSecond, ZeptonewtonsPerMinuteTolerance);
-            AssertEx.EqualTolerance(1, ForceChangeRate.FromZeptonewtonsPerSecond(newtonpersecond.ZeptonewtonsPerSecond).NewtonsPerSecond, ZeptonewtonsPerSecondTolerance);
             AssertEx.EqualTolerance(1, ForceChangeRate.FromZettanewtonsPerMinute(newtonpersecond.ZettanewtonsPerMinute).NewtonsPerSecond, ZettanewtonsPerMinuteTolerance);
             AssertEx.EqualTolerance(1, ForceChangeRate.FromZettanewtonsPerSecond(newtonpersecond.ZettanewtonsPerSecond).NewtonsPerSecond, ZettanewtonsPerSecondTolerance);
         }

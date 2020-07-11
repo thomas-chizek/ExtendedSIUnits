@@ -27,8 +27,27 @@ namespace UnitsNet.Tests.CustomCode
 {
     public class RotationalStiffnessTests : RotationalStiffnessTestsBase
     {
+        protected override double FemtonewtonMetersPerRadianInOneNewtonMeterPerRadian => 1e15;
+        protected override double PiconewtonMetersPerRadianInOneNewtonMeterPerRadian => 1e12;
+        protected override double NanonewtonMetersPerRadianInOneNewtonMeterPerRadian => 1e9;
+        protected override double MicronewtonMetersPerRadianInOneNewtonMeterPerRadian => 1e6;
+        protected override double MillinewtonMetersPerRadianInOneNewtonMeterPerRadian => 1e3;
+        protected override double CentinewtonMetersPerRadianInOneNewtonMeterPerRadian => 1e2;
+        protected override double DecinewtonMetersPerRadianInOneNewtonMeterPerRadian => 10;
         protected override double NewtonMetersPerRadianInOneNewtonMeterPerRadian => 1;
-        protected override double MeganewtonMetersPerRadianInOneNewtonMeterPerRadian => 1e-6;
+        protected override double DecanewtonMetersPerRadianInOneNewtonMeterPerRadian => 0.1;
+        protected override double HectonewtonMetersPerRadianInOneNewtonMeterPerRadian => 1e-2;
         protected override double KilonewtonMetersPerRadianInOneNewtonMeterPerRadian => 1e-3;
+        protected override double MeganewtonMetersPerRadianInOneNewtonMeterPerRadian => 1e-6;
+        protected override double GiganewtonMetersPerRadianInOneNewtonMeterPerRadian => 1e-9;
+        protected override double TeranewtonMetersPerRadianInOneNewtonMeterPerRadian => 1e-12;
+        protected override double PetanewtonMetersPerRadianInOneNewtonMeterPerRadian => 1e-15;
+        protected override double ExanewtonMetersPerRadianInOneNewtonMeterPerRadian => 1e-18;
+        protected override double ZettanewtonMetersPerRadianInOneNewtonMeterPerRadian => 1e-21;
+        protected override double YottanewtonMetersPerRadianInOneNewtonMeterPerRadian => 1e-24;
+        protected override double QutranewtonMetersPerRadianInOneNewtonMeterPerRadian => 1e-27;
+        protected override double VettanewtonMetersPerRadianInOneNewtonMeterPerRadian => 1e-30;
+
+
     }
 }

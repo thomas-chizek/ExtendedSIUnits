@@ -165,6 +165,19 @@ namespace UnitsNet
         {
             return new Pressure(length.Meters * specificWeight.NewtonsPerCubicMeter, PressureUnit.Pascal);
         }
+
+        /// <summary>Get <see cref="Pressure"/> from <see cref="Length"/> times <see cref="SpecificWeight"/>.</summary>
+        public static Length Abs(Length length)
+        {
+            return new Length(length.Value, length.Unit);
+        }
+
+
+        /// <summary>
+        ///     Gets an instance of this quantity with a value of 1 in the base unit Meter.
+        /// </summary>
+        public static Length One { get; } = new Length(1,LengthUnit.Meter);
+
     }
 
     /// <summary>

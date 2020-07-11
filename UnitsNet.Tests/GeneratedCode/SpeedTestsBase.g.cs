@@ -34,9 +34,6 @@ namespace UnitsNet.Tests
 // ReSharper disable once PartialTypeWithSinglePart
     public abstract partial class SpeedTestsBase
     {
-        protected abstract double AttometersPerHourInOneMeterPerSecond { get; }
-        protected abstract double AttometersPerMinutesInOneMeterPerSecond { get; }
-        protected abstract double AttometersPerSecondInOneMeterPerSecond { get; }
         protected abstract double CentimetersPerHourInOneMeterPerSecond { get; }
         protected abstract double CentimetersPerMinutesInOneMeterPerSecond { get; }
         protected abstract double CentimetersPerSecondInOneMeterPerSecond { get; }
@@ -105,23 +102,14 @@ namespace UnitsNet.Tests
         protected abstract double YardsPerHourInOneMeterPerSecond { get; }
         protected abstract double YardsPerMinuteInOneMeterPerSecond { get; }
         protected abstract double YardsPerSecondInOneMeterPerSecond { get; }
-        protected abstract double YoctometersPerHourInOneMeterPerSecond { get; }
-        protected abstract double YoctometersPerMinutesInOneMeterPerSecond { get; }
-        protected abstract double YoctometersPerSecondInOneMeterPerSecond { get; }
         protected abstract double YottametersPerHourInOneMeterPerSecond { get; }
         protected abstract double YottametersPerMinutesInOneMeterPerSecond { get; }
         protected abstract double YottametersPerSecondInOneMeterPerSecond { get; }
-        protected abstract double ZeptometersPerHourInOneMeterPerSecond { get; }
-        protected abstract double ZeptometersPerMinutesInOneMeterPerSecond { get; }
-        protected abstract double ZeptometersPerSecondInOneMeterPerSecond { get; }
         protected abstract double ZettametersPerHourInOneMeterPerSecond { get; }
         protected abstract double ZettametersPerMinutesInOneMeterPerSecond { get; }
         protected abstract double ZettametersPerSecondInOneMeterPerSecond { get; }
 
 // ReSharper disable VirtualMemberNeverOverriden.Global
-        protected virtual double AttometersPerHourTolerance { get { return 1e-5; } }
-        protected virtual double AttometersPerMinutesTolerance { get { return 1e-5; } }
-        protected virtual double AttometersPerSecondTolerance { get { return 1e-5; } }
         protected virtual double CentimetersPerHourTolerance { get { return 1e-5; } }
         protected virtual double CentimetersPerMinutesTolerance { get { return 1e-5; } }
         protected virtual double CentimetersPerSecondTolerance { get { return 1e-5; } }
@@ -190,15 +178,9 @@ namespace UnitsNet.Tests
         protected virtual double YardsPerHourTolerance { get { return 1e-5; } }
         protected virtual double YardsPerMinuteTolerance { get { return 1e-5; } }
         protected virtual double YardsPerSecondTolerance { get { return 1e-5; } }
-        protected virtual double YoctometersPerHourTolerance { get { return 1e-5; } }
-        protected virtual double YoctometersPerMinutesTolerance { get { return 1e-5; } }
-        protected virtual double YoctometersPerSecondTolerance { get { return 1e-5; } }
         protected virtual double YottametersPerHourTolerance { get { return 1e-5; } }
         protected virtual double YottametersPerMinutesTolerance { get { return 1e-5; } }
         protected virtual double YottametersPerSecondTolerance { get { return 1e-5; } }
-        protected virtual double ZeptometersPerHourTolerance { get { return 1e-5; } }
-        protected virtual double ZeptometersPerMinutesTolerance { get { return 1e-5; } }
-        protected virtual double ZeptometersPerSecondTolerance { get { return 1e-5; } }
         protected virtual double ZettametersPerHourTolerance { get { return 1e-5; } }
         protected virtual double ZettametersPerMinutesTolerance { get { return 1e-5; } }
         protected virtual double ZettametersPerSecondTolerance { get { return 1e-5; } }
@@ -227,9 +209,6 @@ namespace UnitsNet.Tests
         public void MeterPerSecondToSpeedUnits()
         {
             Speed meterpersecond = Speed.FromMetersPerSecond(1);
-            AssertEx.EqualTolerance(AttometersPerHourInOneMeterPerSecond, meterpersecond.AttometersPerHour, AttometersPerHourTolerance);
-            AssertEx.EqualTolerance(AttometersPerMinutesInOneMeterPerSecond, meterpersecond.AttometersPerMinutes, AttometersPerMinutesTolerance);
-            AssertEx.EqualTolerance(AttometersPerSecondInOneMeterPerSecond, meterpersecond.AttometersPerSecond, AttometersPerSecondTolerance);
             AssertEx.EqualTolerance(CentimetersPerHourInOneMeterPerSecond, meterpersecond.CentimetersPerHour, CentimetersPerHourTolerance);
             AssertEx.EqualTolerance(CentimetersPerMinutesInOneMeterPerSecond, meterpersecond.CentimetersPerMinutes, CentimetersPerMinutesTolerance);
             AssertEx.EqualTolerance(CentimetersPerSecondInOneMeterPerSecond, meterpersecond.CentimetersPerSecond, CentimetersPerSecondTolerance);
@@ -298,15 +277,9 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(YardsPerHourInOneMeterPerSecond, meterpersecond.YardsPerHour, YardsPerHourTolerance);
             AssertEx.EqualTolerance(YardsPerMinuteInOneMeterPerSecond, meterpersecond.YardsPerMinute, YardsPerMinuteTolerance);
             AssertEx.EqualTolerance(YardsPerSecondInOneMeterPerSecond, meterpersecond.YardsPerSecond, YardsPerSecondTolerance);
-            AssertEx.EqualTolerance(YoctometersPerHourInOneMeterPerSecond, meterpersecond.YoctometersPerHour, YoctometersPerHourTolerance);
-            AssertEx.EqualTolerance(YoctometersPerMinutesInOneMeterPerSecond, meterpersecond.YoctometersPerMinutes, YoctometersPerMinutesTolerance);
-            AssertEx.EqualTolerance(YoctometersPerSecondInOneMeterPerSecond, meterpersecond.YoctometersPerSecond, YoctometersPerSecondTolerance);
             AssertEx.EqualTolerance(YottametersPerHourInOneMeterPerSecond, meterpersecond.YottametersPerHour, YottametersPerHourTolerance);
             AssertEx.EqualTolerance(YottametersPerMinutesInOneMeterPerSecond, meterpersecond.YottametersPerMinutes, YottametersPerMinutesTolerance);
             AssertEx.EqualTolerance(YottametersPerSecondInOneMeterPerSecond, meterpersecond.YottametersPerSecond, YottametersPerSecondTolerance);
-            AssertEx.EqualTolerance(ZeptometersPerHourInOneMeterPerSecond, meterpersecond.ZeptometersPerHour, ZeptometersPerHourTolerance);
-            AssertEx.EqualTolerance(ZeptometersPerMinutesInOneMeterPerSecond, meterpersecond.ZeptometersPerMinutes, ZeptometersPerMinutesTolerance);
-            AssertEx.EqualTolerance(ZeptometersPerSecondInOneMeterPerSecond, meterpersecond.ZeptometersPerSecond, ZeptometersPerSecondTolerance);
             AssertEx.EqualTolerance(ZettametersPerHourInOneMeterPerSecond, meterpersecond.ZettametersPerHour, ZettametersPerHourTolerance);
             AssertEx.EqualTolerance(ZettametersPerMinutesInOneMeterPerSecond, meterpersecond.ZettametersPerMinutes, ZettametersPerMinutesTolerance);
             AssertEx.EqualTolerance(ZettametersPerSecondInOneMeterPerSecond, meterpersecond.ZettametersPerSecond, ZettametersPerSecondTolerance);
@@ -315,9 +288,6 @@ namespace UnitsNet.Tests
         [Fact]
         public void FromValueAndUnit()
         {
-            AssertEx.EqualTolerance(1, Speed.From(1, SpeedUnit.AttometerPerHour).AttometersPerHour, AttometersPerHourTolerance);
-            AssertEx.EqualTolerance(1, Speed.From(1, SpeedUnit.AttometerPerMinute).AttometersPerMinutes, AttometersPerMinutesTolerance);
-            AssertEx.EqualTolerance(1, Speed.From(1, SpeedUnit.AttometerPerSecond).AttometersPerSecond, AttometersPerSecondTolerance);
             AssertEx.EqualTolerance(1, Speed.From(1, SpeedUnit.CentimeterPerHour).CentimetersPerHour, CentimetersPerHourTolerance);
             AssertEx.EqualTolerance(1, Speed.From(1, SpeedUnit.CentimeterPerMinute).CentimetersPerMinutes, CentimetersPerMinutesTolerance);
             AssertEx.EqualTolerance(1, Speed.From(1, SpeedUnit.CentimeterPerSecond).CentimetersPerSecond, CentimetersPerSecondTolerance);
@@ -386,15 +356,9 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, Speed.From(1, SpeedUnit.YardPerHour).YardsPerHour, YardsPerHourTolerance);
             AssertEx.EqualTolerance(1, Speed.From(1, SpeedUnit.YardPerMinute).YardsPerMinute, YardsPerMinuteTolerance);
             AssertEx.EqualTolerance(1, Speed.From(1, SpeedUnit.YardPerSecond).YardsPerSecond, YardsPerSecondTolerance);
-            AssertEx.EqualTolerance(1, Speed.From(1, SpeedUnit.YoctometerPerHour).YoctometersPerHour, YoctometersPerHourTolerance);
-            AssertEx.EqualTolerance(1, Speed.From(1, SpeedUnit.YoctometerPerMinute).YoctometersPerMinutes, YoctometersPerMinutesTolerance);
-            AssertEx.EqualTolerance(1, Speed.From(1, SpeedUnit.YoctometerPerSecond).YoctometersPerSecond, YoctometersPerSecondTolerance);
             AssertEx.EqualTolerance(1, Speed.From(1, SpeedUnit.YottameterPerHour).YottametersPerHour, YottametersPerHourTolerance);
             AssertEx.EqualTolerance(1, Speed.From(1, SpeedUnit.YottameterPerMinute).YottametersPerMinutes, YottametersPerMinutesTolerance);
             AssertEx.EqualTolerance(1, Speed.From(1, SpeedUnit.YottameterPerSecond).YottametersPerSecond, YottametersPerSecondTolerance);
-            AssertEx.EqualTolerance(1, Speed.From(1, SpeedUnit.ZeptometerPerHour).ZeptometersPerHour, ZeptometersPerHourTolerance);
-            AssertEx.EqualTolerance(1, Speed.From(1, SpeedUnit.ZeptometerPerMinute).ZeptometersPerMinutes, ZeptometersPerMinutesTolerance);
-            AssertEx.EqualTolerance(1, Speed.From(1, SpeedUnit.ZeptometerPerSecond).ZeptometersPerSecond, ZeptometersPerSecondTolerance);
             AssertEx.EqualTolerance(1, Speed.From(1, SpeedUnit.ZettameterPerHour).ZettametersPerHour, ZettametersPerHourTolerance);
             AssertEx.EqualTolerance(1, Speed.From(1, SpeedUnit.ZettameterPerMinute).ZettametersPerMinutes, ZettametersPerMinutesTolerance);
             AssertEx.EqualTolerance(1, Speed.From(1, SpeedUnit.ZettameterPerSecond).ZettametersPerSecond, ZettametersPerSecondTolerance);
@@ -417,9 +381,6 @@ namespace UnitsNet.Tests
         public void As()
         {
             var meterpersecond = Speed.FromMetersPerSecond(1);
-            AssertEx.EqualTolerance(AttometersPerHourInOneMeterPerSecond, meterpersecond.As(SpeedUnit.AttometerPerHour), AttometersPerHourTolerance);
-            AssertEx.EqualTolerance(AttometersPerMinutesInOneMeterPerSecond, meterpersecond.As(SpeedUnit.AttometerPerMinute), AttometersPerMinutesTolerance);
-            AssertEx.EqualTolerance(AttometersPerSecondInOneMeterPerSecond, meterpersecond.As(SpeedUnit.AttometerPerSecond), AttometersPerSecondTolerance);
             AssertEx.EqualTolerance(CentimetersPerHourInOneMeterPerSecond, meterpersecond.As(SpeedUnit.CentimeterPerHour), CentimetersPerHourTolerance);
             AssertEx.EqualTolerance(CentimetersPerMinutesInOneMeterPerSecond, meterpersecond.As(SpeedUnit.CentimeterPerMinute), CentimetersPerMinutesTolerance);
             AssertEx.EqualTolerance(CentimetersPerSecondInOneMeterPerSecond, meterpersecond.As(SpeedUnit.CentimeterPerSecond), CentimetersPerSecondTolerance);
@@ -488,15 +449,9 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(YardsPerHourInOneMeterPerSecond, meterpersecond.As(SpeedUnit.YardPerHour), YardsPerHourTolerance);
             AssertEx.EqualTolerance(YardsPerMinuteInOneMeterPerSecond, meterpersecond.As(SpeedUnit.YardPerMinute), YardsPerMinuteTolerance);
             AssertEx.EqualTolerance(YardsPerSecondInOneMeterPerSecond, meterpersecond.As(SpeedUnit.YardPerSecond), YardsPerSecondTolerance);
-            AssertEx.EqualTolerance(YoctometersPerHourInOneMeterPerSecond, meterpersecond.As(SpeedUnit.YoctometerPerHour), YoctometersPerHourTolerance);
-            AssertEx.EqualTolerance(YoctometersPerMinutesInOneMeterPerSecond, meterpersecond.As(SpeedUnit.YoctometerPerMinute), YoctometersPerMinutesTolerance);
-            AssertEx.EqualTolerance(YoctometersPerSecondInOneMeterPerSecond, meterpersecond.As(SpeedUnit.YoctometerPerSecond), YoctometersPerSecondTolerance);
             AssertEx.EqualTolerance(YottametersPerHourInOneMeterPerSecond, meterpersecond.As(SpeedUnit.YottameterPerHour), YottametersPerHourTolerance);
             AssertEx.EqualTolerance(YottametersPerMinutesInOneMeterPerSecond, meterpersecond.As(SpeedUnit.YottameterPerMinute), YottametersPerMinutesTolerance);
             AssertEx.EqualTolerance(YottametersPerSecondInOneMeterPerSecond, meterpersecond.As(SpeedUnit.YottameterPerSecond), YottametersPerSecondTolerance);
-            AssertEx.EqualTolerance(ZeptometersPerHourInOneMeterPerSecond, meterpersecond.As(SpeedUnit.ZeptometerPerHour), ZeptometersPerHourTolerance);
-            AssertEx.EqualTolerance(ZeptometersPerMinutesInOneMeterPerSecond, meterpersecond.As(SpeedUnit.ZeptometerPerMinute), ZeptometersPerMinutesTolerance);
-            AssertEx.EqualTolerance(ZeptometersPerSecondInOneMeterPerSecond, meterpersecond.As(SpeedUnit.ZeptometerPerSecond), ZeptometersPerSecondTolerance);
             AssertEx.EqualTolerance(ZettametersPerHourInOneMeterPerSecond, meterpersecond.As(SpeedUnit.ZettameterPerHour), ZettametersPerHourTolerance);
             AssertEx.EqualTolerance(ZettametersPerMinutesInOneMeterPerSecond, meterpersecond.As(SpeedUnit.ZettameterPerMinute), ZettametersPerMinutesTolerance);
             AssertEx.EqualTolerance(ZettametersPerSecondInOneMeterPerSecond, meterpersecond.As(SpeedUnit.ZettameterPerSecond), ZettametersPerSecondTolerance);
@@ -506,18 +461,6 @@ namespace UnitsNet.Tests
         public void ToUnit()
         {
             var meterpersecond = Speed.FromMetersPerSecond(1);
-
-            var attometerperhourQuantity = meterpersecond.ToUnit(SpeedUnit.AttometerPerHour);
-            AssertEx.EqualTolerance(AttometersPerHourInOneMeterPerSecond, (double)attometerperhourQuantity.Value, AttometersPerHourTolerance);
-            Assert.Equal(SpeedUnit.AttometerPerHour, attometerperhourQuantity.Unit);
-
-            var attometerperminuteQuantity = meterpersecond.ToUnit(SpeedUnit.AttometerPerMinute);
-            AssertEx.EqualTolerance(AttometersPerMinutesInOneMeterPerSecond, (double)attometerperminuteQuantity.Value, AttometersPerMinutesTolerance);
-            Assert.Equal(SpeedUnit.AttometerPerMinute, attometerperminuteQuantity.Unit);
-
-            var attometerpersecondQuantity = meterpersecond.ToUnit(SpeedUnit.AttometerPerSecond);
-            AssertEx.EqualTolerance(AttometersPerSecondInOneMeterPerSecond, (double)attometerpersecondQuantity.Value, AttometersPerSecondTolerance);
-            Assert.Equal(SpeedUnit.AttometerPerSecond, attometerpersecondQuantity.Unit);
 
             var centimeterperhourQuantity = meterpersecond.ToUnit(SpeedUnit.CentimeterPerHour);
             AssertEx.EqualTolerance(CentimetersPerHourInOneMeterPerSecond, (double)centimeterperhourQuantity.Value, CentimetersPerHourTolerance);
@@ -791,18 +734,6 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(YardsPerSecondInOneMeterPerSecond, (double)yardpersecondQuantity.Value, YardsPerSecondTolerance);
             Assert.Equal(SpeedUnit.YardPerSecond, yardpersecondQuantity.Unit);
 
-            var yoctometerperhourQuantity = meterpersecond.ToUnit(SpeedUnit.YoctometerPerHour);
-            AssertEx.EqualTolerance(YoctometersPerHourInOneMeterPerSecond, (double)yoctometerperhourQuantity.Value, YoctometersPerHourTolerance);
-            Assert.Equal(SpeedUnit.YoctometerPerHour, yoctometerperhourQuantity.Unit);
-
-            var yoctometerperminuteQuantity = meterpersecond.ToUnit(SpeedUnit.YoctometerPerMinute);
-            AssertEx.EqualTolerance(YoctometersPerMinutesInOneMeterPerSecond, (double)yoctometerperminuteQuantity.Value, YoctometersPerMinutesTolerance);
-            Assert.Equal(SpeedUnit.YoctometerPerMinute, yoctometerperminuteQuantity.Unit);
-
-            var yoctometerpersecondQuantity = meterpersecond.ToUnit(SpeedUnit.YoctometerPerSecond);
-            AssertEx.EqualTolerance(YoctometersPerSecondInOneMeterPerSecond, (double)yoctometerpersecondQuantity.Value, YoctometersPerSecondTolerance);
-            Assert.Equal(SpeedUnit.YoctometerPerSecond, yoctometerpersecondQuantity.Unit);
-
             var yottameterperhourQuantity = meterpersecond.ToUnit(SpeedUnit.YottameterPerHour);
             AssertEx.EqualTolerance(YottametersPerHourInOneMeterPerSecond, (double)yottameterperhourQuantity.Value, YottametersPerHourTolerance);
             Assert.Equal(SpeedUnit.YottameterPerHour, yottameterperhourQuantity.Unit);
@@ -814,18 +745,6 @@ namespace UnitsNet.Tests
             var yottameterpersecondQuantity = meterpersecond.ToUnit(SpeedUnit.YottameterPerSecond);
             AssertEx.EqualTolerance(YottametersPerSecondInOneMeterPerSecond, (double)yottameterpersecondQuantity.Value, YottametersPerSecondTolerance);
             Assert.Equal(SpeedUnit.YottameterPerSecond, yottameterpersecondQuantity.Unit);
-
-            var zeptometerperhourQuantity = meterpersecond.ToUnit(SpeedUnit.ZeptometerPerHour);
-            AssertEx.EqualTolerance(ZeptometersPerHourInOneMeterPerSecond, (double)zeptometerperhourQuantity.Value, ZeptometersPerHourTolerance);
-            Assert.Equal(SpeedUnit.ZeptometerPerHour, zeptometerperhourQuantity.Unit);
-
-            var zeptometerperminuteQuantity = meterpersecond.ToUnit(SpeedUnit.ZeptometerPerMinute);
-            AssertEx.EqualTolerance(ZeptometersPerMinutesInOneMeterPerSecond, (double)zeptometerperminuteQuantity.Value, ZeptometersPerMinutesTolerance);
-            Assert.Equal(SpeedUnit.ZeptometerPerMinute, zeptometerperminuteQuantity.Unit);
-
-            var zeptometerpersecondQuantity = meterpersecond.ToUnit(SpeedUnit.ZeptometerPerSecond);
-            AssertEx.EqualTolerance(ZeptometersPerSecondInOneMeterPerSecond, (double)zeptometerpersecondQuantity.Value, ZeptometersPerSecondTolerance);
-            Assert.Equal(SpeedUnit.ZeptometerPerSecond, zeptometerpersecondQuantity.Unit);
 
             var zettameterperhourQuantity = meterpersecond.ToUnit(SpeedUnit.ZettameterPerHour);
             AssertEx.EqualTolerance(ZettametersPerHourInOneMeterPerSecond, (double)zettameterperhourQuantity.Value, ZettametersPerHourTolerance);
@@ -844,9 +763,6 @@ namespace UnitsNet.Tests
         public void ConversionRoundTrip()
         {
             Speed meterpersecond = Speed.FromMetersPerSecond(1);
-            AssertEx.EqualTolerance(1, Speed.FromAttometersPerHour(meterpersecond.AttometersPerHour).MetersPerSecond, AttometersPerHourTolerance);
-            AssertEx.EqualTolerance(1, Speed.FromAttometersPerMinutes(meterpersecond.AttometersPerMinutes).MetersPerSecond, AttometersPerMinutesTolerance);
-            AssertEx.EqualTolerance(1, Speed.FromAttometersPerSecond(meterpersecond.AttometersPerSecond).MetersPerSecond, AttometersPerSecondTolerance);
             AssertEx.EqualTolerance(1, Speed.FromCentimetersPerHour(meterpersecond.CentimetersPerHour).MetersPerSecond, CentimetersPerHourTolerance);
             AssertEx.EqualTolerance(1, Speed.FromCentimetersPerMinutes(meterpersecond.CentimetersPerMinutes).MetersPerSecond, CentimetersPerMinutesTolerance);
             AssertEx.EqualTolerance(1, Speed.FromCentimetersPerSecond(meterpersecond.CentimetersPerSecond).MetersPerSecond, CentimetersPerSecondTolerance);
@@ -915,15 +831,9 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, Speed.FromYardsPerHour(meterpersecond.YardsPerHour).MetersPerSecond, YardsPerHourTolerance);
             AssertEx.EqualTolerance(1, Speed.FromYardsPerMinute(meterpersecond.YardsPerMinute).MetersPerSecond, YardsPerMinuteTolerance);
             AssertEx.EqualTolerance(1, Speed.FromYardsPerSecond(meterpersecond.YardsPerSecond).MetersPerSecond, YardsPerSecondTolerance);
-            AssertEx.EqualTolerance(1, Speed.FromYoctometersPerHour(meterpersecond.YoctometersPerHour).MetersPerSecond, YoctometersPerHourTolerance);
-            AssertEx.EqualTolerance(1, Speed.FromYoctometersPerMinutes(meterpersecond.YoctometersPerMinutes).MetersPerSecond, YoctometersPerMinutesTolerance);
-            AssertEx.EqualTolerance(1, Speed.FromYoctometersPerSecond(meterpersecond.YoctometersPerSecond).MetersPerSecond, YoctometersPerSecondTolerance);
             AssertEx.EqualTolerance(1, Speed.FromYottametersPerHour(meterpersecond.YottametersPerHour).MetersPerSecond, YottametersPerHourTolerance);
             AssertEx.EqualTolerance(1, Speed.FromYottametersPerMinutes(meterpersecond.YottametersPerMinutes).MetersPerSecond, YottametersPerMinutesTolerance);
             AssertEx.EqualTolerance(1, Speed.FromYottametersPerSecond(meterpersecond.YottametersPerSecond).MetersPerSecond, YottametersPerSecondTolerance);
-            AssertEx.EqualTolerance(1, Speed.FromZeptometersPerHour(meterpersecond.ZeptometersPerHour).MetersPerSecond, ZeptometersPerHourTolerance);
-            AssertEx.EqualTolerance(1, Speed.FromZeptometersPerMinutes(meterpersecond.ZeptometersPerMinutes).MetersPerSecond, ZeptometersPerMinutesTolerance);
-            AssertEx.EqualTolerance(1, Speed.FromZeptometersPerSecond(meterpersecond.ZeptometersPerSecond).MetersPerSecond, ZeptometersPerSecondTolerance);
             AssertEx.EqualTolerance(1, Speed.FromZettametersPerHour(meterpersecond.ZettametersPerHour).MetersPerSecond, ZettametersPerHourTolerance);
             AssertEx.EqualTolerance(1, Speed.FromZettametersPerMinutes(meterpersecond.ZettametersPerMinutes).MetersPerSecond, ZettametersPerMinutesTolerance);
             AssertEx.EqualTolerance(1, Speed.FromZettametersPerSecond(meterpersecond.ZettametersPerSecond).MetersPerSecond, ZettametersPerSecondTolerance);

@@ -156,11 +156,6 @@ namespace UnitsNet
         #region Conversion Properties
 
         /// <summary>
-        ///     Get TemperatureChangeRate in AttodegreesCelsiusPerSecond.
-        /// </summary>
-        public double AttodegreesCelsiusPerSecond => As(TemperatureChangeRateUnit.AttodegreeCelsiusPerSecond);
-
-        /// <summary>
         ///     Get TemperatureChangeRate in CentidegreesCelsiusPerSecond.
         /// </summary>
         public double CentidegreesCelsiusPerSecond => As(TemperatureChangeRateUnit.CentidegreeCelsiusPerSecond);
@@ -256,19 +251,9 @@ namespace UnitsNet
         public double VettadegreesCelsiusPerSecond => As(TemperatureChangeRateUnit.VettadegreeCelsiusPerSecond);
 
         /// <summary>
-        ///     Get TemperatureChangeRate in YoctodegreesCelsiusPerSecond.
-        /// </summary>
-        public double YoctodegreesCelsiusPerSecond => As(TemperatureChangeRateUnit.YoctodegreeCelsiusPerSecond);
-
-        /// <summary>
         ///     Get TemperatureChangeRate in YottadegreesCelsiusPerSecond.
         /// </summary>
         public double YottadegreesCelsiusPerSecond => As(TemperatureChangeRateUnit.YottadegreeCelsiusPerSecond);
-
-        /// <summary>
-        ///     Get TemperatureChangeRate in ZeptodegreesCelsiusPerSecond.
-        /// </summary>
-        public double ZeptodegreesCelsiusPerSecond => As(TemperatureChangeRateUnit.ZeptodegreeCelsiusPerSecond);
 
         /// <summary>
         ///     Get TemperatureChangeRate in ZettadegreesCelsiusPerSecond.
@@ -305,16 +290,6 @@ namespace UnitsNet
 
         #region Static Factory Methods
 
-        /// <summary>
-        ///     Get TemperatureChangeRate from AttodegreesCelsiusPerSecond.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static TemperatureChangeRate FromAttodegreesCelsiusPerSecond(double attodegreescelsiuspersecond)
-        {
-            double value = (double) attodegreescelsiuspersecond;
-            return new TemperatureChangeRate(value, TemperatureChangeRateUnit.AttodegreeCelsiusPerSecond);
-        }
         /// <summary>
         ///     Get TemperatureChangeRate from CentidegreesCelsiusPerSecond.
         /// </summary>
@@ -506,16 +481,6 @@ namespace UnitsNet
             return new TemperatureChangeRate(value, TemperatureChangeRateUnit.VettadegreeCelsiusPerSecond);
         }
         /// <summary>
-        ///     Get TemperatureChangeRate from YoctodegreesCelsiusPerSecond.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static TemperatureChangeRate FromYoctodegreesCelsiusPerSecond(double yoctodegreescelsiuspersecond)
-        {
-            double value = (double) yoctodegreescelsiuspersecond;
-            return new TemperatureChangeRate(value, TemperatureChangeRateUnit.YoctodegreeCelsiusPerSecond);
-        }
-        /// <summary>
         ///     Get TemperatureChangeRate from YottadegreesCelsiusPerSecond.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -524,16 +489,6 @@ namespace UnitsNet
         {
             double value = (double) yottadegreescelsiuspersecond;
             return new TemperatureChangeRate(value, TemperatureChangeRateUnit.YottadegreeCelsiusPerSecond);
-        }
-        /// <summary>
-        ///     Get TemperatureChangeRate from ZeptodegreesCelsiusPerSecond.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static TemperatureChangeRate FromZeptodegreesCelsiusPerSecond(double zeptodegreescelsiuspersecond)
-        {
-            double value = (double) zeptodegreescelsiuspersecond;
-            return new TemperatureChangeRate(value, TemperatureChangeRateUnit.ZeptodegreeCelsiusPerSecond);
         }
         /// <summary>
         ///     Get TemperatureChangeRate from ZettadegreesCelsiusPerSecond.
@@ -836,7 +791,6 @@ namespace UnitsNet
         {
             switch(Unit)
             {
-                case TemperatureChangeRateUnit.AttodegreeCelsiusPerSecond: return (_value) * 1e-18d;
                 case TemperatureChangeRateUnit.CentidegreeCelsiusPerSecond: return (_value) * 1e-2d;
                 case TemperatureChangeRateUnit.DecadegreeCelsiusPerSecond: return (_value) * 1e1d;
                 case TemperatureChangeRateUnit.DecidegreeCelsiusPerSecond: return (_value) * 1e-1d;
@@ -856,9 +810,7 @@ namespace UnitsNet
                 case TemperatureChangeRateUnit.QutradegreeCelsiusPerSecond: return (_value) * 1e27d;
                 case TemperatureChangeRateUnit.TeradegreeCelsiusPerSecond: return (_value) * 1e12d;
                 case TemperatureChangeRateUnit.VettadegreeCelsiusPerSecond: return (_value) * 1e30d;
-                case TemperatureChangeRateUnit.YoctodegreeCelsiusPerSecond: return (_value) * 1e-24d;
                 case TemperatureChangeRateUnit.YottadegreeCelsiusPerSecond: return (_value) * 1e24d;
-                case TemperatureChangeRateUnit.ZeptodegreeCelsiusPerSecond: return (_value) * 1e-21d;
                 case TemperatureChangeRateUnit.ZettadegreeCelsiusPerSecond: return (_value) * 1e21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to base units.");
@@ -874,7 +826,6 @@ namespace UnitsNet
 
             switch(unit)
             {
-                case TemperatureChangeRateUnit.AttodegreeCelsiusPerSecond: return (baseUnitValue) / 1e-18d;
                 case TemperatureChangeRateUnit.CentidegreeCelsiusPerSecond: return (baseUnitValue) / 1e-2d;
                 case TemperatureChangeRateUnit.DecadegreeCelsiusPerSecond: return (baseUnitValue) / 1e1d;
                 case TemperatureChangeRateUnit.DecidegreeCelsiusPerSecond: return (baseUnitValue) / 1e-1d;
@@ -894,9 +845,7 @@ namespace UnitsNet
                 case TemperatureChangeRateUnit.QutradegreeCelsiusPerSecond: return (baseUnitValue) / 1e27d;
                 case TemperatureChangeRateUnit.TeradegreeCelsiusPerSecond: return (baseUnitValue) / 1e12d;
                 case TemperatureChangeRateUnit.VettadegreeCelsiusPerSecond: return (baseUnitValue) / 1e30d;
-                case TemperatureChangeRateUnit.YoctodegreeCelsiusPerSecond: return (baseUnitValue) / 1e-24d;
                 case TemperatureChangeRateUnit.YottadegreeCelsiusPerSecond: return (baseUnitValue) / 1e24d;
-                case TemperatureChangeRateUnit.ZeptodegreeCelsiusPerSecond: return (baseUnitValue) / 1e-21d;
                 case TemperatureChangeRateUnit.ZettadegreeCelsiusPerSecond: return (baseUnitValue) / 1e21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to {unit}.");

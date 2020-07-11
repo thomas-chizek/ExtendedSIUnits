@@ -159,11 +159,6 @@ namespace UnitsNet
         #region Conversion Properties
 
         /// <summary>
-        ///     Get Illuminance in Attolux.
-        /// </summary>
-        public double Attolux => As(IlluminanceUnit.Attolux);
-
-        /// <summary>
         ///     Get Illuminance in Centilux.
         /// </summary>
         public double Centilux => As(IlluminanceUnit.Centilux);
@@ -254,19 +249,9 @@ namespace UnitsNet
         public double Vettalux => As(IlluminanceUnit.Vettalux);
 
         /// <summary>
-        ///     Get Illuminance in Yoctolux.
-        /// </summary>
-        public double Yoctolux => As(IlluminanceUnit.Yoctolux);
-
-        /// <summary>
         ///     Get Illuminance in Yottalux.
         /// </summary>
         public double Yottalux => As(IlluminanceUnit.Yottalux);
-
-        /// <summary>
-        ///     Get Illuminance in Zeptolux.
-        /// </summary>
-        public double Zeptolux => As(IlluminanceUnit.Zeptolux);
 
         /// <summary>
         ///     Get Illuminance in Zettalux.
@@ -303,16 +288,6 @@ namespace UnitsNet
 
         #region Static Factory Methods
 
-        /// <summary>
-        ///     Get Illuminance from Attolux.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Illuminance FromAttolux(double attolux)
-        {
-            double value = (double) attolux;
-            return new Illuminance(value, IlluminanceUnit.Attolux);
-        }
         /// <summary>
         ///     Get Illuminance from Centilux.
         /// </summary>
@@ -494,16 +469,6 @@ namespace UnitsNet
             return new Illuminance(value, IlluminanceUnit.Vettalux);
         }
         /// <summary>
-        ///     Get Illuminance from Yoctolux.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Illuminance FromYoctolux(double yoctolux)
-        {
-            double value = (double) yoctolux;
-            return new Illuminance(value, IlluminanceUnit.Yoctolux);
-        }
-        /// <summary>
         ///     Get Illuminance from Yottalux.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -512,16 +477,6 @@ namespace UnitsNet
         {
             double value = (double) yottalux;
             return new Illuminance(value, IlluminanceUnit.Yottalux);
-        }
-        /// <summary>
-        ///     Get Illuminance from Zeptolux.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Illuminance FromZeptolux(double zeptolux)
-        {
-            double value = (double) zeptolux;
-            return new Illuminance(value, IlluminanceUnit.Zeptolux);
         }
         /// <summary>
         ///     Get Illuminance from Zettalux.
@@ -824,7 +779,6 @@ namespace UnitsNet
         {
             switch(Unit)
             {
-                case IlluminanceUnit.Attolux: return (_value) * 1e-18d;
                 case IlluminanceUnit.Centilux: return (_value) * 1e-2d;
                 case IlluminanceUnit.Decalux: return (_value) * 1e1d;
                 case IlluminanceUnit.Decilux: return (_value) * 1e-1d;
@@ -843,9 +797,7 @@ namespace UnitsNet
                 case IlluminanceUnit.Qutralux: return (_value) * 1e27d;
                 case IlluminanceUnit.Teralux: return (_value) * 1e12d;
                 case IlluminanceUnit.Vettalux: return (_value) * 1e30d;
-                case IlluminanceUnit.Yoctolux: return (_value) * 1e-24d;
                 case IlluminanceUnit.Yottalux: return (_value) * 1e24d;
-                case IlluminanceUnit.Zeptolux: return (_value) * 1e-21d;
                 case IlluminanceUnit.Zettalux: return (_value) * 1e21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to base units.");
@@ -861,7 +813,6 @@ namespace UnitsNet
 
             switch(unit)
             {
-                case IlluminanceUnit.Attolux: return (baseUnitValue) / 1e-18d;
                 case IlluminanceUnit.Centilux: return (baseUnitValue) / 1e-2d;
                 case IlluminanceUnit.Decalux: return (baseUnitValue) / 1e1d;
                 case IlluminanceUnit.Decilux: return (baseUnitValue) / 1e-1d;
@@ -880,9 +831,7 @@ namespace UnitsNet
                 case IlluminanceUnit.Qutralux: return (baseUnitValue) / 1e27d;
                 case IlluminanceUnit.Teralux: return (baseUnitValue) / 1e12d;
                 case IlluminanceUnit.Vettalux: return (baseUnitValue) / 1e30d;
-                case IlluminanceUnit.Yoctolux: return (baseUnitValue) / 1e-24d;
                 case IlluminanceUnit.Yottalux: return (baseUnitValue) / 1e24d;
-                case IlluminanceUnit.Zeptolux: return (baseUnitValue) / 1e-21d;
                 case IlluminanceUnit.Zettalux: return (baseUnitValue) / 1e21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to {unit}.");

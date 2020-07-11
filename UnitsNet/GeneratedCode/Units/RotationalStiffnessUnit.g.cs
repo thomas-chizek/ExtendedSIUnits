@@ -26,7 +26,6 @@ namespace UnitsNet.Units
     public enum RotationalStiffnessUnit
     {
         Undefined = 0,
-        AttonewtonMeterPerRadian,
         CentinewtonMeterPerRadian,
         DecanewtonMeterPerRadian,
         DecinewtonMeterPerRadian,
@@ -45,9 +44,7 @@ namespace UnitsNet.Units
         QutranewtonMeterPerRadian,
         TeranewtonMeterPerRadian,
         VettanewtonMeterPerRadian,
-        YoctonewtonMeterPerRadian,
         YottanewtonMeterPerRadian,
-        ZeptonewtonMeterPerRadian,
         ZettanewtonMeterPerRadian,
     }
 

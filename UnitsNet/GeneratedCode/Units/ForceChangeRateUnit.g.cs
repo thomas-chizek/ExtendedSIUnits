@@ -26,8 +26,6 @@ namespace UnitsNet.Units
     public enum ForceChangeRateUnit
     {
         Undefined = 0,
-        AttonewtonPerMinute,
-        AttonewtonPerSecond,
         CentinewtonPerMinute,
         CentinewtonPerSecond,
         DecanewtonPerMinute,
@@ -64,12 +62,8 @@ namespace UnitsNet.Units
         TeranewtonPerSecond,
         VettanewtonPerMinute,
         VettanewtonPerSecond,
-        YoctonewtonPerMinute,
-        YoctonewtonPerSecond,
         YottanewtonPerMinute,
         YottanewtonPerSecond,
-        ZeptonewtonPerMinute,
-        ZeptonewtonPerSecond,
         ZettanewtonPerMinute,
         ZettanewtonPerSecond,
     }

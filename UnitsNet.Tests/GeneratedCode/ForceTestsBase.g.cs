@@ -34,7 +34,6 @@ namespace UnitsNet.Tests
 // ReSharper disable once PartialTypeWithSinglePart
     public abstract partial class ForceTestsBase
     {
-        protected abstract double AttonewtonsInOneNewton { get; }
         protected abstract double CentinewtonsInOneNewton { get; }
         protected abstract double DecanewtonsInOneNewton { get; }
         protected abstract double DecinewtonsInOneNewton { get; }
@@ -60,13 +59,10 @@ namespace UnitsNet.Tests
         protected abstract double TeranewtonsInOneNewton { get; }
         protected abstract double TonnesForceInOneNewton { get; }
         protected abstract double VettanewtonsInOneNewton { get; }
-        protected abstract double YoctonewtonsInOneNewton { get; }
         protected abstract double YottanewtonsInOneNewton { get; }
-        protected abstract double ZeptonewtonsInOneNewton { get; }
         protected abstract double ZettanewtonsInOneNewton { get; }
 
 // ReSharper disable VirtualMemberNeverOverriden.Global
-        protected virtual double AttonewtonsTolerance { get { return 1e-5; } }
         protected virtual double CentinewtonsTolerance { get { return 1e-5; } }
         protected virtual double DecanewtonsTolerance { get { return 1e-5; } }
         protected virtual double DecinewtonsTolerance { get { return 1e-5; } }
@@ -92,9 +88,7 @@ namespace UnitsNet.Tests
         protected virtual double TeranewtonsTolerance { get { return 1e-5; } }
         protected virtual double TonnesForceTolerance { get { return 1e-5; } }
         protected virtual double VettanewtonsTolerance { get { return 1e-5; } }
-        protected virtual double YoctonewtonsTolerance { get { return 1e-5; } }
         protected virtual double YottanewtonsTolerance { get { return 1e-5; } }
-        protected virtual double ZeptonewtonsTolerance { get { return 1e-5; } }
         protected virtual double ZettanewtonsTolerance { get { return 1e-5; } }
 // ReSharper restore VirtualMemberNeverOverriden.Global
 
@@ -121,7 +115,6 @@ namespace UnitsNet.Tests
         public void NewtonToForceUnits()
         {
             Force newton = Force.FromNewtons(1);
-            AssertEx.EqualTolerance(AttonewtonsInOneNewton, newton.Attonewtons, AttonewtonsTolerance);
             AssertEx.EqualTolerance(CentinewtonsInOneNewton, newton.Centinewtons, CentinewtonsTolerance);
             AssertEx.EqualTolerance(DecanewtonsInOneNewton, newton.Decanewtons, DecanewtonsTolerance);
             AssertEx.EqualTolerance(DecinewtonsInOneNewton, newton.Decinewtons, DecinewtonsTolerance);
@@ -147,16 +140,13 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(TeranewtonsInOneNewton, newton.Teranewtons, TeranewtonsTolerance);
             AssertEx.EqualTolerance(TonnesForceInOneNewton, newton.TonnesForce, TonnesForceTolerance);
             AssertEx.EqualTolerance(VettanewtonsInOneNewton, newton.Vettanewtons, VettanewtonsTolerance);
-            AssertEx.EqualTolerance(YoctonewtonsInOneNewton, newton.Yoctonewtons, YoctonewtonsTolerance);
             AssertEx.EqualTolerance(YottanewtonsInOneNewton, newton.Yottanewtons, YottanewtonsTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonsInOneNewton, newton.Zeptonewtons, ZeptonewtonsTolerance);
             AssertEx.EqualTolerance(ZettanewtonsInOneNewton, newton.Zettanewtons, ZettanewtonsTolerance);
         }
 
         [Fact]
         public void FromValueAndUnit()
         {
-            AssertEx.EqualTolerance(1, Force.From(1, ForceUnit.Attonewton).Attonewtons, AttonewtonsTolerance);
             AssertEx.EqualTolerance(1, Force.From(1, ForceUnit.Centinewton).Centinewtons, CentinewtonsTolerance);
             AssertEx.EqualTolerance(1, Force.From(1, ForceUnit.Decanewton).Decanewtons, DecanewtonsTolerance);
             AssertEx.EqualTolerance(1, Force.From(1, ForceUnit.Decinewton).Decinewtons, DecinewtonsTolerance);
@@ -182,9 +172,7 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, Force.From(1, ForceUnit.Teranewton).Teranewtons, TeranewtonsTolerance);
             AssertEx.EqualTolerance(1, Force.From(1, ForceUnit.TonneForce).TonnesForce, TonnesForceTolerance);
             AssertEx.EqualTolerance(1, Force.From(1, ForceUnit.Vettanewton).Vettanewtons, VettanewtonsTolerance);
-            AssertEx.EqualTolerance(1, Force.From(1, ForceUnit.Yoctonewton).Yoctonewtons, YoctonewtonsTolerance);
             AssertEx.EqualTolerance(1, Force.From(1, ForceUnit.Yottanewton).Yottanewtons, YottanewtonsTolerance);
-            AssertEx.EqualTolerance(1, Force.From(1, ForceUnit.Zeptonewton).Zeptonewtons, ZeptonewtonsTolerance);
             AssertEx.EqualTolerance(1, Force.From(1, ForceUnit.Zettanewton).Zettanewtons, ZettanewtonsTolerance);
         }
 
@@ -205,7 +193,6 @@ namespace UnitsNet.Tests
         public void As()
         {
             var newton = Force.FromNewtons(1);
-            AssertEx.EqualTolerance(AttonewtonsInOneNewton, newton.As(ForceUnit.Attonewton), AttonewtonsTolerance);
             AssertEx.EqualTolerance(CentinewtonsInOneNewton, newton.As(ForceUnit.Centinewton), CentinewtonsTolerance);
             AssertEx.EqualTolerance(DecanewtonsInOneNewton, newton.As(ForceUnit.Decanewton), DecanewtonsTolerance);
             AssertEx.EqualTolerance(DecinewtonsInOneNewton, newton.As(ForceUnit.Decinewton), DecinewtonsTolerance);
@@ -231,9 +218,7 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(TeranewtonsInOneNewton, newton.As(ForceUnit.Teranewton), TeranewtonsTolerance);
             AssertEx.EqualTolerance(TonnesForceInOneNewton, newton.As(ForceUnit.TonneForce), TonnesForceTolerance);
             AssertEx.EqualTolerance(VettanewtonsInOneNewton, newton.As(ForceUnit.Vettanewton), VettanewtonsTolerance);
-            AssertEx.EqualTolerance(YoctonewtonsInOneNewton, newton.As(ForceUnit.Yoctonewton), YoctonewtonsTolerance);
             AssertEx.EqualTolerance(YottanewtonsInOneNewton, newton.As(ForceUnit.Yottanewton), YottanewtonsTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonsInOneNewton, newton.As(ForceUnit.Zeptonewton), ZeptonewtonsTolerance);
             AssertEx.EqualTolerance(ZettanewtonsInOneNewton, newton.As(ForceUnit.Zettanewton), ZettanewtonsTolerance);
         }
 
@@ -241,10 +226,6 @@ namespace UnitsNet.Tests
         public void ToUnit()
         {
             var newton = Force.FromNewtons(1);
-
-            var attonewtonQuantity = newton.ToUnit(ForceUnit.Attonewton);
-            AssertEx.EqualTolerance(AttonewtonsInOneNewton, (double)attonewtonQuantity.Value, AttonewtonsTolerance);
-            Assert.Equal(ForceUnit.Attonewton, attonewtonQuantity.Unit);
 
             var centinewtonQuantity = newton.ToUnit(ForceUnit.Centinewton);
             AssertEx.EqualTolerance(CentinewtonsInOneNewton, (double)centinewtonQuantity.Value, CentinewtonsTolerance);
@@ -346,17 +327,9 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettanewtonsInOneNewton, (double)vettanewtonQuantity.Value, VettanewtonsTolerance);
             Assert.Equal(ForceUnit.Vettanewton, vettanewtonQuantity.Unit);
 
-            var yoctonewtonQuantity = newton.ToUnit(ForceUnit.Yoctonewton);
-            AssertEx.EqualTolerance(YoctonewtonsInOneNewton, (double)yoctonewtonQuantity.Value, YoctonewtonsTolerance);
-            Assert.Equal(ForceUnit.Yoctonewton, yoctonewtonQuantity.Unit);
-
             var yottanewtonQuantity = newton.ToUnit(ForceUnit.Yottanewton);
             AssertEx.EqualTolerance(YottanewtonsInOneNewton, (double)yottanewtonQuantity.Value, YottanewtonsTolerance);
             Assert.Equal(ForceUnit.Yottanewton, yottanewtonQuantity.Unit);
-
-            var zeptonewtonQuantity = newton.ToUnit(ForceUnit.Zeptonewton);
-            AssertEx.EqualTolerance(ZeptonewtonsInOneNewton, (double)zeptonewtonQuantity.Value, ZeptonewtonsTolerance);
-            Assert.Equal(ForceUnit.Zeptonewton, zeptonewtonQuantity.Unit);
 
             var zettanewtonQuantity = newton.ToUnit(ForceUnit.Zettanewton);
             AssertEx.EqualTolerance(ZettanewtonsInOneNewton, (double)zettanewtonQuantity.Value, ZettanewtonsTolerance);
@@ -367,7 +340,6 @@ namespace UnitsNet.Tests
         public void ConversionRoundTrip()
         {
             Force newton = Force.FromNewtons(1);
-            AssertEx.EqualTolerance(1, Force.FromAttonewtons(newton.Attonewtons).Newtons, AttonewtonsTolerance);
             AssertEx.EqualTolerance(1, Force.FromCentinewtons(newton.Centinewtons).Newtons, CentinewtonsTolerance);
             AssertEx.EqualTolerance(1, Force.FromDecanewtons(newton.Decanewtons).Newtons, DecanewtonsTolerance);
             AssertEx.EqualTolerance(1, Force.FromDecinewtons(newton.Decinewtons).Newtons, DecinewtonsTolerance);
@@ -393,9 +365,7 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, Force.FromTeranewtons(newton.Teranewtons).Newtons, TeranewtonsTolerance);
             AssertEx.EqualTolerance(1, Force.FromTonnesForce(newton.TonnesForce).Newtons, TonnesForceTolerance);
             AssertEx.EqualTolerance(1, Force.FromVettanewtons(newton.Vettanewtons).Newtons, VettanewtonsTolerance);
-            AssertEx.EqualTolerance(1, Force.FromYoctonewtons(newton.Yoctonewtons).Newtons, YoctonewtonsTolerance);
             AssertEx.EqualTolerance(1, Force.FromYottanewtons(newton.Yottanewtons).Newtons, YottanewtonsTolerance);
-            AssertEx.EqualTolerance(1, Force.FromZeptonewtons(newton.Zeptonewtons).Newtons, ZeptonewtonsTolerance);
             AssertEx.EqualTolerance(1, Force.FromZettanewtons(newton.Zettanewtons).Newtons, ZettanewtonsTolerance);
         }
 

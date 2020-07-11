@@ -81,5 +81,20 @@ namespace UnitsNet
             double resultInUnit = As(unit) / divisor;
             return From(resultInUnit, unit);
         }
+
+        /// <summary>
+        ///     Gets an instance of this quantity with a value of 1 in the base unit Kelvin.
+        /// </summary>
+        public static Temperature One { get; } = new Temperature(1, TemperatureUnit.Kelvin);
+
+        /// <summary>
+        ///     Gets an instance of this quantity with a value of 0 in Celsius.
+        /// </summary>
+        public static Temperature ZeroC { get; } = new Temperature(0, TemperatureUnit.DegreeCelsius);
+
+        /// <summary>
+        ///     Gets an instance of this quantity with a value of 1 in Celsius.
+        /// </summary>
+        public static Temperature OneC { get; } = new Temperature(1, TemperatureUnit.DegreeCelsius);
     }
 }

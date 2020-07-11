@@ -156,16 +156,6 @@ namespace UnitsNet
         #region Conversion Properties
 
         /// <summary>
-        ///     Get RotationalSpeed in AttodegreesPerSecond.
-        /// </summary>
-        public double AttodegreesPerSecond => As(RotationalSpeedUnit.AttodegreePerSecond);
-
-        /// <summary>
-        ///     Get RotationalSpeed in AttoradiansPerSecond.
-        /// </summary>
-        public double AttoradiansPerSecond => As(RotationalSpeedUnit.AttoradianPerSecond);
-
-        /// <summary>
         ///     Get RotationalSpeed in CentidegreesPerSecond.
         /// </summary>
         public double CentidegreesPerSecond => As(RotationalSpeedUnit.CentidegreePerSecond);
@@ -361,16 +351,6 @@ namespace UnitsNet
         public double VettaradiansPerSecond => As(RotationalSpeedUnit.VettaradianPerSecond);
 
         /// <summary>
-        ///     Get RotationalSpeed in YoctodegreesPerSecond.
-        /// </summary>
-        public double YoctodegreesPerSecond => As(RotationalSpeedUnit.YoctodegreePerSecond);
-
-        /// <summary>
-        ///     Get RotationalSpeed in YoctoradiansPerSecond.
-        /// </summary>
-        public double YoctoradiansPerSecond => As(RotationalSpeedUnit.YoctoradianPerSecond);
-
-        /// <summary>
         ///     Get RotationalSpeed in YottadegreesPerSecond.
         /// </summary>
         public double YottadegreesPerSecond => As(RotationalSpeedUnit.YottadegreePerSecond);
@@ -379,16 +359,6 @@ namespace UnitsNet
         ///     Get RotationalSpeed in YottaradiansPerSecond.
         /// </summary>
         public double YottaradiansPerSecond => As(RotationalSpeedUnit.YottaradianPerSecond);
-
-        /// <summary>
-        ///     Get RotationalSpeed in ZeptodegreesPerSecond.
-        /// </summary>
-        public double ZeptodegreesPerSecond => As(RotationalSpeedUnit.ZeptodegreePerSecond);
-
-        /// <summary>
-        ///     Get RotationalSpeed in ZeptoradiansPerSecond.
-        /// </summary>
-        public double ZeptoradiansPerSecond => As(RotationalSpeedUnit.ZeptoradianPerSecond);
 
         /// <summary>
         ///     Get RotationalSpeed in ZettadegreesPerSecond.
@@ -430,26 +400,6 @@ namespace UnitsNet
 
         #region Static Factory Methods
 
-        /// <summary>
-        ///     Get RotationalSpeed from AttodegreesPerSecond.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static RotationalSpeed FromAttodegreesPerSecond(double attodegreespersecond)
-        {
-            double value = (double) attodegreespersecond;
-            return new RotationalSpeed(value, RotationalSpeedUnit.AttodegreePerSecond);
-        }
-        /// <summary>
-        ///     Get RotationalSpeed from AttoradiansPerSecond.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static RotationalSpeed FromAttoradiansPerSecond(double attoradianspersecond)
-        {
-            double value = (double) attoradianspersecond;
-            return new RotationalSpeed(value, RotationalSpeedUnit.AttoradianPerSecond);
-        }
         /// <summary>
         ///     Get RotationalSpeed from CentidegreesPerSecond.
         /// </summary>
@@ -841,26 +791,6 @@ namespace UnitsNet
             return new RotationalSpeed(value, RotationalSpeedUnit.VettaradianPerSecond);
         }
         /// <summary>
-        ///     Get RotationalSpeed from YoctodegreesPerSecond.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static RotationalSpeed FromYoctodegreesPerSecond(double yoctodegreespersecond)
-        {
-            double value = (double) yoctodegreespersecond;
-            return new RotationalSpeed(value, RotationalSpeedUnit.YoctodegreePerSecond);
-        }
-        /// <summary>
-        ///     Get RotationalSpeed from YoctoradiansPerSecond.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static RotationalSpeed FromYoctoradiansPerSecond(double yoctoradianspersecond)
-        {
-            double value = (double) yoctoradianspersecond;
-            return new RotationalSpeed(value, RotationalSpeedUnit.YoctoradianPerSecond);
-        }
-        /// <summary>
         ///     Get RotationalSpeed from YottadegreesPerSecond.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -879,26 +809,6 @@ namespace UnitsNet
         {
             double value = (double) yottaradianspersecond;
             return new RotationalSpeed(value, RotationalSpeedUnit.YottaradianPerSecond);
-        }
-        /// <summary>
-        ///     Get RotationalSpeed from ZeptodegreesPerSecond.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static RotationalSpeed FromZeptodegreesPerSecond(double zeptodegreespersecond)
-        {
-            double value = (double) zeptodegreespersecond;
-            return new RotationalSpeed(value, RotationalSpeedUnit.ZeptodegreePerSecond);
-        }
-        /// <summary>
-        ///     Get RotationalSpeed from ZeptoradiansPerSecond.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static RotationalSpeed FromZeptoradiansPerSecond(double zeptoradianspersecond)
-        {
-            double value = (double) zeptoradianspersecond;
-            return new RotationalSpeed(value, RotationalSpeedUnit.ZeptoradianPerSecond);
         }
         /// <summary>
         ///     Get RotationalSpeed from ZettadegreesPerSecond.
@@ -1211,8 +1121,6 @@ namespace UnitsNet
         {
             switch(Unit)
             {
-                case RotationalSpeedUnit.AttodegreePerSecond: return ((Math.PI/180)*_value) * 1e-18d;
-                case RotationalSpeedUnit.AttoradianPerSecond: return (_value) * 1e-18d;
                 case RotationalSpeedUnit.CentidegreePerSecond: return ((Math.PI/180)*_value) * 1e-2d;
                 case RotationalSpeedUnit.CentiradianPerSecond: return (_value) * 1e-2d;
                 case RotationalSpeedUnit.DecadegreePerSecond: return ((Math.PI/180)*_value) * 1e1d;
@@ -1252,12 +1160,8 @@ namespace UnitsNet
                 case RotationalSpeedUnit.TeraradianPerSecond: return (_value) * 1e12d;
                 case RotationalSpeedUnit.VettadegreePerSecond: return ((Math.PI/180)*_value) * 1e30d;
                 case RotationalSpeedUnit.VettaradianPerSecond: return (_value) * 1e30d;
-                case RotationalSpeedUnit.YoctodegreePerSecond: return ((Math.PI/180)*_value) * 1e-24d;
-                case RotationalSpeedUnit.YoctoradianPerSecond: return (_value) * 1e-24d;
                 case RotationalSpeedUnit.YottadegreePerSecond: return ((Math.PI/180)*_value) * 1e24d;
                 case RotationalSpeedUnit.YottaradianPerSecond: return (_value) * 1e24d;
-                case RotationalSpeedUnit.ZeptodegreePerSecond: return ((Math.PI/180)*_value) * 1e-21d;
-                case RotationalSpeedUnit.ZeptoradianPerSecond: return (_value) * 1e-21d;
                 case RotationalSpeedUnit.ZettadegreePerSecond: return ((Math.PI/180)*_value) * 1e21d;
                 case RotationalSpeedUnit.ZettaradianPerSecond: return (_value) * 1e21d;
                 default:
@@ -1274,8 +1178,6 @@ namespace UnitsNet
 
             switch(unit)
             {
-                case RotationalSpeedUnit.AttodegreePerSecond: return ((180/Math.PI)*baseUnitValue) / 1e-18d;
-                case RotationalSpeedUnit.AttoradianPerSecond: return (baseUnitValue) / 1e-18d;
                 case RotationalSpeedUnit.CentidegreePerSecond: return ((180/Math.PI)*baseUnitValue) / 1e-2d;
                 case RotationalSpeedUnit.CentiradianPerSecond: return (baseUnitValue) / 1e-2d;
                 case RotationalSpeedUnit.DecadegreePerSecond: return ((180/Math.PI)*baseUnitValue) / 1e1d;
@@ -1315,12 +1217,8 @@ namespace UnitsNet
                 case RotationalSpeedUnit.TeraradianPerSecond: return (baseUnitValue) / 1e12d;
                 case RotationalSpeedUnit.VettadegreePerSecond: return ((180/Math.PI)*baseUnitValue) / 1e30d;
                 case RotationalSpeedUnit.VettaradianPerSecond: return (baseUnitValue) / 1e30d;
-                case RotationalSpeedUnit.YoctodegreePerSecond: return ((180/Math.PI)*baseUnitValue) / 1e-24d;
-                case RotationalSpeedUnit.YoctoradianPerSecond: return (baseUnitValue) / 1e-24d;
                 case RotationalSpeedUnit.YottadegreePerSecond: return ((180/Math.PI)*baseUnitValue) / 1e24d;
                 case RotationalSpeedUnit.YottaradianPerSecond: return (baseUnitValue) / 1e24d;
-                case RotationalSpeedUnit.ZeptodegreePerSecond: return ((180/Math.PI)*baseUnitValue) / 1e-21d;
-                case RotationalSpeedUnit.ZeptoradianPerSecond: return (baseUnitValue) / 1e-21d;
                 case RotationalSpeedUnit.ZettadegreePerSecond: return ((180/Math.PI)*baseUnitValue) / 1e21d;
                 case RotationalSpeedUnit.ZettaradianPerSecond: return (baseUnitValue) / 1e21d;
                 default:

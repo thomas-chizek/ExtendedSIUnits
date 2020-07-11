@@ -34,10 +34,6 @@ namespace UnitsNet.Tests
 // ReSharper disable once PartialTypeWithSinglePart
     public abstract partial class IrradiationTestsBase
     {
-        protected abstract double AttojoulesPerSquareCentimeterInOneJoulePerSquareMeter { get; }
-        protected abstract double AttojoulesPerSquareMeterInOneJoulePerSquareMeter { get; }
-        protected abstract double AttojoulesPerSquareMillimeterInOneJoulePerSquareMeter { get; }
-        protected abstract double AttowattHoursPerSquareMeterInOneJoulePerSquareMeter { get; }
         protected abstract double CentijoulesPerSquareCentimeterInOneJoulePerSquareMeter { get; }
         protected abstract double CentijoulesPerSquareMeterInOneJoulePerSquareMeter { get; }
         protected abstract double CentijoulesPerSquareMillimeterInOneJoulePerSquareMeter { get; }
@@ -110,28 +106,16 @@ namespace UnitsNet.Tests
         protected abstract double VettajoulesPerSquareMillimeterInOneJoulePerSquareMeter { get; }
         protected abstract double VettawattHoursPerSquareMeterInOneJoulePerSquareMeter { get; }
         protected abstract double WattHoursPerSquareMeterInOneJoulePerSquareMeter { get; }
-        protected abstract double YoctojoulesPerSquareCentimeterInOneJoulePerSquareMeter { get; }
-        protected abstract double YoctojoulesPerSquareMeterInOneJoulePerSquareMeter { get; }
-        protected abstract double YoctojoulesPerSquareMillimeterInOneJoulePerSquareMeter { get; }
-        protected abstract double YoctowattHoursPerSquareMeterInOneJoulePerSquareMeter { get; }
         protected abstract double YottajoulesPerSquareCentimeterInOneJoulePerSquareMeter { get; }
         protected abstract double YottajoulesPerSquareMeterInOneJoulePerSquareMeter { get; }
         protected abstract double YottajoulesPerSquareMillimeterInOneJoulePerSquareMeter { get; }
         protected abstract double YottawattHoursPerSquareMeterInOneJoulePerSquareMeter { get; }
-        protected abstract double ZeptojoulesPerSquareCentimeterInOneJoulePerSquareMeter { get; }
-        protected abstract double ZeptojoulesPerSquareMeterInOneJoulePerSquareMeter { get; }
-        protected abstract double ZeptojoulesPerSquareMillimeterInOneJoulePerSquareMeter { get; }
-        protected abstract double ZeptowattHoursPerSquareMeterInOneJoulePerSquareMeter { get; }
         protected abstract double ZettajoulesPerSquareCentimeterInOneJoulePerSquareMeter { get; }
         protected abstract double ZettajoulesPerSquareMeterInOneJoulePerSquareMeter { get; }
         protected abstract double ZettajoulesPerSquareMillimeterInOneJoulePerSquareMeter { get; }
         protected abstract double ZettawattHoursPerSquareMeterInOneJoulePerSquareMeter { get; }
 
 // ReSharper disable VirtualMemberNeverOverriden.Global
-        protected virtual double AttojoulesPerSquareCentimeterTolerance { get { return 1e-5; } }
-        protected virtual double AttojoulesPerSquareMeterTolerance { get { return 1e-5; } }
-        protected virtual double AttojoulesPerSquareMillimeterTolerance { get { return 1e-5; } }
-        protected virtual double AttowattHoursPerSquareMeterTolerance { get { return 1e-5; } }
         protected virtual double CentijoulesPerSquareCentimeterTolerance { get { return 1e-5; } }
         protected virtual double CentijoulesPerSquareMeterTolerance { get { return 1e-5; } }
         protected virtual double CentijoulesPerSquareMillimeterTolerance { get { return 1e-5; } }
@@ -204,18 +188,10 @@ namespace UnitsNet.Tests
         protected virtual double VettajoulesPerSquareMillimeterTolerance { get { return 1e-5; } }
         protected virtual double VettawattHoursPerSquareMeterTolerance { get { return 1e-5; } }
         protected virtual double WattHoursPerSquareMeterTolerance { get { return 1e-5; } }
-        protected virtual double YoctojoulesPerSquareCentimeterTolerance { get { return 1e-5; } }
-        protected virtual double YoctojoulesPerSquareMeterTolerance { get { return 1e-5; } }
-        protected virtual double YoctojoulesPerSquareMillimeterTolerance { get { return 1e-5; } }
-        protected virtual double YoctowattHoursPerSquareMeterTolerance { get { return 1e-5; } }
         protected virtual double YottajoulesPerSquareCentimeterTolerance { get { return 1e-5; } }
         protected virtual double YottajoulesPerSquareMeterTolerance { get { return 1e-5; } }
         protected virtual double YottajoulesPerSquareMillimeterTolerance { get { return 1e-5; } }
         protected virtual double YottawattHoursPerSquareMeterTolerance { get { return 1e-5; } }
-        protected virtual double ZeptojoulesPerSquareCentimeterTolerance { get { return 1e-5; } }
-        protected virtual double ZeptojoulesPerSquareMeterTolerance { get { return 1e-5; } }
-        protected virtual double ZeptojoulesPerSquareMillimeterTolerance { get { return 1e-5; } }
-        protected virtual double ZeptowattHoursPerSquareMeterTolerance { get { return 1e-5; } }
         protected virtual double ZettajoulesPerSquareCentimeterTolerance { get { return 1e-5; } }
         protected virtual double ZettajoulesPerSquareMeterTolerance { get { return 1e-5; } }
         protected virtual double ZettajoulesPerSquareMillimeterTolerance { get { return 1e-5; } }
@@ -245,10 +221,6 @@ namespace UnitsNet.Tests
         public void JoulePerSquareMeterToIrradiationUnits()
         {
             Irradiation joulepersquaremeter = Irradiation.FromJoulesPerSquareMeter(1);
-            AssertEx.EqualTolerance(AttojoulesPerSquareCentimeterInOneJoulePerSquareMeter, joulepersquaremeter.AttojoulesPerSquareCentimeter, AttojoulesPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(AttojoulesPerSquareMeterInOneJoulePerSquareMeter, joulepersquaremeter.AttojoulesPerSquareMeter, AttojoulesPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(AttojoulesPerSquareMillimeterInOneJoulePerSquareMeter, joulepersquaremeter.AttojoulesPerSquareMillimeter, AttojoulesPerSquareMillimeterTolerance);
-            AssertEx.EqualTolerance(AttowattHoursPerSquareMeterInOneJoulePerSquareMeter, joulepersquaremeter.AttowattHoursPerSquareMeter, AttowattHoursPerSquareMeterTolerance);
             AssertEx.EqualTolerance(CentijoulesPerSquareCentimeterInOneJoulePerSquareMeter, joulepersquaremeter.CentijoulesPerSquareCentimeter, CentijoulesPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(CentijoulesPerSquareMeterInOneJoulePerSquareMeter, joulepersquaremeter.CentijoulesPerSquareMeter, CentijoulesPerSquareMeterTolerance);
             AssertEx.EqualTolerance(CentijoulesPerSquareMillimeterInOneJoulePerSquareMeter, joulepersquaremeter.CentijoulesPerSquareMillimeter, CentijoulesPerSquareMillimeterTolerance);
@@ -321,18 +293,10 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettajoulesPerSquareMillimeterInOneJoulePerSquareMeter, joulepersquaremeter.VettajoulesPerSquareMillimeter, VettajoulesPerSquareMillimeterTolerance);
             AssertEx.EqualTolerance(VettawattHoursPerSquareMeterInOneJoulePerSquareMeter, joulepersquaremeter.VettawattHoursPerSquareMeter, VettawattHoursPerSquareMeterTolerance);
             AssertEx.EqualTolerance(WattHoursPerSquareMeterInOneJoulePerSquareMeter, joulepersquaremeter.WattHoursPerSquareMeter, WattHoursPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(YoctojoulesPerSquareCentimeterInOneJoulePerSquareMeter, joulepersquaremeter.YoctojoulesPerSquareCentimeter, YoctojoulesPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(YoctojoulesPerSquareMeterInOneJoulePerSquareMeter, joulepersquaremeter.YoctojoulesPerSquareMeter, YoctojoulesPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(YoctojoulesPerSquareMillimeterInOneJoulePerSquareMeter, joulepersquaremeter.YoctojoulesPerSquareMillimeter, YoctojoulesPerSquareMillimeterTolerance);
-            AssertEx.EqualTolerance(YoctowattHoursPerSquareMeterInOneJoulePerSquareMeter, joulepersquaremeter.YoctowattHoursPerSquareMeter, YoctowattHoursPerSquareMeterTolerance);
             AssertEx.EqualTolerance(YottajoulesPerSquareCentimeterInOneJoulePerSquareMeter, joulepersquaremeter.YottajoulesPerSquareCentimeter, YottajoulesPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(YottajoulesPerSquareMeterInOneJoulePerSquareMeter, joulepersquaremeter.YottajoulesPerSquareMeter, YottajoulesPerSquareMeterTolerance);
             AssertEx.EqualTolerance(YottajoulesPerSquareMillimeterInOneJoulePerSquareMeter, joulepersquaremeter.YottajoulesPerSquareMillimeter, YottajoulesPerSquareMillimeterTolerance);
             AssertEx.EqualTolerance(YottawattHoursPerSquareMeterInOneJoulePerSquareMeter, joulepersquaremeter.YottawattHoursPerSquareMeter, YottawattHoursPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(ZeptojoulesPerSquareCentimeterInOneJoulePerSquareMeter, joulepersquaremeter.ZeptojoulesPerSquareCentimeter, ZeptojoulesPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(ZeptojoulesPerSquareMeterInOneJoulePerSquareMeter, joulepersquaremeter.ZeptojoulesPerSquareMeter, ZeptojoulesPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(ZeptojoulesPerSquareMillimeterInOneJoulePerSquareMeter, joulepersquaremeter.ZeptojoulesPerSquareMillimeter, ZeptojoulesPerSquareMillimeterTolerance);
-            AssertEx.EqualTolerance(ZeptowattHoursPerSquareMeterInOneJoulePerSquareMeter, joulepersquaremeter.ZeptowattHoursPerSquareMeter, ZeptowattHoursPerSquareMeterTolerance);
             AssertEx.EqualTolerance(ZettajoulesPerSquareCentimeterInOneJoulePerSquareMeter, joulepersquaremeter.ZettajoulesPerSquareCentimeter, ZettajoulesPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(ZettajoulesPerSquareMeterInOneJoulePerSquareMeter, joulepersquaremeter.ZettajoulesPerSquareMeter, ZettajoulesPerSquareMeterTolerance);
             AssertEx.EqualTolerance(ZettajoulesPerSquareMillimeterInOneJoulePerSquareMeter, joulepersquaremeter.ZettajoulesPerSquareMillimeter, ZettajoulesPerSquareMillimeterTolerance);
@@ -342,10 +306,6 @@ namespace UnitsNet.Tests
         [Fact]
         public void FromValueAndUnit()
         {
-            AssertEx.EqualTolerance(1, Irradiation.From(1, IrradiationUnit.AttojoulePerSquareCentimeter).AttojoulesPerSquareCentimeter, AttojoulesPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiation.From(1, IrradiationUnit.AttojoulePerSquareMeter).AttojoulesPerSquareMeter, AttojoulesPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiation.From(1, IrradiationUnit.AttojoulePerSquareMillimeter).AttojoulesPerSquareMillimeter, AttojoulesPerSquareMillimeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiation.From(1, IrradiationUnit.AttowattHourPerSquareMeter).AttowattHoursPerSquareMeter, AttowattHoursPerSquareMeterTolerance);
             AssertEx.EqualTolerance(1, Irradiation.From(1, IrradiationUnit.CentijoulePerSquareCentimeter).CentijoulesPerSquareCentimeter, CentijoulesPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(1, Irradiation.From(1, IrradiationUnit.CentijoulePerSquareMeter).CentijoulesPerSquareMeter, CentijoulesPerSquareMeterTolerance);
             AssertEx.EqualTolerance(1, Irradiation.From(1, IrradiationUnit.CentijoulePerSquareMillimeter).CentijoulesPerSquareMillimeter, CentijoulesPerSquareMillimeterTolerance);
@@ -418,18 +378,10 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, Irradiation.From(1, IrradiationUnit.VettajoulePerSquareMillimeter).VettajoulesPerSquareMillimeter, VettajoulesPerSquareMillimeterTolerance);
             AssertEx.EqualTolerance(1, Irradiation.From(1, IrradiationUnit.VettawattHourPerSquareMeter).VettawattHoursPerSquareMeter, VettawattHoursPerSquareMeterTolerance);
             AssertEx.EqualTolerance(1, Irradiation.From(1, IrradiationUnit.WattHourPerSquareMeter).WattHoursPerSquareMeter, WattHoursPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiation.From(1, IrradiationUnit.YoctojoulePerSquareCentimeter).YoctojoulesPerSquareCentimeter, YoctojoulesPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiation.From(1, IrradiationUnit.YoctojoulePerSquareMeter).YoctojoulesPerSquareMeter, YoctojoulesPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiation.From(1, IrradiationUnit.YoctojoulePerSquareMillimeter).YoctojoulesPerSquareMillimeter, YoctojoulesPerSquareMillimeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiation.From(1, IrradiationUnit.YoctowattHourPerSquareMeter).YoctowattHoursPerSquareMeter, YoctowattHoursPerSquareMeterTolerance);
             AssertEx.EqualTolerance(1, Irradiation.From(1, IrradiationUnit.YottajoulePerSquareCentimeter).YottajoulesPerSquareCentimeter, YottajoulesPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(1, Irradiation.From(1, IrradiationUnit.YottajoulePerSquareMeter).YottajoulesPerSquareMeter, YottajoulesPerSquareMeterTolerance);
             AssertEx.EqualTolerance(1, Irradiation.From(1, IrradiationUnit.YottajoulePerSquareMillimeter).YottajoulesPerSquareMillimeter, YottajoulesPerSquareMillimeterTolerance);
             AssertEx.EqualTolerance(1, Irradiation.From(1, IrradiationUnit.YottawattHourPerSquareMeter).YottawattHoursPerSquareMeter, YottawattHoursPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiation.From(1, IrradiationUnit.ZeptojoulePerSquareCentimeter).ZeptojoulesPerSquareCentimeter, ZeptojoulesPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiation.From(1, IrradiationUnit.ZeptojoulePerSquareMeter).ZeptojoulesPerSquareMeter, ZeptojoulesPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiation.From(1, IrradiationUnit.ZeptojoulePerSquareMillimeter).ZeptojoulesPerSquareMillimeter, ZeptojoulesPerSquareMillimeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiation.From(1, IrradiationUnit.ZeptowattHourPerSquareMeter).ZeptowattHoursPerSquareMeter, ZeptowattHoursPerSquareMeterTolerance);
             AssertEx.EqualTolerance(1, Irradiation.From(1, IrradiationUnit.ZettajoulePerSquareCentimeter).ZettajoulesPerSquareCentimeter, ZettajoulesPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(1, Irradiation.From(1, IrradiationUnit.ZettajoulePerSquareMeter).ZettajoulesPerSquareMeter, ZettajoulesPerSquareMeterTolerance);
             AssertEx.EqualTolerance(1, Irradiation.From(1, IrradiationUnit.ZettajoulePerSquareMillimeter).ZettajoulesPerSquareMillimeter, ZettajoulesPerSquareMillimeterTolerance);
@@ -453,10 +405,6 @@ namespace UnitsNet.Tests
         public void As()
         {
             var joulepersquaremeter = Irradiation.FromJoulesPerSquareMeter(1);
-            AssertEx.EqualTolerance(AttojoulesPerSquareCentimeterInOneJoulePerSquareMeter, joulepersquaremeter.As(IrradiationUnit.AttojoulePerSquareCentimeter), AttojoulesPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(AttojoulesPerSquareMeterInOneJoulePerSquareMeter, joulepersquaremeter.As(IrradiationUnit.AttojoulePerSquareMeter), AttojoulesPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(AttojoulesPerSquareMillimeterInOneJoulePerSquareMeter, joulepersquaremeter.As(IrradiationUnit.AttojoulePerSquareMillimeter), AttojoulesPerSquareMillimeterTolerance);
-            AssertEx.EqualTolerance(AttowattHoursPerSquareMeterInOneJoulePerSquareMeter, joulepersquaremeter.As(IrradiationUnit.AttowattHourPerSquareMeter), AttowattHoursPerSquareMeterTolerance);
             AssertEx.EqualTolerance(CentijoulesPerSquareCentimeterInOneJoulePerSquareMeter, joulepersquaremeter.As(IrradiationUnit.CentijoulePerSquareCentimeter), CentijoulesPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(CentijoulesPerSquareMeterInOneJoulePerSquareMeter, joulepersquaremeter.As(IrradiationUnit.CentijoulePerSquareMeter), CentijoulesPerSquareMeterTolerance);
             AssertEx.EqualTolerance(CentijoulesPerSquareMillimeterInOneJoulePerSquareMeter, joulepersquaremeter.As(IrradiationUnit.CentijoulePerSquareMillimeter), CentijoulesPerSquareMillimeterTolerance);
@@ -529,18 +477,10 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettajoulesPerSquareMillimeterInOneJoulePerSquareMeter, joulepersquaremeter.As(IrradiationUnit.VettajoulePerSquareMillimeter), VettajoulesPerSquareMillimeterTolerance);
             AssertEx.EqualTolerance(VettawattHoursPerSquareMeterInOneJoulePerSquareMeter, joulepersquaremeter.As(IrradiationUnit.VettawattHourPerSquareMeter), VettawattHoursPerSquareMeterTolerance);
             AssertEx.EqualTolerance(WattHoursPerSquareMeterInOneJoulePerSquareMeter, joulepersquaremeter.As(IrradiationUnit.WattHourPerSquareMeter), WattHoursPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(YoctojoulesPerSquareCentimeterInOneJoulePerSquareMeter, joulepersquaremeter.As(IrradiationUnit.YoctojoulePerSquareCentimeter), YoctojoulesPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(YoctojoulesPerSquareMeterInOneJoulePerSquareMeter, joulepersquaremeter.As(IrradiationUnit.YoctojoulePerSquareMeter), YoctojoulesPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(YoctojoulesPerSquareMillimeterInOneJoulePerSquareMeter, joulepersquaremeter.As(IrradiationUnit.YoctojoulePerSquareMillimeter), YoctojoulesPerSquareMillimeterTolerance);
-            AssertEx.EqualTolerance(YoctowattHoursPerSquareMeterInOneJoulePerSquareMeter, joulepersquaremeter.As(IrradiationUnit.YoctowattHourPerSquareMeter), YoctowattHoursPerSquareMeterTolerance);
             AssertEx.EqualTolerance(YottajoulesPerSquareCentimeterInOneJoulePerSquareMeter, joulepersquaremeter.As(IrradiationUnit.YottajoulePerSquareCentimeter), YottajoulesPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(YottajoulesPerSquareMeterInOneJoulePerSquareMeter, joulepersquaremeter.As(IrradiationUnit.YottajoulePerSquareMeter), YottajoulesPerSquareMeterTolerance);
             AssertEx.EqualTolerance(YottajoulesPerSquareMillimeterInOneJoulePerSquareMeter, joulepersquaremeter.As(IrradiationUnit.YottajoulePerSquareMillimeter), YottajoulesPerSquareMillimeterTolerance);
             AssertEx.EqualTolerance(YottawattHoursPerSquareMeterInOneJoulePerSquareMeter, joulepersquaremeter.As(IrradiationUnit.YottawattHourPerSquareMeter), YottawattHoursPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(ZeptojoulesPerSquareCentimeterInOneJoulePerSquareMeter, joulepersquaremeter.As(IrradiationUnit.ZeptojoulePerSquareCentimeter), ZeptojoulesPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(ZeptojoulesPerSquareMeterInOneJoulePerSquareMeter, joulepersquaremeter.As(IrradiationUnit.ZeptojoulePerSquareMeter), ZeptojoulesPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(ZeptojoulesPerSquareMillimeterInOneJoulePerSquareMeter, joulepersquaremeter.As(IrradiationUnit.ZeptojoulePerSquareMillimeter), ZeptojoulesPerSquareMillimeterTolerance);
-            AssertEx.EqualTolerance(ZeptowattHoursPerSquareMeterInOneJoulePerSquareMeter, joulepersquaremeter.As(IrradiationUnit.ZeptowattHourPerSquareMeter), ZeptowattHoursPerSquareMeterTolerance);
             AssertEx.EqualTolerance(ZettajoulesPerSquareCentimeterInOneJoulePerSquareMeter, joulepersquaremeter.As(IrradiationUnit.ZettajoulePerSquareCentimeter), ZettajoulesPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(ZettajoulesPerSquareMeterInOneJoulePerSquareMeter, joulepersquaremeter.As(IrradiationUnit.ZettajoulePerSquareMeter), ZettajoulesPerSquareMeterTolerance);
             AssertEx.EqualTolerance(ZettajoulesPerSquareMillimeterInOneJoulePerSquareMeter, joulepersquaremeter.As(IrradiationUnit.ZettajoulePerSquareMillimeter), ZettajoulesPerSquareMillimeterTolerance);
@@ -551,22 +491,6 @@ namespace UnitsNet.Tests
         public void ToUnit()
         {
             var joulepersquaremeter = Irradiation.FromJoulesPerSquareMeter(1);
-
-            var attojoulepersquarecentimeterQuantity = joulepersquaremeter.ToUnit(IrradiationUnit.AttojoulePerSquareCentimeter);
-            AssertEx.EqualTolerance(AttojoulesPerSquareCentimeterInOneJoulePerSquareMeter, (double)attojoulepersquarecentimeterQuantity.Value, AttojoulesPerSquareCentimeterTolerance);
-            Assert.Equal(IrradiationUnit.AttojoulePerSquareCentimeter, attojoulepersquarecentimeterQuantity.Unit);
-
-            var attojoulepersquaremeterQuantity = joulepersquaremeter.ToUnit(IrradiationUnit.AttojoulePerSquareMeter);
-            AssertEx.EqualTolerance(AttojoulesPerSquareMeterInOneJoulePerSquareMeter, (double)attojoulepersquaremeterQuantity.Value, AttojoulesPerSquareMeterTolerance);
-            Assert.Equal(IrradiationUnit.AttojoulePerSquareMeter, attojoulepersquaremeterQuantity.Unit);
-
-            var attojoulepersquaremillimeterQuantity = joulepersquaremeter.ToUnit(IrradiationUnit.AttojoulePerSquareMillimeter);
-            AssertEx.EqualTolerance(AttojoulesPerSquareMillimeterInOneJoulePerSquareMeter, (double)attojoulepersquaremillimeterQuantity.Value, AttojoulesPerSquareMillimeterTolerance);
-            Assert.Equal(IrradiationUnit.AttojoulePerSquareMillimeter, attojoulepersquaremillimeterQuantity.Unit);
-
-            var attowatthourpersquaremeterQuantity = joulepersquaremeter.ToUnit(IrradiationUnit.AttowattHourPerSquareMeter);
-            AssertEx.EqualTolerance(AttowattHoursPerSquareMeterInOneJoulePerSquareMeter, (double)attowatthourpersquaremeterQuantity.Value, AttowattHoursPerSquareMeterTolerance);
-            Assert.Equal(IrradiationUnit.AttowattHourPerSquareMeter, attowatthourpersquaremeterQuantity.Unit);
 
             var centijoulepersquarecentimeterQuantity = joulepersquaremeter.ToUnit(IrradiationUnit.CentijoulePerSquareCentimeter);
             AssertEx.EqualTolerance(CentijoulesPerSquareCentimeterInOneJoulePerSquareMeter, (double)centijoulepersquarecentimeterQuantity.Value, CentijoulesPerSquareCentimeterTolerance);
@@ -856,22 +780,6 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(WattHoursPerSquareMeterInOneJoulePerSquareMeter, (double)watthourpersquaremeterQuantity.Value, WattHoursPerSquareMeterTolerance);
             Assert.Equal(IrradiationUnit.WattHourPerSquareMeter, watthourpersquaremeterQuantity.Unit);
 
-            var yoctojoulepersquarecentimeterQuantity = joulepersquaremeter.ToUnit(IrradiationUnit.YoctojoulePerSquareCentimeter);
-            AssertEx.EqualTolerance(YoctojoulesPerSquareCentimeterInOneJoulePerSquareMeter, (double)yoctojoulepersquarecentimeterQuantity.Value, YoctojoulesPerSquareCentimeterTolerance);
-            Assert.Equal(IrradiationUnit.YoctojoulePerSquareCentimeter, yoctojoulepersquarecentimeterQuantity.Unit);
-
-            var yoctojoulepersquaremeterQuantity = joulepersquaremeter.ToUnit(IrradiationUnit.YoctojoulePerSquareMeter);
-            AssertEx.EqualTolerance(YoctojoulesPerSquareMeterInOneJoulePerSquareMeter, (double)yoctojoulepersquaremeterQuantity.Value, YoctojoulesPerSquareMeterTolerance);
-            Assert.Equal(IrradiationUnit.YoctojoulePerSquareMeter, yoctojoulepersquaremeterQuantity.Unit);
-
-            var yoctojoulepersquaremillimeterQuantity = joulepersquaremeter.ToUnit(IrradiationUnit.YoctojoulePerSquareMillimeter);
-            AssertEx.EqualTolerance(YoctojoulesPerSquareMillimeterInOneJoulePerSquareMeter, (double)yoctojoulepersquaremillimeterQuantity.Value, YoctojoulesPerSquareMillimeterTolerance);
-            Assert.Equal(IrradiationUnit.YoctojoulePerSquareMillimeter, yoctojoulepersquaremillimeterQuantity.Unit);
-
-            var yoctowatthourpersquaremeterQuantity = joulepersquaremeter.ToUnit(IrradiationUnit.YoctowattHourPerSquareMeter);
-            AssertEx.EqualTolerance(YoctowattHoursPerSquareMeterInOneJoulePerSquareMeter, (double)yoctowatthourpersquaremeterQuantity.Value, YoctowattHoursPerSquareMeterTolerance);
-            Assert.Equal(IrradiationUnit.YoctowattHourPerSquareMeter, yoctowatthourpersquaremeterQuantity.Unit);
-
             var yottajoulepersquarecentimeterQuantity = joulepersquaremeter.ToUnit(IrradiationUnit.YottajoulePerSquareCentimeter);
             AssertEx.EqualTolerance(YottajoulesPerSquareCentimeterInOneJoulePerSquareMeter, (double)yottajoulepersquarecentimeterQuantity.Value, YottajoulesPerSquareCentimeterTolerance);
             Assert.Equal(IrradiationUnit.YottajoulePerSquareCentimeter, yottajoulepersquarecentimeterQuantity.Unit);
@@ -887,22 +795,6 @@ namespace UnitsNet.Tests
             var yottawatthourpersquaremeterQuantity = joulepersquaremeter.ToUnit(IrradiationUnit.YottawattHourPerSquareMeter);
             AssertEx.EqualTolerance(YottawattHoursPerSquareMeterInOneJoulePerSquareMeter, (double)yottawatthourpersquaremeterQuantity.Value, YottawattHoursPerSquareMeterTolerance);
             Assert.Equal(IrradiationUnit.YottawattHourPerSquareMeter, yottawatthourpersquaremeterQuantity.Unit);
-
-            var zeptojoulepersquarecentimeterQuantity = joulepersquaremeter.ToUnit(IrradiationUnit.ZeptojoulePerSquareCentimeter);
-            AssertEx.EqualTolerance(ZeptojoulesPerSquareCentimeterInOneJoulePerSquareMeter, (double)zeptojoulepersquarecentimeterQuantity.Value, ZeptojoulesPerSquareCentimeterTolerance);
-            Assert.Equal(IrradiationUnit.ZeptojoulePerSquareCentimeter, zeptojoulepersquarecentimeterQuantity.Unit);
-
-            var zeptojoulepersquaremeterQuantity = joulepersquaremeter.ToUnit(IrradiationUnit.ZeptojoulePerSquareMeter);
-            AssertEx.EqualTolerance(ZeptojoulesPerSquareMeterInOneJoulePerSquareMeter, (double)zeptojoulepersquaremeterQuantity.Value, ZeptojoulesPerSquareMeterTolerance);
-            Assert.Equal(IrradiationUnit.ZeptojoulePerSquareMeter, zeptojoulepersquaremeterQuantity.Unit);
-
-            var zeptojoulepersquaremillimeterQuantity = joulepersquaremeter.ToUnit(IrradiationUnit.ZeptojoulePerSquareMillimeter);
-            AssertEx.EqualTolerance(ZeptojoulesPerSquareMillimeterInOneJoulePerSquareMeter, (double)zeptojoulepersquaremillimeterQuantity.Value, ZeptojoulesPerSquareMillimeterTolerance);
-            Assert.Equal(IrradiationUnit.ZeptojoulePerSquareMillimeter, zeptojoulepersquaremillimeterQuantity.Unit);
-
-            var zeptowatthourpersquaremeterQuantity = joulepersquaremeter.ToUnit(IrradiationUnit.ZeptowattHourPerSquareMeter);
-            AssertEx.EqualTolerance(ZeptowattHoursPerSquareMeterInOneJoulePerSquareMeter, (double)zeptowatthourpersquaremeterQuantity.Value, ZeptowattHoursPerSquareMeterTolerance);
-            Assert.Equal(IrradiationUnit.ZeptowattHourPerSquareMeter, zeptowatthourpersquaremeterQuantity.Unit);
 
             var zettajoulepersquarecentimeterQuantity = joulepersquaremeter.ToUnit(IrradiationUnit.ZettajoulePerSquareCentimeter);
             AssertEx.EqualTolerance(ZettajoulesPerSquareCentimeterInOneJoulePerSquareMeter, (double)zettajoulepersquarecentimeterQuantity.Value, ZettajoulesPerSquareCentimeterTolerance);
@@ -925,10 +817,6 @@ namespace UnitsNet.Tests
         public void ConversionRoundTrip()
         {
             Irradiation joulepersquaremeter = Irradiation.FromJoulesPerSquareMeter(1);
-            AssertEx.EqualTolerance(1, Irradiation.FromAttojoulesPerSquareCentimeter(joulepersquaremeter.AttojoulesPerSquareCentimeter).JoulesPerSquareMeter, AttojoulesPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiation.FromAttojoulesPerSquareMeter(joulepersquaremeter.AttojoulesPerSquareMeter).JoulesPerSquareMeter, AttojoulesPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiation.FromAttojoulesPerSquareMillimeter(joulepersquaremeter.AttojoulesPerSquareMillimeter).JoulesPerSquareMeter, AttojoulesPerSquareMillimeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiation.FromAttowattHoursPerSquareMeter(joulepersquaremeter.AttowattHoursPerSquareMeter).JoulesPerSquareMeter, AttowattHoursPerSquareMeterTolerance);
             AssertEx.EqualTolerance(1, Irradiation.FromCentijoulesPerSquareCentimeter(joulepersquaremeter.CentijoulesPerSquareCentimeter).JoulesPerSquareMeter, CentijoulesPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(1, Irradiation.FromCentijoulesPerSquareMeter(joulepersquaremeter.CentijoulesPerSquareMeter).JoulesPerSquareMeter, CentijoulesPerSquareMeterTolerance);
             AssertEx.EqualTolerance(1, Irradiation.FromCentijoulesPerSquareMillimeter(joulepersquaremeter.CentijoulesPerSquareMillimeter).JoulesPerSquareMeter, CentijoulesPerSquareMillimeterTolerance);
@@ -1001,18 +889,10 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, Irradiation.FromVettajoulesPerSquareMillimeter(joulepersquaremeter.VettajoulesPerSquareMillimeter).JoulesPerSquareMeter, VettajoulesPerSquareMillimeterTolerance);
             AssertEx.EqualTolerance(1, Irradiation.FromVettawattHoursPerSquareMeter(joulepersquaremeter.VettawattHoursPerSquareMeter).JoulesPerSquareMeter, VettawattHoursPerSquareMeterTolerance);
             AssertEx.EqualTolerance(1, Irradiation.FromWattHoursPerSquareMeter(joulepersquaremeter.WattHoursPerSquareMeter).JoulesPerSquareMeter, WattHoursPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiation.FromYoctojoulesPerSquareCentimeter(joulepersquaremeter.YoctojoulesPerSquareCentimeter).JoulesPerSquareMeter, YoctojoulesPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiation.FromYoctojoulesPerSquareMeter(joulepersquaremeter.YoctojoulesPerSquareMeter).JoulesPerSquareMeter, YoctojoulesPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiation.FromYoctojoulesPerSquareMillimeter(joulepersquaremeter.YoctojoulesPerSquareMillimeter).JoulesPerSquareMeter, YoctojoulesPerSquareMillimeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiation.FromYoctowattHoursPerSquareMeter(joulepersquaremeter.YoctowattHoursPerSquareMeter).JoulesPerSquareMeter, YoctowattHoursPerSquareMeterTolerance);
             AssertEx.EqualTolerance(1, Irradiation.FromYottajoulesPerSquareCentimeter(joulepersquaremeter.YottajoulesPerSquareCentimeter).JoulesPerSquareMeter, YottajoulesPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(1, Irradiation.FromYottajoulesPerSquareMeter(joulepersquaremeter.YottajoulesPerSquareMeter).JoulesPerSquareMeter, YottajoulesPerSquareMeterTolerance);
             AssertEx.EqualTolerance(1, Irradiation.FromYottajoulesPerSquareMillimeter(joulepersquaremeter.YottajoulesPerSquareMillimeter).JoulesPerSquareMeter, YottajoulesPerSquareMillimeterTolerance);
             AssertEx.EqualTolerance(1, Irradiation.FromYottawattHoursPerSquareMeter(joulepersquaremeter.YottawattHoursPerSquareMeter).JoulesPerSquareMeter, YottawattHoursPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiation.FromZeptojoulesPerSquareCentimeter(joulepersquaremeter.ZeptojoulesPerSquareCentimeter).JoulesPerSquareMeter, ZeptojoulesPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiation.FromZeptojoulesPerSquareMeter(joulepersquaremeter.ZeptojoulesPerSquareMeter).JoulesPerSquareMeter, ZeptojoulesPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiation.FromZeptojoulesPerSquareMillimeter(joulepersquaremeter.ZeptojoulesPerSquareMillimeter).JoulesPerSquareMeter, ZeptojoulesPerSquareMillimeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiation.FromZeptowattHoursPerSquareMeter(joulepersquaremeter.ZeptowattHoursPerSquareMeter).JoulesPerSquareMeter, ZeptowattHoursPerSquareMeterTolerance);
             AssertEx.EqualTolerance(1, Irradiation.FromZettajoulesPerSquareCentimeter(joulepersquaremeter.ZettajoulesPerSquareCentimeter).JoulesPerSquareMeter, ZettajoulesPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(1, Irradiation.FromZettajoulesPerSquareMeter(joulepersquaremeter.ZettajoulesPerSquareMeter).JoulesPerSquareMeter, ZettajoulesPerSquareMeterTolerance);
             AssertEx.EqualTolerance(1, Irradiation.FromZettajoulesPerSquareMillimeter(joulepersquaremeter.ZettajoulesPerSquareMillimeter).JoulesPerSquareMeter, ZettajoulesPerSquareMillimeterTolerance);

@@ -26,11 +26,31 @@ namespace UnitsNet.Tests.CustomCode
 {
     public class SpecificVolumeTests : SpecificVolumeTestsBase
     {
-        protected override double CubicMetersPerKilogramInOneCubicMeterPerKilogram => 1;
 
         protected override double CubicFeetPerPoundInOneCubicMeterPerKilogram => 16.01846353;
 
+        protected override double FemtocubicMetersPerKilogramInOneCubicMeterPerKilogram => 1e15;
+        protected override double PicocubicMetersPerKilogramInOneCubicMeterPerKilogram  => 1e12;
+        protected override double NanocubicMetersPerKilogramInOneCubicMeterPerKilogram  => 1e9;
+        protected override double MicrocubicMetersPerKilogramInOneCubicMeterPerKilogram => 1e6;
         protected override double MillicubicMetersPerKilogramInOneCubicMeterPerKilogram => 1e3;
+        protected override double CenticubicMetersPerKilogramInOneCubicMeterPerKilogram => 1e2;
+        protected override double DecicubicMetersPerKilogramInOneCubicMeterPerKilogram  => 1e1;
+        protected override double CubicMetersPerKilogramInOneCubicMeterPerKilogram => 1;
+        protected override double DecacubicMetersPerKilogramInOneCubicMeterPerKilogram  => 1e-1;
+        protected override double HectocubicMetersPerKilogramInOneCubicMeterPerKilogram => 1e-2;
+        protected override double KilocubicMetersPerKilogramInOneCubicMeterPerKilogram  => 1e-3;
+        protected override double MegacubicMetersPerKilogramInOneCubicMeterPerKilogram  => 1e-6;
+        protected override double GigacubicMetersPerKilogramInOneCubicMeterPerKilogram  => 1e-9;
+        protected override double TeracubicMetersPerKilogramInOneCubicMeterPerKilogram  => 1e-12;
+        protected override double PetacubicMetersPerKilogramInOneCubicMeterPerKilogram  => 1e-15;
+        protected override double ExacubicMetersPerKilogramInOneCubicMeterPerKilogram   => 1e-18;
+        protected override double ZettacubicMetersPerKilogramInOneCubicMeterPerKilogram => 1e-21;
+        protected override double YottacubicMetersPerKilogramInOneCubicMeterPerKilogram => 1e-24;
+        protected override double QutracubicMetersPerKilogramInOneCubicMeterPerKilogram => 1e-27;
+        protected override double VettacubicMetersPerKilogramInOneCubicMeterPerKilogram => 1e-30;
+
+
 
         [Fact]
         public static void SpecificVolumeTimesMassEqualsVolume()

@@ -28,6 +28,7 @@ namespace UnitsNet.Units
         Undefined = 0,
         Centimole,
         CentipoundMole,
+        DecapoundMole,
         Decimole,
         DecipoundMole,
         Kilomole,

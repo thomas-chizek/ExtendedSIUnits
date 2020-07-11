@@ -156,11 +156,6 @@ namespace UnitsNet
         #region Conversion Properties
 
         /// <summary>
-        ///     Get RotationalStiffness in AttonewtonMetersPerRadian.
-        /// </summary>
-        public double AttonewtonMetersPerRadian => As(RotationalStiffnessUnit.AttonewtonMeterPerRadian);
-
-        /// <summary>
         ///     Get RotationalStiffness in CentinewtonMetersPerRadian.
         /// </summary>
         public double CentinewtonMetersPerRadian => As(RotationalStiffnessUnit.CentinewtonMeterPerRadian);
@@ -251,19 +246,9 @@ namespace UnitsNet
         public double VettanewtonMetersPerRadian => As(RotationalStiffnessUnit.VettanewtonMeterPerRadian);
 
         /// <summary>
-        ///     Get RotationalStiffness in YoctonewtonMetersPerRadian.
-        /// </summary>
-        public double YoctonewtonMetersPerRadian => As(RotationalStiffnessUnit.YoctonewtonMeterPerRadian);
-
-        /// <summary>
         ///     Get RotationalStiffness in YottanewtonMetersPerRadian.
         /// </summary>
         public double YottanewtonMetersPerRadian => As(RotationalStiffnessUnit.YottanewtonMeterPerRadian);
-
-        /// <summary>
-        ///     Get RotationalStiffness in ZeptonewtonMetersPerRadian.
-        /// </summary>
-        public double ZeptonewtonMetersPerRadian => As(RotationalStiffnessUnit.ZeptonewtonMeterPerRadian);
 
         /// <summary>
         ///     Get RotationalStiffness in ZettanewtonMetersPerRadian.
@@ -300,16 +285,6 @@ namespace UnitsNet
 
         #region Static Factory Methods
 
-        /// <summary>
-        ///     Get RotationalStiffness from AttonewtonMetersPerRadian.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static RotationalStiffness FromAttonewtonMetersPerRadian(double attonewtonmetersperradian)
-        {
-            double value = (double) attonewtonmetersperradian;
-            return new RotationalStiffness(value, RotationalStiffnessUnit.AttonewtonMeterPerRadian);
-        }
         /// <summary>
         ///     Get RotationalStiffness from CentinewtonMetersPerRadian.
         /// </summary>
@@ -491,16 +466,6 @@ namespace UnitsNet
             return new RotationalStiffness(value, RotationalStiffnessUnit.VettanewtonMeterPerRadian);
         }
         /// <summary>
-        ///     Get RotationalStiffness from YoctonewtonMetersPerRadian.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static RotationalStiffness FromYoctonewtonMetersPerRadian(double yoctonewtonmetersperradian)
-        {
-            double value = (double) yoctonewtonmetersperradian;
-            return new RotationalStiffness(value, RotationalStiffnessUnit.YoctonewtonMeterPerRadian);
-        }
-        /// <summary>
         ///     Get RotationalStiffness from YottanewtonMetersPerRadian.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -509,16 +474,6 @@ namespace UnitsNet
         {
             double value = (double) yottanewtonmetersperradian;
             return new RotationalStiffness(value, RotationalStiffnessUnit.YottanewtonMeterPerRadian);
-        }
-        /// <summary>
-        ///     Get RotationalStiffness from ZeptonewtonMetersPerRadian.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static RotationalStiffness FromZeptonewtonMetersPerRadian(double zeptonewtonmetersperradian)
-        {
-            double value = (double) zeptonewtonmetersperradian;
-            return new RotationalStiffness(value, RotationalStiffnessUnit.ZeptonewtonMeterPerRadian);
         }
         /// <summary>
         ///     Get RotationalStiffness from ZettanewtonMetersPerRadian.
@@ -821,7 +776,6 @@ namespace UnitsNet
         {
             switch(Unit)
             {
-                case RotationalStiffnessUnit.AttonewtonMeterPerRadian: return (_value) * 1e-18d;
                 case RotationalStiffnessUnit.CentinewtonMeterPerRadian: return (_value) * 1e-2d;
                 case RotationalStiffnessUnit.DecanewtonMeterPerRadian: return (_value) * 1e1d;
                 case RotationalStiffnessUnit.DecinewtonMeterPerRadian: return (_value) * 1e-1d;
@@ -840,9 +794,7 @@ namespace UnitsNet
                 case RotationalStiffnessUnit.QutranewtonMeterPerRadian: return (_value) * 1e27d;
                 case RotationalStiffnessUnit.TeranewtonMeterPerRadian: return (_value) * 1e12d;
                 case RotationalStiffnessUnit.VettanewtonMeterPerRadian: return (_value) * 1e30d;
-                case RotationalStiffnessUnit.YoctonewtonMeterPerRadian: return (_value) * 1e-24d;
                 case RotationalStiffnessUnit.YottanewtonMeterPerRadian: return (_value) * 1e24d;
-                case RotationalStiffnessUnit.ZeptonewtonMeterPerRadian: return (_value) * 1e-21d;
                 case RotationalStiffnessUnit.ZettanewtonMeterPerRadian: return (_value) * 1e21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to base units.");
@@ -858,7 +810,6 @@ namespace UnitsNet
 
             switch(unit)
             {
-                case RotationalStiffnessUnit.AttonewtonMeterPerRadian: return (baseUnitValue) / 1e-18d;
                 case RotationalStiffnessUnit.CentinewtonMeterPerRadian: return (baseUnitValue) / 1e-2d;
                 case RotationalStiffnessUnit.DecanewtonMeterPerRadian: return (baseUnitValue) / 1e1d;
                 case RotationalStiffnessUnit.DecinewtonMeterPerRadian: return (baseUnitValue) / 1e-1d;
@@ -877,9 +828,7 @@ namespace UnitsNet
                 case RotationalStiffnessUnit.QutranewtonMeterPerRadian: return (baseUnitValue) / 1e27d;
                 case RotationalStiffnessUnit.TeranewtonMeterPerRadian: return (baseUnitValue) / 1e12d;
                 case RotationalStiffnessUnit.VettanewtonMeterPerRadian: return (baseUnitValue) / 1e30d;
-                case RotationalStiffnessUnit.YoctonewtonMeterPerRadian: return (baseUnitValue) / 1e-24d;
                 case RotationalStiffnessUnit.YottanewtonMeterPerRadian: return (baseUnitValue) / 1e24d;
-                case RotationalStiffnessUnit.ZeptonewtonMeterPerRadian: return (baseUnitValue) / 1e-21d;
                 case RotationalStiffnessUnit.ZettanewtonMeterPerRadian: return (baseUnitValue) / 1e21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to {unit}.");

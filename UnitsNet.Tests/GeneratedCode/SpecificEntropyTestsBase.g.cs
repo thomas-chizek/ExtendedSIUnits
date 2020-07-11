@@ -34,9 +34,6 @@ namespace UnitsNet.Tests
 // ReSharper disable once PartialTypeWithSinglePart
     public abstract partial class SpecificEntropyTestsBase
     {
-        protected abstract double AttocaloriesPerGramKelvinInOneJoulePerKilogramKelvin { get; }
-        protected abstract double AttojoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin { get; }
-        protected abstract double AttojoulesPerKilogramKelvinInOneJoulePerKilogramKelvin { get; }
         protected abstract double BtusPerPoundFahrenheitInOneJoulePerKilogramKelvin { get; }
         protected abstract double CaloriesPerGramKelvinInOneJoulePerKilogramKelvin { get; }
         protected abstract double CenticaloriesPerGramKelvinInOneJoulePerKilogramKelvin { get; }
@@ -92,23 +89,14 @@ namespace UnitsNet.Tests
         protected abstract double VettacaloriesPerGramKelvinInOneJoulePerKilogramKelvin { get; }
         protected abstract double VettajoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin { get; }
         protected abstract double VettajoulesPerKilogramKelvinInOneJoulePerKilogramKelvin { get; }
-        protected abstract double YoctocaloriesPerGramKelvinInOneJoulePerKilogramKelvin { get; }
-        protected abstract double YoctojoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin { get; }
-        protected abstract double YoctojoulesPerKilogramKelvinInOneJoulePerKilogramKelvin { get; }
         protected abstract double YottacaloriesPerGramKelvinInOneJoulePerKilogramKelvin { get; }
         protected abstract double YottajoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin { get; }
         protected abstract double YottajoulesPerKilogramKelvinInOneJoulePerKilogramKelvin { get; }
-        protected abstract double ZeptocaloriesPerGramKelvinInOneJoulePerKilogramKelvin { get; }
-        protected abstract double ZeptojoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin { get; }
-        protected abstract double ZeptojoulesPerKilogramKelvinInOneJoulePerKilogramKelvin { get; }
         protected abstract double ZettacaloriesPerGramKelvinInOneJoulePerKilogramKelvin { get; }
         protected abstract double ZettajoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin { get; }
         protected abstract double ZettajoulesPerKilogramKelvinInOneJoulePerKilogramKelvin { get; }
 
 // ReSharper disable VirtualMemberNeverOverriden.Global
-        protected virtual double AttocaloriesPerGramKelvinTolerance { get { return 1e-5; } }
-        protected virtual double AttojoulesPerKilogramDegreeCelsiusTolerance { get { return 1e-5; } }
-        protected virtual double AttojoulesPerKilogramKelvinTolerance { get { return 1e-5; } }
         protected virtual double BtusPerPoundFahrenheitTolerance { get { return 1e-5; } }
         protected virtual double CaloriesPerGramKelvinTolerance { get { return 1e-5; } }
         protected virtual double CenticaloriesPerGramKelvinTolerance { get { return 1e-5; } }
@@ -164,15 +152,9 @@ namespace UnitsNet.Tests
         protected virtual double VettacaloriesPerGramKelvinTolerance { get { return 1e-5; } }
         protected virtual double VettajoulesPerKilogramDegreeCelsiusTolerance { get { return 1e-5; } }
         protected virtual double VettajoulesPerKilogramKelvinTolerance { get { return 1e-5; } }
-        protected virtual double YoctocaloriesPerGramKelvinTolerance { get { return 1e-5; } }
-        protected virtual double YoctojoulesPerKilogramDegreeCelsiusTolerance { get { return 1e-5; } }
-        protected virtual double YoctojoulesPerKilogramKelvinTolerance { get { return 1e-5; } }
         protected virtual double YottacaloriesPerGramKelvinTolerance { get { return 1e-5; } }
         protected virtual double YottajoulesPerKilogramDegreeCelsiusTolerance { get { return 1e-5; } }
         protected virtual double YottajoulesPerKilogramKelvinTolerance { get { return 1e-5; } }
-        protected virtual double ZeptocaloriesPerGramKelvinTolerance { get { return 1e-5; } }
-        protected virtual double ZeptojoulesPerKilogramDegreeCelsiusTolerance { get { return 1e-5; } }
-        protected virtual double ZeptojoulesPerKilogramKelvinTolerance { get { return 1e-5; } }
         protected virtual double ZettacaloriesPerGramKelvinTolerance { get { return 1e-5; } }
         protected virtual double ZettajoulesPerKilogramDegreeCelsiusTolerance { get { return 1e-5; } }
         protected virtual double ZettajoulesPerKilogramKelvinTolerance { get { return 1e-5; } }
@@ -201,9 +183,6 @@ namespace UnitsNet.Tests
         public void JoulePerKilogramKelvinToSpecificEntropyUnits()
         {
             SpecificEntropy jouleperkilogramkelvin = SpecificEntropy.FromJoulesPerKilogramKelvin(1);
-            AssertEx.EqualTolerance(AttocaloriesPerGramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.AttocaloriesPerGramKelvin, AttocaloriesPerGramKelvinTolerance);
-            AssertEx.EqualTolerance(AttojoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.AttojoulesPerKilogramDegreeCelsius, AttojoulesPerKilogramDegreeCelsiusTolerance);
-            AssertEx.EqualTolerance(AttojoulesPerKilogramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.AttojoulesPerKilogramKelvin, AttojoulesPerKilogramKelvinTolerance);
             AssertEx.EqualTolerance(BtusPerPoundFahrenheitInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.BtusPerPoundFahrenheit, BtusPerPoundFahrenheitTolerance);
             AssertEx.EqualTolerance(CaloriesPerGramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.CaloriesPerGramKelvin, CaloriesPerGramKelvinTolerance);
             AssertEx.EqualTolerance(CenticaloriesPerGramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.CenticaloriesPerGramKelvin, CenticaloriesPerGramKelvinTolerance);
@@ -259,15 +238,9 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettacaloriesPerGramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.VettacaloriesPerGramKelvin, VettacaloriesPerGramKelvinTolerance);
             AssertEx.EqualTolerance(VettajoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.VettajoulesPerKilogramDegreeCelsius, VettajoulesPerKilogramDegreeCelsiusTolerance);
             AssertEx.EqualTolerance(VettajoulesPerKilogramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.VettajoulesPerKilogramKelvin, VettajoulesPerKilogramKelvinTolerance);
-            AssertEx.EqualTolerance(YoctocaloriesPerGramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.YoctocaloriesPerGramKelvin, YoctocaloriesPerGramKelvinTolerance);
-            AssertEx.EqualTolerance(YoctojoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.YoctojoulesPerKilogramDegreeCelsius, YoctojoulesPerKilogramDegreeCelsiusTolerance);
-            AssertEx.EqualTolerance(YoctojoulesPerKilogramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.YoctojoulesPerKilogramKelvin, YoctojoulesPerKilogramKelvinTolerance);
             AssertEx.EqualTolerance(YottacaloriesPerGramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.YottacaloriesPerGramKelvin, YottacaloriesPerGramKelvinTolerance);
             AssertEx.EqualTolerance(YottajoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.YottajoulesPerKilogramDegreeCelsius, YottajoulesPerKilogramDegreeCelsiusTolerance);
             AssertEx.EqualTolerance(YottajoulesPerKilogramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.YottajoulesPerKilogramKelvin, YottajoulesPerKilogramKelvinTolerance);
-            AssertEx.EqualTolerance(ZeptocaloriesPerGramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.ZeptocaloriesPerGramKelvin, ZeptocaloriesPerGramKelvinTolerance);
-            AssertEx.EqualTolerance(ZeptojoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.ZeptojoulesPerKilogramDegreeCelsius, ZeptojoulesPerKilogramDegreeCelsiusTolerance);
-            AssertEx.EqualTolerance(ZeptojoulesPerKilogramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.ZeptojoulesPerKilogramKelvin, ZeptojoulesPerKilogramKelvinTolerance);
             AssertEx.EqualTolerance(ZettacaloriesPerGramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.ZettacaloriesPerGramKelvin, ZettacaloriesPerGramKelvinTolerance);
             AssertEx.EqualTolerance(ZettajoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.ZettajoulesPerKilogramDegreeCelsius, ZettajoulesPerKilogramDegreeCelsiusTolerance);
             AssertEx.EqualTolerance(ZettajoulesPerKilogramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.ZettajoulesPerKilogramKelvin, ZettajoulesPerKilogramKelvinTolerance);
@@ -276,9 +249,6 @@ namespace UnitsNet.Tests
         [Fact]
         public void FromValueAndUnit()
         {
-            AssertEx.EqualTolerance(1, SpecificEntropy.From(1, SpecificEntropyUnit.AttocaloriePerGramKelvin).AttocaloriesPerGramKelvin, AttocaloriesPerGramKelvinTolerance);
-            AssertEx.EqualTolerance(1, SpecificEntropy.From(1, SpecificEntropyUnit.AttojoulePerKilogramDegreeCelsius).AttojoulesPerKilogramDegreeCelsius, AttojoulesPerKilogramDegreeCelsiusTolerance);
-            AssertEx.EqualTolerance(1, SpecificEntropy.From(1, SpecificEntropyUnit.AttojoulePerKilogramKelvin).AttojoulesPerKilogramKelvin, AttojoulesPerKilogramKelvinTolerance);
             AssertEx.EqualTolerance(1, SpecificEntropy.From(1, SpecificEntropyUnit.BtuPerPoundFahrenheit).BtusPerPoundFahrenheit, BtusPerPoundFahrenheitTolerance);
             AssertEx.EqualTolerance(1, SpecificEntropy.From(1, SpecificEntropyUnit.CaloriePerGramKelvin).CaloriesPerGramKelvin, CaloriesPerGramKelvinTolerance);
             AssertEx.EqualTolerance(1, SpecificEntropy.From(1, SpecificEntropyUnit.CenticaloriePerGramKelvin).CenticaloriesPerGramKelvin, CenticaloriesPerGramKelvinTolerance);
@@ -334,15 +304,9 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, SpecificEntropy.From(1, SpecificEntropyUnit.VettacaloriePerGramKelvin).VettacaloriesPerGramKelvin, VettacaloriesPerGramKelvinTolerance);
             AssertEx.EqualTolerance(1, SpecificEntropy.From(1, SpecificEntropyUnit.VettajoulePerKilogramDegreeCelsius).VettajoulesPerKilogramDegreeCelsius, VettajoulesPerKilogramDegreeCelsiusTolerance);
             AssertEx.EqualTolerance(1, SpecificEntropy.From(1, SpecificEntropyUnit.VettajoulePerKilogramKelvin).VettajoulesPerKilogramKelvin, VettajoulesPerKilogramKelvinTolerance);
-            AssertEx.EqualTolerance(1, SpecificEntropy.From(1, SpecificEntropyUnit.YoctocaloriePerGramKelvin).YoctocaloriesPerGramKelvin, YoctocaloriesPerGramKelvinTolerance);
-            AssertEx.EqualTolerance(1, SpecificEntropy.From(1, SpecificEntropyUnit.YoctojoulePerKilogramDegreeCelsius).YoctojoulesPerKilogramDegreeCelsius, YoctojoulesPerKilogramDegreeCelsiusTolerance);
-            AssertEx.EqualTolerance(1, SpecificEntropy.From(1, SpecificEntropyUnit.YoctojoulePerKilogramKelvin).YoctojoulesPerKilogramKelvin, YoctojoulesPerKilogramKelvinTolerance);
             AssertEx.EqualTolerance(1, SpecificEntropy.From(1, SpecificEntropyUnit.YottacaloriePerGramKelvin).YottacaloriesPerGramKelvin, YottacaloriesPerGramKelvinTolerance);
             AssertEx.EqualTolerance(1, SpecificEntropy.From(1, SpecificEntropyUnit.YottajoulePerKilogramDegreeCelsius).YottajoulesPerKilogramDegreeCelsius, YottajoulesPerKilogramDegreeCelsiusTolerance);
             AssertEx.EqualTolerance(1, SpecificEntropy.From(1, SpecificEntropyUnit.YottajoulePerKilogramKelvin).YottajoulesPerKilogramKelvin, YottajoulesPerKilogramKelvinTolerance);
-            AssertEx.EqualTolerance(1, SpecificEntropy.From(1, SpecificEntropyUnit.ZeptocaloriePerGramKelvin).ZeptocaloriesPerGramKelvin, ZeptocaloriesPerGramKelvinTolerance);
-            AssertEx.EqualTolerance(1, SpecificEntropy.From(1, SpecificEntropyUnit.ZeptojoulePerKilogramDegreeCelsius).ZeptojoulesPerKilogramDegreeCelsius, ZeptojoulesPerKilogramDegreeCelsiusTolerance);
-            AssertEx.EqualTolerance(1, SpecificEntropy.From(1, SpecificEntropyUnit.ZeptojoulePerKilogramKelvin).ZeptojoulesPerKilogramKelvin, ZeptojoulesPerKilogramKelvinTolerance);
             AssertEx.EqualTolerance(1, SpecificEntropy.From(1, SpecificEntropyUnit.ZettacaloriePerGramKelvin).ZettacaloriesPerGramKelvin, ZettacaloriesPerGramKelvinTolerance);
             AssertEx.EqualTolerance(1, SpecificEntropy.From(1, SpecificEntropyUnit.ZettajoulePerKilogramDegreeCelsius).ZettajoulesPerKilogramDegreeCelsius, ZettajoulesPerKilogramDegreeCelsiusTolerance);
             AssertEx.EqualTolerance(1, SpecificEntropy.From(1, SpecificEntropyUnit.ZettajoulePerKilogramKelvin).ZettajoulesPerKilogramKelvin, ZettajoulesPerKilogramKelvinTolerance);
@@ -365,9 +329,6 @@ namespace UnitsNet.Tests
         public void As()
         {
             var jouleperkilogramkelvin = SpecificEntropy.FromJoulesPerKilogramKelvin(1);
-            AssertEx.EqualTolerance(AttocaloriesPerGramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.As(SpecificEntropyUnit.AttocaloriePerGramKelvin), AttocaloriesPerGramKelvinTolerance);
-            AssertEx.EqualTolerance(AttojoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.As(SpecificEntropyUnit.AttojoulePerKilogramDegreeCelsius), AttojoulesPerKilogramDegreeCelsiusTolerance);
-            AssertEx.EqualTolerance(AttojoulesPerKilogramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.As(SpecificEntropyUnit.AttojoulePerKilogramKelvin), AttojoulesPerKilogramKelvinTolerance);
             AssertEx.EqualTolerance(BtusPerPoundFahrenheitInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.As(SpecificEntropyUnit.BtuPerPoundFahrenheit), BtusPerPoundFahrenheitTolerance);
             AssertEx.EqualTolerance(CaloriesPerGramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.As(SpecificEntropyUnit.CaloriePerGramKelvin), CaloriesPerGramKelvinTolerance);
             AssertEx.EqualTolerance(CenticaloriesPerGramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.As(SpecificEntropyUnit.CenticaloriePerGramKelvin), CenticaloriesPerGramKelvinTolerance);
@@ -423,15 +384,9 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettacaloriesPerGramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.As(SpecificEntropyUnit.VettacaloriePerGramKelvin), VettacaloriesPerGramKelvinTolerance);
             AssertEx.EqualTolerance(VettajoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.As(SpecificEntropyUnit.VettajoulePerKilogramDegreeCelsius), VettajoulesPerKilogramDegreeCelsiusTolerance);
             AssertEx.EqualTolerance(VettajoulesPerKilogramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.As(SpecificEntropyUnit.VettajoulePerKilogramKelvin), VettajoulesPerKilogramKelvinTolerance);
-            AssertEx.EqualTolerance(YoctocaloriesPerGramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.As(SpecificEntropyUnit.YoctocaloriePerGramKelvin), YoctocaloriesPerGramKelvinTolerance);
-            AssertEx.EqualTolerance(YoctojoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.As(SpecificEntropyUnit.YoctojoulePerKilogramDegreeCelsius), YoctojoulesPerKilogramDegreeCelsiusTolerance);
-            AssertEx.EqualTolerance(YoctojoulesPerKilogramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.As(SpecificEntropyUnit.YoctojoulePerKilogramKelvin), YoctojoulesPerKilogramKelvinTolerance);
             AssertEx.EqualTolerance(YottacaloriesPerGramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.As(SpecificEntropyUnit.YottacaloriePerGramKelvin), YottacaloriesPerGramKelvinTolerance);
             AssertEx.EqualTolerance(YottajoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.As(SpecificEntropyUnit.YottajoulePerKilogramDegreeCelsius), YottajoulesPerKilogramDegreeCelsiusTolerance);
             AssertEx.EqualTolerance(YottajoulesPerKilogramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.As(SpecificEntropyUnit.YottajoulePerKilogramKelvin), YottajoulesPerKilogramKelvinTolerance);
-            AssertEx.EqualTolerance(ZeptocaloriesPerGramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.As(SpecificEntropyUnit.ZeptocaloriePerGramKelvin), ZeptocaloriesPerGramKelvinTolerance);
-            AssertEx.EqualTolerance(ZeptojoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.As(SpecificEntropyUnit.ZeptojoulePerKilogramDegreeCelsius), ZeptojoulesPerKilogramDegreeCelsiusTolerance);
-            AssertEx.EqualTolerance(ZeptojoulesPerKilogramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.As(SpecificEntropyUnit.ZeptojoulePerKilogramKelvin), ZeptojoulesPerKilogramKelvinTolerance);
             AssertEx.EqualTolerance(ZettacaloriesPerGramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.As(SpecificEntropyUnit.ZettacaloriePerGramKelvin), ZettacaloriesPerGramKelvinTolerance);
             AssertEx.EqualTolerance(ZettajoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.As(SpecificEntropyUnit.ZettajoulePerKilogramDegreeCelsius), ZettajoulesPerKilogramDegreeCelsiusTolerance);
             AssertEx.EqualTolerance(ZettajoulesPerKilogramKelvinInOneJoulePerKilogramKelvin, jouleperkilogramkelvin.As(SpecificEntropyUnit.ZettajoulePerKilogramKelvin), ZettajoulesPerKilogramKelvinTolerance);
@@ -441,18 +396,6 @@ namespace UnitsNet.Tests
         public void ToUnit()
         {
             var jouleperkilogramkelvin = SpecificEntropy.FromJoulesPerKilogramKelvin(1);
-
-            var attocaloriepergramkelvinQuantity = jouleperkilogramkelvin.ToUnit(SpecificEntropyUnit.AttocaloriePerGramKelvin);
-            AssertEx.EqualTolerance(AttocaloriesPerGramKelvinInOneJoulePerKilogramKelvin, (double)attocaloriepergramkelvinQuantity.Value, AttocaloriesPerGramKelvinTolerance);
-            Assert.Equal(SpecificEntropyUnit.AttocaloriePerGramKelvin, attocaloriepergramkelvinQuantity.Unit);
-
-            var attojouleperkilogramdegreecelsiusQuantity = jouleperkilogramkelvin.ToUnit(SpecificEntropyUnit.AttojoulePerKilogramDegreeCelsius);
-            AssertEx.EqualTolerance(AttojoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin, (double)attojouleperkilogramdegreecelsiusQuantity.Value, AttojoulesPerKilogramDegreeCelsiusTolerance);
-            Assert.Equal(SpecificEntropyUnit.AttojoulePerKilogramDegreeCelsius, attojouleperkilogramdegreecelsiusQuantity.Unit);
-
-            var attojouleperkilogramkelvinQuantity = jouleperkilogramkelvin.ToUnit(SpecificEntropyUnit.AttojoulePerKilogramKelvin);
-            AssertEx.EqualTolerance(AttojoulesPerKilogramKelvinInOneJoulePerKilogramKelvin, (double)attojouleperkilogramkelvinQuantity.Value, AttojoulesPerKilogramKelvinTolerance);
-            Assert.Equal(SpecificEntropyUnit.AttojoulePerKilogramKelvin, attojouleperkilogramkelvinQuantity.Unit);
 
             var btuperpoundfahrenheitQuantity = jouleperkilogramkelvin.ToUnit(SpecificEntropyUnit.BtuPerPoundFahrenheit);
             AssertEx.EqualTolerance(BtusPerPoundFahrenheitInOneJoulePerKilogramKelvin, (double)btuperpoundfahrenheitQuantity.Value, BtusPerPoundFahrenheitTolerance);
@@ -674,18 +617,6 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettajoulesPerKilogramKelvinInOneJoulePerKilogramKelvin, (double)vettajouleperkilogramkelvinQuantity.Value, VettajoulesPerKilogramKelvinTolerance);
             Assert.Equal(SpecificEntropyUnit.VettajoulePerKilogramKelvin, vettajouleperkilogramkelvinQuantity.Unit);
 
-            var yoctocaloriepergramkelvinQuantity = jouleperkilogramkelvin.ToUnit(SpecificEntropyUnit.YoctocaloriePerGramKelvin);
-            AssertEx.EqualTolerance(YoctocaloriesPerGramKelvinInOneJoulePerKilogramKelvin, (double)yoctocaloriepergramkelvinQuantity.Value, YoctocaloriesPerGramKelvinTolerance);
-            Assert.Equal(SpecificEntropyUnit.YoctocaloriePerGramKelvin, yoctocaloriepergramkelvinQuantity.Unit);
-
-            var yoctojouleperkilogramdegreecelsiusQuantity = jouleperkilogramkelvin.ToUnit(SpecificEntropyUnit.YoctojoulePerKilogramDegreeCelsius);
-            AssertEx.EqualTolerance(YoctojoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin, (double)yoctojouleperkilogramdegreecelsiusQuantity.Value, YoctojoulesPerKilogramDegreeCelsiusTolerance);
-            Assert.Equal(SpecificEntropyUnit.YoctojoulePerKilogramDegreeCelsius, yoctojouleperkilogramdegreecelsiusQuantity.Unit);
-
-            var yoctojouleperkilogramkelvinQuantity = jouleperkilogramkelvin.ToUnit(SpecificEntropyUnit.YoctojoulePerKilogramKelvin);
-            AssertEx.EqualTolerance(YoctojoulesPerKilogramKelvinInOneJoulePerKilogramKelvin, (double)yoctojouleperkilogramkelvinQuantity.Value, YoctojoulesPerKilogramKelvinTolerance);
-            Assert.Equal(SpecificEntropyUnit.YoctojoulePerKilogramKelvin, yoctojouleperkilogramkelvinQuantity.Unit);
-
             var yottacaloriepergramkelvinQuantity = jouleperkilogramkelvin.ToUnit(SpecificEntropyUnit.YottacaloriePerGramKelvin);
             AssertEx.EqualTolerance(YottacaloriesPerGramKelvinInOneJoulePerKilogramKelvin, (double)yottacaloriepergramkelvinQuantity.Value, YottacaloriesPerGramKelvinTolerance);
             Assert.Equal(SpecificEntropyUnit.YottacaloriePerGramKelvin, yottacaloriepergramkelvinQuantity.Unit);
@@ -697,18 +628,6 @@ namespace UnitsNet.Tests
             var yottajouleperkilogramkelvinQuantity = jouleperkilogramkelvin.ToUnit(SpecificEntropyUnit.YottajoulePerKilogramKelvin);
             AssertEx.EqualTolerance(YottajoulesPerKilogramKelvinInOneJoulePerKilogramKelvin, (double)yottajouleperkilogramkelvinQuantity.Value, YottajoulesPerKilogramKelvinTolerance);
             Assert.Equal(SpecificEntropyUnit.YottajoulePerKilogramKelvin, yottajouleperkilogramkelvinQuantity.Unit);
-
-            var zeptocaloriepergramkelvinQuantity = jouleperkilogramkelvin.ToUnit(SpecificEntropyUnit.ZeptocaloriePerGramKelvin);
-            AssertEx.EqualTolerance(ZeptocaloriesPerGramKelvinInOneJoulePerKilogramKelvin, (double)zeptocaloriepergramkelvinQuantity.Value, ZeptocaloriesPerGramKelvinTolerance);
-            Assert.Equal(SpecificEntropyUnit.ZeptocaloriePerGramKelvin, zeptocaloriepergramkelvinQuantity.Unit);
-
-            var zeptojouleperkilogramdegreecelsiusQuantity = jouleperkilogramkelvin.ToUnit(SpecificEntropyUnit.ZeptojoulePerKilogramDegreeCelsius);
-            AssertEx.EqualTolerance(ZeptojoulesPerKilogramDegreeCelsiusInOneJoulePerKilogramKelvin, (double)zeptojouleperkilogramdegreecelsiusQuantity.Value, ZeptojoulesPerKilogramDegreeCelsiusTolerance);
-            Assert.Equal(SpecificEntropyUnit.ZeptojoulePerKilogramDegreeCelsius, zeptojouleperkilogramdegreecelsiusQuantity.Unit);
-
-            var zeptojouleperkilogramkelvinQuantity = jouleperkilogramkelvin.ToUnit(SpecificEntropyUnit.ZeptojoulePerKilogramKelvin);
-            AssertEx.EqualTolerance(ZeptojoulesPerKilogramKelvinInOneJoulePerKilogramKelvin, (double)zeptojouleperkilogramkelvinQuantity.Value, ZeptojoulesPerKilogramKelvinTolerance);
-            Assert.Equal(SpecificEntropyUnit.ZeptojoulePerKilogramKelvin, zeptojouleperkilogramkelvinQuantity.Unit);
 
             var zettacaloriepergramkelvinQuantity = jouleperkilogramkelvin.ToUnit(SpecificEntropyUnit.ZettacaloriePerGramKelvin);
             AssertEx.EqualTolerance(ZettacaloriesPerGramKelvinInOneJoulePerKilogramKelvin, (double)zettacaloriepergramkelvinQuantity.Value, ZettacaloriesPerGramKelvinTolerance);
@@ -727,9 +646,6 @@ namespace UnitsNet.Tests
         public void ConversionRoundTrip()
         {
             SpecificEntropy jouleperkilogramkelvin = SpecificEntropy.FromJoulesPerKilogramKelvin(1);
-            AssertEx.EqualTolerance(1, SpecificEntropy.FromAttocaloriesPerGramKelvin(jouleperkilogramkelvin.AttocaloriesPerGramKelvin).JoulesPerKilogramKelvin, AttocaloriesPerGramKelvinTolerance);
-            AssertEx.EqualTolerance(1, SpecificEntropy.FromAttojoulesPerKilogramDegreeCelsius(jouleperkilogramkelvin.AttojoulesPerKilogramDegreeCelsius).JoulesPerKilogramKelvin, AttojoulesPerKilogramDegreeCelsiusTolerance);
-            AssertEx.EqualTolerance(1, SpecificEntropy.FromAttojoulesPerKilogramKelvin(jouleperkilogramkelvin.AttojoulesPerKilogramKelvin).JoulesPerKilogramKelvin, AttojoulesPerKilogramKelvinTolerance);
             AssertEx.EqualTolerance(1, SpecificEntropy.FromBtusPerPoundFahrenheit(jouleperkilogramkelvin.BtusPerPoundFahrenheit).JoulesPerKilogramKelvin, BtusPerPoundFahrenheitTolerance);
             AssertEx.EqualTolerance(1, SpecificEntropy.FromCaloriesPerGramKelvin(jouleperkilogramkelvin.CaloriesPerGramKelvin).JoulesPerKilogramKelvin, CaloriesPerGramKelvinTolerance);
             AssertEx.EqualTolerance(1, SpecificEntropy.FromCenticaloriesPerGramKelvin(jouleperkilogramkelvin.CenticaloriesPerGramKelvin).JoulesPerKilogramKelvin, CenticaloriesPerGramKelvinTolerance);
@@ -785,15 +701,9 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, SpecificEntropy.FromVettacaloriesPerGramKelvin(jouleperkilogramkelvin.VettacaloriesPerGramKelvin).JoulesPerKilogramKelvin, VettacaloriesPerGramKelvinTolerance);
             AssertEx.EqualTolerance(1, SpecificEntropy.FromVettajoulesPerKilogramDegreeCelsius(jouleperkilogramkelvin.VettajoulesPerKilogramDegreeCelsius).JoulesPerKilogramKelvin, VettajoulesPerKilogramDegreeCelsiusTolerance);
             AssertEx.EqualTolerance(1, SpecificEntropy.FromVettajoulesPerKilogramKelvin(jouleperkilogramkelvin.VettajoulesPerKilogramKelvin).JoulesPerKilogramKelvin, VettajoulesPerKilogramKelvinTolerance);
-            AssertEx.EqualTolerance(1, SpecificEntropy.FromYoctocaloriesPerGramKelvin(jouleperkilogramkelvin.YoctocaloriesPerGramKelvin).JoulesPerKilogramKelvin, YoctocaloriesPerGramKelvinTolerance);
-            AssertEx.EqualTolerance(1, SpecificEntropy.FromYoctojoulesPerKilogramDegreeCelsius(jouleperkilogramkelvin.YoctojoulesPerKilogramDegreeCelsius).JoulesPerKilogramKelvin, YoctojoulesPerKilogramDegreeCelsiusTolerance);
-            AssertEx.EqualTolerance(1, SpecificEntropy.FromYoctojoulesPerKilogramKelvin(jouleperkilogramkelvin.YoctojoulesPerKilogramKelvin).JoulesPerKilogramKelvin, YoctojoulesPerKilogramKelvinTolerance);
             AssertEx.EqualTolerance(1, SpecificEntropy.FromYottacaloriesPerGramKelvin(jouleperkilogramkelvin.YottacaloriesPerGramKelvin).JoulesPerKilogramKelvin, YottacaloriesPerGramKelvinTolerance);
             AssertEx.EqualTolerance(1, SpecificEntropy.FromYottajoulesPerKilogramDegreeCelsius(jouleperkilogramkelvin.YottajoulesPerKilogramDegreeCelsius).JoulesPerKilogramKelvin, YottajoulesPerKilogramDegreeCelsiusTolerance);
             AssertEx.EqualTolerance(1, SpecificEntropy.FromYottajoulesPerKilogramKelvin(jouleperkilogramkelvin.YottajoulesPerKilogramKelvin).JoulesPerKilogramKelvin, YottajoulesPerKilogramKelvinTolerance);
-            AssertEx.EqualTolerance(1, SpecificEntropy.FromZeptocaloriesPerGramKelvin(jouleperkilogramkelvin.ZeptocaloriesPerGramKelvin).JoulesPerKilogramKelvin, ZeptocaloriesPerGramKelvinTolerance);
-            AssertEx.EqualTolerance(1, SpecificEntropy.FromZeptojoulesPerKilogramDegreeCelsius(jouleperkilogramkelvin.ZeptojoulesPerKilogramDegreeCelsius).JoulesPerKilogramKelvin, ZeptojoulesPerKilogramDegreeCelsiusTolerance);
-            AssertEx.EqualTolerance(1, SpecificEntropy.FromZeptojoulesPerKilogramKelvin(jouleperkilogramkelvin.ZeptojoulesPerKilogramKelvin).JoulesPerKilogramKelvin, ZeptojoulesPerKilogramKelvinTolerance);
             AssertEx.EqualTolerance(1, SpecificEntropy.FromZettacaloriesPerGramKelvin(jouleperkilogramkelvin.ZettacaloriesPerGramKelvin).JoulesPerKilogramKelvin, ZettacaloriesPerGramKelvinTolerance);
             AssertEx.EqualTolerance(1, SpecificEntropy.FromZettajoulesPerKilogramDegreeCelsius(jouleperkilogramkelvin.ZettajoulesPerKilogramDegreeCelsius).JoulesPerKilogramKelvin, ZettajoulesPerKilogramDegreeCelsiusTolerance);
             AssertEx.EqualTolerance(1, SpecificEntropy.FromZettajoulesPerKilogramKelvin(jouleperkilogramkelvin.ZettajoulesPerKilogramKelvin).JoulesPerKilogramKelvin, ZettajoulesPerKilogramKelvinTolerance);

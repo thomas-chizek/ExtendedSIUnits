@@ -21,7 +21,7 @@
       "PluralName": "LitersPerLiter",
       "FromUnitToBaseFunc": "x",
       "FromBaseToUnitFunc": "x",
-      "Prefixes": [ "Yocto", "Zepto", "Atto", "Femto", "Pico", "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo" ],
+      "Prefixes": [  "Femto", "Pico", "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo" ],
       "Localization": [
         {
           "Culture": "en-US",
@@ -34,7 +34,7 @@
       "PluralName": "LitersPerMililiter",
       "FromUnitToBaseFunc": "x/1e-3",
       "FromBaseToUnitFunc": "x*1e-3",
-      "Prefixes": [ "Yocto", "Zepto", "Atto", "Femto", "Pico", "Nano", "Micro", "Centi", "Milli", "Deca", "Kilo" ],
+      "Prefixes": [  "Femto", "Pico", "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Kilo" ],
       "Localization": [
         {
           "Culture": "en-US",

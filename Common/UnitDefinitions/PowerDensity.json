@@ -18,7 +18,7 @@
       },
       "FromUnitToBaseFunc": "x",
       "FromBaseToUnitFunc": "x",
-      "Prefixes": [ "Yocto", "Zepto", "Atto", "Femto", "Pico", "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta", "Qutra", "Vetta" ],
+      "Prefixes": [  "Femto", "Pico", "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta", "Qutra", "Vetta" ],
       "Localization": [
         {
           "Culture": "en-US",
@@ -31,7 +31,7 @@
       "PluralName": "WattsPerCubicInch",
       "FromUnitToBaseFunc": "x*6.102374409473228e4",
       "FromBaseToUnitFunc": "x/6.102374409473228e4",
-      "Prefixes": [ "Yocto", "Zepto", "Atto", "Femto", "Pico", "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta", "Qutra", "Vetta" ],
+      "Prefixes": [ "Femto", "Pico", "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta", "Qutra", "Vetta" ],
       "Localization": [
         {
           "Culture": "en-US",
@@ -44,7 +44,7 @@
       "PluralName": "WattsPerCubicFoot",
       "FromUnitToBaseFunc": "x*3.531466672148859e1",
       "FromBaseToUnitFunc": "x/3.531466672148859e1",
-      "Prefixes": [ "Yocto", "Zepto", "Atto", "Femto", "Pico", "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta", "Qutra", "Vetta" ],
+      "Prefixes": [ "Femto", "Pico", "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta", "Qutra", "Vetta" ],
       "Localization": [
         {
           "Culture": "en-US",
@@ -57,7 +57,7 @@
       "PluralName": "WattsPerLiter",
       "FromUnitToBaseFunc": "x*1.0e3",
       "FromBaseToUnitFunc": "x/1.0e3",
-      "Prefixes": [ "Yocto", "Zepto", "Atto", "Femto", "Pico", "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta", "Qutra", "Vetta" ],
+      "Prefixes": [ "Femto", "Pico", "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta", "Qutra", "Vetta" ],
       "Localization": [
         {
           "Culture": "en-US",

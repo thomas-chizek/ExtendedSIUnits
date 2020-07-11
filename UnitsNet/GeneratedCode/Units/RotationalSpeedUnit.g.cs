@@ -26,8 +26,6 @@ namespace UnitsNet.Units
     public enum RotationalSpeedUnit
     {
         Undefined = 0,
-        AttodegreePerSecond,
-        AttoradianPerSecond,
         CentidegreePerSecond,
         CentiradianPerSecond,
         DecadegreePerSecond,
@@ -67,12 +65,8 @@ namespace UnitsNet.Units
         TeraradianPerSecond,
         VettadegreePerSecond,
         VettaradianPerSecond,
-        YoctodegreePerSecond,
-        YoctoradianPerSecond,
         YottadegreePerSecond,
         YottaradianPerSecond,
-        ZeptodegreePerSecond,
-        ZeptoradianPerSecond,
         ZettadegreePerSecond,
         ZettaradianPerSecond,
     }

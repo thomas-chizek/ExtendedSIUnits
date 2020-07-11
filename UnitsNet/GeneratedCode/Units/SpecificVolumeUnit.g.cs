@@ -26,7 +26,6 @@ namespace UnitsNet.Units
     public enum SpecificVolumeUnit
     {
         Undefined = 0,
-        AttocubicMeterPerKilogram,
         CenticubicMeterPerKilogram,
         CubicFootPerPound,
         CubicMeterPerKilogram,
@@ -46,9 +45,7 @@ namespace UnitsNet.Units
         QutracubicMeterPerKilogram,
         TeracubicMeterPerKilogram,
         VettacubicMeterPerKilogram,
-        YoctocubicMeterPerKilogram,
         YottacubicMeterPerKilogram,
-        ZeptocubicMeterPerKilogram,
         ZettacubicMeterPerKilogram,
     }
 

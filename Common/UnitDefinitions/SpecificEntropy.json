@@ -13,7 +13,7 @@
       "PluralName": "JoulesPerKilogramKelvin",
       "FromUnitToBaseFunc": "x",
       "FromBaseToUnitFunc": "x",
-      "Prefixes": [ "Yocto", "Zepto", "Atto", "Femto", "Pico", "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta", "Qutra", "Vetta" ],
+      "Prefixes": [  "Femto", "Pico", "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta", "Qutra", "Vetta" ],
       "Localization": [
         {
           "Culture": "en-US",
@@ -26,7 +26,7 @@
       "PluralName": "JoulesPerKilogramDegreeCelsius",
       "FromUnitToBaseFunc": "x",
       "FromBaseToUnitFunc": "x",
-      "Prefixes": [ "Yocto", "Zepto", "Atto", "Femto", "Pico", "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta", "Qutra", "Vetta" ],
+      "Prefixes": [  "Femto", "Pico", "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta", "Qutra", "Vetta" ],
       "Localization": [
         {
           "Culture": "en-US",
@@ -39,7 +39,7 @@
       "PluralName": "CaloriesPerGramKelvin",
       "FromUnitToBaseFunc": "x*4.184e3",
       "FromBaseToUnitFunc": "x/4.184e3",
-      "Prefixes": [ "Yocto", "Zepto", "Atto", "Femto", "Pico", "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta", "Qutra", "Vetta" ],
+      "Prefixes": [  "Femto", "Pico", "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta", "Qutra", "Vetta" ],
       "Localization": [
         {
           "Culture": "en-US",

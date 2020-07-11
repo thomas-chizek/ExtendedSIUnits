@@ -156,11 +156,6 @@ namespace UnitsNet
         #region Conversion Properties
 
         /// <summary>
-        ///     Get HeatFlux in AttowattsPerSquareMeter.
-        /// </summary>
-        public double AttowattsPerSquareMeter => As(HeatFluxUnit.AttowattPerSquareMeter);
-
-        /// <summary>
         ///     Get HeatFlux in BtusPerHourSquareFoot.
         /// </summary>
         public double BtusPerHourSquareFoot => As(HeatFluxUnit.BtuPerHourSquareFoot);
@@ -306,19 +301,9 @@ namespace UnitsNet
         public double WattsPerSquareMeter => As(HeatFluxUnit.WattPerSquareMeter);
 
         /// <summary>
-        ///     Get HeatFlux in YoctowattsPerSquareMeter.
-        /// </summary>
-        public double YoctowattsPerSquareMeter => As(HeatFluxUnit.YoctowattPerSquareMeter);
-
-        /// <summary>
         ///     Get HeatFlux in YottawattsPerSquareMeter.
         /// </summary>
         public double YottawattsPerSquareMeter => As(HeatFluxUnit.YottawattPerSquareMeter);
-
-        /// <summary>
-        ///     Get HeatFlux in ZeptowattsPerSquareMeter.
-        /// </summary>
-        public double ZeptowattsPerSquareMeter => As(HeatFluxUnit.ZeptowattPerSquareMeter);
 
         /// <summary>
         ///     Get HeatFlux in ZettawattsPerSquareMeter.
@@ -355,16 +340,6 @@ namespace UnitsNet
 
         #region Static Factory Methods
 
-        /// <summary>
-        ///     Get HeatFlux from AttowattsPerSquareMeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static HeatFlux FromAttowattsPerSquareMeter(double attowattspersquaremeter)
-        {
-            double value = (double) attowattspersquaremeter;
-            return new HeatFlux(value, HeatFluxUnit.AttowattPerSquareMeter);
-        }
         /// <summary>
         ///     Get HeatFlux from BtusPerHourSquareFoot.
         /// </summary>
@@ -656,16 +631,6 @@ namespace UnitsNet
             return new HeatFlux(value, HeatFluxUnit.WattPerSquareMeter);
         }
         /// <summary>
-        ///     Get HeatFlux from YoctowattsPerSquareMeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static HeatFlux FromYoctowattsPerSquareMeter(double yoctowattspersquaremeter)
-        {
-            double value = (double) yoctowattspersquaremeter;
-            return new HeatFlux(value, HeatFluxUnit.YoctowattPerSquareMeter);
-        }
-        /// <summary>
         ///     Get HeatFlux from YottawattsPerSquareMeter.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -674,16 +639,6 @@ namespace UnitsNet
         {
             double value = (double) yottawattspersquaremeter;
             return new HeatFlux(value, HeatFluxUnit.YottawattPerSquareMeter);
-        }
-        /// <summary>
-        ///     Get HeatFlux from ZeptowattsPerSquareMeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static HeatFlux FromZeptowattsPerSquareMeter(double zeptowattspersquaremeter)
-        {
-            double value = (double) zeptowattspersquaremeter;
-            return new HeatFlux(value, HeatFluxUnit.ZeptowattPerSquareMeter);
         }
         /// <summary>
         ///     Get HeatFlux from ZettawattsPerSquareMeter.
@@ -986,7 +941,6 @@ namespace UnitsNet
         {
             switch(Unit)
             {
-                case HeatFluxUnit.AttowattPerSquareMeter: return (_value) * 1e-18d;
                 case HeatFluxUnit.BtuPerHourSquareFoot: return _value*3.15459075;
                 case HeatFluxUnit.BtuPerMinuteSquareFoot: return _value*1.89275445e2;
                 case HeatFluxUnit.BtuPerSecondSquareFoot: return _value*1.13565267e4;
@@ -1016,9 +970,7 @@ namespace UnitsNet
                 case HeatFluxUnit.WattPerSquareFoot: return _value*1.07639e1;
                 case HeatFluxUnit.WattPerSquareInch: return _value*1.5500031e3;
                 case HeatFluxUnit.WattPerSquareMeter: return _value;
-                case HeatFluxUnit.YoctowattPerSquareMeter: return (_value) * 1e-24d;
                 case HeatFluxUnit.YottawattPerSquareMeter: return (_value) * 1e24d;
-                case HeatFluxUnit.ZeptowattPerSquareMeter: return (_value) * 1e-21d;
                 case HeatFluxUnit.ZettawattPerSquareMeter: return (_value) * 1e21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to base units.");
@@ -1034,7 +986,6 @@ namespace UnitsNet
 
             switch(unit)
             {
-                case HeatFluxUnit.AttowattPerSquareMeter: return (baseUnitValue) / 1e-18d;
                 case HeatFluxUnit.BtuPerHourSquareFoot: return baseUnitValue/3.15459075;
                 case HeatFluxUnit.BtuPerMinuteSquareFoot: return baseUnitValue/1.89275445e2;
                 case HeatFluxUnit.BtuPerSecondSquareFoot: return baseUnitValue/1.13565267e4;
@@ -1064,9 +1015,7 @@ namespace UnitsNet
                 case HeatFluxUnit.WattPerSquareFoot: return baseUnitValue/1.07639e1;
                 case HeatFluxUnit.WattPerSquareInch: return baseUnitValue/1.5500031e3;
                 case HeatFluxUnit.WattPerSquareMeter: return baseUnitValue;
-                case HeatFluxUnit.YoctowattPerSquareMeter: return (baseUnitValue) / 1e-24d;
                 case HeatFluxUnit.YottawattPerSquareMeter: return (baseUnitValue) / 1e24d;
-                case HeatFluxUnit.ZeptowattPerSquareMeter: return (baseUnitValue) / 1e-21d;
                 case HeatFluxUnit.ZettawattPerSquareMeter: return (baseUnitValue) / 1e21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to {unit}.");

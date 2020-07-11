@@ -34,11 +34,6 @@ namespace UnitsNet.Tests
 // ReSharper disable once PartialTypeWithSinglePart
     public abstract partial class TorqueTestsBase
     {
-        protected abstract double AttonewtonCentimetersInOneNewtonMeter { get; }
-        protected abstract double AttonewtonMetersInOneNewtonMeter { get; }
-        protected abstract double AttonewtonMillimetersInOneNewtonMeter { get; }
-        protected abstract double AttopoundForceFeetInOneNewtonMeter { get; }
-        protected abstract double AttopoundForceInchesInOneNewtonMeter { get; }
         protected abstract double CentinewtonCentimetersInOneNewtonMeter { get; }
         protected abstract double CentinewtonMetersInOneNewtonMeter { get; }
         protected abstract double CentinewtonMillimetersInOneNewtonMeter { get; }
@@ -135,21 +130,11 @@ namespace UnitsNet.Tests
         protected abstract double VettanewtonMillimetersInOneNewtonMeter { get; }
         protected abstract double VettapoundForceFeetInOneNewtonMeter { get; }
         protected abstract double VettapoundForceInchesInOneNewtonMeter { get; }
-        protected abstract double YoctonewtonCentimetersInOneNewtonMeter { get; }
-        protected abstract double YoctonewtonMetersInOneNewtonMeter { get; }
-        protected abstract double YoctonewtonMillimetersInOneNewtonMeter { get; }
-        protected abstract double YoctopoundForceFeetInOneNewtonMeter { get; }
-        protected abstract double YoctopoundForceInchesInOneNewtonMeter { get; }
         protected abstract double YottanewtonCentimetersInOneNewtonMeter { get; }
         protected abstract double YottanewtonMetersInOneNewtonMeter { get; }
         protected abstract double YottanewtonMillimetersInOneNewtonMeter { get; }
         protected abstract double YottapoundForceFeetInOneNewtonMeter { get; }
         protected abstract double YottapoundForceInchesInOneNewtonMeter { get; }
-        protected abstract double ZeptonewtonCentimetersInOneNewtonMeter { get; }
-        protected abstract double ZeptonewtonMetersInOneNewtonMeter { get; }
-        protected abstract double ZeptonewtonMillimetersInOneNewtonMeter { get; }
-        protected abstract double ZeptopoundForceFeetInOneNewtonMeter { get; }
-        protected abstract double ZeptopoundForceInchesInOneNewtonMeter { get; }
         protected abstract double ZettanewtonCentimetersInOneNewtonMeter { get; }
         protected abstract double ZettanewtonMetersInOneNewtonMeter { get; }
         protected abstract double ZettanewtonMillimetersInOneNewtonMeter { get; }
@@ -157,11 +142,6 @@ namespace UnitsNet.Tests
         protected abstract double ZettapoundForceInchesInOneNewtonMeter { get; }
 
 // ReSharper disable VirtualMemberNeverOverriden.Global
-        protected virtual double AttonewtonCentimetersTolerance { get { return 1e-5; } }
-        protected virtual double AttonewtonMetersTolerance { get { return 1e-5; } }
-        protected virtual double AttonewtonMillimetersTolerance { get { return 1e-5; } }
-        protected virtual double AttopoundForceFeetTolerance { get { return 1e-5; } }
-        protected virtual double AttopoundForceInchesTolerance { get { return 1e-5; } }
         protected virtual double CentinewtonCentimetersTolerance { get { return 1e-5; } }
         protected virtual double CentinewtonMetersTolerance { get { return 1e-5; } }
         protected virtual double CentinewtonMillimetersTolerance { get { return 1e-5; } }
@@ -258,21 +238,11 @@ namespace UnitsNet.Tests
         protected virtual double VettanewtonMillimetersTolerance { get { return 1e-5; } }
         protected virtual double VettapoundForceFeetTolerance { get { return 1e-5; } }
         protected virtual double VettapoundForceInchesTolerance { get { return 1e-5; } }
-        protected virtual double YoctonewtonCentimetersTolerance { get { return 1e-5; } }
-        protected virtual double YoctonewtonMetersTolerance { get { return 1e-5; } }
-        protected virtual double YoctonewtonMillimetersTolerance { get { return 1e-5; } }
-        protected virtual double YoctopoundForceFeetTolerance { get { return 1e-5; } }
-        protected virtual double YoctopoundForceInchesTolerance { get { return 1e-5; } }
         protected virtual double YottanewtonCentimetersTolerance { get { return 1e-5; } }
         protected virtual double YottanewtonMetersTolerance { get { return 1e-5; } }
         protected virtual double YottanewtonMillimetersTolerance { get { return 1e-5; } }
         protected virtual double YottapoundForceFeetTolerance { get { return 1e-5; } }
         protected virtual double YottapoundForceInchesTolerance { get { return 1e-5; } }
-        protected virtual double ZeptonewtonCentimetersTolerance { get { return 1e-5; } }
-        protected virtual double ZeptonewtonMetersTolerance { get { return 1e-5; } }
-        protected virtual double ZeptonewtonMillimetersTolerance { get { return 1e-5; } }
-        protected virtual double ZeptopoundForceFeetTolerance { get { return 1e-5; } }
-        protected virtual double ZeptopoundForceInchesTolerance { get { return 1e-5; } }
         protected virtual double ZettanewtonCentimetersTolerance { get { return 1e-5; } }
         protected virtual double ZettanewtonMetersTolerance { get { return 1e-5; } }
         protected virtual double ZettanewtonMillimetersTolerance { get { return 1e-5; } }
@@ -303,11 +273,6 @@ namespace UnitsNet.Tests
         public void NewtonMeterToTorqueUnits()
         {
             Torque newtonmeter = Torque.FromNewtonMeters(1);
-            AssertEx.EqualTolerance(AttonewtonCentimetersInOneNewtonMeter, newtonmeter.AttonewtonCentimeters, AttonewtonCentimetersTolerance);
-            AssertEx.EqualTolerance(AttonewtonMetersInOneNewtonMeter, newtonmeter.AttonewtonMeters, AttonewtonMetersTolerance);
-            AssertEx.EqualTolerance(AttonewtonMillimetersInOneNewtonMeter, newtonmeter.AttonewtonMillimeters, AttonewtonMillimetersTolerance);
-            AssertEx.EqualTolerance(AttopoundForceFeetInOneNewtonMeter, newtonmeter.AttopoundForceFeet, AttopoundForceFeetTolerance);
-            AssertEx.EqualTolerance(AttopoundForceInchesInOneNewtonMeter, newtonmeter.AttopoundForceInches, AttopoundForceInchesTolerance);
             AssertEx.EqualTolerance(CentinewtonCentimetersInOneNewtonMeter, newtonmeter.CentinewtonCentimeters, CentinewtonCentimetersTolerance);
             AssertEx.EqualTolerance(CentinewtonMetersInOneNewtonMeter, newtonmeter.CentinewtonMeters, CentinewtonMetersTolerance);
             AssertEx.EqualTolerance(CentinewtonMillimetersInOneNewtonMeter, newtonmeter.CentinewtonMillimeters, CentinewtonMillimetersTolerance);
@@ -404,21 +369,11 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettanewtonMillimetersInOneNewtonMeter, newtonmeter.VettanewtonMillimeters, VettanewtonMillimetersTolerance);
             AssertEx.EqualTolerance(VettapoundForceFeetInOneNewtonMeter, newtonmeter.VettapoundForceFeet, VettapoundForceFeetTolerance);
             AssertEx.EqualTolerance(VettapoundForceInchesInOneNewtonMeter, newtonmeter.VettapoundForceInches, VettapoundForceInchesTolerance);
-            AssertEx.EqualTolerance(YoctonewtonCentimetersInOneNewtonMeter, newtonmeter.YoctonewtonCentimeters, YoctonewtonCentimetersTolerance);
-            AssertEx.EqualTolerance(YoctonewtonMetersInOneNewtonMeter, newtonmeter.YoctonewtonMeters, YoctonewtonMetersTolerance);
-            AssertEx.EqualTolerance(YoctonewtonMillimetersInOneNewtonMeter, newtonmeter.YoctonewtonMillimeters, YoctonewtonMillimetersTolerance);
-            AssertEx.EqualTolerance(YoctopoundForceFeetInOneNewtonMeter, newtonmeter.YoctopoundForceFeet, YoctopoundForceFeetTolerance);
-            AssertEx.EqualTolerance(YoctopoundForceInchesInOneNewtonMeter, newtonmeter.YoctopoundForceInches, YoctopoundForceInchesTolerance);
             AssertEx.EqualTolerance(YottanewtonCentimetersInOneNewtonMeter, newtonmeter.YottanewtonCentimeters, YottanewtonCentimetersTolerance);
             AssertEx.EqualTolerance(YottanewtonMetersInOneNewtonMeter, newtonmeter.YottanewtonMeters, YottanewtonMetersTolerance);
             AssertEx.EqualTolerance(YottanewtonMillimetersInOneNewtonMeter, newtonmeter.YottanewtonMillimeters, YottanewtonMillimetersTolerance);
             AssertEx.EqualTolerance(YottapoundForceFeetInOneNewtonMeter, newtonmeter.YottapoundForceFeet, YottapoundForceFeetTolerance);
             AssertEx.EqualTolerance(YottapoundForceInchesInOneNewtonMeter, newtonmeter.YottapoundForceInches, YottapoundForceInchesTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonCentimetersInOneNewtonMeter, newtonmeter.ZeptonewtonCentimeters, ZeptonewtonCentimetersTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonMetersInOneNewtonMeter, newtonmeter.ZeptonewtonMeters, ZeptonewtonMetersTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonMillimetersInOneNewtonMeter, newtonmeter.ZeptonewtonMillimeters, ZeptonewtonMillimetersTolerance);
-            AssertEx.EqualTolerance(ZeptopoundForceFeetInOneNewtonMeter, newtonmeter.ZeptopoundForceFeet, ZeptopoundForceFeetTolerance);
-            AssertEx.EqualTolerance(ZeptopoundForceInchesInOneNewtonMeter, newtonmeter.ZeptopoundForceInches, ZeptopoundForceInchesTolerance);
             AssertEx.EqualTolerance(ZettanewtonCentimetersInOneNewtonMeter, newtonmeter.ZettanewtonCentimeters, ZettanewtonCentimetersTolerance);
             AssertEx.EqualTolerance(ZettanewtonMetersInOneNewtonMeter, newtonmeter.ZettanewtonMeters, ZettanewtonMetersTolerance);
             AssertEx.EqualTolerance(ZettanewtonMillimetersInOneNewtonMeter, newtonmeter.ZettanewtonMillimeters, ZettanewtonMillimetersTolerance);
@@ -429,11 +384,6 @@ namespace UnitsNet.Tests
         [Fact]
         public void FromValueAndUnit()
         {
-            AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.AttonewtonCentimeter).AttonewtonCentimeters, AttonewtonCentimetersTolerance);
-            AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.AttonewtonMeter).AttonewtonMeters, AttonewtonMetersTolerance);
-            AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.AttonewtonMillimeter).AttonewtonMillimeters, AttonewtonMillimetersTolerance);
-            AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.AttopoundForceFoot).AttopoundForceFeet, AttopoundForceFeetTolerance);
-            AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.AttopoundForceInch).AttopoundForceInches, AttopoundForceInchesTolerance);
             AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.CentinewtonCentimeter).CentinewtonCentimeters, CentinewtonCentimetersTolerance);
             AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.CentinewtonMeter).CentinewtonMeters, CentinewtonMetersTolerance);
             AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.CentinewtonMillimeter).CentinewtonMillimeters, CentinewtonMillimetersTolerance);
@@ -530,21 +480,11 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.VettanewtonMillimeter).VettanewtonMillimeters, VettanewtonMillimetersTolerance);
             AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.VettapoundForceFoot).VettapoundForceFeet, VettapoundForceFeetTolerance);
             AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.VettapoundForceInch).VettapoundForceInches, VettapoundForceInchesTolerance);
-            AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.YoctonewtonCentimeter).YoctonewtonCentimeters, YoctonewtonCentimetersTolerance);
-            AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.YoctonewtonMeter).YoctonewtonMeters, YoctonewtonMetersTolerance);
-            AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.YoctonewtonMillimeter).YoctonewtonMillimeters, YoctonewtonMillimetersTolerance);
-            AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.YoctopoundForceFoot).YoctopoundForceFeet, YoctopoundForceFeetTolerance);
-            AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.YoctopoundForceInch).YoctopoundForceInches, YoctopoundForceInchesTolerance);
             AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.YottanewtonCentimeter).YottanewtonCentimeters, YottanewtonCentimetersTolerance);
             AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.YottanewtonMeter).YottanewtonMeters, YottanewtonMetersTolerance);
             AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.YottanewtonMillimeter).YottanewtonMillimeters, YottanewtonMillimetersTolerance);
             AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.YottapoundForceFoot).YottapoundForceFeet, YottapoundForceFeetTolerance);
             AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.YottapoundForceInch).YottapoundForceInches, YottapoundForceInchesTolerance);
-            AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.ZeptonewtonCentimeter).ZeptonewtonCentimeters, ZeptonewtonCentimetersTolerance);
-            AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.ZeptonewtonMeter).ZeptonewtonMeters, ZeptonewtonMetersTolerance);
-            AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.ZeptonewtonMillimeter).ZeptonewtonMillimeters, ZeptonewtonMillimetersTolerance);
-            AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.ZeptopoundForceFoot).ZeptopoundForceFeet, ZeptopoundForceFeetTolerance);
-            AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.ZeptopoundForceInch).ZeptopoundForceInches, ZeptopoundForceInchesTolerance);
             AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.ZettanewtonCentimeter).ZettanewtonCentimeters, ZettanewtonCentimetersTolerance);
             AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.ZettanewtonMeter).ZettanewtonMeters, ZettanewtonMetersTolerance);
             AssertEx.EqualTolerance(1, Torque.From(1, TorqueUnit.ZettanewtonMillimeter).ZettanewtonMillimeters, ZettanewtonMillimetersTolerance);
@@ -569,11 +509,6 @@ namespace UnitsNet.Tests
         public void As()
         {
             var newtonmeter = Torque.FromNewtonMeters(1);
-            AssertEx.EqualTolerance(AttonewtonCentimetersInOneNewtonMeter, newtonmeter.As(TorqueUnit.AttonewtonCentimeter), AttonewtonCentimetersTolerance);
-            AssertEx.EqualTolerance(AttonewtonMetersInOneNewtonMeter, newtonmeter.As(TorqueUnit.AttonewtonMeter), AttonewtonMetersTolerance);
-            AssertEx.EqualTolerance(AttonewtonMillimetersInOneNewtonMeter, newtonmeter.As(TorqueUnit.AttonewtonMillimeter), AttonewtonMillimetersTolerance);
-            AssertEx.EqualTolerance(AttopoundForceFeetInOneNewtonMeter, newtonmeter.As(TorqueUnit.AttopoundForceFoot), AttopoundForceFeetTolerance);
-            AssertEx.EqualTolerance(AttopoundForceInchesInOneNewtonMeter, newtonmeter.As(TorqueUnit.AttopoundForceInch), AttopoundForceInchesTolerance);
             AssertEx.EqualTolerance(CentinewtonCentimetersInOneNewtonMeter, newtonmeter.As(TorqueUnit.CentinewtonCentimeter), CentinewtonCentimetersTolerance);
             AssertEx.EqualTolerance(CentinewtonMetersInOneNewtonMeter, newtonmeter.As(TorqueUnit.CentinewtonMeter), CentinewtonMetersTolerance);
             AssertEx.EqualTolerance(CentinewtonMillimetersInOneNewtonMeter, newtonmeter.As(TorqueUnit.CentinewtonMillimeter), CentinewtonMillimetersTolerance);
@@ -670,21 +605,11 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettanewtonMillimetersInOneNewtonMeter, newtonmeter.As(TorqueUnit.VettanewtonMillimeter), VettanewtonMillimetersTolerance);
             AssertEx.EqualTolerance(VettapoundForceFeetInOneNewtonMeter, newtonmeter.As(TorqueUnit.VettapoundForceFoot), VettapoundForceFeetTolerance);
             AssertEx.EqualTolerance(VettapoundForceInchesInOneNewtonMeter, newtonmeter.As(TorqueUnit.VettapoundForceInch), VettapoundForceInchesTolerance);
-            AssertEx.EqualTolerance(YoctonewtonCentimetersInOneNewtonMeter, newtonmeter.As(TorqueUnit.YoctonewtonCentimeter), YoctonewtonCentimetersTolerance);
-            AssertEx.EqualTolerance(YoctonewtonMetersInOneNewtonMeter, newtonmeter.As(TorqueUnit.YoctonewtonMeter), YoctonewtonMetersTolerance);
-            AssertEx.EqualTolerance(YoctonewtonMillimetersInOneNewtonMeter, newtonmeter.As(TorqueUnit.YoctonewtonMillimeter), YoctonewtonMillimetersTolerance);
-            AssertEx.EqualTolerance(YoctopoundForceFeetInOneNewtonMeter, newtonmeter.As(TorqueUnit.YoctopoundForceFoot), YoctopoundForceFeetTolerance);
-            AssertEx.EqualTolerance(YoctopoundForceInchesInOneNewtonMeter, newtonmeter.As(TorqueUnit.YoctopoundForceInch), YoctopoundForceInchesTolerance);
             AssertEx.EqualTolerance(YottanewtonCentimetersInOneNewtonMeter, newtonmeter.As(TorqueUnit.YottanewtonCentimeter), YottanewtonCentimetersTolerance);
             AssertEx.EqualTolerance(YottanewtonMetersInOneNewtonMeter, newtonmeter.As(TorqueUnit.YottanewtonMeter), YottanewtonMetersTolerance);
             AssertEx.EqualTolerance(YottanewtonMillimetersInOneNewtonMeter, newtonmeter.As(TorqueUnit.YottanewtonMillimeter), YottanewtonMillimetersTolerance);
             AssertEx.EqualTolerance(YottapoundForceFeetInOneNewtonMeter, newtonmeter.As(TorqueUnit.YottapoundForceFoot), YottapoundForceFeetTolerance);
             AssertEx.EqualTolerance(YottapoundForceInchesInOneNewtonMeter, newtonmeter.As(TorqueUnit.YottapoundForceInch), YottapoundForceInchesTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonCentimetersInOneNewtonMeter, newtonmeter.As(TorqueUnit.ZeptonewtonCentimeter), ZeptonewtonCentimetersTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonMetersInOneNewtonMeter, newtonmeter.As(TorqueUnit.ZeptonewtonMeter), ZeptonewtonMetersTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonMillimetersInOneNewtonMeter, newtonmeter.As(TorqueUnit.ZeptonewtonMillimeter), ZeptonewtonMillimetersTolerance);
-            AssertEx.EqualTolerance(ZeptopoundForceFeetInOneNewtonMeter, newtonmeter.As(TorqueUnit.ZeptopoundForceFoot), ZeptopoundForceFeetTolerance);
-            AssertEx.EqualTolerance(ZeptopoundForceInchesInOneNewtonMeter, newtonmeter.As(TorqueUnit.ZeptopoundForceInch), ZeptopoundForceInchesTolerance);
             AssertEx.EqualTolerance(ZettanewtonCentimetersInOneNewtonMeter, newtonmeter.As(TorqueUnit.ZettanewtonCentimeter), ZettanewtonCentimetersTolerance);
             AssertEx.EqualTolerance(ZettanewtonMetersInOneNewtonMeter, newtonmeter.As(TorqueUnit.ZettanewtonMeter), ZettanewtonMetersTolerance);
             AssertEx.EqualTolerance(ZettanewtonMillimetersInOneNewtonMeter, newtonmeter.As(TorqueUnit.ZettanewtonMillimeter), ZettanewtonMillimetersTolerance);
@@ -696,26 +621,6 @@ namespace UnitsNet.Tests
         public void ToUnit()
         {
             var newtonmeter = Torque.FromNewtonMeters(1);
-
-            var attonewtoncentimeterQuantity = newtonmeter.ToUnit(TorqueUnit.AttonewtonCentimeter);
-            AssertEx.EqualTolerance(AttonewtonCentimetersInOneNewtonMeter, (double)attonewtoncentimeterQuantity.Value, AttonewtonCentimetersTolerance);
-            Assert.Equal(TorqueUnit.AttonewtonCentimeter, attonewtoncentimeterQuantity.Unit);
-
-            var attonewtonmeterQuantity = newtonmeter.ToUnit(TorqueUnit.AttonewtonMeter);
-            AssertEx.EqualTolerance(AttonewtonMetersInOneNewtonMeter, (double)attonewtonmeterQuantity.Value, AttonewtonMetersTolerance);
-            Assert.Equal(TorqueUnit.AttonewtonMeter, attonewtonmeterQuantity.Unit);
-
-            var attonewtonmillimeterQuantity = newtonmeter.ToUnit(TorqueUnit.AttonewtonMillimeter);
-            AssertEx.EqualTolerance(AttonewtonMillimetersInOneNewtonMeter, (double)attonewtonmillimeterQuantity.Value, AttonewtonMillimetersTolerance);
-            Assert.Equal(TorqueUnit.AttonewtonMillimeter, attonewtonmillimeterQuantity.Unit);
-
-            var attopoundforcefootQuantity = newtonmeter.ToUnit(TorqueUnit.AttopoundForceFoot);
-            AssertEx.EqualTolerance(AttopoundForceFeetInOneNewtonMeter, (double)attopoundforcefootQuantity.Value, AttopoundForceFeetTolerance);
-            Assert.Equal(TorqueUnit.AttopoundForceFoot, attopoundforcefootQuantity.Unit);
-
-            var attopoundforceinchQuantity = newtonmeter.ToUnit(TorqueUnit.AttopoundForceInch);
-            AssertEx.EqualTolerance(AttopoundForceInchesInOneNewtonMeter, (double)attopoundforceinchQuantity.Value, AttopoundForceInchesTolerance);
-            Assert.Equal(TorqueUnit.AttopoundForceInch, attopoundforceinchQuantity.Unit);
 
             var centinewtoncentimeterQuantity = newtonmeter.ToUnit(TorqueUnit.CentinewtonCentimeter);
             AssertEx.EqualTolerance(CentinewtonCentimetersInOneNewtonMeter, (double)centinewtoncentimeterQuantity.Value, CentinewtonCentimetersTolerance);
@@ -1101,26 +1006,6 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettapoundForceInchesInOneNewtonMeter, (double)vettapoundforceinchQuantity.Value, VettapoundForceInchesTolerance);
             Assert.Equal(TorqueUnit.VettapoundForceInch, vettapoundforceinchQuantity.Unit);
 
-            var yoctonewtoncentimeterQuantity = newtonmeter.ToUnit(TorqueUnit.YoctonewtonCentimeter);
-            AssertEx.EqualTolerance(YoctonewtonCentimetersInOneNewtonMeter, (double)yoctonewtoncentimeterQuantity.Value, YoctonewtonCentimetersTolerance);
-            Assert.Equal(TorqueUnit.YoctonewtonCentimeter, yoctonewtoncentimeterQuantity.Unit);
-
-            var yoctonewtonmeterQuantity = newtonmeter.ToUnit(TorqueUnit.YoctonewtonMeter);
-            AssertEx.EqualTolerance(YoctonewtonMetersInOneNewtonMeter, (double)yoctonewtonmeterQuantity.Value, YoctonewtonMetersTolerance);
-            Assert.Equal(TorqueUnit.YoctonewtonMeter, yoctonewtonmeterQuantity.Unit);
-
-            var yoctonewtonmillimeterQuantity = newtonmeter.ToUnit(TorqueUnit.YoctonewtonMillimeter);
-            AssertEx.EqualTolerance(YoctonewtonMillimetersInOneNewtonMeter, (double)yoctonewtonmillimeterQuantity.Value, YoctonewtonMillimetersTolerance);
-            Assert.Equal(TorqueUnit.YoctonewtonMillimeter, yoctonewtonmillimeterQuantity.Unit);
-
-            var yoctopoundforcefootQuantity = newtonmeter.ToUnit(TorqueUnit.YoctopoundForceFoot);
-            AssertEx.EqualTolerance(YoctopoundForceFeetInOneNewtonMeter, (double)yoctopoundforcefootQuantity.Value, YoctopoundForceFeetTolerance);
-            Assert.Equal(TorqueUnit.YoctopoundForceFoot, yoctopoundforcefootQuantity.Unit);
-
-            var yoctopoundforceinchQuantity = newtonmeter.ToUnit(TorqueUnit.YoctopoundForceInch);
-            AssertEx.EqualTolerance(YoctopoundForceInchesInOneNewtonMeter, (double)yoctopoundforceinchQuantity.Value, YoctopoundForceInchesTolerance);
-            Assert.Equal(TorqueUnit.YoctopoundForceInch, yoctopoundforceinchQuantity.Unit);
-
             var yottanewtoncentimeterQuantity = newtonmeter.ToUnit(TorqueUnit.YottanewtonCentimeter);
             AssertEx.EqualTolerance(YottanewtonCentimetersInOneNewtonMeter, (double)yottanewtoncentimeterQuantity.Value, YottanewtonCentimetersTolerance);
             Assert.Equal(TorqueUnit.YottanewtonCentimeter, yottanewtoncentimeterQuantity.Unit);
@@ -1140,26 +1025,6 @@ namespace UnitsNet.Tests
             var yottapoundforceinchQuantity = newtonmeter.ToUnit(TorqueUnit.YottapoundForceInch);
             AssertEx.EqualTolerance(YottapoundForceInchesInOneNewtonMeter, (double)yottapoundforceinchQuantity.Value, YottapoundForceInchesTolerance);
             Assert.Equal(TorqueUnit.YottapoundForceInch, yottapoundforceinchQuantity.Unit);
-
-            var zeptonewtoncentimeterQuantity = newtonmeter.ToUnit(TorqueUnit.ZeptonewtonCentimeter);
-            AssertEx.EqualTolerance(ZeptonewtonCentimetersInOneNewtonMeter, (double)zeptonewtoncentimeterQuantity.Value, ZeptonewtonCentimetersTolerance);
-            Assert.Equal(TorqueUnit.ZeptonewtonCentimeter, zeptonewtoncentimeterQuantity.Unit);
-
-            var zeptonewtonmeterQuantity = newtonmeter.ToUnit(TorqueUnit.ZeptonewtonMeter);
-            AssertEx.EqualTolerance(ZeptonewtonMetersInOneNewtonMeter, (double)zeptonewtonmeterQuantity.Value, ZeptonewtonMetersTolerance);
-            Assert.Equal(TorqueUnit.ZeptonewtonMeter, zeptonewtonmeterQuantity.Unit);
-
-            var zeptonewtonmillimeterQuantity = newtonmeter.ToUnit(TorqueUnit.ZeptonewtonMillimeter);
-            AssertEx.EqualTolerance(ZeptonewtonMillimetersInOneNewtonMeter, (double)zeptonewtonmillimeterQuantity.Value, ZeptonewtonMillimetersTolerance);
-            Assert.Equal(TorqueUnit.ZeptonewtonMillimeter, zeptonewtonmillimeterQuantity.Unit);
-
-            var zeptopoundforcefootQuantity = newtonmeter.ToUnit(TorqueUnit.ZeptopoundForceFoot);
-            AssertEx.EqualTolerance(ZeptopoundForceFeetInOneNewtonMeter, (double)zeptopoundforcefootQuantity.Value, ZeptopoundForceFeetTolerance);
-            Assert.Equal(TorqueUnit.ZeptopoundForceFoot, zeptopoundforcefootQuantity.Unit);
-
-            var zeptopoundforceinchQuantity = newtonmeter.ToUnit(TorqueUnit.ZeptopoundForceInch);
-            AssertEx.EqualTolerance(ZeptopoundForceInchesInOneNewtonMeter, (double)zeptopoundforceinchQuantity.Value, ZeptopoundForceInchesTolerance);
-            Assert.Equal(TorqueUnit.ZeptopoundForceInch, zeptopoundforceinchQuantity.Unit);
 
             var zettanewtoncentimeterQuantity = newtonmeter.ToUnit(TorqueUnit.ZettanewtonCentimeter);
             AssertEx.EqualTolerance(ZettanewtonCentimetersInOneNewtonMeter, (double)zettanewtoncentimeterQuantity.Value, ZettanewtonCentimetersTolerance);
@@ -1186,11 +1051,6 @@ namespace UnitsNet.Tests
         public void ConversionRoundTrip()
         {
             Torque newtonmeter = Torque.FromNewtonMeters(1);
-            AssertEx.EqualTolerance(1, Torque.FromAttonewtonCentimeters(newtonmeter.AttonewtonCentimeters).NewtonMeters, AttonewtonCentimetersTolerance);
-            AssertEx.EqualTolerance(1, Torque.FromAttonewtonMeters(newtonmeter.AttonewtonMeters).NewtonMeters, AttonewtonMetersTolerance);
-            AssertEx.EqualTolerance(1, Torque.FromAttonewtonMillimeters(newtonmeter.AttonewtonMillimeters).NewtonMeters, AttonewtonMillimetersTolerance);
-            AssertEx.EqualTolerance(1, Torque.FromAttopoundForceFeet(newtonmeter.AttopoundForceFeet).NewtonMeters, AttopoundForceFeetTolerance);
-            AssertEx.EqualTolerance(1, Torque.FromAttopoundForceInches(newtonmeter.AttopoundForceInches).NewtonMeters, AttopoundForceInchesTolerance);
             AssertEx.EqualTolerance(1, Torque.FromCentinewtonCentimeters(newtonmeter.CentinewtonCentimeters).NewtonMeters, CentinewtonCentimetersTolerance);
             AssertEx.EqualTolerance(1, Torque.FromCentinewtonMeters(newtonmeter.CentinewtonMeters).NewtonMeters, CentinewtonMetersTolerance);
             AssertEx.EqualTolerance(1, Torque.FromCentinewtonMillimeters(newtonmeter.CentinewtonMillimeters).NewtonMeters, CentinewtonMillimetersTolerance);
@@ -1287,21 +1147,11 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, Torque.FromVettanewtonMillimeters(newtonmeter.VettanewtonMillimeters).NewtonMeters, VettanewtonMillimetersTolerance);
             AssertEx.EqualTolerance(1, Torque.FromVettapoundForceFeet(newtonmeter.VettapoundForceFeet).NewtonMeters, VettapoundForceFeetTolerance);
             AssertEx.EqualTolerance(1, Torque.FromVettapoundForceInches(newtonmeter.VettapoundForceInches).NewtonMeters, VettapoundForceInchesTolerance);
-            AssertEx.EqualTolerance(1, Torque.FromYoctonewtonCentimeters(newtonmeter.YoctonewtonCentimeters).NewtonMeters, YoctonewtonCentimetersTolerance);
-            AssertEx.EqualTolerance(1, Torque.FromYoctonewtonMeters(newtonmeter.YoctonewtonMeters).NewtonMeters, YoctonewtonMetersTolerance);
-            AssertEx.EqualTolerance(1, Torque.FromYoctonewtonMillimeters(newtonmeter.YoctonewtonMillimeters).NewtonMeters, YoctonewtonMillimetersTolerance);
-            AssertEx.EqualTolerance(1, Torque.FromYoctopoundForceFeet(newtonmeter.YoctopoundForceFeet).NewtonMeters, YoctopoundForceFeetTolerance);
-            AssertEx.EqualTolerance(1, Torque.FromYoctopoundForceInches(newtonmeter.YoctopoundForceInches).NewtonMeters, YoctopoundForceInchesTolerance);
             AssertEx.EqualTolerance(1, Torque.FromYottanewtonCentimeters(newtonmeter.YottanewtonCentimeters).NewtonMeters, YottanewtonCentimetersTolerance);
             AssertEx.EqualTolerance(1, Torque.FromYottanewtonMeters(newtonmeter.YottanewtonMeters).NewtonMeters, YottanewtonMetersTolerance);
             AssertEx.EqualTolerance(1, Torque.FromYottanewtonMillimeters(newtonmeter.YottanewtonMillimeters).NewtonMeters, YottanewtonMillimetersTolerance);
             AssertEx.EqualTolerance(1, Torque.FromYottapoundForceFeet(newtonmeter.YottapoundForceFeet).NewtonMeters, YottapoundForceFeetTolerance);
             AssertEx.EqualTolerance(1, Torque.FromYottapoundForceInches(newtonmeter.YottapoundForceInches).NewtonMeters, YottapoundForceInchesTolerance);
-            AssertEx.EqualTolerance(1, Torque.FromZeptonewtonCentimeters(newtonmeter.ZeptonewtonCentimeters).NewtonMeters, ZeptonewtonCentimetersTolerance);
-            AssertEx.EqualTolerance(1, Torque.FromZeptonewtonMeters(newtonmeter.ZeptonewtonMeters).NewtonMeters, ZeptonewtonMetersTolerance);
-            AssertEx.EqualTolerance(1, Torque.FromZeptonewtonMillimeters(newtonmeter.ZeptonewtonMillimeters).NewtonMeters, ZeptonewtonMillimetersTolerance);
-            AssertEx.EqualTolerance(1, Torque.FromZeptopoundForceFeet(newtonmeter.ZeptopoundForceFeet).NewtonMeters, ZeptopoundForceFeetTolerance);
-            AssertEx.EqualTolerance(1, Torque.FromZeptopoundForceInches(newtonmeter.ZeptopoundForceInches).NewtonMeters, ZeptopoundForceInchesTolerance);
             AssertEx.EqualTolerance(1, Torque.FromZettanewtonCentimeters(newtonmeter.ZettanewtonCentimeters).NewtonMeters, ZettanewtonCentimetersTolerance);
             AssertEx.EqualTolerance(1, Torque.FromZettanewtonMeters(newtonmeter.ZettanewtonMeters).NewtonMeters, ZettanewtonMetersTolerance);
             AssertEx.EqualTolerance(1, Torque.FromZettanewtonMillimeters(newtonmeter.ZettanewtonMillimeters).NewtonMeters, ZettanewtonMillimetersTolerance);

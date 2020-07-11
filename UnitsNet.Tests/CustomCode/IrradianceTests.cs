@@ -27,32 +27,47 @@ namespace UnitsNet.Tests.CustomCode
 {
     public class IrradianceTests : IrradianceTestsBase
     {
-        protected override double KilowattsPerSquareCentimeterInOneWattPerSquareMeter => 1e-7;
 
-        protected override double KilowattsPerSquareMeterInOneWattPerSquareMeter => 1e-3;
-
-        protected override double MegawattsPerSquareCentimeterInOneWattPerSquareMeter => 1e-10;
-
-        protected override double MegawattsPerSquareMeterInOneWattPerSquareMeter => 1e-6;
-
-        protected override double MicrowattsPerSquareCentimeterInOneWattPerSquareMeter => 100;
-
-        protected override double MicrowattsPerSquareMeterInOneWattPerSquareMeter => 1e6;
-
-        protected override double MilliwattsPerSquareCentimeterInOneWattPerSquareMeter => 0.1;
-
-        protected override double MilliwattsPerSquareMeterInOneWattPerSquareMeter => 1e3;
-
-        protected override double NanowattsPerSquareCentimeterInOneWattPerSquareMeter => 1e5;
-
-        protected override double NanowattsPerSquareMeterInOneWattPerSquareMeter => 1e+9;
-
+        protected override double FemtowattsPerSquareCentimeterInOneWattPerSquareMeter => 1e11;
         protected override double PicowattsPerSquareCentimeterInOneWattPerSquareMeter => 1e+8;
-
-        protected override double PicowattsPerSquareMeterInOneWattPerSquareMeter => 1e+12;
-
+        protected override double NanowattsPerSquareCentimeterInOneWattPerSquareMeter => 1e5;
+        protected override double MicrowattsPerSquareCentimeterInOneWattPerSquareMeter => 100;
+        protected override double MilliwattsPerSquareCentimeterInOneWattPerSquareMeter => 0.1;
+        protected override double CentiwattsPerSquareCentimeterInOneWattPerSquareMeter => 1e-2;
+        protected override double DeciwattsPerSquareCentimeterInOneWattPerSquareMeter => 1e-3;
         protected override double WattsPerSquareCentimeterInOneWattPerSquareMeter => 1e-4;
+        protected override double DecawattsPerSquareCentimeterInOneWattPerSquareMeter => 1e-5;
+        protected override double HectowattsPerSquareCentimeterInOneWattPerSquareMeter => 1e-6;
+        protected override double KilowattsPerSquareCentimeterInOneWattPerSquareMeter => 1e-7;
+        protected override double MegawattsPerSquareCentimeterInOneWattPerSquareMeter => 1e-10;
+        protected override double GigawattsPerSquareCentimeterInOneWattPerSquareMeter => 1e-13;
+        protected override double TerawattsPerSquareCentimeterInOneWattPerSquareMeter => 1e-16;
+        protected override double PetawattsPerSquareCentimeterInOneWattPerSquareMeter => 1e-19;
+        protected override double ExawattsPerSquareCentimeterInOneWattPerSquareMeter => 1e-22;
+        protected override double ZettawattsPerSquareCentimeterInOneWattPerSquareMeter => 1e-25;
+        protected override double YottawattsPerSquareCentimeterInOneWattPerSquareMeter => 1e-28;
+        protected override double QutrawattsPerSquareCentimeterInOneWattPerSquareMeter => 1e-31;
+        protected override double VettawattsPerSquareCentimeterInOneWattPerSquareMeter => 1e-34;
 
+        protected override double FemtowattsPerSquareMeterInOneWattPerSquareMeter => 1e15;
+        protected override double PicowattsPerSquareMeterInOneWattPerSquareMeter => 1e+12;
+        protected override double NanowattsPerSquareMeterInOneWattPerSquareMeter => 1e+9;
+        protected override double MicrowattsPerSquareMeterInOneWattPerSquareMeter => 1e6;
+        protected override double MilliwattsPerSquareMeterInOneWattPerSquareMeter => 1e3;
+        protected override double CentiwattsPerSquareMeterInOneWattPerSquareMeter => 1e2;
+        protected override double DeciwattsPerSquareMeterInOneWattPerSquareMeter => 10;
         protected override double WattsPerSquareMeterInOneWattPerSquareMeter => 1;
+        protected override double DecawattsPerSquareMeterInOneWattPerSquareMeter => 0.1;
+        protected override double HectowattsPerSquareMeterInOneWattPerSquareMeter => 1e-2;
+        protected override double KilowattsPerSquareMeterInOneWattPerSquareMeter => 1e-3;
+        protected override double MegawattsPerSquareMeterInOneWattPerSquareMeter => 1e-6;
+        protected override double GigawattsPerSquareMeterInOneWattPerSquareMeter => 1e-9;
+        protected override double TerawattsPerSquareMeterInOneWattPerSquareMeter => 1e-12;
+        protected override double PetawattsPerSquareMeterInOneWattPerSquareMeter => 1e-15;
+        protected override double ExawattsPerSquareMeterInOneWattPerSquareMeter => 1e-18;
+        protected override double ZettawattsPerSquareMeterInOneWattPerSquareMeter => 1e-21;
+        protected override double YottawattsPerSquareMeterInOneWattPerSquareMeter => 1e-24;
+        protected override double QutrawattsPerSquareMeterInOneWattPerSquareMeter => 1e-27;
+        protected override double VettawattsPerSquareMeterInOneWattPerSquareMeter => 1e-30;
     }
 }

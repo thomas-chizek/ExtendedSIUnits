@@ -30,7 +30,7 @@
       },
       "FromUnitToBaseFunc": "x*453.59237",
       "FromBaseToUnitFunc": "x/453.59237",
-      "Prefixes": [ "Nano", "Micro", "Milli", "Centi", "Deci", "Kilo" ],
+      "Prefixes": [ "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Kilo" ],
       "Localization": [
         {
           "Culture": "en-US",

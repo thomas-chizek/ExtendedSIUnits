@@ -23,15 +23,29 @@ namespace UnitsNet.Tests.CustomCode
 {
     public class ForcePerLengthTests : ForcePerLengthTestsBase
     {
-        protected override double CentinewtonsPerMeterInOneNewtonPerMeter => 1E2;
-        protected override double DecinewtonsPerMeterInOneNewtonPerMeter => 1E1;
-        protected override double KilogramsForcePerMeterInOneNewtonPerMeter => 0.101972;
-        protected override double KilonewtonsPerMeterInOneNewtonPerMeter => 1E-3;
+        protected override double FemtonewtonsPerMeterInOneNewtonPerMeter =>1e15;
+        protected override double PiconewtonsPerMeterInOneNewtonPerMeter => 1e12;
+        protected override double NanonewtonsPerMeterInOneNewtonPerMeter => 1E9;
         protected override double MicronewtonsPerMeterInOneNewtonPerMeter => 1E6;
         protected override double MillinewtonsPerMeterInOneNewtonPerMeter => 1E3;
-        protected override double NanonewtonsPerMeterInOneNewtonPerMeter => 1E9;
+        protected override double CentinewtonsPerMeterInOneNewtonPerMeter => 1E2;
+        protected override double DecinewtonsPerMeterInOneNewtonPerMeter => 1E1;
         protected override double NewtonsPerMeterInOneNewtonPerMeter => 1;
+        protected override double DecanewtonsPerMeterInOneNewtonPerMeter => 0.1;
+        protected override double HectonewtonsPerMeterInOneNewtonPerMeter => 1e-2;
+        protected override double KilonewtonsPerMeterInOneNewtonPerMeter => 1E-3;
         protected override double MeganewtonsPerMeterInOneNewtonPerMeter => 1E-6;
+        protected override double GiganewtonsPerMeterInOneNewtonPerMeter => 1E-9;
+        protected override double TeranewtonsPerMeterInOneNewtonPerMeter => 1E-12;
+        protected override double PetanewtonsPerMeterInOneNewtonPerMeter => 1E-15;
+        protected override double ExanewtonsPerMeterInOneNewtonPerMeter => 1E-18;
+        protected override double ZettanewtonsPerMeterInOneNewtonPerMeter => 1E-21;
+        protected override double YottanewtonsPerMeterInOneNewtonPerMeter => 1E-24;
+        protected override double QutranewtonsPerMeterInOneNewtonPerMeter => 1E-27;
+        protected override double VettanewtonsPerMeterInOneNewtonPerMeter => 1E-30;
+
+        protected override double KilogramsForcePerMeterInOneNewtonPerMeter => 0.101972;
+
 
         [Fact]
         public void ForcePerLengthDividedByLengthEqualsPressure()

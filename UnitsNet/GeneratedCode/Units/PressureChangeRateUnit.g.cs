@@ -27,8 +27,6 @@ namespace UnitsNet.Units
     {
         Undefined = 0,
         AtmospherePerSecond,
-        AttopascalPerMinute,
-        AttopascalPerSecond,
         CentipascalPerMinute,
         CentipascalPerSecond,
         DecapascalPerMinute,
@@ -65,12 +63,8 @@ namespace UnitsNet.Units
         TerapascalPerSecond,
         VettapascalPerMinute,
         VettapascalPerSecond,
-        YoctopascalPerMinute,
-        YoctopascalPerSecond,
         YottapascalPerMinute,
         YottapascalPerSecond,
-        ZeptopascalPerMinute,
-        ZeptopascalPerSecond,
         ZettapascalPerMinute,
         ZettapascalPerSecond,
     }

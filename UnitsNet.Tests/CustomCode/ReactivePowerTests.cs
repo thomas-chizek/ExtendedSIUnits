@@ -27,12 +27,27 @@ namespace UnitsNet.Tests.CustomCode
 {
     public class ReactivePowerTests : ReactivePowerTestsBase
     {
+        protected override double FemtovoltamperesReactiveInOneVoltampereReactive => 1e15;
+        protected override double PicovoltamperesReactiveInOneVoltampereReactive => 1e12;
+        protected override double NanovoltamperesReactiveInOneVoltampereReactive => 1e9;
+        protected override double MicrovoltamperesReactiveInOneVoltampereReactive => 1e6;
+        protected override double MillivoltamperesReactiveInOneVoltampereReactive => 1e3;
+        protected override double CentivoltamperesReactiveInOneVoltampereReactive => 100;
+        protected override double DecivoltamperesReactiveInOneVoltampereReactive => 10;
         protected override double VoltamperesReactiveInOneVoltampereReactive => 1;
-
+        protected override double DecavoltamperesReactiveInOneVoltampereReactive => 0.1;
+        protected override double HectovoltamperesReactiveInOneVoltampereReactive => 0.01;
         protected override double KilovoltamperesReactiveInOneVoltampereReactive => 1E-3;
-
         protected override double MegavoltamperesReactiveInOneVoltampereReactive => 1E-6;
-
         protected override double GigavoltamperesReactiveInOneVoltampereReactive => 1E-9;
+        protected override double TeravoltamperesReactiveInOneVoltampereReactive => 1e-12;
+        protected override double PetavoltamperesReactiveInOneVoltampereReactive => 1e-15;
+        protected override double ExavoltamperesReactiveInOneVoltampereReactive => 1e-18;
+        protected override double ZettavoltamperesReactiveInOneVoltampereReactive => 1e-21;
+        protected override double YottavoltamperesReactiveInOneVoltampereReactive => 1e-24;
+        protected override double QutravoltamperesReactiveInOneVoltampereReactive => 1e-27;
+        protected override double VettavoltamperesReactiveInOneVoltampereReactive => 1e-30;
+
+
     }
 }

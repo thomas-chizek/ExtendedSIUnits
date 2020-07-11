@@ -21,5 +21,8 @@ namespace UnitsNet.Tests.CustomCode
 
         protected override double MegaamperesInOneAmpere => 1e-6;
 
+        protected override double DecaamperesInOneAmpere => .1;
+
+        protected override double DeciamperesInOneAmpere => 10;
     }
 }

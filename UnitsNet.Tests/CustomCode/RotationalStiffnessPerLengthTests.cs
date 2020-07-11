@@ -27,8 +27,27 @@ namespace UnitsNet.Tests.CustomCode
 {
     public class RotationalStiffnessPerLengthTests : RotationalStiffnessPerLengthTestsBase
     {
+        protected override double FemtonewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter => 1e15;
+        protected override double PiconewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter => 1e12;
+        protected override double NanonewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter => 1e9;
+        protected override double MicronewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter => 1e6;
+        protected override double MillinewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter => 1e3;
+        protected override double CentinewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter => 1e2;
+        protected override double DecinewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter => 10;
+        protected override double NewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter => 1;
+        protected override double DecanewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter => 0.1;
+        protected override double HectonewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter => 1e-2;
         protected override double KilonewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter => 1E-3;
         protected override double MeganewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter => 1E-6;
-        protected override double NewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter => 1;
+        protected override double GiganewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter => 1e-9;
+        protected override double TeranewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter => 1e-12;
+        protected override double PetanewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter => 1e-15;
+        protected override double ExanewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter => 1e-18;
+        protected override double ZettanewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter => 1e-21;
+        protected override double YottanewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter => 1e-24;
+        protected override double QutranewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter => 1e-27;
+        protected override double VettanewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter => 1e-30;
+
+
     }
 }

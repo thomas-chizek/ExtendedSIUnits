@@ -28,6 +28,8 @@ namespace UnitsNet.Units
         Undefined = 0,
         Ampere,
         Centiampere,
+        Decaampere,
+        Deciampere,
         Kiloampere,
         Megaampere,
         Microampere,

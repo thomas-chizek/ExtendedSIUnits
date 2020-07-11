@@ -53,13 +53,12 @@ namespace UnitsNet
 
             Info = new QuantityInfo<VolumeConcentrationUnit>(QuantityType.VolumeConcentration,
                 new UnitInfo<VolumeConcentrationUnit>[] {
-                    new UnitInfo<VolumeConcentrationUnit>(VolumeConcentrationUnit.AttolitersPerLiter, BaseUnits.Undefined),
-                    new UnitInfo<VolumeConcentrationUnit>(VolumeConcentrationUnit.AttolitersPerMililiter, BaseUnits.Undefined),
                     new UnitInfo<VolumeConcentrationUnit>(VolumeConcentrationUnit.CentilitersPerLiter, BaseUnits.Undefined),
                     new UnitInfo<VolumeConcentrationUnit>(VolumeConcentrationUnit.CentilitersPerMililiter, BaseUnits.Undefined),
                     new UnitInfo<VolumeConcentrationUnit>(VolumeConcentrationUnit.DecalitersPerLiter, BaseUnits.Undefined),
                     new UnitInfo<VolumeConcentrationUnit>(VolumeConcentrationUnit.DecalitersPerMililiter, BaseUnits.Undefined),
                     new UnitInfo<VolumeConcentrationUnit>(VolumeConcentrationUnit.DecilitersPerLiter, BaseUnits.Undefined),
+                    new UnitInfo<VolumeConcentrationUnit>(VolumeConcentrationUnit.DecilitersPerMililiter, BaseUnits.Undefined),
                     new UnitInfo<VolumeConcentrationUnit>(VolumeConcentrationUnit.DecimalFraction, BaseUnits.Undefined),
                     new UnitInfo<VolumeConcentrationUnit>(VolumeConcentrationUnit.FemtolitersPerLiter, BaseUnits.Undefined),
                     new UnitInfo<VolumeConcentrationUnit>(VolumeConcentrationUnit.FemtolitersPerMililiter, BaseUnits.Undefined),
@@ -81,10 +80,6 @@ namespace UnitsNet
                     new UnitInfo<VolumeConcentrationUnit>(VolumeConcentrationUnit.Percent, BaseUnits.Undefined),
                     new UnitInfo<VolumeConcentrationUnit>(VolumeConcentrationUnit.PicolitersPerLiter, BaseUnits.Undefined),
                     new UnitInfo<VolumeConcentrationUnit>(VolumeConcentrationUnit.PicolitersPerMililiter, BaseUnits.Undefined),
-                    new UnitInfo<VolumeConcentrationUnit>(VolumeConcentrationUnit.YoctolitersPerLiter, BaseUnits.Undefined),
-                    new UnitInfo<VolumeConcentrationUnit>(VolumeConcentrationUnit.YoctolitersPerMililiter, BaseUnits.Undefined),
-                    new UnitInfo<VolumeConcentrationUnit>(VolumeConcentrationUnit.ZeptolitersPerLiter, BaseUnits.Undefined),
-                    new UnitInfo<VolumeConcentrationUnit>(VolumeConcentrationUnit.ZeptolitersPerMililiter, BaseUnits.Undefined),
                 },
                 BaseUnit, Zero, BaseDimensions);
         }
@@ -198,16 +193,6 @@ namespace UnitsNet
         #region Conversion Properties
 
         /// <summary>
-        ///     Get VolumeConcentration in AttolitersPerLiter.
-        /// </summary>
-        public double AttolitersPerLiter => As(VolumeConcentrationUnit.AttolitersPerLiter);
-
-        /// <summary>
-        ///     Get VolumeConcentration in AttolitersPerMililiter.
-        /// </summary>
-        public double AttolitersPerMililiter => As(VolumeConcentrationUnit.AttolitersPerMililiter);
-
-        /// <summary>
         ///     Get VolumeConcentration in CentilitersPerLiter.
         /// </summary>
         public double CentilitersPerLiter => As(VolumeConcentrationUnit.CentilitersPerLiter);
@@ -231,6 +216,11 @@ namespace UnitsNet
         ///     Get VolumeConcentration in DecilitersPerLiter.
         /// </summary>
         public double DecilitersPerLiter => As(VolumeConcentrationUnit.DecilitersPerLiter);
+
+        /// <summary>
+        ///     Get VolumeConcentration in DecilitersPerMililiter.
+        /// </summary>
+        public double DecilitersPerMililiter => As(VolumeConcentrationUnit.DecilitersPerMililiter);
 
         /// <summary>
         ///     Get VolumeConcentration in DecimalFractions.
@@ -337,26 +327,6 @@ namespace UnitsNet
         /// </summary>
         public double PicolitersPerMililiter => As(VolumeConcentrationUnit.PicolitersPerMililiter);
 
-        /// <summary>
-        ///     Get VolumeConcentration in YoctolitersPerLiter.
-        /// </summary>
-        public double YoctolitersPerLiter => As(VolumeConcentrationUnit.YoctolitersPerLiter);
-
-        /// <summary>
-        ///     Get VolumeConcentration in YoctolitersPerMililiter.
-        /// </summary>
-        public double YoctolitersPerMililiter => As(VolumeConcentrationUnit.YoctolitersPerMililiter);
-
-        /// <summary>
-        ///     Get VolumeConcentration in ZeptolitersPerLiter.
-        /// </summary>
-        public double ZeptolitersPerLiter => As(VolumeConcentrationUnit.ZeptolitersPerLiter);
-
-        /// <summary>
-        ///     Get VolumeConcentration in ZeptolitersPerMililiter.
-        /// </summary>
-        public double ZeptolitersPerMililiter => As(VolumeConcentrationUnit.ZeptolitersPerMililiter);
-
         #endregion
 
         #region Static Methods
@@ -386,24 +356,6 @@ namespace UnitsNet
 
         #region Static Factory Methods
 
-        /// <summary>
-        ///     Get VolumeConcentration from AttolitersPerLiter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static VolumeConcentration FromAttolitersPerLiter(QuantityValue attolitersperliter)
-        {
-            double value = (double) attolitersperliter;
-            return new VolumeConcentration(value, VolumeConcentrationUnit.AttolitersPerLiter);
-        }
-        /// <summary>
-        ///     Get VolumeConcentration from AttolitersPerMililiter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static VolumeConcentration FromAttolitersPerMililiter(QuantityValue attoliterspermililiter)
-        {
-            double value = (double) attoliterspermililiter;
-            return new VolumeConcentration(value, VolumeConcentrationUnit.AttolitersPerMililiter);
-        }
         /// <summary>
         ///     Get VolumeConcentration from CentilitersPerLiter.
         /// </summary>
@@ -448,6 +400,15 @@ namespace UnitsNet
         {
             double value = (double) decilitersperliter;
             return new VolumeConcentration(value, VolumeConcentrationUnit.DecilitersPerLiter);
+        }
+        /// <summary>
+        ///     Get VolumeConcentration from DecilitersPerMililiter.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static VolumeConcentration FromDecilitersPerMililiter(QuantityValue deciliterspermililiter)
+        {
+            double value = (double) deciliterspermililiter;
+            return new VolumeConcentration(value, VolumeConcentrationUnit.DecilitersPerMililiter);
         }
         /// <summary>
         ///     Get VolumeConcentration from DecimalFractions.
@@ -637,42 +598,6 @@ namespace UnitsNet
         {
             double value = (double) picoliterspermililiter;
             return new VolumeConcentration(value, VolumeConcentrationUnit.PicolitersPerMililiter);
-        }
-        /// <summary>
-        ///     Get VolumeConcentration from YoctolitersPerLiter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static VolumeConcentration FromYoctolitersPerLiter(QuantityValue yoctolitersperliter)
-        {
-            double value = (double) yoctolitersperliter;
-            return new VolumeConcentration(value, VolumeConcentrationUnit.YoctolitersPerLiter);
-        }
-        /// <summary>
-        ///     Get VolumeConcentration from YoctolitersPerMililiter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static VolumeConcentration FromYoctolitersPerMililiter(QuantityValue yoctoliterspermililiter)
-        {
-            double value = (double) yoctoliterspermililiter;
-            return new VolumeConcentration(value, VolumeConcentrationUnit.YoctolitersPerMililiter);
-        }
-        /// <summary>
-        ///     Get VolumeConcentration from ZeptolitersPerLiter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static VolumeConcentration FromZeptolitersPerLiter(QuantityValue zeptolitersperliter)
-        {
-            double value = (double) zeptolitersperliter;
-            return new VolumeConcentration(value, VolumeConcentrationUnit.ZeptolitersPerLiter);
-        }
-        /// <summary>
-        ///     Get VolumeConcentration from ZeptolitersPerMililiter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static VolumeConcentration FromZeptolitersPerMililiter(QuantityValue zeptoliterspermililiter)
-        {
-            double value = (double) zeptoliterspermililiter;
-            return new VolumeConcentration(value, VolumeConcentrationUnit.ZeptolitersPerMililiter);
         }
 
         /// <summary>
@@ -1103,13 +1028,12 @@ namespace UnitsNet
         {
             switch(Unit)
             {
-                case VolumeConcentrationUnit.AttolitersPerLiter: return (_value) * 1e-18d;
-                case VolumeConcentrationUnit.AttolitersPerMililiter: return (_value/1e-3) * 1e-18d;
                 case VolumeConcentrationUnit.CentilitersPerLiter: return (_value) * 1e-2d;
                 case VolumeConcentrationUnit.CentilitersPerMililiter: return (_value/1e-3) * 1e-2d;
                 case VolumeConcentrationUnit.DecalitersPerLiter: return (_value) * 1e1d;
                 case VolumeConcentrationUnit.DecalitersPerMililiter: return (_value/1e-3) * 1e1d;
                 case VolumeConcentrationUnit.DecilitersPerLiter: return (_value) * 1e-1d;
+                case VolumeConcentrationUnit.DecilitersPerMililiter: return (_value/1e-3) * 1e-1d;
                 case VolumeConcentrationUnit.DecimalFraction: return _value;
                 case VolumeConcentrationUnit.FemtolitersPerLiter: return (_value) * 1e-15d;
                 case VolumeConcentrationUnit.FemtolitersPerMililiter: return (_value/1e-3) * 1e-15d;
@@ -1131,10 +1055,6 @@ namespace UnitsNet
                 case VolumeConcentrationUnit.Percent: return _value/1e2;
                 case VolumeConcentrationUnit.PicolitersPerLiter: return (_value) * 1e-12d;
                 case VolumeConcentrationUnit.PicolitersPerMililiter: return (_value/1e-3) * 1e-12d;
-                case VolumeConcentrationUnit.YoctolitersPerLiter: return (_value) * 1e-24d;
-                case VolumeConcentrationUnit.YoctolitersPerMililiter: return (_value/1e-3) * 1e-24d;
-                case VolumeConcentrationUnit.ZeptolitersPerLiter: return (_value) * 1e-21d;
-                case VolumeConcentrationUnit.ZeptolitersPerMililiter: return (_value/1e-3) * 1e-21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to base units.");
             }
@@ -1149,13 +1069,12 @@ namespace UnitsNet
 
             switch(unit)
             {
-                case VolumeConcentrationUnit.AttolitersPerLiter: return (baseUnitValue) / 1e-18d;
-                case VolumeConcentrationUnit.AttolitersPerMililiter: return (baseUnitValue*1e-3) / 1e-18d;
                 case VolumeConcentrationUnit.CentilitersPerLiter: return (baseUnitValue) / 1e-2d;
                 case VolumeConcentrationUnit.CentilitersPerMililiter: return (baseUnitValue*1e-3) / 1e-2d;
                 case VolumeConcentrationUnit.DecalitersPerLiter: return (baseUnitValue) / 1e1d;
                 case VolumeConcentrationUnit.DecalitersPerMililiter: return (baseUnitValue*1e-3) / 1e1d;
                 case VolumeConcentrationUnit.DecilitersPerLiter: return (baseUnitValue) / 1e-1d;
+                case VolumeConcentrationUnit.DecilitersPerMililiter: return (baseUnitValue*1e-3) / 1e-1d;
                 case VolumeConcentrationUnit.DecimalFraction: return baseUnitValue;
                 case VolumeConcentrationUnit.FemtolitersPerLiter: return (baseUnitValue) / 1e-15d;
                 case VolumeConcentrationUnit.FemtolitersPerMililiter: return (baseUnitValue*1e-3) / 1e-15d;
@@ -1177,10 +1096,6 @@ namespace UnitsNet
                 case VolumeConcentrationUnit.Percent: return baseUnitValue*1e2;
                 case VolumeConcentrationUnit.PicolitersPerLiter: return (baseUnitValue) / 1e-12d;
                 case VolumeConcentrationUnit.PicolitersPerMililiter: return (baseUnitValue*1e-3) / 1e-12d;
-                case VolumeConcentrationUnit.YoctolitersPerLiter: return (baseUnitValue) / 1e-24d;
-                case VolumeConcentrationUnit.YoctolitersPerMililiter: return (baseUnitValue*1e-3) / 1e-24d;
-                case VolumeConcentrationUnit.ZeptolitersPerLiter: return (baseUnitValue) / 1e-21d;
-                case VolumeConcentrationUnit.ZeptolitersPerMililiter: return (baseUnitValue*1e-3) / 1e-21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to {unit}.");
             }

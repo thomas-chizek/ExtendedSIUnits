@@ -31,5 +31,15 @@ namespace UnitsNet.Tests.CustomCode
         protected override double NanoteslasInOneTesla => 1e9;
         protected override double MicroteslasInOneTesla => 1e6;
         protected override double MilliteslasInOneTesla => 1e3;
+
+        protected override double DecateslasInOneTesla => 1e-1;
+
+        protected override double GigateslasInOneTesla => 1e-9;
+
+        protected override double KiloteslasInOneTesla => 1e-3;
+
+        protected override double MegateslasInOneTesla => 1e-6;
+
+        protected override double TerateslasInOneTesla => 1e-12;
     }
 }

@@ -50,11 +50,6 @@ namespace UnitsNet
 
             Info = new QuantityInfo<TorqueUnit>(QuantityType.Torque,
                 new UnitInfo<TorqueUnit>[] {
-                    new UnitInfo<TorqueUnit>(TorqueUnit.AttonewtonCentimeter, BaseUnits.Undefined),
-                    new UnitInfo<TorqueUnit>(TorqueUnit.AttonewtonMeter, BaseUnits.Undefined),
-                    new UnitInfo<TorqueUnit>(TorqueUnit.AttonewtonMillimeter, BaseUnits.Undefined),
-                    new UnitInfo<TorqueUnit>(TorqueUnit.AttopoundForceFoot, BaseUnits.Undefined),
-                    new UnitInfo<TorqueUnit>(TorqueUnit.AttopoundForceInch, BaseUnits.Undefined),
                     new UnitInfo<TorqueUnit>(TorqueUnit.CentinewtonCentimeter, BaseUnits.Undefined),
                     new UnitInfo<TorqueUnit>(TorqueUnit.CentinewtonMeter, BaseUnits.Undefined),
                     new UnitInfo<TorqueUnit>(TorqueUnit.CentinewtonMillimeter, BaseUnits.Undefined),
@@ -151,21 +146,11 @@ namespace UnitsNet
                     new UnitInfo<TorqueUnit>(TorqueUnit.VettanewtonMillimeter, BaseUnits.Undefined),
                     new UnitInfo<TorqueUnit>(TorqueUnit.VettapoundForceFoot, BaseUnits.Undefined),
                     new UnitInfo<TorqueUnit>(TorqueUnit.VettapoundForceInch, BaseUnits.Undefined),
-                    new UnitInfo<TorqueUnit>(TorqueUnit.YoctonewtonCentimeter, BaseUnits.Undefined),
-                    new UnitInfo<TorqueUnit>(TorqueUnit.YoctonewtonMeter, BaseUnits.Undefined),
-                    new UnitInfo<TorqueUnit>(TorqueUnit.YoctonewtonMillimeter, BaseUnits.Undefined),
-                    new UnitInfo<TorqueUnit>(TorqueUnit.YoctopoundForceFoot, BaseUnits.Undefined),
-                    new UnitInfo<TorqueUnit>(TorqueUnit.YoctopoundForceInch, BaseUnits.Undefined),
                     new UnitInfo<TorqueUnit>(TorqueUnit.YottanewtonCentimeter, BaseUnits.Undefined),
                     new UnitInfo<TorqueUnit>(TorqueUnit.YottanewtonMeter, BaseUnits.Undefined),
                     new UnitInfo<TorqueUnit>(TorqueUnit.YottanewtonMillimeter, BaseUnits.Undefined),
                     new UnitInfo<TorqueUnit>(TorqueUnit.YottapoundForceFoot, BaseUnits.Undefined),
                     new UnitInfo<TorqueUnit>(TorqueUnit.YottapoundForceInch, BaseUnits.Undefined),
-                    new UnitInfo<TorqueUnit>(TorqueUnit.ZeptonewtonCentimeter, BaseUnits.Undefined),
-                    new UnitInfo<TorqueUnit>(TorqueUnit.ZeptonewtonMeter, BaseUnits.Undefined),
-                    new UnitInfo<TorqueUnit>(TorqueUnit.ZeptonewtonMillimeter, BaseUnits.Undefined),
-                    new UnitInfo<TorqueUnit>(TorqueUnit.ZeptopoundForceFoot, BaseUnits.Undefined),
-                    new UnitInfo<TorqueUnit>(TorqueUnit.ZeptopoundForceInch, BaseUnits.Undefined),
                     new UnitInfo<TorqueUnit>(TorqueUnit.ZettanewtonCentimeter, BaseUnits.Undefined),
                     new UnitInfo<TorqueUnit>(TorqueUnit.ZettanewtonMeter, BaseUnits.Undefined),
                     new UnitInfo<TorqueUnit>(TorqueUnit.ZettanewtonMillimeter, BaseUnits.Undefined),
@@ -282,31 +267,6 @@ namespace UnitsNet
         #endregion
 
         #region Conversion Properties
-
-        /// <summary>
-        ///     Get Torque in AttonewtonCentimeters.
-        /// </summary>
-        public double AttonewtonCentimeters => As(TorqueUnit.AttonewtonCentimeter);
-
-        /// <summary>
-        ///     Get Torque in AttonewtonMeters.
-        /// </summary>
-        public double AttonewtonMeters => As(TorqueUnit.AttonewtonMeter);
-
-        /// <summary>
-        ///     Get Torque in AttonewtonMillimeters.
-        /// </summary>
-        public double AttonewtonMillimeters => As(TorqueUnit.AttonewtonMillimeter);
-
-        /// <summary>
-        ///     Get Torque in AttopoundForceFeet.
-        /// </summary>
-        public double AttopoundForceFeet => As(TorqueUnit.AttopoundForceFoot);
-
-        /// <summary>
-        ///     Get Torque in AttopoundForceInches.
-        /// </summary>
-        public double AttopoundForceInches => As(TorqueUnit.AttopoundForceInch);
 
         /// <summary>
         ///     Get Torque in CentinewtonCentimeters.
@@ -789,31 +749,6 @@ namespace UnitsNet
         public double VettapoundForceInches => As(TorqueUnit.VettapoundForceInch);
 
         /// <summary>
-        ///     Get Torque in YoctonewtonCentimeters.
-        /// </summary>
-        public double YoctonewtonCentimeters => As(TorqueUnit.YoctonewtonCentimeter);
-
-        /// <summary>
-        ///     Get Torque in YoctonewtonMeters.
-        /// </summary>
-        public double YoctonewtonMeters => As(TorqueUnit.YoctonewtonMeter);
-
-        /// <summary>
-        ///     Get Torque in YoctonewtonMillimeters.
-        /// </summary>
-        public double YoctonewtonMillimeters => As(TorqueUnit.YoctonewtonMillimeter);
-
-        /// <summary>
-        ///     Get Torque in YoctopoundForceFeet.
-        /// </summary>
-        public double YoctopoundForceFeet => As(TorqueUnit.YoctopoundForceFoot);
-
-        /// <summary>
-        ///     Get Torque in YoctopoundForceInches.
-        /// </summary>
-        public double YoctopoundForceInches => As(TorqueUnit.YoctopoundForceInch);
-
-        /// <summary>
         ///     Get Torque in YottanewtonCentimeters.
         /// </summary>
         public double YottanewtonCentimeters => As(TorqueUnit.YottanewtonCentimeter);
@@ -837,31 +772,6 @@ namespace UnitsNet
         ///     Get Torque in YottapoundForceInches.
         /// </summary>
         public double YottapoundForceInches => As(TorqueUnit.YottapoundForceInch);
-
-        /// <summary>
-        ///     Get Torque in ZeptonewtonCentimeters.
-        /// </summary>
-        public double ZeptonewtonCentimeters => As(TorqueUnit.ZeptonewtonCentimeter);
-
-        /// <summary>
-        ///     Get Torque in ZeptonewtonMeters.
-        /// </summary>
-        public double ZeptonewtonMeters => As(TorqueUnit.ZeptonewtonMeter);
-
-        /// <summary>
-        ///     Get Torque in ZeptonewtonMillimeters.
-        /// </summary>
-        public double ZeptonewtonMillimeters => As(TorqueUnit.ZeptonewtonMillimeter);
-
-        /// <summary>
-        ///     Get Torque in ZeptopoundForceFeet.
-        /// </summary>
-        public double ZeptopoundForceFeet => As(TorqueUnit.ZeptopoundForceFoot);
-
-        /// <summary>
-        ///     Get Torque in ZeptopoundForceInches.
-        /// </summary>
-        public double ZeptopoundForceInches => As(TorqueUnit.ZeptopoundForceInch);
 
         /// <summary>
         ///     Get Torque in ZettanewtonCentimeters.
@@ -917,51 +827,6 @@ namespace UnitsNet
 
         #region Static Factory Methods
 
-        /// <summary>
-        ///     Get Torque from AttonewtonCentimeters.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static Torque FromAttonewtonCentimeters(QuantityValue attonewtoncentimeters)
-        {
-            double value = (double) attonewtoncentimeters;
-            return new Torque(value, TorqueUnit.AttonewtonCentimeter);
-        }
-        /// <summary>
-        ///     Get Torque from AttonewtonMeters.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static Torque FromAttonewtonMeters(QuantityValue attonewtonmeters)
-        {
-            double value = (double) attonewtonmeters;
-            return new Torque(value, TorqueUnit.AttonewtonMeter);
-        }
-        /// <summary>
-        ///     Get Torque from AttonewtonMillimeters.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static Torque FromAttonewtonMillimeters(QuantityValue attonewtonmillimeters)
-        {
-            double value = (double) attonewtonmillimeters;
-            return new Torque(value, TorqueUnit.AttonewtonMillimeter);
-        }
-        /// <summary>
-        ///     Get Torque from AttopoundForceFeet.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static Torque FromAttopoundForceFeet(QuantityValue attopoundforcefeet)
-        {
-            double value = (double) attopoundforcefeet;
-            return new Torque(value, TorqueUnit.AttopoundForceFoot);
-        }
-        /// <summary>
-        ///     Get Torque from AttopoundForceInches.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static Torque FromAttopoundForceInches(QuantityValue attopoundforceinches)
-        {
-            double value = (double) attopoundforceinches;
-            return new Torque(value, TorqueUnit.AttopoundForceInch);
-        }
         /// <summary>
         ///     Get Torque from CentinewtonCentimeters.
         /// </summary>
@@ -1827,51 +1692,6 @@ namespace UnitsNet
             return new Torque(value, TorqueUnit.VettapoundForceInch);
         }
         /// <summary>
-        ///     Get Torque from YoctonewtonCentimeters.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static Torque FromYoctonewtonCentimeters(QuantityValue yoctonewtoncentimeters)
-        {
-            double value = (double) yoctonewtoncentimeters;
-            return new Torque(value, TorqueUnit.YoctonewtonCentimeter);
-        }
-        /// <summary>
-        ///     Get Torque from YoctonewtonMeters.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static Torque FromYoctonewtonMeters(QuantityValue yoctonewtonmeters)
-        {
-            double value = (double) yoctonewtonmeters;
-            return new Torque(value, TorqueUnit.YoctonewtonMeter);
-        }
-        /// <summary>
-        ///     Get Torque from YoctonewtonMillimeters.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static Torque FromYoctonewtonMillimeters(QuantityValue yoctonewtonmillimeters)
-        {
-            double value = (double) yoctonewtonmillimeters;
-            return new Torque(value, TorqueUnit.YoctonewtonMillimeter);
-        }
-        /// <summary>
-        ///     Get Torque from YoctopoundForceFeet.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static Torque FromYoctopoundForceFeet(QuantityValue yoctopoundforcefeet)
-        {
-            double value = (double) yoctopoundforcefeet;
-            return new Torque(value, TorqueUnit.YoctopoundForceFoot);
-        }
-        /// <summary>
-        ///     Get Torque from YoctopoundForceInches.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static Torque FromYoctopoundForceInches(QuantityValue yoctopoundforceinches)
-        {
-            double value = (double) yoctopoundforceinches;
-            return new Torque(value, TorqueUnit.YoctopoundForceInch);
-        }
-        /// <summary>
         ///     Get Torque from YottanewtonCentimeters.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -1915,51 +1735,6 @@ namespace UnitsNet
         {
             double value = (double) yottapoundforceinches;
             return new Torque(value, TorqueUnit.YottapoundForceInch);
-        }
-        /// <summary>
-        ///     Get Torque from ZeptonewtonCentimeters.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static Torque FromZeptonewtonCentimeters(QuantityValue zeptonewtoncentimeters)
-        {
-            double value = (double) zeptonewtoncentimeters;
-            return new Torque(value, TorqueUnit.ZeptonewtonCentimeter);
-        }
-        /// <summary>
-        ///     Get Torque from ZeptonewtonMeters.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static Torque FromZeptonewtonMeters(QuantityValue zeptonewtonmeters)
-        {
-            double value = (double) zeptonewtonmeters;
-            return new Torque(value, TorqueUnit.ZeptonewtonMeter);
-        }
-        /// <summary>
-        ///     Get Torque from ZeptonewtonMillimeters.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static Torque FromZeptonewtonMillimeters(QuantityValue zeptonewtonmillimeters)
-        {
-            double value = (double) zeptonewtonmillimeters;
-            return new Torque(value, TorqueUnit.ZeptonewtonMillimeter);
-        }
-        /// <summary>
-        ///     Get Torque from ZeptopoundForceFeet.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static Torque FromZeptopoundForceFeet(QuantityValue zeptopoundforcefeet)
-        {
-            double value = (double) zeptopoundforcefeet;
-            return new Torque(value, TorqueUnit.ZeptopoundForceFoot);
-        }
-        /// <summary>
-        ///     Get Torque from ZeptopoundForceInches.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static Torque FromZeptopoundForceInches(QuantityValue zeptopoundforceinches)
-        {
-            double value = (double) zeptopoundforceinches;
-            return new Torque(value, TorqueUnit.ZeptopoundForceInch);
         }
         /// <summary>
         ///     Get Torque from ZettanewtonCentimeters.
@@ -2435,11 +2210,6 @@ namespace UnitsNet
         {
             switch(Unit)
             {
-                case TorqueUnit.AttonewtonCentimeter: return (_value*0.01) * 1e-18d;
-                case TorqueUnit.AttonewtonMeter: return (_value) * 1e-18d;
-                case TorqueUnit.AttonewtonMillimeter: return (_value*0.001) * 1e-18d;
-                case TorqueUnit.AttopoundForceFoot: return (_value*1.3558179483314) * 1e-18d;
-                case TorqueUnit.AttopoundForceInch: return (_value*1.129848290276167e-1) * 1e-18d;
                 case TorqueUnit.CentinewtonCentimeter: return (_value*0.01) * 1e-2d;
                 case TorqueUnit.CentinewtonMeter: return (_value) * 1e-2d;
                 case TorqueUnit.CentinewtonMillimeter: return (_value*0.001) * 1e-2d;
@@ -2536,21 +2306,11 @@ namespace UnitsNet
                 case TorqueUnit.VettanewtonMillimeter: return (_value*0.001) * 1e30d;
                 case TorqueUnit.VettapoundForceFoot: return (_value*1.3558179483314) * 1e30d;
                 case TorqueUnit.VettapoundForceInch: return (_value*1.129848290276167e-1) * 1e30d;
-                case TorqueUnit.YoctonewtonCentimeter: return (_value*0.01) * 1e-24d;
-                case TorqueUnit.YoctonewtonMeter: return (_value) * 1e-24d;
-                case TorqueUnit.YoctonewtonMillimeter: return (_value*0.001) * 1e-24d;
-                case TorqueUnit.YoctopoundForceFoot: return (_value*1.3558179483314) * 1e-24d;
-                case TorqueUnit.YoctopoundForceInch: return (_value*1.129848290276167e-1) * 1e-24d;
                 case TorqueUnit.YottanewtonCentimeter: return (_value*0.01) * 1e24d;
                 case TorqueUnit.YottanewtonMeter: return (_value) * 1e24d;
                 case TorqueUnit.YottanewtonMillimeter: return (_value*0.001) * 1e24d;
                 case TorqueUnit.YottapoundForceFoot: return (_value*1.3558179483314) * 1e24d;
                 case TorqueUnit.YottapoundForceInch: return (_value*1.129848290276167e-1) * 1e24d;
-                case TorqueUnit.ZeptonewtonCentimeter: return (_value*0.01) * 1e-21d;
-                case TorqueUnit.ZeptonewtonMeter: return (_value) * 1e-21d;
-                case TorqueUnit.ZeptonewtonMillimeter: return (_value*0.001) * 1e-21d;
-                case TorqueUnit.ZeptopoundForceFoot: return (_value*1.3558179483314) * 1e-21d;
-                case TorqueUnit.ZeptopoundForceInch: return (_value*1.129848290276167e-1) * 1e-21d;
                 case TorqueUnit.ZettanewtonCentimeter: return (_value*0.01) * 1e21d;
                 case TorqueUnit.ZettanewtonMeter: return (_value) * 1e21d;
                 case TorqueUnit.ZettanewtonMillimeter: return (_value*0.001) * 1e21d;
@@ -2570,11 +2330,6 @@ namespace UnitsNet
 
             switch(unit)
             {
-                case TorqueUnit.AttonewtonCentimeter: return (baseUnitValue*100) / 1e-18d;
-                case TorqueUnit.AttonewtonMeter: return (baseUnitValue) / 1e-18d;
-                case TorqueUnit.AttonewtonMillimeter: return (baseUnitValue*1000) / 1e-18d;
-                case TorqueUnit.AttopoundForceFoot: return (baseUnitValue/1.3558179483314) / 1e-18d;
-                case TorqueUnit.AttopoundForceInch: return (baseUnitValue/1.129848290276167e-1) / 1e-18d;
                 case TorqueUnit.CentinewtonCentimeter: return (baseUnitValue*100) / 1e-2d;
                 case TorqueUnit.CentinewtonMeter: return (baseUnitValue) / 1e-2d;
                 case TorqueUnit.CentinewtonMillimeter: return (baseUnitValue*1000) / 1e-2d;
@@ -2671,21 +2426,11 @@ namespace UnitsNet
                 case TorqueUnit.VettanewtonMillimeter: return (baseUnitValue*1000) / 1e30d;
                 case TorqueUnit.VettapoundForceFoot: return (baseUnitValue/1.3558179483314) / 1e30d;
                 case TorqueUnit.VettapoundForceInch: return (baseUnitValue/1.129848290276167e-1) / 1e30d;
-                case TorqueUnit.YoctonewtonCentimeter: return (baseUnitValue*100) / 1e-24d;
-                case TorqueUnit.YoctonewtonMeter: return (baseUnitValue) / 1e-24d;
-                case TorqueUnit.YoctonewtonMillimeter: return (baseUnitValue*1000) / 1e-24d;
-                case TorqueUnit.YoctopoundForceFoot: return (baseUnitValue/1.3558179483314) / 1e-24d;
-                case TorqueUnit.YoctopoundForceInch: return (baseUnitValue/1.129848290276167e-1) / 1e-24d;
                 case TorqueUnit.YottanewtonCentimeter: return (baseUnitValue*100) / 1e24d;
                 case TorqueUnit.YottanewtonMeter: return (baseUnitValue) / 1e24d;
                 case TorqueUnit.YottanewtonMillimeter: return (baseUnitValue*1000) / 1e24d;
                 case TorqueUnit.YottapoundForceFoot: return (baseUnitValue/1.3558179483314) / 1e24d;
                 case TorqueUnit.YottapoundForceInch: return (baseUnitValue/1.129848290276167e-1) / 1e24d;
-                case TorqueUnit.ZeptonewtonCentimeter: return (baseUnitValue*100) / 1e-21d;
-                case TorqueUnit.ZeptonewtonMeter: return (baseUnitValue) / 1e-21d;
-                case TorqueUnit.ZeptonewtonMillimeter: return (baseUnitValue*1000) / 1e-21d;
-                case TorqueUnit.ZeptopoundForceFoot: return (baseUnitValue/1.3558179483314) / 1e-21d;
-                case TorqueUnit.ZeptopoundForceInch: return (baseUnitValue/1.129848290276167e-1) / 1e-21d;
                 case TorqueUnit.ZettanewtonCentimeter: return (baseUnitValue*100) / 1e21d;
                 case TorqueUnit.ZettanewtonMeter: return (baseUnitValue) / 1e21d;
                 case TorqueUnit.ZettanewtonMillimeter: return (baseUnitValue*1000) / 1e21d;

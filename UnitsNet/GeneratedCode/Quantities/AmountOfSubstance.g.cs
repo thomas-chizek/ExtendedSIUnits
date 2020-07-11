@@ -52,6 +52,7 @@ namespace UnitsNet
                 new UnitInfo<AmountOfSubstanceUnit>[] {
                     new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.Centimole, BaseUnits.Undefined),
                     new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.CentipoundMole, BaseUnits.Undefined),
+                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.DecapoundMole, BaseUnits.Undefined),
                     new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.Decimole, BaseUnits.Undefined),
                     new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.DecipoundMole, BaseUnits.Undefined),
                     new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.Kilomole, BaseUnits.Undefined),
@@ -188,6 +189,11 @@ namespace UnitsNet
         public double CentipoundMoles => As(AmountOfSubstanceUnit.CentipoundMole);
 
         /// <summary>
+        ///     Get AmountOfSubstance in DecapoundMoles.
+        /// </summary>
+        public double DecapoundMoles => As(AmountOfSubstanceUnit.DecapoundMole);
+
+        /// <summary>
         ///     Get AmountOfSubstance in Decimoles.
         /// </summary>
         public double Decimoles => As(AmountOfSubstanceUnit.Decimole);
@@ -298,6 +304,15 @@ namespace UnitsNet
         {
             double value = (double) centipoundmoles;
             return new AmountOfSubstance(value, AmountOfSubstanceUnit.CentipoundMole);
+        }
+        /// <summary>
+        ///     Get AmountOfSubstance from DecapoundMoles.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static AmountOfSubstance FromDecapoundMoles(QuantityValue decapoundmoles)
+        {
+            double value = (double) decapoundmoles;
+            return new AmountOfSubstance(value, AmountOfSubstanceUnit.DecapoundMole);
         }
         /// <summary>
         ///     Get AmountOfSubstance from Decimoles.
@@ -847,6 +862,7 @@ namespace UnitsNet
             {
                 case AmountOfSubstanceUnit.Centimole: return (_value) * 1e-2d;
                 case AmountOfSubstanceUnit.CentipoundMole: return (_value*453.59237) * 1e-2d;
+                case AmountOfSubstanceUnit.DecapoundMole: return (_value*453.59237) * 1e1d;
                 case AmountOfSubstanceUnit.Decimole: return (_value) * 1e-1d;
                 case AmountOfSubstanceUnit.DecipoundMole: return (_value*453.59237) * 1e-1d;
                 case AmountOfSubstanceUnit.Kilomole: return (_value) * 1e3d;
@@ -876,6 +892,7 @@ namespace UnitsNet
             {
                 case AmountOfSubstanceUnit.Centimole: return (baseUnitValue) / 1e-2d;
                 case AmountOfSubstanceUnit.CentipoundMole: return (baseUnitValue/453.59237) / 1e-2d;
+                case AmountOfSubstanceUnit.DecapoundMole: return (baseUnitValue/453.59237) / 1e1d;
                 case AmountOfSubstanceUnit.Decimole: return (baseUnitValue) / 1e-1d;
                 case AmountOfSubstanceUnit.DecipoundMole: return (baseUnitValue/453.59237) / 1e-1d;
                 case AmountOfSubstanceUnit.Kilomole: return (baseUnitValue) / 1e3d;

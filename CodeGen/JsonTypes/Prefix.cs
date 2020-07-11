@@ -3,9 +3,6 @@
     internal enum Prefix
     {
         // SI prefixes
-        Yocto,
-        Zepto,
-        Atto,
         Femto,
         Pico,
         Nano,

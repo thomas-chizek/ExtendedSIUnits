@@ -156,11 +156,6 @@ namespace UnitsNet
         #region Conversion Properties
 
         /// <summary>
-        ///     Get ForcePerLength in AttonewtonsPerMeter.
-        /// </summary>
-        public double AttonewtonsPerMeter => As(ForcePerLengthUnit.AttonewtonPerMeter);
-
-        /// <summary>
         ///     Get ForcePerLength in CentinewtonsPerMeter.
         /// </summary>
         public double CentinewtonsPerMeter => As(ForcePerLengthUnit.CentinewtonPerMeter);
@@ -256,19 +251,9 @@ namespace UnitsNet
         public double VettanewtonsPerMeter => As(ForcePerLengthUnit.VettanewtonPerMeter);
 
         /// <summary>
-        ///     Get ForcePerLength in YoctonewtonsPerMeter.
-        /// </summary>
-        public double YoctonewtonsPerMeter => As(ForcePerLengthUnit.YoctonewtonPerMeter);
-
-        /// <summary>
         ///     Get ForcePerLength in YottanewtonsPerMeter.
         /// </summary>
         public double YottanewtonsPerMeter => As(ForcePerLengthUnit.YottanewtonPerMeter);
-
-        /// <summary>
-        ///     Get ForcePerLength in ZeptonewtonsPerMeter.
-        /// </summary>
-        public double ZeptonewtonsPerMeter => As(ForcePerLengthUnit.ZeptonewtonPerMeter);
 
         /// <summary>
         ///     Get ForcePerLength in ZettanewtonsPerMeter.
@@ -305,16 +290,6 @@ namespace UnitsNet
 
         #region Static Factory Methods
 
-        /// <summary>
-        ///     Get ForcePerLength from AttonewtonsPerMeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static ForcePerLength FromAttonewtonsPerMeter(double attonewtonspermeter)
-        {
-            double value = (double) attonewtonspermeter;
-            return new ForcePerLength(value, ForcePerLengthUnit.AttonewtonPerMeter);
-        }
         /// <summary>
         ///     Get ForcePerLength from CentinewtonsPerMeter.
         /// </summary>
@@ -506,16 +481,6 @@ namespace UnitsNet
             return new ForcePerLength(value, ForcePerLengthUnit.VettanewtonPerMeter);
         }
         /// <summary>
-        ///     Get ForcePerLength from YoctonewtonsPerMeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static ForcePerLength FromYoctonewtonsPerMeter(double yoctonewtonspermeter)
-        {
-            double value = (double) yoctonewtonspermeter;
-            return new ForcePerLength(value, ForcePerLengthUnit.YoctonewtonPerMeter);
-        }
-        /// <summary>
         ///     Get ForcePerLength from YottanewtonsPerMeter.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -524,16 +489,6 @@ namespace UnitsNet
         {
             double value = (double) yottanewtonspermeter;
             return new ForcePerLength(value, ForcePerLengthUnit.YottanewtonPerMeter);
-        }
-        /// <summary>
-        ///     Get ForcePerLength from ZeptonewtonsPerMeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static ForcePerLength FromZeptonewtonsPerMeter(double zeptonewtonspermeter)
-        {
-            double value = (double) zeptonewtonspermeter;
-            return new ForcePerLength(value, ForcePerLengthUnit.ZeptonewtonPerMeter);
         }
         /// <summary>
         ///     Get ForcePerLength from ZettanewtonsPerMeter.
@@ -836,7 +791,6 @@ namespace UnitsNet
         {
             switch(Unit)
             {
-                case ForcePerLengthUnit.AttonewtonPerMeter: return (_value) * 1e-18d;
                 case ForcePerLengthUnit.CentinewtonPerMeter: return (_value) * 1e-2d;
                 case ForcePerLengthUnit.DecanewtonPerMeter: return (_value) * 1e1d;
                 case ForcePerLengthUnit.DecinewtonPerMeter: return (_value) * 1e-1d;
@@ -856,9 +810,7 @@ namespace UnitsNet
                 case ForcePerLengthUnit.QutranewtonPerMeter: return (_value) * 1e27d;
                 case ForcePerLengthUnit.TeranewtonPerMeter: return (_value) * 1e12d;
                 case ForcePerLengthUnit.VettanewtonPerMeter: return (_value) * 1e30d;
-                case ForcePerLengthUnit.YoctonewtonPerMeter: return (_value) * 1e-24d;
                 case ForcePerLengthUnit.YottanewtonPerMeter: return (_value) * 1e24d;
-                case ForcePerLengthUnit.ZeptonewtonPerMeter: return (_value) * 1e-21d;
                 case ForcePerLengthUnit.ZettanewtonPerMeter: return (_value) * 1e21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to base units.");
@@ -874,7 +826,6 @@ namespace UnitsNet
 
             switch(unit)
             {
-                case ForcePerLengthUnit.AttonewtonPerMeter: return (baseUnitValue) / 1e-18d;
                 case ForcePerLengthUnit.CentinewtonPerMeter: return (baseUnitValue) / 1e-2d;
                 case ForcePerLengthUnit.DecanewtonPerMeter: return (baseUnitValue) / 1e1d;
                 case ForcePerLengthUnit.DecinewtonPerMeter: return (baseUnitValue) / 1e-1d;
@@ -894,9 +845,7 @@ namespace UnitsNet
                 case ForcePerLengthUnit.QutranewtonPerMeter: return (baseUnitValue) / 1e27d;
                 case ForcePerLengthUnit.TeranewtonPerMeter: return (baseUnitValue) / 1e12d;
                 case ForcePerLengthUnit.VettanewtonPerMeter: return (baseUnitValue) / 1e30d;
-                case ForcePerLengthUnit.YoctonewtonPerMeter: return (baseUnitValue) / 1e-24d;
                 case ForcePerLengthUnit.YottanewtonPerMeter: return (baseUnitValue) / 1e24d;
-                case ForcePerLengthUnit.ZeptonewtonPerMeter: return (baseUnitValue) / 1e-21d;
                 case ForcePerLengthUnit.ZettanewtonPerMeter: return (baseUnitValue) / 1e21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to {unit}.");

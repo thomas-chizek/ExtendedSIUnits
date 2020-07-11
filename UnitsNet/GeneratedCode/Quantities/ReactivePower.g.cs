@@ -50,7 +50,6 @@ namespace UnitsNet
 
             Info = new QuantityInfo<ReactivePowerUnit>(QuantityType.ReactivePower,
                 new UnitInfo<ReactivePowerUnit>[] {
-                    new UnitInfo<ReactivePowerUnit>(ReactivePowerUnit.AttovoltampereReactive, BaseUnits.Undefined),
                     new UnitInfo<ReactivePowerUnit>(ReactivePowerUnit.CentivoltampereReactive, BaseUnits.Undefined),
                     new UnitInfo<ReactivePowerUnit>(ReactivePowerUnit.DecavoltampereReactive, BaseUnits.Undefined),
                     new UnitInfo<ReactivePowerUnit>(ReactivePowerUnit.DecivoltampereReactive, BaseUnits.Undefined),
@@ -69,9 +68,7 @@ namespace UnitsNet
                     new UnitInfo<ReactivePowerUnit>(ReactivePowerUnit.TeravoltampereReactive, BaseUnits.Undefined),
                     new UnitInfo<ReactivePowerUnit>(ReactivePowerUnit.VettavoltampereReactive, BaseUnits.Undefined),
                     new UnitInfo<ReactivePowerUnit>(ReactivePowerUnit.VoltampereReactive, BaseUnits.Undefined),
-                    new UnitInfo<ReactivePowerUnit>(ReactivePowerUnit.YoctovoltampereReactive, BaseUnits.Undefined),
                     new UnitInfo<ReactivePowerUnit>(ReactivePowerUnit.YottavoltampereReactive, BaseUnits.Undefined),
-                    new UnitInfo<ReactivePowerUnit>(ReactivePowerUnit.ZeptovoltampereReactive, BaseUnits.Undefined),
                     new UnitInfo<ReactivePowerUnit>(ReactivePowerUnit.ZettavoltampereReactive, BaseUnits.Undefined),
                 },
                 BaseUnit, Zero, BaseDimensions);
@@ -186,11 +183,6 @@ namespace UnitsNet
         #region Conversion Properties
 
         /// <summary>
-        ///     Get ReactivePower in AttovoltamperesReactive.
-        /// </summary>
-        public double AttovoltamperesReactive => As(ReactivePowerUnit.AttovoltampereReactive);
-
-        /// <summary>
         ///     Get ReactivePower in CentivoltamperesReactive.
         /// </summary>
         public double CentivoltamperesReactive => As(ReactivePowerUnit.CentivoltampereReactive);
@@ -281,19 +273,9 @@ namespace UnitsNet
         public double VoltamperesReactive => As(ReactivePowerUnit.VoltampereReactive);
 
         /// <summary>
-        ///     Get ReactivePower in YoctovoltamperesReactive.
-        /// </summary>
-        public double YoctovoltamperesReactive => As(ReactivePowerUnit.YoctovoltampereReactive);
-
-        /// <summary>
         ///     Get ReactivePower in YottavoltamperesReactive.
         /// </summary>
         public double YottavoltamperesReactive => As(ReactivePowerUnit.YottavoltampereReactive);
-
-        /// <summary>
-        ///     Get ReactivePower in ZeptovoltamperesReactive.
-        /// </summary>
-        public double ZeptovoltamperesReactive => As(ReactivePowerUnit.ZeptovoltampereReactive);
 
         /// <summary>
         ///     Get ReactivePower in ZettavoltamperesReactive.
@@ -329,15 +311,6 @@ namespace UnitsNet
 
         #region Static Factory Methods
 
-        /// <summary>
-        ///     Get ReactivePower from AttovoltamperesReactive.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static ReactivePower FromAttovoltamperesReactive(QuantityValue attovoltamperesreactive)
-        {
-            double value = (double) attovoltamperesreactive;
-            return new ReactivePower(value, ReactivePowerUnit.AttovoltampereReactive);
-        }
         /// <summary>
         ///     Get ReactivePower from CentivoltamperesReactive.
         /// </summary>
@@ -501,15 +474,6 @@ namespace UnitsNet
             return new ReactivePower(value, ReactivePowerUnit.VoltampereReactive);
         }
         /// <summary>
-        ///     Get ReactivePower from YoctovoltamperesReactive.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static ReactivePower FromYoctovoltamperesReactive(QuantityValue yoctovoltamperesreactive)
-        {
-            double value = (double) yoctovoltamperesreactive;
-            return new ReactivePower(value, ReactivePowerUnit.YoctovoltampereReactive);
-        }
-        /// <summary>
         ///     Get ReactivePower from YottavoltamperesReactive.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -517,15 +481,6 @@ namespace UnitsNet
         {
             double value = (double) yottavoltamperesreactive;
             return new ReactivePower(value, ReactivePowerUnit.YottavoltampereReactive);
-        }
-        /// <summary>
-        ///     Get ReactivePower from ZeptovoltamperesReactive.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static ReactivePower FromZeptovoltamperesReactive(QuantityValue zeptovoltamperesreactive)
-        {
-            double value = (double) zeptovoltamperesreactive;
-            return new ReactivePower(value, ReactivePowerUnit.ZeptovoltampereReactive);
         }
         /// <summary>
         ///     Get ReactivePower from ZettavoltamperesReactive.
@@ -965,7 +920,6 @@ namespace UnitsNet
         {
             switch(Unit)
             {
-                case ReactivePowerUnit.AttovoltampereReactive: return (_value) * 1e-18d;
                 case ReactivePowerUnit.CentivoltampereReactive: return (_value) * 1e-2d;
                 case ReactivePowerUnit.DecavoltampereReactive: return (_value) * 1e1d;
                 case ReactivePowerUnit.DecivoltampereReactive: return (_value) * 1e-1d;
@@ -984,9 +938,7 @@ namespace UnitsNet
                 case ReactivePowerUnit.TeravoltampereReactive: return (_value) * 1e12d;
                 case ReactivePowerUnit.VettavoltampereReactive: return (_value) * 1e30d;
                 case ReactivePowerUnit.VoltampereReactive: return _value;
-                case ReactivePowerUnit.YoctovoltampereReactive: return (_value) * 1e-24d;
                 case ReactivePowerUnit.YottavoltampereReactive: return (_value) * 1e24d;
-                case ReactivePowerUnit.ZeptovoltampereReactive: return (_value) * 1e-21d;
                 case ReactivePowerUnit.ZettavoltampereReactive: return (_value) * 1e21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to base units.");
@@ -1002,7 +954,6 @@ namespace UnitsNet
 
             switch(unit)
             {
-                case ReactivePowerUnit.AttovoltampereReactive: return (baseUnitValue) / 1e-18d;
                 case ReactivePowerUnit.CentivoltampereReactive: return (baseUnitValue) / 1e-2d;
                 case ReactivePowerUnit.DecavoltampereReactive: return (baseUnitValue) / 1e1d;
                 case ReactivePowerUnit.DecivoltampereReactive: return (baseUnitValue) / 1e-1d;
@@ -1021,9 +972,7 @@ namespace UnitsNet
                 case ReactivePowerUnit.TeravoltampereReactive: return (baseUnitValue) / 1e12d;
                 case ReactivePowerUnit.VettavoltampereReactive: return (baseUnitValue) / 1e30d;
                 case ReactivePowerUnit.VoltampereReactive: return baseUnitValue;
-                case ReactivePowerUnit.YoctovoltampereReactive: return (baseUnitValue) / 1e-24d;
                 case ReactivePowerUnit.YottavoltampereReactive: return (baseUnitValue) / 1e24d;
-                case ReactivePowerUnit.ZeptovoltampereReactive: return (baseUnitValue) / 1e-21d;
                 case ReactivePowerUnit.ZettavoltampereReactive: return (baseUnitValue) / 1e21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to {unit}.");

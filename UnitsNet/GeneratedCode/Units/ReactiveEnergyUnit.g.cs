@@ -26,7 +26,6 @@ namespace UnitsNet.Units
     public enum ReactiveEnergyUnit
     {
         Undefined = 0,
-        AttovoltampereReactiveHour,
         CentivoltampereReactiveHour,
         DecavoltampereReactiveHour,
         DecivoltampereReactiveHour,
@@ -45,9 +44,7 @@ namespace UnitsNet.Units
         TeravoltampereReactiveHour,
         VettavoltampereReactiveHour,
         VoltampereReactiveHour,
-        YoctovoltampereReactiveHour,
         YottavoltampereReactiveHour,
-        ZeptovoltampereReactiveHour,
         ZettavoltampereReactiveHour,
     }
 

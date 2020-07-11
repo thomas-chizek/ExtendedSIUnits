@@ -26,7 +26,6 @@ namespace UnitsNet.Units
     public enum ForcePerLengthUnit
     {
         Undefined = 0,
-        AttonewtonPerMeter,
         CentinewtonPerMeter,
         DecanewtonPerMeter,
         DecinewtonPerMeter,
@@ -46,9 +45,7 @@ namespace UnitsNet.Units
         QutranewtonPerMeter,
         TeranewtonPerMeter,
         VettanewtonPerMeter,
-        YoctonewtonPerMeter,
         YottanewtonPerMeter,
-        ZeptonewtonPerMeter,
         ZettanewtonPerMeter,
     }
 

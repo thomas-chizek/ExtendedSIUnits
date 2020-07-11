@@ -66,5 +66,11 @@ namespace UnitsNet
         {
             return VolumeFlow.FromCubicMetersPerSecond(speed.MetersPerSecond * area.SquareMeters);
         }
+
+        /// <summary>
+        ///     Gets an instance of this quantity with a value of 0 in the base unit MeterPerSecondSquared.
+        /// </summary>
+        public static Speed One { get; } = new Speed(1, UnitsNet.Units.SpeedUnit.MeterPerSecond);
+
     }
 }

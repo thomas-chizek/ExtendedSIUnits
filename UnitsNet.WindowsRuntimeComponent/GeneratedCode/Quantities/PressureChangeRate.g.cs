@@ -161,16 +161,6 @@ namespace UnitsNet
         public double AtmospheresPerSecond => As(PressureChangeRateUnit.AtmospherePerSecond);
 
         /// <summary>
-        ///     Get PressureChangeRate in AttopascalsPerMinute.
-        /// </summary>
-        public double AttopascalsPerMinute => As(PressureChangeRateUnit.AttopascalPerMinute);
-
-        /// <summary>
-        ///     Get PressureChangeRate in AttopascalsPerSecond.
-        /// </summary>
-        public double AttopascalsPerSecond => As(PressureChangeRateUnit.AttopascalPerSecond);
-
-        /// <summary>
         ///     Get PressureChangeRate in CentipascalsPerMinute.
         /// </summary>
         public double CentipascalsPerMinute => As(PressureChangeRateUnit.CentipascalPerMinute);
@@ -351,16 +341,6 @@ namespace UnitsNet
         public double VettapascalsPerSecond => As(PressureChangeRateUnit.VettapascalPerSecond);
 
         /// <summary>
-        ///     Get PressureChangeRate in YoctopascalsPerMinute.
-        /// </summary>
-        public double YoctopascalsPerMinute => As(PressureChangeRateUnit.YoctopascalPerMinute);
-
-        /// <summary>
-        ///     Get PressureChangeRate in YoctopascalsPerSecond.
-        /// </summary>
-        public double YoctopascalsPerSecond => As(PressureChangeRateUnit.YoctopascalPerSecond);
-
-        /// <summary>
         ///     Get PressureChangeRate in YottapascalsPerMinute.
         /// </summary>
         public double YottapascalsPerMinute => As(PressureChangeRateUnit.YottapascalPerMinute);
@@ -369,16 +349,6 @@ namespace UnitsNet
         ///     Get PressureChangeRate in YottapascalsPerSecond.
         /// </summary>
         public double YottapascalsPerSecond => As(PressureChangeRateUnit.YottapascalPerSecond);
-
-        /// <summary>
-        ///     Get PressureChangeRate in ZeptopascalsPerMinute.
-        /// </summary>
-        public double ZeptopascalsPerMinute => As(PressureChangeRateUnit.ZeptopascalPerMinute);
-
-        /// <summary>
-        ///     Get PressureChangeRate in ZeptopascalsPerSecond.
-        /// </summary>
-        public double ZeptopascalsPerSecond => As(PressureChangeRateUnit.ZeptopascalPerSecond);
 
         /// <summary>
         ///     Get PressureChangeRate in ZettapascalsPerMinute.
@@ -429,26 +399,6 @@ namespace UnitsNet
         {
             double value = (double) atmospherespersecond;
             return new PressureChangeRate(value, PressureChangeRateUnit.AtmospherePerSecond);
-        }
-        /// <summary>
-        ///     Get PressureChangeRate from AttopascalsPerMinute.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static PressureChangeRate FromAttopascalsPerMinute(double attopascalsperminute)
-        {
-            double value = (double) attopascalsperminute;
-            return new PressureChangeRate(value, PressureChangeRateUnit.AttopascalPerMinute);
-        }
-        /// <summary>
-        ///     Get PressureChangeRate from AttopascalsPerSecond.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static PressureChangeRate FromAttopascalsPerSecond(double attopascalspersecond)
-        {
-            double value = (double) attopascalspersecond;
-            return new PressureChangeRate(value, PressureChangeRateUnit.AttopascalPerSecond);
         }
         /// <summary>
         ///     Get PressureChangeRate from CentipascalsPerMinute.
@@ -811,26 +761,6 @@ namespace UnitsNet
             return new PressureChangeRate(value, PressureChangeRateUnit.VettapascalPerSecond);
         }
         /// <summary>
-        ///     Get PressureChangeRate from YoctopascalsPerMinute.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static PressureChangeRate FromYoctopascalsPerMinute(double yoctopascalsperminute)
-        {
-            double value = (double) yoctopascalsperminute;
-            return new PressureChangeRate(value, PressureChangeRateUnit.YoctopascalPerMinute);
-        }
-        /// <summary>
-        ///     Get PressureChangeRate from YoctopascalsPerSecond.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static PressureChangeRate FromYoctopascalsPerSecond(double yoctopascalspersecond)
-        {
-            double value = (double) yoctopascalspersecond;
-            return new PressureChangeRate(value, PressureChangeRateUnit.YoctopascalPerSecond);
-        }
-        /// <summary>
         ///     Get PressureChangeRate from YottapascalsPerMinute.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -849,26 +779,6 @@ namespace UnitsNet
         {
             double value = (double) yottapascalspersecond;
             return new PressureChangeRate(value, PressureChangeRateUnit.YottapascalPerSecond);
-        }
-        /// <summary>
-        ///     Get PressureChangeRate from ZeptopascalsPerMinute.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static PressureChangeRate FromZeptopascalsPerMinute(double zeptopascalsperminute)
-        {
-            double value = (double) zeptopascalsperminute;
-            return new PressureChangeRate(value, PressureChangeRateUnit.ZeptopascalPerMinute);
-        }
-        /// <summary>
-        ///     Get PressureChangeRate from ZeptopascalsPerSecond.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static PressureChangeRate FromZeptopascalsPerSecond(double zeptopascalspersecond)
-        {
-            double value = (double) zeptopascalspersecond;
-            return new PressureChangeRate(value, PressureChangeRateUnit.ZeptopascalPerSecond);
         }
         /// <summary>
         ///     Get PressureChangeRate from ZettapascalsPerMinute.
@@ -1182,8 +1092,6 @@ namespace UnitsNet
             switch(Unit)
             {
                 case PressureChangeRateUnit.AtmospherePerSecond: return _value * 1.01325*1e5;
-                case PressureChangeRateUnit.AttopascalPerMinute: return (_value/60) * 1e-18d;
-                case PressureChangeRateUnit.AttopascalPerSecond: return (_value) * 1e-18d;
                 case PressureChangeRateUnit.CentipascalPerMinute: return (_value/60) * 1e-2d;
                 case PressureChangeRateUnit.CentipascalPerSecond: return (_value) * 1e-2d;
                 case PressureChangeRateUnit.DecapascalPerMinute: return (_value/60) * 1e1d;
@@ -1220,12 +1128,8 @@ namespace UnitsNet
                 case PressureChangeRateUnit.TerapascalPerSecond: return (_value) * 1e12d;
                 case PressureChangeRateUnit.VettapascalPerMinute: return (_value/60) * 1e30d;
                 case PressureChangeRateUnit.VettapascalPerSecond: return (_value) * 1e30d;
-                case PressureChangeRateUnit.YoctopascalPerMinute: return (_value/60) * 1e-24d;
-                case PressureChangeRateUnit.YoctopascalPerSecond: return (_value) * 1e-24d;
                 case PressureChangeRateUnit.YottapascalPerMinute: return (_value/60) * 1e24d;
                 case PressureChangeRateUnit.YottapascalPerSecond: return (_value) * 1e24d;
-                case PressureChangeRateUnit.ZeptopascalPerMinute: return (_value/60) * 1e-21d;
-                case PressureChangeRateUnit.ZeptopascalPerSecond: return (_value) * 1e-21d;
                 case PressureChangeRateUnit.ZettapascalPerMinute: return (_value/60) * 1e21d;
                 case PressureChangeRateUnit.ZettapascalPerSecond: return (_value) * 1e21d;
                 default:
@@ -1243,8 +1147,6 @@ namespace UnitsNet
             switch(unit)
             {
                 case PressureChangeRateUnit.AtmospherePerSecond: return baseUnitValue / (1.01325*1e5);
-                case PressureChangeRateUnit.AttopascalPerMinute: return (baseUnitValue*60) / 1e-18d;
-                case PressureChangeRateUnit.AttopascalPerSecond: return (baseUnitValue) / 1e-18d;
                 case PressureChangeRateUnit.CentipascalPerMinute: return (baseUnitValue*60) / 1e-2d;
                 case PressureChangeRateUnit.CentipascalPerSecond: return (baseUnitValue) / 1e-2d;
                 case PressureChangeRateUnit.DecapascalPerMinute: return (baseUnitValue*60) / 1e1d;
@@ -1281,12 +1183,8 @@ namespace UnitsNet
                 case PressureChangeRateUnit.TerapascalPerSecond: return (baseUnitValue) / 1e12d;
                 case PressureChangeRateUnit.VettapascalPerMinute: return (baseUnitValue*60) / 1e30d;
                 case PressureChangeRateUnit.VettapascalPerSecond: return (baseUnitValue) / 1e30d;
-                case PressureChangeRateUnit.YoctopascalPerMinute: return (baseUnitValue*60) / 1e-24d;
-                case PressureChangeRateUnit.YoctopascalPerSecond: return (baseUnitValue) / 1e-24d;
                 case PressureChangeRateUnit.YottapascalPerMinute: return (baseUnitValue*60) / 1e24d;
                 case PressureChangeRateUnit.YottapascalPerSecond: return (baseUnitValue) / 1e24d;
-                case PressureChangeRateUnit.ZeptopascalPerMinute: return (baseUnitValue*60) / 1e-21d;
-                case PressureChangeRateUnit.ZeptopascalPerSecond: return (baseUnitValue) / 1e-21d;
                 case PressureChangeRateUnit.ZettapascalPerMinute: return (baseUnitValue*60) / 1e21d;
                 case PressureChangeRateUnit.ZettapascalPerSecond: return (baseUnitValue) / 1e21d;
                 default:

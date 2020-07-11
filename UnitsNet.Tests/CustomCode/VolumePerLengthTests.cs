@@ -27,9 +27,48 @@ namespace UnitsNet.Tests.CustomCode
     public class VolumePerLengthTests : VolumePerLengthTestsBase
     {
         // Override properties in base class here
+        protected override double FemtocubicMetersPerMeterInOneCubicMeterPerMeter => 1e15;
+        protected override double PicocubicMetersPerMeterInOneCubicMeterPerMeter => 1e12;
+        protected override double NanocubicMetersPerMeterInOneCubicMeterPerMeter => 1e9;
+        protected override double MicrocubicMetersPerMeterInOneCubicMeterPerMeter => 1e6;
+        protected override double MillicubicMetersPerMeterInOneCubicMeterPerMeter => 1e3;
+        protected override double CenticubicMetersPerMeterInOneCubicMeterPerMeter => 1e2;
+        protected override double DecicubicMetersPerMeterInOneCubicMeterPerMeter => 1e1;
         protected override double CubicMetersPerMeterInOneCubicMeterPerMeter => 1;
+        protected override double DecacubicMetersPerMeterInOneCubicMeterPerMeter => 1e-1;
+        protected override double HectocubicMetersPerMeterInOneCubicMeterPerMeter => 1e-2;
+        protected override double KilocubicMetersPerMeterInOneCubicMeterPerMeter => 1e-3;
+        protected override double MegacubicMetersPerMeterInOneCubicMeterPerMeter => 1e-6;
+        protected override double GigacubicMetersPerMeterInOneCubicMeterPerMeter => 1e-9;
+        protected override double TeracubicMetersPerMeterInOneCubicMeterPerMeter => 1e-12;
+        protected override double PetacubicMetersPerMeterInOneCubicMeterPerMeter => 1e-15;
+        protected override double ExacubicMetersPerMeterInOneCubicMeterPerMeter => 1e-18;
+        protected override double ZettacubicMetersPerMeterInOneCubicMeterPerMeter => 1e-21;
+        protected override double YottacubicMetersPerMeterInOneCubicMeterPerMeter => 1e-24;
+        protected override double QutracubicMetersPerMeterInOneCubicMeterPerMeter => 1e-27;
+        protected override double VettacubicMetersPerMeterInOneCubicMeterPerMeter => 1e-30;
 
+
+        protected override double FemtolitersPerMeterInOneCubicMeterPerMeter => 1e18;
+        protected override double PicolitersPerMeterInOneCubicMeterPerMeter => 1e15;
+        protected override double NanolitersPerMeterInOneCubicMeterPerMeter => 1e12;
+        protected override double MicrolitersPerMeterInOneCubicMeterPerMeter => 1e9;
+        protected override double MillilitersPerMeterInOneCubicMeterPerMeter => 1e6;
+        protected override double CentilitersPerMeterInOneCubicMeterPerMeter => 1e5;
+        protected override double DecilitersPerMeterInOneCubicMeterPerMeter => 1e4;
         protected override double LitersPerMeterInOneCubicMeterPerMeter => 1000;
+        protected override double DecalitersPerMeterInOneCubicMeterPerMeter => 1e2;
+        protected override double HectolitersPerMeterInOneCubicMeterPerMeter => 1e1;
+        protected override double KilolitersPerMeterInOneCubicMeterPerMeter => 1;
+        protected override double MegalitersPerMeterInOneCubicMeterPerMeter => 1e-3;
+        protected override double GigalitersPerMeterInOneCubicMeterPerMeter => 1e-6;
+        protected override double TeralitersPerMeterInOneCubicMeterPerMeter => 1e-9;
+        protected override double PetalitersPerMeterInOneCubicMeterPerMeter => 1e-12;
+        protected override double ExalitersPerMeterInOneCubicMeterPerMeter => 1e-15;
+        protected override double ZettalitersPerMeterInOneCubicMeterPerMeter => 1e-18;
+        protected override double YottalitersPerMeterInOneCubicMeterPerMeter => 1e-21;
+        protected override double QutralitersPerMeterInOneCubicMeterPerMeter => 1e-24;
+        protected override double VettalitersPerMeterInOneCubicMeterPerMeter => 1e-27;
 
         protected override double OilBarrelsPerFootInOneCubicMeterPerMeter => 1.917134088;
     }

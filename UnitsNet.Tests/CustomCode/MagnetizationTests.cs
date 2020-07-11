@@ -27,6 +27,18 @@ namespace UnitsNet.Tests.CustomCode
 {
     public class MagnetizationTests : MagnetizationTestsBase
     {
+        protected override double NanoamperesPerMeterInOneAmperePerMeter => 1e9;
+        protected override double MicroamperesPerMeterInOneAmperePerMeter => 1e6;
+        protected override double MilliamperesPerMeterInOneAmperePerMeter => 1e3;
         protected override double AmperesPerMeterInOneAmperePerMeter => 1;
+
+        protected override double DecaamperesPerMeterInOneAmperePerMeter => 0.1;
+
+        protected override double KiloamperesPerMeterInOneAmperePerMeter => 1e-3;
+
+        protected override double MegaamperesPerMeterInOneAmperePerMeter => 1e-6;
+
+
+
     }
 }

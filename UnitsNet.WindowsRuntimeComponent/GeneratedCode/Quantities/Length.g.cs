@@ -156,14 +156,34 @@ namespace UnitsNet
         #region Conversion Properties
 
         /// <summary>
-        ///     Get Length in Attometers.
+        ///     Get Length in AUs.
         /// </summary>
-        public double Attometers => As(LengthUnit.Attometer);
+        public double AUs => As(LengthUnit.AU);
 
         /// <summary>
         ///     Get Length in Centimeters.
         /// </summary>
         public double Centimeters => As(LengthUnit.Centimeter);
+
+        /// <summary>
+        ///     Get Length in DecaaUs.
+        /// </summary>
+        public double DecaaUs => As(LengthUnit.DecaaU);
+
+        /// <summary>
+        ///     Get Length in DecalightDays.
+        /// </summary>
+        public double DecalightDays => As(LengthUnit.DecalightDay);
+
+        /// <summary>
+        ///     Get Length in DecalightHours.
+        /// </summary>
+        public double DecalightHours => As(LengthUnit.DecalightHour);
+
+        /// <summary>
+        ///     Get Length in DecalightMinutes.
+        /// </summary>
+        public double DecalightMinutes => As(LengthUnit.DecalightMinute);
 
         /// <summary>
         ///     Get Length in DecalightSeconds.
@@ -196,11 +216,6 @@ namespace UnitsNet
         public double DtpPoints => As(LengthUnit.DtpPoint);
 
         /// <summary>
-        ///     Get Length in ExalightSeconds.
-        /// </summary>
-        public double ExalightSeconds => As(LengthUnit.ExalightSecond);
-
-        /// <summary>
         ///     Get Length in ExalightYears.
         /// </summary>
         public double ExalightYears => As(LengthUnit.ExalightYear);
@@ -224,6 +239,26 @@ namespace UnitsNet
         ///     Get Length in Feet.
         /// </summary>
         public double Feet => As(LengthUnit.Foot);
+
+        /// <summary>
+        ///     Get Length in GigaaUs.
+        /// </summary>
+        public double GigaaUs => As(LengthUnit.GigaaU);
+
+        /// <summary>
+        ///     Get Length in GigalightDays.
+        /// </summary>
+        public double GigalightDays => As(LengthUnit.GigalightDay);
+
+        /// <summary>
+        ///     Get Length in GigalightHours.
+        /// </summary>
+        public double GigalightHours => As(LengthUnit.GigalightHour);
+
+        /// <summary>
+        ///     Get Length in GigalightMinutes.
+        /// </summary>
+        public double GigalightMinutes => As(LengthUnit.GigalightMinute);
 
         /// <summary>
         ///     Get Length in GigalightSeconds.
@@ -256,6 +291,26 @@ namespace UnitsNet
         public double Inches => As(LengthUnit.Inch);
 
         /// <summary>
+        ///     Get Length in KiloaUs.
+        /// </summary>
+        public double KiloaUs => As(LengthUnit.KiloaU);
+
+        /// <summary>
+        ///     Get Length in KilolightDays.
+        /// </summary>
+        public double KilolightDays => As(LengthUnit.KilolightDay);
+
+        /// <summary>
+        ///     Get Length in KilolightHours.
+        /// </summary>
+        public double KilolightHours => As(LengthUnit.KilolightHour);
+
+        /// <summary>
+        ///     Get Length in KilolightMinutes.
+        /// </summary>
+        public double KilolightMinutes => As(LengthUnit.KilolightMinute);
+
+        /// <summary>
         ///     Get Length in KilolightSeconds.
         /// </summary>
         public double KilolightSeconds => As(LengthUnit.KilolightSecond);
@@ -271,6 +326,21 @@ namespace UnitsNet
         public double Kilometers => As(LengthUnit.Kilometer);
 
         /// <summary>
+        ///     Get Length in LightDays.
+        /// </summary>
+        public double LightDays => As(LengthUnit.LightDay);
+
+        /// <summary>
+        ///     Get Length in LightHours.
+        /// </summary>
+        public double LightHours => As(LengthUnit.LightHour);
+
+        /// <summary>
+        ///     Get Length in LightMinutes.
+        /// </summary>
+        public double LightMinutes => As(LengthUnit.LightMinute);
+
+        /// <summary>
         ///     Get Length in LightSeconds.
         /// </summary>
         public double LightSeconds => As(LengthUnit.LightSecond);
@@ -279,6 +349,26 @@ namespace UnitsNet
         ///     Get Length in LightYears.
         /// </summary>
         public double LightYears => As(LengthUnit.LightYear);
+
+        /// <summary>
+        ///     Get Length in MegaaUs.
+        /// </summary>
+        public double MegaaUs => As(LengthUnit.MegaaU);
+
+        /// <summary>
+        ///     Get Length in MegalightDays.
+        /// </summary>
+        public double MegalightDays => As(LengthUnit.MegalightDay);
+
+        /// <summary>
+        ///     Get Length in MegalightHours.
+        /// </summary>
+        public double MegalightHours => As(LengthUnit.MegalightHour);
+
+        /// <summary>
+        ///     Get Length in MegalightMinutes.
+        /// </summary>
+        public double MegalightMinutes => As(LengthUnit.MegalightMinute);
 
         /// <summary>
         ///     Get Length in MegalightSeconds.
@@ -301,9 +391,29 @@ namespace UnitsNet
         public double Meters => As(LengthUnit.Meter);
 
         /// <summary>
+        ///     Get Length in MicroaUs.
+        /// </summary>
+        public double MicroaUs => As(LengthUnit.MicroaU);
+
+        /// <summary>
         ///     Get Length in Microinches.
         /// </summary>
         public double Microinches => As(LengthUnit.Microinch);
+
+        /// <summary>
+        ///     Get Length in MicrolightDays.
+        /// </summary>
+        public double MicrolightDays => As(LengthUnit.MicrolightDay);
+
+        /// <summary>
+        ///     Get Length in MicrolightHours.
+        /// </summary>
+        public double MicrolightHours => As(LengthUnit.MicrolightHour);
+
+        /// <summary>
+        ///     Get Length in MicrolightMinutes.
+        /// </summary>
+        public double MicrolightMinutes => As(LengthUnit.MicrolightMinute);
 
         /// <summary>
         ///     Get Length in MicrolightSeconds.
@@ -331,6 +441,26 @@ namespace UnitsNet
         public double Miles => As(LengthUnit.Mile);
 
         /// <summary>
+        ///     Get Length in MilliaUs.
+        /// </summary>
+        public double MilliaUs => As(LengthUnit.MilliaU);
+
+        /// <summary>
+        ///     Get Length in MillilightDays.
+        /// </summary>
+        public double MillilightDays => As(LengthUnit.MillilightDay);
+
+        /// <summary>
+        ///     Get Length in MillilightHours.
+        /// </summary>
+        public double MillilightHours => As(LengthUnit.MillilightHour);
+
+        /// <summary>
+        ///     Get Length in MillilightMinutes.
+        /// </summary>
+        public double MillilightMinutes => As(LengthUnit.MillilightMinute);
+
+        /// <summary>
         ///     Get Length in MillilightSeconds.
         /// </summary>
         public double MillilightSeconds => As(LengthUnit.MillilightSecond);
@@ -354,11 +484,6 @@ namespace UnitsNet
         ///     Get Length in NauticalMiles.
         /// </summary>
         public double NauticalMiles => As(LengthUnit.NauticalMile);
-
-        /// <summary>
-        ///     Get Length in PetalightSeconds.
-        /// </summary>
-        public double PetalightSeconds => As(LengthUnit.PetalightSecond);
 
         /// <summary>
         ///     Get Length in PetalightYears.
@@ -396,6 +521,26 @@ namespace UnitsNet
         public double Shackles => As(LengthUnit.Shackle);
 
         /// <summary>
+        ///     Get Length in TeraaUs.
+        /// </summary>
+        public double TeraaUs => As(LengthUnit.TeraaU);
+
+        /// <summary>
+        ///     Get Length in TeralightDays.
+        /// </summary>
+        public double TeralightDays => As(LengthUnit.TeralightDay);
+
+        /// <summary>
+        ///     Get Length in TeralightHours.
+        /// </summary>
+        public double TeralightHours => As(LengthUnit.TeralightHour);
+
+        /// <summary>
+        ///     Get Length in TeralightMinutes.
+        /// </summary>
+        public double TeralightMinutes => As(LengthUnit.TeralightMinute);
+
+        /// <summary>
         ///     Get Length in TeralightSeconds.
         /// </summary>
         public double TeralightSeconds => As(LengthUnit.TeralightSecond);
@@ -431,16 +576,6 @@ namespace UnitsNet
         public double Yards => As(LengthUnit.Yard);
 
         /// <summary>
-        ///     Get Length in Yoctometers.
-        /// </summary>
-        public double Yoctometers => As(LengthUnit.Yoctometer);
-
-        /// <summary>
-        ///     Get Length in YottalightSeconds.
-        /// </summary>
-        public double YottalightSeconds => As(LengthUnit.YottalightSecond);
-
-        /// <summary>
         ///     Get Length in YottalightYears.
         /// </summary>
         public double YottalightYears => As(LengthUnit.YottalightYear);
@@ -449,16 +584,6 @@ namespace UnitsNet
         ///     Get Length in Yottameters.
         /// </summary>
         public double Yottameters => As(LengthUnit.Yottameter);
-
-        /// <summary>
-        ///     Get Length in Zeptometers.
-        /// </summary>
-        public double Zeptometers => As(LengthUnit.Zeptometer);
-
-        /// <summary>
-        ///     Get Length in ZettalightSeconds.
-        /// </summary>
-        public double ZettalightSeconds => As(LengthUnit.ZettalightSecond);
 
         /// <summary>
         ///     Get Length in ZettalightYears.
@@ -501,14 +626,14 @@ namespace UnitsNet
         #region Static Factory Methods
 
         /// <summary>
-        ///     Get Length from Attometers.
+        ///     Get Length from AUs.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
         [Windows.Foundation.Metadata.DefaultOverload]
-        public static Length FromAttometers(double attometers)
+        public static Length FromAUs(double aus)
         {
-            double value = (double) attometers;
-            return new Length(value, LengthUnit.Attometer);
+            double value = (double) aus;
+            return new Length(value, LengthUnit.AU);
         }
         /// <summary>
         ///     Get Length from Centimeters.
@@ -519,6 +644,46 @@ namespace UnitsNet
         {
             double value = (double) centimeters;
             return new Length(value, LengthUnit.Centimeter);
+        }
+        /// <summary>
+        ///     Get Length from DecaaUs.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromDecaaUs(double decaaus)
+        {
+            double value = (double) decaaus;
+            return new Length(value, LengthUnit.DecaaU);
+        }
+        /// <summary>
+        ///     Get Length from DecalightDays.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromDecalightDays(double decalightdays)
+        {
+            double value = (double) decalightdays;
+            return new Length(value, LengthUnit.DecalightDay);
+        }
+        /// <summary>
+        ///     Get Length from DecalightHours.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromDecalightHours(double decalighthours)
+        {
+            double value = (double) decalighthours;
+            return new Length(value, LengthUnit.DecalightHour);
+        }
+        /// <summary>
+        ///     Get Length from DecalightMinutes.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromDecalightMinutes(double decalightminutes)
+        {
+            double value = (double) decalightminutes;
+            return new Length(value, LengthUnit.DecalightMinute);
         }
         /// <summary>
         ///     Get Length from DecalightSeconds.
@@ -581,16 +746,6 @@ namespace UnitsNet
             return new Length(value, LengthUnit.DtpPoint);
         }
         /// <summary>
-        ///     Get Length from ExalightSeconds.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Length FromExalightSeconds(double exalightseconds)
-        {
-            double value = (double) exalightseconds;
-            return new Length(value, LengthUnit.ExalightSecond);
-        }
-        /// <summary>
         ///     Get Length from ExalightYears.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -639,6 +794,46 @@ namespace UnitsNet
         {
             double value = (double) feet;
             return new Length(value, LengthUnit.Foot);
+        }
+        /// <summary>
+        ///     Get Length from GigaaUs.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromGigaaUs(double gigaaus)
+        {
+            double value = (double) gigaaus;
+            return new Length(value, LengthUnit.GigaaU);
+        }
+        /// <summary>
+        ///     Get Length from GigalightDays.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromGigalightDays(double gigalightdays)
+        {
+            double value = (double) gigalightdays;
+            return new Length(value, LengthUnit.GigalightDay);
+        }
+        /// <summary>
+        ///     Get Length from GigalightHours.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromGigalightHours(double gigalighthours)
+        {
+            double value = (double) gigalighthours;
+            return new Length(value, LengthUnit.GigalightHour);
+        }
+        /// <summary>
+        ///     Get Length from GigalightMinutes.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromGigalightMinutes(double gigalightminutes)
+        {
+            double value = (double) gigalightminutes;
+            return new Length(value, LengthUnit.GigalightMinute);
         }
         /// <summary>
         ///     Get Length from GigalightSeconds.
@@ -701,6 +896,46 @@ namespace UnitsNet
             return new Length(value, LengthUnit.Inch);
         }
         /// <summary>
+        ///     Get Length from KiloaUs.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromKiloaUs(double kiloaus)
+        {
+            double value = (double) kiloaus;
+            return new Length(value, LengthUnit.KiloaU);
+        }
+        /// <summary>
+        ///     Get Length from KilolightDays.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromKilolightDays(double kilolightdays)
+        {
+            double value = (double) kilolightdays;
+            return new Length(value, LengthUnit.KilolightDay);
+        }
+        /// <summary>
+        ///     Get Length from KilolightHours.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromKilolightHours(double kilolighthours)
+        {
+            double value = (double) kilolighthours;
+            return new Length(value, LengthUnit.KilolightHour);
+        }
+        /// <summary>
+        ///     Get Length from KilolightMinutes.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromKilolightMinutes(double kilolightminutes)
+        {
+            double value = (double) kilolightminutes;
+            return new Length(value, LengthUnit.KilolightMinute);
+        }
+        /// <summary>
         ///     Get Length from KilolightSeconds.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -731,6 +966,36 @@ namespace UnitsNet
             return new Length(value, LengthUnit.Kilometer);
         }
         /// <summary>
+        ///     Get Length from LightDays.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromLightDays(double lightdays)
+        {
+            double value = (double) lightdays;
+            return new Length(value, LengthUnit.LightDay);
+        }
+        /// <summary>
+        ///     Get Length from LightHours.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromLightHours(double lighthours)
+        {
+            double value = (double) lighthours;
+            return new Length(value, LengthUnit.LightHour);
+        }
+        /// <summary>
+        ///     Get Length from LightMinutes.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromLightMinutes(double lightminutes)
+        {
+            double value = (double) lightminutes;
+            return new Length(value, LengthUnit.LightMinute);
+        }
+        /// <summary>
         ///     Get Length from LightSeconds.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -749,6 +1014,46 @@ namespace UnitsNet
         {
             double value = (double) lightyears;
             return new Length(value, LengthUnit.LightYear);
+        }
+        /// <summary>
+        ///     Get Length from MegaaUs.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromMegaaUs(double megaaus)
+        {
+            double value = (double) megaaus;
+            return new Length(value, LengthUnit.MegaaU);
+        }
+        /// <summary>
+        ///     Get Length from MegalightDays.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromMegalightDays(double megalightdays)
+        {
+            double value = (double) megalightdays;
+            return new Length(value, LengthUnit.MegalightDay);
+        }
+        /// <summary>
+        ///     Get Length from MegalightHours.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromMegalightHours(double megalighthours)
+        {
+            double value = (double) megalighthours;
+            return new Length(value, LengthUnit.MegalightHour);
+        }
+        /// <summary>
+        ///     Get Length from MegalightMinutes.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromMegalightMinutes(double megalightminutes)
+        {
+            double value = (double) megalightminutes;
+            return new Length(value, LengthUnit.MegalightMinute);
         }
         /// <summary>
         ///     Get Length from MegalightSeconds.
@@ -791,6 +1096,16 @@ namespace UnitsNet
             return new Length(value, LengthUnit.Meter);
         }
         /// <summary>
+        ///     Get Length from MicroaUs.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromMicroaUs(double microaus)
+        {
+            double value = (double) microaus;
+            return new Length(value, LengthUnit.MicroaU);
+        }
+        /// <summary>
         ///     Get Length from Microinches.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -799,6 +1114,36 @@ namespace UnitsNet
         {
             double value = (double) microinches;
             return new Length(value, LengthUnit.Microinch);
+        }
+        /// <summary>
+        ///     Get Length from MicrolightDays.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromMicrolightDays(double microlightdays)
+        {
+            double value = (double) microlightdays;
+            return new Length(value, LengthUnit.MicrolightDay);
+        }
+        /// <summary>
+        ///     Get Length from MicrolightHours.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromMicrolightHours(double microlighthours)
+        {
+            double value = (double) microlighthours;
+            return new Length(value, LengthUnit.MicrolightHour);
+        }
+        /// <summary>
+        ///     Get Length from MicrolightMinutes.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromMicrolightMinutes(double microlightminutes)
+        {
+            double value = (double) microlightminutes;
+            return new Length(value, LengthUnit.MicrolightMinute);
         }
         /// <summary>
         ///     Get Length from MicrolightSeconds.
@@ -851,6 +1196,46 @@ namespace UnitsNet
             return new Length(value, LengthUnit.Mile);
         }
         /// <summary>
+        ///     Get Length from MilliaUs.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromMilliaUs(double milliaus)
+        {
+            double value = (double) milliaus;
+            return new Length(value, LengthUnit.MilliaU);
+        }
+        /// <summary>
+        ///     Get Length from MillilightDays.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromMillilightDays(double millilightdays)
+        {
+            double value = (double) millilightdays;
+            return new Length(value, LengthUnit.MillilightDay);
+        }
+        /// <summary>
+        ///     Get Length from MillilightHours.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromMillilightHours(double millilighthours)
+        {
+            double value = (double) millilighthours;
+            return new Length(value, LengthUnit.MillilightHour);
+        }
+        /// <summary>
+        ///     Get Length from MillilightMinutes.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromMillilightMinutes(double millilightminutes)
+        {
+            double value = (double) millilightminutes;
+            return new Length(value, LengthUnit.MillilightMinute);
+        }
+        /// <summary>
         ///     Get Length from MillilightSeconds.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -899,16 +1284,6 @@ namespace UnitsNet
         {
             double value = (double) nauticalmiles;
             return new Length(value, LengthUnit.NauticalMile);
-        }
-        /// <summary>
-        ///     Get Length from PetalightSeconds.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Length FromPetalightSeconds(double petalightseconds)
-        {
-            double value = (double) petalightseconds;
-            return new Length(value, LengthUnit.PetalightSecond);
         }
         /// <summary>
         ///     Get Length from PetalightYears.
@@ -981,6 +1356,46 @@ namespace UnitsNet
             return new Length(value, LengthUnit.Shackle);
         }
         /// <summary>
+        ///     Get Length from TeraaUs.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromTeraaUs(double teraaus)
+        {
+            double value = (double) teraaus;
+            return new Length(value, LengthUnit.TeraaU);
+        }
+        /// <summary>
+        ///     Get Length from TeralightDays.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromTeralightDays(double teralightdays)
+        {
+            double value = (double) teralightdays;
+            return new Length(value, LengthUnit.TeralightDay);
+        }
+        /// <summary>
+        ///     Get Length from TeralightHours.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromTeralightHours(double teralighthours)
+        {
+            double value = (double) teralighthours;
+            return new Length(value, LengthUnit.TeralightHour);
+        }
+        /// <summary>
+        ///     Get Length from TeralightMinutes.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Length FromTeralightMinutes(double teralightminutes)
+        {
+            double value = (double) teralightminutes;
+            return new Length(value, LengthUnit.TeralightMinute);
+        }
+        /// <summary>
         ///     Get Length from TeralightSeconds.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -1051,26 +1466,6 @@ namespace UnitsNet
             return new Length(value, LengthUnit.Yard);
         }
         /// <summary>
-        ///     Get Length from Yoctometers.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Length FromYoctometers(double yoctometers)
-        {
-            double value = (double) yoctometers;
-            return new Length(value, LengthUnit.Yoctometer);
-        }
-        /// <summary>
-        ///     Get Length from YottalightSeconds.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Length FromYottalightSeconds(double yottalightseconds)
-        {
-            double value = (double) yottalightseconds;
-            return new Length(value, LengthUnit.YottalightSecond);
-        }
-        /// <summary>
         ///     Get Length from YottalightYears.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -1089,26 +1484,6 @@ namespace UnitsNet
         {
             double value = (double) yottameters;
             return new Length(value, LengthUnit.Yottameter);
-        }
-        /// <summary>
-        ///     Get Length from Zeptometers.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Length FromZeptometers(double zeptometers)
-        {
-            double value = (double) zeptometers;
-            return new Length(value, LengthUnit.Zeptometer);
-        }
-        /// <summary>
-        ///     Get Length from ZettalightSeconds.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Length FromZettalightSeconds(double zettalightseconds)
-        {
-            double value = (double) zettalightseconds;
-            return new Length(value, LengthUnit.ZettalightSecond);
         }
         /// <summary>
         ///     Get Length from ZettalightYears.
@@ -1421,47 +1796,72 @@ namespace UnitsNet
         {
             switch(Unit)
             {
-                case LengthUnit.Attometer: return (_value) * 1e-18d;
+                case LengthUnit.AU: return _value*1.496e11;
                 case LengthUnit.Centimeter: return (_value) * 1e-2d;
+                case LengthUnit.DecaaU: return (_value*1.496e11) * 1e1d;
+                case LengthUnit.DecalightDay: return (_value*2.59e13) * 1e1d;
+                case LengthUnit.DecalightHour: return (_value*1.079e12) * 1e1d;
+                case LengthUnit.DecalightMinute: return (_value*1.799e10) * 1e1d;
                 case LengthUnit.DecalightSecond: return (_value*299792458) * 1e1d;
                 case LengthUnit.DecalightYear: return (_value*9.4607304725808E15) * 1e1d;
                 case LengthUnit.Decameter: return (_value) * 1e1d;
                 case LengthUnit.Decimeter: return (_value) * 1e-1d;
                 case LengthUnit.DtpPica: return _value/236.220472441;
                 case LengthUnit.DtpPoint: return (_value/72)*2.54e-2;
-                case LengthUnit.ExalightSecond: return (_value*299792458) * 1e18d;
                 case LengthUnit.ExalightYear: return (_value*9.4607304725808E15) * 1e18d;
                 case LengthUnit.Exameter: return (_value) * 1e18d;
                 case LengthUnit.Fathom: return _value*1.8288;
                 case LengthUnit.Femtometer: return (_value) * 1e-15d;
                 case LengthUnit.Foot: return _value*0.3048;
+                case LengthUnit.GigaaU: return (_value*1.496e11) * 1e9d;
+                case LengthUnit.GigalightDay: return (_value*2.59e13) * 1e9d;
+                case LengthUnit.GigalightHour: return (_value*1.079e12) * 1e9d;
+                case LengthUnit.GigalightMinute: return (_value*1.799e10) * 1e9d;
                 case LengthUnit.GigalightSecond: return (_value*299792458) * 1e9d;
                 case LengthUnit.GigalightYear: return (_value*9.4607304725808E15) * 1e9d;
                 case LengthUnit.Gigameter: return (_value) * 1e9d;
                 case LengthUnit.Hand: return _value * 1.016e-1;
                 case LengthUnit.Hectometer: return (_value) * 1e2d;
                 case LengthUnit.Inch: return _value*2.54e-2;
+                case LengthUnit.KiloaU: return (_value*1.496e11) * 1e3d;
+                case LengthUnit.KilolightDay: return (_value*2.59e13) * 1e3d;
+                case LengthUnit.KilolightHour: return (_value*1.079e12) * 1e3d;
+                case LengthUnit.KilolightMinute: return (_value*1.799e10) * 1e3d;
                 case LengthUnit.KilolightSecond: return (_value*299792458) * 1e3d;
                 case LengthUnit.KilolightYear: return (_value*9.4607304725808E15) * 1e3d;
                 case LengthUnit.Kilometer: return (_value) * 1e3d;
+                case LengthUnit.LightDay: return _value*2.59e13;
+                case LengthUnit.LightHour: return _value*1.079e12;
+                case LengthUnit.LightMinute: return _value*1.799e10;
                 case LengthUnit.LightSecond: return _value*299792458;
                 case LengthUnit.LightYear: return _value*9.4607304725808E15;
+                case LengthUnit.MegaaU: return (_value*1.496e11) * 1e6d;
+                case LengthUnit.MegalightDay: return (_value*2.59e13) * 1e6d;
+                case LengthUnit.MegalightHour: return (_value*1.079e12) * 1e6d;
+                case LengthUnit.MegalightMinute: return (_value*1.799e10) * 1e6d;
                 case LengthUnit.MegalightSecond: return (_value*299792458) * 1e6d;
                 case LengthUnit.MegalightYear: return (_value*9.4607304725808E15) * 1e6d;
                 case LengthUnit.Megameter: return (_value) * 1e6d;
                 case LengthUnit.Meter: return _value;
+                case LengthUnit.MicroaU: return (_value*1.496e11) * 1e-6d;
                 case LengthUnit.Microinch: return _value*2.54e-8;
+                case LengthUnit.MicrolightDay: return (_value*2.59e13) * 1e-6d;
+                case LengthUnit.MicrolightHour: return (_value*1.079e12) * 1e-6d;
+                case LengthUnit.MicrolightMinute: return (_value*1.799e10) * 1e-6d;
                 case LengthUnit.MicrolightSecond: return (_value*299792458) * 1e-6d;
                 case LengthUnit.MicrolightYear: return (_value*9.4607304725808E15) * 1e-6d;
                 case LengthUnit.Micrometer: return (_value) * 1e-6d;
                 case LengthUnit.Mil: return _value*2.54e-5;
                 case LengthUnit.Mile: return _value*1609.34;
+                case LengthUnit.MilliaU: return (_value*1.496e11) * 1e-3d;
+                case LengthUnit.MillilightDay: return (_value*2.59e13) * 1e-3d;
+                case LengthUnit.MillilightHour: return (_value*1.079e12) * 1e-3d;
+                case LengthUnit.MillilightMinute: return (_value*1.799e10) * 1e-3d;
                 case LengthUnit.MillilightSecond: return (_value*299792458) * 1e-3d;
                 case LengthUnit.MillilightYear: return (_value*9.4607304725808E15) * 1e-3d;
                 case LengthUnit.Millimeter: return (_value) * 1e-3d;
                 case LengthUnit.Nanometer: return (_value) * 1e-9d;
                 case LengthUnit.NauticalMile: return _value*1852;
-                case LengthUnit.PetalightSecond: return (_value*299792458) * 1e15d;
                 case LengthUnit.PetalightYear: return (_value*9.4607304725808E15) * 1e15d;
                 case LengthUnit.Petameter: return (_value) * 1e15d;
                 case LengthUnit.Picometer: return (_value) * 1e-12d;
@@ -1469,6 +1869,10 @@ namespace UnitsNet
                 case LengthUnit.PrinterPoint: return (_value/72.27)*2.54e-2;
                 case LengthUnit.Qutrameter: return (_value) * 1e27d;
                 case LengthUnit.Shackle: return _value*27.432;
+                case LengthUnit.TeraaU: return (_value*1.496e11) * 1e12d;
+                case LengthUnit.TeralightDay: return (_value*2.59e13) * 1e12d;
+                case LengthUnit.TeralightHour: return (_value*1.079e12) * 1e12d;
+                case LengthUnit.TeralightMinute: return (_value*1.799e10) * 1e12d;
                 case LengthUnit.TeralightSecond: return (_value*299792458) * 1e12d;
                 case LengthUnit.TeralightYear: return (_value*9.4607304725808E15) * 1e12d;
                 case LengthUnit.Terameter: return (_value) * 1e12d;
@@ -1476,12 +1880,8 @@ namespace UnitsNet
                 case LengthUnit.UsSurveyFoot: return _value*1200/3937;
                 case LengthUnit.Vettameter: return (_value) * 1e30d;
                 case LengthUnit.Yard: return _value*0.9144;
-                case LengthUnit.Yoctometer: return (_value) * 1e-24d;
-                case LengthUnit.YottalightSecond: return (_value*299792458) * 1e24d;
                 case LengthUnit.YottalightYear: return (_value*9.4607304725808E15) * 1e24d;
                 case LengthUnit.Yottameter: return (_value) * 1e24d;
-                case LengthUnit.Zeptometer: return (_value) * 1e-21d;
-                case LengthUnit.ZettalightSecond: return (_value*299792458) * 1e21d;
                 case LengthUnit.ZettalightYear: return (_value*9.4607304725808E15) * 1e21d;
                 case LengthUnit.Zettameter: return (_value) * 1e21d;
                 default:
@@ -1498,47 +1898,72 @@ namespace UnitsNet
 
             switch(unit)
             {
-                case LengthUnit.Attometer: return (baseUnitValue) / 1e-18d;
+                case LengthUnit.AU: return baseUnitValue/1.496e11;
                 case LengthUnit.Centimeter: return (baseUnitValue) / 1e-2d;
+                case LengthUnit.DecaaU: return (baseUnitValue/1.496e11) / 1e1d;
+                case LengthUnit.DecalightDay: return (baseUnitValue/2.59e13) / 1e1d;
+                case LengthUnit.DecalightHour: return (baseUnitValue/1.079e12) / 1e1d;
+                case LengthUnit.DecalightMinute: return (baseUnitValue/1.799e10) / 1e1d;
                 case LengthUnit.DecalightSecond: return (baseUnitValue/299792458) / 1e1d;
                 case LengthUnit.DecalightYear: return (baseUnitValue/9.4607304725808E15) / 1e1d;
                 case LengthUnit.Decameter: return (baseUnitValue) / 1e1d;
                 case LengthUnit.Decimeter: return (baseUnitValue) / 1e-1d;
                 case LengthUnit.DtpPica: return baseUnitValue*236.220472441;
                 case LengthUnit.DtpPoint: return (baseUnitValue/2.54e-2)*72;
-                case LengthUnit.ExalightSecond: return (baseUnitValue/299792458) / 1e18d;
                 case LengthUnit.ExalightYear: return (baseUnitValue/9.4607304725808E15) / 1e18d;
                 case LengthUnit.Exameter: return (baseUnitValue) / 1e18d;
                 case LengthUnit.Fathom: return baseUnitValue/1.8288;
                 case LengthUnit.Femtometer: return (baseUnitValue) / 1e-15d;
                 case LengthUnit.Foot: return baseUnitValue/0.3048;
+                case LengthUnit.GigaaU: return (baseUnitValue/1.496e11) / 1e9d;
+                case LengthUnit.GigalightDay: return (baseUnitValue/2.59e13) / 1e9d;
+                case LengthUnit.GigalightHour: return (baseUnitValue/1.079e12) / 1e9d;
+                case LengthUnit.GigalightMinute: return (baseUnitValue/1.799e10) / 1e9d;
                 case LengthUnit.GigalightSecond: return (baseUnitValue/299792458) / 1e9d;
                 case LengthUnit.GigalightYear: return (baseUnitValue/9.4607304725808E15) / 1e9d;
                 case LengthUnit.Gigameter: return (baseUnitValue) / 1e9d;
                 case LengthUnit.Hand: return baseUnitValue / 1.016e-1;
                 case LengthUnit.Hectometer: return (baseUnitValue) / 1e2d;
                 case LengthUnit.Inch: return baseUnitValue/2.54e-2;
+                case LengthUnit.KiloaU: return (baseUnitValue/1.496e11) / 1e3d;
+                case LengthUnit.KilolightDay: return (baseUnitValue/2.59e13) / 1e3d;
+                case LengthUnit.KilolightHour: return (baseUnitValue/1.079e12) / 1e3d;
+                case LengthUnit.KilolightMinute: return (baseUnitValue/1.799e10) / 1e3d;
                 case LengthUnit.KilolightSecond: return (baseUnitValue/299792458) / 1e3d;
                 case LengthUnit.KilolightYear: return (baseUnitValue/9.4607304725808E15) / 1e3d;
                 case LengthUnit.Kilometer: return (baseUnitValue) / 1e3d;
+                case LengthUnit.LightDay: return baseUnitValue/2.59e13;
+                case LengthUnit.LightHour: return baseUnitValue/1.079e12;
+                case LengthUnit.LightMinute: return baseUnitValue/1.799e10;
                 case LengthUnit.LightSecond: return baseUnitValue/299792458;
                 case LengthUnit.LightYear: return baseUnitValue/9.4607304725808E15;
+                case LengthUnit.MegaaU: return (baseUnitValue/1.496e11) / 1e6d;
+                case LengthUnit.MegalightDay: return (baseUnitValue/2.59e13) / 1e6d;
+                case LengthUnit.MegalightHour: return (baseUnitValue/1.079e12) / 1e6d;
+                case LengthUnit.MegalightMinute: return (baseUnitValue/1.799e10) / 1e6d;
                 case LengthUnit.MegalightSecond: return (baseUnitValue/299792458) / 1e6d;
                 case LengthUnit.MegalightYear: return (baseUnitValue/9.4607304725808E15) / 1e6d;
                 case LengthUnit.Megameter: return (baseUnitValue) / 1e6d;
                 case LengthUnit.Meter: return baseUnitValue;
+                case LengthUnit.MicroaU: return (baseUnitValue/1.496e11) / 1e-6d;
                 case LengthUnit.Microinch: return baseUnitValue/2.54e-8;
+                case LengthUnit.MicrolightDay: return (baseUnitValue/2.59e13) / 1e-6d;
+                case LengthUnit.MicrolightHour: return (baseUnitValue/1.079e12) / 1e-6d;
+                case LengthUnit.MicrolightMinute: return (baseUnitValue/1.799e10) / 1e-6d;
                 case LengthUnit.MicrolightSecond: return (baseUnitValue/299792458) / 1e-6d;
                 case LengthUnit.MicrolightYear: return (baseUnitValue/9.4607304725808E15) / 1e-6d;
                 case LengthUnit.Micrometer: return (baseUnitValue) / 1e-6d;
                 case LengthUnit.Mil: return baseUnitValue/2.54e-5;
                 case LengthUnit.Mile: return baseUnitValue/1609.34;
+                case LengthUnit.MilliaU: return (baseUnitValue/1.496e11) / 1e-3d;
+                case LengthUnit.MillilightDay: return (baseUnitValue/2.59e13) / 1e-3d;
+                case LengthUnit.MillilightHour: return (baseUnitValue/1.079e12) / 1e-3d;
+                case LengthUnit.MillilightMinute: return (baseUnitValue/1.799e10) / 1e-3d;
                 case LengthUnit.MillilightSecond: return (baseUnitValue/299792458) / 1e-3d;
                 case LengthUnit.MillilightYear: return (baseUnitValue/9.4607304725808E15) / 1e-3d;
                 case LengthUnit.Millimeter: return (baseUnitValue) / 1e-3d;
                 case LengthUnit.Nanometer: return (baseUnitValue) / 1e-9d;
                 case LengthUnit.NauticalMile: return baseUnitValue/1852;
-                case LengthUnit.PetalightSecond: return (baseUnitValue/299792458) / 1e15d;
                 case LengthUnit.PetalightYear: return (baseUnitValue/9.4607304725808E15) / 1e15d;
                 case LengthUnit.Petameter: return (baseUnitValue) / 1e15d;
                 case LengthUnit.Picometer: return (baseUnitValue) / 1e-12d;
@@ -1546,6 +1971,10 @@ namespace UnitsNet
                 case LengthUnit.PrinterPoint: return (baseUnitValue/2.54e-2)*72.27;
                 case LengthUnit.Qutrameter: return (baseUnitValue) / 1e27d;
                 case LengthUnit.Shackle: return baseUnitValue/27.432;
+                case LengthUnit.TeraaU: return (baseUnitValue/1.496e11) / 1e12d;
+                case LengthUnit.TeralightDay: return (baseUnitValue/2.59e13) / 1e12d;
+                case LengthUnit.TeralightHour: return (baseUnitValue/1.079e12) / 1e12d;
+                case LengthUnit.TeralightMinute: return (baseUnitValue/1.799e10) / 1e12d;
                 case LengthUnit.TeralightSecond: return (baseUnitValue/299792458) / 1e12d;
                 case LengthUnit.TeralightYear: return (baseUnitValue/9.4607304725808E15) / 1e12d;
                 case LengthUnit.Terameter: return (baseUnitValue) / 1e12d;
@@ -1553,12 +1982,8 @@ namespace UnitsNet
                 case LengthUnit.UsSurveyFoot: return baseUnitValue*3937/1200;
                 case LengthUnit.Vettameter: return (baseUnitValue) / 1e30d;
                 case LengthUnit.Yard: return baseUnitValue/0.9144;
-                case LengthUnit.Yoctometer: return (baseUnitValue) / 1e-24d;
-                case LengthUnit.YottalightSecond: return (baseUnitValue/299792458) / 1e24d;
                 case LengthUnit.YottalightYear: return (baseUnitValue/9.4607304725808E15) / 1e24d;
                 case LengthUnit.Yottameter: return (baseUnitValue) / 1e24d;
-                case LengthUnit.Zeptometer: return (baseUnitValue) / 1e-21d;
-                case LengthUnit.ZettalightSecond: return (baseUnitValue/299792458) / 1e21d;
                 case LengthUnit.ZettalightYear: return (baseUnitValue/9.4607304725808E15) / 1e21d;
                 case LengthUnit.Zettameter: return (baseUnitValue) / 1e21d;
                 default:

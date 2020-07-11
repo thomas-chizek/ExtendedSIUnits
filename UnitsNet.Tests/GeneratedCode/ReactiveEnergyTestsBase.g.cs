@@ -34,7 +34,6 @@ namespace UnitsNet.Tests
 // ReSharper disable once PartialTypeWithSinglePart
     public abstract partial class ReactiveEnergyTestsBase
     {
-        protected abstract double AttovoltampereReactiveHoursInOneVoltampereReactiveHour { get; }
         protected abstract double CentivoltampereReactiveHoursInOneVoltampereReactiveHour { get; }
         protected abstract double DecavoltampereReactiveHoursInOneVoltampereReactiveHour { get; }
         protected abstract double DecivoltampereReactiveHoursInOneVoltampereReactiveHour { get; }
@@ -53,13 +52,10 @@ namespace UnitsNet.Tests
         protected abstract double TeravoltampereReactiveHoursInOneVoltampereReactiveHour { get; }
         protected abstract double VettavoltampereReactiveHoursInOneVoltampereReactiveHour { get; }
         protected abstract double VoltampereReactiveHoursInOneVoltampereReactiveHour { get; }
-        protected abstract double YoctovoltampereReactiveHoursInOneVoltampereReactiveHour { get; }
         protected abstract double YottavoltampereReactiveHoursInOneVoltampereReactiveHour { get; }
-        protected abstract double ZeptovoltampereReactiveHoursInOneVoltampereReactiveHour { get; }
         protected abstract double ZettavoltampereReactiveHoursInOneVoltampereReactiveHour { get; }
 
 // ReSharper disable VirtualMemberNeverOverriden.Global
-        protected virtual double AttovoltampereReactiveHoursTolerance { get { return 1e-5; } }
         protected virtual double CentivoltampereReactiveHoursTolerance { get { return 1e-5; } }
         protected virtual double DecavoltampereReactiveHoursTolerance { get { return 1e-5; } }
         protected virtual double DecivoltampereReactiveHoursTolerance { get { return 1e-5; } }
@@ -78,9 +74,7 @@ namespace UnitsNet.Tests
         protected virtual double TeravoltampereReactiveHoursTolerance { get { return 1e-5; } }
         protected virtual double VettavoltampereReactiveHoursTolerance { get { return 1e-5; } }
         protected virtual double VoltampereReactiveHoursTolerance { get { return 1e-5; } }
-        protected virtual double YoctovoltampereReactiveHoursTolerance { get { return 1e-5; } }
         protected virtual double YottavoltampereReactiveHoursTolerance { get { return 1e-5; } }
-        protected virtual double ZeptovoltampereReactiveHoursTolerance { get { return 1e-5; } }
         protected virtual double ZettavoltampereReactiveHoursTolerance { get { return 1e-5; } }
 // ReSharper restore VirtualMemberNeverOverriden.Global
 
@@ -107,7 +101,6 @@ namespace UnitsNet.Tests
         public void VoltampereReactiveHourToReactiveEnergyUnits()
         {
             ReactiveEnergy voltamperereactivehour = ReactiveEnergy.FromVoltampereReactiveHours(1);
-            AssertEx.EqualTolerance(AttovoltampereReactiveHoursInOneVoltampereReactiveHour, voltamperereactivehour.AttovoltampereReactiveHours, AttovoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(CentivoltampereReactiveHoursInOneVoltampereReactiveHour, voltamperereactivehour.CentivoltampereReactiveHours, CentivoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(DecavoltampereReactiveHoursInOneVoltampereReactiveHour, voltamperereactivehour.DecavoltampereReactiveHours, DecavoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(DecivoltampereReactiveHoursInOneVoltampereReactiveHour, voltamperereactivehour.DecivoltampereReactiveHours, DecivoltampereReactiveHoursTolerance);
@@ -126,16 +119,13 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(TeravoltampereReactiveHoursInOneVoltampereReactiveHour, voltamperereactivehour.TeravoltampereReactiveHours, TeravoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(VettavoltampereReactiveHoursInOneVoltampereReactiveHour, voltamperereactivehour.VettavoltampereReactiveHours, VettavoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(VoltampereReactiveHoursInOneVoltampereReactiveHour, voltamperereactivehour.VoltampereReactiveHours, VoltampereReactiveHoursTolerance);
-            AssertEx.EqualTolerance(YoctovoltampereReactiveHoursInOneVoltampereReactiveHour, voltamperereactivehour.YoctovoltampereReactiveHours, YoctovoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(YottavoltampereReactiveHoursInOneVoltampereReactiveHour, voltamperereactivehour.YottavoltampereReactiveHours, YottavoltampereReactiveHoursTolerance);
-            AssertEx.EqualTolerance(ZeptovoltampereReactiveHoursInOneVoltampereReactiveHour, voltamperereactivehour.ZeptovoltampereReactiveHours, ZeptovoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(ZettavoltampereReactiveHoursInOneVoltampereReactiveHour, voltamperereactivehour.ZettavoltampereReactiveHours, ZettavoltampereReactiveHoursTolerance);
         }
 
         [Fact]
         public void FromValueAndUnit()
         {
-            AssertEx.EqualTolerance(1, ReactiveEnergy.From(1, ReactiveEnergyUnit.AttovoltampereReactiveHour).AttovoltampereReactiveHours, AttovoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(1, ReactiveEnergy.From(1, ReactiveEnergyUnit.CentivoltampereReactiveHour).CentivoltampereReactiveHours, CentivoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(1, ReactiveEnergy.From(1, ReactiveEnergyUnit.DecavoltampereReactiveHour).DecavoltampereReactiveHours, DecavoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(1, ReactiveEnergy.From(1, ReactiveEnergyUnit.DecivoltampereReactiveHour).DecivoltampereReactiveHours, DecivoltampereReactiveHoursTolerance);
@@ -154,9 +144,7 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, ReactiveEnergy.From(1, ReactiveEnergyUnit.TeravoltampereReactiveHour).TeravoltampereReactiveHours, TeravoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(1, ReactiveEnergy.From(1, ReactiveEnergyUnit.VettavoltampereReactiveHour).VettavoltampereReactiveHours, VettavoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(1, ReactiveEnergy.From(1, ReactiveEnergyUnit.VoltampereReactiveHour).VoltampereReactiveHours, VoltampereReactiveHoursTolerance);
-            AssertEx.EqualTolerance(1, ReactiveEnergy.From(1, ReactiveEnergyUnit.YoctovoltampereReactiveHour).YoctovoltampereReactiveHours, YoctovoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(1, ReactiveEnergy.From(1, ReactiveEnergyUnit.YottavoltampereReactiveHour).YottavoltampereReactiveHours, YottavoltampereReactiveHoursTolerance);
-            AssertEx.EqualTolerance(1, ReactiveEnergy.From(1, ReactiveEnergyUnit.ZeptovoltampereReactiveHour).ZeptovoltampereReactiveHours, ZeptovoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(1, ReactiveEnergy.From(1, ReactiveEnergyUnit.ZettavoltampereReactiveHour).ZettavoltampereReactiveHours, ZettavoltampereReactiveHoursTolerance);
         }
 
@@ -177,7 +165,6 @@ namespace UnitsNet.Tests
         public void As()
         {
             var voltamperereactivehour = ReactiveEnergy.FromVoltampereReactiveHours(1);
-            AssertEx.EqualTolerance(AttovoltampereReactiveHoursInOneVoltampereReactiveHour, voltamperereactivehour.As(ReactiveEnergyUnit.AttovoltampereReactiveHour), AttovoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(CentivoltampereReactiveHoursInOneVoltampereReactiveHour, voltamperereactivehour.As(ReactiveEnergyUnit.CentivoltampereReactiveHour), CentivoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(DecavoltampereReactiveHoursInOneVoltampereReactiveHour, voltamperereactivehour.As(ReactiveEnergyUnit.DecavoltampereReactiveHour), DecavoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(DecivoltampereReactiveHoursInOneVoltampereReactiveHour, voltamperereactivehour.As(ReactiveEnergyUnit.DecivoltampereReactiveHour), DecivoltampereReactiveHoursTolerance);
@@ -196,9 +183,7 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(TeravoltampereReactiveHoursInOneVoltampereReactiveHour, voltamperereactivehour.As(ReactiveEnergyUnit.TeravoltampereReactiveHour), TeravoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(VettavoltampereReactiveHoursInOneVoltampereReactiveHour, voltamperereactivehour.As(ReactiveEnergyUnit.VettavoltampereReactiveHour), VettavoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(VoltampereReactiveHoursInOneVoltampereReactiveHour, voltamperereactivehour.As(ReactiveEnergyUnit.VoltampereReactiveHour), VoltampereReactiveHoursTolerance);
-            AssertEx.EqualTolerance(YoctovoltampereReactiveHoursInOneVoltampereReactiveHour, voltamperereactivehour.As(ReactiveEnergyUnit.YoctovoltampereReactiveHour), YoctovoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(YottavoltampereReactiveHoursInOneVoltampereReactiveHour, voltamperereactivehour.As(ReactiveEnergyUnit.YottavoltampereReactiveHour), YottavoltampereReactiveHoursTolerance);
-            AssertEx.EqualTolerance(ZeptovoltampereReactiveHoursInOneVoltampereReactiveHour, voltamperereactivehour.As(ReactiveEnergyUnit.ZeptovoltampereReactiveHour), ZeptovoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(ZettavoltampereReactiveHoursInOneVoltampereReactiveHour, voltamperereactivehour.As(ReactiveEnergyUnit.ZettavoltampereReactiveHour), ZettavoltampereReactiveHoursTolerance);
         }
 
@@ -206,10 +191,6 @@ namespace UnitsNet.Tests
         public void ToUnit()
         {
             var voltamperereactivehour = ReactiveEnergy.FromVoltampereReactiveHours(1);
-
-            var attovoltamperereactivehourQuantity = voltamperereactivehour.ToUnit(ReactiveEnergyUnit.AttovoltampereReactiveHour);
-            AssertEx.EqualTolerance(AttovoltampereReactiveHoursInOneVoltampereReactiveHour, (double)attovoltamperereactivehourQuantity.Value, AttovoltampereReactiveHoursTolerance);
-            Assert.Equal(ReactiveEnergyUnit.AttovoltampereReactiveHour, attovoltamperereactivehourQuantity.Unit);
 
             var centivoltamperereactivehourQuantity = voltamperereactivehour.ToUnit(ReactiveEnergyUnit.CentivoltampereReactiveHour);
             AssertEx.EqualTolerance(CentivoltampereReactiveHoursInOneVoltampereReactiveHour, (double)centivoltamperereactivehourQuantity.Value, CentivoltampereReactiveHoursTolerance);
@@ -283,17 +264,9 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VoltampereReactiveHoursInOneVoltampereReactiveHour, (double)voltamperereactivehourQuantity.Value, VoltampereReactiveHoursTolerance);
             Assert.Equal(ReactiveEnergyUnit.VoltampereReactiveHour, voltamperereactivehourQuantity.Unit);
 
-            var yoctovoltamperereactivehourQuantity = voltamperereactivehour.ToUnit(ReactiveEnergyUnit.YoctovoltampereReactiveHour);
-            AssertEx.EqualTolerance(YoctovoltampereReactiveHoursInOneVoltampereReactiveHour, (double)yoctovoltamperereactivehourQuantity.Value, YoctovoltampereReactiveHoursTolerance);
-            Assert.Equal(ReactiveEnergyUnit.YoctovoltampereReactiveHour, yoctovoltamperereactivehourQuantity.Unit);
-
             var yottavoltamperereactivehourQuantity = voltamperereactivehour.ToUnit(ReactiveEnergyUnit.YottavoltampereReactiveHour);
             AssertEx.EqualTolerance(YottavoltampereReactiveHoursInOneVoltampereReactiveHour, (double)yottavoltamperereactivehourQuantity.Value, YottavoltampereReactiveHoursTolerance);
             Assert.Equal(ReactiveEnergyUnit.YottavoltampereReactiveHour, yottavoltamperereactivehourQuantity.Unit);
-
-            var zeptovoltamperereactivehourQuantity = voltamperereactivehour.ToUnit(ReactiveEnergyUnit.ZeptovoltampereReactiveHour);
-            AssertEx.EqualTolerance(ZeptovoltampereReactiveHoursInOneVoltampereReactiveHour, (double)zeptovoltamperereactivehourQuantity.Value, ZeptovoltampereReactiveHoursTolerance);
-            Assert.Equal(ReactiveEnergyUnit.ZeptovoltampereReactiveHour, zeptovoltamperereactivehourQuantity.Unit);
 
             var zettavoltamperereactivehourQuantity = voltamperereactivehour.ToUnit(ReactiveEnergyUnit.ZettavoltampereReactiveHour);
             AssertEx.EqualTolerance(ZettavoltampereReactiveHoursInOneVoltampereReactiveHour, (double)zettavoltamperereactivehourQuantity.Value, ZettavoltampereReactiveHoursTolerance);
@@ -304,7 +277,6 @@ namespace UnitsNet.Tests
         public void ConversionRoundTrip()
         {
             ReactiveEnergy voltamperereactivehour = ReactiveEnergy.FromVoltampereReactiveHours(1);
-            AssertEx.EqualTolerance(1, ReactiveEnergy.FromAttovoltampereReactiveHours(voltamperereactivehour.AttovoltampereReactiveHours).VoltampereReactiveHours, AttovoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(1, ReactiveEnergy.FromCentivoltampereReactiveHours(voltamperereactivehour.CentivoltampereReactiveHours).VoltampereReactiveHours, CentivoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(1, ReactiveEnergy.FromDecavoltampereReactiveHours(voltamperereactivehour.DecavoltampereReactiveHours).VoltampereReactiveHours, DecavoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(1, ReactiveEnergy.FromDecivoltampereReactiveHours(voltamperereactivehour.DecivoltampereReactiveHours).VoltampereReactiveHours, DecivoltampereReactiveHoursTolerance);
@@ -323,9 +295,7 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, ReactiveEnergy.FromTeravoltampereReactiveHours(voltamperereactivehour.TeravoltampereReactiveHours).VoltampereReactiveHours, TeravoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(1, ReactiveEnergy.FromVettavoltampereReactiveHours(voltamperereactivehour.VettavoltampereReactiveHours).VoltampereReactiveHours, VettavoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(1, ReactiveEnergy.FromVoltampereReactiveHours(voltamperereactivehour.VoltampereReactiveHours).VoltampereReactiveHours, VoltampereReactiveHoursTolerance);
-            AssertEx.EqualTolerance(1, ReactiveEnergy.FromYoctovoltampereReactiveHours(voltamperereactivehour.YoctovoltampereReactiveHours).VoltampereReactiveHours, YoctovoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(1, ReactiveEnergy.FromYottavoltampereReactiveHours(voltamperereactivehour.YottavoltampereReactiveHours).VoltampereReactiveHours, YottavoltampereReactiveHoursTolerance);
-            AssertEx.EqualTolerance(1, ReactiveEnergy.FromZeptovoltampereReactiveHours(voltamperereactivehour.ZeptovoltampereReactiveHours).VoltampereReactiveHours, ZeptovoltampereReactiveHoursTolerance);
             AssertEx.EqualTolerance(1, ReactiveEnergy.FromZettavoltampereReactiveHours(voltamperereactivehour.ZettavoltampereReactiveHours).VoltampereReactiveHours, ZettavoltampereReactiveHoursTolerance);
         }
 

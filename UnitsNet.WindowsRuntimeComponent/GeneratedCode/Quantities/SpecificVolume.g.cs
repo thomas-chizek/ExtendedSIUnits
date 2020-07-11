@@ -156,11 +156,6 @@ namespace UnitsNet
         #region Conversion Properties
 
         /// <summary>
-        ///     Get SpecificVolume in AttocubicMetersPerKilogram.
-        /// </summary>
-        public double AttocubicMetersPerKilogram => As(SpecificVolumeUnit.AttocubicMeterPerKilogram);
-
-        /// <summary>
         ///     Get SpecificVolume in CenticubicMetersPerKilogram.
         /// </summary>
         public double CenticubicMetersPerKilogram => As(SpecificVolumeUnit.CenticubicMeterPerKilogram);
@@ -256,19 +251,9 @@ namespace UnitsNet
         public double VettacubicMetersPerKilogram => As(SpecificVolumeUnit.VettacubicMeterPerKilogram);
 
         /// <summary>
-        ///     Get SpecificVolume in YoctocubicMetersPerKilogram.
-        /// </summary>
-        public double YoctocubicMetersPerKilogram => As(SpecificVolumeUnit.YoctocubicMeterPerKilogram);
-
-        /// <summary>
         ///     Get SpecificVolume in YottacubicMetersPerKilogram.
         /// </summary>
         public double YottacubicMetersPerKilogram => As(SpecificVolumeUnit.YottacubicMeterPerKilogram);
-
-        /// <summary>
-        ///     Get SpecificVolume in ZeptocubicMetersPerKilogram.
-        /// </summary>
-        public double ZeptocubicMetersPerKilogram => As(SpecificVolumeUnit.ZeptocubicMeterPerKilogram);
 
         /// <summary>
         ///     Get SpecificVolume in ZettacubicMetersPerKilogram.
@@ -305,16 +290,6 @@ namespace UnitsNet
 
         #region Static Factory Methods
 
-        /// <summary>
-        ///     Get SpecificVolume from AttocubicMetersPerKilogram.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static SpecificVolume FromAttocubicMetersPerKilogram(double attocubicmetersperkilogram)
-        {
-            double value = (double) attocubicmetersperkilogram;
-            return new SpecificVolume(value, SpecificVolumeUnit.AttocubicMeterPerKilogram);
-        }
         /// <summary>
         ///     Get SpecificVolume from CenticubicMetersPerKilogram.
         /// </summary>
@@ -506,16 +481,6 @@ namespace UnitsNet
             return new SpecificVolume(value, SpecificVolumeUnit.VettacubicMeterPerKilogram);
         }
         /// <summary>
-        ///     Get SpecificVolume from YoctocubicMetersPerKilogram.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static SpecificVolume FromYoctocubicMetersPerKilogram(double yoctocubicmetersperkilogram)
-        {
-            double value = (double) yoctocubicmetersperkilogram;
-            return new SpecificVolume(value, SpecificVolumeUnit.YoctocubicMeterPerKilogram);
-        }
-        /// <summary>
         ///     Get SpecificVolume from YottacubicMetersPerKilogram.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -524,16 +489,6 @@ namespace UnitsNet
         {
             double value = (double) yottacubicmetersperkilogram;
             return new SpecificVolume(value, SpecificVolumeUnit.YottacubicMeterPerKilogram);
-        }
-        /// <summary>
-        ///     Get SpecificVolume from ZeptocubicMetersPerKilogram.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static SpecificVolume FromZeptocubicMetersPerKilogram(double zeptocubicmetersperkilogram)
-        {
-            double value = (double) zeptocubicmetersperkilogram;
-            return new SpecificVolume(value, SpecificVolumeUnit.ZeptocubicMeterPerKilogram);
         }
         /// <summary>
         ///     Get SpecificVolume from ZettacubicMetersPerKilogram.
@@ -836,7 +791,6 @@ namespace UnitsNet
         {
             switch(Unit)
             {
-                case SpecificVolumeUnit.AttocubicMeterPerKilogram: return (_value) * 1e-18d;
                 case SpecificVolumeUnit.CenticubicMeterPerKilogram: return (_value) * 1e-2d;
                 case SpecificVolumeUnit.CubicFootPerPound: return _value/16.01846353;
                 case SpecificVolumeUnit.CubicMeterPerKilogram: return _value;
@@ -856,9 +810,7 @@ namespace UnitsNet
                 case SpecificVolumeUnit.QutracubicMeterPerKilogram: return (_value) * 1e27d;
                 case SpecificVolumeUnit.TeracubicMeterPerKilogram: return (_value) * 1e12d;
                 case SpecificVolumeUnit.VettacubicMeterPerKilogram: return (_value) * 1e30d;
-                case SpecificVolumeUnit.YoctocubicMeterPerKilogram: return (_value) * 1e-24d;
                 case SpecificVolumeUnit.YottacubicMeterPerKilogram: return (_value) * 1e24d;
-                case SpecificVolumeUnit.ZeptocubicMeterPerKilogram: return (_value) * 1e-21d;
                 case SpecificVolumeUnit.ZettacubicMeterPerKilogram: return (_value) * 1e21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to base units.");
@@ -874,7 +826,6 @@ namespace UnitsNet
 
             switch(unit)
             {
-                case SpecificVolumeUnit.AttocubicMeterPerKilogram: return (baseUnitValue) / 1e-18d;
                 case SpecificVolumeUnit.CenticubicMeterPerKilogram: return (baseUnitValue) / 1e-2d;
                 case SpecificVolumeUnit.CubicFootPerPound: return baseUnitValue*16.01846353;
                 case SpecificVolumeUnit.CubicMeterPerKilogram: return baseUnitValue;
@@ -894,9 +845,7 @@ namespace UnitsNet
                 case SpecificVolumeUnit.QutracubicMeterPerKilogram: return (baseUnitValue) / 1e27d;
                 case SpecificVolumeUnit.TeracubicMeterPerKilogram: return (baseUnitValue) / 1e12d;
                 case SpecificVolumeUnit.VettacubicMeterPerKilogram: return (baseUnitValue) / 1e30d;
-                case SpecificVolumeUnit.YoctocubicMeterPerKilogram: return (baseUnitValue) / 1e-24d;
                 case SpecificVolumeUnit.YottacubicMeterPerKilogram: return (baseUnitValue) / 1e24d;
-                case SpecificVolumeUnit.ZeptocubicMeterPerKilogram: return (baseUnitValue) / 1e-21d;
                 case SpecificVolumeUnit.ZettacubicMeterPerKilogram: return (baseUnitValue) / 1e21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to {unit}.");

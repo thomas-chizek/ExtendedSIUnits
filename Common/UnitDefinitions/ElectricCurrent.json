@@ -14,7 +14,7 @@
       "BaseUnits": {
         "I": "Ampere"
       },
-      "Prefixes": [ "Pico", "Nano", "Micro", "Milli", "Centi", "Kilo", "Mega" ],
+      "Prefixes": [ "Pico", "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Kilo", "Mega" ],
       "Localization": [
         {
           "Culture": "en-US",

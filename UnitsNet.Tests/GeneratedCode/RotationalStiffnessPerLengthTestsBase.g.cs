@@ -34,7 +34,6 @@ namespace UnitsNet.Tests
 // ReSharper disable once PartialTypeWithSinglePart
     public abstract partial class RotationalStiffnessPerLengthTestsBase
     {
-        protected abstract double AttonewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter { get; }
         protected abstract double CentinewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter { get; }
         protected abstract double DecanewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter { get; }
         protected abstract double DecinewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter { get; }
@@ -53,13 +52,10 @@ namespace UnitsNet.Tests
         protected abstract double QutranewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter { get; }
         protected abstract double TeranewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter { get; }
         protected abstract double VettanewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter { get; }
-        protected abstract double YoctonewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter { get; }
         protected abstract double YottanewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter { get; }
-        protected abstract double ZeptonewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter { get; }
         protected abstract double ZettanewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter { get; }
 
 // ReSharper disable VirtualMemberNeverOverriden.Global
-        protected virtual double AttonewtonMetersPerRadianPerMeterTolerance { get { return 1e-5; } }
         protected virtual double CentinewtonMetersPerRadianPerMeterTolerance { get { return 1e-5; } }
         protected virtual double DecanewtonMetersPerRadianPerMeterTolerance { get { return 1e-5; } }
         protected virtual double DecinewtonMetersPerRadianPerMeterTolerance { get { return 1e-5; } }
@@ -78,9 +74,7 @@ namespace UnitsNet.Tests
         protected virtual double QutranewtonMetersPerRadianPerMeterTolerance { get { return 1e-5; } }
         protected virtual double TeranewtonMetersPerRadianPerMeterTolerance { get { return 1e-5; } }
         protected virtual double VettanewtonMetersPerRadianPerMeterTolerance { get { return 1e-5; } }
-        protected virtual double YoctonewtonMetersPerRadianPerMeterTolerance { get { return 1e-5; } }
         protected virtual double YottanewtonMetersPerRadianPerMeterTolerance { get { return 1e-5; } }
-        protected virtual double ZeptonewtonMetersPerRadianPerMeterTolerance { get { return 1e-5; } }
         protected virtual double ZettanewtonMetersPerRadianPerMeterTolerance { get { return 1e-5; } }
 // ReSharper restore VirtualMemberNeverOverriden.Global
 
@@ -107,7 +101,6 @@ namespace UnitsNet.Tests
         public void NewtonMeterPerRadianPerMeterToRotationalStiffnessPerLengthUnits()
         {
             RotationalStiffnessPerLength newtonmeterperradianpermeter = RotationalStiffnessPerLength.FromNewtonMetersPerRadianPerMeter(1);
-            AssertEx.EqualTolerance(AttonewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, newtonmeterperradianpermeter.AttonewtonMetersPerRadianPerMeter, AttonewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(CentinewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, newtonmeterperradianpermeter.CentinewtonMetersPerRadianPerMeter, CentinewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(DecanewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, newtonmeterperradianpermeter.DecanewtonMetersPerRadianPerMeter, DecanewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(DecinewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, newtonmeterperradianpermeter.DecinewtonMetersPerRadianPerMeter, DecinewtonMetersPerRadianPerMeterTolerance);
@@ -126,16 +119,13 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(QutranewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, newtonmeterperradianpermeter.QutranewtonMetersPerRadianPerMeter, QutranewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(TeranewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, newtonmeterperradianpermeter.TeranewtonMetersPerRadianPerMeter, TeranewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(VettanewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, newtonmeterperradianpermeter.VettanewtonMetersPerRadianPerMeter, VettanewtonMetersPerRadianPerMeterTolerance);
-            AssertEx.EqualTolerance(YoctonewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, newtonmeterperradianpermeter.YoctonewtonMetersPerRadianPerMeter, YoctonewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(YottanewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, newtonmeterperradianpermeter.YottanewtonMetersPerRadianPerMeter, YottanewtonMetersPerRadianPerMeterTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, newtonmeterperradianpermeter.ZeptonewtonMetersPerRadianPerMeter, ZeptonewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(ZettanewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, newtonmeterperradianpermeter.ZettanewtonMetersPerRadianPerMeter, ZettanewtonMetersPerRadianPerMeterTolerance);
         }
 
         [Fact]
         public void FromValueAndUnit()
         {
-            AssertEx.EqualTolerance(1, RotationalStiffnessPerLength.From(1, RotationalStiffnessPerLengthUnit.AttonewtonMeterPerRadianPerMeter).AttonewtonMetersPerRadianPerMeter, AttonewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(1, RotationalStiffnessPerLength.From(1, RotationalStiffnessPerLengthUnit.CentinewtonMeterPerRadianPerMeter).CentinewtonMetersPerRadianPerMeter, CentinewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(1, RotationalStiffnessPerLength.From(1, RotationalStiffnessPerLengthUnit.DecanewtonMeterPerRadianPerMeter).DecanewtonMetersPerRadianPerMeter, DecanewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(1, RotationalStiffnessPerLength.From(1, RotationalStiffnessPerLengthUnit.DecinewtonMeterPerRadianPerMeter).DecinewtonMetersPerRadianPerMeter, DecinewtonMetersPerRadianPerMeterTolerance);
@@ -154,9 +144,7 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, RotationalStiffnessPerLength.From(1, RotationalStiffnessPerLengthUnit.QutranewtonMeterPerRadianPerMeter).QutranewtonMetersPerRadianPerMeter, QutranewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(1, RotationalStiffnessPerLength.From(1, RotationalStiffnessPerLengthUnit.TeranewtonMeterPerRadianPerMeter).TeranewtonMetersPerRadianPerMeter, TeranewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(1, RotationalStiffnessPerLength.From(1, RotationalStiffnessPerLengthUnit.VettanewtonMeterPerRadianPerMeter).VettanewtonMetersPerRadianPerMeter, VettanewtonMetersPerRadianPerMeterTolerance);
-            AssertEx.EqualTolerance(1, RotationalStiffnessPerLength.From(1, RotationalStiffnessPerLengthUnit.YoctonewtonMeterPerRadianPerMeter).YoctonewtonMetersPerRadianPerMeter, YoctonewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(1, RotationalStiffnessPerLength.From(1, RotationalStiffnessPerLengthUnit.YottanewtonMeterPerRadianPerMeter).YottanewtonMetersPerRadianPerMeter, YottanewtonMetersPerRadianPerMeterTolerance);
-            AssertEx.EqualTolerance(1, RotationalStiffnessPerLength.From(1, RotationalStiffnessPerLengthUnit.ZeptonewtonMeterPerRadianPerMeter).ZeptonewtonMetersPerRadianPerMeter, ZeptonewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(1, RotationalStiffnessPerLength.From(1, RotationalStiffnessPerLengthUnit.ZettanewtonMeterPerRadianPerMeter).ZettanewtonMetersPerRadianPerMeter, ZettanewtonMetersPerRadianPerMeterTolerance);
         }
 
@@ -177,7 +165,6 @@ namespace UnitsNet.Tests
         public void As()
         {
             var newtonmeterperradianpermeter = RotationalStiffnessPerLength.FromNewtonMetersPerRadianPerMeter(1);
-            AssertEx.EqualTolerance(AttonewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, newtonmeterperradianpermeter.As(RotationalStiffnessPerLengthUnit.AttonewtonMeterPerRadianPerMeter), AttonewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(CentinewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, newtonmeterperradianpermeter.As(RotationalStiffnessPerLengthUnit.CentinewtonMeterPerRadianPerMeter), CentinewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(DecanewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, newtonmeterperradianpermeter.As(RotationalStiffnessPerLengthUnit.DecanewtonMeterPerRadianPerMeter), DecanewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(DecinewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, newtonmeterperradianpermeter.As(RotationalStiffnessPerLengthUnit.DecinewtonMeterPerRadianPerMeter), DecinewtonMetersPerRadianPerMeterTolerance);
@@ -196,9 +183,7 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(QutranewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, newtonmeterperradianpermeter.As(RotationalStiffnessPerLengthUnit.QutranewtonMeterPerRadianPerMeter), QutranewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(TeranewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, newtonmeterperradianpermeter.As(RotationalStiffnessPerLengthUnit.TeranewtonMeterPerRadianPerMeter), TeranewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(VettanewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, newtonmeterperradianpermeter.As(RotationalStiffnessPerLengthUnit.VettanewtonMeterPerRadianPerMeter), VettanewtonMetersPerRadianPerMeterTolerance);
-            AssertEx.EqualTolerance(YoctonewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, newtonmeterperradianpermeter.As(RotationalStiffnessPerLengthUnit.YoctonewtonMeterPerRadianPerMeter), YoctonewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(YottanewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, newtonmeterperradianpermeter.As(RotationalStiffnessPerLengthUnit.YottanewtonMeterPerRadianPerMeter), YottanewtonMetersPerRadianPerMeterTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, newtonmeterperradianpermeter.As(RotationalStiffnessPerLengthUnit.ZeptonewtonMeterPerRadianPerMeter), ZeptonewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(ZettanewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, newtonmeterperradianpermeter.As(RotationalStiffnessPerLengthUnit.ZettanewtonMeterPerRadianPerMeter), ZettanewtonMetersPerRadianPerMeterTolerance);
         }
 
@@ -206,10 +191,6 @@ namespace UnitsNet.Tests
         public void ToUnit()
         {
             var newtonmeterperradianpermeter = RotationalStiffnessPerLength.FromNewtonMetersPerRadianPerMeter(1);
-
-            var attonewtonmeterperradianpermeterQuantity = newtonmeterperradianpermeter.ToUnit(RotationalStiffnessPerLengthUnit.AttonewtonMeterPerRadianPerMeter);
-            AssertEx.EqualTolerance(AttonewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, (double)attonewtonmeterperradianpermeterQuantity.Value, AttonewtonMetersPerRadianPerMeterTolerance);
-            Assert.Equal(RotationalStiffnessPerLengthUnit.AttonewtonMeterPerRadianPerMeter, attonewtonmeterperradianpermeterQuantity.Unit);
 
             var centinewtonmeterperradianpermeterQuantity = newtonmeterperradianpermeter.ToUnit(RotationalStiffnessPerLengthUnit.CentinewtonMeterPerRadianPerMeter);
             AssertEx.EqualTolerance(CentinewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, (double)centinewtonmeterperradianpermeterQuantity.Value, CentinewtonMetersPerRadianPerMeterTolerance);
@@ -283,17 +264,9 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettanewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, (double)vettanewtonmeterperradianpermeterQuantity.Value, VettanewtonMetersPerRadianPerMeterTolerance);
             Assert.Equal(RotationalStiffnessPerLengthUnit.VettanewtonMeterPerRadianPerMeter, vettanewtonmeterperradianpermeterQuantity.Unit);
 
-            var yoctonewtonmeterperradianpermeterQuantity = newtonmeterperradianpermeter.ToUnit(RotationalStiffnessPerLengthUnit.YoctonewtonMeterPerRadianPerMeter);
-            AssertEx.EqualTolerance(YoctonewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, (double)yoctonewtonmeterperradianpermeterQuantity.Value, YoctonewtonMetersPerRadianPerMeterTolerance);
-            Assert.Equal(RotationalStiffnessPerLengthUnit.YoctonewtonMeterPerRadianPerMeter, yoctonewtonmeterperradianpermeterQuantity.Unit);
-
             var yottanewtonmeterperradianpermeterQuantity = newtonmeterperradianpermeter.ToUnit(RotationalStiffnessPerLengthUnit.YottanewtonMeterPerRadianPerMeter);
             AssertEx.EqualTolerance(YottanewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, (double)yottanewtonmeterperradianpermeterQuantity.Value, YottanewtonMetersPerRadianPerMeterTolerance);
             Assert.Equal(RotationalStiffnessPerLengthUnit.YottanewtonMeterPerRadianPerMeter, yottanewtonmeterperradianpermeterQuantity.Unit);
-
-            var zeptonewtonmeterperradianpermeterQuantity = newtonmeterperradianpermeter.ToUnit(RotationalStiffnessPerLengthUnit.ZeptonewtonMeterPerRadianPerMeter);
-            AssertEx.EqualTolerance(ZeptonewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, (double)zeptonewtonmeterperradianpermeterQuantity.Value, ZeptonewtonMetersPerRadianPerMeterTolerance);
-            Assert.Equal(RotationalStiffnessPerLengthUnit.ZeptonewtonMeterPerRadianPerMeter, zeptonewtonmeterperradianpermeterQuantity.Unit);
 
             var zettanewtonmeterperradianpermeterQuantity = newtonmeterperradianpermeter.ToUnit(RotationalStiffnessPerLengthUnit.ZettanewtonMeterPerRadianPerMeter);
             AssertEx.EqualTolerance(ZettanewtonMetersPerRadianPerMeterInOneNewtonMeterPerRadianPerMeter, (double)zettanewtonmeterperradianpermeterQuantity.Value, ZettanewtonMetersPerRadianPerMeterTolerance);
@@ -304,7 +277,6 @@ namespace UnitsNet.Tests
         public void ConversionRoundTrip()
         {
             RotationalStiffnessPerLength newtonmeterperradianpermeter = RotationalStiffnessPerLength.FromNewtonMetersPerRadianPerMeter(1);
-            AssertEx.EqualTolerance(1, RotationalStiffnessPerLength.FromAttonewtonMetersPerRadianPerMeter(newtonmeterperradianpermeter.AttonewtonMetersPerRadianPerMeter).NewtonMetersPerRadianPerMeter, AttonewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(1, RotationalStiffnessPerLength.FromCentinewtonMetersPerRadianPerMeter(newtonmeterperradianpermeter.CentinewtonMetersPerRadianPerMeter).NewtonMetersPerRadianPerMeter, CentinewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(1, RotationalStiffnessPerLength.FromDecanewtonMetersPerRadianPerMeter(newtonmeterperradianpermeter.DecanewtonMetersPerRadianPerMeter).NewtonMetersPerRadianPerMeter, DecanewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(1, RotationalStiffnessPerLength.FromDecinewtonMetersPerRadianPerMeter(newtonmeterperradianpermeter.DecinewtonMetersPerRadianPerMeter).NewtonMetersPerRadianPerMeter, DecinewtonMetersPerRadianPerMeterTolerance);
@@ -323,9 +295,7 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, RotationalStiffnessPerLength.FromQutranewtonMetersPerRadianPerMeter(newtonmeterperradianpermeter.QutranewtonMetersPerRadianPerMeter).NewtonMetersPerRadianPerMeter, QutranewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(1, RotationalStiffnessPerLength.FromTeranewtonMetersPerRadianPerMeter(newtonmeterperradianpermeter.TeranewtonMetersPerRadianPerMeter).NewtonMetersPerRadianPerMeter, TeranewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(1, RotationalStiffnessPerLength.FromVettanewtonMetersPerRadianPerMeter(newtonmeterperradianpermeter.VettanewtonMetersPerRadianPerMeter).NewtonMetersPerRadianPerMeter, VettanewtonMetersPerRadianPerMeterTolerance);
-            AssertEx.EqualTolerance(1, RotationalStiffnessPerLength.FromYoctonewtonMetersPerRadianPerMeter(newtonmeterperradianpermeter.YoctonewtonMetersPerRadianPerMeter).NewtonMetersPerRadianPerMeter, YoctonewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(1, RotationalStiffnessPerLength.FromYottanewtonMetersPerRadianPerMeter(newtonmeterperradianpermeter.YottanewtonMetersPerRadianPerMeter).NewtonMetersPerRadianPerMeter, YottanewtonMetersPerRadianPerMeterTolerance);
-            AssertEx.EqualTolerance(1, RotationalStiffnessPerLength.FromZeptonewtonMetersPerRadianPerMeter(newtonmeterperradianpermeter.ZeptonewtonMetersPerRadianPerMeter).NewtonMetersPerRadianPerMeter, ZeptonewtonMetersPerRadianPerMeterTolerance);
             AssertEx.EqualTolerance(1, RotationalStiffnessPerLength.FromZettanewtonMetersPerRadianPerMeter(newtonmeterperradianpermeter.ZettanewtonMetersPerRadianPerMeter).NewtonMetersPerRadianPerMeter, ZettanewtonMetersPerRadianPerMeterTolerance);
         }
 

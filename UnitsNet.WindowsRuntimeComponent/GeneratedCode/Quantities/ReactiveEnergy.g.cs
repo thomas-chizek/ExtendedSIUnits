@@ -156,11 +156,6 @@ namespace UnitsNet
         #region Conversion Properties
 
         /// <summary>
-        ///     Get ReactiveEnergy in AttovoltampereReactiveHours.
-        /// </summary>
-        public double AttovoltampereReactiveHours => As(ReactiveEnergyUnit.AttovoltampereReactiveHour);
-
-        /// <summary>
         ///     Get ReactiveEnergy in CentivoltampereReactiveHours.
         /// </summary>
         public double CentivoltampereReactiveHours => As(ReactiveEnergyUnit.CentivoltampereReactiveHour);
@@ -251,19 +246,9 @@ namespace UnitsNet
         public double VoltampereReactiveHours => As(ReactiveEnergyUnit.VoltampereReactiveHour);
 
         /// <summary>
-        ///     Get ReactiveEnergy in YoctovoltampereReactiveHours.
-        /// </summary>
-        public double YoctovoltampereReactiveHours => As(ReactiveEnergyUnit.YoctovoltampereReactiveHour);
-
-        /// <summary>
         ///     Get ReactiveEnergy in YottavoltampereReactiveHours.
         /// </summary>
         public double YottavoltampereReactiveHours => As(ReactiveEnergyUnit.YottavoltampereReactiveHour);
-
-        /// <summary>
-        ///     Get ReactiveEnergy in ZeptovoltampereReactiveHours.
-        /// </summary>
-        public double ZeptovoltampereReactiveHours => As(ReactiveEnergyUnit.ZeptovoltampereReactiveHour);
 
         /// <summary>
         ///     Get ReactiveEnergy in ZettavoltampereReactiveHours.
@@ -300,16 +285,6 @@ namespace UnitsNet
 
         #region Static Factory Methods
 
-        /// <summary>
-        ///     Get ReactiveEnergy from AttovoltampereReactiveHours.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static ReactiveEnergy FromAttovoltampereReactiveHours(double attovoltamperereactivehours)
-        {
-            double value = (double) attovoltamperereactivehours;
-            return new ReactiveEnergy(value, ReactiveEnergyUnit.AttovoltampereReactiveHour);
-        }
         /// <summary>
         ///     Get ReactiveEnergy from CentivoltampereReactiveHours.
         /// </summary>
@@ -491,16 +466,6 @@ namespace UnitsNet
             return new ReactiveEnergy(value, ReactiveEnergyUnit.VoltampereReactiveHour);
         }
         /// <summary>
-        ///     Get ReactiveEnergy from YoctovoltampereReactiveHours.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static ReactiveEnergy FromYoctovoltampereReactiveHours(double yoctovoltamperereactivehours)
-        {
-            double value = (double) yoctovoltamperereactivehours;
-            return new ReactiveEnergy(value, ReactiveEnergyUnit.YoctovoltampereReactiveHour);
-        }
-        /// <summary>
         ///     Get ReactiveEnergy from YottavoltampereReactiveHours.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -509,16 +474,6 @@ namespace UnitsNet
         {
             double value = (double) yottavoltamperereactivehours;
             return new ReactiveEnergy(value, ReactiveEnergyUnit.YottavoltampereReactiveHour);
-        }
-        /// <summary>
-        ///     Get ReactiveEnergy from ZeptovoltampereReactiveHours.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static ReactiveEnergy FromZeptovoltampereReactiveHours(double zeptovoltamperereactivehours)
-        {
-            double value = (double) zeptovoltamperereactivehours;
-            return new ReactiveEnergy(value, ReactiveEnergyUnit.ZeptovoltampereReactiveHour);
         }
         /// <summary>
         ///     Get ReactiveEnergy from ZettavoltampereReactiveHours.
@@ -821,7 +776,6 @@ namespace UnitsNet
         {
             switch(Unit)
             {
-                case ReactiveEnergyUnit.AttovoltampereReactiveHour: return (_value) * 1e-18d;
                 case ReactiveEnergyUnit.CentivoltampereReactiveHour: return (_value) * 1e-2d;
                 case ReactiveEnergyUnit.DecavoltampereReactiveHour: return (_value) * 1e1d;
                 case ReactiveEnergyUnit.DecivoltampereReactiveHour: return (_value) * 1e-1d;
@@ -840,9 +794,7 @@ namespace UnitsNet
                 case ReactiveEnergyUnit.TeravoltampereReactiveHour: return (_value) * 1e12d;
                 case ReactiveEnergyUnit.VettavoltampereReactiveHour: return (_value) * 1e30d;
                 case ReactiveEnergyUnit.VoltampereReactiveHour: return _value;
-                case ReactiveEnergyUnit.YoctovoltampereReactiveHour: return (_value) * 1e-24d;
                 case ReactiveEnergyUnit.YottavoltampereReactiveHour: return (_value) * 1e24d;
-                case ReactiveEnergyUnit.ZeptovoltampereReactiveHour: return (_value) * 1e-21d;
                 case ReactiveEnergyUnit.ZettavoltampereReactiveHour: return (_value) * 1e21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to base units.");
@@ -858,7 +810,6 @@ namespace UnitsNet
 
             switch(unit)
             {
-                case ReactiveEnergyUnit.AttovoltampereReactiveHour: return (baseUnitValue) / 1e-18d;
                 case ReactiveEnergyUnit.CentivoltampereReactiveHour: return (baseUnitValue) / 1e-2d;
                 case ReactiveEnergyUnit.DecavoltampereReactiveHour: return (baseUnitValue) / 1e1d;
                 case ReactiveEnergyUnit.DecivoltampereReactiveHour: return (baseUnitValue) / 1e-1d;
@@ -877,9 +828,7 @@ namespace UnitsNet
                 case ReactiveEnergyUnit.TeravoltampereReactiveHour: return (baseUnitValue) / 1e12d;
                 case ReactiveEnergyUnit.VettavoltampereReactiveHour: return (baseUnitValue) / 1e30d;
                 case ReactiveEnergyUnit.VoltampereReactiveHour: return baseUnitValue;
-                case ReactiveEnergyUnit.YoctovoltampereReactiveHour: return (baseUnitValue) / 1e-24d;
                 case ReactiveEnergyUnit.YottavoltampereReactiveHour: return (baseUnitValue) / 1e24d;
-                case ReactiveEnergyUnit.ZeptovoltampereReactiveHour: return (baseUnitValue) / 1e-21d;
                 case ReactiveEnergyUnit.ZettavoltampereReactiveHour: return (baseUnitValue) / 1e21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to {unit}.");

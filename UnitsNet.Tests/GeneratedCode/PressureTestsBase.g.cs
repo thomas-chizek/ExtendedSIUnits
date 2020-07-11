@@ -35,13 +35,6 @@ namespace UnitsNet.Tests
     public abstract partial class PressureTestsBase
     {
         protected abstract double AtmospheresInOnePascal { get; }
-        protected abstract double AttobarsInOnePascal { get; }
-        protected abstract double AttonewtonsPerSquareCentimeterInOnePascal { get; }
-        protected abstract double AttonewtonsPerSquareMeterInOnePascal { get; }
-        protected abstract double AttonewtonsPerSquareMillimeterInOnePascal { get; }
-        protected abstract double AttopascalsInOnePascal { get; }
-        protected abstract double AttopoundsForcePerSquareFootInOnePascal { get; }
-        protected abstract double AttopoundsForcePerSquareInchInOnePascal { get; }
         protected abstract double BarsInOnePascal { get; }
         protected abstract double CentibarsInOnePascal { get; }
         protected abstract double CentinewtonsPerSquareCentimeterInOnePascal { get; }
@@ -183,13 +176,6 @@ namespace UnitsNet.Tests
         protected abstract double VettapascalsInOnePascal { get; }
         protected abstract double VettapoundsForcePerSquareFootInOnePascal { get; }
         protected abstract double VettapoundsForcePerSquareInchInOnePascal { get; }
-        protected abstract double YoctobarsInOnePascal { get; }
-        protected abstract double YoctonewtonsPerSquareCentimeterInOnePascal { get; }
-        protected abstract double YoctonewtonsPerSquareMeterInOnePascal { get; }
-        protected abstract double YoctonewtonsPerSquareMillimeterInOnePascal { get; }
-        protected abstract double YoctopascalsInOnePascal { get; }
-        protected abstract double YoctopoundsForcePerSquareFootInOnePascal { get; }
-        protected abstract double YoctopoundsForcePerSquareInchInOnePascal { get; }
         protected abstract double YottabarsInOnePascal { get; }
         protected abstract double YottanewtonsPerSquareCentimeterInOnePascal { get; }
         protected abstract double YottanewtonsPerSquareMeterInOnePascal { get; }
@@ -197,13 +183,6 @@ namespace UnitsNet.Tests
         protected abstract double YottapascalsInOnePascal { get; }
         protected abstract double YottapoundsForcePerSquareFootInOnePascal { get; }
         protected abstract double YottapoundsForcePerSquareInchInOnePascal { get; }
-        protected abstract double ZeptobarsInOnePascal { get; }
-        protected abstract double ZeptonewtonsPerSquareCentimeterInOnePascal { get; }
-        protected abstract double ZeptonewtonsPerSquareMeterInOnePascal { get; }
-        protected abstract double ZeptonewtonsPerSquareMillimeterInOnePascal { get; }
-        protected abstract double ZeptopascalsInOnePascal { get; }
-        protected abstract double ZeptopoundsForcePerSquareFootInOnePascal { get; }
-        protected abstract double ZeptopoundsForcePerSquareInchInOnePascal { get; }
         protected abstract double ZettabarsInOnePascal { get; }
         protected abstract double ZettanewtonsPerSquareCentimeterInOnePascal { get; }
         protected abstract double ZettanewtonsPerSquareMeterInOnePascal { get; }
@@ -214,13 +193,6 @@ namespace UnitsNet.Tests
 
 // ReSharper disable VirtualMemberNeverOverriden.Global
         protected virtual double AtmospheresTolerance { get { return 1e-5; } }
-        protected virtual double AttobarsTolerance { get { return 1e-5; } }
-        protected virtual double AttonewtonsPerSquareCentimeterTolerance { get { return 1e-5; } }
-        protected virtual double AttonewtonsPerSquareMeterTolerance { get { return 1e-5; } }
-        protected virtual double AttonewtonsPerSquareMillimeterTolerance { get { return 1e-5; } }
-        protected virtual double AttopascalsTolerance { get { return 1e-5; } }
-        protected virtual double AttopoundsForcePerSquareFootTolerance { get { return 1e-5; } }
-        protected virtual double AttopoundsForcePerSquareInchTolerance { get { return 1e-5; } }
         protected virtual double BarsTolerance { get { return 1e-5; } }
         protected virtual double CentibarsTolerance { get { return 1e-5; } }
         protected virtual double CentinewtonsPerSquareCentimeterTolerance { get { return 1e-5; } }
@@ -362,13 +334,6 @@ namespace UnitsNet.Tests
         protected virtual double VettapascalsTolerance { get { return 1e-5; } }
         protected virtual double VettapoundsForcePerSquareFootTolerance { get { return 1e-5; } }
         protected virtual double VettapoundsForcePerSquareInchTolerance { get { return 1e-5; } }
-        protected virtual double YoctobarsTolerance { get { return 1e-5; } }
-        protected virtual double YoctonewtonsPerSquareCentimeterTolerance { get { return 1e-5; } }
-        protected virtual double YoctonewtonsPerSquareMeterTolerance { get { return 1e-5; } }
-        protected virtual double YoctonewtonsPerSquareMillimeterTolerance { get { return 1e-5; } }
-        protected virtual double YoctopascalsTolerance { get { return 1e-5; } }
-        protected virtual double YoctopoundsForcePerSquareFootTolerance { get { return 1e-5; } }
-        protected virtual double YoctopoundsForcePerSquareInchTolerance { get { return 1e-5; } }
         protected virtual double YottabarsTolerance { get { return 1e-5; } }
         protected virtual double YottanewtonsPerSquareCentimeterTolerance { get { return 1e-5; } }
         protected virtual double YottanewtonsPerSquareMeterTolerance { get { return 1e-5; } }
@@ -376,13 +341,6 @@ namespace UnitsNet.Tests
         protected virtual double YottapascalsTolerance { get { return 1e-5; } }
         protected virtual double YottapoundsForcePerSquareFootTolerance { get { return 1e-5; } }
         protected virtual double YottapoundsForcePerSquareInchTolerance { get { return 1e-5; } }
-        protected virtual double ZeptobarsTolerance { get { return 1e-5; } }
-        protected virtual double ZeptonewtonsPerSquareCentimeterTolerance { get { return 1e-5; } }
-        protected virtual double ZeptonewtonsPerSquareMeterTolerance { get { return 1e-5; } }
-        protected virtual double ZeptonewtonsPerSquareMillimeterTolerance { get { return 1e-5; } }
-        protected virtual double ZeptopascalsTolerance { get { return 1e-5; } }
-        protected virtual double ZeptopoundsForcePerSquareFootTolerance { get { return 1e-5; } }
-        protected virtual double ZeptopoundsForcePerSquareInchTolerance { get { return 1e-5; } }
         protected virtual double ZettabarsTolerance { get { return 1e-5; } }
         protected virtual double ZettanewtonsPerSquareCentimeterTolerance { get { return 1e-5; } }
         protected virtual double ZettanewtonsPerSquareMeterTolerance { get { return 1e-5; } }
@@ -416,13 +374,6 @@ namespace UnitsNet.Tests
         {
             Pressure pascal = Pressure.FromPascals(1);
             AssertEx.EqualTolerance(AtmospheresInOnePascal, pascal.Atmospheres, AtmospheresTolerance);
-            AssertEx.EqualTolerance(AttobarsInOnePascal, pascal.Attobars, AttobarsTolerance);
-            AssertEx.EqualTolerance(AttonewtonsPerSquareCentimeterInOnePascal, pascal.AttonewtonsPerSquareCentimeter, AttonewtonsPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(AttonewtonsPerSquareMeterInOnePascal, pascal.AttonewtonsPerSquareMeter, AttonewtonsPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(AttonewtonsPerSquareMillimeterInOnePascal, pascal.AttonewtonsPerSquareMillimeter, AttonewtonsPerSquareMillimeterTolerance);
-            AssertEx.EqualTolerance(AttopascalsInOnePascal, pascal.Attopascals, AttopascalsTolerance);
-            AssertEx.EqualTolerance(AttopoundsForcePerSquareFootInOnePascal, pascal.AttopoundsForcePerSquareFoot, AttopoundsForcePerSquareFootTolerance);
-            AssertEx.EqualTolerance(AttopoundsForcePerSquareInchInOnePascal, pascal.AttopoundsForcePerSquareInch, AttopoundsForcePerSquareInchTolerance);
             AssertEx.EqualTolerance(BarsInOnePascal, pascal.Bars, BarsTolerance);
             AssertEx.EqualTolerance(CentibarsInOnePascal, pascal.Centibars, CentibarsTolerance);
             AssertEx.EqualTolerance(CentinewtonsPerSquareCentimeterInOnePascal, pascal.CentinewtonsPerSquareCentimeter, CentinewtonsPerSquareCentimeterTolerance);
@@ -564,13 +515,6 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettapascalsInOnePascal, pascal.Vettapascals, VettapascalsTolerance);
             AssertEx.EqualTolerance(VettapoundsForcePerSquareFootInOnePascal, pascal.VettapoundsForcePerSquareFoot, VettapoundsForcePerSquareFootTolerance);
             AssertEx.EqualTolerance(VettapoundsForcePerSquareInchInOnePascal, pascal.VettapoundsForcePerSquareInch, VettapoundsForcePerSquareInchTolerance);
-            AssertEx.EqualTolerance(YoctobarsInOnePascal, pascal.Yoctobars, YoctobarsTolerance);
-            AssertEx.EqualTolerance(YoctonewtonsPerSquareCentimeterInOnePascal, pascal.YoctonewtonsPerSquareCentimeter, YoctonewtonsPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(YoctonewtonsPerSquareMeterInOnePascal, pascal.YoctonewtonsPerSquareMeter, YoctonewtonsPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(YoctonewtonsPerSquareMillimeterInOnePascal, pascal.YoctonewtonsPerSquareMillimeter, YoctonewtonsPerSquareMillimeterTolerance);
-            AssertEx.EqualTolerance(YoctopascalsInOnePascal, pascal.Yoctopascals, YoctopascalsTolerance);
-            AssertEx.EqualTolerance(YoctopoundsForcePerSquareFootInOnePascal, pascal.YoctopoundsForcePerSquareFoot, YoctopoundsForcePerSquareFootTolerance);
-            AssertEx.EqualTolerance(YoctopoundsForcePerSquareInchInOnePascal, pascal.YoctopoundsForcePerSquareInch, YoctopoundsForcePerSquareInchTolerance);
             AssertEx.EqualTolerance(YottabarsInOnePascal, pascal.Yottabars, YottabarsTolerance);
             AssertEx.EqualTolerance(YottanewtonsPerSquareCentimeterInOnePascal, pascal.YottanewtonsPerSquareCentimeter, YottanewtonsPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(YottanewtonsPerSquareMeterInOnePascal, pascal.YottanewtonsPerSquareMeter, YottanewtonsPerSquareMeterTolerance);
@@ -578,13 +522,6 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(YottapascalsInOnePascal, pascal.Yottapascals, YottapascalsTolerance);
             AssertEx.EqualTolerance(YottapoundsForcePerSquareFootInOnePascal, pascal.YottapoundsForcePerSquareFoot, YottapoundsForcePerSquareFootTolerance);
             AssertEx.EqualTolerance(YottapoundsForcePerSquareInchInOnePascal, pascal.YottapoundsForcePerSquareInch, YottapoundsForcePerSquareInchTolerance);
-            AssertEx.EqualTolerance(ZeptobarsInOnePascal, pascal.Zeptobars, ZeptobarsTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonsPerSquareCentimeterInOnePascal, pascal.ZeptonewtonsPerSquareCentimeter, ZeptonewtonsPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonsPerSquareMeterInOnePascal, pascal.ZeptonewtonsPerSquareMeter, ZeptonewtonsPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonsPerSquareMillimeterInOnePascal, pascal.ZeptonewtonsPerSquareMillimeter, ZeptonewtonsPerSquareMillimeterTolerance);
-            AssertEx.EqualTolerance(ZeptopascalsInOnePascal, pascal.Zeptopascals, ZeptopascalsTolerance);
-            AssertEx.EqualTolerance(ZeptopoundsForcePerSquareFootInOnePascal, pascal.ZeptopoundsForcePerSquareFoot, ZeptopoundsForcePerSquareFootTolerance);
-            AssertEx.EqualTolerance(ZeptopoundsForcePerSquareInchInOnePascal, pascal.ZeptopoundsForcePerSquareInch, ZeptopoundsForcePerSquareInchTolerance);
             AssertEx.EqualTolerance(ZettabarsInOnePascal, pascal.Zettabars, ZettabarsTolerance);
             AssertEx.EqualTolerance(ZettanewtonsPerSquareCentimeterInOnePascal, pascal.ZettanewtonsPerSquareCentimeter, ZettanewtonsPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(ZettanewtonsPerSquareMeterInOnePascal, pascal.ZettanewtonsPerSquareMeter, ZettanewtonsPerSquareMeterTolerance);
@@ -598,13 +535,6 @@ namespace UnitsNet.Tests
         public void FromValueAndUnit()
         {
             AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.Atmosphere).Atmospheres, AtmospheresTolerance);
-            AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.Attobar).Attobars, AttobarsTolerance);
-            AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.AttonewtonPerSquareCentimeter).AttonewtonsPerSquareCentimeter, AttonewtonsPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.AttonewtonPerSquareMeter).AttonewtonsPerSquareMeter, AttonewtonsPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.AttonewtonPerSquareMillimeter).AttonewtonsPerSquareMillimeter, AttonewtonsPerSquareMillimeterTolerance);
-            AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.Attopascal).Attopascals, AttopascalsTolerance);
-            AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.AttopoundForcePerSquareFoot).AttopoundsForcePerSquareFoot, AttopoundsForcePerSquareFootTolerance);
-            AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.AttopoundForcePerSquareInch).AttopoundsForcePerSquareInch, AttopoundsForcePerSquareInchTolerance);
             AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.Bar).Bars, BarsTolerance);
             AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.Centibar).Centibars, CentibarsTolerance);
             AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.CentinewtonPerSquareCentimeter).CentinewtonsPerSquareCentimeter, CentinewtonsPerSquareCentimeterTolerance);
@@ -746,13 +676,6 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.Vettapascal).Vettapascals, VettapascalsTolerance);
             AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.VettapoundForcePerSquareFoot).VettapoundsForcePerSquareFoot, VettapoundsForcePerSquareFootTolerance);
             AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.VettapoundForcePerSquareInch).VettapoundsForcePerSquareInch, VettapoundsForcePerSquareInchTolerance);
-            AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.Yoctobar).Yoctobars, YoctobarsTolerance);
-            AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.YoctonewtonPerSquareCentimeter).YoctonewtonsPerSquareCentimeter, YoctonewtonsPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.YoctonewtonPerSquareMeter).YoctonewtonsPerSquareMeter, YoctonewtonsPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.YoctonewtonPerSquareMillimeter).YoctonewtonsPerSquareMillimeter, YoctonewtonsPerSquareMillimeterTolerance);
-            AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.Yoctopascal).Yoctopascals, YoctopascalsTolerance);
-            AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.YoctopoundForcePerSquareFoot).YoctopoundsForcePerSquareFoot, YoctopoundsForcePerSquareFootTolerance);
-            AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.YoctopoundForcePerSquareInch).YoctopoundsForcePerSquareInch, YoctopoundsForcePerSquareInchTolerance);
             AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.Yottabar).Yottabars, YottabarsTolerance);
             AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.YottanewtonPerSquareCentimeter).YottanewtonsPerSquareCentimeter, YottanewtonsPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.YottanewtonPerSquareMeter).YottanewtonsPerSquareMeter, YottanewtonsPerSquareMeterTolerance);
@@ -760,13 +683,6 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.Yottapascal).Yottapascals, YottapascalsTolerance);
             AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.YottapoundForcePerSquareFoot).YottapoundsForcePerSquareFoot, YottapoundsForcePerSquareFootTolerance);
             AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.YottapoundForcePerSquareInch).YottapoundsForcePerSquareInch, YottapoundsForcePerSquareInchTolerance);
-            AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.Zeptobar).Zeptobars, ZeptobarsTolerance);
-            AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.ZeptonewtonPerSquareCentimeter).ZeptonewtonsPerSquareCentimeter, ZeptonewtonsPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.ZeptonewtonPerSquareMeter).ZeptonewtonsPerSquareMeter, ZeptonewtonsPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.ZeptonewtonPerSquareMillimeter).ZeptonewtonsPerSquareMillimeter, ZeptonewtonsPerSquareMillimeterTolerance);
-            AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.Zeptopascal).Zeptopascals, ZeptopascalsTolerance);
-            AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.ZeptopoundForcePerSquareFoot).ZeptopoundsForcePerSquareFoot, ZeptopoundsForcePerSquareFootTolerance);
-            AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.ZeptopoundForcePerSquareInch).ZeptopoundsForcePerSquareInch, ZeptopoundsForcePerSquareInchTolerance);
             AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.Zettabar).Zettabars, ZettabarsTolerance);
             AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.ZettanewtonPerSquareCentimeter).ZettanewtonsPerSquareCentimeter, ZettanewtonsPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(1, Pressure.From(1, PressureUnit.ZettanewtonPerSquareMeter).ZettanewtonsPerSquareMeter, ZettanewtonsPerSquareMeterTolerance);
@@ -794,13 +710,6 @@ namespace UnitsNet.Tests
         {
             var pascal = Pressure.FromPascals(1);
             AssertEx.EqualTolerance(AtmospheresInOnePascal, pascal.As(PressureUnit.Atmosphere), AtmospheresTolerance);
-            AssertEx.EqualTolerance(AttobarsInOnePascal, pascal.As(PressureUnit.Attobar), AttobarsTolerance);
-            AssertEx.EqualTolerance(AttonewtonsPerSquareCentimeterInOnePascal, pascal.As(PressureUnit.AttonewtonPerSquareCentimeter), AttonewtonsPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(AttonewtonsPerSquareMeterInOnePascal, pascal.As(PressureUnit.AttonewtonPerSquareMeter), AttonewtonsPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(AttonewtonsPerSquareMillimeterInOnePascal, pascal.As(PressureUnit.AttonewtonPerSquareMillimeter), AttonewtonsPerSquareMillimeterTolerance);
-            AssertEx.EqualTolerance(AttopascalsInOnePascal, pascal.As(PressureUnit.Attopascal), AttopascalsTolerance);
-            AssertEx.EqualTolerance(AttopoundsForcePerSquareFootInOnePascal, pascal.As(PressureUnit.AttopoundForcePerSquareFoot), AttopoundsForcePerSquareFootTolerance);
-            AssertEx.EqualTolerance(AttopoundsForcePerSquareInchInOnePascal, pascal.As(PressureUnit.AttopoundForcePerSquareInch), AttopoundsForcePerSquareInchTolerance);
             AssertEx.EqualTolerance(BarsInOnePascal, pascal.As(PressureUnit.Bar), BarsTolerance);
             AssertEx.EqualTolerance(CentibarsInOnePascal, pascal.As(PressureUnit.Centibar), CentibarsTolerance);
             AssertEx.EqualTolerance(CentinewtonsPerSquareCentimeterInOnePascal, pascal.As(PressureUnit.CentinewtonPerSquareCentimeter), CentinewtonsPerSquareCentimeterTolerance);
@@ -942,13 +851,6 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettapascalsInOnePascal, pascal.As(PressureUnit.Vettapascal), VettapascalsTolerance);
             AssertEx.EqualTolerance(VettapoundsForcePerSquareFootInOnePascal, pascal.As(PressureUnit.VettapoundForcePerSquareFoot), VettapoundsForcePerSquareFootTolerance);
             AssertEx.EqualTolerance(VettapoundsForcePerSquareInchInOnePascal, pascal.As(PressureUnit.VettapoundForcePerSquareInch), VettapoundsForcePerSquareInchTolerance);
-            AssertEx.EqualTolerance(YoctobarsInOnePascal, pascal.As(PressureUnit.Yoctobar), YoctobarsTolerance);
-            AssertEx.EqualTolerance(YoctonewtonsPerSquareCentimeterInOnePascal, pascal.As(PressureUnit.YoctonewtonPerSquareCentimeter), YoctonewtonsPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(YoctonewtonsPerSquareMeterInOnePascal, pascal.As(PressureUnit.YoctonewtonPerSquareMeter), YoctonewtonsPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(YoctonewtonsPerSquareMillimeterInOnePascal, pascal.As(PressureUnit.YoctonewtonPerSquareMillimeter), YoctonewtonsPerSquareMillimeterTolerance);
-            AssertEx.EqualTolerance(YoctopascalsInOnePascal, pascal.As(PressureUnit.Yoctopascal), YoctopascalsTolerance);
-            AssertEx.EqualTolerance(YoctopoundsForcePerSquareFootInOnePascal, pascal.As(PressureUnit.YoctopoundForcePerSquareFoot), YoctopoundsForcePerSquareFootTolerance);
-            AssertEx.EqualTolerance(YoctopoundsForcePerSquareInchInOnePascal, pascal.As(PressureUnit.YoctopoundForcePerSquareInch), YoctopoundsForcePerSquareInchTolerance);
             AssertEx.EqualTolerance(YottabarsInOnePascal, pascal.As(PressureUnit.Yottabar), YottabarsTolerance);
             AssertEx.EqualTolerance(YottanewtonsPerSquareCentimeterInOnePascal, pascal.As(PressureUnit.YottanewtonPerSquareCentimeter), YottanewtonsPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(YottanewtonsPerSquareMeterInOnePascal, pascal.As(PressureUnit.YottanewtonPerSquareMeter), YottanewtonsPerSquareMeterTolerance);
@@ -956,13 +858,6 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(YottapascalsInOnePascal, pascal.As(PressureUnit.Yottapascal), YottapascalsTolerance);
             AssertEx.EqualTolerance(YottapoundsForcePerSquareFootInOnePascal, pascal.As(PressureUnit.YottapoundForcePerSquareFoot), YottapoundsForcePerSquareFootTolerance);
             AssertEx.EqualTolerance(YottapoundsForcePerSquareInchInOnePascal, pascal.As(PressureUnit.YottapoundForcePerSquareInch), YottapoundsForcePerSquareInchTolerance);
-            AssertEx.EqualTolerance(ZeptobarsInOnePascal, pascal.As(PressureUnit.Zeptobar), ZeptobarsTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonsPerSquareCentimeterInOnePascal, pascal.As(PressureUnit.ZeptonewtonPerSquareCentimeter), ZeptonewtonsPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonsPerSquareMeterInOnePascal, pascal.As(PressureUnit.ZeptonewtonPerSquareMeter), ZeptonewtonsPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonsPerSquareMillimeterInOnePascal, pascal.As(PressureUnit.ZeptonewtonPerSquareMillimeter), ZeptonewtonsPerSquareMillimeterTolerance);
-            AssertEx.EqualTolerance(ZeptopascalsInOnePascal, pascal.As(PressureUnit.Zeptopascal), ZeptopascalsTolerance);
-            AssertEx.EqualTolerance(ZeptopoundsForcePerSquareFootInOnePascal, pascal.As(PressureUnit.ZeptopoundForcePerSquareFoot), ZeptopoundsForcePerSquareFootTolerance);
-            AssertEx.EqualTolerance(ZeptopoundsForcePerSquareInchInOnePascal, pascal.As(PressureUnit.ZeptopoundForcePerSquareInch), ZeptopoundsForcePerSquareInchTolerance);
             AssertEx.EqualTolerance(ZettabarsInOnePascal, pascal.As(PressureUnit.Zettabar), ZettabarsTolerance);
             AssertEx.EqualTolerance(ZettanewtonsPerSquareCentimeterInOnePascal, pascal.As(PressureUnit.ZettanewtonPerSquareCentimeter), ZettanewtonsPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(ZettanewtonsPerSquareMeterInOnePascal, pascal.As(PressureUnit.ZettanewtonPerSquareMeter), ZettanewtonsPerSquareMeterTolerance);
@@ -980,34 +875,6 @@ namespace UnitsNet.Tests
             var atmosphereQuantity = pascal.ToUnit(PressureUnit.Atmosphere);
             AssertEx.EqualTolerance(AtmospheresInOnePascal, (double)atmosphereQuantity.Value, AtmospheresTolerance);
             Assert.Equal(PressureUnit.Atmosphere, atmosphereQuantity.Unit);
-
-            var attobarQuantity = pascal.ToUnit(PressureUnit.Attobar);
-            AssertEx.EqualTolerance(AttobarsInOnePascal, (double)attobarQuantity.Value, AttobarsTolerance);
-            Assert.Equal(PressureUnit.Attobar, attobarQuantity.Unit);
-
-            var attonewtonpersquarecentimeterQuantity = pascal.ToUnit(PressureUnit.AttonewtonPerSquareCentimeter);
-            AssertEx.EqualTolerance(AttonewtonsPerSquareCentimeterInOnePascal, (double)attonewtonpersquarecentimeterQuantity.Value, AttonewtonsPerSquareCentimeterTolerance);
-            Assert.Equal(PressureUnit.AttonewtonPerSquareCentimeter, attonewtonpersquarecentimeterQuantity.Unit);
-
-            var attonewtonpersquaremeterQuantity = pascal.ToUnit(PressureUnit.AttonewtonPerSquareMeter);
-            AssertEx.EqualTolerance(AttonewtonsPerSquareMeterInOnePascal, (double)attonewtonpersquaremeterQuantity.Value, AttonewtonsPerSquareMeterTolerance);
-            Assert.Equal(PressureUnit.AttonewtonPerSquareMeter, attonewtonpersquaremeterQuantity.Unit);
-
-            var attonewtonpersquaremillimeterQuantity = pascal.ToUnit(PressureUnit.AttonewtonPerSquareMillimeter);
-            AssertEx.EqualTolerance(AttonewtonsPerSquareMillimeterInOnePascal, (double)attonewtonpersquaremillimeterQuantity.Value, AttonewtonsPerSquareMillimeterTolerance);
-            Assert.Equal(PressureUnit.AttonewtonPerSquareMillimeter, attonewtonpersquaremillimeterQuantity.Unit);
-
-            var attopascalQuantity = pascal.ToUnit(PressureUnit.Attopascal);
-            AssertEx.EqualTolerance(AttopascalsInOnePascal, (double)attopascalQuantity.Value, AttopascalsTolerance);
-            Assert.Equal(PressureUnit.Attopascal, attopascalQuantity.Unit);
-
-            var attopoundforcepersquarefootQuantity = pascal.ToUnit(PressureUnit.AttopoundForcePerSquareFoot);
-            AssertEx.EqualTolerance(AttopoundsForcePerSquareFootInOnePascal, (double)attopoundforcepersquarefootQuantity.Value, AttopoundsForcePerSquareFootTolerance);
-            Assert.Equal(PressureUnit.AttopoundForcePerSquareFoot, attopoundforcepersquarefootQuantity.Unit);
-
-            var attopoundforcepersquareinchQuantity = pascal.ToUnit(PressureUnit.AttopoundForcePerSquareInch);
-            AssertEx.EqualTolerance(AttopoundsForcePerSquareInchInOnePascal, (double)attopoundforcepersquareinchQuantity.Value, AttopoundsForcePerSquareInchTolerance);
-            Assert.Equal(PressureUnit.AttopoundForcePerSquareInch, attopoundforcepersquareinchQuantity.Unit);
 
             var barQuantity = pascal.ToUnit(PressureUnit.Bar);
             AssertEx.EqualTolerance(BarsInOnePascal, (double)barQuantity.Value, BarsTolerance);
@@ -1573,34 +1440,6 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettapoundsForcePerSquareInchInOnePascal, (double)vettapoundforcepersquareinchQuantity.Value, VettapoundsForcePerSquareInchTolerance);
             Assert.Equal(PressureUnit.VettapoundForcePerSquareInch, vettapoundforcepersquareinchQuantity.Unit);
 
-            var yoctobarQuantity = pascal.ToUnit(PressureUnit.Yoctobar);
-            AssertEx.EqualTolerance(YoctobarsInOnePascal, (double)yoctobarQuantity.Value, YoctobarsTolerance);
-            Assert.Equal(PressureUnit.Yoctobar, yoctobarQuantity.Unit);
-
-            var yoctonewtonpersquarecentimeterQuantity = pascal.ToUnit(PressureUnit.YoctonewtonPerSquareCentimeter);
-            AssertEx.EqualTolerance(YoctonewtonsPerSquareCentimeterInOnePascal, (double)yoctonewtonpersquarecentimeterQuantity.Value, YoctonewtonsPerSquareCentimeterTolerance);
-            Assert.Equal(PressureUnit.YoctonewtonPerSquareCentimeter, yoctonewtonpersquarecentimeterQuantity.Unit);
-
-            var yoctonewtonpersquaremeterQuantity = pascal.ToUnit(PressureUnit.YoctonewtonPerSquareMeter);
-            AssertEx.EqualTolerance(YoctonewtonsPerSquareMeterInOnePascal, (double)yoctonewtonpersquaremeterQuantity.Value, YoctonewtonsPerSquareMeterTolerance);
-            Assert.Equal(PressureUnit.YoctonewtonPerSquareMeter, yoctonewtonpersquaremeterQuantity.Unit);
-
-            var yoctonewtonpersquaremillimeterQuantity = pascal.ToUnit(PressureUnit.YoctonewtonPerSquareMillimeter);
-            AssertEx.EqualTolerance(YoctonewtonsPerSquareMillimeterInOnePascal, (double)yoctonewtonpersquaremillimeterQuantity.Value, YoctonewtonsPerSquareMillimeterTolerance);
-            Assert.Equal(PressureUnit.YoctonewtonPerSquareMillimeter, yoctonewtonpersquaremillimeterQuantity.Unit);
-
-            var yoctopascalQuantity = pascal.ToUnit(PressureUnit.Yoctopascal);
-            AssertEx.EqualTolerance(YoctopascalsInOnePascal, (double)yoctopascalQuantity.Value, YoctopascalsTolerance);
-            Assert.Equal(PressureUnit.Yoctopascal, yoctopascalQuantity.Unit);
-
-            var yoctopoundforcepersquarefootQuantity = pascal.ToUnit(PressureUnit.YoctopoundForcePerSquareFoot);
-            AssertEx.EqualTolerance(YoctopoundsForcePerSquareFootInOnePascal, (double)yoctopoundforcepersquarefootQuantity.Value, YoctopoundsForcePerSquareFootTolerance);
-            Assert.Equal(PressureUnit.YoctopoundForcePerSquareFoot, yoctopoundforcepersquarefootQuantity.Unit);
-
-            var yoctopoundforcepersquareinchQuantity = pascal.ToUnit(PressureUnit.YoctopoundForcePerSquareInch);
-            AssertEx.EqualTolerance(YoctopoundsForcePerSquareInchInOnePascal, (double)yoctopoundforcepersquareinchQuantity.Value, YoctopoundsForcePerSquareInchTolerance);
-            Assert.Equal(PressureUnit.YoctopoundForcePerSquareInch, yoctopoundforcepersquareinchQuantity.Unit);
-
             var yottabarQuantity = pascal.ToUnit(PressureUnit.Yottabar);
             AssertEx.EqualTolerance(YottabarsInOnePascal, (double)yottabarQuantity.Value, YottabarsTolerance);
             Assert.Equal(PressureUnit.Yottabar, yottabarQuantity.Unit);
@@ -1628,34 +1467,6 @@ namespace UnitsNet.Tests
             var yottapoundforcepersquareinchQuantity = pascal.ToUnit(PressureUnit.YottapoundForcePerSquareInch);
             AssertEx.EqualTolerance(YottapoundsForcePerSquareInchInOnePascal, (double)yottapoundforcepersquareinchQuantity.Value, YottapoundsForcePerSquareInchTolerance);
             Assert.Equal(PressureUnit.YottapoundForcePerSquareInch, yottapoundforcepersquareinchQuantity.Unit);
-
-            var zeptobarQuantity = pascal.ToUnit(PressureUnit.Zeptobar);
-            AssertEx.EqualTolerance(ZeptobarsInOnePascal, (double)zeptobarQuantity.Value, ZeptobarsTolerance);
-            Assert.Equal(PressureUnit.Zeptobar, zeptobarQuantity.Unit);
-
-            var zeptonewtonpersquarecentimeterQuantity = pascal.ToUnit(PressureUnit.ZeptonewtonPerSquareCentimeter);
-            AssertEx.EqualTolerance(ZeptonewtonsPerSquareCentimeterInOnePascal, (double)zeptonewtonpersquarecentimeterQuantity.Value, ZeptonewtonsPerSquareCentimeterTolerance);
-            Assert.Equal(PressureUnit.ZeptonewtonPerSquareCentimeter, zeptonewtonpersquarecentimeterQuantity.Unit);
-
-            var zeptonewtonpersquaremeterQuantity = pascal.ToUnit(PressureUnit.ZeptonewtonPerSquareMeter);
-            AssertEx.EqualTolerance(ZeptonewtonsPerSquareMeterInOnePascal, (double)zeptonewtonpersquaremeterQuantity.Value, ZeptonewtonsPerSquareMeterTolerance);
-            Assert.Equal(PressureUnit.ZeptonewtonPerSquareMeter, zeptonewtonpersquaremeterQuantity.Unit);
-
-            var zeptonewtonpersquaremillimeterQuantity = pascal.ToUnit(PressureUnit.ZeptonewtonPerSquareMillimeter);
-            AssertEx.EqualTolerance(ZeptonewtonsPerSquareMillimeterInOnePascal, (double)zeptonewtonpersquaremillimeterQuantity.Value, ZeptonewtonsPerSquareMillimeterTolerance);
-            Assert.Equal(PressureUnit.ZeptonewtonPerSquareMillimeter, zeptonewtonpersquaremillimeterQuantity.Unit);
-
-            var zeptopascalQuantity = pascal.ToUnit(PressureUnit.Zeptopascal);
-            AssertEx.EqualTolerance(ZeptopascalsInOnePascal, (double)zeptopascalQuantity.Value, ZeptopascalsTolerance);
-            Assert.Equal(PressureUnit.Zeptopascal, zeptopascalQuantity.Unit);
-
-            var zeptopoundforcepersquarefootQuantity = pascal.ToUnit(PressureUnit.ZeptopoundForcePerSquareFoot);
-            AssertEx.EqualTolerance(ZeptopoundsForcePerSquareFootInOnePascal, (double)zeptopoundforcepersquarefootQuantity.Value, ZeptopoundsForcePerSquareFootTolerance);
-            Assert.Equal(PressureUnit.ZeptopoundForcePerSquareFoot, zeptopoundforcepersquarefootQuantity.Unit);
-
-            var zeptopoundforcepersquareinchQuantity = pascal.ToUnit(PressureUnit.ZeptopoundForcePerSquareInch);
-            AssertEx.EqualTolerance(ZeptopoundsForcePerSquareInchInOnePascal, (double)zeptopoundforcepersquareinchQuantity.Value, ZeptopoundsForcePerSquareInchTolerance);
-            Assert.Equal(PressureUnit.ZeptopoundForcePerSquareInch, zeptopoundforcepersquareinchQuantity.Unit);
 
             var zettabarQuantity = pascal.ToUnit(PressureUnit.Zettabar);
             AssertEx.EqualTolerance(ZettabarsInOnePascal, (double)zettabarQuantity.Value, ZettabarsTolerance);
@@ -1691,13 +1502,6 @@ namespace UnitsNet.Tests
         {
             Pressure pascal = Pressure.FromPascals(1);
             AssertEx.EqualTolerance(1, Pressure.FromAtmospheres(pascal.Atmospheres).Pascals, AtmospheresTolerance);
-            AssertEx.EqualTolerance(1, Pressure.FromAttobars(pascal.Attobars).Pascals, AttobarsTolerance);
-            AssertEx.EqualTolerance(1, Pressure.FromAttonewtonsPerSquareCentimeter(pascal.AttonewtonsPerSquareCentimeter).Pascals, AttonewtonsPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(1, Pressure.FromAttonewtonsPerSquareMeter(pascal.AttonewtonsPerSquareMeter).Pascals, AttonewtonsPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(1, Pressure.FromAttonewtonsPerSquareMillimeter(pascal.AttonewtonsPerSquareMillimeter).Pascals, AttonewtonsPerSquareMillimeterTolerance);
-            AssertEx.EqualTolerance(1, Pressure.FromAttopascals(pascal.Attopascals).Pascals, AttopascalsTolerance);
-            AssertEx.EqualTolerance(1, Pressure.FromAttopoundsForcePerSquareFoot(pascal.AttopoundsForcePerSquareFoot).Pascals, AttopoundsForcePerSquareFootTolerance);
-            AssertEx.EqualTolerance(1, Pressure.FromAttopoundsForcePerSquareInch(pascal.AttopoundsForcePerSquareInch).Pascals, AttopoundsForcePerSquareInchTolerance);
             AssertEx.EqualTolerance(1, Pressure.FromBars(pascal.Bars).Pascals, BarsTolerance);
             AssertEx.EqualTolerance(1, Pressure.FromCentibars(pascal.Centibars).Pascals, CentibarsTolerance);
             AssertEx.EqualTolerance(1, Pressure.FromCentinewtonsPerSquareCentimeter(pascal.CentinewtonsPerSquareCentimeter).Pascals, CentinewtonsPerSquareCentimeterTolerance);
@@ -1839,13 +1643,6 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, Pressure.FromVettapascals(pascal.Vettapascals).Pascals, VettapascalsTolerance);
             AssertEx.EqualTolerance(1, Pressure.FromVettapoundsForcePerSquareFoot(pascal.VettapoundsForcePerSquareFoot).Pascals, VettapoundsForcePerSquareFootTolerance);
             AssertEx.EqualTolerance(1, Pressure.FromVettapoundsForcePerSquareInch(pascal.VettapoundsForcePerSquareInch).Pascals, VettapoundsForcePerSquareInchTolerance);
-            AssertEx.EqualTolerance(1, Pressure.FromYoctobars(pascal.Yoctobars).Pascals, YoctobarsTolerance);
-            AssertEx.EqualTolerance(1, Pressure.FromYoctonewtonsPerSquareCentimeter(pascal.YoctonewtonsPerSquareCentimeter).Pascals, YoctonewtonsPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(1, Pressure.FromYoctonewtonsPerSquareMeter(pascal.YoctonewtonsPerSquareMeter).Pascals, YoctonewtonsPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(1, Pressure.FromYoctonewtonsPerSquareMillimeter(pascal.YoctonewtonsPerSquareMillimeter).Pascals, YoctonewtonsPerSquareMillimeterTolerance);
-            AssertEx.EqualTolerance(1, Pressure.FromYoctopascals(pascal.Yoctopascals).Pascals, YoctopascalsTolerance);
-            AssertEx.EqualTolerance(1, Pressure.FromYoctopoundsForcePerSquareFoot(pascal.YoctopoundsForcePerSquareFoot).Pascals, YoctopoundsForcePerSquareFootTolerance);
-            AssertEx.EqualTolerance(1, Pressure.FromYoctopoundsForcePerSquareInch(pascal.YoctopoundsForcePerSquareInch).Pascals, YoctopoundsForcePerSquareInchTolerance);
             AssertEx.EqualTolerance(1, Pressure.FromYottabars(pascal.Yottabars).Pascals, YottabarsTolerance);
             AssertEx.EqualTolerance(1, Pressure.FromYottanewtonsPerSquareCentimeter(pascal.YottanewtonsPerSquareCentimeter).Pascals, YottanewtonsPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(1, Pressure.FromYottanewtonsPerSquareMeter(pascal.YottanewtonsPerSquareMeter).Pascals, YottanewtonsPerSquareMeterTolerance);
@@ -1853,13 +1650,6 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, Pressure.FromYottapascals(pascal.Yottapascals).Pascals, YottapascalsTolerance);
             AssertEx.EqualTolerance(1, Pressure.FromYottapoundsForcePerSquareFoot(pascal.YottapoundsForcePerSquareFoot).Pascals, YottapoundsForcePerSquareFootTolerance);
             AssertEx.EqualTolerance(1, Pressure.FromYottapoundsForcePerSquareInch(pascal.YottapoundsForcePerSquareInch).Pascals, YottapoundsForcePerSquareInchTolerance);
-            AssertEx.EqualTolerance(1, Pressure.FromZeptobars(pascal.Zeptobars).Pascals, ZeptobarsTolerance);
-            AssertEx.EqualTolerance(1, Pressure.FromZeptonewtonsPerSquareCentimeter(pascal.ZeptonewtonsPerSquareCentimeter).Pascals, ZeptonewtonsPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(1, Pressure.FromZeptonewtonsPerSquareMeter(pascal.ZeptonewtonsPerSquareMeter).Pascals, ZeptonewtonsPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(1, Pressure.FromZeptonewtonsPerSquareMillimeter(pascal.ZeptonewtonsPerSquareMillimeter).Pascals, ZeptonewtonsPerSquareMillimeterTolerance);
-            AssertEx.EqualTolerance(1, Pressure.FromZeptopascals(pascal.Zeptopascals).Pascals, ZeptopascalsTolerance);
-            AssertEx.EqualTolerance(1, Pressure.FromZeptopoundsForcePerSquareFoot(pascal.ZeptopoundsForcePerSquareFoot).Pascals, ZeptopoundsForcePerSquareFootTolerance);
-            AssertEx.EqualTolerance(1, Pressure.FromZeptopoundsForcePerSquareInch(pascal.ZeptopoundsForcePerSquareInch).Pascals, ZeptopoundsForcePerSquareInchTolerance);
             AssertEx.EqualTolerance(1, Pressure.FromZettabars(pascal.Zettabars).Pascals, ZettabarsTolerance);
             AssertEx.EqualTolerance(1, Pressure.FromZettanewtonsPerSquareCentimeter(pascal.ZettanewtonsPerSquareCentimeter).Pascals, ZettanewtonsPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(1, Pressure.FromZettanewtonsPerSquareMeter(pascal.ZettanewtonsPerSquareMeter).Pascals, ZettanewtonsPerSquareMeterTolerance);

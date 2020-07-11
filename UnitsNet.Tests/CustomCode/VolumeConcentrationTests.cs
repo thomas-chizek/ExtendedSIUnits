@@ -29,22 +29,19 @@ namespace UnitsNet.Tests.CustomCode
     public class VolumeConcentrationTests : VolumeConcentrationTestsBase
     {
         #region Unit Conversion Coefficients
-        protected override double LitersPerMililiterInOneDecimalFraction => 1E-3;
-        protected override double DecilitersPerMililiterInOneDecimalFraction => 1E-2;
-        protected override double CentilitersPerMililiterInOneDecimalFraction => 1E-1;
-        protected override double MillilitersPerMililiterInOneDecimalFraction => 1;
-        protected override double MicrolitersPerMililiterInOneDecimalFraction => 1E3;
-        protected override double NanolitersPerMililiterInOneDecimalFraction => 1E6;
-        protected override double PicolitersPerMililiterInOneDecimalFraction => 1E9;
 
-        protected override double LitersPerLiterInOneDecimalFraction => 1;
-        protected override double DecilitersPerLiterInOneDecimalFraction => 10;
-        protected override double CentilitersPerLiterInOneDecimalFraction => 1E2;
-        protected override double MillilitersPerLiterInOneDecimalFraction => 1E3;
-        protected override double MicrolitersPerLiterInOneDecimalFraction => 1E6;
-        protected override double NanolitersPerLiterInOneDecimalFraction => 1E9;
+        protected override double FemtolitersPerLiterInOneDecimalFraction => 1e15;
         protected override double PicolitersPerLiterInOneDecimalFraction => 1E12;
-        
+        protected override double NanolitersPerLiterInOneDecimalFraction => 1E9;
+        protected override double MicrolitersPerLiterInOneDecimalFraction => 1E6;
+        protected override double MillilitersPerLiterInOneDecimalFraction => 1E3;
+        protected override double CentilitersPerLiterInOneDecimalFraction => 1E2;
+        protected override double DecilitersPerLiterInOneDecimalFraction => 10;
+        protected override double LitersPerLiterInOneDecimalFraction => 1;
+        protected override double DecalitersPerLiterInOneDecimalFraction => 1e-1;
+        protected override double HectolitersPerLiterInOneDecimalFraction => 1e-2;
+        protected override double KilolitersPerLiterInOneDecimalFraction => 1e-3;
+
         protected override double PartsPerThousandInOneDecimalFraction => 1e3;
         protected override double PartsPerMillionInOneDecimalFraction => 1e6;
         protected override double PartsPerBillionInOneDecimalFraction => 1e9;
@@ -52,6 +49,19 @@ namespace UnitsNet.Tests.CustomCode
 
         protected override double DecimalFractionsInOneDecimalFraction => 1;
         protected override double PercentInOneDecimalFraction => 100;
+
+
+        protected override double FemtolitersPerMililiterInOneDecimalFraction => 1e12;
+        protected override double PicolitersPerMililiterInOneDecimalFraction => 1E9;
+        protected override double NanolitersPerMililiterInOneDecimalFraction => 1E6;
+        protected override double MicrolitersPerMililiterInOneDecimalFraction => 1E3;
+        protected override double MillilitersPerMililiterInOneDecimalFraction => 1;
+        protected override double CentilitersPerMililiterInOneDecimalFraction => 1E-1;
+        protected override double DecilitersPerMililiterInOneDecimalFraction => 1E-2;
+        protected override double LitersPerMililiterInOneDecimalFraction => 1E-3;
+        protected override double DecalitersPerMililiterInOneDecimalFraction => 1e-4;
+        protected override double KilolitersPerMililiterInOneDecimalFraction => 1e-6;
+
         #endregion
 
         [Theory]

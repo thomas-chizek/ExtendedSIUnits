@@ -26,8 +26,6 @@ namespace UnitsNet.Units
     public enum IrradianceUnit
     {
         Undefined = 0,
-        AttowattPerSquareCentimeter,
-        AttowattPerSquareMeter,
         CentiwattPerSquareCentimeter,
         CentiwattPerSquareMeter,
         DecawattPerSquareCentimeter,
@@ -64,12 +62,8 @@ namespace UnitsNet.Units
         VettawattPerSquareMeter,
         WattPerSquareCentimeter,
         WattPerSquareMeter,
-        YoctowattPerSquareCentimeter,
-        YoctowattPerSquareMeter,
         YottawattPerSquareCentimeter,
         YottawattPerSquareMeter,
-        ZeptowattPerSquareCentimeter,
-        ZeptowattPerSquareMeter,
         ZettawattPerSquareCentimeter,
         ZettawattPerSquareMeter,
     }

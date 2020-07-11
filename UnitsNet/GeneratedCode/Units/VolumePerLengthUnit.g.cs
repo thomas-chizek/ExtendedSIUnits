@@ -26,8 +26,6 @@ namespace UnitsNet.Units
     public enum VolumePerLengthUnit
     {
         Undefined = 0,
-        AttocubicMeterPerMeter,
-        AttoliterPerMeter,
         CenticubicMeterPerMeter,
         CentiliterPerMeter,
         CubicMeterPerMeter,
@@ -65,12 +63,8 @@ namespace UnitsNet.Units
         TeraliterPerMeter,
         VettacubicMeterPerMeter,
         VettaliterPerMeter,
-        YoctocubicMeterPerMeter,
-        YoctoliterPerMeter,
         YottacubicMeterPerMeter,
         YottaliterPerMeter,
-        ZeptocubicMeterPerMeter,
-        ZeptoliterPerMeter,
         ZettacubicMeterPerMeter,
         ZettaliterPerMeter,
     }

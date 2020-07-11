@@ -26,7 +26,6 @@ namespace UnitsNet.Units
     public enum ForceUnit
     {
         Undefined = 0,
-        Attonewton,
         Centinewton,
         Decanewton,
         Decinewton,
@@ -52,9 +51,7 @@ namespace UnitsNet.Units
         Teranewton,
         TonneForce,
         Vettanewton,
-        Yoctonewton,
         Yottanewton,
-        Zeptonewton,
         Zettanewton,
     }
 

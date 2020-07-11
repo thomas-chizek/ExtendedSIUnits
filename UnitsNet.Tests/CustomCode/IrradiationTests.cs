@@ -27,18 +27,92 @@ namespace UnitsNet.Tests.CustomCode
 {
     public class IrradiationTests : IrradiationTestsBase
     {
+        protected override double FemtojoulesPerSquareMeterInOneJoulePerSquareMeter => 1e15;
+        protected override double PicojoulesPerSquareMeterInOneJoulePerSquareMeter => 1e12;
+        protected override double NanojoulesPerSquareMeterInOneJoulePerSquareMeter => 1e9;
+        protected override double MicrojoulesPerSquareMeterInOneJoulePerSquareMeter => 1e6;
+        protected override double MillijoulesPerSquareMeterInOneJoulePerSquareMeter => 1e3;
+        protected override double CentijoulesPerSquareMeterInOneJoulePerSquareMeter => 1e2;
+        protected override double DecijoulesPerSquareMeterInOneJoulePerSquareMeter => 10;
         protected override double JoulesPerSquareMeterInOneJoulePerSquareMeter => 1;
-
+        protected override double DecajoulesPerSquareMeterInOneJoulePerSquareMeter => 0.1;
+        protected override double HectojoulesPerSquareMeterInOneJoulePerSquareMeter => 1E-2;
         protected override double KilojoulesPerSquareMeterInOneJoulePerSquareMeter => 1E-3;
+        protected override double MegajoulesPerSquareMeterInOneJoulePerSquareMeter => 1E-6;
+        protected override double GigajoulesPerSquareMeterInOneJoulePerSquareMeter => 1E-9;
+        protected override double TerajoulesPerSquareMeterInOneJoulePerSquareMeter => 1E-12;
+        protected override double PetajoulesPerSquareMeterInOneJoulePerSquareMeter => 1E-15;
+        protected override double ExajoulesPerSquareMeterInOneJoulePerSquareMeter => 1E-18;
+        protected override double ZettajoulesPerSquareMeterInOneJoulePerSquareMeter => 1E-21;
+        protected override double YottajoulesPerSquareMeterInOneJoulePerSquareMeter => 1E-24;
+        protected override double QutrajoulesPerSquareMeterInOneJoulePerSquareMeter => 1E-27;
+        protected override double VettajoulesPerSquareMeterInOneJoulePerSquareMeter => 1E-30;
 
-        protected override double JoulesPerSquareCentimeterInOneJoulePerSquareMeter => 1E-4;
 
+        protected override double FemtojoulesPerSquareMillimeterInOneJoulePerSquareMeter => 1E9;
+        protected override double PicojoulesPerSquareMillimeterInOneJoulePerSquareMeter => 1E6;
+        protected override double NanojoulesPerSquareMillimeterInOneJoulePerSquareMeter => 1E3;
+        protected override double MicrojoulesPerSquareMillimeterInOneJoulePerSquareMeter => 1;
+        protected override double MillijoulesPerSquareMillimeterInOneJoulePerSquareMeter => 1E-3;
+        protected override double CentijoulesPerSquareMillimeterInOneJoulePerSquareMeter => 1E-4;
+        protected override double DecijoulesPerSquareMillimeterInOneJoulePerSquareMeter => 1E-5;
         protected override double JoulesPerSquareMillimeterInOneJoulePerSquareMeter => 1E-6;
+        protected override double DecajoulesPerSquareMillimeterInOneJoulePerSquareMeter => 1E-7;
+        protected override double HectojoulesPerSquareMillimeterInOneJoulePerSquareMeter => 1E-8;
+        protected override double KilojoulesPerSquareMillimeterInOneJoulePerSquareMeter => 1E-9;
+        protected override double MegajoulesPerSquareMillimeterInOneJoulePerSquareMeter => 1E-12;
+        protected override double GigajoulesPerSquareMillimeterInOneJoulePerSquareMeter => 1E-15;
+        protected override double TerajoulesPerSquareMillimeterInOneJoulePerSquareMeter => 1E-18;
+        protected override double PetajoulesPerSquareMillimeterInOneJoulePerSquareMeter => 1E-21;
+        protected override double ExajoulesPerSquareMillimeterInOneJoulePerSquareMeter => 1E-24;
+        protected override double ZettajoulesPerSquareMillimeterInOneJoulePerSquareMeter => 1E-27;
+        protected override double YottajoulesPerSquareMillimeterInOneJoulePerSquareMeter => 1E-30;
+        protected override double QutrajoulesPerSquareMillimeterInOneJoulePerSquareMeter => 1E-33;
+        protected override double VettajoulesPerSquareMillimeterInOneJoulePerSquareMeter => 1E-36;
 
+
+
+        protected override double FemtojoulesPerSquareCentimeterInOneJoulePerSquareMeter => 1e11;
+        protected override double PicojoulesPerSquareCentimeterInOneJoulePerSquareMeter => 1e8;
+        protected override double NanojoulesPerSquareCentimeterInOneJoulePerSquareMeter => 1e5;
+        protected override double MicrojoulesPerSquareCentimeterInOneJoulePerSquareMeter => 1e2;
         protected override double MillijoulesPerSquareCentimeterInOneJoulePerSquareMeter => 1e-1;
+        protected override double CentijoulesPerSquareCentimeterInOneJoulePerSquareMeter => 1e-2;
+        protected override double DecijoulesPerSquareCentimeterInOneJoulePerSquareMeter => 1e-3;
+        protected override double JoulesPerSquareCentimeterInOneJoulePerSquareMeter => 1E-4;
+        protected override double DecajoulesPerSquareCentimeterInOneJoulePerSquareMeter => 1E-5;
+        protected override double HectojoulesPerSquareCentimeterInOneJoulePerSquareMeter => 1E-6;
+        protected override double KilojoulesPerSquareCentimeterInOneJoulePerSquareMeter => 1E-7;
+        protected override double MegajoulesPerSquareCentimeterInOneJoulePerSquareMeter => 1E-10;
+        protected override double GigajoulesPerSquareCentimeterInOneJoulePerSquareMeter => 1E-13;
+        protected override double TerajoulesPerSquareCentimeterInOneJoulePerSquareMeter => 1E-16;
+        protected override double PetajoulesPerSquareCentimeterInOneJoulePerSquareMeter => 1E-19;
+        protected override double ExajoulesPerSquareCentimeterInOneJoulePerSquareMeter => 1E-22;
+        protected override double ZettajoulesPerSquareCentimeterInOneJoulePerSquareMeter => 1E-25;
+        protected override double YottajoulesPerSquareCentimeterInOneJoulePerSquareMeter => 1E-28;
+        protected override double QutrajoulesPerSquareCentimeterInOneJoulePerSquareMeter => 1E-31;
+        protected override double VettajoulesPerSquareCentimeterInOneJoulePerSquareMeter => 1E-34;
 
+
+        protected override double FemtowattHoursPerSquareMeterInOneJoulePerSquareMeter => 2.777777777777778e11;
+        protected override double PicowattHoursPerSquareMeterInOneJoulePerSquareMeter => 2.777777777777778e8;
+        protected override double NanowattHoursPerSquareMeterInOneJoulePerSquareMeter => 2.777777777777778e5;
+        protected override double MicrowattHoursPerSquareMeterInOneJoulePerSquareMeter => 2.777777777777778e2;
+        protected override double MilliwattHoursPerSquareMeterInOneJoulePerSquareMeter => 2.777777777777778e-1;
+        protected override double CentiwattHoursPerSquareMeterInOneJoulePerSquareMeter => 2.777777777777778e-2;
+        protected override double DeciwattHoursPerSquareMeterInOneJoulePerSquareMeter => 2.777777777777778e-3;
         protected override double WattHoursPerSquareMeterInOneJoulePerSquareMeter => 2.777777777777778e-4;
-
+        protected override double DecawattHoursPerSquareMeterInOneJoulePerSquareMeter => 2.777777777777778e-5;
+        protected override double HectowattHoursPerSquareMeterInOneJoulePerSquareMeter => 2.777777777777778e-6;
         protected override double KilowattHoursPerSquareMeterInOneJoulePerSquareMeter => 2.777777777777778e-7;
+        protected override double MegawattHoursPerSquareMeterInOneJoulePerSquareMeter => 2.777777777777778e-10;
+        protected override double GigawattHoursPerSquareMeterInOneJoulePerSquareMeter => 2.777777777777778e-13;
+        protected override double TerawattHoursPerSquareMeterInOneJoulePerSquareMeter => 2.777777777777778e-16;
+        protected override double PetawattHoursPerSquareMeterInOneJoulePerSquareMeter => 2.777777777777778e-19;
+        protected override double ExawattHoursPerSquareMeterInOneJoulePerSquareMeter => 2.777777777777778e-22;
+        protected override double ZettawattHoursPerSquareMeterInOneJoulePerSquareMeter => 2.777777777777778e-25;
+        protected override double YottawattHoursPerSquareMeterInOneJoulePerSquareMeter => 2.777777777777778e-28;
+        protected override double QutrawattHoursPerSquareMeterInOneJoulePerSquareMeter => 2.777777777777778e-31;
+        protected override double VettawattHoursPerSquareMeterInOneJoulePerSquareMeter => 2.777777777777778e-34;
     }
 }

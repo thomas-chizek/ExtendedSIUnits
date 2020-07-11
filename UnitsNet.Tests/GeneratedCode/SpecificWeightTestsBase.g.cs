@@ -34,11 +34,6 @@ namespace UnitsNet.Tests
 // ReSharper disable once PartialTypeWithSinglePart
     public abstract partial class SpecificWeightTestsBase
     {
-        protected abstract double AttonewtonsPerCubicCentimeterInOneNewtonPerCubicMeter { get; }
-        protected abstract double AttonewtonsPerCubicMeterInOneNewtonPerCubicMeter { get; }
-        protected abstract double AttonewtonsPerCubicMillimeterInOneNewtonPerCubicMeter { get; }
-        protected abstract double AttopoundsForcePerCubicFootInOneNewtonPerCubicMeter { get; }
-        protected abstract double AttopoundsForcePerCubicInchInOneNewtonPerCubicMeter { get; }
         protected abstract double CentinewtonsPerCubicCentimeterInOneNewtonPerCubicMeter { get; }
         protected abstract double CentinewtonsPerCubicMeterInOneNewtonPerCubicMeter { get; }
         protected abstract double CentinewtonsPerCubicMillimeterInOneNewtonPerCubicMeter { get; }
@@ -135,21 +130,11 @@ namespace UnitsNet.Tests
         protected abstract double VettanewtonsPerCubicMillimeterInOneNewtonPerCubicMeter { get; }
         protected abstract double VettapoundsForcePerCubicFootInOneNewtonPerCubicMeter { get; }
         protected abstract double VettapoundsForcePerCubicInchInOneNewtonPerCubicMeter { get; }
-        protected abstract double YoctonewtonsPerCubicCentimeterInOneNewtonPerCubicMeter { get; }
-        protected abstract double YoctonewtonsPerCubicMeterInOneNewtonPerCubicMeter { get; }
-        protected abstract double YoctonewtonsPerCubicMillimeterInOneNewtonPerCubicMeter { get; }
-        protected abstract double YoctopoundsForcePerCubicFootInOneNewtonPerCubicMeter { get; }
-        protected abstract double YoctopoundsForcePerCubicInchInOneNewtonPerCubicMeter { get; }
         protected abstract double YottanewtonsPerCubicCentimeterInOneNewtonPerCubicMeter { get; }
         protected abstract double YottanewtonsPerCubicMeterInOneNewtonPerCubicMeter { get; }
         protected abstract double YottanewtonsPerCubicMillimeterInOneNewtonPerCubicMeter { get; }
         protected abstract double YottapoundsForcePerCubicFootInOneNewtonPerCubicMeter { get; }
         protected abstract double YottapoundsForcePerCubicInchInOneNewtonPerCubicMeter { get; }
-        protected abstract double ZeptonewtonsPerCubicCentimeterInOneNewtonPerCubicMeter { get; }
-        protected abstract double ZeptonewtonsPerCubicMeterInOneNewtonPerCubicMeter { get; }
-        protected abstract double ZeptonewtonsPerCubicMillimeterInOneNewtonPerCubicMeter { get; }
-        protected abstract double ZeptopoundsForcePerCubicFootInOneNewtonPerCubicMeter { get; }
-        protected abstract double ZeptopoundsForcePerCubicInchInOneNewtonPerCubicMeter { get; }
         protected abstract double ZettanewtonsPerCubicCentimeterInOneNewtonPerCubicMeter { get; }
         protected abstract double ZettanewtonsPerCubicMeterInOneNewtonPerCubicMeter { get; }
         protected abstract double ZettanewtonsPerCubicMillimeterInOneNewtonPerCubicMeter { get; }
@@ -157,11 +142,6 @@ namespace UnitsNet.Tests
         protected abstract double ZettapoundsForcePerCubicInchInOneNewtonPerCubicMeter { get; }
 
 // ReSharper disable VirtualMemberNeverOverriden.Global
-        protected virtual double AttonewtonsPerCubicCentimeterTolerance { get { return 1e-5; } }
-        protected virtual double AttonewtonsPerCubicMeterTolerance { get { return 1e-5; } }
-        protected virtual double AttonewtonsPerCubicMillimeterTolerance { get { return 1e-5; } }
-        protected virtual double AttopoundsForcePerCubicFootTolerance { get { return 1e-5; } }
-        protected virtual double AttopoundsForcePerCubicInchTolerance { get { return 1e-5; } }
         protected virtual double CentinewtonsPerCubicCentimeterTolerance { get { return 1e-5; } }
         protected virtual double CentinewtonsPerCubicMeterTolerance { get { return 1e-5; } }
         protected virtual double CentinewtonsPerCubicMillimeterTolerance { get { return 1e-5; } }
@@ -258,21 +238,11 @@ namespace UnitsNet.Tests
         protected virtual double VettanewtonsPerCubicMillimeterTolerance { get { return 1e-5; } }
         protected virtual double VettapoundsForcePerCubicFootTolerance { get { return 1e-5; } }
         protected virtual double VettapoundsForcePerCubicInchTolerance { get { return 1e-5; } }
-        protected virtual double YoctonewtonsPerCubicCentimeterTolerance { get { return 1e-5; } }
-        protected virtual double YoctonewtonsPerCubicMeterTolerance { get { return 1e-5; } }
-        protected virtual double YoctonewtonsPerCubicMillimeterTolerance { get { return 1e-5; } }
-        protected virtual double YoctopoundsForcePerCubicFootTolerance { get { return 1e-5; } }
-        protected virtual double YoctopoundsForcePerCubicInchTolerance { get { return 1e-5; } }
         protected virtual double YottanewtonsPerCubicCentimeterTolerance { get { return 1e-5; } }
         protected virtual double YottanewtonsPerCubicMeterTolerance { get { return 1e-5; } }
         protected virtual double YottanewtonsPerCubicMillimeterTolerance { get { return 1e-5; } }
         protected virtual double YottapoundsForcePerCubicFootTolerance { get { return 1e-5; } }
         protected virtual double YottapoundsForcePerCubicInchTolerance { get { return 1e-5; } }
-        protected virtual double ZeptonewtonsPerCubicCentimeterTolerance { get { return 1e-5; } }
-        protected virtual double ZeptonewtonsPerCubicMeterTolerance { get { return 1e-5; } }
-        protected virtual double ZeptonewtonsPerCubicMillimeterTolerance { get { return 1e-5; } }
-        protected virtual double ZeptopoundsForcePerCubicFootTolerance { get { return 1e-5; } }
-        protected virtual double ZeptopoundsForcePerCubicInchTolerance { get { return 1e-5; } }
         protected virtual double ZettanewtonsPerCubicCentimeterTolerance { get { return 1e-5; } }
         protected virtual double ZettanewtonsPerCubicMeterTolerance { get { return 1e-5; } }
         protected virtual double ZettanewtonsPerCubicMillimeterTolerance { get { return 1e-5; } }
@@ -303,11 +273,6 @@ namespace UnitsNet.Tests
         public void NewtonPerCubicMeterToSpecificWeightUnits()
         {
             SpecificWeight newtonpercubicmeter = SpecificWeight.FromNewtonsPerCubicMeter(1);
-            AssertEx.EqualTolerance(AttonewtonsPerCubicCentimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.AttonewtonsPerCubicCentimeter, AttonewtonsPerCubicCentimeterTolerance);
-            AssertEx.EqualTolerance(AttonewtonsPerCubicMeterInOneNewtonPerCubicMeter, newtonpercubicmeter.AttonewtonsPerCubicMeter, AttonewtonsPerCubicMeterTolerance);
-            AssertEx.EqualTolerance(AttonewtonsPerCubicMillimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.AttonewtonsPerCubicMillimeter, AttonewtonsPerCubicMillimeterTolerance);
-            AssertEx.EqualTolerance(AttopoundsForcePerCubicFootInOneNewtonPerCubicMeter, newtonpercubicmeter.AttopoundsForcePerCubicFoot, AttopoundsForcePerCubicFootTolerance);
-            AssertEx.EqualTolerance(AttopoundsForcePerCubicInchInOneNewtonPerCubicMeter, newtonpercubicmeter.AttopoundsForcePerCubicInch, AttopoundsForcePerCubicInchTolerance);
             AssertEx.EqualTolerance(CentinewtonsPerCubicCentimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.CentinewtonsPerCubicCentimeter, CentinewtonsPerCubicCentimeterTolerance);
             AssertEx.EqualTolerance(CentinewtonsPerCubicMeterInOneNewtonPerCubicMeter, newtonpercubicmeter.CentinewtonsPerCubicMeter, CentinewtonsPerCubicMeterTolerance);
             AssertEx.EqualTolerance(CentinewtonsPerCubicMillimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.CentinewtonsPerCubicMillimeter, CentinewtonsPerCubicMillimeterTolerance);
@@ -404,21 +369,11 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettanewtonsPerCubicMillimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.VettanewtonsPerCubicMillimeter, VettanewtonsPerCubicMillimeterTolerance);
             AssertEx.EqualTolerance(VettapoundsForcePerCubicFootInOneNewtonPerCubicMeter, newtonpercubicmeter.VettapoundsForcePerCubicFoot, VettapoundsForcePerCubicFootTolerance);
             AssertEx.EqualTolerance(VettapoundsForcePerCubicInchInOneNewtonPerCubicMeter, newtonpercubicmeter.VettapoundsForcePerCubicInch, VettapoundsForcePerCubicInchTolerance);
-            AssertEx.EqualTolerance(YoctonewtonsPerCubicCentimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.YoctonewtonsPerCubicCentimeter, YoctonewtonsPerCubicCentimeterTolerance);
-            AssertEx.EqualTolerance(YoctonewtonsPerCubicMeterInOneNewtonPerCubicMeter, newtonpercubicmeter.YoctonewtonsPerCubicMeter, YoctonewtonsPerCubicMeterTolerance);
-            AssertEx.EqualTolerance(YoctonewtonsPerCubicMillimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.YoctonewtonsPerCubicMillimeter, YoctonewtonsPerCubicMillimeterTolerance);
-            AssertEx.EqualTolerance(YoctopoundsForcePerCubicFootInOneNewtonPerCubicMeter, newtonpercubicmeter.YoctopoundsForcePerCubicFoot, YoctopoundsForcePerCubicFootTolerance);
-            AssertEx.EqualTolerance(YoctopoundsForcePerCubicInchInOneNewtonPerCubicMeter, newtonpercubicmeter.YoctopoundsForcePerCubicInch, YoctopoundsForcePerCubicInchTolerance);
             AssertEx.EqualTolerance(YottanewtonsPerCubicCentimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.YottanewtonsPerCubicCentimeter, YottanewtonsPerCubicCentimeterTolerance);
             AssertEx.EqualTolerance(YottanewtonsPerCubicMeterInOneNewtonPerCubicMeter, newtonpercubicmeter.YottanewtonsPerCubicMeter, YottanewtonsPerCubicMeterTolerance);
             AssertEx.EqualTolerance(YottanewtonsPerCubicMillimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.YottanewtonsPerCubicMillimeter, YottanewtonsPerCubicMillimeterTolerance);
             AssertEx.EqualTolerance(YottapoundsForcePerCubicFootInOneNewtonPerCubicMeter, newtonpercubicmeter.YottapoundsForcePerCubicFoot, YottapoundsForcePerCubicFootTolerance);
             AssertEx.EqualTolerance(YottapoundsForcePerCubicInchInOneNewtonPerCubicMeter, newtonpercubicmeter.YottapoundsForcePerCubicInch, YottapoundsForcePerCubicInchTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonsPerCubicCentimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.ZeptonewtonsPerCubicCentimeter, ZeptonewtonsPerCubicCentimeterTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonsPerCubicMeterInOneNewtonPerCubicMeter, newtonpercubicmeter.ZeptonewtonsPerCubicMeter, ZeptonewtonsPerCubicMeterTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonsPerCubicMillimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.ZeptonewtonsPerCubicMillimeter, ZeptonewtonsPerCubicMillimeterTolerance);
-            AssertEx.EqualTolerance(ZeptopoundsForcePerCubicFootInOneNewtonPerCubicMeter, newtonpercubicmeter.ZeptopoundsForcePerCubicFoot, ZeptopoundsForcePerCubicFootTolerance);
-            AssertEx.EqualTolerance(ZeptopoundsForcePerCubicInchInOneNewtonPerCubicMeter, newtonpercubicmeter.ZeptopoundsForcePerCubicInch, ZeptopoundsForcePerCubicInchTolerance);
             AssertEx.EqualTolerance(ZettanewtonsPerCubicCentimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.ZettanewtonsPerCubicCentimeter, ZettanewtonsPerCubicCentimeterTolerance);
             AssertEx.EqualTolerance(ZettanewtonsPerCubicMeterInOneNewtonPerCubicMeter, newtonpercubicmeter.ZettanewtonsPerCubicMeter, ZettanewtonsPerCubicMeterTolerance);
             AssertEx.EqualTolerance(ZettanewtonsPerCubicMillimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.ZettanewtonsPerCubicMillimeter, ZettanewtonsPerCubicMillimeterTolerance);
@@ -429,11 +384,6 @@ namespace UnitsNet.Tests
         [Fact]
         public void FromValueAndUnit()
         {
-            AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.AttonewtonPerCubicCentimeter).AttonewtonsPerCubicCentimeter, AttonewtonsPerCubicCentimeterTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.AttonewtonPerCubicMeter).AttonewtonsPerCubicMeter, AttonewtonsPerCubicMeterTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.AttonewtonPerCubicMillimeter).AttonewtonsPerCubicMillimeter, AttonewtonsPerCubicMillimeterTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.AttopoundForcePerCubicFoot).AttopoundsForcePerCubicFoot, AttopoundsForcePerCubicFootTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.AttopoundForcePerCubicInch).AttopoundsForcePerCubicInch, AttopoundsForcePerCubicInchTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.CentinewtonPerCubicCentimeter).CentinewtonsPerCubicCentimeter, CentinewtonsPerCubicCentimeterTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.CentinewtonPerCubicMeter).CentinewtonsPerCubicMeter, CentinewtonsPerCubicMeterTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.CentinewtonPerCubicMillimeter).CentinewtonsPerCubicMillimeter, CentinewtonsPerCubicMillimeterTolerance);
@@ -530,21 +480,11 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.VettanewtonPerCubicMillimeter).VettanewtonsPerCubicMillimeter, VettanewtonsPerCubicMillimeterTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.VettapoundForcePerCubicFoot).VettapoundsForcePerCubicFoot, VettapoundsForcePerCubicFootTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.VettapoundForcePerCubicInch).VettapoundsForcePerCubicInch, VettapoundsForcePerCubicInchTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.YoctonewtonPerCubicCentimeter).YoctonewtonsPerCubicCentimeter, YoctonewtonsPerCubicCentimeterTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.YoctonewtonPerCubicMeter).YoctonewtonsPerCubicMeter, YoctonewtonsPerCubicMeterTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.YoctonewtonPerCubicMillimeter).YoctonewtonsPerCubicMillimeter, YoctonewtonsPerCubicMillimeterTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.YoctopoundForcePerCubicFoot).YoctopoundsForcePerCubicFoot, YoctopoundsForcePerCubicFootTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.YoctopoundForcePerCubicInch).YoctopoundsForcePerCubicInch, YoctopoundsForcePerCubicInchTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.YottanewtonPerCubicCentimeter).YottanewtonsPerCubicCentimeter, YottanewtonsPerCubicCentimeterTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.YottanewtonPerCubicMeter).YottanewtonsPerCubicMeter, YottanewtonsPerCubicMeterTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.YottanewtonPerCubicMillimeter).YottanewtonsPerCubicMillimeter, YottanewtonsPerCubicMillimeterTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.YottapoundForcePerCubicFoot).YottapoundsForcePerCubicFoot, YottapoundsForcePerCubicFootTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.YottapoundForcePerCubicInch).YottapoundsForcePerCubicInch, YottapoundsForcePerCubicInchTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.ZeptonewtonPerCubicCentimeter).ZeptonewtonsPerCubicCentimeter, ZeptonewtonsPerCubicCentimeterTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.ZeptonewtonPerCubicMeter).ZeptonewtonsPerCubicMeter, ZeptonewtonsPerCubicMeterTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.ZeptonewtonPerCubicMillimeter).ZeptonewtonsPerCubicMillimeter, ZeptonewtonsPerCubicMillimeterTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.ZeptopoundForcePerCubicFoot).ZeptopoundsForcePerCubicFoot, ZeptopoundsForcePerCubicFootTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.ZeptopoundForcePerCubicInch).ZeptopoundsForcePerCubicInch, ZeptopoundsForcePerCubicInchTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.ZettanewtonPerCubicCentimeter).ZettanewtonsPerCubicCentimeter, ZettanewtonsPerCubicCentimeterTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.ZettanewtonPerCubicMeter).ZettanewtonsPerCubicMeter, ZettanewtonsPerCubicMeterTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.From(1, SpecificWeightUnit.ZettanewtonPerCubicMillimeter).ZettanewtonsPerCubicMillimeter, ZettanewtonsPerCubicMillimeterTolerance);
@@ -569,11 +509,6 @@ namespace UnitsNet.Tests
         public void As()
         {
             var newtonpercubicmeter = SpecificWeight.FromNewtonsPerCubicMeter(1);
-            AssertEx.EqualTolerance(AttonewtonsPerCubicCentimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.AttonewtonPerCubicCentimeter), AttonewtonsPerCubicCentimeterTolerance);
-            AssertEx.EqualTolerance(AttonewtonsPerCubicMeterInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.AttonewtonPerCubicMeter), AttonewtonsPerCubicMeterTolerance);
-            AssertEx.EqualTolerance(AttonewtonsPerCubicMillimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.AttonewtonPerCubicMillimeter), AttonewtonsPerCubicMillimeterTolerance);
-            AssertEx.EqualTolerance(AttopoundsForcePerCubicFootInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.AttopoundForcePerCubicFoot), AttopoundsForcePerCubicFootTolerance);
-            AssertEx.EqualTolerance(AttopoundsForcePerCubicInchInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.AttopoundForcePerCubicInch), AttopoundsForcePerCubicInchTolerance);
             AssertEx.EqualTolerance(CentinewtonsPerCubicCentimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.CentinewtonPerCubicCentimeter), CentinewtonsPerCubicCentimeterTolerance);
             AssertEx.EqualTolerance(CentinewtonsPerCubicMeterInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.CentinewtonPerCubicMeter), CentinewtonsPerCubicMeterTolerance);
             AssertEx.EqualTolerance(CentinewtonsPerCubicMillimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.CentinewtonPerCubicMillimeter), CentinewtonsPerCubicMillimeterTolerance);
@@ -670,21 +605,11 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettanewtonsPerCubicMillimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.VettanewtonPerCubicMillimeter), VettanewtonsPerCubicMillimeterTolerance);
             AssertEx.EqualTolerance(VettapoundsForcePerCubicFootInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.VettapoundForcePerCubicFoot), VettapoundsForcePerCubicFootTolerance);
             AssertEx.EqualTolerance(VettapoundsForcePerCubicInchInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.VettapoundForcePerCubicInch), VettapoundsForcePerCubicInchTolerance);
-            AssertEx.EqualTolerance(YoctonewtonsPerCubicCentimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.YoctonewtonPerCubicCentimeter), YoctonewtonsPerCubicCentimeterTolerance);
-            AssertEx.EqualTolerance(YoctonewtonsPerCubicMeterInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.YoctonewtonPerCubicMeter), YoctonewtonsPerCubicMeterTolerance);
-            AssertEx.EqualTolerance(YoctonewtonsPerCubicMillimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.YoctonewtonPerCubicMillimeter), YoctonewtonsPerCubicMillimeterTolerance);
-            AssertEx.EqualTolerance(YoctopoundsForcePerCubicFootInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.YoctopoundForcePerCubicFoot), YoctopoundsForcePerCubicFootTolerance);
-            AssertEx.EqualTolerance(YoctopoundsForcePerCubicInchInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.YoctopoundForcePerCubicInch), YoctopoundsForcePerCubicInchTolerance);
             AssertEx.EqualTolerance(YottanewtonsPerCubicCentimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.YottanewtonPerCubicCentimeter), YottanewtonsPerCubicCentimeterTolerance);
             AssertEx.EqualTolerance(YottanewtonsPerCubicMeterInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.YottanewtonPerCubicMeter), YottanewtonsPerCubicMeterTolerance);
             AssertEx.EqualTolerance(YottanewtonsPerCubicMillimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.YottanewtonPerCubicMillimeter), YottanewtonsPerCubicMillimeterTolerance);
             AssertEx.EqualTolerance(YottapoundsForcePerCubicFootInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.YottapoundForcePerCubicFoot), YottapoundsForcePerCubicFootTolerance);
             AssertEx.EqualTolerance(YottapoundsForcePerCubicInchInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.YottapoundForcePerCubicInch), YottapoundsForcePerCubicInchTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonsPerCubicCentimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.ZeptonewtonPerCubicCentimeter), ZeptonewtonsPerCubicCentimeterTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonsPerCubicMeterInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.ZeptonewtonPerCubicMeter), ZeptonewtonsPerCubicMeterTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonsPerCubicMillimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.ZeptonewtonPerCubicMillimeter), ZeptonewtonsPerCubicMillimeterTolerance);
-            AssertEx.EqualTolerance(ZeptopoundsForcePerCubicFootInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.ZeptopoundForcePerCubicFoot), ZeptopoundsForcePerCubicFootTolerance);
-            AssertEx.EqualTolerance(ZeptopoundsForcePerCubicInchInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.ZeptopoundForcePerCubicInch), ZeptopoundsForcePerCubicInchTolerance);
             AssertEx.EqualTolerance(ZettanewtonsPerCubicCentimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.ZettanewtonPerCubicCentimeter), ZettanewtonsPerCubicCentimeterTolerance);
             AssertEx.EqualTolerance(ZettanewtonsPerCubicMeterInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.ZettanewtonPerCubicMeter), ZettanewtonsPerCubicMeterTolerance);
             AssertEx.EqualTolerance(ZettanewtonsPerCubicMillimeterInOneNewtonPerCubicMeter, newtonpercubicmeter.As(SpecificWeightUnit.ZettanewtonPerCubicMillimeter), ZettanewtonsPerCubicMillimeterTolerance);
@@ -696,26 +621,6 @@ namespace UnitsNet.Tests
         public void ToUnit()
         {
             var newtonpercubicmeter = SpecificWeight.FromNewtonsPerCubicMeter(1);
-
-            var attonewtonpercubiccentimeterQuantity = newtonpercubicmeter.ToUnit(SpecificWeightUnit.AttonewtonPerCubicCentimeter);
-            AssertEx.EqualTolerance(AttonewtonsPerCubicCentimeterInOneNewtonPerCubicMeter, (double)attonewtonpercubiccentimeterQuantity.Value, AttonewtonsPerCubicCentimeterTolerance);
-            Assert.Equal(SpecificWeightUnit.AttonewtonPerCubicCentimeter, attonewtonpercubiccentimeterQuantity.Unit);
-
-            var attonewtonpercubicmeterQuantity = newtonpercubicmeter.ToUnit(SpecificWeightUnit.AttonewtonPerCubicMeter);
-            AssertEx.EqualTolerance(AttonewtonsPerCubicMeterInOneNewtonPerCubicMeter, (double)attonewtonpercubicmeterQuantity.Value, AttonewtonsPerCubicMeterTolerance);
-            Assert.Equal(SpecificWeightUnit.AttonewtonPerCubicMeter, attonewtonpercubicmeterQuantity.Unit);
-
-            var attonewtonpercubicmillimeterQuantity = newtonpercubicmeter.ToUnit(SpecificWeightUnit.AttonewtonPerCubicMillimeter);
-            AssertEx.EqualTolerance(AttonewtonsPerCubicMillimeterInOneNewtonPerCubicMeter, (double)attonewtonpercubicmillimeterQuantity.Value, AttonewtonsPerCubicMillimeterTolerance);
-            Assert.Equal(SpecificWeightUnit.AttonewtonPerCubicMillimeter, attonewtonpercubicmillimeterQuantity.Unit);
-
-            var attopoundforcepercubicfootQuantity = newtonpercubicmeter.ToUnit(SpecificWeightUnit.AttopoundForcePerCubicFoot);
-            AssertEx.EqualTolerance(AttopoundsForcePerCubicFootInOneNewtonPerCubicMeter, (double)attopoundforcepercubicfootQuantity.Value, AttopoundsForcePerCubicFootTolerance);
-            Assert.Equal(SpecificWeightUnit.AttopoundForcePerCubicFoot, attopoundforcepercubicfootQuantity.Unit);
-
-            var attopoundforcepercubicinchQuantity = newtonpercubicmeter.ToUnit(SpecificWeightUnit.AttopoundForcePerCubicInch);
-            AssertEx.EqualTolerance(AttopoundsForcePerCubicInchInOneNewtonPerCubicMeter, (double)attopoundforcepercubicinchQuantity.Value, AttopoundsForcePerCubicInchTolerance);
-            Assert.Equal(SpecificWeightUnit.AttopoundForcePerCubicInch, attopoundforcepercubicinchQuantity.Unit);
 
             var centinewtonpercubiccentimeterQuantity = newtonpercubicmeter.ToUnit(SpecificWeightUnit.CentinewtonPerCubicCentimeter);
             AssertEx.EqualTolerance(CentinewtonsPerCubicCentimeterInOneNewtonPerCubicMeter, (double)centinewtonpercubiccentimeterQuantity.Value, CentinewtonsPerCubicCentimeterTolerance);
@@ -1101,26 +1006,6 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettapoundsForcePerCubicInchInOneNewtonPerCubicMeter, (double)vettapoundforcepercubicinchQuantity.Value, VettapoundsForcePerCubicInchTolerance);
             Assert.Equal(SpecificWeightUnit.VettapoundForcePerCubicInch, vettapoundforcepercubicinchQuantity.Unit);
 
-            var yoctonewtonpercubiccentimeterQuantity = newtonpercubicmeter.ToUnit(SpecificWeightUnit.YoctonewtonPerCubicCentimeter);
-            AssertEx.EqualTolerance(YoctonewtonsPerCubicCentimeterInOneNewtonPerCubicMeter, (double)yoctonewtonpercubiccentimeterQuantity.Value, YoctonewtonsPerCubicCentimeterTolerance);
-            Assert.Equal(SpecificWeightUnit.YoctonewtonPerCubicCentimeter, yoctonewtonpercubiccentimeterQuantity.Unit);
-
-            var yoctonewtonpercubicmeterQuantity = newtonpercubicmeter.ToUnit(SpecificWeightUnit.YoctonewtonPerCubicMeter);
-            AssertEx.EqualTolerance(YoctonewtonsPerCubicMeterInOneNewtonPerCubicMeter, (double)yoctonewtonpercubicmeterQuantity.Value, YoctonewtonsPerCubicMeterTolerance);
-            Assert.Equal(SpecificWeightUnit.YoctonewtonPerCubicMeter, yoctonewtonpercubicmeterQuantity.Unit);
-
-            var yoctonewtonpercubicmillimeterQuantity = newtonpercubicmeter.ToUnit(SpecificWeightUnit.YoctonewtonPerCubicMillimeter);
-            AssertEx.EqualTolerance(YoctonewtonsPerCubicMillimeterInOneNewtonPerCubicMeter, (double)yoctonewtonpercubicmillimeterQuantity.Value, YoctonewtonsPerCubicMillimeterTolerance);
-            Assert.Equal(SpecificWeightUnit.YoctonewtonPerCubicMillimeter, yoctonewtonpercubicmillimeterQuantity.Unit);
-
-            var yoctopoundforcepercubicfootQuantity = newtonpercubicmeter.ToUnit(SpecificWeightUnit.YoctopoundForcePerCubicFoot);
-            AssertEx.EqualTolerance(YoctopoundsForcePerCubicFootInOneNewtonPerCubicMeter, (double)yoctopoundforcepercubicfootQuantity.Value, YoctopoundsForcePerCubicFootTolerance);
-            Assert.Equal(SpecificWeightUnit.YoctopoundForcePerCubicFoot, yoctopoundforcepercubicfootQuantity.Unit);
-
-            var yoctopoundforcepercubicinchQuantity = newtonpercubicmeter.ToUnit(SpecificWeightUnit.YoctopoundForcePerCubicInch);
-            AssertEx.EqualTolerance(YoctopoundsForcePerCubicInchInOneNewtonPerCubicMeter, (double)yoctopoundforcepercubicinchQuantity.Value, YoctopoundsForcePerCubicInchTolerance);
-            Assert.Equal(SpecificWeightUnit.YoctopoundForcePerCubicInch, yoctopoundforcepercubicinchQuantity.Unit);
-
             var yottanewtonpercubiccentimeterQuantity = newtonpercubicmeter.ToUnit(SpecificWeightUnit.YottanewtonPerCubicCentimeter);
             AssertEx.EqualTolerance(YottanewtonsPerCubicCentimeterInOneNewtonPerCubicMeter, (double)yottanewtonpercubiccentimeterQuantity.Value, YottanewtonsPerCubicCentimeterTolerance);
             Assert.Equal(SpecificWeightUnit.YottanewtonPerCubicCentimeter, yottanewtonpercubiccentimeterQuantity.Unit);
@@ -1140,26 +1025,6 @@ namespace UnitsNet.Tests
             var yottapoundforcepercubicinchQuantity = newtonpercubicmeter.ToUnit(SpecificWeightUnit.YottapoundForcePerCubicInch);
             AssertEx.EqualTolerance(YottapoundsForcePerCubicInchInOneNewtonPerCubicMeter, (double)yottapoundforcepercubicinchQuantity.Value, YottapoundsForcePerCubicInchTolerance);
             Assert.Equal(SpecificWeightUnit.YottapoundForcePerCubicInch, yottapoundforcepercubicinchQuantity.Unit);
-
-            var zeptonewtonpercubiccentimeterQuantity = newtonpercubicmeter.ToUnit(SpecificWeightUnit.ZeptonewtonPerCubicCentimeter);
-            AssertEx.EqualTolerance(ZeptonewtonsPerCubicCentimeterInOneNewtonPerCubicMeter, (double)zeptonewtonpercubiccentimeterQuantity.Value, ZeptonewtonsPerCubicCentimeterTolerance);
-            Assert.Equal(SpecificWeightUnit.ZeptonewtonPerCubicCentimeter, zeptonewtonpercubiccentimeterQuantity.Unit);
-
-            var zeptonewtonpercubicmeterQuantity = newtonpercubicmeter.ToUnit(SpecificWeightUnit.ZeptonewtonPerCubicMeter);
-            AssertEx.EqualTolerance(ZeptonewtonsPerCubicMeterInOneNewtonPerCubicMeter, (double)zeptonewtonpercubicmeterQuantity.Value, ZeptonewtonsPerCubicMeterTolerance);
-            Assert.Equal(SpecificWeightUnit.ZeptonewtonPerCubicMeter, zeptonewtonpercubicmeterQuantity.Unit);
-
-            var zeptonewtonpercubicmillimeterQuantity = newtonpercubicmeter.ToUnit(SpecificWeightUnit.ZeptonewtonPerCubicMillimeter);
-            AssertEx.EqualTolerance(ZeptonewtonsPerCubicMillimeterInOneNewtonPerCubicMeter, (double)zeptonewtonpercubicmillimeterQuantity.Value, ZeptonewtonsPerCubicMillimeterTolerance);
-            Assert.Equal(SpecificWeightUnit.ZeptonewtonPerCubicMillimeter, zeptonewtonpercubicmillimeterQuantity.Unit);
-
-            var zeptopoundforcepercubicfootQuantity = newtonpercubicmeter.ToUnit(SpecificWeightUnit.ZeptopoundForcePerCubicFoot);
-            AssertEx.EqualTolerance(ZeptopoundsForcePerCubicFootInOneNewtonPerCubicMeter, (double)zeptopoundforcepercubicfootQuantity.Value, ZeptopoundsForcePerCubicFootTolerance);
-            Assert.Equal(SpecificWeightUnit.ZeptopoundForcePerCubicFoot, zeptopoundforcepercubicfootQuantity.Unit);
-
-            var zeptopoundforcepercubicinchQuantity = newtonpercubicmeter.ToUnit(SpecificWeightUnit.ZeptopoundForcePerCubicInch);
-            AssertEx.EqualTolerance(ZeptopoundsForcePerCubicInchInOneNewtonPerCubicMeter, (double)zeptopoundforcepercubicinchQuantity.Value, ZeptopoundsForcePerCubicInchTolerance);
-            Assert.Equal(SpecificWeightUnit.ZeptopoundForcePerCubicInch, zeptopoundforcepercubicinchQuantity.Unit);
 
             var zettanewtonpercubiccentimeterQuantity = newtonpercubicmeter.ToUnit(SpecificWeightUnit.ZettanewtonPerCubicCentimeter);
             AssertEx.EqualTolerance(ZettanewtonsPerCubicCentimeterInOneNewtonPerCubicMeter, (double)zettanewtonpercubiccentimeterQuantity.Value, ZettanewtonsPerCubicCentimeterTolerance);
@@ -1186,11 +1051,6 @@ namespace UnitsNet.Tests
         public void ConversionRoundTrip()
         {
             SpecificWeight newtonpercubicmeter = SpecificWeight.FromNewtonsPerCubicMeter(1);
-            AssertEx.EqualTolerance(1, SpecificWeight.FromAttonewtonsPerCubicCentimeter(newtonpercubicmeter.AttonewtonsPerCubicCentimeter).NewtonsPerCubicMeter, AttonewtonsPerCubicCentimeterTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.FromAttonewtonsPerCubicMeter(newtonpercubicmeter.AttonewtonsPerCubicMeter).NewtonsPerCubicMeter, AttonewtonsPerCubicMeterTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.FromAttonewtonsPerCubicMillimeter(newtonpercubicmeter.AttonewtonsPerCubicMillimeter).NewtonsPerCubicMeter, AttonewtonsPerCubicMillimeterTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.FromAttopoundsForcePerCubicFoot(newtonpercubicmeter.AttopoundsForcePerCubicFoot).NewtonsPerCubicMeter, AttopoundsForcePerCubicFootTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.FromAttopoundsForcePerCubicInch(newtonpercubicmeter.AttopoundsForcePerCubicInch).NewtonsPerCubicMeter, AttopoundsForcePerCubicInchTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.FromCentinewtonsPerCubicCentimeter(newtonpercubicmeter.CentinewtonsPerCubicCentimeter).NewtonsPerCubicMeter, CentinewtonsPerCubicCentimeterTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.FromCentinewtonsPerCubicMeter(newtonpercubicmeter.CentinewtonsPerCubicMeter).NewtonsPerCubicMeter, CentinewtonsPerCubicMeterTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.FromCentinewtonsPerCubicMillimeter(newtonpercubicmeter.CentinewtonsPerCubicMillimeter).NewtonsPerCubicMeter, CentinewtonsPerCubicMillimeterTolerance);
@@ -1287,21 +1147,11 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, SpecificWeight.FromVettanewtonsPerCubicMillimeter(newtonpercubicmeter.VettanewtonsPerCubicMillimeter).NewtonsPerCubicMeter, VettanewtonsPerCubicMillimeterTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.FromVettapoundsForcePerCubicFoot(newtonpercubicmeter.VettapoundsForcePerCubicFoot).NewtonsPerCubicMeter, VettapoundsForcePerCubicFootTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.FromVettapoundsForcePerCubicInch(newtonpercubicmeter.VettapoundsForcePerCubicInch).NewtonsPerCubicMeter, VettapoundsForcePerCubicInchTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.FromYoctonewtonsPerCubicCentimeter(newtonpercubicmeter.YoctonewtonsPerCubicCentimeter).NewtonsPerCubicMeter, YoctonewtonsPerCubicCentimeterTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.FromYoctonewtonsPerCubicMeter(newtonpercubicmeter.YoctonewtonsPerCubicMeter).NewtonsPerCubicMeter, YoctonewtonsPerCubicMeterTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.FromYoctonewtonsPerCubicMillimeter(newtonpercubicmeter.YoctonewtonsPerCubicMillimeter).NewtonsPerCubicMeter, YoctonewtonsPerCubicMillimeterTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.FromYoctopoundsForcePerCubicFoot(newtonpercubicmeter.YoctopoundsForcePerCubicFoot).NewtonsPerCubicMeter, YoctopoundsForcePerCubicFootTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.FromYoctopoundsForcePerCubicInch(newtonpercubicmeter.YoctopoundsForcePerCubicInch).NewtonsPerCubicMeter, YoctopoundsForcePerCubicInchTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.FromYottanewtonsPerCubicCentimeter(newtonpercubicmeter.YottanewtonsPerCubicCentimeter).NewtonsPerCubicMeter, YottanewtonsPerCubicCentimeterTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.FromYottanewtonsPerCubicMeter(newtonpercubicmeter.YottanewtonsPerCubicMeter).NewtonsPerCubicMeter, YottanewtonsPerCubicMeterTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.FromYottanewtonsPerCubicMillimeter(newtonpercubicmeter.YottanewtonsPerCubicMillimeter).NewtonsPerCubicMeter, YottanewtonsPerCubicMillimeterTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.FromYottapoundsForcePerCubicFoot(newtonpercubicmeter.YottapoundsForcePerCubicFoot).NewtonsPerCubicMeter, YottapoundsForcePerCubicFootTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.FromYottapoundsForcePerCubicInch(newtonpercubicmeter.YottapoundsForcePerCubicInch).NewtonsPerCubicMeter, YottapoundsForcePerCubicInchTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.FromZeptonewtonsPerCubicCentimeter(newtonpercubicmeter.ZeptonewtonsPerCubicCentimeter).NewtonsPerCubicMeter, ZeptonewtonsPerCubicCentimeterTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.FromZeptonewtonsPerCubicMeter(newtonpercubicmeter.ZeptonewtonsPerCubicMeter).NewtonsPerCubicMeter, ZeptonewtonsPerCubicMeterTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.FromZeptonewtonsPerCubicMillimeter(newtonpercubicmeter.ZeptonewtonsPerCubicMillimeter).NewtonsPerCubicMeter, ZeptonewtonsPerCubicMillimeterTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.FromZeptopoundsForcePerCubicFoot(newtonpercubicmeter.ZeptopoundsForcePerCubicFoot).NewtonsPerCubicMeter, ZeptopoundsForcePerCubicFootTolerance);
-            AssertEx.EqualTolerance(1, SpecificWeight.FromZeptopoundsForcePerCubicInch(newtonpercubicmeter.ZeptopoundsForcePerCubicInch).NewtonsPerCubicMeter, ZeptopoundsForcePerCubicInchTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.FromZettanewtonsPerCubicCentimeter(newtonpercubicmeter.ZettanewtonsPerCubicCentimeter).NewtonsPerCubicMeter, ZettanewtonsPerCubicCentimeterTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.FromZettanewtonsPerCubicMeter(newtonpercubicmeter.ZettanewtonsPerCubicMeter).NewtonsPerCubicMeter, ZettanewtonsPerCubicMeterTolerance);
             AssertEx.EqualTolerance(1, SpecificWeight.FromZettanewtonsPerCubicMillimeter(newtonpercubicmeter.ZettanewtonsPerCubicMillimeter).NewtonsPerCubicMeter, ZettanewtonsPerCubicMillimeterTolerance);

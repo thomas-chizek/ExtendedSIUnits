@@ -159,26 +159,6 @@ namespace UnitsNet
         #region Conversion Properties
 
         /// <summary>
-        ///     Get Irradiation in AttojoulesPerSquareCentimeter.
-        /// </summary>
-        public double AttojoulesPerSquareCentimeter => As(IrradiationUnit.AttojoulePerSquareCentimeter);
-
-        /// <summary>
-        ///     Get Irradiation in AttojoulesPerSquareMeter.
-        /// </summary>
-        public double AttojoulesPerSquareMeter => As(IrradiationUnit.AttojoulePerSquareMeter);
-
-        /// <summary>
-        ///     Get Irradiation in AttojoulesPerSquareMillimeter.
-        /// </summary>
-        public double AttojoulesPerSquareMillimeter => As(IrradiationUnit.AttojoulePerSquareMillimeter);
-
-        /// <summary>
-        ///     Get Irradiation in AttowattHoursPerSquareMeter.
-        /// </summary>
-        public double AttowattHoursPerSquareMeter => As(IrradiationUnit.AttowattHourPerSquareMeter);
-
-        /// <summary>
         ///     Get Irradiation in CentijoulesPerSquareCentimeter.
         /// </summary>
         public double CentijoulesPerSquareCentimeter => As(IrradiationUnit.CentijoulePerSquareCentimeter);
@@ -539,26 +519,6 @@ namespace UnitsNet
         public double WattHoursPerSquareMeter => As(IrradiationUnit.WattHourPerSquareMeter);
 
         /// <summary>
-        ///     Get Irradiation in YoctojoulesPerSquareCentimeter.
-        /// </summary>
-        public double YoctojoulesPerSquareCentimeter => As(IrradiationUnit.YoctojoulePerSquareCentimeter);
-
-        /// <summary>
-        ///     Get Irradiation in YoctojoulesPerSquareMeter.
-        /// </summary>
-        public double YoctojoulesPerSquareMeter => As(IrradiationUnit.YoctojoulePerSquareMeter);
-
-        /// <summary>
-        ///     Get Irradiation in YoctojoulesPerSquareMillimeter.
-        /// </summary>
-        public double YoctojoulesPerSquareMillimeter => As(IrradiationUnit.YoctojoulePerSquareMillimeter);
-
-        /// <summary>
-        ///     Get Irradiation in YoctowattHoursPerSquareMeter.
-        /// </summary>
-        public double YoctowattHoursPerSquareMeter => As(IrradiationUnit.YoctowattHourPerSquareMeter);
-
-        /// <summary>
         ///     Get Irradiation in YottajoulesPerSquareCentimeter.
         /// </summary>
         public double YottajoulesPerSquareCentimeter => As(IrradiationUnit.YottajoulePerSquareCentimeter);
@@ -577,26 +537,6 @@ namespace UnitsNet
         ///     Get Irradiation in YottawattHoursPerSquareMeter.
         /// </summary>
         public double YottawattHoursPerSquareMeter => As(IrradiationUnit.YottawattHourPerSquareMeter);
-
-        /// <summary>
-        ///     Get Irradiation in ZeptojoulesPerSquareCentimeter.
-        /// </summary>
-        public double ZeptojoulesPerSquareCentimeter => As(IrradiationUnit.ZeptojoulePerSquareCentimeter);
-
-        /// <summary>
-        ///     Get Irradiation in ZeptojoulesPerSquareMeter.
-        /// </summary>
-        public double ZeptojoulesPerSquareMeter => As(IrradiationUnit.ZeptojoulePerSquareMeter);
-
-        /// <summary>
-        ///     Get Irradiation in ZeptojoulesPerSquareMillimeter.
-        /// </summary>
-        public double ZeptojoulesPerSquareMillimeter => As(IrradiationUnit.ZeptojoulePerSquareMillimeter);
-
-        /// <summary>
-        ///     Get Irradiation in ZeptowattHoursPerSquareMeter.
-        /// </summary>
-        public double ZeptowattHoursPerSquareMeter => As(IrradiationUnit.ZeptowattHourPerSquareMeter);
 
         /// <summary>
         ///     Get Irradiation in ZettajoulesPerSquareCentimeter.
@@ -648,46 +588,6 @@ namespace UnitsNet
 
         #region Static Factory Methods
 
-        /// <summary>
-        ///     Get Irradiation from AttojoulesPerSquareCentimeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Irradiation FromAttojoulesPerSquareCentimeter(double attojoulespersquarecentimeter)
-        {
-            double value = (double) attojoulespersquarecentimeter;
-            return new Irradiation(value, IrradiationUnit.AttojoulePerSquareCentimeter);
-        }
-        /// <summary>
-        ///     Get Irradiation from AttojoulesPerSquareMeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Irradiation FromAttojoulesPerSquareMeter(double attojoulespersquaremeter)
-        {
-            double value = (double) attojoulespersquaremeter;
-            return new Irradiation(value, IrradiationUnit.AttojoulePerSquareMeter);
-        }
-        /// <summary>
-        ///     Get Irradiation from AttojoulesPerSquareMillimeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Irradiation FromAttojoulesPerSquareMillimeter(double attojoulespersquaremillimeter)
-        {
-            double value = (double) attojoulespersquaremillimeter;
-            return new Irradiation(value, IrradiationUnit.AttojoulePerSquareMillimeter);
-        }
-        /// <summary>
-        ///     Get Irradiation from AttowattHoursPerSquareMeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Irradiation FromAttowattHoursPerSquareMeter(double attowatthourspersquaremeter)
-        {
-            double value = (double) attowatthourspersquaremeter;
-            return new Irradiation(value, IrradiationUnit.AttowattHourPerSquareMeter);
-        }
         /// <summary>
         ///     Get Irradiation from CentijoulesPerSquareCentimeter.
         /// </summary>
@@ -1409,46 +1309,6 @@ namespace UnitsNet
             return new Irradiation(value, IrradiationUnit.WattHourPerSquareMeter);
         }
         /// <summary>
-        ///     Get Irradiation from YoctojoulesPerSquareCentimeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Irradiation FromYoctojoulesPerSquareCentimeter(double yoctojoulespersquarecentimeter)
-        {
-            double value = (double) yoctojoulespersquarecentimeter;
-            return new Irradiation(value, IrradiationUnit.YoctojoulePerSquareCentimeter);
-        }
-        /// <summary>
-        ///     Get Irradiation from YoctojoulesPerSquareMeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Irradiation FromYoctojoulesPerSquareMeter(double yoctojoulespersquaremeter)
-        {
-            double value = (double) yoctojoulespersquaremeter;
-            return new Irradiation(value, IrradiationUnit.YoctojoulePerSquareMeter);
-        }
-        /// <summary>
-        ///     Get Irradiation from YoctojoulesPerSquareMillimeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Irradiation FromYoctojoulesPerSquareMillimeter(double yoctojoulespersquaremillimeter)
-        {
-            double value = (double) yoctojoulespersquaremillimeter;
-            return new Irradiation(value, IrradiationUnit.YoctojoulePerSquareMillimeter);
-        }
-        /// <summary>
-        ///     Get Irradiation from YoctowattHoursPerSquareMeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Irradiation FromYoctowattHoursPerSquareMeter(double yoctowatthourspersquaremeter)
-        {
-            double value = (double) yoctowatthourspersquaremeter;
-            return new Irradiation(value, IrradiationUnit.YoctowattHourPerSquareMeter);
-        }
-        /// <summary>
         ///     Get Irradiation from YottajoulesPerSquareCentimeter.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -1487,46 +1347,6 @@ namespace UnitsNet
         {
             double value = (double) yottawatthourspersquaremeter;
             return new Irradiation(value, IrradiationUnit.YottawattHourPerSquareMeter);
-        }
-        /// <summary>
-        ///     Get Irradiation from ZeptojoulesPerSquareCentimeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Irradiation FromZeptojoulesPerSquareCentimeter(double zeptojoulespersquarecentimeter)
-        {
-            double value = (double) zeptojoulespersquarecentimeter;
-            return new Irradiation(value, IrradiationUnit.ZeptojoulePerSquareCentimeter);
-        }
-        /// <summary>
-        ///     Get Irradiation from ZeptojoulesPerSquareMeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Irradiation FromZeptojoulesPerSquareMeter(double zeptojoulespersquaremeter)
-        {
-            double value = (double) zeptojoulespersquaremeter;
-            return new Irradiation(value, IrradiationUnit.ZeptojoulePerSquareMeter);
-        }
-        /// <summary>
-        ///     Get Irradiation from ZeptojoulesPerSquareMillimeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Irradiation FromZeptojoulesPerSquareMillimeter(double zeptojoulespersquaremillimeter)
-        {
-            double value = (double) zeptojoulespersquaremillimeter;
-            return new Irradiation(value, IrradiationUnit.ZeptojoulePerSquareMillimeter);
-        }
-        /// <summary>
-        ///     Get Irradiation from ZeptowattHoursPerSquareMeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Irradiation FromZeptowattHoursPerSquareMeter(double zeptowatthourspersquaremeter)
-        {
-            double value = (double) zeptowatthourspersquaremeter;
-            return new Irradiation(value, IrradiationUnit.ZeptowattHourPerSquareMeter);
         }
         /// <summary>
         ///     Get Irradiation from ZettajoulesPerSquareCentimeter.
@@ -1859,10 +1679,6 @@ namespace UnitsNet
         {
             switch(Unit)
             {
-                case IrradiationUnit.AttojoulePerSquareCentimeter: return (_value*1e4) * 1e-18d;
-                case IrradiationUnit.AttojoulePerSquareMeter: return (_value) * 1e-18d;
-                case IrradiationUnit.AttojoulePerSquareMillimeter: return (_value*1e6) * 1e-18d;
-                case IrradiationUnit.AttowattHourPerSquareMeter: return (_value*3600d) * 1e-18d;
                 case IrradiationUnit.CentijoulePerSquareCentimeter: return (_value*1e4) * 1e-2d;
                 case IrradiationUnit.CentijoulePerSquareMeter: return (_value) * 1e-2d;
                 case IrradiationUnit.CentijoulePerSquareMillimeter: return (_value*1e6) * 1e-2d;
@@ -1935,18 +1751,10 @@ namespace UnitsNet
                 case IrradiationUnit.VettajoulePerSquareMillimeter: return (_value*1e6) * 1e30d;
                 case IrradiationUnit.VettawattHourPerSquareMeter: return (_value*3600d) * 1e30d;
                 case IrradiationUnit.WattHourPerSquareMeter: return _value*3600d;
-                case IrradiationUnit.YoctojoulePerSquareCentimeter: return (_value*1e4) * 1e-24d;
-                case IrradiationUnit.YoctojoulePerSquareMeter: return (_value) * 1e-24d;
-                case IrradiationUnit.YoctojoulePerSquareMillimeter: return (_value*1e6) * 1e-24d;
-                case IrradiationUnit.YoctowattHourPerSquareMeter: return (_value*3600d) * 1e-24d;
                 case IrradiationUnit.YottajoulePerSquareCentimeter: return (_value*1e4) * 1e24d;
                 case IrradiationUnit.YottajoulePerSquareMeter: return (_value) * 1e24d;
                 case IrradiationUnit.YottajoulePerSquareMillimeter: return (_value*1e6) * 1e24d;
                 case IrradiationUnit.YottawattHourPerSquareMeter: return (_value*3600d) * 1e24d;
-                case IrradiationUnit.ZeptojoulePerSquareCentimeter: return (_value*1e4) * 1e-21d;
-                case IrradiationUnit.ZeptojoulePerSquareMeter: return (_value) * 1e-21d;
-                case IrradiationUnit.ZeptojoulePerSquareMillimeter: return (_value*1e6) * 1e-21d;
-                case IrradiationUnit.ZeptowattHourPerSquareMeter: return (_value*3600d) * 1e-21d;
                 case IrradiationUnit.ZettajoulePerSquareCentimeter: return (_value*1e4) * 1e21d;
                 case IrradiationUnit.ZettajoulePerSquareMeter: return (_value) * 1e21d;
                 case IrradiationUnit.ZettajoulePerSquareMillimeter: return (_value*1e6) * 1e21d;
@@ -1965,10 +1773,6 @@ namespace UnitsNet
 
             switch(unit)
             {
-                case IrradiationUnit.AttojoulePerSquareCentimeter: return (baseUnitValue/1e4) / 1e-18d;
-                case IrradiationUnit.AttojoulePerSquareMeter: return (baseUnitValue) / 1e-18d;
-                case IrradiationUnit.AttojoulePerSquareMillimeter: return (baseUnitValue/1e6) / 1e-18d;
-                case IrradiationUnit.AttowattHourPerSquareMeter: return (baseUnitValue/3600d) / 1e-18d;
                 case IrradiationUnit.CentijoulePerSquareCentimeter: return (baseUnitValue/1e4) / 1e-2d;
                 case IrradiationUnit.CentijoulePerSquareMeter: return (baseUnitValue) / 1e-2d;
                 case IrradiationUnit.CentijoulePerSquareMillimeter: return (baseUnitValue/1e6) / 1e-2d;
@@ -2041,18 +1845,10 @@ namespace UnitsNet
                 case IrradiationUnit.VettajoulePerSquareMillimeter: return (baseUnitValue/1e6) / 1e30d;
                 case IrradiationUnit.VettawattHourPerSquareMeter: return (baseUnitValue/3600d) / 1e30d;
                 case IrradiationUnit.WattHourPerSquareMeter: return baseUnitValue/3600d;
-                case IrradiationUnit.YoctojoulePerSquareCentimeter: return (baseUnitValue/1e4) / 1e-24d;
-                case IrradiationUnit.YoctojoulePerSquareMeter: return (baseUnitValue) / 1e-24d;
-                case IrradiationUnit.YoctojoulePerSquareMillimeter: return (baseUnitValue/1e6) / 1e-24d;
-                case IrradiationUnit.YoctowattHourPerSquareMeter: return (baseUnitValue/3600d) / 1e-24d;
                 case IrradiationUnit.YottajoulePerSquareCentimeter: return (baseUnitValue/1e4) / 1e24d;
                 case IrradiationUnit.YottajoulePerSquareMeter: return (baseUnitValue) / 1e24d;
                 case IrradiationUnit.YottajoulePerSquareMillimeter: return (baseUnitValue/1e6) / 1e24d;
                 case IrradiationUnit.YottawattHourPerSquareMeter: return (baseUnitValue/3600d) / 1e24d;
-                case IrradiationUnit.ZeptojoulePerSquareCentimeter: return (baseUnitValue/1e4) / 1e-21d;
-                case IrradiationUnit.ZeptojoulePerSquareMeter: return (baseUnitValue) / 1e-21d;
-                case IrradiationUnit.ZeptojoulePerSquareMillimeter: return (baseUnitValue/1e6) / 1e-21d;
-                case IrradiationUnit.ZeptowattHourPerSquareMeter: return (baseUnitValue/3600d) / 1e-21d;
                 case IrradiationUnit.ZettajoulePerSquareCentimeter: return (baseUnitValue/1e4) / 1e21d;
                 case IrradiationUnit.ZettajoulePerSquareMeter: return (baseUnitValue) / 1e21d;
                 case IrradiationUnit.ZettajoulePerSquareMillimeter: return (baseUnitValue/1e6) / 1e21d;

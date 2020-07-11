@@ -34,7 +34,6 @@ namespace UnitsNet.Tests
 // ReSharper disable once PartialTypeWithSinglePart
     public abstract partial class IlluminanceTestsBase
     {
-        protected abstract double AttoluxInOneLux { get; }
         protected abstract double CentiluxInOneLux { get; }
         protected abstract double DecaluxInOneLux { get; }
         protected abstract double DeciluxInOneLux { get; }
@@ -53,13 +52,10 @@ namespace UnitsNet.Tests
         protected abstract double QutraluxInOneLux { get; }
         protected abstract double TeraluxInOneLux { get; }
         protected abstract double VettaluxInOneLux { get; }
-        protected abstract double YoctoluxInOneLux { get; }
         protected abstract double YottaluxInOneLux { get; }
-        protected abstract double ZeptoluxInOneLux { get; }
         protected abstract double ZettaluxInOneLux { get; }
 
 // ReSharper disable VirtualMemberNeverOverriden.Global
-        protected virtual double AttoluxTolerance { get { return 1e-5; } }
         protected virtual double CentiluxTolerance { get { return 1e-5; } }
         protected virtual double DecaluxTolerance { get { return 1e-5; } }
         protected virtual double DeciluxTolerance { get { return 1e-5; } }
@@ -78,9 +74,7 @@ namespace UnitsNet.Tests
         protected virtual double QutraluxTolerance { get { return 1e-5; } }
         protected virtual double TeraluxTolerance { get { return 1e-5; } }
         protected virtual double VettaluxTolerance { get { return 1e-5; } }
-        protected virtual double YoctoluxTolerance { get { return 1e-5; } }
         protected virtual double YottaluxTolerance { get { return 1e-5; } }
-        protected virtual double ZeptoluxTolerance { get { return 1e-5; } }
         protected virtual double ZettaluxTolerance { get { return 1e-5; } }
 // ReSharper restore VirtualMemberNeverOverriden.Global
 
@@ -107,7 +101,6 @@ namespace UnitsNet.Tests
         public void LuxToIlluminanceUnits()
         {
             Illuminance lux = Illuminance.FromLux(1);
-            AssertEx.EqualTolerance(AttoluxInOneLux, lux.Attolux, AttoluxTolerance);
             AssertEx.EqualTolerance(CentiluxInOneLux, lux.Centilux, CentiluxTolerance);
             AssertEx.EqualTolerance(DecaluxInOneLux, lux.Decalux, DecaluxTolerance);
             AssertEx.EqualTolerance(DeciluxInOneLux, lux.Decilux, DeciluxTolerance);
@@ -126,16 +119,13 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(QutraluxInOneLux, lux.Qutralux, QutraluxTolerance);
             AssertEx.EqualTolerance(TeraluxInOneLux, lux.Teralux, TeraluxTolerance);
             AssertEx.EqualTolerance(VettaluxInOneLux, lux.Vettalux, VettaluxTolerance);
-            AssertEx.EqualTolerance(YoctoluxInOneLux, lux.Yoctolux, YoctoluxTolerance);
             AssertEx.EqualTolerance(YottaluxInOneLux, lux.Yottalux, YottaluxTolerance);
-            AssertEx.EqualTolerance(ZeptoluxInOneLux, lux.Zeptolux, ZeptoluxTolerance);
             AssertEx.EqualTolerance(ZettaluxInOneLux, lux.Zettalux, ZettaluxTolerance);
         }
 
         [Fact]
         public void FromValueAndUnit()
         {
-            AssertEx.EqualTolerance(1, Illuminance.From(1, IlluminanceUnit.Attolux).Attolux, AttoluxTolerance);
             AssertEx.EqualTolerance(1, Illuminance.From(1, IlluminanceUnit.Centilux).Centilux, CentiluxTolerance);
             AssertEx.EqualTolerance(1, Illuminance.From(1, IlluminanceUnit.Decalux).Decalux, DecaluxTolerance);
             AssertEx.EqualTolerance(1, Illuminance.From(1, IlluminanceUnit.Decilux).Decilux, DeciluxTolerance);
@@ -154,9 +144,7 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, Illuminance.From(1, IlluminanceUnit.Qutralux).Qutralux, QutraluxTolerance);
             AssertEx.EqualTolerance(1, Illuminance.From(1, IlluminanceUnit.Teralux).Teralux, TeraluxTolerance);
             AssertEx.EqualTolerance(1, Illuminance.From(1, IlluminanceUnit.Vettalux).Vettalux, VettaluxTolerance);
-            AssertEx.EqualTolerance(1, Illuminance.From(1, IlluminanceUnit.Yoctolux).Yoctolux, YoctoluxTolerance);
             AssertEx.EqualTolerance(1, Illuminance.From(1, IlluminanceUnit.Yottalux).Yottalux, YottaluxTolerance);
-            AssertEx.EqualTolerance(1, Illuminance.From(1, IlluminanceUnit.Zeptolux).Zeptolux, ZeptoluxTolerance);
             AssertEx.EqualTolerance(1, Illuminance.From(1, IlluminanceUnit.Zettalux).Zettalux, ZettaluxTolerance);
         }
 
@@ -177,7 +165,6 @@ namespace UnitsNet.Tests
         public void As()
         {
             var lux = Illuminance.FromLux(1);
-            AssertEx.EqualTolerance(AttoluxInOneLux, lux.As(IlluminanceUnit.Attolux), AttoluxTolerance);
             AssertEx.EqualTolerance(CentiluxInOneLux, lux.As(IlluminanceUnit.Centilux), CentiluxTolerance);
             AssertEx.EqualTolerance(DecaluxInOneLux, lux.As(IlluminanceUnit.Decalux), DecaluxTolerance);
             AssertEx.EqualTolerance(DeciluxInOneLux, lux.As(IlluminanceUnit.Decilux), DeciluxTolerance);
@@ -196,9 +183,7 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(QutraluxInOneLux, lux.As(IlluminanceUnit.Qutralux), QutraluxTolerance);
             AssertEx.EqualTolerance(TeraluxInOneLux, lux.As(IlluminanceUnit.Teralux), TeraluxTolerance);
             AssertEx.EqualTolerance(VettaluxInOneLux, lux.As(IlluminanceUnit.Vettalux), VettaluxTolerance);
-            AssertEx.EqualTolerance(YoctoluxInOneLux, lux.As(IlluminanceUnit.Yoctolux), YoctoluxTolerance);
             AssertEx.EqualTolerance(YottaluxInOneLux, lux.As(IlluminanceUnit.Yottalux), YottaluxTolerance);
-            AssertEx.EqualTolerance(ZeptoluxInOneLux, lux.As(IlluminanceUnit.Zeptolux), ZeptoluxTolerance);
             AssertEx.EqualTolerance(ZettaluxInOneLux, lux.As(IlluminanceUnit.Zettalux), ZettaluxTolerance);
         }
 
@@ -206,10 +191,6 @@ namespace UnitsNet.Tests
         public void ToUnit()
         {
             var lux = Illuminance.FromLux(1);
-
-            var attoluxQuantity = lux.ToUnit(IlluminanceUnit.Attolux);
-            AssertEx.EqualTolerance(AttoluxInOneLux, (double)attoluxQuantity.Value, AttoluxTolerance);
-            Assert.Equal(IlluminanceUnit.Attolux, attoluxQuantity.Unit);
 
             var centiluxQuantity = lux.ToUnit(IlluminanceUnit.Centilux);
             AssertEx.EqualTolerance(CentiluxInOneLux, (double)centiluxQuantity.Value, CentiluxTolerance);
@@ -283,17 +264,9 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettaluxInOneLux, (double)vettaluxQuantity.Value, VettaluxTolerance);
             Assert.Equal(IlluminanceUnit.Vettalux, vettaluxQuantity.Unit);
 
-            var yoctoluxQuantity = lux.ToUnit(IlluminanceUnit.Yoctolux);
-            AssertEx.EqualTolerance(YoctoluxInOneLux, (double)yoctoluxQuantity.Value, YoctoluxTolerance);
-            Assert.Equal(IlluminanceUnit.Yoctolux, yoctoluxQuantity.Unit);
-
             var yottaluxQuantity = lux.ToUnit(IlluminanceUnit.Yottalux);
             AssertEx.EqualTolerance(YottaluxInOneLux, (double)yottaluxQuantity.Value, YottaluxTolerance);
             Assert.Equal(IlluminanceUnit.Yottalux, yottaluxQuantity.Unit);
-
-            var zeptoluxQuantity = lux.ToUnit(IlluminanceUnit.Zeptolux);
-            AssertEx.EqualTolerance(ZeptoluxInOneLux, (double)zeptoluxQuantity.Value, ZeptoluxTolerance);
-            Assert.Equal(IlluminanceUnit.Zeptolux, zeptoluxQuantity.Unit);
 
             var zettaluxQuantity = lux.ToUnit(IlluminanceUnit.Zettalux);
             AssertEx.EqualTolerance(ZettaluxInOneLux, (double)zettaluxQuantity.Value, ZettaluxTolerance);
@@ -304,7 +277,6 @@ namespace UnitsNet.Tests
         public void ConversionRoundTrip()
         {
             Illuminance lux = Illuminance.FromLux(1);
-            AssertEx.EqualTolerance(1, Illuminance.FromAttolux(lux.Attolux).Lux, AttoluxTolerance);
             AssertEx.EqualTolerance(1, Illuminance.FromCentilux(lux.Centilux).Lux, CentiluxTolerance);
             AssertEx.EqualTolerance(1, Illuminance.FromDecalux(lux.Decalux).Lux, DecaluxTolerance);
             AssertEx.EqualTolerance(1, Illuminance.FromDecilux(lux.Decilux).Lux, DeciluxTolerance);
@@ -323,9 +295,7 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, Illuminance.FromQutralux(lux.Qutralux).Lux, QutraluxTolerance);
             AssertEx.EqualTolerance(1, Illuminance.FromTeralux(lux.Teralux).Lux, TeraluxTolerance);
             AssertEx.EqualTolerance(1, Illuminance.FromVettalux(lux.Vettalux).Lux, VettaluxTolerance);
-            AssertEx.EqualTolerance(1, Illuminance.FromYoctolux(lux.Yoctolux).Lux, YoctoluxTolerance);
             AssertEx.EqualTolerance(1, Illuminance.FromYottalux(lux.Yottalux).Lux, YottaluxTolerance);
-            AssertEx.EqualTolerance(1, Illuminance.FromZeptolux(lux.Zeptolux).Lux, ZeptoluxTolerance);
             AssertEx.EqualTolerance(1, Illuminance.FromZettalux(lux.Zettalux).Lux, ZettaluxTolerance);
         }
 

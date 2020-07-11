@@ -156,16 +156,6 @@ namespace UnitsNet
         #region Conversion Properties
 
         /// <summary>
-        ///     Get Irradiance in AttowattsPerSquareCentimeter.
-        /// </summary>
-        public double AttowattsPerSquareCentimeter => As(IrradianceUnit.AttowattPerSquareCentimeter);
-
-        /// <summary>
-        ///     Get Irradiance in AttowattsPerSquareMeter.
-        /// </summary>
-        public double AttowattsPerSquareMeter => As(IrradianceUnit.AttowattPerSquareMeter);
-
-        /// <summary>
         ///     Get Irradiance in CentiwattsPerSquareCentimeter.
         /// </summary>
         public double CentiwattsPerSquareCentimeter => As(IrradianceUnit.CentiwattPerSquareCentimeter);
@@ -346,16 +336,6 @@ namespace UnitsNet
         public double WattsPerSquareMeter => As(IrradianceUnit.WattPerSquareMeter);
 
         /// <summary>
-        ///     Get Irradiance in YoctowattsPerSquareCentimeter.
-        /// </summary>
-        public double YoctowattsPerSquareCentimeter => As(IrradianceUnit.YoctowattPerSquareCentimeter);
-
-        /// <summary>
-        ///     Get Irradiance in YoctowattsPerSquareMeter.
-        /// </summary>
-        public double YoctowattsPerSquareMeter => As(IrradianceUnit.YoctowattPerSquareMeter);
-
-        /// <summary>
         ///     Get Irradiance in YottawattsPerSquareCentimeter.
         /// </summary>
         public double YottawattsPerSquareCentimeter => As(IrradianceUnit.YottawattPerSquareCentimeter);
@@ -364,16 +344,6 @@ namespace UnitsNet
         ///     Get Irradiance in YottawattsPerSquareMeter.
         /// </summary>
         public double YottawattsPerSquareMeter => As(IrradianceUnit.YottawattPerSquareMeter);
-
-        /// <summary>
-        ///     Get Irradiance in ZeptowattsPerSquareCentimeter.
-        /// </summary>
-        public double ZeptowattsPerSquareCentimeter => As(IrradianceUnit.ZeptowattPerSquareCentimeter);
-
-        /// <summary>
-        ///     Get Irradiance in ZeptowattsPerSquareMeter.
-        /// </summary>
-        public double ZeptowattsPerSquareMeter => As(IrradianceUnit.ZeptowattPerSquareMeter);
 
         /// <summary>
         ///     Get Irradiance in ZettawattsPerSquareCentimeter.
@@ -415,26 +385,6 @@ namespace UnitsNet
 
         #region Static Factory Methods
 
-        /// <summary>
-        ///     Get Irradiance from AttowattsPerSquareCentimeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Irradiance FromAttowattsPerSquareCentimeter(double attowattspersquarecentimeter)
-        {
-            double value = (double) attowattspersquarecentimeter;
-            return new Irradiance(value, IrradianceUnit.AttowattPerSquareCentimeter);
-        }
-        /// <summary>
-        ///     Get Irradiance from AttowattsPerSquareMeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Irradiance FromAttowattsPerSquareMeter(double attowattspersquaremeter)
-        {
-            double value = (double) attowattspersquaremeter;
-            return new Irradiance(value, IrradianceUnit.AttowattPerSquareMeter);
-        }
         /// <summary>
         ///     Get Irradiance from CentiwattsPerSquareCentimeter.
         /// </summary>
@@ -796,26 +746,6 @@ namespace UnitsNet
             return new Irradiance(value, IrradianceUnit.WattPerSquareMeter);
         }
         /// <summary>
-        ///     Get Irradiance from YoctowattsPerSquareCentimeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Irradiance FromYoctowattsPerSquareCentimeter(double yoctowattspersquarecentimeter)
-        {
-            double value = (double) yoctowattspersquarecentimeter;
-            return new Irradiance(value, IrradianceUnit.YoctowattPerSquareCentimeter);
-        }
-        /// <summary>
-        ///     Get Irradiance from YoctowattsPerSquareMeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Irradiance FromYoctowattsPerSquareMeter(double yoctowattspersquaremeter)
-        {
-            double value = (double) yoctowattspersquaremeter;
-            return new Irradiance(value, IrradianceUnit.YoctowattPerSquareMeter);
-        }
-        /// <summary>
         ///     Get Irradiance from YottawattsPerSquareCentimeter.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -834,26 +764,6 @@ namespace UnitsNet
         {
             double value = (double) yottawattspersquaremeter;
             return new Irradiance(value, IrradianceUnit.YottawattPerSquareMeter);
-        }
-        /// <summary>
-        ///     Get Irradiance from ZeptowattsPerSquareCentimeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Irradiance FromZeptowattsPerSquareCentimeter(double zeptowattspersquarecentimeter)
-        {
-            double value = (double) zeptowattspersquarecentimeter;
-            return new Irradiance(value, IrradianceUnit.ZeptowattPerSquareCentimeter);
-        }
-        /// <summary>
-        ///     Get Irradiance from ZeptowattsPerSquareMeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Irradiance FromZeptowattsPerSquareMeter(double zeptowattspersquaremeter)
-        {
-            double value = (double) zeptowattspersquaremeter;
-            return new Irradiance(value, IrradianceUnit.ZeptowattPerSquareMeter);
         }
         /// <summary>
         ///     Get Irradiance from ZettawattsPerSquareCentimeter.
@@ -1166,8 +1076,6 @@ namespace UnitsNet
         {
             switch(Unit)
             {
-                case IrradianceUnit.AttowattPerSquareCentimeter: return (_value*10000) * 1e-18d;
-                case IrradianceUnit.AttowattPerSquareMeter: return (_value) * 1e-18d;
                 case IrradianceUnit.CentiwattPerSquareCentimeter: return (_value*10000) * 1e-2d;
                 case IrradianceUnit.CentiwattPerSquareMeter: return (_value) * 1e-2d;
                 case IrradianceUnit.DecawattPerSquareCentimeter: return (_value*10000) * 1e1d;
@@ -1204,12 +1112,8 @@ namespace UnitsNet
                 case IrradianceUnit.VettawattPerSquareMeter: return (_value) * 1e30d;
                 case IrradianceUnit.WattPerSquareCentimeter: return _value*10000;
                 case IrradianceUnit.WattPerSquareMeter: return _value;
-                case IrradianceUnit.YoctowattPerSquareCentimeter: return (_value*10000) * 1e-24d;
-                case IrradianceUnit.YoctowattPerSquareMeter: return (_value) * 1e-24d;
                 case IrradianceUnit.YottawattPerSquareCentimeter: return (_value*10000) * 1e24d;
                 case IrradianceUnit.YottawattPerSquareMeter: return (_value) * 1e24d;
-                case IrradianceUnit.ZeptowattPerSquareCentimeter: return (_value*10000) * 1e-21d;
-                case IrradianceUnit.ZeptowattPerSquareMeter: return (_value) * 1e-21d;
                 case IrradianceUnit.ZettawattPerSquareCentimeter: return (_value*10000) * 1e21d;
                 case IrradianceUnit.ZettawattPerSquareMeter: return (_value) * 1e21d;
                 default:
@@ -1226,8 +1130,6 @@ namespace UnitsNet
 
             switch(unit)
             {
-                case IrradianceUnit.AttowattPerSquareCentimeter: return (baseUnitValue*0.0001) / 1e-18d;
-                case IrradianceUnit.AttowattPerSquareMeter: return (baseUnitValue) / 1e-18d;
                 case IrradianceUnit.CentiwattPerSquareCentimeter: return (baseUnitValue*0.0001) / 1e-2d;
                 case IrradianceUnit.CentiwattPerSquareMeter: return (baseUnitValue) / 1e-2d;
                 case IrradianceUnit.DecawattPerSquareCentimeter: return (baseUnitValue*0.0001) / 1e1d;
@@ -1264,12 +1166,8 @@ namespace UnitsNet
                 case IrradianceUnit.VettawattPerSquareMeter: return (baseUnitValue) / 1e30d;
                 case IrradianceUnit.WattPerSquareCentimeter: return baseUnitValue*0.0001;
                 case IrradianceUnit.WattPerSquareMeter: return baseUnitValue;
-                case IrradianceUnit.YoctowattPerSquareCentimeter: return (baseUnitValue*0.0001) / 1e-24d;
-                case IrradianceUnit.YoctowattPerSquareMeter: return (baseUnitValue) / 1e-24d;
                 case IrradianceUnit.YottawattPerSquareCentimeter: return (baseUnitValue*0.0001) / 1e24d;
                 case IrradianceUnit.YottawattPerSquareMeter: return (baseUnitValue) / 1e24d;
-                case IrradianceUnit.ZeptowattPerSquareCentimeter: return (baseUnitValue*0.0001) / 1e-21d;
-                case IrradianceUnit.ZeptowattPerSquareMeter: return (baseUnitValue) / 1e-21d;
                 case IrradianceUnit.ZettawattPerSquareCentimeter: return (baseUnitValue*0.0001) / 1e21d;
                 case IrradianceUnit.ZettawattPerSquareMeter: return (baseUnitValue) / 1e21d;
                 default:

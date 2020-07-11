@@ -34,47 +34,72 @@ namespace UnitsNet.Tests
 // ReSharper disable once PartialTypeWithSinglePart
     public abstract partial class LengthTestsBase
     {
-        protected abstract double AttometersInOneMeter { get; }
+        protected abstract double AUsInOneMeter { get; }
         protected abstract double CentimetersInOneMeter { get; }
+        protected abstract double DecaaUsInOneMeter { get; }
+        protected abstract double DecalightDaysInOneMeter { get; }
+        protected abstract double DecalightHoursInOneMeter { get; }
+        protected abstract double DecalightMinutesInOneMeter { get; }
         protected abstract double DecalightSecondsInOneMeter { get; }
         protected abstract double DecalightYearsInOneMeter { get; }
         protected abstract double DecametersInOneMeter { get; }
         protected abstract double DecimetersInOneMeter { get; }
         protected abstract double DtpPicasInOneMeter { get; }
         protected abstract double DtpPointsInOneMeter { get; }
-        protected abstract double ExalightSecondsInOneMeter { get; }
         protected abstract double ExalightYearsInOneMeter { get; }
         protected abstract double ExametersInOneMeter { get; }
         protected abstract double FathomsInOneMeter { get; }
         protected abstract double FemtometersInOneMeter { get; }
         protected abstract double FeetInOneMeter { get; }
+        protected abstract double GigaaUsInOneMeter { get; }
+        protected abstract double GigalightDaysInOneMeter { get; }
+        protected abstract double GigalightHoursInOneMeter { get; }
+        protected abstract double GigalightMinutesInOneMeter { get; }
         protected abstract double GigalightSecondsInOneMeter { get; }
         protected abstract double GigalightYearsInOneMeter { get; }
         protected abstract double GigametersInOneMeter { get; }
         protected abstract double HandsInOneMeter { get; }
         protected abstract double HectometersInOneMeter { get; }
         protected abstract double InchesInOneMeter { get; }
+        protected abstract double KiloaUsInOneMeter { get; }
+        protected abstract double KilolightDaysInOneMeter { get; }
+        protected abstract double KilolightHoursInOneMeter { get; }
+        protected abstract double KilolightMinutesInOneMeter { get; }
         protected abstract double KilolightSecondsInOneMeter { get; }
         protected abstract double KilolightYearsInOneMeter { get; }
         protected abstract double KilometersInOneMeter { get; }
+        protected abstract double LightDaysInOneMeter { get; }
+        protected abstract double LightHoursInOneMeter { get; }
+        protected abstract double LightMinutesInOneMeter { get; }
         protected abstract double LightSecondsInOneMeter { get; }
         protected abstract double LightYearsInOneMeter { get; }
+        protected abstract double MegaaUsInOneMeter { get; }
+        protected abstract double MegalightDaysInOneMeter { get; }
+        protected abstract double MegalightHoursInOneMeter { get; }
+        protected abstract double MegalightMinutesInOneMeter { get; }
         protected abstract double MegalightSecondsInOneMeter { get; }
         protected abstract double MegalightYearsInOneMeter { get; }
         protected abstract double MegametersInOneMeter { get; }
         protected abstract double MetersInOneMeter { get; }
+        protected abstract double MicroaUsInOneMeter { get; }
         protected abstract double MicroinchesInOneMeter { get; }
+        protected abstract double MicrolightDaysInOneMeter { get; }
+        protected abstract double MicrolightHoursInOneMeter { get; }
+        protected abstract double MicrolightMinutesInOneMeter { get; }
         protected abstract double MicrolightSecondsInOneMeter { get; }
         protected abstract double MicrolightYearsInOneMeter { get; }
         protected abstract double MicrometersInOneMeter { get; }
         protected abstract double MilsInOneMeter { get; }
         protected abstract double MilesInOneMeter { get; }
+        protected abstract double MilliaUsInOneMeter { get; }
+        protected abstract double MillilightDaysInOneMeter { get; }
+        protected abstract double MillilightHoursInOneMeter { get; }
+        protected abstract double MillilightMinutesInOneMeter { get; }
         protected abstract double MillilightSecondsInOneMeter { get; }
         protected abstract double MillilightYearsInOneMeter { get; }
         protected abstract double MillimetersInOneMeter { get; }
         protected abstract double NanometersInOneMeter { get; }
         protected abstract double NauticalMilesInOneMeter { get; }
-        protected abstract double PetalightSecondsInOneMeter { get; }
         protected abstract double PetalightYearsInOneMeter { get; }
         protected abstract double PetametersInOneMeter { get; }
         protected abstract double PicometersInOneMeter { get; }
@@ -82,6 +107,10 @@ namespace UnitsNet.Tests
         protected abstract double PrinterPointsInOneMeter { get; }
         protected abstract double QutrametersInOneMeter { get; }
         protected abstract double ShacklesInOneMeter { get; }
+        protected abstract double TeraaUsInOneMeter { get; }
+        protected abstract double TeralightDaysInOneMeter { get; }
+        protected abstract double TeralightHoursInOneMeter { get; }
+        protected abstract double TeralightMinutesInOneMeter { get; }
         protected abstract double TeralightSecondsInOneMeter { get; }
         protected abstract double TeralightYearsInOneMeter { get; }
         protected abstract double TerametersInOneMeter { get; }
@@ -89,57 +118,78 @@ namespace UnitsNet.Tests
         protected abstract double UsSurveyFeetInOneMeter { get; }
         protected abstract double VettametersInOneMeter { get; }
         protected abstract double YardsInOneMeter { get; }
-        protected abstract double YoctometersInOneMeter { get; }
-        protected abstract double YottalightSecondsInOneMeter { get; }
         protected abstract double YottalightYearsInOneMeter { get; }
         protected abstract double YottametersInOneMeter { get; }
-        protected abstract double ZeptometersInOneMeter { get; }
-        protected abstract double ZettalightSecondsInOneMeter { get; }
         protected abstract double ZettalightYearsInOneMeter { get; }
         protected abstract double ZettametersInOneMeter { get; }
 
 // ReSharper disable VirtualMemberNeverOverriden.Global
-        protected virtual double AttometersTolerance { get { return 1e-5; } }
+        protected virtual double AUsTolerance { get { return 1e-5; } }
         protected virtual double CentimetersTolerance { get { return 1e-5; } }
+        protected virtual double DecaaUsTolerance { get { return 1e-5; } }
+        protected virtual double DecalightDaysTolerance { get { return 1e-5; } }
+        protected virtual double DecalightHoursTolerance { get { return 1e-5; } }
+        protected virtual double DecalightMinutesTolerance { get { return 1e-5; } }
         protected virtual double DecalightSecondsTolerance { get { return 1e-5; } }
         protected virtual double DecalightYearsTolerance { get { return 1e-5; } }
         protected virtual double DecametersTolerance { get { return 1e-5; } }
         protected virtual double DecimetersTolerance { get { return 1e-5; } }
         protected virtual double DtpPicasTolerance { get { return 1e-5; } }
         protected virtual double DtpPointsTolerance { get { return 1e-5; } }
-        protected virtual double ExalightSecondsTolerance { get { return 1e-5; } }
         protected virtual double ExalightYearsTolerance { get { return 1e-5; } }
         protected virtual double ExametersTolerance { get { return 1e-5; } }
         protected virtual double FathomsTolerance { get { return 1e-5; } }
         protected virtual double FemtometersTolerance { get { return 1e-5; } }
         protected virtual double FeetTolerance { get { return 1e-5; } }
+        protected virtual double GigaaUsTolerance { get { return 1e-5; } }
+        protected virtual double GigalightDaysTolerance { get { return 1e-5; } }
+        protected virtual double GigalightHoursTolerance { get { return 1e-5; } }
+        protected virtual double GigalightMinutesTolerance { get { return 1e-5; } }
         protected virtual double GigalightSecondsTolerance { get { return 1e-5; } }
         protected virtual double GigalightYearsTolerance { get { return 1e-5; } }
         protected virtual double GigametersTolerance { get { return 1e-5; } }
         protected virtual double HandsTolerance { get { return 1e-5; } }
         protected virtual double HectometersTolerance { get { return 1e-5; } }
         protected virtual double InchesTolerance { get { return 1e-5; } }
+        protected virtual double KiloaUsTolerance { get { return 1e-5; } }
+        protected virtual double KilolightDaysTolerance { get { return 1e-5; } }
+        protected virtual double KilolightHoursTolerance { get { return 1e-5; } }
+        protected virtual double KilolightMinutesTolerance { get { return 1e-5; } }
         protected virtual double KilolightSecondsTolerance { get { return 1e-5; } }
         protected virtual double KilolightYearsTolerance { get { return 1e-5; } }
         protected virtual double KilometersTolerance { get { return 1e-5; } }
+        protected virtual double LightDaysTolerance { get { return 1e-5; } }
+        protected virtual double LightHoursTolerance { get { return 1e-5; } }
+        protected virtual double LightMinutesTolerance { get { return 1e-5; } }
         protected virtual double LightSecondsTolerance { get { return 1e-5; } }
         protected virtual double LightYearsTolerance { get { return 1e-5; } }
+        protected virtual double MegaaUsTolerance { get { return 1e-5; } }
+        protected virtual double MegalightDaysTolerance { get { return 1e-5; } }
+        protected virtual double MegalightHoursTolerance { get { return 1e-5; } }
+        protected virtual double MegalightMinutesTolerance { get { return 1e-5; } }
         protected virtual double MegalightSecondsTolerance { get { return 1e-5; } }
         protected virtual double MegalightYearsTolerance { get { return 1e-5; } }
         protected virtual double MegametersTolerance { get { return 1e-5; } }
         protected virtual double MetersTolerance { get { return 1e-5; } }
+        protected virtual double MicroaUsTolerance { get { return 1e-5; } }
         protected virtual double MicroinchesTolerance { get { return 1e-5; } }
+        protected virtual double MicrolightDaysTolerance { get { return 1e-5; } }
+        protected virtual double MicrolightHoursTolerance { get { return 1e-5; } }
+        protected virtual double MicrolightMinutesTolerance { get { return 1e-5; } }
         protected virtual double MicrolightSecondsTolerance { get { return 1e-5; } }
         protected virtual double MicrolightYearsTolerance { get { return 1e-5; } }
         protected virtual double MicrometersTolerance { get { return 1e-5; } }
         protected virtual double MilsTolerance { get { return 1e-5; } }
         protected virtual double MilesTolerance { get { return 1e-5; } }
+        protected virtual double MilliaUsTolerance { get { return 1e-5; } }
+        protected virtual double MillilightDaysTolerance { get { return 1e-5; } }
+        protected virtual double MillilightHoursTolerance { get { return 1e-5; } }
+        protected virtual double MillilightMinutesTolerance { get { return 1e-5; } }
         protected virtual double MillilightSecondsTolerance { get { return 1e-5; } }
         protected virtual double MillilightYearsTolerance { get { return 1e-5; } }
         protected virtual double MillimetersTolerance { get { return 1e-5; } }
         protected virtual double NanometersTolerance { get { return 1e-5; } }
         protected virtual double NauticalMilesTolerance { get { return 1e-5; } }
-        protected virtual double PetalightSecondsTolerance { get { return 1e-5; } }
         protected virtual double PetalightYearsTolerance { get { return 1e-5; } }
         protected virtual double PetametersTolerance { get { return 1e-5; } }
         protected virtual double PicometersTolerance { get { return 1e-5; } }
@@ -147,6 +197,10 @@ namespace UnitsNet.Tests
         protected virtual double PrinterPointsTolerance { get { return 1e-5; } }
         protected virtual double QutrametersTolerance { get { return 1e-5; } }
         protected virtual double ShacklesTolerance { get { return 1e-5; } }
+        protected virtual double TeraaUsTolerance { get { return 1e-5; } }
+        protected virtual double TeralightDaysTolerance { get { return 1e-5; } }
+        protected virtual double TeralightHoursTolerance { get { return 1e-5; } }
+        protected virtual double TeralightMinutesTolerance { get { return 1e-5; } }
         protected virtual double TeralightSecondsTolerance { get { return 1e-5; } }
         protected virtual double TeralightYearsTolerance { get { return 1e-5; } }
         protected virtual double TerametersTolerance { get { return 1e-5; } }
@@ -154,12 +208,8 @@ namespace UnitsNet.Tests
         protected virtual double UsSurveyFeetTolerance { get { return 1e-5; } }
         protected virtual double VettametersTolerance { get { return 1e-5; } }
         protected virtual double YardsTolerance { get { return 1e-5; } }
-        protected virtual double YoctometersTolerance { get { return 1e-5; } }
-        protected virtual double YottalightSecondsTolerance { get { return 1e-5; } }
         protected virtual double YottalightYearsTolerance { get { return 1e-5; } }
         protected virtual double YottametersTolerance { get { return 1e-5; } }
-        protected virtual double ZeptometersTolerance { get { return 1e-5; } }
-        protected virtual double ZettalightSecondsTolerance { get { return 1e-5; } }
         protected virtual double ZettalightYearsTolerance { get { return 1e-5; } }
         protected virtual double ZettametersTolerance { get { return 1e-5; } }
 // ReSharper restore VirtualMemberNeverOverriden.Global
@@ -187,47 +237,72 @@ namespace UnitsNet.Tests
         public void MeterToLengthUnits()
         {
             Length meter = Length.FromMeters(1);
-            AssertEx.EqualTolerance(AttometersInOneMeter, meter.Attometers, AttometersTolerance);
+            AssertEx.EqualTolerance(AUsInOneMeter, meter.AUs, AUsTolerance);
             AssertEx.EqualTolerance(CentimetersInOneMeter, meter.Centimeters, CentimetersTolerance);
+            AssertEx.EqualTolerance(DecaaUsInOneMeter, meter.DecaaUs, DecaaUsTolerance);
+            AssertEx.EqualTolerance(DecalightDaysInOneMeter, meter.DecalightDays, DecalightDaysTolerance);
+            AssertEx.EqualTolerance(DecalightHoursInOneMeter, meter.DecalightHours, DecalightHoursTolerance);
+            AssertEx.EqualTolerance(DecalightMinutesInOneMeter, meter.DecalightMinutes, DecalightMinutesTolerance);
             AssertEx.EqualTolerance(DecalightSecondsInOneMeter, meter.DecalightSeconds, DecalightSecondsTolerance);
             AssertEx.EqualTolerance(DecalightYearsInOneMeter, meter.DecalightYears, DecalightYearsTolerance);
             AssertEx.EqualTolerance(DecametersInOneMeter, meter.Decameters, DecametersTolerance);
             AssertEx.EqualTolerance(DecimetersInOneMeter, meter.Decimeters, DecimetersTolerance);
             AssertEx.EqualTolerance(DtpPicasInOneMeter, meter.DtpPicas, DtpPicasTolerance);
             AssertEx.EqualTolerance(DtpPointsInOneMeter, meter.DtpPoints, DtpPointsTolerance);
-            AssertEx.EqualTolerance(ExalightSecondsInOneMeter, meter.ExalightSeconds, ExalightSecondsTolerance);
             AssertEx.EqualTolerance(ExalightYearsInOneMeter, meter.ExalightYears, ExalightYearsTolerance);
             AssertEx.EqualTolerance(ExametersInOneMeter, meter.Exameters, ExametersTolerance);
             AssertEx.EqualTolerance(FathomsInOneMeter, meter.Fathoms, FathomsTolerance);
             AssertEx.EqualTolerance(FemtometersInOneMeter, meter.Femtometers, FemtometersTolerance);
             AssertEx.EqualTolerance(FeetInOneMeter, meter.Feet, FeetTolerance);
+            AssertEx.EqualTolerance(GigaaUsInOneMeter, meter.GigaaUs, GigaaUsTolerance);
+            AssertEx.EqualTolerance(GigalightDaysInOneMeter, meter.GigalightDays, GigalightDaysTolerance);
+            AssertEx.EqualTolerance(GigalightHoursInOneMeter, meter.GigalightHours, GigalightHoursTolerance);
+            AssertEx.EqualTolerance(GigalightMinutesInOneMeter, meter.GigalightMinutes, GigalightMinutesTolerance);
             AssertEx.EqualTolerance(GigalightSecondsInOneMeter, meter.GigalightSeconds, GigalightSecondsTolerance);
             AssertEx.EqualTolerance(GigalightYearsInOneMeter, meter.GigalightYears, GigalightYearsTolerance);
             AssertEx.EqualTolerance(GigametersInOneMeter, meter.Gigameters, GigametersTolerance);
             AssertEx.EqualTolerance(HandsInOneMeter, meter.Hands, HandsTolerance);
             AssertEx.EqualTolerance(HectometersInOneMeter, meter.Hectometers, HectometersTolerance);
             AssertEx.EqualTolerance(InchesInOneMeter, meter.Inches, InchesTolerance);
+            AssertEx.EqualTolerance(KiloaUsInOneMeter, meter.KiloaUs, KiloaUsTolerance);
+            AssertEx.EqualTolerance(KilolightDaysInOneMeter, meter.KilolightDays, KilolightDaysTolerance);
+            AssertEx.EqualTolerance(KilolightHoursInOneMeter, meter.KilolightHours, KilolightHoursTolerance);
+            AssertEx.EqualTolerance(KilolightMinutesInOneMeter, meter.KilolightMinutes, KilolightMinutesTolerance);
             AssertEx.EqualTolerance(KilolightSecondsInOneMeter, meter.KilolightSeconds, KilolightSecondsTolerance);
             AssertEx.EqualTolerance(KilolightYearsInOneMeter, meter.KilolightYears, KilolightYearsTolerance);
             AssertEx.EqualTolerance(KilometersInOneMeter, meter.Kilometers, KilometersTolerance);
+            AssertEx.EqualTolerance(LightDaysInOneMeter, meter.LightDays, LightDaysTolerance);
+            AssertEx.EqualTolerance(LightHoursInOneMeter, meter.LightHours, LightHoursTolerance);
+            AssertEx.EqualTolerance(LightMinutesInOneMeter, meter.LightMinutes, LightMinutesTolerance);
             AssertEx.EqualTolerance(LightSecondsInOneMeter, meter.LightSeconds, LightSecondsTolerance);
             AssertEx.EqualTolerance(LightYearsInOneMeter, meter.LightYears, LightYearsTolerance);
+            AssertEx.EqualTolerance(MegaaUsInOneMeter, meter.MegaaUs, MegaaUsTolerance);
+            AssertEx.EqualTolerance(MegalightDaysInOneMeter, meter.MegalightDays, MegalightDaysTolerance);
+            AssertEx.EqualTolerance(MegalightHoursInOneMeter, meter.MegalightHours, MegalightHoursTolerance);
+            AssertEx.EqualTolerance(MegalightMinutesInOneMeter, meter.MegalightMinutes, MegalightMinutesTolerance);
             AssertEx.EqualTolerance(MegalightSecondsInOneMeter, meter.MegalightSeconds, MegalightSecondsTolerance);
             AssertEx.EqualTolerance(MegalightYearsInOneMeter, meter.MegalightYears, MegalightYearsTolerance);
             AssertEx.EqualTolerance(MegametersInOneMeter, meter.Megameters, MegametersTolerance);
             AssertEx.EqualTolerance(MetersInOneMeter, meter.Meters, MetersTolerance);
+            AssertEx.EqualTolerance(MicroaUsInOneMeter, meter.MicroaUs, MicroaUsTolerance);
             AssertEx.EqualTolerance(MicroinchesInOneMeter, meter.Microinches, MicroinchesTolerance);
+            AssertEx.EqualTolerance(MicrolightDaysInOneMeter, meter.MicrolightDays, MicrolightDaysTolerance);
+            AssertEx.EqualTolerance(MicrolightHoursInOneMeter, meter.MicrolightHours, MicrolightHoursTolerance);
+            AssertEx.EqualTolerance(MicrolightMinutesInOneMeter, meter.MicrolightMinutes, MicrolightMinutesTolerance);
             AssertEx.EqualTolerance(MicrolightSecondsInOneMeter, meter.MicrolightSeconds, MicrolightSecondsTolerance);
             AssertEx.EqualTolerance(MicrolightYearsInOneMeter, meter.MicrolightYears, MicrolightYearsTolerance);
             AssertEx.EqualTolerance(MicrometersInOneMeter, meter.Micrometers, MicrometersTolerance);
             AssertEx.EqualTolerance(MilsInOneMeter, meter.Mils, MilsTolerance);
             AssertEx.EqualTolerance(MilesInOneMeter, meter.Miles, MilesTolerance);
+            AssertEx.EqualTolerance(MilliaUsInOneMeter, meter.MilliaUs, MilliaUsTolerance);
+            AssertEx.EqualTolerance(MillilightDaysInOneMeter, meter.MillilightDays, MillilightDaysTolerance);
+            AssertEx.EqualTolerance(MillilightHoursInOneMeter, meter.MillilightHours, MillilightHoursTolerance);
+            AssertEx.EqualTolerance(MillilightMinutesInOneMeter, meter.MillilightMinutes, MillilightMinutesTolerance);
             AssertEx.EqualTolerance(MillilightSecondsInOneMeter, meter.MillilightSeconds, MillilightSecondsTolerance);
             AssertEx.EqualTolerance(MillilightYearsInOneMeter, meter.MillilightYears, MillilightYearsTolerance);
             AssertEx.EqualTolerance(MillimetersInOneMeter, meter.Millimeters, MillimetersTolerance);
             AssertEx.EqualTolerance(NanometersInOneMeter, meter.Nanometers, NanometersTolerance);
             AssertEx.EqualTolerance(NauticalMilesInOneMeter, meter.NauticalMiles, NauticalMilesTolerance);
-            AssertEx.EqualTolerance(PetalightSecondsInOneMeter, meter.PetalightSeconds, PetalightSecondsTolerance);
             AssertEx.EqualTolerance(PetalightYearsInOneMeter, meter.PetalightYears, PetalightYearsTolerance);
             AssertEx.EqualTolerance(PetametersInOneMeter, meter.Petameters, PetametersTolerance);
             AssertEx.EqualTolerance(PicometersInOneMeter, meter.Picometers, PicometersTolerance);
@@ -235,6 +310,10 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(PrinterPointsInOneMeter, meter.PrinterPoints, PrinterPointsTolerance);
             AssertEx.EqualTolerance(QutrametersInOneMeter, meter.Qutrameters, QutrametersTolerance);
             AssertEx.EqualTolerance(ShacklesInOneMeter, meter.Shackles, ShacklesTolerance);
+            AssertEx.EqualTolerance(TeraaUsInOneMeter, meter.TeraaUs, TeraaUsTolerance);
+            AssertEx.EqualTolerance(TeralightDaysInOneMeter, meter.TeralightDays, TeralightDaysTolerance);
+            AssertEx.EqualTolerance(TeralightHoursInOneMeter, meter.TeralightHours, TeralightHoursTolerance);
+            AssertEx.EqualTolerance(TeralightMinutesInOneMeter, meter.TeralightMinutes, TeralightMinutesTolerance);
             AssertEx.EqualTolerance(TeralightSecondsInOneMeter, meter.TeralightSeconds, TeralightSecondsTolerance);
             AssertEx.EqualTolerance(TeralightYearsInOneMeter, meter.TeralightYears, TeralightYearsTolerance);
             AssertEx.EqualTolerance(TerametersInOneMeter, meter.Terameters, TerametersTolerance);
@@ -242,12 +321,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(UsSurveyFeetInOneMeter, meter.UsSurveyFeet, UsSurveyFeetTolerance);
             AssertEx.EqualTolerance(VettametersInOneMeter, meter.Vettameters, VettametersTolerance);
             AssertEx.EqualTolerance(YardsInOneMeter, meter.Yards, YardsTolerance);
-            AssertEx.EqualTolerance(YoctometersInOneMeter, meter.Yoctometers, YoctometersTolerance);
-            AssertEx.EqualTolerance(YottalightSecondsInOneMeter, meter.YottalightSeconds, YottalightSecondsTolerance);
             AssertEx.EqualTolerance(YottalightYearsInOneMeter, meter.YottalightYears, YottalightYearsTolerance);
             AssertEx.EqualTolerance(YottametersInOneMeter, meter.Yottameters, YottametersTolerance);
-            AssertEx.EqualTolerance(ZeptometersInOneMeter, meter.Zeptometers, ZeptometersTolerance);
-            AssertEx.EqualTolerance(ZettalightSecondsInOneMeter, meter.ZettalightSeconds, ZettalightSecondsTolerance);
             AssertEx.EqualTolerance(ZettalightYearsInOneMeter, meter.ZettalightYears, ZettalightYearsTolerance);
             AssertEx.EqualTolerance(ZettametersInOneMeter, meter.Zettameters, ZettametersTolerance);
         }
@@ -255,47 +330,72 @@ namespace UnitsNet.Tests
         [Fact]
         public void FromValueAndUnit()
         {
-            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Attometer).Attometers, AttometersTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.AU).AUs, AUsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Centimeter).Centimeters, CentimetersTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.DecaaU).DecaaUs, DecaaUsTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.DecalightDay).DecalightDays, DecalightDaysTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.DecalightHour).DecalightHours, DecalightHoursTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.DecalightMinute).DecalightMinutes, DecalightMinutesTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.DecalightSecond).DecalightSeconds, DecalightSecondsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.DecalightYear).DecalightYears, DecalightYearsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Decameter).Decameters, DecametersTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Decimeter).Decimeters, DecimetersTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.DtpPica).DtpPicas, DtpPicasTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.DtpPoint).DtpPoints, DtpPointsTolerance);
-            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.ExalightSecond).ExalightSeconds, ExalightSecondsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.ExalightYear).ExalightYears, ExalightYearsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Exameter).Exameters, ExametersTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Fathom).Fathoms, FathomsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Femtometer).Femtometers, FemtometersTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Foot).Feet, FeetTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.GigaaU).GigaaUs, GigaaUsTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.GigalightDay).GigalightDays, GigalightDaysTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.GigalightHour).GigalightHours, GigalightHoursTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.GigalightMinute).GigalightMinutes, GigalightMinutesTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.GigalightSecond).GigalightSeconds, GigalightSecondsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.GigalightYear).GigalightYears, GigalightYearsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Gigameter).Gigameters, GigametersTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Hand).Hands, HandsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Hectometer).Hectometers, HectometersTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Inch).Inches, InchesTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.KiloaU).KiloaUs, KiloaUsTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.KilolightDay).KilolightDays, KilolightDaysTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.KilolightHour).KilolightHours, KilolightHoursTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.KilolightMinute).KilolightMinutes, KilolightMinutesTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.KilolightSecond).KilolightSeconds, KilolightSecondsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.KilolightYear).KilolightYears, KilolightYearsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Kilometer).Kilometers, KilometersTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.LightDay).LightDays, LightDaysTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.LightHour).LightHours, LightHoursTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.LightMinute).LightMinutes, LightMinutesTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.LightSecond).LightSeconds, LightSecondsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.LightYear).LightYears, LightYearsTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.MegaaU).MegaaUs, MegaaUsTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.MegalightDay).MegalightDays, MegalightDaysTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.MegalightHour).MegalightHours, MegalightHoursTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.MegalightMinute).MegalightMinutes, MegalightMinutesTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.MegalightSecond).MegalightSeconds, MegalightSecondsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.MegalightYear).MegalightYears, MegalightYearsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Megameter).Megameters, MegametersTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Meter).Meters, MetersTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.MicroaU).MicroaUs, MicroaUsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Microinch).Microinches, MicroinchesTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.MicrolightDay).MicrolightDays, MicrolightDaysTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.MicrolightHour).MicrolightHours, MicrolightHoursTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.MicrolightMinute).MicrolightMinutes, MicrolightMinutesTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.MicrolightSecond).MicrolightSeconds, MicrolightSecondsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.MicrolightYear).MicrolightYears, MicrolightYearsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Micrometer).Micrometers, MicrometersTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Mil).Mils, MilsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Mile).Miles, MilesTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.MilliaU).MilliaUs, MilliaUsTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.MillilightDay).MillilightDays, MillilightDaysTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.MillilightHour).MillilightHours, MillilightHoursTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.MillilightMinute).MillilightMinutes, MillilightMinutesTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.MillilightSecond).MillilightSeconds, MillilightSecondsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.MillilightYear).MillilightYears, MillilightYearsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Millimeter).Millimeters, MillimetersTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Nanometer).Nanometers, NanometersTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.NauticalMile).NauticalMiles, NauticalMilesTolerance);
-            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.PetalightSecond).PetalightSeconds, PetalightSecondsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.PetalightYear).PetalightYears, PetalightYearsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Petameter).Petameters, PetametersTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Picometer).Picometers, PicometersTolerance);
@@ -303,6 +403,10 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.PrinterPoint).PrinterPoints, PrinterPointsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Qutrameter).Qutrameters, QutrametersTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Shackle).Shackles, ShacklesTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.TeraaU).TeraaUs, TeraaUsTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.TeralightDay).TeralightDays, TeralightDaysTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.TeralightHour).TeralightHours, TeralightHoursTolerance);
+            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.TeralightMinute).TeralightMinutes, TeralightMinutesTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.TeralightSecond).TeralightSeconds, TeralightSecondsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.TeralightYear).TeralightYears, TeralightYearsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Terameter).Terameters, TerametersTolerance);
@@ -310,12 +414,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.UsSurveyFoot).UsSurveyFeet, UsSurveyFeetTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Vettameter).Vettameters, VettametersTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Yard).Yards, YardsTolerance);
-            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Yoctometer).Yoctometers, YoctometersTolerance);
-            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.YottalightSecond).YottalightSeconds, YottalightSecondsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.YottalightYear).YottalightYears, YottalightYearsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Yottameter).Yottameters, YottametersTolerance);
-            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Zeptometer).Zeptometers, ZeptometersTolerance);
-            AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.ZettalightSecond).ZettalightSeconds, ZettalightSecondsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.ZettalightYear).ZettalightYears, ZettalightYearsTolerance);
             AssertEx.EqualTolerance(1, Length.From(1, LengthUnit.Zettameter).Zettameters, ZettametersTolerance);
         }
@@ -337,47 +437,72 @@ namespace UnitsNet.Tests
         public void As()
         {
             var meter = Length.FromMeters(1);
-            AssertEx.EqualTolerance(AttometersInOneMeter, meter.As(LengthUnit.Attometer), AttometersTolerance);
+            AssertEx.EqualTolerance(AUsInOneMeter, meter.As(LengthUnit.AU), AUsTolerance);
             AssertEx.EqualTolerance(CentimetersInOneMeter, meter.As(LengthUnit.Centimeter), CentimetersTolerance);
+            AssertEx.EqualTolerance(DecaaUsInOneMeter, meter.As(LengthUnit.DecaaU), DecaaUsTolerance);
+            AssertEx.EqualTolerance(DecalightDaysInOneMeter, meter.As(LengthUnit.DecalightDay), DecalightDaysTolerance);
+            AssertEx.EqualTolerance(DecalightHoursInOneMeter, meter.As(LengthUnit.DecalightHour), DecalightHoursTolerance);
+            AssertEx.EqualTolerance(DecalightMinutesInOneMeter, meter.As(LengthUnit.DecalightMinute), DecalightMinutesTolerance);
             AssertEx.EqualTolerance(DecalightSecondsInOneMeter, meter.As(LengthUnit.DecalightSecond), DecalightSecondsTolerance);
             AssertEx.EqualTolerance(DecalightYearsInOneMeter, meter.As(LengthUnit.DecalightYear), DecalightYearsTolerance);
             AssertEx.EqualTolerance(DecametersInOneMeter, meter.As(LengthUnit.Decameter), DecametersTolerance);
             AssertEx.EqualTolerance(DecimetersInOneMeter, meter.As(LengthUnit.Decimeter), DecimetersTolerance);
             AssertEx.EqualTolerance(DtpPicasInOneMeter, meter.As(LengthUnit.DtpPica), DtpPicasTolerance);
             AssertEx.EqualTolerance(DtpPointsInOneMeter, meter.As(LengthUnit.DtpPoint), DtpPointsTolerance);
-            AssertEx.EqualTolerance(ExalightSecondsInOneMeter, meter.As(LengthUnit.ExalightSecond), ExalightSecondsTolerance);
             AssertEx.EqualTolerance(ExalightYearsInOneMeter, meter.As(LengthUnit.ExalightYear), ExalightYearsTolerance);
             AssertEx.EqualTolerance(ExametersInOneMeter, meter.As(LengthUnit.Exameter), ExametersTolerance);
             AssertEx.EqualTolerance(FathomsInOneMeter, meter.As(LengthUnit.Fathom), FathomsTolerance);
             AssertEx.EqualTolerance(FemtometersInOneMeter, meter.As(LengthUnit.Femtometer), FemtometersTolerance);
             AssertEx.EqualTolerance(FeetInOneMeter, meter.As(LengthUnit.Foot), FeetTolerance);
+            AssertEx.EqualTolerance(GigaaUsInOneMeter, meter.As(LengthUnit.GigaaU), GigaaUsTolerance);
+            AssertEx.EqualTolerance(GigalightDaysInOneMeter, meter.As(LengthUnit.GigalightDay), GigalightDaysTolerance);
+            AssertEx.EqualTolerance(GigalightHoursInOneMeter, meter.As(LengthUnit.GigalightHour), GigalightHoursTolerance);
+            AssertEx.EqualTolerance(GigalightMinutesInOneMeter, meter.As(LengthUnit.GigalightMinute), GigalightMinutesTolerance);
             AssertEx.EqualTolerance(GigalightSecondsInOneMeter, meter.As(LengthUnit.GigalightSecond), GigalightSecondsTolerance);
             AssertEx.EqualTolerance(GigalightYearsInOneMeter, meter.As(LengthUnit.GigalightYear), GigalightYearsTolerance);
             AssertEx.EqualTolerance(GigametersInOneMeter, meter.As(LengthUnit.Gigameter), GigametersTolerance);
             AssertEx.EqualTolerance(HandsInOneMeter, meter.As(LengthUnit.Hand), HandsTolerance);
             AssertEx.EqualTolerance(HectometersInOneMeter, meter.As(LengthUnit.Hectometer), HectometersTolerance);
             AssertEx.EqualTolerance(InchesInOneMeter, meter.As(LengthUnit.Inch), InchesTolerance);
+            AssertEx.EqualTolerance(KiloaUsInOneMeter, meter.As(LengthUnit.KiloaU), KiloaUsTolerance);
+            AssertEx.EqualTolerance(KilolightDaysInOneMeter, meter.As(LengthUnit.KilolightDay), KilolightDaysTolerance);
+            AssertEx.EqualTolerance(KilolightHoursInOneMeter, meter.As(LengthUnit.KilolightHour), KilolightHoursTolerance);
+            AssertEx.EqualTolerance(KilolightMinutesInOneMeter, meter.As(LengthUnit.KilolightMinute), KilolightMinutesTolerance);
             AssertEx.EqualTolerance(KilolightSecondsInOneMeter, meter.As(LengthUnit.KilolightSecond), KilolightSecondsTolerance);
             AssertEx.EqualTolerance(KilolightYearsInOneMeter, meter.As(LengthUnit.KilolightYear), KilolightYearsTolerance);
             AssertEx.EqualTolerance(KilometersInOneMeter, meter.As(LengthUnit.Kilometer), KilometersTolerance);
+            AssertEx.EqualTolerance(LightDaysInOneMeter, meter.As(LengthUnit.LightDay), LightDaysTolerance);
+            AssertEx.EqualTolerance(LightHoursInOneMeter, meter.As(LengthUnit.LightHour), LightHoursTolerance);
+            AssertEx.EqualTolerance(LightMinutesInOneMeter, meter.As(LengthUnit.LightMinute), LightMinutesTolerance);
             AssertEx.EqualTolerance(LightSecondsInOneMeter, meter.As(LengthUnit.LightSecond), LightSecondsTolerance);
             AssertEx.EqualTolerance(LightYearsInOneMeter, meter.As(LengthUnit.LightYear), LightYearsTolerance);
+            AssertEx.EqualTolerance(MegaaUsInOneMeter, meter.As(LengthUnit.MegaaU), MegaaUsTolerance);
+            AssertEx.EqualTolerance(MegalightDaysInOneMeter, meter.As(LengthUnit.MegalightDay), MegalightDaysTolerance);
+            AssertEx.EqualTolerance(MegalightHoursInOneMeter, meter.As(LengthUnit.MegalightHour), MegalightHoursTolerance);
+            AssertEx.EqualTolerance(MegalightMinutesInOneMeter, meter.As(LengthUnit.MegalightMinute), MegalightMinutesTolerance);
             AssertEx.EqualTolerance(MegalightSecondsInOneMeter, meter.As(LengthUnit.MegalightSecond), MegalightSecondsTolerance);
             AssertEx.EqualTolerance(MegalightYearsInOneMeter, meter.As(LengthUnit.MegalightYear), MegalightYearsTolerance);
             AssertEx.EqualTolerance(MegametersInOneMeter, meter.As(LengthUnit.Megameter), MegametersTolerance);
             AssertEx.EqualTolerance(MetersInOneMeter, meter.As(LengthUnit.Meter), MetersTolerance);
+            AssertEx.EqualTolerance(MicroaUsInOneMeter, meter.As(LengthUnit.MicroaU), MicroaUsTolerance);
             AssertEx.EqualTolerance(MicroinchesInOneMeter, meter.As(LengthUnit.Microinch), MicroinchesTolerance);
+            AssertEx.EqualTolerance(MicrolightDaysInOneMeter, meter.As(LengthUnit.MicrolightDay), MicrolightDaysTolerance);
+            AssertEx.EqualTolerance(MicrolightHoursInOneMeter, meter.As(LengthUnit.MicrolightHour), MicrolightHoursTolerance);
+            AssertEx.EqualTolerance(MicrolightMinutesInOneMeter, meter.As(LengthUnit.MicrolightMinute), MicrolightMinutesTolerance);
             AssertEx.EqualTolerance(MicrolightSecondsInOneMeter, meter.As(LengthUnit.MicrolightSecond), MicrolightSecondsTolerance);
             AssertEx.EqualTolerance(MicrolightYearsInOneMeter, meter.As(LengthUnit.MicrolightYear), MicrolightYearsTolerance);
             AssertEx.EqualTolerance(MicrometersInOneMeter, meter.As(LengthUnit.Micrometer), MicrometersTolerance);
             AssertEx.EqualTolerance(MilsInOneMeter, meter.As(LengthUnit.Mil), MilsTolerance);
             AssertEx.EqualTolerance(MilesInOneMeter, meter.As(LengthUnit.Mile), MilesTolerance);
+            AssertEx.EqualTolerance(MilliaUsInOneMeter, meter.As(LengthUnit.MilliaU), MilliaUsTolerance);
+            AssertEx.EqualTolerance(MillilightDaysInOneMeter, meter.As(LengthUnit.MillilightDay), MillilightDaysTolerance);
+            AssertEx.EqualTolerance(MillilightHoursInOneMeter, meter.As(LengthUnit.MillilightHour), MillilightHoursTolerance);
+            AssertEx.EqualTolerance(MillilightMinutesInOneMeter, meter.As(LengthUnit.MillilightMinute), MillilightMinutesTolerance);
             AssertEx.EqualTolerance(MillilightSecondsInOneMeter, meter.As(LengthUnit.MillilightSecond), MillilightSecondsTolerance);
             AssertEx.EqualTolerance(MillilightYearsInOneMeter, meter.As(LengthUnit.MillilightYear), MillilightYearsTolerance);
             AssertEx.EqualTolerance(MillimetersInOneMeter, meter.As(LengthUnit.Millimeter), MillimetersTolerance);
             AssertEx.EqualTolerance(NanometersInOneMeter, meter.As(LengthUnit.Nanometer), NanometersTolerance);
             AssertEx.EqualTolerance(NauticalMilesInOneMeter, meter.As(LengthUnit.NauticalMile), NauticalMilesTolerance);
-            AssertEx.EqualTolerance(PetalightSecondsInOneMeter, meter.As(LengthUnit.PetalightSecond), PetalightSecondsTolerance);
             AssertEx.EqualTolerance(PetalightYearsInOneMeter, meter.As(LengthUnit.PetalightYear), PetalightYearsTolerance);
             AssertEx.EqualTolerance(PetametersInOneMeter, meter.As(LengthUnit.Petameter), PetametersTolerance);
             AssertEx.EqualTolerance(PicometersInOneMeter, meter.As(LengthUnit.Picometer), PicometersTolerance);
@@ -385,6 +510,10 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(PrinterPointsInOneMeter, meter.As(LengthUnit.PrinterPoint), PrinterPointsTolerance);
             AssertEx.EqualTolerance(QutrametersInOneMeter, meter.As(LengthUnit.Qutrameter), QutrametersTolerance);
             AssertEx.EqualTolerance(ShacklesInOneMeter, meter.As(LengthUnit.Shackle), ShacklesTolerance);
+            AssertEx.EqualTolerance(TeraaUsInOneMeter, meter.As(LengthUnit.TeraaU), TeraaUsTolerance);
+            AssertEx.EqualTolerance(TeralightDaysInOneMeter, meter.As(LengthUnit.TeralightDay), TeralightDaysTolerance);
+            AssertEx.EqualTolerance(TeralightHoursInOneMeter, meter.As(LengthUnit.TeralightHour), TeralightHoursTolerance);
+            AssertEx.EqualTolerance(TeralightMinutesInOneMeter, meter.As(LengthUnit.TeralightMinute), TeralightMinutesTolerance);
             AssertEx.EqualTolerance(TeralightSecondsInOneMeter, meter.As(LengthUnit.TeralightSecond), TeralightSecondsTolerance);
             AssertEx.EqualTolerance(TeralightYearsInOneMeter, meter.As(LengthUnit.TeralightYear), TeralightYearsTolerance);
             AssertEx.EqualTolerance(TerametersInOneMeter, meter.As(LengthUnit.Terameter), TerametersTolerance);
@@ -392,12 +521,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(UsSurveyFeetInOneMeter, meter.As(LengthUnit.UsSurveyFoot), UsSurveyFeetTolerance);
             AssertEx.EqualTolerance(VettametersInOneMeter, meter.As(LengthUnit.Vettameter), VettametersTolerance);
             AssertEx.EqualTolerance(YardsInOneMeter, meter.As(LengthUnit.Yard), YardsTolerance);
-            AssertEx.EqualTolerance(YoctometersInOneMeter, meter.As(LengthUnit.Yoctometer), YoctometersTolerance);
-            AssertEx.EqualTolerance(YottalightSecondsInOneMeter, meter.As(LengthUnit.YottalightSecond), YottalightSecondsTolerance);
             AssertEx.EqualTolerance(YottalightYearsInOneMeter, meter.As(LengthUnit.YottalightYear), YottalightYearsTolerance);
             AssertEx.EqualTolerance(YottametersInOneMeter, meter.As(LengthUnit.Yottameter), YottametersTolerance);
-            AssertEx.EqualTolerance(ZeptometersInOneMeter, meter.As(LengthUnit.Zeptometer), ZeptometersTolerance);
-            AssertEx.EqualTolerance(ZettalightSecondsInOneMeter, meter.As(LengthUnit.ZettalightSecond), ZettalightSecondsTolerance);
             AssertEx.EqualTolerance(ZettalightYearsInOneMeter, meter.As(LengthUnit.ZettalightYear), ZettalightYearsTolerance);
             AssertEx.EqualTolerance(ZettametersInOneMeter, meter.As(LengthUnit.Zettameter), ZettametersTolerance);
         }
@@ -407,13 +532,29 @@ namespace UnitsNet.Tests
         {
             var meter = Length.FromMeters(1);
 
-            var attometerQuantity = meter.ToUnit(LengthUnit.Attometer);
-            AssertEx.EqualTolerance(AttometersInOneMeter, (double)attometerQuantity.Value, AttometersTolerance);
-            Assert.Equal(LengthUnit.Attometer, attometerQuantity.Unit);
+            var auQuantity = meter.ToUnit(LengthUnit.AU);
+            AssertEx.EqualTolerance(AUsInOneMeter, (double)auQuantity.Value, AUsTolerance);
+            Assert.Equal(LengthUnit.AU, auQuantity.Unit);
 
             var centimeterQuantity = meter.ToUnit(LengthUnit.Centimeter);
             AssertEx.EqualTolerance(CentimetersInOneMeter, (double)centimeterQuantity.Value, CentimetersTolerance);
             Assert.Equal(LengthUnit.Centimeter, centimeterQuantity.Unit);
+
+            var decaauQuantity = meter.ToUnit(LengthUnit.DecaaU);
+            AssertEx.EqualTolerance(DecaaUsInOneMeter, (double)decaauQuantity.Value, DecaaUsTolerance);
+            Assert.Equal(LengthUnit.DecaaU, decaauQuantity.Unit);
+
+            var decalightdayQuantity = meter.ToUnit(LengthUnit.DecalightDay);
+            AssertEx.EqualTolerance(DecalightDaysInOneMeter, (double)decalightdayQuantity.Value, DecalightDaysTolerance);
+            Assert.Equal(LengthUnit.DecalightDay, decalightdayQuantity.Unit);
+
+            var decalighthourQuantity = meter.ToUnit(LengthUnit.DecalightHour);
+            AssertEx.EqualTolerance(DecalightHoursInOneMeter, (double)decalighthourQuantity.Value, DecalightHoursTolerance);
+            Assert.Equal(LengthUnit.DecalightHour, decalighthourQuantity.Unit);
+
+            var decalightminuteQuantity = meter.ToUnit(LengthUnit.DecalightMinute);
+            AssertEx.EqualTolerance(DecalightMinutesInOneMeter, (double)decalightminuteQuantity.Value, DecalightMinutesTolerance);
+            Assert.Equal(LengthUnit.DecalightMinute, decalightminuteQuantity.Unit);
 
             var decalightsecondQuantity = meter.ToUnit(LengthUnit.DecalightSecond);
             AssertEx.EqualTolerance(DecalightSecondsInOneMeter, (double)decalightsecondQuantity.Value, DecalightSecondsTolerance);
@@ -439,10 +580,6 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(DtpPointsInOneMeter, (double)dtppointQuantity.Value, DtpPointsTolerance);
             Assert.Equal(LengthUnit.DtpPoint, dtppointQuantity.Unit);
 
-            var exalightsecondQuantity = meter.ToUnit(LengthUnit.ExalightSecond);
-            AssertEx.EqualTolerance(ExalightSecondsInOneMeter, (double)exalightsecondQuantity.Value, ExalightSecondsTolerance);
-            Assert.Equal(LengthUnit.ExalightSecond, exalightsecondQuantity.Unit);
-
             var exalightyearQuantity = meter.ToUnit(LengthUnit.ExalightYear);
             AssertEx.EqualTolerance(ExalightYearsInOneMeter, (double)exalightyearQuantity.Value, ExalightYearsTolerance);
             Assert.Equal(LengthUnit.ExalightYear, exalightyearQuantity.Unit);
@@ -462,6 +599,22 @@ namespace UnitsNet.Tests
             var footQuantity = meter.ToUnit(LengthUnit.Foot);
             AssertEx.EqualTolerance(FeetInOneMeter, (double)footQuantity.Value, FeetTolerance);
             Assert.Equal(LengthUnit.Foot, footQuantity.Unit);
+
+            var gigaauQuantity = meter.ToUnit(LengthUnit.GigaaU);
+            AssertEx.EqualTolerance(GigaaUsInOneMeter, (double)gigaauQuantity.Value, GigaaUsTolerance);
+            Assert.Equal(LengthUnit.GigaaU, gigaauQuantity.Unit);
+
+            var gigalightdayQuantity = meter.ToUnit(LengthUnit.GigalightDay);
+            AssertEx.EqualTolerance(GigalightDaysInOneMeter, (double)gigalightdayQuantity.Value, GigalightDaysTolerance);
+            Assert.Equal(LengthUnit.GigalightDay, gigalightdayQuantity.Unit);
+
+            var gigalighthourQuantity = meter.ToUnit(LengthUnit.GigalightHour);
+            AssertEx.EqualTolerance(GigalightHoursInOneMeter, (double)gigalighthourQuantity.Value, GigalightHoursTolerance);
+            Assert.Equal(LengthUnit.GigalightHour, gigalighthourQuantity.Unit);
+
+            var gigalightminuteQuantity = meter.ToUnit(LengthUnit.GigalightMinute);
+            AssertEx.EqualTolerance(GigalightMinutesInOneMeter, (double)gigalightminuteQuantity.Value, GigalightMinutesTolerance);
+            Assert.Equal(LengthUnit.GigalightMinute, gigalightminuteQuantity.Unit);
 
             var gigalightsecondQuantity = meter.ToUnit(LengthUnit.GigalightSecond);
             AssertEx.EqualTolerance(GigalightSecondsInOneMeter, (double)gigalightsecondQuantity.Value, GigalightSecondsTolerance);
@@ -487,6 +640,22 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(InchesInOneMeter, (double)inchQuantity.Value, InchesTolerance);
             Assert.Equal(LengthUnit.Inch, inchQuantity.Unit);
 
+            var kiloauQuantity = meter.ToUnit(LengthUnit.KiloaU);
+            AssertEx.EqualTolerance(KiloaUsInOneMeter, (double)kiloauQuantity.Value, KiloaUsTolerance);
+            Assert.Equal(LengthUnit.KiloaU, kiloauQuantity.Unit);
+
+            var kilolightdayQuantity = meter.ToUnit(LengthUnit.KilolightDay);
+            AssertEx.EqualTolerance(KilolightDaysInOneMeter, (double)kilolightdayQuantity.Value, KilolightDaysTolerance);
+            Assert.Equal(LengthUnit.KilolightDay, kilolightdayQuantity.Unit);
+
+            var kilolighthourQuantity = meter.ToUnit(LengthUnit.KilolightHour);
+            AssertEx.EqualTolerance(KilolightHoursInOneMeter, (double)kilolighthourQuantity.Value, KilolightHoursTolerance);
+            Assert.Equal(LengthUnit.KilolightHour, kilolighthourQuantity.Unit);
+
+            var kilolightminuteQuantity = meter.ToUnit(LengthUnit.KilolightMinute);
+            AssertEx.EqualTolerance(KilolightMinutesInOneMeter, (double)kilolightminuteQuantity.Value, KilolightMinutesTolerance);
+            Assert.Equal(LengthUnit.KilolightMinute, kilolightminuteQuantity.Unit);
+
             var kilolightsecondQuantity = meter.ToUnit(LengthUnit.KilolightSecond);
             AssertEx.EqualTolerance(KilolightSecondsInOneMeter, (double)kilolightsecondQuantity.Value, KilolightSecondsTolerance);
             Assert.Equal(LengthUnit.KilolightSecond, kilolightsecondQuantity.Unit);
@@ -499,6 +668,18 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(KilometersInOneMeter, (double)kilometerQuantity.Value, KilometersTolerance);
             Assert.Equal(LengthUnit.Kilometer, kilometerQuantity.Unit);
 
+            var lightdayQuantity = meter.ToUnit(LengthUnit.LightDay);
+            AssertEx.EqualTolerance(LightDaysInOneMeter, (double)lightdayQuantity.Value, LightDaysTolerance);
+            Assert.Equal(LengthUnit.LightDay, lightdayQuantity.Unit);
+
+            var lighthourQuantity = meter.ToUnit(LengthUnit.LightHour);
+            AssertEx.EqualTolerance(LightHoursInOneMeter, (double)lighthourQuantity.Value, LightHoursTolerance);
+            Assert.Equal(LengthUnit.LightHour, lighthourQuantity.Unit);
+
+            var lightminuteQuantity = meter.ToUnit(LengthUnit.LightMinute);
+            AssertEx.EqualTolerance(LightMinutesInOneMeter, (double)lightminuteQuantity.Value, LightMinutesTolerance);
+            Assert.Equal(LengthUnit.LightMinute, lightminuteQuantity.Unit);
+
             var lightsecondQuantity = meter.ToUnit(LengthUnit.LightSecond);
             AssertEx.EqualTolerance(LightSecondsInOneMeter, (double)lightsecondQuantity.Value, LightSecondsTolerance);
             Assert.Equal(LengthUnit.LightSecond, lightsecondQuantity.Unit);
@@ -506,6 +687,22 @@ namespace UnitsNet.Tests
             var lightyearQuantity = meter.ToUnit(LengthUnit.LightYear);
             AssertEx.EqualTolerance(LightYearsInOneMeter, (double)lightyearQuantity.Value, LightYearsTolerance);
             Assert.Equal(LengthUnit.LightYear, lightyearQuantity.Unit);
+
+            var megaauQuantity = meter.ToUnit(LengthUnit.MegaaU);
+            AssertEx.EqualTolerance(MegaaUsInOneMeter, (double)megaauQuantity.Value, MegaaUsTolerance);
+            Assert.Equal(LengthUnit.MegaaU, megaauQuantity.Unit);
+
+            var megalightdayQuantity = meter.ToUnit(LengthUnit.MegalightDay);
+            AssertEx.EqualTolerance(MegalightDaysInOneMeter, (double)megalightdayQuantity.Value, MegalightDaysTolerance);
+            Assert.Equal(LengthUnit.MegalightDay, megalightdayQuantity.Unit);
+
+            var megalighthourQuantity = meter.ToUnit(LengthUnit.MegalightHour);
+            AssertEx.EqualTolerance(MegalightHoursInOneMeter, (double)megalighthourQuantity.Value, MegalightHoursTolerance);
+            Assert.Equal(LengthUnit.MegalightHour, megalighthourQuantity.Unit);
+
+            var megalightminuteQuantity = meter.ToUnit(LengthUnit.MegalightMinute);
+            AssertEx.EqualTolerance(MegalightMinutesInOneMeter, (double)megalightminuteQuantity.Value, MegalightMinutesTolerance);
+            Assert.Equal(LengthUnit.MegalightMinute, megalightminuteQuantity.Unit);
 
             var megalightsecondQuantity = meter.ToUnit(LengthUnit.MegalightSecond);
             AssertEx.EqualTolerance(MegalightSecondsInOneMeter, (double)megalightsecondQuantity.Value, MegalightSecondsTolerance);
@@ -523,9 +720,25 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(MetersInOneMeter, (double)meterQuantity.Value, MetersTolerance);
             Assert.Equal(LengthUnit.Meter, meterQuantity.Unit);
 
+            var microauQuantity = meter.ToUnit(LengthUnit.MicroaU);
+            AssertEx.EqualTolerance(MicroaUsInOneMeter, (double)microauQuantity.Value, MicroaUsTolerance);
+            Assert.Equal(LengthUnit.MicroaU, microauQuantity.Unit);
+
             var microinchQuantity = meter.ToUnit(LengthUnit.Microinch);
             AssertEx.EqualTolerance(MicroinchesInOneMeter, (double)microinchQuantity.Value, MicroinchesTolerance);
             Assert.Equal(LengthUnit.Microinch, microinchQuantity.Unit);
+
+            var microlightdayQuantity = meter.ToUnit(LengthUnit.MicrolightDay);
+            AssertEx.EqualTolerance(MicrolightDaysInOneMeter, (double)microlightdayQuantity.Value, MicrolightDaysTolerance);
+            Assert.Equal(LengthUnit.MicrolightDay, microlightdayQuantity.Unit);
+
+            var microlighthourQuantity = meter.ToUnit(LengthUnit.MicrolightHour);
+            AssertEx.EqualTolerance(MicrolightHoursInOneMeter, (double)microlighthourQuantity.Value, MicrolightHoursTolerance);
+            Assert.Equal(LengthUnit.MicrolightHour, microlighthourQuantity.Unit);
+
+            var microlightminuteQuantity = meter.ToUnit(LengthUnit.MicrolightMinute);
+            AssertEx.EqualTolerance(MicrolightMinutesInOneMeter, (double)microlightminuteQuantity.Value, MicrolightMinutesTolerance);
+            Assert.Equal(LengthUnit.MicrolightMinute, microlightminuteQuantity.Unit);
 
             var microlightsecondQuantity = meter.ToUnit(LengthUnit.MicrolightSecond);
             AssertEx.EqualTolerance(MicrolightSecondsInOneMeter, (double)microlightsecondQuantity.Value, MicrolightSecondsTolerance);
@@ -547,6 +760,22 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(MilesInOneMeter, (double)mileQuantity.Value, MilesTolerance);
             Assert.Equal(LengthUnit.Mile, mileQuantity.Unit);
 
+            var milliauQuantity = meter.ToUnit(LengthUnit.MilliaU);
+            AssertEx.EqualTolerance(MilliaUsInOneMeter, (double)milliauQuantity.Value, MilliaUsTolerance);
+            Assert.Equal(LengthUnit.MilliaU, milliauQuantity.Unit);
+
+            var millilightdayQuantity = meter.ToUnit(LengthUnit.MillilightDay);
+            AssertEx.EqualTolerance(MillilightDaysInOneMeter, (double)millilightdayQuantity.Value, MillilightDaysTolerance);
+            Assert.Equal(LengthUnit.MillilightDay, millilightdayQuantity.Unit);
+
+            var millilighthourQuantity = meter.ToUnit(LengthUnit.MillilightHour);
+            AssertEx.EqualTolerance(MillilightHoursInOneMeter, (double)millilighthourQuantity.Value, MillilightHoursTolerance);
+            Assert.Equal(LengthUnit.MillilightHour, millilighthourQuantity.Unit);
+
+            var millilightminuteQuantity = meter.ToUnit(LengthUnit.MillilightMinute);
+            AssertEx.EqualTolerance(MillilightMinutesInOneMeter, (double)millilightminuteQuantity.Value, MillilightMinutesTolerance);
+            Assert.Equal(LengthUnit.MillilightMinute, millilightminuteQuantity.Unit);
+
             var millilightsecondQuantity = meter.ToUnit(LengthUnit.MillilightSecond);
             AssertEx.EqualTolerance(MillilightSecondsInOneMeter, (double)millilightsecondQuantity.Value, MillilightSecondsTolerance);
             Assert.Equal(LengthUnit.MillilightSecond, millilightsecondQuantity.Unit);
@@ -566,10 +795,6 @@ namespace UnitsNet.Tests
             var nauticalmileQuantity = meter.ToUnit(LengthUnit.NauticalMile);
             AssertEx.EqualTolerance(NauticalMilesInOneMeter, (double)nauticalmileQuantity.Value, NauticalMilesTolerance);
             Assert.Equal(LengthUnit.NauticalMile, nauticalmileQuantity.Unit);
-
-            var petalightsecondQuantity = meter.ToUnit(LengthUnit.PetalightSecond);
-            AssertEx.EqualTolerance(PetalightSecondsInOneMeter, (double)petalightsecondQuantity.Value, PetalightSecondsTolerance);
-            Assert.Equal(LengthUnit.PetalightSecond, petalightsecondQuantity.Unit);
 
             var petalightyearQuantity = meter.ToUnit(LengthUnit.PetalightYear);
             AssertEx.EqualTolerance(PetalightYearsInOneMeter, (double)petalightyearQuantity.Value, PetalightYearsTolerance);
@@ -599,6 +824,22 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(ShacklesInOneMeter, (double)shackleQuantity.Value, ShacklesTolerance);
             Assert.Equal(LengthUnit.Shackle, shackleQuantity.Unit);
 
+            var teraauQuantity = meter.ToUnit(LengthUnit.TeraaU);
+            AssertEx.EqualTolerance(TeraaUsInOneMeter, (double)teraauQuantity.Value, TeraaUsTolerance);
+            Assert.Equal(LengthUnit.TeraaU, teraauQuantity.Unit);
+
+            var teralightdayQuantity = meter.ToUnit(LengthUnit.TeralightDay);
+            AssertEx.EqualTolerance(TeralightDaysInOneMeter, (double)teralightdayQuantity.Value, TeralightDaysTolerance);
+            Assert.Equal(LengthUnit.TeralightDay, teralightdayQuantity.Unit);
+
+            var teralighthourQuantity = meter.ToUnit(LengthUnit.TeralightHour);
+            AssertEx.EqualTolerance(TeralightHoursInOneMeter, (double)teralighthourQuantity.Value, TeralightHoursTolerance);
+            Assert.Equal(LengthUnit.TeralightHour, teralighthourQuantity.Unit);
+
+            var teralightminuteQuantity = meter.ToUnit(LengthUnit.TeralightMinute);
+            AssertEx.EqualTolerance(TeralightMinutesInOneMeter, (double)teralightminuteQuantity.Value, TeralightMinutesTolerance);
+            Assert.Equal(LengthUnit.TeralightMinute, teralightminuteQuantity.Unit);
+
             var teralightsecondQuantity = meter.ToUnit(LengthUnit.TeralightSecond);
             AssertEx.EqualTolerance(TeralightSecondsInOneMeter, (double)teralightsecondQuantity.Value, TeralightSecondsTolerance);
             Assert.Equal(LengthUnit.TeralightSecond, teralightsecondQuantity.Unit);
@@ -627,14 +868,6 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(YardsInOneMeter, (double)yardQuantity.Value, YardsTolerance);
             Assert.Equal(LengthUnit.Yard, yardQuantity.Unit);
 
-            var yoctometerQuantity = meter.ToUnit(LengthUnit.Yoctometer);
-            AssertEx.EqualTolerance(YoctometersInOneMeter, (double)yoctometerQuantity.Value, YoctometersTolerance);
-            Assert.Equal(LengthUnit.Yoctometer, yoctometerQuantity.Unit);
-
-            var yottalightsecondQuantity = meter.ToUnit(LengthUnit.YottalightSecond);
-            AssertEx.EqualTolerance(YottalightSecondsInOneMeter, (double)yottalightsecondQuantity.Value, YottalightSecondsTolerance);
-            Assert.Equal(LengthUnit.YottalightSecond, yottalightsecondQuantity.Unit);
-
             var yottalightyearQuantity = meter.ToUnit(LengthUnit.YottalightYear);
             AssertEx.EqualTolerance(YottalightYearsInOneMeter, (double)yottalightyearQuantity.Value, YottalightYearsTolerance);
             Assert.Equal(LengthUnit.YottalightYear, yottalightyearQuantity.Unit);
@@ -642,14 +875,6 @@ namespace UnitsNet.Tests
             var yottameterQuantity = meter.ToUnit(LengthUnit.Yottameter);
             AssertEx.EqualTolerance(YottametersInOneMeter, (double)yottameterQuantity.Value, YottametersTolerance);
             Assert.Equal(LengthUnit.Yottameter, yottameterQuantity.Unit);
-
-            var zeptometerQuantity = meter.ToUnit(LengthUnit.Zeptometer);
-            AssertEx.EqualTolerance(ZeptometersInOneMeter, (double)zeptometerQuantity.Value, ZeptometersTolerance);
-            Assert.Equal(LengthUnit.Zeptometer, zeptometerQuantity.Unit);
-
-            var zettalightsecondQuantity = meter.ToUnit(LengthUnit.ZettalightSecond);
-            AssertEx.EqualTolerance(ZettalightSecondsInOneMeter, (double)zettalightsecondQuantity.Value, ZettalightSecondsTolerance);
-            Assert.Equal(LengthUnit.ZettalightSecond, zettalightsecondQuantity.Unit);
 
             var zettalightyearQuantity = meter.ToUnit(LengthUnit.ZettalightYear);
             AssertEx.EqualTolerance(ZettalightYearsInOneMeter, (double)zettalightyearQuantity.Value, ZettalightYearsTolerance);
@@ -664,47 +889,72 @@ namespace UnitsNet.Tests
         public void ConversionRoundTrip()
         {
             Length meter = Length.FromMeters(1);
-            AssertEx.EqualTolerance(1, Length.FromAttometers(meter.Attometers).Meters, AttometersTolerance);
+            AssertEx.EqualTolerance(1, Length.FromAUs(meter.AUs).Meters, AUsTolerance);
             AssertEx.EqualTolerance(1, Length.FromCentimeters(meter.Centimeters).Meters, CentimetersTolerance);
+            AssertEx.EqualTolerance(1, Length.FromDecaaUs(meter.DecaaUs).Meters, DecaaUsTolerance);
+            AssertEx.EqualTolerance(1, Length.FromDecalightDays(meter.DecalightDays).Meters, DecalightDaysTolerance);
+            AssertEx.EqualTolerance(1, Length.FromDecalightHours(meter.DecalightHours).Meters, DecalightHoursTolerance);
+            AssertEx.EqualTolerance(1, Length.FromDecalightMinutes(meter.DecalightMinutes).Meters, DecalightMinutesTolerance);
             AssertEx.EqualTolerance(1, Length.FromDecalightSeconds(meter.DecalightSeconds).Meters, DecalightSecondsTolerance);
             AssertEx.EqualTolerance(1, Length.FromDecalightYears(meter.DecalightYears).Meters, DecalightYearsTolerance);
             AssertEx.EqualTolerance(1, Length.FromDecameters(meter.Decameters).Meters, DecametersTolerance);
             AssertEx.EqualTolerance(1, Length.FromDecimeters(meter.Decimeters).Meters, DecimetersTolerance);
             AssertEx.EqualTolerance(1, Length.FromDtpPicas(meter.DtpPicas).Meters, DtpPicasTolerance);
             AssertEx.EqualTolerance(1, Length.FromDtpPoints(meter.DtpPoints).Meters, DtpPointsTolerance);
-            AssertEx.EqualTolerance(1, Length.FromExalightSeconds(meter.ExalightSeconds).Meters, ExalightSecondsTolerance);
             AssertEx.EqualTolerance(1, Length.FromExalightYears(meter.ExalightYears).Meters, ExalightYearsTolerance);
             AssertEx.EqualTolerance(1, Length.FromExameters(meter.Exameters).Meters, ExametersTolerance);
             AssertEx.EqualTolerance(1, Length.FromFathoms(meter.Fathoms).Meters, FathomsTolerance);
             AssertEx.EqualTolerance(1, Length.FromFemtometers(meter.Femtometers).Meters, FemtometersTolerance);
             AssertEx.EqualTolerance(1, Length.FromFeet(meter.Feet).Meters, FeetTolerance);
+            AssertEx.EqualTolerance(1, Length.FromGigaaUs(meter.GigaaUs).Meters, GigaaUsTolerance);
+            AssertEx.EqualTolerance(1, Length.FromGigalightDays(meter.GigalightDays).Meters, GigalightDaysTolerance);
+            AssertEx.EqualTolerance(1, Length.FromGigalightHours(meter.GigalightHours).Meters, GigalightHoursTolerance);
+            AssertEx.EqualTolerance(1, Length.FromGigalightMinutes(meter.GigalightMinutes).Meters, GigalightMinutesTolerance);
             AssertEx.EqualTolerance(1, Length.FromGigalightSeconds(meter.GigalightSeconds).Meters, GigalightSecondsTolerance);
             AssertEx.EqualTolerance(1, Length.FromGigalightYears(meter.GigalightYears).Meters, GigalightYearsTolerance);
             AssertEx.EqualTolerance(1, Length.FromGigameters(meter.Gigameters).Meters, GigametersTolerance);
             AssertEx.EqualTolerance(1, Length.FromHands(meter.Hands).Meters, HandsTolerance);
             AssertEx.EqualTolerance(1, Length.FromHectometers(meter.Hectometers).Meters, HectometersTolerance);
             AssertEx.EqualTolerance(1, Length.FromInches(meter.Inches).Meters, InchesTolerance);
+            AssertEx.EqualTolerance(1, Length.FromKiloaUs(meter.KiloaUs).Meters, KiloaUsTolerance);
+            AssertEx.EqualTolerance(1, Length.FromKilolightDays(meter.KilolightDays).Meters, KilolightDaysTolerance);
+            AssertEx.EqualTolerance(1, Length.FromKilolightHours(meter.KilolightHours).Meters, KilolightHoursTolerance);
+            AssertEx.EqualTolerance(1, Length.FromKilolightMinutes(meter.KilolightMinutes).Meters, KilolightMinutesTolerance);
             AssertEx.EqualTolerance(1, Length.FromKilolightSeconds(meter.KilolightSeconds).Meters, KilolightSecondsTolerance);
             AssertEx.EqualTolerance(1, Length.FromKilolightYears(meter.KilolightYears).Meters, KilolightYearsTolerance);
             AssertEx.EqualTolerance(1, Length.FromKilometers(meter.Kilometers).Meters, KilometersTolerance);
+            AssertEx.EqualTolerance(1, Length.FromLightDays(meter.LightDays).Meters, LightDaysTolerance);
+            AssertEx.EqualTolerance(1, Length.FromLightHours(meter.LightHours).Meters, LightHoursTolerance);
+            AssertEx.EqualTolerance(1, Length.FromLightMinutes(meter.LightMinutes).Meters, LightMinutesTolerance);
             AssertEx.EqualTolerance(1, Length.FromLightSeconds(meter.LightSeconds).Meters, LightSecondsTolerance);
             AssertEx.EqualTolerance(1, Length.FromLightYears(meter.LightYears).Meters, LightYearsTolerance);
+            AssertEx.EqualTolerance(1, Length.FromMegaaUs(meter.MegaaUs).Meters, MegaaUsTolerance);
+            AssertEx.EqualTolerance(1, Length.FromMegalightDays(meter.MegalightDays).Meters, MegalightDaysTolerance);
+            AssertEx.EqualTolerance(1, Length.FromMegalightHours(meter.MegalightHours).Meters, MegalightHoursTolerance);
+            AssertEx.EqualTolerance(1, Length.FromMegalightMinutes(meter.MegalightMinutes).Meters, MegalightMinutesTolerance);
             AssertEx.EqualTolerance(1, Length.FromMegalightSeconds(meter.MegalightSeconds).Meters, MegalightSecondsTolerance);
             AssertEx.EqualTolerance(1, Length.FromMegalightYears(meter.MegalightYears).Meters, MegalightYearsTolerance);
             AssertEx.EqualTolerance(1, Length.FromMegameters(meter.Megameters).Meters, MegametersTolerance);
             AssertEx.EqualTolerance(1, Length.FromMeters(meter.Meters).Meters, MetersTolerance);
+            AssertEx.EqualTolerance(1, Length.FromMicroaUs(meter.MicroaUs).Meters, MicroaUsTolerance);
             AssertEx.EqualTolerance(1, Length.FromMicroinches(meter.Microinches).Meters, MicroinchesTolerance);
+            AssertEx.EqualTolerance(1, Length.FromMicrolightDays(meter.MicrolightDays).Meters, MicrolightDaysTolerance);
+            AssertEx.EqualTolerance(1, Length.FromMicrolightHours(meter.MicrolightHours).Meters, MicrolightHoursTolerance);
+            AssertEx.EqualTolerance(1, Length.FromMicrolightMinutes(meter.MicrolightMinutes).Meters, MicrolightMinutesTolerance);
             AssertEx.EqualTolerance(1, Length.FromMicrolightSeconds(meter.MicrolightSeconds).Meters, MicrolightSecondsTolerance);
             AssertEx.EqualTolerance(1, Length.FromMicrolightYears(meter.MicrolightYears).Meters, MicrolightYearsTolerance);
             AssertEx.EqualTolerance(1, Length.FromMicrometers(meter.Micrometers).Meters, MicrometersTolerance);
             AssertEx.EqualTolerance(1, Length.FromMils(meter.Mils).Meters, MilsTolerance);
             AssertEx.EqualTolerance(1, Length.FromMiles(meter.Miles).Meters, MilesTolerance);
+            AssertEx.EqualTolerance(1, Length.FromMilliaUs(meter.MilliaUs).Meters, MilliaUsTolerance);
+            AssertEx.EqualTolerance(1, Length.FromMillilightDays(meter.MillilightDays).Meters, MillilightDaysTolerance);
+            AssertEx.EqualTolerance(1, Length.FromMillilightHours(meter.MillilightHours).Meters, MillilightHoursTolerance);
+            AssertEx.EqualTolerance(1, Length.FromMillilightMinutes(meter.MillilightMinutes).Meters, MillilightMinutesTolerance);
             AssertEx.EqualTolerance(1, Length.FromMillilightSeconds(meter.MillilightSeconds).Meters, MillilightSecondsTolerance);
             AssertEx.EqualTolerance(1, Length.FromMillilightYears(meter.MillilightYears).Meters, MillilightYearsTolerance);
             AssertEx.EqualTolerance(1, Length.FromMillimeters(meter.Millimeters).Meters, MillimetersTolerance);
             AssertEx.EqualTolerance(1, Length.FromNanometers(meter.Nanometers).Meters, NanometersTolerance);
             AssertEx.EqualTolerance(1, Length.FromNauticalMiles(meter.NauticalMiles).Meters, NauticalMilesTolerance);
-            AssertEx.EqualTolerance(1, Length.FromPetalightSeconds(meter.PetalightSeconds).Meters, PetalightSecondsTolerance);
             AssertEx.EqualTolerance(1, Length.FromPetalightYears(meter.PetalightYears).Meters, PetalightYearsTolerance);
             AssertEx.EqualTolerance(1, Length.FromPetameters(meter.Petameters).Meters, PetametersTolerance);
             AssertEx.EqualTolerance(1, Length.FromPicometers(meter.Picometers).Meters, PicometersTolerance);
@@ -712,6 +962,10 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, Length.FromPrinterPoints(meter.PrinterPoints).Meters, PrinterPointsTolerance);
             AssertEx.EqualTolerance(1, Length.FromQutrameters(meter.Qutrameters).Meters, QutrametersTolerance);
             AssertEx.EqualTolerance(1, Length.FromShackles(meter.Shackles).Meters, ShacklesTolerance);
+            AssertEx.EqualTolerance(1, Length.FromTeraaUs(meter.TeraaUs).Meters, TeraaUsTolerance);
+            AssertEx.EqualTolerance(1, Length.FromTeralightDays(meter.TeralightDays).Meters, TeralightDaysTolerance);
+            AssertEx.EqualTolerance(1, Length.FromTeralightHours(meter.TeralightHours).Meters, TeralightHoursTolerance);
+            AssertEx.EqualTolerance(1, Length.FromTeralightMinutes(meter.TeralightMinutes).Meters, TeralightMinutesTolerance);
             AssertEx.EqualTolerance(1, Length.FromTeralightSeconds(meter.TeralightSeconds).Meters, TeralightSecondsTolerance);
             AssertEx.EqualTolerance(1, Length.FromTeralightYears(meter.TeralightYears).Meters, TeralightYearsTolerance);
             AssertEx.EqualTolerance(1, Length.FromTerameters(meter.Terameters).Meters, TerametersTolerance);
@@ -719,12 +973,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, Length.FromUsSurveyFeet(meter.UsSurveyFeet).Meters, UsSurveyFeetTolerance);
             AssertEx.EqualTolerance(1, Length.FromVettameters(meter.Vettameters).Meters, VettametersTolerance);
             AssertEx.EqualTolerance(1, Length.FromYards(meter.Yards).Meters, YardsTolerance);
-            AssertEx.EqualTolerance(1, Length.FromYoctometers(meter.Yoctometers).Meters, YoctometersTolerance);
-            AssertEx.EqualTolerance(1, Length.FromYottalightSeconds(meter.YottalightSeconds).Meters, YottalightSecondsTolerance);
             AssertEx.EqualTolerance(1, Length.FromYottalightYears(meter.YottalightYears).Meters, YottalightYearsTolerance);
             AssertEx.EqualTolerance(1, Length.FromYottameters(meter.Yottameters).Meters, YottametersTolerance);
-            AssertEx.EqualTolerance(1, Length.FromZeptometers(meter.Zeptometers).Meters, ZeptometersTolerance);
-            AssertEx.EqualTolerance(1, Length.FromZettalightSeconds(meter.ZettalightSeconds).Meters, ZettalightSecondsTolerance);
             AssertEx.EqualTolerance(1, Length.FromZettalightYears(meter.ZettalightYears).Meters, ZettalightYearsTolerance);
             AssertEx.EqualTolerance(1, Length.FromZettameters(meter.Zettameters).Meters, ZettametersTolerance);
         }

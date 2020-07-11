@@ -7,17 +7,34 @@ namespace UnitsNet.Tests.CustomCode
 {
     public class ForceTests : ForceTestsBase
     {
-        protected override double DecanewtonsInOneNewton => 1E-1;
         protected override double DyneInOneNewton => 1E5;
 
         protected override double KilogramsForceInOneNewton => 0.101972;
 
-        protected override double MeganewtonsInOneNewton => 1E-6;
-        protected override double KilonewtonsInOneNewton => 1E-3;
 
         protected override double KiloPondsInOneNewton => 0.101972;
 
+        protected override double FemtonewtonsInOneNewton => 1e15;
+        protected override double PiconewtonsInOneNewton => 1e12;
+        protected override double NanonewtonsInOneNewton => 1e9;
+        protected override double MicronewtonsInOneNewton => 1.0e6;
+        protected override double MillinewtonsInOneNewton => 1.0e3;
+        protected override double CentinewtonsInOneNewton =>100;
+        protected override double DecinewtonsInOneNewton => 10;
         protected override double NewtonsInOneNewton => 1;
+        protected override double DecanewtonsInOneNewton => 1E-1;
+        protected override double HectonewtonsInOneNewton => 1e-2;
+        protected override double KilonewtonsInOneNewton => 1E-3;
+        protected override double MeganewtonsInOneNewton => 1E-6;
+        protected override double GiganewtonsInOneNewton => 1e-9;
+        protected override double TeranewtonsInOneNewton => 1e-12;
+        protected override double PetanewtonsInOneNewton => 1e-15;
+        protected override double ExanewtonsInOneNewton => 1e-18;
+        protected override double ZettanewtonsInOneNewton => 1e-21;
+        protected override double YottanewtonsInOneNewton => 1e-24;
+        protected override double QutranewtonsInOneNewton => 1e-27;
+        protected override double VettanewtonsInOneNewton => 1e-30;
+
 
         protected override double PoundalsInOneNewton => 7.23301;
 
@@ -25,11 +42,23 @@ namespace UnitsNet.Tests.CustomCode
 
         protected override double TonnesForceInOneNewton => 1.019716212977928e-4;
 
-        protected override double MillinewtonsInOneNewton => 1.0e3;
 
-        protected override double MicronewtonsInOneNewton => 1.0e6;
 
         protected override double OunceForceInOneNewton => 3.596943089595368;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         [Fact]
         public void ForceDividedByAreaEqualsPressure()

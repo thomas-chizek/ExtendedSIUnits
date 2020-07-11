@@ -1,6 +1,7 @@
 ﻿// Licensed under MIT No Attribution, see LICENSE file at the root.
 // Copyright 2013 Andreas Gullberg Larsen (andreas.larsen84@gmail.com). Maintained at https://github.com/angularsen/UnitsNet.
 
+using UnitsNet.Units;
 using Xunit;
 
 namespace UnitsNet.Tests.CustomCode
@@ -33,11 +34,25 @@ namespace UnitsNet.Tests.CustomCode
 
         protected override double KnotsPerSecondInOneMeterPerSecondSquared => 1.94384449244060;
 
+        protected override double DecametersPerSecondSquaredInOneMeterPerSecondSquared => 0.1;
+
         [Fact]
         public void AccelerationTimesDensityEqualsSpecificWeight()
         {
             SpecificWeight specificWeight = Acceleration.FromMetersPerSecondSquared(10) * Density.FromKilogramsPerCubicMeter(2);
             Assert.Equal(SpecificWeight.FromNewtonsPerCubicMeter(20), specificWeight);
+        }
+
+        [Fact]
+        public void EarlyAccessOfAccelerationStatics()
+        {
+            AccelerationUnit b = Acceleration.BaseUnit;
+            Acceleration o = Acceleration.One;
+            Acceleration a = new Acceleration(-1, b);
+            Acceleration expected = new Acceleration(-1, Acceleration.BaseUnit);
+            Assert.Equal(Acceleration.One, o);
+            Assert.Equal(expected, a);
+            Assert.Equal(Acceleration.BaseUnit, b);
         }
     }
 }

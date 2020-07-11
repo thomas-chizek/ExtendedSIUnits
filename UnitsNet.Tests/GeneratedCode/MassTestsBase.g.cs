@@ -34,7 +34,6 @@ namespace UnitsNet.Tests
 // ReSharper disable once PartialTypeWithSinglePart
     public abstract partial class MassTestsBase
     {
-        protected abstract double AttogramsInOneKilogram { get; }
         protected abstract double CentigramsInOneKilogram { get; }
         protected abstract double DecagramsInOneKilogram { get; }
         protected abstract double DecigramsInOneKilogram { get; }
@@ -73,15 +72,12 @@ namespace UnitsNet.Tests
         protected abstract double TonnesInOneKilogram { get; }
         protected abstract double VettagramsInOneKilogram { get; }
         protected abstract double VettatonnesInOneKilogram { get; }
-        protected abstract double YoctogramsInOneKilogram { get; }
         protected abstract double YottagramsInOneKilogram { get; }
         protected abstract double YottatonnesInOneKilogram { get; }
-        protected abstract double ZeptogramsInOneKilogram { get; }
         protected abstract double ZettagramsInOneKilogram { get; }
         protected abstract double ZettatonnesInOneKilogram { get; }
 
 // ReSharper disable VirtualMemberNeverOverriden.Global
-        protected virtual double AttogramsTolerance { get { return 1e-5; } }
         protected virtual double CentigramsTolerance { get { return 1e-5; } }
         protected virtual double DecagramsTolerance { get { return 1e-5; } }
         protected virtual double DecigramsTolerance { get { return 1e-5; } }
@@ -120,10 +116,8 @@ namespace UnitsNet.Tests
         protected virtual double TonnesTolerance { get { return 1e-5; } }
         protected virtual double VettagramsTolerance { get { return 1e-5; } }
         protected virtual double VettatonnesTolerance { get { return 1e-5; } }
-        protected virtual double YoctogramsTolerance { get { return 1e-5; } }
         protected virtual double YottagramsTolerance { get { return 1e-5; } }
         protected virtual double YottatonnesTolerance { get { return 1e-5; } }
-        protected virtual double ZeptogramsTolerance { get { return 1e-5; } }
         protected virtual double ZettagramsTolerance { get { return 1e-5; } }
         protected virtual double ZettatonnesTolerance { get { return 1e-5; } }
 // ReSharper restore VirtualMemberNeverOverriden.Global
@@ -151,7 +145,6 @@ namespace UnitsNet.Tests
         public void KilogramToMassUnits()
         {
             Mass kilogram = Mass.FromKilograms(1);
-            AssertEx.EqualTolerance(AttogramsInOneKilogram, kilogram.Attograms, AttogramsTolerance);
             AssertEx.EqualTolerance(CentigramsInOneKilogram, kilogram.Centigrams, CentigramsTolerance);
             AssertEx.EqualTolerance(DecagramsInOneKilogram, kilogram.Decagrams, DecagramsTolerance);
             AssertEx.EqualTolerance(DecigramsInOneKilogram, kilogram.Decigrams, DecigramsTolerance);
@@ -190,10 +183,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(TonnesInOneKilogram, kilogram.Tonnes, TonnesTolerance);
             AssertEx.EqualTolerance(VettagramsInOneKilogram, kilogram.Vettagrams, VettagramsTolerance);
             AssertEx.EqualTolerance(VettatonnesInOneKilogram, kilogram.Vettatonnes, VettatonnesTolerance);
-            AssertEx.EqualTolerance(YoctogramsInOneKilogram, kilogram.Yoctograms, YoctogramsTolerance);
             AssertEx.EqualTolerance(YottagramsInOneKilogram, kilogram.Yottagrams, YottagramsTolerance);
             AssertEx.EqualTolerance(YottatonnesInOneKilogram, kilogram.Yottatonnes, YottatonnesTolerance);
-            AssertEx.EqualTolerance(ZeptogramsInOneKilogram, kilogram.Zeptograms, ZeptogramsTolerance);
             AssertEx.EqualTolerance(ZettagramsInOneKilogram, kilogram.Zettagrams, ZettagramsTolerance);
             AssertEx.EqualTolerance(ZettatonnesInOneKilogram, kilogram.Zettatonnes, ZettatonnesTolerance);
         }
@@ -201,7 +192,6 @@ namespace UnitsNet.Tests
         [Fact]
         public void FromValueAndUnit()
         {
-            AssertEx.EqualTolerance(1, Mass.From(1, MassUnit.Attogram).Attograms, AttogramsTolerance);
             AssertEx.EqualTolerance(1, Mass.From(1, MassUnit.Centigram).Centigrams, CentigramsTolerance);
             AssertEx.EqualTolerance(1, Mass.From(1, MassUnit.Decagram).Decagrams, DecagramsTolerance);
             AssertEx.EqualTolerance(1, Mass.From(1, MassUnit.Decigram).Decigrams, DecigramsTolerance);
@@ -240,10 +230,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, Mass.From(1, MassUnit.Tonne).Tonnes, TonnesTolerance);
             AssertEx.EqualTolerance(1, Mass.From(1, MassUnit.Vettagram).Vettagrams, VettagramsTolerance);
             AssertEx.EqualTolerance(1, Mass.From(1, MassUnit.Vettatonne).Vettatonnes, VettatonnesTolerance);
-            AssertEx.EqualTolerance(1, Mass.From(1, MassUnit.Yoctogram).Yoctograms, YoctogramsTolerance);
             AssertEx.EqualTolerance(1, Mass.From(1, MassUnit.Yottagram).Yottagrams, YottagramsTolerance);
             AssertEx.EqualTolerance(1, Mass.From(1, MassUnit.Yottatonne).Yottatonnes, YottatonnesTolerance);
-            AssertEx.EqualTolerance(1, Mass.From(1, MassUnit.Zeptogram).Zeptograms, ZeptogramsTolerance);
             AssertEx.EqualTolerance(1, Mass.From(1, MassUnit.Zettagram).Zettagrams, ZettagramsTolerance);
             AssertEx.EqualTolerance(1, Mass.From(1, MassUnit.Zettatonne).Zettatonnes, ZettatonnesTolerance);
         }
@@ -265,7 +253,6 @@ namespace UnitsNet.Tests
         public void As()
         {
             var kilogram = Mass.FromKilograms(1);
-            AssertEx.EqualTolerance(AttogramsInOneKilogram, kilogram.As(MassUnit.Attogram), AttogramsTolerance);
             AssertEx.EqualTolerance(CentigramsInOneKilogram, kilogram.As(MassUnit.Centigram), CentigramsTolerance);
             AssertEx.EqualTolerance(DecagramsInOneKilogram, kilogram.As(MassUnit.Decagram), DecagramsTolerance);
             AssertEx.EqualTolerance(DecigramsInOneKilogram, kilogram.As(MassUnit.Decigram), DecigramsTolerance);
@@ -304,10 +291,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(TonnesInOneKilogram, kilogram.As(MassUnit.Tonne), TonnesTolerance);
             AssertEx.EqualTolerance(VettagramsInOneKilogram, kilogram.As(MassUnit.Vettagram), VettagramsTolerance);
             AssertEx.EqualTolerance(VettatonnesInOneKilogram, kilogram.As(MassUnit.Vettatonne), VettatonnesTolerance);
-            AssertEx.EqualTolerance(YoctogramsInOneKilogram, kilogram.As(MassUnit.Yoctogram), YoctogramsTolerance);
             AssertEx.EqualTolerance(YottagramsInOneKilogram, kilogram.As(MassUnit.Yottagram), YottagramsTolerance);
             AssertEx.EqualTolerance(YottatonnesInOneKilogram, kilogram.As(MassUnit.Yottatonne), YottatonnesTolerance);
-            AssertEx.EqualTolerance(ZeptogramsInOneKilogram, kilogram.As(MassUnit.Zeptogram), ZeptogramsTolerance);
             AssertEx.EqualTolerance(ZettagramsInOneKilogram, kilogram.As(MassUnit.Zettagram), ZettagramsTolerance);
             AssertEx.EqualTolerance(ZettatonnesInOneKilogram, kilogram.As(MassUnit.Zettatonne), ZettatonnesTolerance);
         }
@@ -316,10 +301,6 @@ namespace UnitsNet.Tests
         public void ToUnit()
         {
             var kilogram = Mass.FromKilograms(1);
-
-            var attogramQuantity = kilogram.ToUnit(MassUnit.Attogram);
-            AssertEx.EqualTolerance(AttogramsInOneKilogram, (double)attogramQuantity.Value, AttogramsTolerance);
-            Assert.Equal(MassUnit.Attogram, attogramQuantity.Unit);
 
             var centigramQuantity = kilogram.ToUnit(MassUnit.Centigram);
             AssertEx.EqualTolerance(CentigramsInOneKilogram, (double)centigramQuantity.Value, CentigramsTolerance);
@@ -473,10 +454,6 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettatonnesInOneKilogram, (double)vettatonneQuantity.Value, VettatonnesTolerance);
             Assert.Equal(MassUnit.Vettatonne, vettatonneQuantity.Unit);
 
-            var yoctogramQuantity = kilogram.ToUnit(MassUnit.Yoctogram);
-            AssertEx.EqualTolerance(YoctogramsInOneKilogram, (double)yoctogramQuantity.Value, YoctogramsTolerance);
-            Assert.Equal(MassUnit.Yoctogram, yoctogramQuantity.Unit);
-
             var yottagramQuantity = kilogram.ToUnit(MassUnit.Yottagram);
             AssertEx.EqualTolerance(YottagramsInOneKilogram, (double)yottagramQuantity.Value, YottagramsTolerance);
             Assert.Equal(MassUnit.Yottagram, yottagramQuantity.Unit);
@@ -484,10 +461,6 @@ namespace UnitsNet.Tests
             var yottatonneQuantity = kilogram.ToUnit(MassUnit.Yottatonne);
             AssertEx.EqualTolerance(YottatonnesInOneKilogram, (double)yottatonneQuantity.Value, YottatonnesTolerance);
             Assert.Equal(MassUnit.Yottatonne, yottatonneQuantity.Unit);
-
-            var zeptogramQuantity = kilogram.ToUnit(MassUnit.Zeptogram);
-            AssertEx.EqualTolerance(ZeptogramsInOneKilogram, (double)zeptogramQuantity.Value, ZeptogramsTolerance);
-            Assert.Equal(MassUnit.Zeptogram, zeptogramQuantity.Unit);
 
             var zettagramQuantity = kilogram.ToUnit(MassUnit.Zettagram);
             AssertEx.EqualTolerance(ZettagramsInOneKilogram, (double)zettagramQuantity.Value, ZettagramsTolerance);
@@ -502,7 +475,6 @@ namespace UnitsNet.Tests
         public void ConversionRoundTrip()
         {
             Mass kilogram = Mass.FromKilograms(1);
-            AssertEx.EqualTolerance(1, Mass.FromAttograms(kilogram.Attograms).Kilograms, AttogramsTolerance);
             AssertEx.EqualTolerance(1, Mass.FromCentigrams(kilogram.Centigrams).Kilograms, CentigramsTolerance);
             AssertEx.EqualTolerance(1, Mass.FromDecagrams(kilogram.Decagrams).Kilograms, DecagramsTolerance);
             AssertEx.EqualTolerance(1, Mass.FromDecigrams(kilogram.Decigrams).Kilograms, DecigramsTolerance);
@@ -541,10 +513,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, Mass.FromTonnes(kilogram.Tonnes).Kilograms, TonnesTolerance);
             AssertEx.EqualTolerance(1, Mass.FromVettagrams(kilogram.Vettagrams).Kilograms, VettagramsTolerance);
             AssertEx.EqualTolerance(1, Mass.FromVettatonnes(kilogram.Vettatonnes).Kilograms, VettatonnesTolerance);
-            AssertEx.EqualTolerance(1, Mass.FromYoctograms(kilogram.Yoctograms).Kilograms, YoctogramsTolerance);
             AssertEx.EqualTolerance(1, Mass.FromYottagrams(kilogram.Yottagrams).Kilograms, YottagramsTolerance);
             AssertEx.EqualTolerance(1, Mass.FromYottatonnes(kilogram.Yottatonnes).Kilograms, YottatonnesTolerance);
-            AssertEx.EqualTolerance(1, Mass.FromZeptograms(kilogram.Zeptograms).Kilograms, ZeptogramsTolerance);
             AssertEx.EqualTolerance(1, Mass.FromZettagrams(kilogram.Zettagrams).Kilograms, ZettagramsTolerance);
             AssertEx.EqualTolerance(1, Mass.FromZettatonnes(kilogram.Zettatonnes).Kilograms, ZettatonnesTolerance);
         }

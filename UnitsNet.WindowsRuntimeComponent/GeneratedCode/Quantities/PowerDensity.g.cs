@@ -156,26 +156,6 @@ namespace UnitsNet
         #region Conversion Properties
 
         /// <summary>
-        ///     Get PowerDensity in AttowattsPerCubicFoot.
-        /// </summary>
-        public double AttowattsPerCubicFoot => As(PowerDensityUnit.AttowattPerCubicFoot);
-
-        /// <summary>
-        ///     Get PowerDensity in AttowattsPerCubicInch.
-        /// </summary>
-        public double AttowattsPerCubicInch => As(PowerDensityUnit.AttowattPerCubicInch);
-
-        /// <summary>
-        ///     Get PowerDensity in AttowattsPerCubicMeter.
-        /// </summary>
-        public double AttowattsPerCubicMeter => As(PowerDensityUnit.AttowattPerCubicMeter);
-
-        /// <summary>
-        ///     Get PowerDensity in AttowattsPerLiter.
-        /// </summary>
-        public double AttowattsPerLiter => As(PowerDensityUnit.AttowattPerLiter);
-
-        /// <summary>
         ///     Get PowerDensity in CentiwattsPerCubicFoot.
         /// </summary>
         public double CentiwattsPerCubicFoot => As(PowerDensityUnit.CentiwattPerCubicFoot);
@@ -536,26 +516,6 @@ namespace UnitsNet
         public double WattsPerLiter => As(PowerDensityUnit.WattPerLiter);
 
         /// <summary>
-        ///     Get PowerDensity in YoctowattsPerCubicFoot.
-        /// </summary>
-        public double YoctowattsPerCubicFoot => As(PowerDensityUnit.YoctowattPerCubicFoot);
-
-        /// <summary>
-        ///     Get PowerDensity in YoctowattsPerCubicInch.
-        /// </summary>
-        public double YoctowattsPerCubicInch => As(PowerDensityUnit.YoctowattPerCubicInch);
-
-        /// <summary>
-        ///     Get PowerDensity in YoctowattsPerCubicMeter.
-        /// </summary>
-        public double YoctowattsPerCubicMeter => As(PowerDensityUnit.YoctowattPerCubicMeter);
-
-        /// <summary>
-        ///     Get PowerDensity in YoctowattsPerLiter.
-        /// </summary>
-        public double YoctowattsPerLiter => As(PowerDensityUnit.YoctowattPerLiter);
-
-        /// <summary>
         ///     Get PowerDensity in YottawattsPerCubicFoot.
         /// </summary>
         public double YottawattsPerCubicFoot => As(PowerDensityUnit.YottawattPerCubicFoot);
@@ -574,26 +534,6 @@ namespace UnitsNet
         ///     Get PowerDensity in YottawattsPerLiter.
         /// </summary>
         public double YottawattsPerLiter => As(PowerDensityUnit.YottawattPerLiter);
-
-        /// <summary>
-        ///     Get PowerDensity in ZeptowattsPerCubicFoot.
-        /// </summary>
-        public double ZeptowattsPerCubicFoot => As(PowerDensityUnit.ZeptowattPerCubicFoot);
-
-        /// <summary>
-        ///     Get PowerDensity in ZeptowattsPerCubicInch.
-        /// </summary>
-        public double ZeptowattsPerCubicInch => As(PowerDensityUnit.ZeptowattPerCubicInch);
-
-        /// <summary>
-        ///     Get PowerDensity in ZeptowattsPerCubicMeter.
-        /// </summary>
-        public double ZeptowattsPerCubicMeter => As(PowerDensityUnit.ZeptowattPerCubicMeter);
-
-        /// <summary>
-        ///     Get PowerDensity in ZeptowattsPerLiter.
-        /// </summary>
-        public double ZeptowattsPerLiter => As(PowerDensityUnit.ZeptowattPerLiter);
 
         /// <summary>
         ///     Get PowerDensity in ZettawattsPerCubicFoot.
@@ -645,46 +585,6 @@ namespace UnitsNet
 
         #region Static Factory Methods
 
-        /// <summary>
-        ///     Get PowerDensity from AttowattsPerCubicFoot.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static PowerDensity FromAttowattsPerCubicFoot(double attowattspercubicfoot)
-        {
-            double value = (double) attowattspercubicfoot;
-            return new PowerDensity(value, PowerDensityUnit.AttowattPerCubicFoot);
-        }
-        /// <summary>
-        ///     Get PowerDensity from AttowattsPerCubicInch.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static PowerDensity FromAttowattsPerCubicInch(double attowattspercubicinch)
-        {
-            double value = (double) attowattspercubicinch;
-            return new PowerDensity(value, PowerDensityUnit.AttowattPerCubicInch);
-        }
-        /// <summary>
-        ///     Get PowerDensity from AttowattsPerCubicMeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static PowerDensity FromAttowattsPerCubicMeter(double attowattspercubicmeter)
-        {
-            double value = (double) attowattspercubicmeter;
-            return new PowerDensity(value, PowerDensityUnit.AttowattPerCubicMeter);
-        }
-        /// <summary>
-        ///     Get PowerDensity from AttowattsPerLiter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static PowerDensity FromAttowattsPerLiter(double attowattsperliter)
-        {
-            double value = (double) attowattsperliter;
-            return new PowerDensity(value, PowerDensityUnit.AttowattPerLiter);
-        }
         /// <summary>
         ///     Get PowerDensity from CentiwattsPerCubicFoot.
         /// </summary>
@@ -1406,46 +1306,6 @@ namespace UnitsNet
             return new PowerDensity(value, PowerDensityUnit.WattPerLiter);
         }
         /// <summary>
-        ///     Get PowerDensity from YoctowattsPerCubicFoot.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static PowerDensity FromYoctowattsPerCubicFoot(double yoctowattspercubicfoot)
-        {
-            double value = (double) yoctowattspercubicfoot;
-            return new PowerDensity(value, PowerDensityUnit.YoctowattPerCubicFoot);
-        }
-        /// <summary>
-        ///     Get PowerDensity from YoctowattsPerCubicInch.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static PowerDensity FromYoctowattsPerCubicInch(double yoctowattspercubicinch)
-        {
-            double value = (double) yoctowattspercubicinch;
-            return new PowerDensity(value, PowerDensityUnit.YoctowattPerCubicInch);
-        }
-        /// <summary>
-        ///     Get PowerDensity from YoctowattsPerCubicMeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static PowerDensity FromYoctowattsPerCubicMeter(double yoctowattspercubicmeter)
-        {
-            double value = (double) yoctowattspercubicmeter;
-            return new PowerDensity(value, PowerDensityUnit.YoctowattPerCubicMeter);
-        }
-        /// <summary>
-        ///     Get PowerDensity from YoctowattsPerLiter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static PowerDensity FromYoctowattsPerLiter(double yoctowattsperliter)
-        {
-            double value = (double) yoctowattsperliter;
-            return new PowerDensity(value, PowerDensityUnit.YoctowattPerLiter);
-        }
-        /// <summary>
         ///     Get PowerDensity from YottawattsPerCubicFoot.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -1484,46 +1344,6 @@ namespace UnitsNet
         {
             double value = (double) yottawattsperliter;
             return new PowerDensity(value, PowerDensityUnit.YottawattPerLiter);
-        }
-        /// <summary>
-        ///     Get PowerDensity from ZeptowattsPerCubicFoot.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static PowerDensity FromZeptowattsPerCubicFoot(double zeptowattspercubicfoot)
-        {
-            double value = (double) zeptowattspercubicfoot;
-            return new PowerDensity(value, PowerDensityUnit.ZeptowattPerCubicFoot);
-        }
-        /// <summary>
-        ///     Get PowerDensity from ZeptowattsPerCubicInch.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static PowerDensity FromZeptowattsPerCubicInch(double zeptowattspercubicinch)
-        {
-            double value = (double) zeptowattspercubicinch;
-            return new PowerDensity(value, PowerDensityUnit.ZeptowattPerCubicInch);
-        }
-        /// <summary>
-        ///     Get PowerDensity from ZeptowattsPerCubicMeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static PowerDensity FromZeptowattsPerCubicMeter(double zeptowattspercubicmeter)
-        {
-            double value = (double) zeptowattspercubicmeter;
-            return new PowerDensity(value, PowerDensityUnit.ZeptowattPerCubicMeter);
-        }
-        /// <summary>
-        ///     Get PowerDensity from ZeptowattsPerLiter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static PowerDensity FromZeptowattsPerLiter(double zeptowattsperliter)
-        {
-            double value = (double) zeptowattsperliter;
-            return new PowerDensity(value, PowerDensityUnit.ZeptowattPerLiter);
         }
         /// <summary>
         ///     Get PowerDensity from ZettawattsPerCubicFoot.
@@ -1856,10 +1676,6 @@ namespace UnitsNet
         {
             switch(Unit)
             {
-                case PowerDensityUnit.AttowattPerCubicFoot: return (_value*3.531466672148859e1) * 1e-18d;
-                case PowerDensityUnit.AttowattPerCubicInch: return (_value*6.102374409473228e4) * 1e-18d;
-                case PowerDensityUnit.AttowattPerCubicMeter: return (_value) * 1e-18d;
-                case PowerDensityUnit.AttowattPerLiter: return (_value*1.0e3) * 1e-18d;
                 case PowerDensityUnit.CentiwattPerCubicFoot: return (_value*3.531466672148859e1) * 1e-2d;
                 case PowerDensityUnit.CentiwattPerCubicInch: return (_value*6.102374409473228e4) * 1e-2d;
                 case PowerDensityUnit.CentiwattPerCubicMeter: return (_value) * 1e-2d;
@@ -1932,18 +1748,10 @@ namespace UnitsNet
                 case PowerDensityUnit.WattPerCubicInch: return _value*6.102374409473228e4;
                 case PowerDensityUnit.WattPerCubicMeter: return _value;
                 case PowerDensityUnit.WattPerLiter: return _value*1.0e3;
-                case PowerDensityUnit.YoctowattPerCubicFoot: return (_value*3.531466672148859e1) * 1e-24d;
-                case PowerDensityUnit.YoctowattPerCubicInch: return (_value*6.102374409473228e4) * 1e-24d;
-                case PowerDensityUnit.YoctowattPerCubicMeter: return (_value) * 1e-24d;
-                case PowerDensityUnit.YoctowattPerLiter: return (_value*1.0e3) * 1e-24d;
                 case PowerDensityUnit.YottawattPerCubicFoot: return (_value*3.531466672148859e1) * 1e24d;
                 case PowerDensityUnit.YottawattPerCubicInch: return (_value*6.102374409473228e4) * 1e24d;
                 case PowerDensityUnit.YottawattPerCubicMeter: return (_value) * 1e24d;
                 case PowerDensityUnit.YottawattPerLiter: return (_value*1.0e3) * 1e24d;
-                case PowerDensityUnit.ZeptowattPerCubicFoot: return (_value*3.531466672148859e1) * 1e-21d;
-                case PowerDensityUnit.ZeptowattPerCubicInch: return (_value*6.102374409473228e4) * 1e-21d;
-                case PowerDensityUnit.ZeptowattPerCubicMeter: return (_value) * 1e-21d;
-                case PowerDensityUnit.ZeptowattPerLiter: return (_value*1.0e3) * 1e-21d;
                 case PowerDensityUnit.ZettawattPerCubicFoot: return (_value*3.531466672148859e1) * 1e21d;
                 case PowerDensityUnit.ZettawattPerCubicInch: return (_value*6.102374409473228e4) * 1e21d;
                 case PowerDensityUnit.ZettawattPerCubicMeter: return (_value) * 1e21d;
@@ -1962,10 +1770,6 @@ namespace UnitsNet
 
             switch(unit)
             {
-                case PowerDensityUnit.AttowattPerCubicFoot: return (baseUnitValue/3.531466672148859e1) / 1e-18d;
-                case PowerDensityUnit.AttowattPerCubicInch: return (baseUnitValue/6.102374409473228e4) / 1e-18d;
-                case PowerDensityUnit.AttowattPerCubicMeter: return (baseUnitValue) / 1e-18d;
-                case PowerDensityUnit.AttowattPerLiter: return (baseUnitValue/1.0e3) / 1e-18d;
                 case PowerDensityUnit.CentiwattPerCubicFoot: return (baseUnitValue/3.531466672148859e1) / 1e-2d;
                 case PowerDensityUnit.CentiwattPerCubicInch: return (baseUnitValue/6.102374409473228e4) / 1e-2d;
                 case PowerDensityUnit.CentiwattPerCubicMeter: return (baseUnitValue) / 1e-2d;
@@ -2038,18 +1842,10 @@ namespace UnitsNet
                 case PowerDensityUnit.WattPerCubicInch: return baseUnitValue/6.102374409473228e4;
                 case PowerDensityUnit.WattPerCubicMeter: return baseUnitValue;
                 case PowerDensityUnit.WattPerLiter: return baseUnitValue/1.0e3;
-                case PowerDensityUnit.YoctowattPerCubicFoot: return (baseUnitValue/3.531466672148859e1) / 1e-24d;
-                case PowerDensityUnit.YoctowattPerCubicInch: return (baseUnitValue/6.102374409473228e4) / 1e-24d;
-                case PowerDensityUnit.YoctowattPerCubicMeter: return (baseUnitValue) / 1e-24d;
-                case PowerDensityUnit.YoctowattPerLiter: return (baseUnitValue/1.0e3) / 1e-24d;
                 case PowerDensityUnit.YottawattPerCubicFoot: return (baseUnitValue/3.531466672148859e1) / 1e24d;
                 case PowerDensityUnit.YottawattPerCubicInch: return (baseUnitValue/6.102374409473228e4) / 1e24d;
                 case PowerDensityUnit.YottawattPerCubicMeter: return (baseUnitValue) / 1e24d;
                 case PowerDensityUnit.YottawattPerLiter: return (baseUnitValue/1.0e3) / 1e24d;
-                case PowerDensityUnit.ZeptowattPerCubicFoot: return (baseUnitValue/3.531466672148859e1) / 1e-21d;
-                case PowerDensityUnit.ZeptowattPerCubicInch: return (baseUnitValue/6.102374409473228e4) / 1e-21d;
-                case PowerDensityUnit.ZeptowattPerCubicMeter: return (baseUnitValue) / 1e-21d;
-                case PowerDensityUnit.ZeptowattPerLiter: return (baseUnitValue/1.0e3) / 1e-21d;
                 case PowerDensityUnit.ZettawattPerCubicFoot: return (baseUnitValue/3.531466672148859e1) / 1e21d;
                 case PowerDensityUnit.ZettawattPerCubicInch: return (baseUnitValue/6.102374409473228e4) / 1e21d;
                 case PowerDensityUnit.ZettawattPerCubicMeter: return (baseUnitValue) / 1e21d;

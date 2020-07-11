@@ -53,11 +53,6 @@ namespace UnitsNet
 
             Info = new QuantityInfo<SpecificWeightUnit>(QuantityType.SpecificWeight,
                 new UnitInfo<SpecificWeightUnit>[] {
-                    new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.AttonewtonPerCubicCentimeter, BaseUnits.Undefined),
-                    new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.AttonewtonPerCubicMeter, BaseUnits.Undefined),
-                    new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.AttonewtonPerCubicMillimeter, BaseUnits.Undefined),
-                    new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.AttopoundForcePerCubicFoot, BaseUnits.Undefined),
-                    new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.AttopoundForcePerCubicInch, BaseUnits.Undefined),
                     new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.CentinewtonPerCubicCentimeter, BaseUnits.Undefined),
                     new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.CentinewtonPerCubicMeter, BaseUnits.Undefined),
                     new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.CentinewtonPerCubicMillimeter, BaseUnits.Undefined),
@@ -154,21 +149,11 @@ namespace UnitsNet
                     new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.VettanewtonPerCubicMillimeter, BaseUnits.Undefined),
                     new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.VettapoundForcePerCubicFoot, BaseUnits.Undefined),
                     new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.VettapoundForcePerCubicInch, BaseUnits.Undefined),
-                    new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.YoctonewtonPerCubicCentimeter, BaseUnits.Undefined),
-                    new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.YoctonewtonPerCubicMeter, BaseUnits.Undefined),
-                    new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.YoctonewtonPerCubicMillimeter, BaseUnits.Undefined),
-                    new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.YoctopoundForcePerCubicFoot, BaseUnits.Undefined),
-                    new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.YoctopoundForcePerCubicInch, BaseUnits.Undefined),
                     new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.YottanewtonPerCubicCentimeter, BaseUnits.Undefined),
                     new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.YottanewtonPerCubicMeter, BaseUnits.Undefined),
                     new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.YottanewtonPerCubicMillimeter, BaseUnits.Undefined),
                     new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.YottapoundForcePerCubicFoot, BaseUnits.Undefined),
                     new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.YottapoundForcePerCubicInch, BaseUnits.Undefined),
-                    new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.ZeptonewtonPerCubicCentimeter, BaseUnits.Undefined),
-                    new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.ZeptonewtonPerCubicMeter, BaseUnits.Undefined),
-                    new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.ZeptonewtonPerCubicMillimeter, BaseUnits.Undefined),
-                    new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.ZeptopoundForcePerCubicFoot, BaseUnits.Undefined),
-                    new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.ZeptopoundForcePerCubicInch, BaseUnits.Undefined),
                     new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.ZettanewtonPerCubicCentimeter, BaseUnits.Undefined),
                     new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.ZettanewtonPerCubicMeter, BaseUnits.Undefined),
                     new UnitInfo<SpecificWeightUnit>(SpecificWeightUnit.ZettanewtonPerCubicMillimeter, BaseUnits.Undefined),
@@ -285,31 +270,6 @@ namespace UnitsNet
         #endregion
 
         #region Conversion Properties
-
-        /// <summary>
-        ///     Get SpecificWeight in AttonewtonsPerCubicCentimeter.
-        /// </summary>
-        public double AttonewtonsPerCubicCentimeter => As(SpecificWeightUnit.AttonewtonPerCubicCentimeter);
-
-        /// <summary>
-        ///     Get SpecificWeight in AttonewtonsPerCubicMeter.
-        /// </summary>
-        public double AttonewtonsPerCubicMeter => As(SpecificWeightUnit.AttonewtonPerCubicMeter);
-
-        /// <summary>
-        ///     Get SpecificWeight in AttonewtonsPerCubicMillimeter.
-        /// </summary>
-        public double AttonewtonsPerCubicMillimeter => As(SpecificWeightUnit.AttonewtonPerCubicMillimeter);
-
-        /// <summary>
-        ///     Get SpecificWeight in AttopoundsForcePerCubicFoot.
-        /// </summary>
-        public double AttopoundsForcePerCubicFoot => As(SpecificWeightUnit.AttopoundForcePerCubicFoot);
-
-        /// <summary>
-        ///     Get SpecificWeight in AttopoundsForcePerCubicInch.
-        /// </summary>
-        public double AttopoundsForcePerCubicInch => As(SpecificWeightUnit.AttopoundForcePerCubicInch);
 
         /// <summary>
         ///     Get SpecificWeight in CentinewtonsPerCubicCentimeter.
@@ -792,31 +752,6 @@ namespace UnitsNet
         public double VettapoundsForcePerCubicInch => As(SpecificWeightUnit.VettapoundForcePerCubicInch);
 
         /// <summary>
-        ///     Get SpecificWeight in YoctonewtonsPerCubicCentimeter.
-        /// </summary>
-        public double YoctonewtonsPerCubicCentimeter => As(SpecificWeightUnit.YoctonewtonPerCubicCentimeter);
-
-        /// <summary>
-        ///     Get SpecificWeight in YoctonewtonsPerCubicMeter.
-        /// </summary>
-        public double YoctonewtonsPerCubicMeter => As(SpecificWeightUnit.YoctonewtonPerCubicMeter);
-
-        /// <summary>
-        ///     Get SpecificWeight in YoctonewtonsPerCubicMillimeter.
-        /// </summary>
-        public double YoctonewtonsPerCubicMillimeter => As(SpecificWeightUnit.YoctonewtonPerCubicMillimeter);
-
-        /// <summary>
-        ///     Get SpecificWeight in YoctopoundsForcePerCubicFoot.
-        /// </summary>
-        public double YoctopoundsForcePerCubicFoot => As(SpecificWeightUnit.YoctopoundForcePerCubicFoot);
-
-        /// <summary>
-        ///     Get SpecificWeight in YoctopoundsForcePerCubicInch.
-        /// </summary>
-        public double YoctopoundsForcePerCubicInch => As(SpecificWeightUnit.YoctopoundForcePerCubicInch);
-
-        /// <summary>
         ///     Get SpecificWeight in YottanewtonsPerCubicCentimeter.
         /// </summary>
         public double YottanewtonsPerCubicCentimeter => As(SpecificWeightUnit.YottanewtonPerCubicCentimeter);
@@ -840,31 +775,6 @@ namespace UnitsNet
         ///     Get SpecificWeight in YottapoundsForcePerCubicInch.
         /// </summary>
         public double YottapoundsForcePerCubicInch => As(SpecificWeightUnit.YottapoundForcePerCubicInch);
-
-        /// <summary>
-        ///     Get SpecificWeight in ZeptonewtonsPerCubicCentimeter.
-        /// </summary>
-        public double ZeptonewtonsPerCubicCentimeter => As(SpecificWeightUnit.ZeptonewtonPerCubicCentimeter);
-
-        /// <summary>
-        ///     Get SpecificWeight in ZeptonewtonsPerCubicMeter.
-        /// </summary>
-        public double ZeptonewtonsPerCubicMeter => As(SpecificWeightUnit.ZeptonewtonPerCubicMeter);
-
-        /// <summary>
-        ///     Get SpecificWeight in ZeptonewtonsPerCubicMillimeter.
-        /// </summary>
-        public double ZeptonewtonsPerCubicMillimeter => As(SpecificWeightUnit.ZeptonewtonPerCubicMillimeter);
-
-        /// <summary>
-        ///     Get SpecificWeight in ZeptopoundsForcePerCubicFoot.
-        /// </summary>
-        public double ZeptopoundsForcePerCubicFoot => As(SpecificWeightUnit.ZeptopoundForcePerCubicFoot);
-
-        /// <summary>
-        ///     Get SpecificWeight in ZeptopoundsForcePerCubicInch.
-        /// </summary>
-        public double ZeptopoundsForcePerCubicInch => As(SpecificWeightUnit.ZeptopoundForcePerCubicInch);
 
         /// <summary>
         ///     Get SpecificWeight in ZettanewtonsPerCubicCentimeter.
@@ -920,51 +830,6 @@ namespace UnitsNet
 
         #region Static Factory Methods
 
-        /// <summary>
-        ///     Get SpecificWeight from AttonewtonsPerCubicCentimeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificWeight FromAttonewtonsPerCubicCentimeter(QuantityValue attonewtonspercubiccentimeter)
-        {
-            double value = (double) attonewtonspercubiccentimeter;
-            return new SpecificWeight(value, SpecificWeightUnit.AttonewtonPerCubicCentimeter);
-        }
-        /// <summary>
-        ///     Get SpecificWeight from AttonewtonsPerCubicMeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificWeight FromAttonewtonsPerCubicMeter(QuantityValue attonewtonspercubicmeter)
-        {
-            double value = (double) attonewtonspercubicmeter;
-            return new SpecificWeight(value, SpecificWeightUnit.AttonewtonPerCubicMeter);
-        }
-        /// <summary>
-        ///     Get SpecificWeight from AttonewtonsPerCubicMillimeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificWeight FromAttonewtonsPerCubicMillimeter(QuantityValue attonewtonspercubicmillimeter)
-        {
-            double value = (double) attonewtonspercubicmillimeter;
-            return new SpecificWeight(value, SpecificWeightUnit.AttonewtonPerCubicMillimeter);
-        }
-        /// <summary>
-        ///     Get SpecificWeight from AttopoundsForcePerCubicFoot.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificWeight FromAttopoundsForcePerCubicFoot(QuantityValue attopoundsforcepercubicfoot)
-        {
-            double value = (double) attopoundsforcepercubicfoot;
-            return new SpecificWeight(value, SpecificWeightUnit.AttopoundForcePerCubicFoot);
-        }
-        /// <summary>
-        ///     Get SpecificWeight from AttopoundsForcePerCubicInch.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificWeight FromAttopoundsForcePerCubicInch(QuantityValue attopoundsforcepercubicinch)
-        {
-            double value = (double) attopoundsforcepercubicinch;
-            return new SpecificWeight(value, SpecificWeightUnit.AttopoundForcePerCubicInch);
-        }
         /// <summary>
         ///     Get SpecificWeight from CentinewtonsPerCubicCentimeter.
         /// </summary>
@@ -1830,51 +1695,6 @@ namespace UnitsNet
             return new SpecificWeight(value, SpecificWeightUnit.VettapoundForcePerCubicInch);
         }
         /// <summary>
-        ///     Get SpecificWeight from YoctonewtonsPerCubicCentimeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificWeight FromYoctonewtonsPerCubicCentimeter(QuantityValue yoctonewtonspercubiccentimeter)
-        {
-            double value = (double) yoctonewtonspercubiccentimeter;
-            return new SpecificWeight(value, SpecificWeightUnit.YoctonewtonPerCubicCentimeter);
-        }
-        /// <summary>
-        ///     Get SpecificWeight from YoctonewtonsPerCubicMeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificWeight FromYoctonewtonsPerCubicMeter(QuantityValue yoctonewtonspercubicmeter)
-        {
-            double value = (double) yoctonewtonspercubicmeter;
-            return new SpecificWeight(value, SpecificWeightUnit.YoctonewtonPerCubicMeter);
-        }
-        /// <summary>
-        ///     Get SpecificWeight from YoctonewtonsPerCubicMillimeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificWeight FromYoctonewtonsPerCubicMillimeter(QuantityValue yoctonewtonspercubicmillimeter)
-        {
-            double value = (double) yoctonewtonspercubicmillimeter;
-            return new SpecificWeight(value, SpecificWeightUnit.YoctonewtonPerCubicMillimeter);
-        }
-        /// <summary>
-        ///     Get SpecificWeight from YoctopoundsForcePerCubicFoot.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificWeight FromYoctopoundsForcePerCubicFoot(QuantityValue yoctopoundsforcepercubicfoot)
-        {
-            double value = (double) yoctopoundsforcepercubicfoot;
-            return new SpecificWeight(value, SpecificWeightUnit.YoctopoundForcePerCubicFoot);
-        }
-        /// <summary>
-        ///     Get SpecificWeight from YoctopoundsForcePerCubicInch.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificWeight FromYoctopoundsForcePerCubicInch(QuantityValue yoctopoundsforcepercubicinch)
-        {
-            double value = (double) yoctopoundsforcepercubicinch;
-            return new SpecificWeight(value, SpecificWeightUnit.YoctopoundForcePerCubicInch);
-        }
-        /// <summary>
         ///     Get SpecificWeight from YottanewtonsPerCubicCentimeter.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -1918,51 +1738,6 @@ namespace UnitsNet
         {
             double value = (double) yottapoundsforcepercubicinch;
             return new SpecificWeight(value, SpecificWeightUnit.YottapoundForcePerCubicInch);
-        }
-        /// <summary>
-        ///     Get SpecificWeight from ZeptonewtonsPerCubicCentimeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificWeight FromZeptonewtonsPerCubicCentimeter(QuantityValue zeptonewtonspercubiccentimeter)
-        {
-            double value = (double) zeptonewtonspercubiccentimeter;
-            return new SpecificWeight(value, SpecificWeightUnit.ZeptonewtonPerCubicCentimeter);
-        }
-        /// <summary>
-        ///     Get SpecificWeight from ZeptonewtonsPerCubicMeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificWeight FromZeptonewtonsPerCubicMeter(QuantityValue zeptonewtonspercubicmeter)
-        {
-            double value = (double) zeptonewtonspercubicmeter;
-            return new SpecificWeight(value, SpecificWeightUnit.ZeptonewtonPerCubicMeter);
-        }
-        /// <summary>
-        ///     Get SpecificWeight from ZeptonewtonsPerCubicMillimeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificWeight FromZeptonewtonsPerCubicMillimeter(QuantityValue zeptonewtonspercubicmillimeter)
-        {
-            double value = (double) zeptonewtonspercubicmillimeter;
-            return new SpecificWeight(value, SpecificWeightUnit.ZeptonewtonPerCubicMillimeter);
-        }
-        /// <summary>
-        ///     Get SpecificWeight from ZeptopoundsForcePerCubicFoot.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificWeight FromZeptopoundsForcePerCubicFoot(QuantityValue zeptopoundsforcepercubicfoot)
-        {
-            double value = (double) zeptopoundsforcepercubicfoot;
-            return new SpecificWeight(value, SpecificWeightUnit.ZeptopoundForcePerCubicFoot);
-        }
-        /// <summary>
-        ///     Get SpecificWeight from ZeptopoundsForcePerCubicInch.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static SpecificWeight FromZeptopoundsForcePerCubicInch(QuantityValue zeptopoundsforcepercubicinch)
-        {
-            double value = (double) zeptopoundsforcepercubicinch;
-            return new SpecificWeight(value, SpecificWeightUnit.ZeptopoundForcePerCubicInch);
         }
         /// <summary>
         ///     Get SpecificWeight from ZettanewtonsPerCubicCentimeter.
@@ -2438,11 +2213,6 @@ namespace UnitsNet
         {
             switch(Unit)
             {
-                case SpecificWeightUnit.AttonewtonPerCubicCentimeter: return (_value*1000000) * 1e-18d;
-                case SpecificWeightUnit.AttonewtonPerCubicMeter: return (_value) * 1e-18d;
-                case SpecificWeightUnit.AttonewtonPerCubicMillimeter: return (_value*1000000000) * 1e-18d;
-                case SpecificWeightUnit.AttopoundForcePerCubicFoot: return (_value*1.570874638462462e2) * 1e-18d;
-                case SpecificWeightUnit.AttopoundForcePerCubicInch: return (_value*2.714471375263134e5) * 1e-18d;
                 case SpecificWeightUnit.CentinewtonPerCubicCentimeter: return (_value*1000000) * 1e-2d;
                 case SpecificWeightUnit.CentinewtonPerCubicMeter: return (_value) * 1e-2d;
                 case SpecificWeightUnit.CentinewtonPerCubicMillimeter: return (_value*1000000000) * 1e-2d;
@@ -2539,21 +2309,11 @@ namespace UnitsNet
                 case SpecificWeightUnit.VettanewtonPerCubicMillimeter: return (_value*1000000000) * 1e30d;
                 case SpecificWeightUnit.VettapoundForcePerCubicFoot: return (_value*1.570874638462462e2) * 1e30d;
                 case SpecificWeightUnit.VettapoundForcePerCubicInch: return (_value*2.714471375263134e5) * 1e30d;
-                case SpecificWeightUnit.YoctonewtonPerCubicCentimeter: return (_value*1000000) * 1e-24d;
-                case SpecificWeightUnit.YoctonewtonPerCubicMeter: return (_value) * 1e-24d;
-                case SpecificWeightUnit.YoctonewtonPerCubicMillimeter: return (_value*1000000000) * 1e-24d;
-                case SpecificWeightUnit.YoctopoundForcePerCubicFoot: return (_value*1.570874638462462e2) * 1e-24d;
-                case SpecificWeightUnit.YoctopoundForcePerCubicInch: return (_value*2.714471375263134e5) * 1e-24d;
                 case SpecificWeightUnit.YottanewtonPerCubicCentimeter: return (_value*1000000) * 1e24d;
                 case SpecificWeightUnit.YottanewtonPerCubicMeter: return (_value) * 1e24d;
                 case SpecificWeightUnit.YottanewtonPerCubicMillimeter: return (_value*1000000000) * 1e24d;
                 case SpecificWeightUnit.YottapoundForcePerCubicFoot: return (_value*1.570874638462462e2) * 1e24d;
                 case SpecificWeightUnit.YottapoundForcePerCubicInch: return (_value*2.714471375263134e5) * 1e24d;
-                case SpecificWeightUnit.ZeptonewtonPerCubicCentimeter: return (_value*1000000) * 1e-21d;
-                case SpecificWeightUnit.ZeptonewtonPerCubicMeter: return (_value) * 1e-21d;
-                case SpecificWeightUnit.ZeptonewtonPerCubicMillimeter: return (_value*1000000000) * 1e-21d;
-                case SpecificWeightUnit.ZeptopoundForcePerCubicFoot: return (_value*1.570874638462462e2) * 1e-21d;
-                case SpecificWeightUnit.ZeptopoundForcePerCubicInch: return (_value*2.714471375263134e5) * 1e-21d;
                 case SpecificWeightUnit.ZettanewtonPerCubicCentimeter: return (_value*1000000) * 1e21d;
                 case SpecificWeightUnit.ZettanewtonPerCubicMeter: return (_value) * 1e21d;
                 case SpecificWeightUnit.ZettanewtonPerCubicMillimeter: return (_value*1000000000) * 1e21d;
@@ -2573,11 +2333,6 @@ namespace UnitsNet
 
             switch(unit)
             {
-                case SpecificWeightUnit.AttonewtonPerCubicCentimeter: return (baseUnitValue*0.000001) / 1e-18d;
-                case SpecificWeightUnit.AttonewtonPerCubicMeter: return (baseUnitValue) / 1e-18d;
-                case SpecificWeightUnit.AttonewtonPerCubicMillimeter: return (baseUnitValue*0.000000001) / 1e-18d;
-                case SpecificWeightUnit.AttopoundForcePerCubicFoot: return (baseUnitValue/1.570874638462462e2) / 1e-18d;
-                case SpecificWeightUnit.AttopoundForcePerCubicInch: return (baseUnitValue/2.714471375263134e5) / 1e-18d;
                 case SpecificWeightUnit.CentinewtonPerCubicCentimeter: return (baseUnitValue*0.000001) / 1e-2d;
                 case SpecificWeightUnit.CentinewtonPerCubicMeter: return (baseUnitValue) / 1e-2d;
                 case SpecificWeightUnit.CentinewtonPerCubicMillimeter: return (baseUnitValue*0.000000001) / 1e-2d;
@@ -2674,21 +2429,11 @@ namespace UnitsNet
                 case SpecificWeightUnit.VettanewtonPerCubicMillimeter: return (baseUnitValue*0.000000001) / 1e30d;
                 case SpecificWeightUnit.VettapoundForcePerCubicFoot: return (baseUnitValue/1.570874638462462e2) / 1e30d;
                 case SpecificWeightUnit.VettapoundForcePerCubicInch: return (baseUnitValue/2.714471375263134e5) / 1e30d;
-                case SpecificWeightUnit.YoctonewtonPerCubicCentimeter: return (baseUnitValue*0.000001) / 1e-24d;
-                case SpecificWeightUnit.YoctonewtonPerCubicMeter: return (baseUnitValue) / 1e-24d;
-                case SpecificWeightUnit.YoctonewtonPerCubicMillimeter: return (baseUnitValue*0.000000001) / 1e-24d;
-                case SpecificWeightUnit.YoctopoundForcePerCubicFoot: return (baseUnitValue/1.570874638462462e2) / 1e-24d;
-                case SpecificWeightUnit.YoctopoundForcePerCubicInch: return (baseUnitValue/2.714471375263134e5) / 1e-24d;
                 case SpecificWeightUnit.YottanewtonPerCubicCentimeter: return (baseUnitValue*0.000001) / 1e24d;
                 case SpecificWeightUnit.YottanewtonPerCubicMeter: return (baseUnitValue) / 1e24d;
                 case SpecificWeightUnit.YottanewtonPerCubicMillimeter: return (baseUnitValue*0.000000001) / 1e24d;
                 case SpecificWeightUnit.YottapoundForcePerCubicFoot: return (baseUnitValue/1.570874638462462e2) / 1e24d;
                 case SpecificWeightUnit.YottapoundForcePerCubicInch: return (baseUnitValue/2.714471375263134e5) / 1e24d;
-                case SpecificWeightUnit.ZeptonewtonPerCubicCentimeter: return (baseUnitValue*0.000001) / 1e-21d;
-                case SpecificWeightUnit.ZeptonewtonPerCubicMeter: return (baseUnitValue) / 1e-21d;
-                case SpecificWeightUnit.ZeptonewtonPerCubicMillimeter: return (baseUnitValue*0.000000001) / 1e-21d;
-                case SpecificWeightUnit.ZeptopoundForcePerCubicFoot: return (baseUnitValue/1.570874638462462e2) / 1e-21d;
-                case SpecificWeightUnit.ZeptopoundForcePerCubicInch: return (baseUnitValue/2.714471375263134e5) / 1e-21d;
                 case SpecificWeightUnit.ZettanewtonPerCubicCentimeter: return (baseUnitValue*0.000001) / 1e21d;
                 case SpecificWeightUnit.ZettanewtonPerCubicMeter: return (baseUnitValue) / 1e21d;
                 case SpecificWeightUnit.ZettanewtonPerCubicMillimeter: return (baseUnitValue*0.000000001) / 1e21d;

@@ -13,9 +13,7 @@ namespace UnitsNet.Tests.CustomCode
     [Collection(nameof(UnitAbbreviationsCacheFixture))]
     public class LengthTests : LengthTestsBase
     {
-        protected override double CentimetersInOneMeter => 100;
 
-        protected override double DecimetersInOneMeter => 10;
         protected override double DtpPicasInOneMeter => 236.22047244;
         protected override double DtpPointsInOneMeter => 2834.6456693;
 
@@ -28,22 +26,44 @@ namespace UnitsNet.Tests.CustomCode
 
         protected override double InchesInOneMeter => 39.37007874;
 
-        protected override double KilometersInOneMeter => 1E-3;
 
+
+        protected override double FemtometersInOneMeter => 1e15;
+        protected override double PicometersInOneMeter => 1e12;
+        protected override double NanometersInOneMeter => 1E9;
+        protected override double MicrometersInOneMeter => 1E6;
+        protected override double MillimetersInOneMeter => 1E3;
+        protected override double CentimetersInOneMeter => 100;
+        protected override double DecimetersInOneMeter => 10;
         protected override double MetersInOneMeter => 1;
+        protected override double DecametersInOneMeter => 0.1;
+        protected override double KilometersInOneMeter => 1E-3;
+        protected override double MegametersInOneMeter => 1e-6;
+        protected override double GigametersInOneMeter => 1e-9;
+        protected override double TerametersInOneMeter => 1e-12;
+        protected override double PetametersInOneMeter => 1e-15;
+        protected override double ExametersInOneMeter => 1e-18;
+        protected override double ZettametersInOneMeter => 1e-21;
+        protected override double YottametersInOneMeter => 1e-24;
+        protected override double QutrametersInOneMeter => 1e-27;
+        protected override double VettametersInOneMeter => 1e-30;
+
+
+        protected override double MicrolightSecondsInOneMeter => 3.33564e-3;
+        protected override double MillilightSecondsInOneMeter => 3.33564e-6;
+        protected override double LightSecondsInOneMeter => 3.33564e-9;
+        protected override double DecalightSecondsInOneMeter => 3.33564e-10;
+        protected override double KilolightSecondsInOneMeter => 3.33564e-12;
+        protected override double MegalightSecondsInOneMeter => 3.33564e-15;
+        protected override double GigalightSecondsInOneMeter => 3.33564e-18;
+        protected override double TeralightSecondsInOneMeter => 3.33564e-21;
 
         protected override double MicroinchesInOneMeter => 39370078.74015748;
 
-        protected override double MicrometersInOneMeter => 1E6;
 
         protected override double MilsInOneMeter => 39370.07874015;
 
         protected override double MilesInOneMeter => 0.000621371;
-
-        protected override double MillimetersInOneMeter => 1E3;
-
-        protected override double NanometersInOneMeter => 1E9;
-
         protected override double YardsInOneMeter => 1.09361;
 
         protected override double FathomsInOneMeter => 0.546806649;
@@ -56,6 +76,66 @@ namespace UnitsNet.Tests.CustomCode
         protected override double NauticalMilesInOneMeter => 1.0/1852.0;
 
         protected override double HandsInOneMeter => 9.8425196850393701;
+
+
+
+
+        protected override double MicrolightYearsInOneMeter => 1.057e-10;
+        protected override double MillilightYearsInOneMeter => 1.057e-13;
+        protected override double LightYearsInOneMeter => 1.057e-16;
+        protected override double DecalightYearsInOneMeter => 1.057e-17;
+        protected override double KilolightYearsInOneMeter => 1.057e-19;
+        protected override double MegalightYearsInOneMeter => 1.057e-22;
+        protected override double GigalightYearsInOneMeter => 1.057e-25;
+        protected override double TeralightYearsInOneMeter => 1.057e-28;
+        protected override double PetalightYearsInOneMeter => 1.057e-31;
+        protected override double ExalightYearsInOneMeter => 1.057e-34;
+        protected override double ZettalightYearsInOneMeter => 1.057e-37;
+        protected override double YottalightYearsInOneMeter => 1.057e-40;
+
+
+
+
+        protected override double MicroaUsInOneMeter => 6.6844919e-6;
+        protected override double MilliaUsInOneMeter => 6.6844919e-9;
+        protected override double AUsInOneMeter => 6.6844919e-12;
+        protected override double DecaaUsInOneMeter => 6.6844919e-13;
+        protected override double KiloaUsInOneMeter => 6.6844919e-15;
+        protected override double MegaaUsInOneMeter => 6.6844919e-18;
+        protected override double GigaaUsInOneMeter => 6.6844919e-21;
+        protected override double TeraaUsInOneMeter => 6.6844919e-24;
+
+
+        protected override double MicrolightMinutesInOneMeter => 5.5586436909e-5;
+        protected override double MillilightMinutesInOneMeter => 5.5586436909e-8;
+        protected override double LightMinutesInOneMeter => 5.5586436909e-11;
+        protected override double DecalightMinutesInOneMeter => 5.5586436909e-12;
+        protected override double KilolightMinutesInOneMeter => 5.5586436909e-14;
+        protected override double MegalightMinutesInOneMeter => 5.5586436909e-17;
+        protected override double GigalightMinutesInOneMeter => 5.5586436909e-20;
+        protected override double TeralightMinutesInOneMeter => 5.5586436909e-23;
+
+
+        protected override double MicrolightHoursInOneMeter => 9.26784059e-7;
+        protected override double MillilightHoursInOneMeter => 9.26784059e-10;
+        protected override double LightHoursInOneMeter => 9.26784059e-13;
+        protected override double DecalightHoursInOneMeter => 9.26784059e-14;
+        protected override double KilolightHoursInOneMeter => 9.26784059e-16;
+        protected override double MegalightHoursInOneMeter => 9.26784059e-19;
+        protected override double GigalightHoursInOneMeter => 9.26784059e-22;
+        protected override double TeralightHoursInOneMeter => 9.26784059e-25;
+
+
+        protected override double MicrolightDaysInOneMeter => 3.8610038e-8;
+        protected override double MillilightDaysInOneMeter => 3.8610038e-11;
+        protected override double LightDaysInOneMeter => 3.8610038e-14;
+        protected override double DecalightDaysInOneMeter => 3.8610038e-15;
+        protected override double KilolightDaysInOneMeter => 3.8610038e-17;
+        protected override double MegalightDaysInOneMeter => 3.8610038e-20;
+        protected override double GigalightDaysInOneMeter => 3.8610038e-23;
+        protected override double TeralightDaysInOneMeter => 3.8610038e-26;
+
+
 
         [ Fact]
         public void AreaTimesLengthEqualsVolume()
@@ -193,6 +273,16 @@ namespace UnitsNet.Tests.CustomCode
 
             Assert.Equal(0.0508, inSI.Value);
             Assert.Equal(LengthUnit.Meter, inSI.Unit);
+        }
+
+        [Fact]
+        public void EarlyAccessLengthObjects()
+        {
+            LengthUnit b = Length.BaseUnit;
+            Length l = new Length(-1, b);
+            Length expected = new Length(-1, Length.BaseUnit);
+            Assert.Equal(expected, l);
+            Assert.Equal(Length.BaseUnit, b);
         }
     }
 }

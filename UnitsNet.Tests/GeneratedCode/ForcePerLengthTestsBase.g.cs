@@ -34,7 +34,6 @@ namespace UnitsNet.Tests
 // ReSharper disable once PartialTypeWithSinglePart
     public abstract partial class ForcePerLengthTestsBase
     {
-        protected abstract double AttonewtonsPerMeterInOneNewtonPerMeter { get; }
         protected abstract double CentinewtonsPerMeterInOneNewtonPerMeter { get; }
         protected abstract double DecanewtonsPerMeterInOneNewtonPerMeter { get; }
         protected abstract double DecinewtonsPerMeterInOneNewtonPerMeter { get; }
@@ -54,13 +53,10 @@ namespace UnitsNet.Tests
         protected abstract double QutranewtonsPerMeterInOneNewtonPerMeter { get; }
         protected abstract double TeranewtonsPerMeterInOneNewtonPerMeter { get; }
         protected abstract double VettanewtonsPerMeterInOneNewtonPerMeter { get; }
-        protected abstract double YoctonewtonsPerMeterInOneNewtonPerMeter { get; }
         protected abstract double YottanewtonsPerMeterInOneNewtonPerMeter { get; }
-        protected abstract double ZeptonewtonsPerMeterInOneNewtonPerMeter { get; }
         protected abstract double ZettanewtonsPerMeterInOneNewtonPerMeter { get; }
 
 // ReSharper disable VirtualMemberNeverOverriden.Global
-        protected virtual double AttonewtonsPerMeterTolerance { get { return 1e-5; } }
         protected virtual double CentinewtonsPerMeterTolerance { get { return 1e-5; } }
         protected virtual double DecanewtonsPerMeterTolerance { get { return 1e-5; } }
         protected virtual double DecinewtonsPerMeterTolerance { get { return 1e-5; } }
@@ -80,9 +76,7 @@ namespace UnitsNet.Tests
         protected virtual double QutranewtonsPerMeterTolerance { get { return 1e-5; } }
         protected virtual double TeranewtonsPerMeterTolerance { get { return 1e-5; } }
         protected virtual double VettanewtonsPerMeterTolerance { get { return 1e-5; } }
-        protected virtual double YoctonewtonsPerMeterTolerance { get { return 1e-5; } }
         protected virtual double YottanewtonsPerMeterTolerance { get { return 1e-5; } }
-        protected virtual double ZeptonewtonsPerMeterTolerance { get { return 1e-5; } }
         protected virtual double ZettanewtonsPerMeterTolerance { get { return 1e-5; } }
 // ReSharper restore VirtualMemberNeverOverriden.Global
 
@@ -109,7 +103,6 @@ namespace UnitsNet.Tests
         public void NewtonPerMeterToForcePerLengthUnits()
         {
             ForcePerLength newtonpermeter = ForcePerLength.FromNewtonsPerMeter(1);
-            AssertEx.EqualTolerance(AttonewtonsPerMeterInOneNewtonPerMeter, newtonpermeter.AttonewtonsPerMeter, AttonewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(CentinewtonsPerMeterInOneNewtonPerMeter, newtonpermeter.CentinewtonsPerMeter, CentinewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(DecanewtonsPerMeterInOneNewtonPerMeter, newtonpermeter.DecanewtonsPerMeter, DecanewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(DecinewtonsPerMeterInOneNewtonPerMeter, newtonpermeter.DecinewtonsPerMeter, DecinewtonsPerMeterTolerance);
@@ -129,16 +122,13 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(QutranewtonsPerMeterInOneNewtonPerMeter, newtonpermeter.QutranewtonsPerMeter, QutranewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(TeranewtonsPerMeterInOneNewtonPerMeter, newtonpermeter.TeranewtonsPerMeter, TeranewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(VettanewtonsPerMeterInOneNewtonPerMeter, newtonpermeter.VettanewtonsPerMeter, VettanewtonsPerMeterTolerance);
-            AssertEx.EqualTolerance(YoctonewtonsPerMeterInOneNewtonPerMeter, newtonpermeter.YoctonewtonsPerMeter, YoctonewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(YottanewtonsPerMeterInOneNewtonPerMeter, newtonpermeter.YottanewtonsPerMeter, YottanewtonsPerMeterTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonsPerMeterInOneNewtonPerMeter, newtonpermeter.ZeptonewtonsPerMeter, ZeptonewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(ZettanewtonsPerMeterInOneNewtonPerMeter, newtonpermeter.ZettanewtonsPerMeter, ZettanewtonsPerMeterTolerance);
         }
 
         [Fact]
         public void FromValueAndUnit()
         {
-            AssertEx.EqualTolerance(1, ForcePerLength.From(1, ForcePerLengthUnit.AttonewtonPerMeter).AttonewtonsPerMeter, AttonewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(1, ForcePerLength.From(1, ForcePerLengthUnit.CentinewtonPerMeter).CentinewtonsPerMeter, CentinewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(1, ForcePerLength.From(1, ForcePerLengthUnit.DecanewtonPerMeter).DecanewtonsPerMeter, DecanewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(1, ForcePerLength.From(1, ForcePerLengthUnit.DecinewtonPerMeter).DecinewtonsPerMeter, DecinewtonsPerMeterTolerance);
@@ -158,9 +148,7 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, ForcePerLength.From(1, ForcePerLengthUnit.QutranewtonPerMeter).QutranewtonsPerMeter, QutranewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(1, ForcePerLength.From(1, ForcePerLengthUnit.TeranewtonPerMeter).TeranewtonsPerMeter, TeranewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(1, ForcePerLength.From(1, ForcePerLengthUnit.VettanewtonPerMeter).VettanewtonsPerMeter, VettanewtonsPerMeterTolerance);
-            AssertEx.EqualTolerance(1, ForcePerLength.From(1, ForcePerLengthUnit.YoctonewtonPerMeter).YoctonewtonsPerMeter, YoctonewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(1, ForcePerLength.From(1, ForcePerLengthUnit.YottanewtonPerMeter).YottanewtonsPerMeter, YottanewtonsPerMeterTolerance);
-            AssertEx.EqualTolerance(1, ForcePerLength.From(1, ForcePerLengthUnit.ZeptonewtonPerMeter).ZeptonewtonsPerMeter, ZeptonewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(1, ForcePerLength.From(1, ForcePerLengthUnit.ZettanewtonPerMeter).ZettanewtonsPerMeter, ZettanewtonsPerMeterTolerance);
         }
 
@@ -181,7 +169,6 @@ namespace UnitsNet.Tests
         public void As()
         {
             var newtonpermeter = ForcePerLength.FromNewtonsPerMeter(1);
-            AssertEx.EqualTolerance(AttonewtonsPerMeterInOneNewtonPerMeter, newtonpermeter.As(ForcePerLengthUnit.AttonewtonPerMeter), AttonewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(CentinewtonsPerMeterInOneNewtonPerMeter, newtonpermeter.As(ForcePerLengthUnit.CentinewtonPerMeter), CentinewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(DecanewtonsPerMeterInOneNewtonPerMeter, newtonpermeter.As(ForcePerLengthUnit.DecanewtonPerMeter), DecanewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(DecinewtonsPerMeterInOneNewtonPerMeter, newtonpermeter.As(ForcePerLengthUnit.DecinewtonPerMeter), DecinewtonsPerMeterTolerance);
@@ -201,9 +188,7 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(QutranewtonsPerMeterInOneNewtonPerMeter, newtonpermeter.As(ForcePerLengthUnit.QutranewtonPerMeter), QutranewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(TeranewtonsPerMeterInOneNewtonPerMeter, newtonpermeter.As(ForcePerLengthUnit.TeranewtonPerMeter), TeranewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(VettanewtonsPerMeterInOneNewtonPerMeter, newtonpermeter.As(ForcePerLengthUnit.VettanewtonPerMeter), VettanewtonsPerMeterTolerance);
-            AssertEx.EqualTolerance(YoctonewtonsPerMeterInOneNewtonPerMeter, newtonpermeter.As(ForcePerLengthUnit.YoctonewtonPerMeter), YoctonewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(YottanewtonsPerMeterInOneNewtonPerMeter, newtonpermeter.As(ForcePerLengthUnit.YottanewtonPerMeter), YottanewtonsPerMeterTolerance);
-            AssertEx.EqualTolerance(ZeptonewtonsPerMeterInOneNewtonPerMeter, newtonpermeter.As(ForcePerLengthUnit.ZeptonewtonPerMeter), ZeptonewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(ZettanewtonsPerMeterInOneNewtonPerMeter, newtonpermeter.As(ForcePerLengthUnit.ZettanewtonPerMeter), ZettanewtonsPerMeterTolerance);
         }
 
@@ -211,10 +196,6 @@ namespace UnitsNet.Tests
         public void ToUnit()
         {
             var newtonpermeter = ForcePerLength.FromNewtonsPerMeter(1);
-
-            var attonewtonpermeterQuantity = newtonpermeter.ToUnit(ForcePerLengthUnit.AttonewtonPerMeter);
-            AssertEx.EqualTolerance(AttonewtonsPerMeterInOneNewtonPerMeter, (double)attonewtonpermeterQuantity.Value, AttonewtonsPerMeterTolerance);
-            Assert.Equal(ForcePerLengthUnit.AttonewtonPerMeter, attonewtonpermeterQuantity.Unit);
 
             var centinewtonpermeterQuantity = newtonpermeter.ToUnit(ForcePerLengthUnit.CentinewtonPerMeter);
             AssertEx.EqualTolerance(CentinewtonsPerMeterInOneNewtonPerMeter, (double)centinewtonpermeterQuantity.Value, CentinewtonsPerMeterTolerance);
@@ -292,17 +273,9 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettanewtonsPerMeterInOneNewtonPerMeter, (double)vettanewtonpermeterQuantity.Value, VettanewtonsPerMeterTolerance);
             Assert.Equal(ForcePerLengthUnit.VettanewtonPerMeter, vettanewtonpermeterQuantity.Unit);
 
-            var yoctonewtonpermeterQuantity = newtonpermeter.ToUnit(ForcePerLengthUnit.YoctonewtonPerMeter);
-            AssertEx.EqualTolerance(YoctonewtonsPerMeterInOneNewtonPerMeter, (double)yoctonewtonpermeterQuantity.Value, YoctonewtonsPerMeterTolerance);
-            Assert.Equal(ForcePerLengthUnit.YoctonewtonPerMeter, yoctonewtonpermeterQuantity.Unit);
-
             var yottanewtonpermeterQuantity = newtonpermeter.ToUnit(ForcePerLengthUnit.YottanewtonPerMeter);
             AssertEx.EqualTolerance(YottanewtonsPerMeterInOneNewtonPerMeter, (double)yottanewtonpermeterQuantity.Value, YottanewtonsPerMeterTolerance);
             Assert.Equal(ForcePerLengthUnit.YottanewtonPerMeter, yottanewtonpermeterQuantity.Unit);
-
-            var zeptonewtonpermeterQuantity = newtonpermeter.ToUnit(ForcePerLengthUnit.ZeptonewtonPerMeter);
-            AssertEx.EqualTolerance(ZeptonewtonsPerMeterInOneNewtonPerMeter, (double)zeptonewtonpermeterQuantity.Value, ZeptonewtonsPerMeterTolerance);
-            Assert.Equal(ForcePerLengthUnit.ZeptonewtonPerMeter, zeptonewtonpermeterQuantity.Unit);
 
             var zettanewtonpermeterQuantity = newtonpermeter.ToUnit(ForcePerLengthUnit.ZettanewtonPerMeter);
             AssertEx.EqualTolerance(ZettanewtonsPerMeterInOneNewtonPerMeter, (double)zettanewtonpermeterQuantity.Value, ZettanewtonsPerMeterTolerance);
@@ -313,7 +286,6 @@ namespace UnitsNet.Tests
         public void ConversionRoundTrip()
         {
             ForcePerLength newtonpermeter = ForcePerLength.FromNewtonsPerMeter(1);
-            AssertEx.EqualTolerance(1, ForcePerLength.FromAttonewtonsPerMeter(newtonpermeter.AttonewtonsPerMeter).NewtonsPerMeter, AttonewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(1, ForcePerLength.FromCentinewtonsPerMeter(newtonpermeter.CentinewtonsPerMeter).NewtonsPerMeter, CentinewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(1, ForcePerLength.FromDecanewtonsPerMeter(newtonpermeter.DecanewtonsPerMeter).NewtonsPerMeter, DecanewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(1, ForcePerLength.FromDecinewtonsPerMeter(newtonpermeter.DecinewtonsPerMeter).NewtonsPerMeter, DecinewtonsPerMeterTolerance);
@@ -333,9 +305,7 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, ForcePerLength.FromQutranewtonsPerMeter(newtonpermeter.QutranewtonsPerMeter).NewtonsPerMeter, QutranewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(1, ForcePerLength.FromTeranewtonsPerMeter(newtonpermeter.TeranewtonsPerMeter).NewtonsPerMeter, TeranewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(1, ForcePerLength.FromVettanewtonsPerMeter(newtonpermeter.VettanewtonsPerMeter).NewtonsPerMeter, VettanewtonsPerMeterTolerance);
-            AssertEx.EqualTolerance(1, ForcePerLength.FromYoctonewtonsPerMeter(newtonpermeter.YoctonewtonsPerMeter).NewtonsPerMeter, YoctonewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(1, ForcePerLength.FromYottanewtonsPerMeter(newtonpermeter.YottanewtonsPerMeter).NewtonsPerMeter, YottanewtonsPerMeterTolerance);
-            AssertEx.EqualTolerance(1, ForcePerLength.FromZeptonewtonsPerMeter(newtonpermeter.ZeptonewtonsPerMeter).NewtonsPerMeter, ZeptonewtonsPerMeterTolerance);
             AssertEx.EqualTolerance(1, ForcePerLength.FromZettanewtonsPerMeter(newtonpermeter.ZettanewtonsPerMeter).NewtonsPerMeter, ZettanewtonsPerMeterTolerance);
         }
 

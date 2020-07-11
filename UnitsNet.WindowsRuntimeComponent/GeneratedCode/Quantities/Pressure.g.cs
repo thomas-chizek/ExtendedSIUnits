@@ -161,41 +161,6 @@ namespace UnitsNet
         public double Atmospheres => As(PressureUnit.Atmosphere);
 
         /// <summary>
-        ///     Get Pressure in Attobars.
-        /// </summary>
-        public double Attobars => As(PressureUnit.Attobar);
-
-        /// <summary>
-        ///     Get Pressure in AttonewtonsPerSquareCentimeter.
-        /// </summary>
-        public double AttonewtonsPerSquareCentimeter => As(PressureUnit.AttonewtonPerSquareCentimeter);
-
-        /// <summary>
-        ///     Get Pressure in AttonewtonsPerSquareMeter.
-        /// </summary>
-        public double AttonewtonsPerSquareMeter => As(PressureUnit.AttonewtonPerSquareMeter);
-
-        /// <summary>
-        ///     Get Pressure in AttonewtonsPerSquareMillimeter.
-        /// </summary>
-        public double AttonewtonsPerSquareMillimeter => As(PressureUnit.AttonewtonPerSquareMillimeter);
-
-        /// <summary>
-        ///     Get Pressure in Attopascals.
-        /// </summary>
-        public double Attopascals => As(PressureUnit.Attopascal);
-
-        /// <summary>
-        ///     Get Pressure in AttopoundsForcePerSquareFoot.
-        /// </summary>
-        public double AttopoundsForcePerSquareFoot => As(PressureUnit.AttopoundForcePerSquareFoot);
-
-        /// <summary>
-        ///     Get Pressure in AttopoundsForcePerSquareInch.
-        /// </summary>
-        public double AttopoundsForcePerSquareInch => As(PressureUnit.AttopoundForcePerSquareInch);
-
-        /// <summary>
         ///     Get Pressure in Bars.
         /// </summary>
         public double Bars => As(PressureUnit.Bar);
@@ -901,41 +866,6 @@ namespace UnitsNet
         public double VettapoundsForcePerSquareInch => As(PressureUnit.VettapoundForcePerSquareInch);
 
         /// <summary>
-        ///     Get Pressure in Yoctobars.
-        /// </summary>
-        public double Yoctobars => As(PressureUnit.Yoctobar);
-
-        /// <summary>
-        ///     Get Pressure in YoctonewtonsPerSquareCentimeter.
-        /// </summary>
-        public double YoctonewtonsPerSquareCentimeter => As(PressureUnit.YoctonewtonPerSquareCentimeter);
-
-        /// <summary>
-        ///     Get Pressure in YoctonewtonsPerSquareMeter.
-        /// </summary>
-        public double YoctonewtonsPerSquareMeter => As(PressureUnit.YoctonewtonPerSquareMeter);
-
-        /// <summary>
-        ///     Get Pressure in YoctonewtonsPerSquareMillimeter.
-        /// </summary>
-        public double YoctonewtonsPerSquareMillimeter => As(PressureUnit.YoctonewtonPerSquareMillimeter);
-
-        /// <summary>
-        ///     Get Pressure in Yoctopascals.
-        /// </summary>
-        public double Yoctopascals => As(PressureUnit.Yoctopascal);
-
-        /// <summary>
-        ///     Get Pressure in YoctopoundsForcePerSquareFoot.
-        /// </summary>
-        public double YoctopoundsForcePerSquareFoot => As(PressureUnit.YoctopoundForcePerSquareFoot);
-
-        /// <summary>
-        ///     Get Pressure in YoctopoundsForcePerSquareInch.
-        /// </summary>
-        public double YoctopoundsForcePerSquareInch => As(PressureUnit.YoctopoundForcePerSquareInch);
-
-        /// <summary>
         ///     Get Pressure in Yottabars.
         /// </summary>
         public double Yottabars => As(PressureUnit.Yottabar);
@@ -969,41 +899,6 @@ namespace UnitsNet
         ///     Get Pressure in YottapoundsForcePerSquareInch.
         /// </summary>
         public double YottapoundsForcePerSquareInch => As(PressureUnit.YottapoundForcePerSquareInch);
-
-        /// <summary>
-        ///     Get Pressure in Zeptobars.
-        /// </summary>
-        public double Zeptobars => As(PressureUnit.Zeptobar);
-
-        /// <summary>
-        ///     Get Pressure in ZeptonewtonsPerSquareCentimeter.
-        /// </summary>
-        public double ZeptonewtonsPerSquareCentimeter => As(PressureUnit.ZeptonewtonPerSquareCentimeter);
-
-        /// <summary>
-        ///     Get Pressure in ZeptonewtonsPerSquareMeter.
-        /// </summary>
-        public double ZeptonewtonsPerSquareMeter => As(PressureUnit.ZeptonewtonPerSquareMeter);
-
-        /// <summary>
-        ///     Get Pressure in ZeptonewtonsPerSquareMillimeter.
-        /// </summary>
-        public double ZeptonewtonsPerSquareMillimeter => As(PressureUnit.ZeptonewtonPerSquareMillimeter);
-
-        /// <summary>
-        ///     Get Pressure in Zeptopascals.
-        /// </summary>
-        public double Zeptopascals => As(PressureUnit.Zeptopascal);
-
-        /// <summary>
-        ///     Get Pressure in ZeptopoundsForcePerSquareFoot.
-        /// </summary>
-        public double ZeptopoundsForcePerSquareFoot => As(PressureUnit.ZeptopoundForcePerSquareFoot);
-
-        /// <summary>
-        ///     Get Pressure in ZeptopoundsForcePerSquareInch.
-        /// </summary>
-        public double ZeptopoundsForcePerSquareInch => As(PressureUnit.ZeptopoundForcePerSquareInch);
 
         /// <summary>
         ///     Get Pressure in Zettabars.
@@ -1079,76 +974,6 @@ namespace UnitsNet
         {
             double value = (double) atmospheres;
             return new Pressure(value, PressureUnit.Atmosphere);
-        }
-        /// <summary>
-        ///     Get Pressure from Attobars.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Pressure FromAttobars(double attobars)
-        {
-            double value = (double) attobars;
-            return new Pressure(value, PressureUnit.Attobar);
-        }
-        /// <summary>
-        ///     Get Pressure from AttonewtonsPerSquareCentimeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Pressure FromAttonewtonsPerSquareCentimeter(double attonewtonspersquarecentimeter)
-        {
-            double value = (double) attonewtonspersquarecentimeter;
-            return new Pressure(value, PressureUnit.AttonewtonPerSquareCentimeter);
-        }
-        /// <summary>
-        ///     Get Pressure from AttonewtonsPerSquareMeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Pressure FromAttonewtonsPerSquareMeter(double attonewtonspersquaremeter)
-        {
-            double value = (double) attonewtonspersquaremeter;
-            return new Pressure(value, PressureUnit.AttonewtonPerSquareMeter);
-        }
-        /// <summary>
-        ///     Get Pressure from AttonewtonsPerSquareMillimeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Pressure FromAttonewtonsPerSquareMillimeter(double attonewtonspersquaremillimeter)
-        {
-            double value = (double) attonewtonspersquaremillimeter;
-            return new Pressure(value, PressureUnit.AttonewtonPerSquareMillimeter);
-        }
-        /// <summary>
-        ///     Get Pressure from Attopascals.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Pressure FromAttopascals(double attopascals)
-        {
-            double value = (double) attopascals;
-            return new Pressure(value, PressureUnit.Attopascal);
-        }
-        /// <summary>
-        ///     Get Pressure from AttopoundsForcePerSquareFoot.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Pressure FromAttopoundsForcePerSquareFoot(double attopoundsforcepersquarefoot)
-        {
-            double value = (double) attopoundsforcepersquarefoot;
-            return new Pressure(value, PressureUnit.AttopoundForcePerSquareFoot);
-        }
-        /// <summary>
-        ///     Get Pressure from AttopoundsForcePerSquareInch.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Pressure FromAttopoundsForcePerSquareInch(double attopoundsforcepersquareinch)
-        {
-            double value = (double) attopoundsforcepersquareinch;
-            return new Pressure(value, PressureUnit.AttopoundForcePerSquareInch);
         }
         /// <summary>
         ///     Get Pressure from Bars.
@@ -2561,76 +2386,6 @@ namespace UnitsNet
             return new Pressure(value, PressureUnit.VettapoundForcePerSquareInch);
         }
         /// <summary>
-        ///     Get Pressure from Yoctobars.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Pressure FromYoctobars(double yoctobars)
-        {
-            double value = (double) yoctobars;
-            return new Pressure(value, PressureUnit.Yoctobar);
-        }
-        /// <summary>
-        ///     Get Pressure from YoctonewtonsPerSquareCentimeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Pressure FromYoctonewtonsPerSquareCentimeter(double yoctonewtonspersquarecentimeter)
-        {
-            double value = (double) yoctonewtonspersquarecentimeter;
-            return new Pressure(value, PressureUnit.YoctonewtonPerSquareCentimeter);
-        }
-        /// <summary>
-        ///     Get Pressure from YoctonewtonsPerSquareMeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Pressure FromYoctonewtonsPerSquareMeter(double yoctonewtonspersquaremeter)
-        {
-            double value = (double) yoctonewtonspersquaremeter;
-            return new Pressure(value, PressureUnit.YoctonewtonPerSquareMeter);
-        }
-        /// <summary>
-        ///     Get Pressure from YoctonewtonsPerSquareMillimeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Pressure FromYoctonewtonsPerSquareMillimeter(double yoctonewtonspersquaremillimeter)
-        {
-            double value = (double) yoctonewtonspersquaremillimeter;
-            return new Pressure(value, PressureUnit.YoctonewtonPerSquareMillimeter);
-        }
-        /// <summary>
-        ///     Get Pressure from Yoctopascals.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Pressure FromYoctopascals(double yoctopascals)
-        {
-            double value = (double) yoctopascals;
-            return new Pressure(value, PressureUnit.Yoctopascal);
-        }
-        /// <summary>
-        ///     Get Pressure from YoctopoundsForcePerSquareFoot.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Pressure FromYoctopoundsForcePerSquareFoot(double yoctopoundsforcepersquarefoot)
-        {
-            double value = (double) yoctopoundsforcepersquarefoot;
-            return new Pressure(value, PressureUnit.YoctopoundForcePerSquareFoot);
-        }
-        /// <summary>
-        ///     Get Pressure from YoctopoundsForcePerSquareInch.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Pressure FromYoctopoundsForcePerSquareInch(double yoctopoundsforcepersquareinch)
-        {
-            double value = (double) yoctopoundsforcepersquareinch;
-            return new Pressure(value, PressureUnit.YoctopoundForcePerSquareInch);
-        }
-        /// <summary>
         ///     Get Pressure from Yottabars.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -2699,76 +2454,6 @@ namespace UnitsNet
         {
             double value = (double) yottapoundsforcepersquareinch;
             return new Pressure(value, PressureUnit.YottapoundForcePerSquareInch);
-        }
-        /// <summary>
-        ///     Get Pressure from Zeptobars.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Pressure FromZeptobars(double zeptobars)
-        {
-            double value = (double) zeptobars;
-            return new Pressure(value, PressureUnit.Zeptobar);
-        }
-        /// <summary>
-        ///     Get Pressure from ZeptonewtonsPerSquareCentimeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Pressure FromZeptonewtonsPerSquareCentimeter(double zeptonewtonspersquarecentimeter)
-        {
-            double value = (double) zeptonewtonspersquarecentimeter;
-            return new Pressure(value, PressureUnit.ZeptonewtonPerSquareCentimeter);
-        }
-        /// <summary>
-        ///     Get Pressure from ZeptonewtonsPerSquareMeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Pressure FromZeptonewtonsPerSquareMeter(double zeptonewtonspersquaremeter)
-        {
-            double value = (double) zeptonewtonspersquaremeter;
-            return new Pressure(value, PressureUnit.ZeptonewtonPerSquareMeter);
-        }
-        /// <summary>
-        ///     Get Pressure from ZeptonewtonsPerSquareMillimeter.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Pressure FromZeptonewtonsPerSquareMillimeter(double zeptonewtonspersquaremillimeter)
-        {
-            double value = (double) zeptonewtonspersquaremillimeter;
-            return new Pressure(value, PressureUnit.ZeptonewtonPerSquareMillimeter);
-        }
-        /// <summary>
-        ///     Get Pressure from Zeptopascals.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Pressure FromZeptopascals(double zeptopascals)
-        {
-            double value = (double) zeptopascals;
-            return new Pressure(value, PressureUnit.Zeptopascal);
-        }
-        /// <summary>
-        ///     Get Pressure from ZeptopoundsForcePerSquareFoot.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Pressure FromZeptopoundsForcePerSquareFoot(double zeptopoundsforcepersquarefoot)
-        {
-            double value = (double) zeptopoundsforcepersquarefoot;
-            return new Pressure(value, PressureUnit.ZeptopoundForcePerSquareFoot);
-        }
-        /// <summary>
-        ///     Get Pressure from ZeptopoundsForcePerSquareInch.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Pressure FromZeptopoundsForcePerSquareInch(double zeptopoundsforcepersquareinch)
-        {
-            double value = (double) zeptopoundsforcepersquareinch;
-            return new Pressure(value, PressureUnit.ZeptopoundForcePerSquareInch);
         }
         /// <summary>
         ///     Get Pressure from Zettabars.
@@ -3132,13 +2817,6 @@ namespace UnitsNet
             switch(Unit)
             {
                 case PressureUnit.Atmosphere: return _value*1.01325*1e5;
-                case PressureUnit.Attobar: return (_value*1e5) * 1e-18d;
-                case PressureUnit.AttonewtonPerSquareCentimeter: return (_value*1e4) * 1e-18d;
-                case PressureUnit.AttonewtonPerSquareMeter: return (_value) * 1e-18d;
-                case PressureUnit.AttonewtonPerSquareMillimeter: return (_value*1e6) * 1e-18d;
-                case PressureUnit.Attopascal: return (_value) * 1e-18d;
-                case PressureUnit.AttopoundForcePerSquareFoot: return (_value*4.788025898033584e1) * 1e-18d;
-                case PressureUnit.AttopoundForcePerSquareInch: return (_value*6.894757293168361e3) * 1e-18d;
                 case PressureUnit.Bar: return _value*1e5;
                 case PressureUnit.Centibar: return (_value*1e5) * 1e-2d;
                 case PressureUnit.CentinewtonPerSquareCentimeter: return (_value*1e4) * 1e-2d;
@@ -3280,13 +2958,6 @@ namespace UnitsNet
                 case PressureUnit.Vettapascal: return (_value) * 1e30d;
                 case PressureUnit.VettapoundForcePerSquareFoot: return (_value*4.788025898033584e1) * 1e30d;
                 case PressureUnit.VettapoundForcePerSquareInch: return (_value*6.894757293168361e3) * 1e30d;
-                case PressureUnit.Yoctobar: return (_value*1e5) * 1e-24d;
-                case PressureUnit.YoctonewtonPerSquareCentimeter: return (_value*1e4) * 1e-24d;
-                case PressureUnit.YoctonewtonPerSquareMeter: return (_value) * 1e-24d;
-                case PressureUnit.YoctonewtonPerSquareMillimeter: return (_value*1e6) * 1e-24d;
-                case PressureUnit.Yoctopascal: return (_value) * 1e-24d;
-                case PressureUnit.YoctopoundForcePerSquareFoot: return (_value*4.788025898033584e1) * 1e-24d;
-                case PressureUnit.YoctopoundForcePerSquareInch: return (_value*6.894757293168361e3) * 1e-24d;
                 case PressureUnit.Yottabar: return (_value*1e5) * 1e24d;
                 case PressureUnit.YottanewtonPerSquareCentimeter: return (_value*1e4) * 1e24d;
                 case PressureUnit.YottanewtonPerSquareMeter: return (_value) * 1e24d;
@@ -3294,13 +2965,6 @@ namespace UnitsNet
                 case PressureUnit.Yottapascal: return (_value) * 1e24d;
                 case PressureUnit.YottapoundForcePerSquareFoot: return (_value*4.788025898033584e1) * 1e24d;
                 case PressureUnit.YottapoundForcePerSquareInch: return (_value*6.894757293168361e3) * 1e24d;
-                case PressureUnit.Zeptobar: return (_value*1e5) * 1e-21d;
-                case PressureUnit.ZeptonewtonPerSquareCentimeter: return (_value*1e4) * 1e-21d;
-                case PressureUnit.ZeptonewtonPerSquareMeter: return (_value) * 1e-21d;
-                case PressureUnit.ZeptonewtonPerSquareMillimeter: return (_value*1e6) * 1e-21d;
-                case PressureUnit.Zeptopascal: return (_value) * 1e-21d;
-                case PressureUnit.ZeptopoundForcePerSquareFoot: return (_value*4.788025898033584e1) * 1e-21d;
-                case PressureUnit.ZeptopoundForcePerSquareInch: return (_value*6.894757293168361e3) * 1e-21d;
                 case PressureUnit.Zettabar: return (_value*1e5) * 1e21d;
                 case PressureUnit.ZettanewtonPerSquareCentimeter: return (_value*1e4) * 1e21d;
                 case PressureUnit.ZettanewtonPerSquareMeter: return (_value) * 1e21d;
@@ -3323,13 +2987,6 @@ namespace UnitsNet
             switch(unit)
             {
                 case PressureUnit.Atmosphere: return baseUnitValue/(1.01325*1e5);
-                case PressureUnit.Attobar: return (baseUnitValue/1e5) / 1e-18d;
-                case PressureUnit.AttonewtonPerSquareCentimeter: return (baseUnitValue/1e4) / 1e-18d;
-                case PressureUnit.AttonewtonPerSquareMeter: return (baseUnitValue) / 1e-18d;
-                case PressureUnit.AttonewtonPerSquareMillimeter: return (baseUnitValue/1e6) / 1e-18d;
-                case PressureUnit.Attopascal: return (baseUnitValue) / 1e-18d;
-                case PressureUnit.AttopoundForcePerSquareFoot: return (baseUnitValue/4.788025898033584e1) / 1e-18d;
-                case PressureUnit.AttopoundForcePerSquareInch: return (baseUnitValue/6.894757293168361e3) / 1e-18d;
                 case PressureUnit.Bar: return baseUnitValue/1e5;
                 case PressureUnit.Centibar: return (baseUnitValue/1e5) / 1e-2d;
                 case PressureUnit.CentinewtonPerSquareCentimeter: return (baseUnitValue/1e4) / 1e-2d;
@@ -3471,13 +3128,6 @@ namespace UnitsNet
                 case PressureUnit.Vettapascal: return (baseUnitValue) / 1e30d;
                 case PressureUnit.VettapoundForcePerSquareFoot: return (baseUnitValue/4.788025898033584e1) / 1e30d;
                 case PressureUnit.VettapoundForcePerSquareInch: return (baseUnitValue/6.894757293168361e3) / 1e30d;
-                case PressureUnit.Yoctobar: return (baseUnitValue/1e5) / 1e-24d;
-                case PressureUnit.YoctonewtonPerSquareCentimeter: return (baseUnitValue/1e4) / 1e-24d;
-                case PressureUnit.YoctonewtonPerSquareMeter: return (baseUnitValue) / 1e-24d;
-                case PressureUnit.YoctonewtonPerSquareMillimeter: return (baseUnitValue/1e6) / 1e-24d;
-                case PressureUnit.Yoctopascal: return (baseUnitValue) / 1e-24d;
-                case PressureUnit.YoctopoundForcePerSquareFoot: return (baseUnitValue/4.788025898033584e1) / 1e-24d;
-                case PressureUnit.YoctopoundForcePerSquareInch: return (baseUnitValue/6.894757293168361e3) / 1e-24d;
                 case PressureUnit.Yottabar: return (baseUnitValue/1e5) / 1e24d;
                 case PressureUnit.YottanewtonPerSquareCentimeter: return (baseUnitValue/1e4) / 1e24d;
                 case PressureUnit.YottanewtonPerSquareMeter: return (baseUnitValue) / 1e24d;
@@ -3485,13 +3135,6 @@ namespace UnitsNet
                 case PressureUnit.Yottapascal: return (baseUnitValue) / 1e24d;
                 case PressureUnit.YottapoundForcePerSquareFoot: return (baseUnitValue/4.788025898033584e1) / 1e24d;
                 case PressureUnit.YottapoundForcePerSquareInch: return (baseUnitValue/6.894757293168361e3) / 1e24d;
-                case PressureUnit.Zeptobar: return (baseUnitValue/1e5) / 1e-21d;
-                case PressureUnit.ZeptonewtonPerSquareCentimeter: return (baseUnitValue/1e4) / 1e-21d;
-                case PressureUnit.ZeptonewtonPerSquareMeter: return (baseUnitValue) / 1e-21d;
-                case PressureUnit.ZeptonewtonPerSquareMillimeter: return (baseUnitValue/1e6) / 1e-21d;
-                case PressureUnit.Zeptopascal: return (baseUnitValue) / 1e-21d;
-                case PressureUnit.ZeptopoundForcePerSquareFoot: return (baseUnitValue/4.788025898033584e1) / 1e-21d;
-                case PressureUnit.ZeptopoundForcePerSquareInch: return (baseUnitValue/6.894757293168361e3) / 1e-21d;
                 case PressureUnit.Zettabar: return (baseUnitValue/1e5) / 1e21d;
                 case PressureUnit.ZettanewtonPerSquareCentimeter: return (baseUnitValue/1e4) / 1e21d;
                 case PressureUnit.ZettanewtonPerSquareMeter: return (baseUnitValue) / 1e21d;

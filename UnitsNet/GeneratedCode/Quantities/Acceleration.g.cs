@@ -51,6 +51,7 @@ namespace UnitsNet
             Info = new QuantityInfo<AccelerationUnit>(QuantityType.Acceleration,
                 new UnitInfo<AccelerationUnit>[] {
                     new UnitInfo<AccelerationUnit>(AccelerationUnit.CentimeterPerSecondSquared, BaseUnits.Undefined),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.DecameterPerSecondSquared, BaseUnits.Undefined),
                     new UnitInfo<AccelerationUnit>(AccelerationUnit.DecimeterPerSecondSquared, BaseUnits.Undefined),
                     new UnitInfo<AccelerationUnit>(AccelerationUnit.FootPerSecondSquared, new BaseUnits(length: LengthUnit.Foot, time: DurationUnit.Second)),
                     new UnitInfo<AccelerationUnit>(AccelerationUnit.InchPerSecondSquared, new BaseUnits(length: LengthUnit.Inch, time: DurationUnit.Second)),
@@ -181,6 +182,11 @@ namespace UnitsNet
         public double CentimetersPerSecondSquared => As(AccelerationUnit.CentimeterPerSecondSquared);
 
         /// <summary>
+        ///     Get Acceleration in DecametersPerSecondSquared.
+        /// </summary>
+        public double DecametersPerSecondSquared => As(AccelerationUnit.DecameterPerSecondSquared);
+
+        /// <summary>
         ///     Get Acceleration in DecimetersPerSecondSquared.
         /// </summary>
         public double DecimetersPerSecondSquared => As(AccelerationUnit.DecimeterPerSecondSquared);
@@ -277,6 +283,15 @@ namespace UnitsNet
         {
             double value = (double) centimeterspersecondsquared;
             return new Acceleration(value, AccelerationUnit.CentimeterPerSecondSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from DecametersPerSecondSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromDecametersPerSecondSquared(QuantityValue decameterspersecondsquared)
+        {
+            double value = (double) decameterspersecondsquared;
+            return new Acceleration(value, AccelerationUnit.DecameterPerSecondSquared);
         }
         /// <summary>
         ///     Get Acceleration from DecimetersPerSecondSquared.
@@ -816,6 +831,7 @@ namespace UnitsNet
             switch(Unit)
             {
                 case AccelerationUnit.CentimeterPerSecondSquared: return (_value) * 1e-2d;
+                case AccelerationUnit.DecameterPerSecondSquared: return (_value) * 1e1d;
                 case AccelerationUnit.DecimeterPerSecondSquared: return (_value) * 1e-1d;
                 case AccelerationUnit.FootPerSecondSquared: return _value*0.304800;
                 case AccelerationUnit.InchPerSecondSquared: return _value*0.0254;
@@ -843,6 +859,7 @@ namespace UnitsNet
             switch(unit)
             {
                 case AccelerationUnit.CentimeterPerSecondSquared: return (baseUnitValue) / 1e-2d;
+                case AccelerationUnit.DecameterPerSecondSquared: return (baseUnitValue) / 1e1d;
                 case AccelerationUnit.DecimeterPerSecondSquared: return (baseUnitValue) / 1e-1d;
                 case AccelerationUnit.FootPerSecondSquared: return baseUnitValue/0.304800;
                 case AccelerationUnit.InchPerSecondSquared: return baseUnitValue/0.0254;

@@ -34,8 +34,6 @@ namespace UnitsNet.Tests
 // ReSharper disable once PartialTypeWithSinglePart
     public abstract partial class IrradianceTestsBase
     {
-        protected abstract double AttowattsPerSquareCentimeterInOneWattPerSquareMeter { get; }
-        protected abstract double AttowattsPerSquareMeterInOneWattPerSquareMeter { get; }
         protected abstract double CentiwattsPerSquareCentimeterInOneWattPerSquareMeter { get; }
         protected abstract double CentiwattsPerSquareMeterInOneWattPerSquareMeter { get; }
         protected abstract double DecawattsPerSquareCentimeterInOneWattPerSquareMeter { get; }
@@ -72,18 +70,12 @@ namespace UnitsNet.Tests
         protected abstract double VettawattsPerSquareMeterInOneWattPerSquareMeter { get; }
         protected abstract double WattsPerSquareCentimeterInOneWattPerSquareMeter { get; }
         protected abstract double WattsPerSquareMeterInOneWattPerSquareMeter { get; }
-        protected abstract double YoctowattsPerSquareCentimeterInOneWattPerSquareMeter { get; }
-        protected abstract double YoctowattsPerSquareMeterInOneWattPerSquareMeter { get; }
         protected abstract double YottawattsPerSquareCentimeterInOneWattPerSquareMeter { get; }
         protected abstract double YottawattsPerSquareMeterInOneWattPerSquareMeter { get; }
-        protected abstract double ZeptowattsPerSquareCentimeterInOneWattPerSquareMeter { get; }
-        protected abstract double ZeptowattsPerSquareMeterInOneWattPerSquareMeter { get; }
         protected abstract double ZettawattsPerSquareCentimeterInOneWattPerSquareMeter { get; }
         protected abstract double ZettawattsPerSquareMeterInOneWattPerSquareMeter { get; }
 
 // ReSharper disable VirtualMemberNeverOverriden.Global
-        protected virtual double AttowattsPerSquareCentimeterTolerance { get { return 1e-5; } }
-        protected virtual double AttowattsPerSquareMeterTolerance { get { return 1e-5; } }
         protected virtual double CentiwattsPerSquareCentimeterTolerance { get { return 1e-5; } }
         protected virtual double CentiwattsPerSquareMeterTolerance { get { return 1e-5; } }
         protected virtual double DecawattsPerSquareCentimeterTolerance { get { return 1e-5; } }
@@ -120,12 +112,8 @@ namespace UnitsNet.Tests
         protected virtual double VettawattsPerSquareMeterTolerance { get { return 1e-5; } }
         protected virtual double WattsPerSquareCentimeterTolerance { get { return 1e-5; } }
         protected virtual double WattsPerSquareMeterTolerance { get { return 1e-5; } }
-        protected virtual double YoctowattsPerSquareCentimeterTolerance { get { return 1e-5; } }
-        protected virtual double YoctowattsPerSquareMeterTolerance { get { return 1e-5; } }
         protected virtual double YottawattsPerSquareCentimeterTolerance { get { return 1e-5; } }
         protected virtual double YottawattsPerSquareMeterTolerance { get { return 1e-5; } }
-        protected virtual double ZeptowattsPerSquareCentimeterTolerance { get { return 1e-5; } }
-        protected virtual double ZeptowattsPerSquareMeterTolerance { get { return 1e-5; } }
         protected virtual double ZettawattsPerSquareCentimeterTolerance { get { return 1e-5; } }
         protected virtual double ZettawattsPerSquareMeterTolerance { get { return 1e-5; } }
 // ReSharper restore VirtualMemberNeverOverriden.Global
@@ -153,8 +141,6 @@ namespace UnitsNet.Tests
         public void WattPerSquareMeterToIrradianceUnits()
         {
             Irradiance wattpersquaremeter = Irradiance.FromWattsPerSquareMeter(1);
-            AssertEx.EqualTolerance(AttowattsPerSquareCentimeterInOneWattPerSquareMeter, wattpersquaremeter.AttowattsPerSquareCentimeter, AttowattsPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(AttowattsPerSquareMeterInOneWattPerSquareMeter, wattpersquaremeter.AttowattsPerSquareMeter, AttowattsPerSquareMeterTolerance);
             AssertEx.EqualTolerance(CentiwattsPerSquareCentimeterInOneWattPerSquareMeter, wattpersquaremeter.CentiwattsPerSquareCentimeter, CentiwattsPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(CentiwattsPerSquareMeterInOneWattPerSquareMeter, wattpersquaremeter.CentiwattsPerSquareMeter, CentiwattsPerSquareMeterTolerance);
             AssertEx.EqualTolerance(DecawattsPerSquareCentimeterInOneWattPerSquareMeter, wattpersquaremeter.DecawattsPerSquareCentimeter, DecawattsPerSquareCentimeterTolerance);
@@ -191,12 +177,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettawattsPerSquareMeterInOneWattPerSquareMeter, wattpersquaremeter.VettawattsPerSquareMeter, VettawattsPerSquareMeterTolerance);
             AssertEx.EqualTolerance(WattsPerSquareCentimeterInOneWattPerSquareMeter, wattpersquaremeter.WattsPerSquareCentimeter, WattsPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(WattsPerSquareMeterInOneWattPerSquareMeter, wattpersquaremeter.WattsPerSquareMeter, WattsPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(YoctowattsPerSquareCentimeterInOneWattPerSquareMeter, wattpersquaremeter.YoctowattsPerSquareCentimeter, YoctowattsPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(YoctowattsPerSquareMeterInOneWattPerSquareMeter, wattpersquaremeter.YoctowattsPerSquareMeter, YoctowattsPerSquareMeterTolerance);
             AssertEx.EqualTolerance(YottawattsPerSquareCentimeterInOneWattPerSquareMeter, wattpersquaremeter.YottawattsPerSquareCentimeter, YottawattsPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(YottawattsPerSquareMeterInOneWattPerSquareMeter, wattpersquaremeter.YottawattsPerSquareMeter, YottawattsPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(ZeptowattsPerSquareCentimeterInOneWattPerSquareMeter, wattpersquaremeter.ZeptowattsPerSquareCentimeter, ZeptowattsPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(ZeptowattsPerSquareMeterInOneWattPerSquareMeter, wattpersquaremeter.ZeptowattsPerSquareMeter, ZeptowattsPerSquareMeterTolerance);
             AssertEx.EqualTolerance(ZettawattsPerSquareCentimeterInOneWattPerSquareMeter, wattpersquaremeter.ZettawattsPerSquareCentimeter, ZettawattsPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(ZettawattsPerSquareMeterInOneWattPerSquareMeter, wattpersquaremeter.ZettawattsPerSquareMeter, ZettawattsPerSquareMeterTolerance);
         }
@@ -204,8 +186,6 @@ namespace UnitsNet.Tests
         [Fact]
         public void FromValueAndUnit()
         {
-            AssertEx.EqualTolerance(1, Irradiance.From(1, IrradianceUnit.AttowattPerSquareCentimeter).AttowattsPerSquareCentimeter, AttowattsPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiance.From(1, IrradianceUnit.AttowattPerSquareMeter).AttowattsPerSquareMeter, AttowattsPerSquareMeterTolerance);
             AssertEx.EqualTolerance(1, Irradiance.From(1, IrradianceUnit.CentiwattPerSquareCentimeter).CentiwattsPerSquareCentimeter, CentiwattsPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(1, Irradiance.From(1, IrradianceUnit.CentiwattPerSquareMeter).CentiwattsPerSquareMeter, CentiwattsPerSquareMeterTolerance);
             AssertEx.EqualTolerance(1, Irradiance.From(1, IrradianceUnit.DecawattPerSquareCentimeter).DecawattsPerSquareCentimeter, DecawattsPerSquareCentimeterTolerance);
@@ -242,12 +222,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, Irradiance.From(1, IrradianceUnit.VettawattPerSquareMeter).VettawattsPerSquareMeter, VettawattsPerSquareMeterTolerance);
             AssertEx.EqualTolerance(1, Irradiance.From(1, IrradianceUnit.WattPerSquareCentimeter).WattsPerSquareCentimeter, WattsPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(1, Irradiance.From(1, IrradianceUnit.WattPerSquareMeter).WattsPerSquareMeter, WattsPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiance.From(1, IrradianceUnit.YoctowattPerSquareCentimeter).YoctowattsPerSquareCentimeter, YoctowattsPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiance.From(1, IrradianceUnit.YoctowattPerSquareMeter).YoctowattsPerSquareMeter, YoctowattsPerSquareMeterTolerance);
             AssertEx.EqualTolerance(1, Irradiance.From(1, IrradianceUnit.YottawattPerSquareCentimeter).YottawattsPerSquareCentimeter, YottawattsPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(1, Irradiance.From(1, IrradianceUnit.YottawattPerSquareMeter).YottawattsPerSquareMeter, YottawattsPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiance.From(1, IrradianceUnit.ZeptowattPerSquareCentimeter).ZeptowattsPerSquareCentimeter, ZeptowattsPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiance.From(1, IrradianceUnit.ZeptowattPerSquareMeter).ZeptowattsPerSquareMeter, ZeptowattsPerSquareMeterTolerance);
             AssertEx.EqualTolerance(1, Irradiance.From(1, IrradianceUnit.ZettawattPerSquareCentimeter).ZettawattsPerSquareCentimeter, ZettawattsPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(1, Irradiance.From(1, IrradianceUnit.ZettawattPerSquareMeter).ZettawattsPerSquareMeter, ZettawattsPerSquareMeterTolerance);
         }
@@ -269,8 +245,6 @@ namespace UnitsNet.Tests
         public void As()
         {
             var wattpersquaremeter = Irradiance.FromWattsPerSquareMeter(1);
-            AssertEx.EqualTolerance(AttowattsPerSquareCentimeterInOneWattPerSquareMeter, wattpersquaremeter.As(IrradianceUnit.AttowattPerSquareCentimeter), AttowattsPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(AttowattsPerSquareMeterInOneWattPerSquareMeter, wattpersquaremeter.As(IrradianceUnit.AttowattPerSquareMeter), AttowattsPerSquareMeterTolerance);
             AssertEx.EqualTolerance(CentiwattsPerSquareCentimeterInOneWattPerSquareMeter, wattpersquaremeter.As(IrradianceUnit.CentiwattPerSquareCentimeter), CentiwattsPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(CentiwattsPerSquareMeterInOneWattPerSquareMeter, wattpersquaremeter.As(IrradianceUnit.CentiwattPerSquareMeter), CentiwattsPerSquareMeterTolerance);
             AssertEx.EqualTolerance(DecawattsPerSquareCentimeterInOneWattPerSquareMeter, wattpersquaremeter.As(IrradianceUnit.DecawattPerSquareCentimeter), DecawattsPerSquareCentimeterTolerance);
@@ -307,12 +281,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettawattsPerSquareMeterInOneWattPerSquareMeter, wattpersquaremeter.As(IrradianceUnit.VettawattPerSquareMeter), VettawattsPerSquareMeterTolerance);
             AssertEx.EqualTolerance(WattsPerSquareCentimeterInOneWattPerSquareMeter, wattpersquaremeter.As(IrradianceUnit.WattPerSquareCentimeter), WattsPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(WattsPerSquareMeterInOneWattPerSquareMeter, wattpersquaremeter.As(IrradianceUnit.WattPerSquareMeter), WattsPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(YoctowattsPerSquareCentimeterInOneWattPerSquareMeter, wattpersquaremeter.As(IrradianceUnit.YoctowattPerSquareCentimeter), YoctowattsPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(YoctowattsPerSquareMeterInOneWattPerSquareMeter, wattpersquaremeter.As(IrradianceUnit.YoctowattPerSquareMeter), YoctowattsPerSquareMeterTolerance);
             AssertEx.EqualTolerance(YottawattsPerSquareCentimeterInOneWattPerSquareMeter, wattpersquaremeter.As(IrradianceUnit.YottawattPerSquareCentimeter), YottawattsPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(YottawattsPerSquareMeterInOneWattPerSquareMeter, wattpersquaremeter.As(IrradianceUnit.YottawattPerSquareMeter), YottawattsPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(ZeptowattsPerSquareCentimeterInOneWattPerSquareMeter, wattpersquaremeter.As(IrradianceUnit.ZeptowattPerSquareCentimeter), ZeptowattsPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(ZeptowattsPerSquareMeterInOneWattPerSquareMeter, wattpersquaremeter.As(IrradianceUnit.ZeptowattPerSquareMeter), ZeptowattsPerSquareMeterTolerance);
             AssertEx.EqualTolerance(ZettawattsPerSquareCentimeterInOneWattPerSquareMeter, wattpersquaremeter.As(IrradianceUnit.ZettawattPerSquareCentimeter), ZettawattsPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(ZettawattsPerSquareMeterInOneWattPerSquareMeter, wattpersquaremeter.As(IrradianceUnit.ZettawattPerSquareMeter), ZettawattsPerSquareMeterTolerance);
         }
@@ -321,14 +291,6 @@ namespace UnitsNet.Tests
         public void ToUnit()
         {
             var wattpersquaremeter = Irradiance.FromWattsPerSquareMeter(1);
-
-            var attowattpersquarecentimeterQuantity = wattpersquaremeter.ToUnit(IrradianceUnit.AttowattPerSquareCentimeter);
-            AssertEx.EqualTolerance(AttowattsPerSquareCentimeterInOneWattPerSquareMeter, (double)attowattpersquarecentimeterQuantity.Value, AttowattsPerSquareCentimeterTolerance);
-            Assert.Equal(IrradianceUnit.AttowattPerSquareCentimeter, attowattpersquarecentimeterQuantity.Unit);
-
-            var attowattpersquaremeterQuantity = wattpersquaremeter.ToUnit(IrradianceUnit.AttowattPerSquareMeter);
-            AssertEx.EqualTolerance(AttowattsPerSquareMeterInOneWattPerSquareMeter, (double)attowattpersquaremeterQuantity.Value, AttowattsPerSquareMeterTolerance);
-            Assert.Equal(IrradianceUnit.AttowattPerSquareMeter, attowattpersquaremeterQuantity.Unit);
 
             var centiwattpersquarecentimeterQuantity = wattpersquaremeter.ToUnit(IrradianceUnit.CentiwattPerSquareCentimeter);
             AssertEx.EqualTolerance(CentiwattsPerSquareCentimeterInOneWattPerSquareMeter, (double)centiwattpersquarecentimeterQuantity.Value, CentiwattsPerSquareCentimeterTolerance);
@@ -474,14 +436,6 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(WattsPerSquareMeterInOneWattPerSquareMeter, (double)wattpersquaremeterQuantity.Value, WattsPerSquareMeterTolerance);
             Assert.Equal(IrradianceUnit.WattPerSquareMeter, wattpersquaremeterQuantity.Unit);
 
-            var yoctowattpersquarecentimeterQuantity = wattpersquaremeter.ToUnit(IrradianceUnit.YoctowattPerSquareCentimeter);
-            AssertEx.EqualTolerance(YoctowattsPerSquareCentimeterInOneWattPerSquareMeter, (double)yoctowattpersquarecentimeterQuantity.Value, YoctowattsPerSquareCentimeterTolerance);
-            Assert.Equal(IrradianceUnit.YoctowattPerSquareCentimeter, yoctowattpersquarecentimeterQuantity.Unit);
-
-            var yoctowattpersquaremeterQuantity = wattpersquaremeter.ToUnit(IrradianceUnit.YoctowattPerSquareMeter);
-            AssertEx.EqualTolerance(YoctowattsPerSquareMeterInOneWattPerSquareMeter, (double)yoctowattpersquaremeterQuantity.Value, YoctowattsPerSquareMeterTolerance);
-            Assert.Equal(IrradianceUnit.YoctowattPerSquareMeter, yoctowattpersquaremeterQuantity.Unit);
-
             var yottawattpersquarecentimeterQuantity = wattpersquaremeter.ToUnit(IrradianceUnit.YottawattPerSquareCentimeter);
             AssertEx.EqualTolerance(YottawattsPerSquareCentimeterInOneWattPerSquareMeter, (double)yottawattpersquarecentimeterQuantity.Value, YottawattsPerSquareCentimeterTolerance);
             Assert.Equal(IrradianceUnit.YottawattPerSquareCentimeter, yottawattpersquarecentimeterQuantity.Unit);
@@ -489,14 +443,6 @@ namespace UnitsNet.Tests
             var yottawattpersquaremeterQuantity = wattpersquaremeter.ToUnit(IrradianceUnit.YottawattPerSquareMeter);
             AssertEx.EqualTolerance(YottawattsPerSquareMeterInOneWattPerSquareMeter, (double)yottawattpersquaremeterQuantity.Value, YottawattsPerSquareMeterTolerance);
             Assert.Equal(IrradianceUnit.YottawattPerSquareMeter, yottawattpersquaremeterQuantity.Unit);
-
-            var zeptowattpersquarecentimeterQuantity = wattpersquaremeter.ToUnit(IrradianceUnit.ZeptowattPerSquareCentimeter);
-            AssertEx.EqualTolerance(ZeptowattsPerSquareCentimeterInOneWattPerSquareMeter, (double)zeptowattpersquarecentimeterQuantity.Value, ZeptowattsPerSquareCentimeterTolerance);
-            Assert.Equal(IrradianceUnit.ZeptowattPerSquareCentimeter, zeptowattpersquarecentimeterQuantity.Unit);
-
-            var zeptowattpersquaremeterQuantity = wattpersquaremeter.ToUnit(IrradianceUnit.ZeptowattPerSquareMeter);
-            AssertEx.EqualTolerance(ZeptowattsPerSquareMeterInOneWattPerSquareMeter, (double)zeptowattpersquaremeterQuantity.Value, ZeptowattsPerSquareMeterTolerance);
-            Assert.Equal(IrradianceUnit.ZeptowattPerSquareMeter, zeptowattpersquaremeterQuantity.Unit);
 
             var zettawattpersquarecentimeterQuantity = wattpersquaremeter.ToUnit(IrradianceUnit.ZettawattPerSquareCentimeter);
             AssertEx.EqualTolerance(ZettawattsPerSquareCentimeterInOneWattPerSquareMeter, (double)zettawattpersquarecentimeterQuantity.Value, ZettawattsPerSquareCentimeterTolerance);
@@ -511,8 +457,6 @@ namespace UnitsNet.Tests
         public void ConversionRoundTrip()
         {
             Irradiance wattpersquaremeter = Irradiance.FromWattsPerSquareMeter(1);
-            AssertEx.EqualTolerance(1, Irradiance.FromAttowattsPerSquareCentimeter(wattpersquaremeter.AttowattsPerSquareCentimeter).WattsPerSquareMeter, AttowattsPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiance.FromAttowattsPerSquareMeter(wattpersquaremeter.AttowattsPerSquareMeter).WattsPerSquareMeter, AttowattsPerSquareMeterTolerance);
             AssertEx.EqualTolerance(1, Irradiance.FromCentiwattsPerSquareCentimeter(wattpersquaremeter.CentiwattsPerSquareCentimeter).WattsPerSquareMeter, CentiwattsPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(1, Irradiance.FromCentiwattsPerSquareMeter(wattpersquaremeter.CentiwattsPerSquareMeter).WattsPerSquareMeter, CentiwattsPerSquareMeterTolerance);
             AssertEx.EqualTolerance(1, Irradiance.FromDecawattsPerSquareCentimeter(wattpersquaremeter.DecawattsPerSquareCentimeter).WattsPerSquareMeter, DecawattsPerSquareCentimeterTolerance);
@@ -549,12 +493,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, Irradiance.FromVettawattsPerSquareMeter(wattpersquaremeter.VettawattsPerSquareMeter).WattsPerSquareMeter, VettawattsPerSquareMeterTolerance);
             AssertEx.EqualTolerance(1, Irradiance.FromWattsPerSquareCentimeter(wattpersquaremeter.WattsPerSquareCentimeter).WattsPerSquareMeter, WattsPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(1, Irradiance.FromWattsPerSquareMeter(wattpersquaremeter.WattsPerSquareMeter).WattsPerSquareMeter, WattsPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiance.FromYoctowattsPerSquareCentimeter(wattpersquaremeter.YoctowattsPerSquareCentimeter).WattsPerSquareMeter, YoctowattsPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiance.FromYoctowattsPerSquareMeter(wattpersquaremeter.YoctowattsPerSquareMeter).WattsPerSquareMeter, YoctowattsPerSquareMeterTolerance);
             AssertEx.EqualTolerance(1, Irradiance.FromYottawattsPerSquareCentimeter(wattpersquaremeter.YottawattsPerSquareCentimeter).WattsPerSquareMeter, YottawattsPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(1, Irradiance.FromYottawattsPerSquareMeter(wattpersquaremeter.YottawattsPerSquareMeter).WattsPerSquareMeter, YottawattsPerSquareMeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiance.FromZeptowattsPerSquareCentimeter(wattpersquaremeter.ZeptowattsPerSquareCentimeter).WattsPerSquareMeter, ZeptowattsPerSquareCentimeterTolerance);
-            AssertEx.EqualTolerance(1, Irradiance.FromZeptowattsPerSquareMeter(wattpersquaremeter.ZeptowattsPerSquareMeter).WattsPerSquareMeter, ZeptowattsPerSquareMeterTolerance);
             AssertEx.EqualTolerance(1, Irradiance.FromZettawattsPerSquareCentimeter(wattpersquaremeter.ZettawattsPerSquareCentimeter).WattsPerSquareMeter, ZettawattsPerSquareCentimeterTolerance);
             AssertEx.EqualTolerance(1, Irradiance.FromZettawattsPerSquareMeter(wattpersquaremeter.ZettawattsPerSquareMeter).WattsPerSquareMeter, ZettawattsPerSquareMeterTolerance);
         }

@@ -27,6 +27,7 @@ namespace UnitsNet.Units
     {
         Undefined = 0,
         CentimeterPerSecondSquared,
+        DecameterPerSecondSquared,
         DecimeterPerSecondSquared,
         FootPerSecondSquared,
         InchPerSecondSquared,

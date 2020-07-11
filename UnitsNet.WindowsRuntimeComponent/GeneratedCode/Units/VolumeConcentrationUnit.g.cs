@@ -26,13 +26,12 @@ namespace UnitsNet.Units
     public enum VolumeConcentrationUnit
     {
         Undefined = 0,
-        AttolitersPerLiter,
-        AttolitersPerMililiter,
         CentilitersPerLiter,
         CentilitersPerMililiter,
         DecalitersPerLiter,
         DecalitersPerMililiter,
         DecilitersPerLiter,
+        DecilitersPerMililiter,
         DecimalFraction,
         FemtolitersPerLiter,
         FemtolitersPerMililiter,
@@ -54,10 +53,6 @@ namespace UnitsNet.Units
         Percent,
         PicolitersPerLiter,
         PicolitersPerMililiter,
-        YoctolitersPerLiter,
-        YoctolitersPerMililiter,
-        ZeptolitersPerLiter,
-        ZeptolitersPerMililiter,
     }
 
     #pragma warning restore 1591

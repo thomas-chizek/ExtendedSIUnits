@@ -33,19 +33,35 @@ namespace UnitsNet.Tests.CustomCode
         protected override double BtusPerSecondSquareFootInOneWattPerSquareMeter => 8.80550918e-5;
         protected override double BtusPerSecondSquareInchInOneWattPerSquareMeter => 6.11493693e-7;
         protected override double CaloriesPerSecondSquareCentimeterInOneWattPerSquareMeter => 2.388458966e-5;
-        protected override double CentiwattsPerSquareMeterInOneWattPerSquareMeter => 1e2;
-        protected override double DeciwattsPerSquareMeterInOneWattPerSquareMeter => 1e1;
         protected override double KilocaloriesPerSecondSquareCentimeterInOneWattPerSquareMeter => 2.388458966e-8;
         protected override double KilocaloriesPerHourSquareMeterInOneWattPerSquareMeter => 8.59845227859e-1;
-        protected override double KilowattsPerSquareMeterInOneWattPerSquareMeter => 1e-3;
-        protected override double MicrowattsPerSquareMeterInOneWattPerSquareMeter => 1e6;
-        protected override double MilliwattsPerSquareMeterInOneWattPerSquareMeter => 1e3;
-        protected override double NanowattsPerSquareMeterInOneWattPerSquareMeter => 1e9;
         protected override double WattsPerSquareFootInOneWattPerSquareMeter => 9.290304e-2;
         protected override double WattsPerSquareInchInOneWattPerSquareMeter => 6.4516e-4;
-        protected override double WattsPerSquareMeterInOneWattPerSquareMeter => 1;
         protected override double PoundsForcePerFootSecondInOneWattPerSquareMeter => 6.852176585679176e-2;
         protected override double PoundsPerSecondCubedInOneWattPerSquareMeter => 2.204622621848776;
+
+        protected override double FemtowattsPerSquareMeterInOneWattPerSquareMeter => 1e15;
+        protected override double PicowattsPerSquareMeterInOneWattPerSquareMeter => 1e12;
+        protected override double NanowattsPerSquareMeterInOneWattPerSquareMeter => 1e9;
+        protected override double MicrowattsPerSquareMeterInOneWattPerSquareMeter => 1e6;
+        protected override double MilliwattsPerSquareMeterInOneWattPerSquareMeter => 1e3;
+        protected override double CentiwattsPerSquareMeterInOneWattPerSquareMeter => 1e2;
+        protected override double DeciwattsPerSquareMeterInOneWattPerSquareMeter => 1e1;
+        protected override double WattsPerSquareMeterInOneWattPerSquareMeter => 1;
+        protected override double DecawattsPerSquareMeterInOneWattPerSquareMeter => 1e-1;
+        protected override double HectowattsPerSquareMeterInOneWattPerSquareMeter => 1e-2;
+        protected override double KilowattsPerSquareMeterInOneWattPerSquareMeter => 1e-3;
+        protected override double MegawattsPerSquareMeterInOneWattPerSquareMeter => 1e-6;
+        protected override double GigawattsPerSquareMeterInOneWattPerSquareMeter => 1e-9;
+        protected override double TerawattsPerSquareMeterInOneWattPerSquareMeter => 1e-12;
+        protected override double PetawattsPerSquareMeterInOneWattPerSquareMeter => 1e-15;
+        protected override double ExawattsPerSquareMeterInOneWattPerSquareMeter => 1e-18;
+        protected override double ZettawattsPerSquareMeterInOneWattPerSquareMeter => 1e-21;
+        protected override double YottawattsPerSquareMeterInOneWattPerSquareMeter => 1e-24;
+        protected override double QutrawattsPerSquareMeterInOneWattPerSquareMeter => 1e-27;
+        protected override double VettawattsPerSquareMeterInOneWattPerSquareMeter => 1e-30;
+
+
 
         [ Fact]
         public void PowerDividedByAreaEqualsHeatFlux()

@@ -34,8 +34,6 @@ namespace UnitsNet.Tests
 // ReSharper disable once PartialTypeWithSinglePart
     public abstract partial class RotationalSpeedTestsBase
     {
-        protected abstract double AttodegreesPerSecondInOneRadianPerSecond { get; }
-        protected abstract double AttoradiansPerSecondInOneRadianPerSecond { get; }
         protected abstract double CentidegreesPerSecondInOneRadianPerSecond { get; }
         protected abstract double CentiradiansPerSecondInOneRadianPerSecond { get; }
         protected abstract double DecadegreesPerSecondInOneRadianPerSecond { get; }
@@ -75,18 +73,12 @@ namespace UnitsNet.Tests
         protected abstract double TeraradiansPerSecondInOneRadianPerSecond { get; }
         protected abstract double VettadegreesPerSecondInOneRadianPerSecond { get; }
         protected abstract double VettaradiansPerSecondInOneRadianPerSecond { get; }
-        protected abstract double YoctodegreesPerSecondInOneRadianPerSecond { get; }
-        protected abstract double YoctoradiansPerSecondInOneRadianPerSecond { get; }
         protected abstract double YottadegreesPerSecondInOneRadianPerSecond { get; }
         protected abstract double YottaradiansPerSecondInOneRadianPerSecond { get; }
-        protected abstract double ZeptodegreesPerSecondInOneRadianPerSecond { get; }
-        protected abstract double ZeptoradiansPerSecondInOneRadianPerSecond { get; }
         protected abstract double ZettadegreesPerSecondInOneRadianPerSecond { get; }
         protected abstract double ZettaradiansPerSecondInOneRadianPerSecond { get; }
 
 // ReSharper disable VirtualMemberNeverOverriden.Global
-        protected virtual double AttodegreesPerSecondTolerance { get { return 1e-5; } }
-        protected virtual double AttoradiansPerSecondTolerance { get { return 1e-5; } }
         protected virtual double CentidegreesPerSecondTolerance { get { return 1e-5; } }
         protected virtual double CentiradiansPerSecondTolerance { get { return 1e-5; } }
         protected virtual double DecadegreesPerSecondTolerance { get { return 1e-5; } }
@@ -126,12 +118,8 @@ namespace UnitsNet.Tests
         protected virtual double TeraradiansPerSecondTolerance { get { return 1e-5; } }
         protected virtual double VettadegreesPerSecondTolerance { get { return 1e-5; } }
         protected virtual double VettaradiansPerSecondTolerance { get { return 1e-5; } }
-        protected virtual double YoctodegreesPerSecondTolerance { get { return 1e-5; } }
-        protected virtual double YoctoradiansPerSecondTolerance { get { return 1e-5; } }
         protected virtual double YottadegreesPerSecondTolerance { get { return 1e-5; } }
         protected virtual double YottaradiansPerSecondTolerance { get { return 1e-5; } }
-        protected virtual double ZeptodegreesPerSecondTolerance { get { return 1e-5; } }
-        protected virtual double ZeptoradiansPerSecondTolerance { get { return 1e-5; } }
         protected virtual double ZettadegreesPerSecondTolerance { get { return 1e-5; } }
         protected virtual double ZettaradiansPerSecondTolerance { get { return 1e-5; } }
 // ReSharper restore VirtualMemberNeverOverriden.Global
@@ -159,8 +147,6 @@ namespace UnitsNet.Tests
         public void RadianPerSecondToRotationalSpeedUnits()
         {
             RotationalSpeed radianpersecond = RotationalSpeed.FromRadiansPerSecond(1);
-            AssertEx.EqualTolerance(AttodegreesPerSecondInOneRadianPerSecond, radianpersecond.AttodegreesPerSecond, AttodegreesPerSecondTolerance);
-            AssertEx.EqualTolerance(AttoradiansPerSecondInOneRadianPerSecond, radianpersecond.AttoradiansPerSecond, AttoradiansPerSecondTolerance);
             AssertEx.EqualTolerance(CentidegreesPerSecondInOneRadianPerSecond, radianpersecond.CentidegreesPerSecond, CentidegreesPerSecondTolerance);
             AssertEx.EqualTolerance(CentiradiansPerSecondInOneRadianPerSecond, radianpersecond.CentiradiansPerSecond, CentiradiansPerSecondTolerance);
             AssertEx.EqualTolerance(DecadegreesPerSecondInOneRadianPerSecond, radianpersecond.DecadegreesPerSecond, DecadegreesPerSecondTolerance);
@@ -200,12 +186,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(TeraradiansPerSecondInOneRadianPerSecond, radianpersecond.TeraradiansPerSecond, TeraradiansPerSecondTolerance);
             AssertEx.EqualTolerance(VettadegreesPerSecondInOneRadianPerSecond, radianpersecond.VettadegreesPerSecond, VettadegreesPerSecondTolerance);
             AssertEx.EqualTolerance(VettaradiansPerSecondInOneRadianPerSecond, radianpersecond.VettaradiansPerSecond, VettaradiansPerSecondTolerance);
-            AssertEx.EqualTolerance(YoctodegreesPerSecondInOneRadianPerSecond, radianpersecond.YoctodegreesPerSecond, YoctodegreesPerSecondTolerance);
-            AssertEx.EqualTolerance(YoctoradiansPerSecondInOneRadianPerSecond, radianpersecond.YoctoradiansPerSecond, YoctoradiansPerSecondTolerance);
             AssertEx.EqualTolerance(YottadegreesPerSecondInOneRadianPerSecond, radianpersecond.YottadegreesPerSecond, YottadegreesPerSecondTolerance);
             AssertEx.EqualTolerance(YottaradiansPerSecondInOneRadianPerSecond, radianpersecond.YottaradiansPerSecond, YottaradiansPerSecondTolerance);
-            AssertEx.EqualTolerance(ZeptodegreesPerSecondInOneRadianPerSecond, radianpersecond.ZeptodegreesPerSecond, ZeptodegreesPerSecondTolerance);
-            AssertEx.EqualTolerance(ZeptoradiansPerSecondInOneRadianPerSecond, radianpersecond.ZeptoradiansPerSecond, ZeptoradiansPerSecondTolerance);
             AssertEx.EqualTolerance(ZettadegreesPerSecondInOneRadianPerSecond, radianpersecond.ZettadegreesPerSecond, ZettadegreesPerSecondTolerance);
             AssertEx.EqualTolerance(ZettaradiansPerSecondInOneRadianPerSecond, radianpersecond.ZettaradiansPerSecond, ZettaradiansPerSecondTolerance);
         }
@@ -213,8 +195,6 @@ namespace UnitsNet.Tests
         [Fact]
         public void FromValueAndUnit()
         {
-            AssertEx.EqualTolerance(1, RotationalSpeed.From(1, RotationalSpeedUnit.AttodegreePerSecond).AttodegreesPerSecond, AttodegreesPerSecondTolerance);
-            AssertEx.EqualTolerance(1, RotationalSpeed.From(1, RotationalSpeedUnit.AttoradianPerSecond).AttoradiansPerSecond, AttoradiansPerSecondTolerance);
             AssertEx.EqualTolerance(1, RotationalSpeed.From(1, RotationalSpeedUnit.CentidegreePerSecond).CentidegreesPerSecond, CentidegreesPerSecondTolerance);
             AssertEx.EqualTolerance(1, RotationalSpeed.From(1, RotationalSpeedUnit.CentiradianPerSecond).CentiradiansPerSecond, CentiradiansPerSecondTolerance);
             AssertEx.EqualTolerance(1, RotationalSpeed.From(1, RotationalSpeedUnit.DecadegreePerSecond).DecadegreesPerSecond, DecadegreesPerSecondTolerance);
@@ -254,12 +234,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, RotationalSpeed.From(1, RotationalSpeedUnit.TeraradianPerSecond).TeraradiansPerSecond, TeraradiansPerSecondTolerance);
             AssertEx.EqualTolerance(1, RotationalSpeed.From(1, RotationalSpeedUnit.VettadegreePerSecond).VettadegreesPerSecond, VettadegreesPerSecondTolerance);
             AssertEx.EqualTolerance(1, RotationalSpeed.From(1, RotationalSpeedUnit.VettaradianPerSecond).VettaradiansPerSecond, VettaradiansPerSecondTolerance);
-            AssertEx.EqualTolerance(1, RotationalSpeed.From(1, RotationalSpeedUnit.YoctodegreePerSecond).YoctodegreesPerSecond, YoctodegreesPerSecondTolerance);
-            AssertEx.EqualTolerance(1, RotationalSpeed.From(1, RotationalSpeedUnit.YoctoradianPerSecond).YoctoradiansPerSecond, YoctoradiansPerSecondTolerance);
             AssertEx.EqualTolerance(1, RotationalSpeed.From(1, RotationalSpeedUnit.YottadegreePerSecond).YottadegreesPerSecond, YottadegreesPerSecondTolerance);
             AssertEx.EqualTolerance(1, RotationalSpeed.From(1, RotationalSpeedUnit.YottaradianPerSecond).YottaradiansPerSecond, YottaradiansPerSecondTolerance);
-            AssertEx.EqualTolerance(1, RotationalSpeed.From(1, RotationalSpeedUnit.ZeptodegreePerSecond).ZeptodegreesPerSecond, ZeptodegreesPerSecondTolerance);
-            AssertEx.EqualTolerance(1, RotationalSpeed.From(1, RotationalSpeedUnit.ZeptoradianPerSecond).ZeptoradiansPerSecond, ZeptoradiansPerSecondTolerance);
             AssertEx.EqualTolerance(1, RotationalSpeed.From(1, RotationalSpeedUnit.ZettadegreePerSecond).ZettadegreesPerSecond, ZettadegreesPerSecondTolerance);
             AssertEx.EqualTolerance(1, RotationalSpeed.From(1, RotationalSpeedUnit.ZettaradianPerSecond).ZettaradiansPerSecond, ZettaradiansPerSecondTolerance);
         }
@@ -281,8 +257,6 @@ namespace UnitsNet.Tests
         public void As()
         {
             var radianpersecond = RotationalSpeed.FromRadiansPerSecond(1);
-            AssertEx.EqualTolerance(AttodegreesPerSecondInOneRadianPerSecond, radianpersecond.As(RotationalSpeedUnit.AttodegreePerSecond), AttodegreesPerSecondTolerance);
-            AssertEx.EqualTolerance(AttoradiansPerSecondInOneRadianPerSecond, radianpersecond.As(RotationalSpeedUnit.AttoradianPerSecond), AttoradiansPerSecondTolerance);
             AssertEx.EqualTolerance(CentidegreesPerSecondInOneRadianPerSecond, radianpersecond.As(RotationalSpeedUnit.CentidegreePerSecond), CentidegreesPerSecondTolerance);
             AssertEx.EqualTolerance(CentiradiansPerSecondInOneRadianPerSecond, radianpersecond.As(RotationalSpeedUnit.CentiradianPerSecond), CentiradiansPerSecondTolerance);
             AssertEx.EqualTolerance(DecadegreesPerSecondInOneRadianPerSecond, radianpersecond.As(RotationalSpeedUnit.DecadegreePerSecond), DecadegreesPerSecondTolerance);
@@ -322,12 +296,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(TeraradiansPerSecondInOneRadianPerSecond, radianpersecond.As(RotationalSpeedUnit.TeraradianPerSecond), TeraradiansPerSecondTolerance);
             AssertEx.EqualTolerance(VettadegreesPerSecondInOneRadianPerSecond, radianpersecond.As(RotationalSpeedUnit.VettadegreePerSecond), VettadegreesPerSecondTolerance);
             AssertEx.EqualTolerance(VettaradiansPerSecondInOneRadianPerSecond, radianpersecond.As(RotationalSpeedUnit.VettaradianPerSecond), VettaradiansPerSecondTolerance);
-            AssertEx.EqualTolerance(YoctodegreesPerSecondInOneRadianPerSecond, radianpersecond.As(RotationalSpeedUnit.YoctodegreePerSecond), YoctodegreesPerSecondTolerance);
-            AssertEx.EqualTolerance(YoctoradiansPerSecondInOneRadianPerSecond, radianpersecond.As(RotationalSpeedUnit.YoctoradianPerSecond), YoctoradiansPerSecondTolerance);
             AssertEx.EqualTolerance(YottadegreesPerSecondInOneRadianPerSecond, radianpersecond.As(RotationalSpeedUnit.YottadegreePerSecond), YottadegreesPerSecondTolerance);
             AssertEx.EqualTolerance(YottaradiansPerSecondInOneRadianPerSecond, radianpersecond.As(RotationalSpeedUnit.YottaradianPerSecond), YottaradiansPerSecondTolerance);
-            AssertEx.EqualTolerance(ZeptodegreesPerSecondInOneRadianPerSecond, radianpersecond.As(RotationalSpeedUnit.ZeptodegreePerSecond), ZeptodegreesPerSecondTolerance);
-            AssertEx.EqualTolerance(ZeptoradiansPerSecondInOneRadianPerSecond, radianpersecond.As(RotationalSpeedUnit.ZeptoradianPerSecond), ZeptoradiansPerSecondTolerance);
             AssertEx.EqualTolerance(ZettadegreesPerSecondInOneRadianPerSecond, radianpersecond.As(RotationalSpeedUnit.ZettadegreePerSecond), ZettadegreesPerSecondTolerance);
             AssertEx.EqualTolerance(ZettaradiansPerSecondInOneRadianPerSecond, radianpersecond.As(RotationalSpeedUnit.ZettaradianPerSecond), ZettaradiansPerSecondTolerance);
         }
@@ -336,14 +306,6 @@ namespace UnitsNet.Tests
         public void ToUnit()
         {
             var radianpersecond = RotationalSpeed.FromRadiansPerSecond(1);
-
-            var attodegreepersecondQuantity = radianpersecond.ToUnit(RotationalSpeedUnit.AttodegreePerSecond);
-            AssertEx.EqualTolerance(AttodegreesPerSecondInOneRadianPerSecond, (double)attodegreepersecondQuantity.Value, AttodegreesPerSecondTolerance);
-            Assert.Equal(RotationalSpeedUnit.AttodegreePerSecond, attodegreepersecondQuantity.Unit);
-
-            var attoradianpersecondQuantity = radianpersecond.ToUnit(RotationalSpeedUnit.AttoradianPerSecond);
-            AssertEx.EqualTolerance(AttoradiansPerSecondInOneRadianPerSecond, (double)attoradianpersecondQuantity.Value, AttoradiansPerSecondTolerance);
-            Assert.Equal(RotationalSpeedUnit.AttoradianPerSecond, attoradianpersecondQuantity.Unit);
 
             var centidegreepersecondQuantity = radianpersecond.ToUnit(RotationalSpeedUnit.CentidegreePerSecond);
             AssertEx.EqualTolerance(CentidegreesPerSecondInOneRadianPerSecond, (double)centidegreepersecondQuantity.Value, CentidegreesPerSecondTolerance);
@@ -501,14 +463,6 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettaradiansPerSecondInOneRadianPerSecond, (double)vettaradianpersecondQuantity.Value, VettaradiansPerSecondTolerance);
             Assert.Equal(RotationalSpeedUnit.VettaradianPerSecond, vettaradianpersecondQuantity.Unit);
 
-            var yoctodegreepersecondQuantity = radianpersecond.ToUnit(RotationalSpeedUnit.YoctodegreePerSecond);
-            AssertEx.EqualTolerance(YoctodegreesPerSecondInOneRadianPerSecond, (double)yoctodegreepersecondQuantity.Value, YoctodegreesPerSecondTolerance);
-            Assert.Equal(RotationalSpeedUnit.YoctodegreePerSecond, yoctodegreepersecondQuantity.Unit);
-
-            var yoctoradianpersecondQuantity = radianpersecond.ToUnit(RotationalSpeedUnit.YoctoradianPerSecond);
-            AssertEx.EqualTolerance(YoctoradiansPerSecondInOneRadianPerSecond, (double)yoctoradianpersecondQuantity.Value, YoctoradiansPerSecondTolerance);
-            Assert.Equal(RotationalSpeedUnit.YoctoradianPerSecond, yoctoradianpersecondQuantity.Unit);
-
             var yottadegreepersecondQuantity = radianpersecond.ToUnit(RotationalSpeedUnit.YottadegreePerSecond);
             AssertEx.EqualTolerance(YottadegreesPerSecondInOneRadianPerSecond, (double)yottadegreepersecondQuantity.Value, YottadegreesPerSecondTolerance);
             Assert.Equal(RotationalSpeedUnit.YottadegreePerSecond, yottadegreepersecondQuantity.Unit);
@@ -516,14 +470,6 @@ namespace UnitsNet.Tests
             var yottaradianpersecondQuantity = radianpersecond.ToUnit(RotationalSpeedUnit.YottaradianPerSecond);
             AssertEx.EqualTolerance(YottaradiansPerSecondInOneRadianPerSecond, (double)yottaradianpersecondQuantity.Value, YottaradiansPerSecondTolerance);
             Assert.Equal(RotationalSpeedUnit.YottaradianPerSecond, yottaradianpersecondQuantity.Unit);
-
-            var zeptodegreepersecondQuantity = radianpersecond.ToUnit(RotationalSpeedUnit.ZeptodegreePerSecond);
-            AssertEx.EqualTolerance(ZeptodegreesPerSecondInOneRadianPerSecond, (double)zeptodegreepersecondQuantity.Value, ZeptodegreesPerSecondTolerance);
-            Assert.Equal(RotationalSpeedUnit.ZeptodegreePerSecond, zeptodegreepersecondQuantity.Unit);
-
-            var zeptoradianpersecondQuantity = radianpersecond.ToUnit(RotationalSpeedUnit.ZeptoradianPerSecond);
-            AssertEx.EqualTolerance(ZeptoradiansPerSecondInOneRadianPerSecond, (double)zeptoradianpersecondQuantity.Value, ZeptoradiansPerSecondTolerance);
-            Assert.Equal(RotationalSpeedUnit.ZeptoradianPerSecond, zeptoradianpersecondQuantity.Unit);
 
             var zettadegreepersecondQuantity = radianpersecond.ToUnit(RotationalSpeedUnit.ZettadegreePerSecond);
             AssertEx.EqualTolerance(ZettadegreesPerSecondInOneRadianPerSecond, (double)zettadegreepersecondQuantity.Value, ZettadegreesPerSecondTolerance);
@@ -538,8 +484,6 @@ namespace UnitsNet.Tests
         public void ConversionRoundTrip()
         {
             RotationalSpeed radianpersecond = RotationalSpeed.FromRadiansPerSecond(1);
-            AssertEx.EqualTolerance(1, RotationalSpeed.FromAttodegreesPerSecond(radianpersecond.AttodegreesPerSecond).RadiansPerSecond, AttodegreesPerSecondTolerance);
-            AssertEx.EqualTolerance(1, RotationalSpeed.FromAttoradiansPerSecond(radianpersecond.AttoradiansPerSecond).RadiansPerSecond, AttoradiansPerSecondTolerance);
             AssertEx.EqualTolerance(1, RotationalSpeed.FromCentidegreesPerSecond(radianpersecond.CentidegreesPerSecond).RadiansPerSecond, CentidegreesPerSecondTolerance);
             AssertEx.EqualTolerance(1, RotationalSpeed.FromCentiradiansPerSecond(radianpersecond.CentiradiansPerSecond).RadiansPerSecond, CentiradiansPerSecondTolerance);
             AssertEx.EqualTolerance(1, RotationalSpeed.FromDecadegreesPerSecond(radianpersecond.DecadegreesPerSecond).RadiansPerSecond, DecadegreesPerSecondTolerance);
@@ -579,12 +523,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, RotationalSpeed.FromTeraradiansPerSecond(radianpersecond.TeraradiansPerSecond).RadiansPerSecond, TeraradiansPerSecondTolerance);
             AssertEx.EqualTolerance(1, RotationalSpeed.FromVettadegreesPerSecond(radianpersecond.VettadegreesPerSecond).RadiansPerSecond, VettadegreesPerSecondTolerance);
             AssertEx.EqualTolerance(1, RotationalSpeed.FromVettaradiansPerSecond(radianpersecond.VettaradiansPerSecond).RadiansPerSecond, VettaradiansPerSecondTolerance);
-            AssertEx.EqualTolerance(1, RotationalSpeed.FromYoctodegreesPerSecond(radianpersecond.YoctodegreesPerSecond).RadiansPerSecond, YoctodegreesPerSecondTolerance);
-            AssertEx.EqualTolerance(1, RotationalSpeed.FromYoctoradiansPerSecond(radianpersecond.YoctoradiansPerSecond).RadiansPerSecond, YoctoradiansPerSecondTolerance);
             AssertEx.EqualTolerance(1, RotationalSpeed.FromYottadegreesPerSecond(radianpersecond.YottadegreesPerSecond).RadiansPerSecond, YottadegreesPerSecondTolerance);
             AssertEx.EqualTolerance(1, RotationalSpeed.FromYottaradiansPerSecond(radianpersecond.YottaradiansPerSecond).RadiansPerSecond, YottaradiansPerSecondTolerance);
-            AssertEx.EqualTolerance(1, RotationalSpeed.FromZeptodegreesPerSecond(radianpersecond.ZeptodegreesPerSecond).RadiansPerSecond, ZeptodegreesPerSecondTolerance);
-            AssertEx.EqualTolerance(1, RotationalSpeed.FromZeptoradiansPerSecond(radianpersecond.ZeptoradiansPerSecond).RadiansPerSecond, ZeptoradiansPerSecondTolerance);
             AssertEx.EqualTolerance(1, RotationalSpeed.FromZettadegreesPerSecond(radianpersecond.ZettadegreesPerSecond).RadiansPerSecond, ZettadegreesPerSecondTolerance);
             AssertEx.EqualTolerance(1, RotationalSpeed.FromZettaradiansPerSecond(radianpersecond.ZettaradiansPerSecond).RadiansPerSecond, ZettaradiansPerSecondTolerance);
         }

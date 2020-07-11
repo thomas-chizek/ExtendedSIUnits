@@ -22,12 +22,17 @@ namespace UnitsNet
             return FromSquareMeters(Math.PI * radius.Meters * radius.Meters);
         }
 
-        #endregion
 
         /// <summary>Get <see cref="Length"/> from <see cref="Area"/> divided by <see cref="Length"/>.</summary>
         public static Length operator /(Area area, Length length)
         {
             return Length.FromMeters(area.SquareMeters / length.Meters);
+        }
+
+        /// <summary>Get <see cref="Length"/> from Square Root of <see cref="Area"/>.</summary>
+        public static Length Sqrt(Area area)
+        {
+            return Length.FromMeters(Math.Sqrt(area.SquareMeters));
         }
 
         /// <summary>Get <see cref="MassFlow"/> from <see cref="Area"/> times <see cref="MassFlux"/>.</summary>
@@ -41,5 +46,11 @@ namespace UnitsNet
         {
             return VolumeFlow.FromCubicMetersPerSecond(area.SquareMeters * speed.MetersPerSecond);
         }
+
+        /// <summary>
+        ///     Gets an instance of this quantity with a value of 0 in the base unit SquareMeter.
+        /// </summary>
+        public static Area One { get; } = new Area(1, UnitsNet.Units.AreaUnit.SquareMeter);
+        #endregion
     }
 }

@@ -26,7 +26,6 @@ namespace UnitsNet.Units
     public enum ReactivePowerUnit
     {
         Undefined = 0,
-        AttovoltampereReactive,
         CentivoltampereReactive,
         DecavoltampereReactive,
         DecivoltampereReactive,
@@ -45,9 +44,7 @@ namespace UnitsNet.Units
         TeravoltampereReactive,
         VettavoltampereReactive,
         VoltampereReactive,
-        YoctovoltampereReactive,
         YottavoltampereReactive,
-        ZeptovoltampereReactive,
         ZettavoltampereReactive,
     }
 

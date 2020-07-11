@@ -26,7 +26,6 @@ namespace UnitsNet.Units
     public enum IlluminanceUnit
     {
         Undefined = 0,
-        Attolux,
         Centilux,
         Decalux,
         Decilux,
@@ -45,9 +44,7 @@ namespace UnitsNet.Units
         Qutralux,
         Teralux,
         Vettalux,
-        Yoctolux,
         Yottalux,
-        Zeptolux,
         Zettalux,
     }
 

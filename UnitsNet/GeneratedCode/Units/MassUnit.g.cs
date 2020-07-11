@@ -26,7 +26,6 @@ namespace UnitsNet.Units
     public enum MassUnit
     {
         Undefined = 0,
-        Attogram,
         Centigram,
         Decagram,
         Decigram,
@@ -109,10 +108,8 @@ namespace UnitsNet.Units
         Tonne,
         Vettagram,
         Vettatonne,
-        Yoctogram,
         Yottagram,
         Yottatonne,
-        Zeptogram,
         Zettagram,
         Zettatonne,
     }

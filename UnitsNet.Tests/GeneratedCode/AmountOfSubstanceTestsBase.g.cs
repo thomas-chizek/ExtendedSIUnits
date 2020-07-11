@@ -36,6 +36,7 @@ namespace UnitsNet.Tests
     {
         protected abstract double CentimolesInOneMole { get; }
         protected abstract double CentipoundMolesInOneMole { get; }
+        protected abstract double DecapoundMolesInOneMole { get; }
         protected abstract double DecimolesInOneMole { get; }
         protected abstract double DecipoundMolesInOneMole { get; }
         protected abstract double KilomolesInOneMole { get; }
@@ -53,6 +54,7 @@ namespace UnitsNet.Tests
 // ReSharper disable VirtualMemberNeverOverriden.Global
         protected virtual double CentimolesTolerance { get { return 1e-5; } }
         protected virtual double CentipoundMolesTolerance { get { return 1e-5; } }
+        protected virtual double DecapoundMolesTolerance { get { return 1e-5; } }
         protected virtual double DecimolesTolerance { get { return 1e-5; } }
         protected virtual double DecipoundMolesTolerance { get { return 1e-5; } }
         protected virtual double KilomolesTolerance { get { return 1e-5; } }
@@ -93,6 +95,7 @@ namespace UnitsNet.Tests
             AmountOfSubstance mole = AmountOfSubstance.FromMoles(1);
             AssertEx.EqualTolerance(CentimolesInOneMole, mole.Centimoles, CentimolesTolerance);
             AssertEx.EqualTolerance(CentipoundMolesInOneMole, mole.CentipoundMoles, CentipoundMolesTolerance);
+            AssertEx.EqualTolerance(DecapoundMolesInOneMole, mole.DecapoundMoles, DecapoundMolesTolerance);
             AssertEx.EqualTolerance(DecimolesInOneMole, mole.Decimoles, DecimolesTolerance);
             AssertEx.EqualTolerance(DecipoundMolesInOneMole, mole.DecipoundMoles, DecipoundMolesTolerance);
             AssertEx.EqualTolerance(KilomolesInOneMole, mole.Kilomoles, KilomolesTolerance);
@@ -113,6 +116,7 @@ namespace UnitsNet.Tests
         {
             AssertEx.EqualTolerance(1, AmountOfSubstance.From(1, AmountOfSubstanceUnit.Centimole).Centimoles, CentimolesTolerance);
             AssertEx.EqualTolerance(1, AmountOfSubstance.From(1, AmountOfSubstanceUnit.CentipoundMole).CentipoundMoles, CentipoundMolesTolerance);
+            AssertEx.EqualTolerance(1, AmountOfSubstance.From(1, AmountOfSubstanceUnit.DecapoundMole).DecapoundMoles, DecapoundMolesTolerance);
             AssertEx.EqualTolerance(1, AmountOfSubstance.From(1, AmountOfSubstanceUnit.Decimole).Decimoles, DecimolesTolerance);
             AssertEx.EqualTolerance(1, AmountOfSubstance.From(1, AmountOfSubstanceUnit.DecipoundMole).DecipoundMoles, DecipoundMolesTolerance);
             AssertEx.EqualTolerance(1, AmountOfSubstance.From(1, AmountOfSubstanceUnit.Kilomole).Kilomoles, KilomolesTolerance);
@@ -147,6 +151,7 @@ namespace UnitsNet.Tests
             var mole = AmountOfSubstance.FromMoles(1);
             AssertEx.EqualTolerance(CentimolesInOneMole, mole.As(AmountOfSubstanceUnit.Centimole), CentimolesTolerance);
             AssertEx.EqualTolerance(CentipoundMolesInOneMole, mole.As(AmountOfSubstanceUnit.CentipoundMole), CentipoundMolesTolerance);
+            AssertEx.EqualTolerance(DecapoundMolesInOneMole, mole.As(AmountOfSubstanceUnit.DecapoundMole), DecapoundMolesTolerance);
             AssertEx.EqualTolerance(DecimolesInOneMole, mole.As(AmountOfSubstanceUnit.Decimole), DecimolesTolerance);
             AssertEx.EqualTolerance(DecipoundMolesInOneMole, mole.As(AmountOfSubstanceUnit.DecipoundMole), DecipoundMolesTolerance);
             AssertEx.EqualTolerance(KilomolesInOneMole, mole.As(AmountOfSubstanceUnit.Kilomole), KilomolesTolerance);
@@ -174,6 +179,10 @@ namespace UnitsNet.Tests
             var centipoundmoleQuantity = mole.ToUnit(AmountOfSubstanceUnit.CentipoundMole);
             AssertEx.EqualTolerance(CentipoundMolesInOneMole, (double)centipoundmoleQuantity.Value, CentipoundMolesTolerance);
             Assert.Equal(AmountOfSubstanceUnit.CentipoundMole, centipoundmoleQuantity.Unit);
+
+            var decapoundmoleQuantity = mole.ToUnit(AmountOfSubstanceUnit.DecapoundMole);
+            AssertEx.EqualTolerance(DecapoundMolesInOneMole, (double)decapoundmoleQuantity.Value, DecapoundMolesTolerance);
+            Assert.Equal(AmountOfSubstanceUnit.DecapoundMole, decapoundmoleQuantity.Unit);
 
             var decimoleQuantity = mole.ToUnit(AmountOfSubstanceUnit.Decimole);
             AssertEx.EqualTolerance(DecimolesInOneMole, (double)decimoleQuantity.Value, DecimolesTolerance);
@@ -234,6 +243,7 @@ namespace UnitsNet.Tests
             AmountOfSubstance mole = AmountOfSubstance.FromMoles(1);
             AssertEx.EqualTolerance(1, AmountOfSubstance.FromCentimoles(mole.Centimoles).Moles, CentimolesTolerance);
             AssertEx.EqualTolerance(1, AmountOfSubstance.FromCentipoundMoles(mole.CentipoundMoles).Moles, CentipoundMolesTolerance);
+            AssertEx.EqualTolerance(1, AmountOfSubstance.FromDecapoundMoles(mole.DecapoundMoles).Moles, DecapoundMolesTolerance);
             AssertEx.EqualTolerance(1, AmountOfSubstance.FromDecimoles(mole.Decimoles).Moles, DecimolesTolerance);
             AssertEx.EqualTolerance(1, AmountOfSubstance.FromDecipoundMoles(mole.DecipoundMoles).Moles, DecipoundMolesTolerance);
             AssertEx.EqualTolerance(1, AmountOfSubstance.FromKilomoles(mole.Kilomoles).Moles, KilomolesTolerance);

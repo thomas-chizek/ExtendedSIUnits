@@ -26,7 +26,6 @@ namespace UnitsNet.Units
     public enum HeatFluxUnit
     {
         Undefined = 0,
-        AttowattPerSquareMeter,
         BtuPerHourSquareFoot,
         BtuPerMinuteSquareFoot,
         BtuPerSecondSquareFoot,
@@ -56,9 +55,7 @@ namespace UnitsNet.Units
         WattPerSquareFoot,
         WattPerSquareInch,
         WattPerSquareMeter,
-        YoctowattPerSquareMeter,
         YottawattPerSquareMeter,
-        ZeptowattPerSquareMeter,
         ZettawattPerSquareMeter,
     }
 

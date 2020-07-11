@@ -34,8 +34,6 @@ namespace UnitsNet.Tests
 // ReSharper disable once PartialTypeWithSinglePart
     public abstract partial class VolumePerLengthTestsBase
     {
-        protected abstract double AttocubicMetersPerMeterInOneCubicMeterPerMeter { get; }
-        protected abstract double AttolitersPerMeterInOneCubicMeterPerMeter { get; }
         protected abstract double CenticubicMetersPerMeterInOneCubicMeterPerMeter { get; }
         protected abstract double CentilitersPerMeterInOneCubicMeterPerMeter { get; }
         protected abstract double CubicMetersPerMeterInOneCubicMeterPerMeter { get; }
@@ -73,18 +71,12 @@ namespace UnitsNet.Tests
         protected abstract double TeralitersPerMeterInOneCubicMeterPerMeter { get; }
         protected abstract double VettacubicMetersPerMeterInOneCubicMeterPerMeter { get; }
         protected abstract double VettalitersPerMeterInOneCubicMeterPerMeter { get; }
-        protected abstract double YoctocubicMetersPerMeterInOneCubicMeterPerMeter { get; }
-        protected abstract double YoctolitersPerMeterInOneCubicMeterPerMeter { get; }
         protected abstract double YottacubicMetersPerMeterInOneCubicMeterPerMeter { get; }
         protected abstract double YottalitersPerMeterInOneCubicMeterPerMeter { get; }
-        protected abstract double ZeptocubicMetersPerMeterInOneCubicMeterPerMeter { get; }
-        protected abstract double ZeptolitersPerMeterInOneCubicMeterPerMeter { get; }
         protected abstract double ZettacubicMetersPerMeterInOneCubicMeterPerMeter { get; }
         protected abstract double ZettalitersPerMeterInOneCubicMeterPerMeter { get; }
 
 // ReSharper disable VirtualMemberNeverOverriden.Global
-        protected virtual double AttocubicMetersPerMeterTolerance { get { return 1e-5; } }
-        protected virtual double AttolitersPerMeterTolerance { get { return 1e-5; } }
         protected virtual double CenticubicMetersPerMeterTolerance { get { return 1e-5; } }
         protected virtual double CentilitersPerMeterTolerance { get { return 1e-5; } }
         protected virtual double CubicMetersPerMeterTolerance { get { return 1e-5; } }
@@ -122,12 +114,8 @@ namespace UnitsNet.Tests
         protected virtual double TeralitersPerMeterTolerance { get { return 1e-5; } }
         protected virtual double VettacubicMetersPerMeterTolerance { get { return 1e-5; } }
         protected virtual double VettalitersPerMeterTolerance { get { return 1e-5; } }
-        protected virtual double YoctocubicMetersPerMeterTolerance { get { return 1e-5; } }
-        protected virtual double YoctolitersPerMeterTolerance { get { return 1e-5; } }
         protected virtual double YottacubicMetersPerMeterTolerance { get { return 1e-5; } }
         protected virtual double YottalitersPerMeterTolerance { get { return 1e-5; } }
-        protected virtual double ZeptocubicMetersPerMeterTolerance { get { return 1e-5; } }
-        protected virtual double ZeptolitersPerMeterTolerance { get { return 1e-5; } }
         protected virtual double ZettacubicMetersPerMeterTolerance { get { return 1e-5; } }
         protected virtual double ZettalitersPerMeterTolerance { get { return 1e-5; } }
 // ReSharper restore VirtualMemberNeverOverriden.Global
@@ -155,8 +143,6 @@ namespace UnitsNet.Tests
         public void CubicMeterPerMeterToVolumePerLengthUnits()
         {
             VolumePerLength cubicmeterpermeter = VolumePerLength.FromCubicMetersPerMeter(1);
-            AssertEx.EqualTolerance(AttocubicMetersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.AttocubicMetersPerMeter, AttocubicMetersPerMeterTolerance);
-            AssertEx.EqualTolerance(AttolitersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.AttolitersPerMeter, AttolitersPerMeterTolerance);
             AssertEx.EqualTolerance(CenticubicMetersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.CenticubicMetersPerMeter, CenticubicMetersPerMeterTolerance);
             AssertEx.EqualTolerance(CentilitersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.CentilitersPerMeter, CentilitersPerMeterTolerance);
             AssertEx.EqualTolerance(CubicMetersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.CubicMetersPerMeter, CubicMetersPerMeterTolerance);
@@ -194,12 +180,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(TeralitersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.TeralitersPerMeter, TeralitersPerMeterTolerance);
             AssertEx.EqualTolerance(VettacubicMetersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.VettacubicMetersPerMeter, VettacubicMetersPerMeterTolerance);
             AssertEx.EqualTolerance(VettalitersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.VettalitersPerMeter, VettalitersPerMeterTolerance);
-            AssertEx.EqualTolerance(YoctocubicMetersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.YoctocubicMetersPerMeter, YoctocubicMetersPerMeterTolerance);
-            AssertEx.EqualTolerance(YoctolitersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.YoctolitersPerMeter, YoctolitersPerMeterTolerance);
             AssertEx.EqualTolerance(YottacubicMetersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.YottacubicMetersPerMeter, YottacubicMetersPerMeterTolerance);
             AssertEx.EqualTolerance(YottalitersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.YottalitersPerMeter, YottalitersPerMeterTolerance);
-            AssertEx.EqualTolerance(ZeptocubicMetersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.ZeptocubicMetersPerMeter, ZeptocubicMetersPerMeterTolerance);
-            AssertEx.EqualTolerance(ZeptolitersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.ZeptolitersPerMeter, ZeptolitersPerMeterTolerance);
             AssertEx.EqualTolerance(ZettacubicMetersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.ZettacubicMetersPerMeter, ZettacubicMetersPerMeterTolerance);
             AssertEx.EqualTolerance(ZettalitersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.ZettalitersPerMeter, ZettalitersPerMeterTolerance);
         }
@@ -207,8 +189,6 @@ namespace UnitsNet.Tests
         [Fact]
         public void FromValueAndUnit()
         {
-            AssertEx.EqualTolerance(1, VolumePerLength.From(1, VolumePerLengthUnit.AttocubicMeterPerMeter).AttocubicMetersPerMeter, AttocubicMetersPerMeterTolerance);
-            AssertEx.EqualTolerance(1, VolumePerLength.From(1, VolumePerLengthUnit.AttoliterPerMeter).AttolitersPerMeter, AttolitersPerMeterTolerance);
             AssertEx.EqualTolerance(1, VolumePerLength.From(1, VolumePerLengthUnit.CenticubicMeterPerMeter).CenticubicMetersPerMeter, CenticubicMetersPerMeterTolerance);
             AssertEx.EqualTolerance(1, VolumePerLength.From(1, VolumePerLengthUnit.CentiliterPerMeter).CentilitersPerMeter, CentilitersPerMeterTolerance);
             AssertEx.EqualTolerance(1, VolumePerLength.From(1, VolumePerLengthUnit.CubicMeterPerMeter).CubicMetersPerMeter, CubicMetersPerMeterTolerance);
@@ -246,12 +226,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, VolumePerLength.From(1, VolumePerLengthUnit.TeraliterPerMeter).TeralitersPerMeter, TeralitersPerMeterTolerance);
             AssertEx.EqualTolerance(1, VolumePerLength.From(1, VolumePerLengthUnit.VettacubicMeterPerMeter).VettacubicMetersPerMeter, VettacubicMetersPerMeterTolerance);
             AssertEx.EqualTolerance(1, VolumePerLength.From(1, VolumePerLengthUnit.VettaliterPerMeter).VettalitersPerMeter, VettalitersPerMeterTolerance);
-            AssertEx.EqualTolerance(1, VolumePerLength.From(1, VolumePerLengthUnit.YoctocubicMeterPerMeter).YoctocubicMetersPerMeter, YoctocubicMetersPerMeterTolerance);
-            AssertEx.EqualTolerance(1, VolumePerLength.From(1, VolumePerLengthUnit.YoctoliterPerMeter).YoctolitersPerMeter, YoctolitersPerMeterTolerance);
             AssertEx.EqualTolerance(1, VolumePerLength.From(1, VolumePerLengthUnit.YottacubicMeterPerMeter).YottacubicMetersPerMeter, YottacubicMetersPerMeterTolerance);
             AssertEx.EqualTolerance(1, VolumePerLength.From(1, VolumePerLengthUnit.YottaliterPerMeter).YottalitersPerMeter, YottalitersPerMeterTolerance);
-            AssertEx.EqualTolerance(1, VolumePerLength.From(1, VolumePerLengthUnit.ZeptocubicMeterPerMeter).ZeptocubicMetersPerMeter, ZeptocubicMetersPerMeterTolerance);
-            AssertEx.EqualTolerance(1, VolumePerLength.From(1, VolumePerLengthUnit.ZeptoliterPerMeter).ZeptolitersPerMeter, ZeptolitersPerMeterTolerance);
             AssertEx.EqualTolerance(1, VolumePerLength.From(1, VolumePerLengthUnit.ZettacubicMeterPerMeter).ZettacubicMetersPerMeter, ZettacubicMetersPerMeterTolerance);
             AssertEx.EqualTolerance(1, VolumePerLength.From(1, VolumePerLengthUnit.ZettaliterPerMeter).ZettalitersPerMeter, ZettalitersPerMeterTolerance);
         }
@@ -273,8 +249,6 @@ namespace UnitsNet.Tests
         public void As()
         {
             var cubicmeterpermeter = VolumePerLength.FromCubicMetersPerMeter(1);
-            AssertEx.EqualTolerance(AttocubicMetersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.As(VolumePerLengthUnit.AttocubicMeterPerMeter), AttocubicMetersPerMeterTolerance);
-            AssertEx.EqualTolerance(AttolitersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.As(VolumePerLengthUnit.AttoliterPerMeter), AttolitersPerMeterTolerance);
             AssertEx.EqualTolerance(CenticubicMetersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.As(VolumePerLengthUnit.CenticubicMeterPerMeter), CenticubicMetersPerMeterTolerance);
             AssertEx.EqualTolerance(CentilitersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.As(VolumePerLengthUnit.CentiliterPerMeter), CentilitersPerMeterTolerance);
             AssertEx.EqualTolerance(CubicMetersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.As(VolumePerLengthUnit.CubicMeterPerMeter), CubicMetersPerMeterTolerance);
@@ -312,12 +286,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(TeralitersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.As(VolumePerLengthUnit.TeraliterPerMeter), TeralitersPerMeterTolerance);
             AssertEx.EqualTolerance(VettacubicMetersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.As(VolumePerLengthUnit.VettacubicMeterPerMeter), VettacubicMetersPerMeterTolerance);
             AssertEx.EqualTolerance(VettalitersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.As(VolumePerLengthUnit.VettaliterPerMeter), VettalitersPerMeterTolerance);
-            AssertEx.EqualTolerance(YoctocubicMetersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.As(VolumePerLengthUnit.YoctocubicMeterPerMeter), YoctocubicMetersPerMeterTolerance);
-            AssertEx.EqualTolerance(YoctolitersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.As(VolumePerLengthUnit.YoctoliterPerMeter), YoctolitersPerMeterTolerance);
             AssertEx.EqualTolerance(YottacubicMetersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.As(VolumePerLengthUnit.YottacubicMeterPerMeter), YottacubicMetersPerMeterTolerance);
             AssertEx.EqualTolerance(YottalitersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.As(VolumePerLengthUnit.YottaliterPerMeter), YottalitersPerMeterTolerance);
-            AssertEx.EqualTolerance(ZeptocubicMetersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.As(VolumePerLengthUnit.ZeptocubicMeterPerMeter), ZeptocubicMetersPerMeterTolerance);
-            AssertEx.EqualTolerance(ZeptolitersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.As(VolumePerLengthUnit.ZeptoliterPerMeter), ZeptolitersPerMeterTolerance);
             AssertEx.EqualTolerance(ZettacubicMetersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.As(VolumePerLengthUnit.ZettacubicMeterPerMeter), ZettacubicMetersPerMeterTolerance);
             AssertEx.EqualTolerance(ZettalitersPerMeterInOneCubicMeterPerMeter, cubicmeterpermeter.As(VolumePerLengthUnit.ZettaliterPerMeter), ZettalitersPerMeterTolerance);
         }
@@ -326,14 +296,6 @@ namespace UnitsNet.Tests
         public void ToUnit()
         {
             var cubicmeterpermeter = VolumePerLength.FromCubicMetersPerMeter(1);
-
-            var attocubicmeterpermeterQuantity = cubicmeterpermeter.ToUnit(VolumePerLengthUnit.AttocubicMeterPerMeter);
-            AssertEx.EqualTolerance(AttocubicMetersPerMeterInOneCubicMeterPerMeter, (double)attocubicmeterpermeterQuantity.Value, AttocubicMetersPerMeterTolerance);
-            Assert.Equal(VolumePerLengthUnit.AttocubicMeterPerMeter, attocubicmeterpermeterQuantity.Unit);
-
-            var attoliterpermeterQuantity = cubicmeterpermeter.ToUnit(VolumePerLengthUnit.AttoliterPerMeter);
-            AssertEx.EqualTolerance(AttolitersPerMeterInOneCubicMeterPerMeter, (double)attoliterpermeterQuantity.Value, AttolitersPerMeterTolerance);
-            Assert.Equal(VolumePerLengthUnit.AttoliterPerMeter, attoliterpermeterQuantity.Unit);
 
             var centicubicmeterpermeterQuantity = cubicmeterpermeter.ToUnit(VolumePerLengthUnit.CenticubicMeterPerMeter);
             AssertEx.EqualTolerance(CenticubicMetersPerMeterInOneCubicMeterPerMeter, (double)centicubicmeterpermeterQuantity.Value, CenticubicMetersPerMeterTolerance);
@@ -483,14 +445,6 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettalitersPerMeterInOneCubicMeterPerMeter, (double)vettaliterpermeterQuantity.Value, VettalitersPerMeterTolerance);
             Assert.Equal(VolumePerLengthUnit.VettaliterPerMeter, vettaliterpermeterQuantity.Unit);
 
-            var yoctocubicmeterpermeterQuantity = cubicmeterpermeter.ToUnit(VolumePerLengthUnit.YoctocubicMeterPerMeter);
-            AssertEx.EqualTolerance(YoctocubicMetersPerMeterInOneCubicMeterPerMeter, (double)yoctocubicmeterpermeterQuantity.Value, YoctocubicMetersPerMeterTolerance);
-            Assert.Equal(VolumePerLengthUnit.YoctocubicMeterPerMeter, yoctocubicmeterpermeterQuantity.Unit);
-
-            var yoctoliterpermeterQuantity = cubicmeterpermeter.ToUnit(VolumePerLengthUnit.YoctoliterPerMeter);
-            AssertEx.EqualTolerance(YoctolitersPerMeterInOneCubicMeterPerMeter, (double)yoctoliterpermeterQuantity.Value, YoctolitersPerMeterTolerance);
-            Assert.Equal(VolumePerLengthUnit.YoctoliterPerMeter, yoctoliterpermeterQuantity.Unit);
-
             var yottacubicmeterpermeterQuantity = cubicmeterpermeter.ToUnit(VolumePerLengthUnit.YottacubicMeterPerMeter);
             AssertEx.EqualTolerance(YottacubicMetersPerMeterInOneCubicMeterPerMeter, (double)yottacubicmeterpermeterQuantity.Value, YottacubicMetersPerMeterTolerance);
             Assert.Equal(VolumePerLengthUnit.YottacubicMeterPerMeter, yottacubicmeterpermeterQuantity.Unit);
@@ -498,14 +452,6 @@ namespace UnitsNet.Tests
             var yottaliterpermeterQuantity = cubicmeterpermeter.ToUnit(VolumePerLengthUnit.YottaliterPerMeter);
             AssertEx.EqualTolerance(YottalitersPerMeterInOneCubicMeterPerMeter, (double)yottaliterpermeterQuantity.Value, YottalitersPerMeterTolerance);
             Assert.Equal(VolumePerLengthUnit.YottaliterPerMeter, yottaliterpermeterQuantity.Unit);
-
-            var zeptocubicmeterpermeterQuantity = cubicmeterpermeter.ToUnit(VolumePerLengthUnit.ZeptocubicMeterPerMeter);
-            AssertEx.EqualTolerance(ZeptocubicMetersPerMeterInOneCubicMeterPerMeter, (double)zeptocubicmeterpermeterQuantity.Value, ZeptocubicMetersPerMeterTolerance);
-            Assert.Equal(VolumePerLengthUnit.ZeptocubicMeterPerMeter, zeptocubicmeterpermeterQuantity.Unit);
-
-            var zeptoliterpermeterQuantity = cubicmeterpermeter.ToUnit(VolumePerLengthUnit.ZeptoliterPerMeter);
-            AssertEx.EqualTolerance(ZeptolitersPerMeterInOneCubicMeterPerMeter, (double)zeptoliterpermeterQuantity.Value, ZeptolitersPerMeterTolerance);
-            Assert.Equal(VolumePerLengthUnit.ZeptoliterPerMeter, zeptoliterpermeterQuantity.Unit);
 
             var zettacubicmeterpermeterQuantity = cubicmeterpermeter.ToUnit(VolumePerLengthUnit.ZettacubicMeterPerMeter);
             AssertEx.EqualTolerance(ZettacubicMetersPerMeterInOneCubicMeterPerMeter, (double)zettacubicmeterpermeterQuantity.Value, ZettacubicMetersPerMeterTolerance);
@@ -520,8 +466,6 @@ namespace UnitsNet.Tests
         public void ConversionRoundTrip()
         {
             VolumePerLength cubicmeterpermeter = VolumePerLength.FromCubicMetersPerMeter(1);
-            AssertEx.EqualTolerance(1, VolumePerLength.FromAttocubicMetersPerMeter(cubicmeterpermeter.AttocubicMetersPerMeter).CubicMetersPerMeter, AttocubicMetersPerMeterTolerance);
-            AssertEx.EqualTolerance(1, VolumePerLength.FromAttolitersPerMeter(cubicmeterpermeter.AttolitersPerMeter).CubicMetersPerMeter, AttolitersPerMeterTolerance);
             AssertEx.EqualTolerance(1, VolumePerLength.FromCenticubicMetersPerMeter(cubicmeterpermeter.CenticubicMetersPerMeter).CubicMetersPerMeter, CenticubicMetersPerMeterTolerance);
             AssertEx.EqualTolerance(1, VolumePerLength.FromCentilitersPerMeter(cubicmeterpermeter.CentilitersPerMeter).CubicMetersPerMeter, CentilitersPerMeterTolerance);
             AssertEx.EqualTolerance(1, VolumePerLength.FromCubicMetersPerMeter(cubicmeterpermeter.CubicMetersPerMeter).CubicMetersPerMeter, CubicMetersPerMeterTolerance);
@@ -559,12 +503,8 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, VolumePerLength.FromTeralitersPerMeter(cubicmeterpermeter.TeralitersPerMeter).CubicMetersPerMeter, TeralitersPerMeterTolerance);
             AssertEx.EqualTolerance(1, VolumePerLength.FromVettacubicMetersPerMeter(cubicmeterpermeter.VettacubicMetersPerMeter).CubicMetersPerMeter, VettacubicMetersPerMeterTolerance);
             AssertEx.EqualTolerance(1, VolumePerLength.FromVettalitersPerMeter(cubicmeterpermeter.VettalitersPerMeter).CubicMetersPerMeter, VettalitersPerMeterTolerance);
-            AssertEx.EqualTolerance(1, VolumePerLength.FromYoctocubicMetersPerMeter(cubicmeterpermeter.YoctocubicMetersPerMeter).CubicMetersPerMeter, YoctocubicMetersPerMeterTolerance);
-            AssertEx.EqualTolerance(1, VolumePerLength.FromYoctolitersPerMeter(cubicmeterpermeter.YoctolitersPerMeter).CubicMetersPerMeter, YoctolitersPerMeterTolerance);
             AssertEx.EqualTolerance(1, VolumePerLength.FromYottacubicMetersPerMeter(cubicmeterpermeter.YottacubicMetersPerMeter).CubicMetersPerMeter, YottacubicMetersPerMeterTolerance);
             AssertEx.EqualTolerance(1, VolumePerLength.FromYottalitersPerMeter(cubicmeterpermeter.YottalitersPerMeter).CubicMetersPerMeter, YottalitersPerMeterTolerance);
-            AssertEx.EqualTolerance(1, VolumePerLength.FromZeptocubicMetersPerMeter(cubicmeterpermeter.ZeptocubicMetersPerMeter).CubicMetersPerMeter, ZeptocubicMetersPerMeterTolerance);
-            AssertEx.EqualTolerance(1, VolumePerLength.FromZeptolitersPerMeter(cubicmeterpermeter.ZeptolitersPerMeter).CubicMetersPerMeter, ZeptolitersPerMeterTolerance);
             AssertEx.EqualTolerance(1, VolumePerLength.FromZettacubicMetersPerMeter(cubicmeterpermeter.ZettacubicMetersPerMeter).CubicMetersPerMeter, ZettacubicMetersPerMeterTolerance);
             AssertEx.EqualTolerance(1, VolumePerLength.FromZettalitersPerMeter(cubicmeterpermeter.ZettalitersPerMeter).CubicMetersPerMeter, ZettalitersPerMeterTolerance);
         }

@@ -40,22 +40,10 @@ namespace UnitsNet.Tests.CustomCode
         protected override double CubicMetersPerSecondInOneCubicMeterPerSecond => 1;
 
         protected override double UsGallonsPerMinuteInOneCubicMeterPerSecond => 1.5850323141489e4;
-        protected override double LitersPerHourInOneCubicMeterPerSecond => 3.6e6;
 
-        protected override double LitersPerMinuteInOneCubicMeterPerSecond => 6e4;
 
-        protected override double NanolitersPerMinuteInOneCubicMeterPerSecond => 6e13;
         protected override double LitersPerSecondInOneCubicMeterPerSecond => 1000;
 
-        protected override double MicrolitersPerMinuteInOneCubicMeterPerSecond => 6e10;
-
-        protected override double MillilitersPerMinuteInOneCubicMeterPerSecond => 6e7;
-
-        protected override double CentilitersPerMinuteInOneCubicMeterPerSecond => 6e6;
-
-        protected override double DecilitersPerMinuteInOneCubicMeterPerSecond => 6e5;
-
-        protected override double KilolitersPerMinuteInOneCubicMeterPerSecond => 60;
 
         protected override double OilBarrelsPerDayInOneCubicMeterPerSecond => 5.4343965056533388306722269588172e5;
 
@@ -81,26 +69,11 @@ namespace UnitsNet.Tests.CustomCode
 
         protected override double AcreFeetPerSecondInOneCubicMeterPerSecond => 0.000810714;
 
-        protected override double CentilitersPerDayInOneCubicMeterPerSecond => 8.64e9;
 
         protected override double CubicMetersPerDayInOneCubicMeterPerSecond => 8.64e4;
 
         protected override double CubicYardsPerDayInOneCubicMeterPerSecond => 1.13007e5;
-
-        protected override double DecilitersPerDayInOneCubicMeterPerSecond => 8.64e8;
-
-        protected override double KilolitersPerDayInOneCubicMeterPerSecond => 8.64e4;
-
-        protected override double LitersPerDayInOneCubicMeterPerSecond => 8.64e7;
-
-        protected override double MegalitersPerDayInOneCubicMeterPerSecond => 86.4;
-
-        protected override double MicrolitersPerDayInOneCubicMeterPerSecond => 8.64e+13;
-
-        protected override double MillilitersPerDayInOneCubicMeterPerSecond => 8.64e+10;
-
-        protected override double NanolitersPerDayInOneCubicMeterPerSecond => 8.64e+16;
-
+ 
         protected override double OilBarrelsPerSecondInOneCubicMeterPerSecond => 6.28981;
 
         protected override double UkGallonsPerDayInOneCubicMeterPerSecond => 1.9005304e7;
@@ -120,6 +93,73 @@ namespace UnitsNet.Tests.CustomCode
         protected override double KilousGallonsPerMinuteInOneCubicMeterPerSecond => 1.5850323141489e1;
 
         protected override double CubicMillimetersPerSecondInOneCubicMeterPerSecond => 1e9;
+
+
+
+        protected override double FemtolitersPerDayInOneCubicMeterPerSecond => 8.64e+22;
+        protected override double PicolitersPerDayInOneCubicMeterPerSecond => 8.64e+19;
+        protected override double NanolitersPerDayInOneCubicMeterPerSecond => 8.64e+16;
+        protected override double MicrolitersPerDayInOneCubicMeterPerSecond => 8.64e+13;
+        protected override double MillilitersPerDayInOneCubicMeterPerSecond => 8.64e+10;
+        protected override double CentilitersPerDayInOneCubicMeterPerSecond => 8.64e9;
+        protected override double DecilitersPerDayInOneCubicMeterPerSecond => 8.64e8;
+        protected override double LitersPerDayInOneCubicMeterPerSecond => 8.64e7;
+        protected override double DecalitersPerDayInOneCubicMeterPerSecond => 8.64e6;
+        protected override double HectolitersPerDayInOneCubicMeterPerSecond => 8.64e5;
+        protected override double KilolitersPerDayInOneCubicMeterPerSecond => 8.64e4;
+        protected override double MegalitersPerDayInOneCubicMeterPerSecond => 8.64e1;
+        protected override double GigalitersPerDayInOneCubicMeterPerSecond => 8.64e-2;
+        protected override double TeralitersPerDayInOneCubicMeterPerSecond => 8.64e-5;
+        protected override double PetalitersPerDayInOneCubicMeterPerSecond => 8.64e-8;
+        protected override double ExalitersPerDayInOneCubicMeterPerSecond => 8.64e-11;
+        protected override double ZettalitersPerDayInOneCubicMeterPerSecond => 8.64e-14;
+        protected override double YottalitersPerDayInOneCubicMeterPerSecond => 8.64e-17;
+        protected override double QutralitersPerDayInOneCubicMeterPerSecond => 8.64e-20;
+        protected override double VettalitersPerDayInOneCubicMeterPerSecond => 8.64e-23;
+
+
+
+        protected override double FemtolitersPerHourInOneCubicMeterPerSecond => 3.6e21;
+        protected override double PicolitersPerHourInOneCubicMeterPerSecond => 3.6e18;
+        protected override double NanolitersPerHourInOneCubicMeterPerSecond => 3.6e15;
+        protected override double MicrolitersPerHourInOneCubicMeterPerSecond => 3.6e12;
+        protected override double MillilitersPerHourInOneCubicMeterPerSecond => 3.6e9;
+        protected override double CentilitersPerHourInOneCubicMeterPerSecond => 3.6e8;
+        protected override double DecilitersPerHourInOneCubicMeterPerSecond => 3.6e7;
+        protected override double LitersPerHourInOneCubicMeterPerSecond => 3.6e6;
+        protected override double DecalitersPerHourInOneCubicMeterPerSecond => 3.6e5;
+        protected override double HectolitersPerHourInOneCubicMeterPerSecond => 3.6e4;
+        protected override double KilolitersPerHourInOneCubicMeterPerSecond => 3.6e3;
+        protected override double MegalitersPerHourInOneCubicMeterPerSecond => 3.6;
+        protected override double GigalitersPerHourInOneCubicMeterPerSecond => 3.6e-3;
+        protected override double TeralitersPerHourInOneCubicMeterPerSecond => 3.6e-6;
+        protected override double PetalitersPerHourInOneCubicMeterPerSecond => 3.6e-9;
+        protected override double ExalitersPerHourInOneCubicMeterPerSecond => 3.6e-12;
+        protected override double ZettalitersPerHourInOneCubicMeterPerSecond => 3.6e-15;
+        protected override double YottalitersPerHourInOneCubicMeterPerSecond => 3.6e-18;
+        protected override double QutralitersPerHourInOneCubicMeterPerSecond => 3.6e-21;
+        protected override double VettalitersPerHourInOneCubicMeterPerSecond => 3.6e-24;
+
+        protected override double FemtolitersPerMinuteInOneCubicMeterPerSecond => 6e19;
+        protected override double PicolitersPerMinuteInOneCubicMeterPerSecond => 6e16;
+        protected override double NanolitersPerMinuteInOneCubicMeterPerSecond => 6e13;
+        protected override double MicrolitersPerMinuteInOneCubicMeterPerSecond => 6e10;
+        protected override double MillilitersPerMinuteInOneCubicMeterPerSecond => 6e7;
+        protected override double CentilitersPerMinuteInOneCubicMeterPerSecond => 6e6;
+        protected override double DecilitersPerMinuteInOneCubicMeterPerSecond => 6e5;
+        protected override double LitersPerMinuteInOneCubicMeterPerSecond => 6e4;
+        protected override double DecalitersPerMinuteInOneCubicMeterPerSecond => 6e3;
+        protected override double HectolitersPerMinuteInOneCubicMeterPerSecond => 6e2;
+        protected override double KilolitersPerMinuteInOneCubicMeterPerSecond => 60;
+        protected override double MegalitersPerMinuteInOneCubicMeterPerSecond => 6e-2;
+        protected override double GigalitersPerMinuteInOneCubicMeterPerSecond => 6e-5;
+        protected override double TeralitersPerMinuteInOneCubicMeterPerSecond => 6e-8;
+        protected override double PetalitersPerMinuteInOneCubicMeterPerSecond => 6e-11;
+        protected override double ExalitersPerMinuteInOneCubicMeterPerSecond => 6e-14;
+        protected override double ZettalitersPerMinuteInOneCubicMeterPerSecond => 6e-17;
+        protected override double YottalitersPerMinuteInOneCubicMeterPerSecond => 6e-20;
+        protected override double QutralitersPerMinuteInOneCubicMeterPerSecond => 6e-23;
+        protected override double VettalitersPerMinuteInOneCubicMeterPerSecond => 6e-26;
 
         [Theory]
         [InlineData(20, 2, 40)]

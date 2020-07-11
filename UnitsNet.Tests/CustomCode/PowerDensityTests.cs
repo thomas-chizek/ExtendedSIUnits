@@ -27,52 +27,91 @@ namespace UnitsNet.Tests.CustomCode
 {
     public class PowerDensityTests : PowerDensityTestsBase
     {
-        protected override double WattsPerCubicMeterInOneWattPerCubicMeter => 1;
+        protected override double FemtowattsPerCubicMeterInOneWattPerCubicMeter => 1e15;
         protected override double PicowattsPerCubicMeterInOneWattPerCubicMeter => 1e12;
         protected override double NanowattsPerCubicMeterInOneWattPerCubicMeter => 1e9;
         protected override double MicrowattsPerCubicMeterInOneWattPerCubicMeter => 1e6;
         protected override double MilliwattsPerCubicMeterInOneWattPerCubicMeter => 1e3;
+        protected override double CentiwattsPerCubicMeterInOneWattPerCubicMeter => 1e2;
         protected override double DeciwattsPerCubicMeterInOneWattPerCubicMeter => 1e1;
+        protected override double WattsPerCubicMeterInOneWattPerCubicMeter => 1;
         protected override double DecawattsPerCubicMeterInOneWattPerCubicMeter => 1e-1;
+        protected override double HectowattsPerCubicMeterInOneWattPerCubicMeter => 1e-2;
         protected override double KilowattsPerCubicMeterInOneWattPerCubicMeter => 1e-3;
         protected override double MegawattsPerCubicMeterInOneWattPerCubicMeter => 1e-6;
         protected override double GigawattsPerCubicMeterInOneWattPerCubicMeter => 1e-9;
         protected override double TerawattsPerCubicMeterInOneWattPerCubicMeter => 1e-12;
+        protected override double PetawattsPerCubicMeterInOneWattPerCubicMeter => 1e-15;
+        protected override double ExawattsPerCubicMeterInOneWattPerCubicMeter => 1e-18;
+        protected override double ZettawattsPerCubicMeterInOneWattPerCubicMeter => 1e-21;
+        protected override double YottawattsPerCubicMeterInOneWattPerCubicMeter => 1e-24;
+        protected override double QutrawattsPerCubicMeterInOneWattPerCubicMeter => 1e-27;
+        protected override double VettawattsPerCubicMeterInOneWattPerCubicMeter => 1e-30;
 
-        protected override double WattsPerCubicInchInOneWattPerCubicMeter => 1.6387064e-5;
+        protected override double FemtowattsPerCubicInchInOneWattPerCubicMeter => 1.6387064e10;
         protected override double PicowattsPerCubicInchInOneWattPerCubicMeter => 1.6387064e7;
         protected override double NanowattsPerCubicInchInOneWattPerCubicMeter => 1.6387064e4;
         protected override double MicrowattsPerCubicInchInOneWattPerCubicMeter => 1.6387064e1;
         protected override double MilliwattsPerCubicInchInOneWattPerCubicMeter => 1.6387064e-2;
+        protected override double CentiwattsPerCubicInchInOneWattPerCubicMeter => 1.6387064e-3;
         protected override double DeciwattsPerCubicInchInOneWattPerCubicMeter => 1.6387064e-4;
+        protected override double WattsPerCubicInchInOneWattPerCubicMeter => 1.6387064e-5;
         protected override double DecawattsPerCubicInchInOneWattPerCubicMeter => 1.6387064e-6;
+        protected override double HectowattsPerCubicInchInOneWattPerCubicMeter => 1.6387064e-7;
         protected override double KilowattsPerCubicInchInOneWattPerCubicMeter => 1.6387064e-8;
         protected override double MegawattsPerCubicInchInOneWattPerCubicMeter => 1.6387064e-11;
         protected override double GigawattsPerCubicInchInOneWattPerCubicMeter => 1.6387064e-14;
         protected override double TerawattsPerCubicInchInOneWattPerCubicMeter => 1.6387064e-17;
+        protected override double PetawattsPerCubicInchInOneWattPerCubicMeter => 1.6387064e-20;
+        protected override double ExawattsPerCubicInchInOneWattPerCubicMeter => 1.6387064e-23;
+        protected override double ZettawattsPerCubicInchInOneWattPerCubicMeter => 1.6387064e-26;
+        protected override double YottawattsPerCubicInchInOneWattPerCubicMeter => 1.6387064e-29;
+        protected override double QutrawattsPerCubicInchInOneWattPerCubicMeter => 1.6387064e-32;
+        protected override double VettawattsPerCubicInchInOneWattPerCubicMeter => 1.6387064e-35;
 
-        protected override double WattsPerCubicFootInOneWattPerCubicMeter => 2.8316846592e-2;
+
+        protected override double FemtowattsPerCubicFootInOneWattPerCubicMeter => 2.8316846592e13;
         protected override double PicowattsPerCubicFootInOneWattPerCubicMeter => 2.8316846592e10;
         protected override double NanowattsPerCubicFootInOneWattPerCubicMeter => 2.8316846592e7;
         protected override double MicrowattsPerCubicFootInOneWattPerCubicMeter => 2.8316846592e4;
         protected override double MilliwattsPerCubicFootInOneWattPerCubicMeter => 2.8316846592e1;
+        protected override double CentiwattsPerCubicFootInOneWattPerCubicMeter => 2.8316846592;
         protected override double DeciwattsPerCubicFootInOneWattPerCubicMeter => 2.8316846592e-1;
+        protected override double WattsPerCubicFootInOneWattPerCubicMeter => 2.8316846592e-2;
         protected override double DecawattsPerCubicFootInOneWattPerCubicMeter => 2.8316846592e-3;
+        protected override double HectowattsPerCubicFootInOneWattPerCubicMeter => 2.8316846592e-4;
         protected override double KilowattsPerCubicFootInOneWattPerCubicMeter => 2.8316846592e-5;
         protected override double MegawattsPerCubicFootInOneWattPerCubicMeter => 2.8316846592e-8;
         protected override double GigawattsPerCubicFootInOneWattPerCubicMeter => 2.8316846592e-11;
         protected override double TerawattsPerCubicFootInOneWattPerCubicMeter => 2.8316846592e-14;
+        protected override double PetawattsPerCubicFootInOneWattPerCubicMeter => 2.8316846592e-17;
+        protected override double ExawattsPerCubicFootInOneWattPerCubicMeter => 2.8316846592e-20;
+        protected override double ZettawattsPerCubicFootInOneWattPerCubicMeter => 2.8316846592e-23;
+        protected override double YottawattsPerCubicFootInOneWattPerCubicMeter => 2.8316846592e-26;
+        protected override double QutrawattsPerCubicFootInOneWattPerCubicMeter => 2.8316846592e-29;
+        protected override double VettawattsPerCubicFootInOneWattPerCubicMeter => 2.8316846592e-32;
 
-        protected override double WattsPerLiterInOneWattPerCubicMeter => 1.0e-3;
+
+        protected override double FemtowattsPerLiterInOneWattPerCubicMeter => 1e12;
         protected override double PicowattsPerLiterInOneWattPerCubicMeter => 1e9;
         protected override double NanowattsPerLiterInOneWattPerCubicMeter => 1e6;
         protected override double MicrowattsPerLiterInOneWattPerCubicMeter => 1e3;
         protected override double MilliwattsPerLiterInOneWattPerCubicMeter => 1;
+        protected override double CentiwattsPerLiterInOneWattPerCubicMeter => 0.1;
         protected override double DeciwattsPerLiterInOneWattPerCubicMeter => 1e-2;
+        protected override double WattsPerLiterInOneWattPerCubicMeter => 1.0e-3;
         protected override double DecawattsPerLiterInOneWattPerCubicMeter => 1e-4;
+        protected override double HectowattsPerLiterInOneWattPerCubicMeter => 1e-5;
         protected override double KilowattsPerLiterInOneWattPerCubicMeter => 1e-6;
         protected override double MegawattsPerLiterInOneWattPerCubicMeter => 1e-9;
         protected override double GigawattsPerLiterInOneWattPerCubicMeter => 1e-12;
         protected override double TerawattsPerLiterInOneWattPerCubicMeter => 1e-15;
+        protected override double PetawattsPerLiterInOneWattPerCubicMeter => 1e-18;
+        protected override double ExawattsPerLiterInOneWattPerCubicMeter => 1e-21;
+        protected override double ZettawattsPerLiterInOneWattPerCubicMeter => 1e-24;
+        protected override double YottawattsPerLiterInOneWattPerCubicMeter => 1e-27;
+        protected override double QutrawattsPerLiterInOneWattPerCubicMeter => 1e-30;
+        protected override double VettawattsPerLiterInOneWattPerCubicMeter => 1e-33;
+
     }
 }

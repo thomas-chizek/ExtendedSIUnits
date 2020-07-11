@@ -34,9 +34,6 @@ namespace UnitsNet.Tests
 // ReSharper disable once PartialTypeWithSinglePart
     public abstract partial class SpecificEnergyTestsBase
     {
-        protected abstract double AttocaloriesPerGramInOneJoulePerKilogram { get; }
-        protected abstract double AttojoulesPerKilogramInOneJoulePerKilogram { get; }
-        protected abstract double AttowattHoursPerKilogramInOneJoulePerKilogram { get; }
         protected abstract double BtuPerPoundInOneJoulePerKilogram { get; }
         protected abstract double CaloriesPerGramInOneJoulePerKilogram { get; }
         protected abstract double CenticaloriesPerGramInOneJoulePerKilogram { get; }
@@ -92,23 +89,14 @@ namespace UnitsNet.Tests
         protected abstract double VettajoulesPerKilogramInOneJoulePerKilogram { get; }
         protected abstract double VettawattHoursPerKilogramInOneJoulePerKilogram { get; }
         protected abstract double WattHoursPerKilogramInOneJoulePerKilogram { get; }
-        protected abstract double YoctocaloriesPerGramInOneJoulePerKilogram { get; }
-        protected abstract double YoctojoulesPerKilogramInOneJoulePerKilogram { get; }
-        protected abstract double YoctowattHoursPerKilogramInOneJoulePerKilogram { get; }
         protected abstract double YottacaloriesPerGramInOneJoulePerKilogram { get; }
         protected abstract double YottajoulesPerKilogramInOneJoulePerKilogram { get; }
         protected abstract double YottawattHoursPerKilogramInOneJoulePerKilogram { get; }
-        protected abstract double ZeptocaloriesPerGramInOneJoulePerKilogram { get; }
-        protected abstract double ZeptojoulesPerKilogramInOneJoulePerKilogram { get; }
-        protected abstract double ZeptowattHoursPerKilogramInOneJoulePerKilogram { get; }
         protected abstract double ZettacaloriesPerGramInOneJoulePerKilogram { get; }
         protected abstract double ZettajoulesPerKilogramInOneJoulePerKilogram { get; }
         protected abstract double ZettawattHoursPerKilogramInOneJoulePerKilogram { get; }
 
 // ReSharper disable VirtualMemberNeverOverriden.Global
-        protected virtual double AttocaloriesPerGramTolerance { get { return 1e-5; } }
-        protected virtual double AttojoulesPerKilogramTolerance { get { return 1e-5; } }
-        protected virtual double AttowattHoursPerKilogramTolerance { get { return 1e-5; } }
         protected virtual double BtuPerPoundTolerance { get { return 1e-5; } }
         protected virtual double CaloriesPerGramTolerance { get { return 1e-5; } }
         protected virtual double CenticaloriesPerGramTolerance { get { return 1e-5; } }
@@ -164,15 +152,9 @@ namespace UnitsNet.Tests
         protected virtual double VettajoulesPerKilogramTolerance { get { return 1e-5; } }
         protected virtual double VettawattHoursPerKilogramTolerance { get { return 1e-5; } }
         protected virtual double WattHoursPerKilogramTolerance { get { return 1e-5; } }
-        protected virtual double YoctocaloriesPerGramTolerance { get { return 1e-5; } }
-        protected virtual double YoctojoulesPerKilogramTolerance { get { return 1e-5; } }
-        protected virtual double YoctowattHoursPerKilogramTolerance { get { return 1e-5; } }
         protected virtual double YottacaloriesPerGramTolerance { get { return 1e-5; } }
         protected virtual double YottajoulesPerKilogramTolerance { get { return 1e-5; } }
         protected virtual double YottawattHoursPerKilogramTolerance { get { return 1e-5; } }
-        protected virtual double ZeptocaloriesPerGramTolerance { get { return 1e-5; } }
-        protected virtual double ZeptojoulesPerKilogramTolerance { get { return 1e-5; } }
-        protected virtual double ZeptowattHoursPerKilogramTolerance { get { return 1e-5; } }
         protected virtual double ZettacaloriesPerGramTolerance { get { return 1e-5; } }
         protected virtual double ZettajoulesPerKilogramTolerance { get { return 1e-5; } }
         protected virtual double ZettawattHoursPerKilogramTolerance { get { return 1e-5; } }
@@ -201,9 +183,6 @@ namespace UnitsNet.Tests
         public void JoulePerKilogramToSpecificEnergyUnits()
         {
             SpecificEnergy jouleperkilogram = SpecificEnergy.FromJoulesPerKilogram(1);
-            AssertEx.EqualTolerance(AttocaloriesPerGramInOneJoulePerKilogram, jouleperkilogram.AttocaloriesPerGram, AttocaloriesPerGramTolerance);
-            AssertEx.EqualTolerance(AttojoulesPerKilogramInOneJoulePerKilogram, jouleperkilogram.AttojoulesPerKilogram, AttojoulesPerKilogramTolerance);
-            AssertEx.EqualTolerance(AttowattHoursPerKilogramInOneJoulePerKilogram, jouleperkilogram.AttowattHoursPerKilogram, AttowattHoursPerKilogramTolerance);
             AssertEx.EqualTolerance(BtuPerPoundInOneJoulePerKilogram, jouleperkilogram.BtuPerPound, BtuPerPoundTolerance);
             AssertEx.EqualTolerance(CaloriesPerGramInOneJoulePerKilogram, jouleperkilogram.CaloriesPerGram, CaloriesPerGramTolerance);
             AssertEx.EqualTolerance(CenticaloriesPerGramInOneJoulePerKilogram, jouleperkilogram.CenticaloriesPerGram, CenticaloriesPerGramTolerance);
@@ -259,15 +238,9 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettajoulesPerKilogramInOneJoulePerKilogram, jouleperkilogram.VettajoulesPerKilogram, VettajoulesPerKilogramTolerance);
             AssertEx.EqualTolerance(VettawattHoursPerKilogramInOneJoulePerKilogram, jouleperkilogram.VettawattHoursPerKilogram, VettawattHoursPerKilogramTolerance);
             AssertEx.EqualTolerance(WattHoursPerKilogramInOneJoulePerKilogram, jouleperkilogram.WattHoursPerKilogram, WattHoursPerKilogramTolerance);
-            AssertEx.EqualTolerance(YoctocaloriesPerGramInOneJoulePerKilogram, jouleperkilogram.YoctocaloriesPerGram, YoctocaloriesPerGramTolerance);
-            AssertEx.EqualTolerance(YoctojoulesPerKilogramInOneJoulePerKilogram, jouleperkilogram.YoctojoulesPerKilogram, YoctojoulesPerKilogramTolerance);
-            AssertEx.EqualTolerance(YoctowattHoursPerKilogramInOneJoulePerKilogram, jouleperkilogram.YoctowattHoursPerKilogram, YoctowattHoursPerKilogramTolerance);
             AssertEx.EqualTolerance(YottacaloriesPerGramInOneJoulePerKilogram, jouleperkilogram.YottacaloriesPerGram, YottacaloriesPerGramTolerance);
             AssertEx.EqualTolerance(YottajoulesPerKilogramInOneJoulePerKilogram, jouleperkilogram.YottajoulesPerKilogram, YottajoulesPerKilogramTolerance);
             AssertEx.EqualTolerance(YottawattHoursPerKilogramInOneJoulePerKilogram, jouleperkilogram.YottawattHoursPerKilogram, YottawattHoursPerKilogramTolerance);
-            AssertEx.EqualTolerance(ZeptocaloriesPerGramInOneJoulePerKilogram, jouleperkilogram.ZeptocaloriesPerGram, ZeptocaloriesPerGramTolerance);
-            AssertEx.EqualTolerance(ZeptojoulesPerKilogramInOneJoulePerKilogram, jouleperkilogram.ZeptojoulesPerKilogram, ZeptojoulesPerKilogramTolerance);
-            AssertEx.EqualTolerance(ZeptowattHoursPerKilogramInOneJoulePerKilogram, jouleperkilogram.ZeptowattHoursPerKilogram, ZeptowattHoursPerKilogramTolerance);
             AssertEx.EqualTolerance(ZettacaloriesPerGramInOneJoulePerKilogram, jouleperkilogram.ZettacaloriesPerGram, ZettacaloriesPerGramTolerance);
             AssertEx.EqualTolerance(ZettajoulesPerKilogramInOneJoulePerKilogram, jouleperkilogram.ZettajoulesPerKilogram, ZettajoulesPerKilogramTolerance);
             AssertEx.EqualTolerance(ZettawattHoursPerKilogramInOneJoulePerKilogram, jouleperkilogram.ZettawattHoursPerKilogram, ZettawattHoursPerKilogramTolerance);
@@ -276,9 +249,6 @@ namespace UnitsNet.Tests
         [Fact]
         public void FromValueAndUnit()
         {
-            AssertEx.EqualTolerance(1, SpecificEnergy.From(1, SpecificEnergyUnit.AttocaloriePerGram).AttocaloriesPerGram, AttocaloriesPerGramTolerance);
-            AssertEx.EqualTolerance(1, SpecificEnergy.From(1, SpecificEnergyUnit.AttojoulePerKilogram).AttojoulesPerKilogram, AttojoulesPerKilogramTolerance);
-            AssertEx.EqualTolerance(1, SpecificEnergy.From(1, SpecificEnergyUnit.AttowattHourPerKilogram).AttowattHoursPerKilogram, AttowattHoursPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificEnergy.From(1, SpecificEnergyUnit.BtuPerPound).BtuPerPound, BtuPerPoundTolerance);
             AssertEx.EqualTolerance(1, SpecificEnergy.From(1, SpecificEnergyUnit.CaloriePerGram).CaloriesPerGram, CaloriesPerGramTolerance);
             AssertEx.EqualTolerance(1, SpecificEnergy.From(1, SpecificEnergyUnit.CenticaloriePerGram).CenticaloriesPerGram, CenticaloriesPerGramTolerance);
@@ -334,15 +304,9 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, SpecificEnergy.From(1, SpecificEnergyUnit.VettajoulePerKilogram).VettajoulesPerKilogram, VettajoulesPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificEnergy.From(1, SpecificEnergyUnit.VettawattHourPerKilogram).VettawattHoursPerKilogram, VettawattHoursPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificEnergy.From(1, SpecificEnergyUnit.WattHourPerKilogram).WattHoursPerKilogram, WattHoursPerKilogramTolerance);
-            AssertEx.EqualTolerance(1, SpecificEnergy.From(1, SpecificEnergyUnit.YoctocaloriePerGram).YoctocaloriesPerGram, YoctocaloriesPerGramTolerance);
-            AssertEx.EqualTolerance(1, SpecificEnergy.From(1, SpecificEnergyUnit.YoctojoulePerKilogram).YoctojoulesPerKilogram, YoctojoulesPerKilogramTolerance);
-            AssertEx.EqualTolerance(1, SpecificEnergy.From(1, SpecificEnergyUnit.YoctowattHourPerKilogram).YoctowattHoursPerKilogram, YoctowattHoursPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificEnergy.From(1, SpecificEnergyUnit.YottacaloriePerGram).YottacaloriesPerGram, YottacaloriesPerGramTolerance);
             AssertEx.EqualTolerance(1, SpecificEnergy.From(1, SpecificEnergyUnit.YottajoulePerKilogram).YottajoulesPerKilogram, YottajoulesPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificEnergy.From(1, SpecificEnergyUnit.YottawattHourPerKilogram).YottawattHoursPerKilogram, YottawattHoursPerKilogramTolerance);
-            AssertEx.EqualTolerance(1, SpecificEnergy.From(1, SpecificEnergyUnit.ZeptocaloriePerGram).ZeptocaloriesPerGram, ZeptocaloriesPerGramTolerance);
-            AssertEx.EqualTolerance(1, SpecificEnergy.From(1, SpecificEnergyUnit.ZeptojoulePerKilogram).ZeptojoulesPerKilogram, ZeptojoulesPerKilogramTolerance);
-            AssertEx.EqualTolerance(1, SpecificEnergy.From(1, SpecificEnergyUnit.ZeptowattHourPerKilogram).ZeptowattHoursPerKilogram, ZeptowattHoursPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificEnergy.From(1, SpecificEnergyUnit.ZettacaloriePerGram).ZettacaloriesPerGram, ZettacaloriesPerGramTolerance);
             AssertEx.EqualTolerance(1, SpecificEnergy.From(1, SpecificEnergyUnit.ZettajoulePerKilogram).ZettajoulesPerKilogram, ZettajoulesPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificEnergy.From(1, SpecificEnergyUnit.ZettawattHourPerKilogram).ZettawattHoursPerKilogram, ZettawattHoursPerKilogramTolerance);
@@ -365,9 +329,6 @@ namespace UnitsNet.Tests
         public void As()
         {
             var jouleperkilogram = SpecificEnergy.FromJoulesPerKilogram(1);
-            AssertEx.EqualTolerance(AttocaloriesPerGramInOneJoulePerKilogram, jouleperkilogram.As(SpecificEnergyUnit.AttocaloriePerGram), AttocaloriesPerGramTolerance);
-            AssertEx.EqualTolerance(AttojoulesPerKilogramInOneJoulePerKilogram, jouleperkilogram.As(SpecificEnergyUnit.AttojoulePerKilogram), AttojoulesPerKilogramTolerance);
-            AssertEx.EqualTolerance(AttowattHoursPerKilogramInOneJoulePerKilogram, jouleperkilogram.As(SpecificEnergyUnit.AttowattHourPerKilogram), AttowattHoursPerKilogramTolerance);
             AssertEx.EqualTolerance(BtuPerPoundInOneJoulePerKilogram, jouleperkilogram.As(SpecificEnergyUnit.BtuPerPound), BtuPerPoundTolerance);
             AssertEx.EqualTolerance(CaloriesPerGramInOneJoulePerKilogram, jouleperkilogram.As(SpecificEnergyUnit.CaloriePerGram), CaloriesPerGramTolerance);
             AssertEx.EqualTolerance(CenticaloriesPerGramInOneJoulePerKilogram, jouleperkilogram.As(SpecificEnergyUnit.CenticaloriePerGram), CenticaloriesPerGramTolerance);
@@ -423,15 +384,9 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VettajoulesPerKilogramInOneJoulePerKilogram, jouleperkilogram.As(SpecificEnergyUnit.VettajoulePerKilogram), VettajoulesPerKilogramTolerance);
             AssertEx.EqualTolerance(VettawattHoursPerKilogramInOneJoulePerKilogram, jouleperkilogram.As(SpecificEnergyUnit.VettawattHourPerKilogram), VettawattHoursPerKilogramTolerance);
             AssertEx.EqualTolerance(WattHoursPerKilogramInOneJoulePerKilogram, jouleperkilogram.As(SpecificEnergyUnit.WattHourPerKilogram), WattHoursPerKilogramTolerance);
-            AssertEx.EqualTolerance(YoctocaloriesPerGramInOneJoulePerKilogram, jouleperkilogram.As(SpecificEnergyUnit.YoctocaloriePerGram), YoctocaloriesPerGramTolerance);
-            AssertEx.EqualTolerance(YoctojoulesPerKilogramInOneJoulePerKilogram, jouleperkilogram.As(SpecificEnergyUnit.YoctojoulePerKilogram), YoctojoulesPerKilogramTolerance);
-            AssertEx.EqualTolerance(YoctowattHoursPerKilogramInOneJoulePerKilogram, jouleperkilogram.As(SpecificEnergyUnit.YoctowattHourPerKilogram), YoctowattHoursPerKilogramTolerance);
             AssertEx.EqualTolerance(YottacaloriesPerGramInOneJoulePerKilogram, jouleperkilogram.As(SpecificEnergyUnit.YottacaloriePerGram), YottacaloriesPerGramTolerance);
             AssertEx.EqualTolerance(YottajoulesPerKilogramInOneJoulePerKilogram, jouleperkilogram.As(SpecificEnergyUnit.YottajoulePerKilogram), YottajoulesPerKilogramTolerance);
             AssertEx.EqualTolerance(YottawattHoursPerKilogramInOneJoulePerKilogram, jouleperkilogram.As(SpecificEnergyUnit.YottawattHourPerKilogram), YottawattHoursPerKilogramTolerance);
-            AssertEx.EqualTolerance(ZeptocaloriesPerGramInOneJoulePerKilogram, jouleperkilogram.As(SpecificEnergyUnit.ZeptocaloriePerGram), ZeptocaloriesPerGramTolerance);
-            AssertEx.EqualTolerance(ZeptojoulesPerKilogramInOneJoulePerKilogram, jouleperkilogram.As(SpecificEnergyUnit.ZeptojoulePerKilogram), ZeptojoulesPerKilogramTolerance);
-            AssertEx.EqualTolerance(ZeptowattHoursPerKilogramInOneJoulePerKilogram, jouleperkilogram.As(SpecificEnergyUnit.ZeptowattHourPerKilogram), ZeptowattHoursPerKilogramTolerance);
             AssertEx.EqualTolerance(ZettacaloriesPerGramInOneJoulePerKilogram, jouleperkilogram.As(SpecificEnergyUnit.ZettacaloriePerGram), ZettacaloriesPerGramTolerance);
             AssertEx.EqualTolerance(ZettajoulesPerKilogramInOneJoulePerKilogram, jouleperkilogram.As(SpecificEnergyUnit.ZettajoulePerKilogram), ZettajoulesPerKilogramTolerance);
             AssertEx.EqualTolerance(ZettawattHoursPerKilogramInOneJoulePerKilogram, jouleperkilogram.As(SpecificEnergyUnit.ZettawattHourPerKilogram), ZettawattHoursPerKilogramTolerance);
@@ -441,18 +396,6 @@ namespace UnitsNet.Tests
         public void ToUnit()
         {
             var jouleperkilogram = SpecificEnergy.FromJoulesPerKilogram(1);
-
-            var attocaloriepergramQuantity = jouleperkilogram.ToUnit(SpecificEnergyUnit.AttocaloriePerGram);
-            AssertEx.EqualTolerance(AttocaloriesPerGramInOneJoulePerKilogram, (double)attocaloriepergramQuantity.Value, AttocaloriesPerGramTolerance);
-            Assert.Equal(SpecificEnergyUnit.AttocaloriePerGram, attocaloriepergramQuantity.Unit);
-
-            var attojouleperkilogramQuantity = jouleperkilogram.ToUnit(SpecificEnergyUnit.AttojoulePerKilogram);
-            AssertEx.EqualTolerance(AttojoulesPerKilogramInOneJoulePerKilogram, (double)attojouleperkilogramQuantity.Value, AttojoulesPerKilogramTolerance);
-            Assert.Equal(SpecificEnergyUnit.AttojoulePerKilogram, attojouleperkilogramQuantity.Unit);
-
-            var attowatthourperkilogramQuantity = jouleperkilogram.ToUnit(SpecificEnergyUnit.AttowattHourPerKilogram);
-            AssertEx.EqualTolerance(AttowattHoursPerKilogramInOneJoulePerKilogram, (double)attowatthourperkilogramQuantity.Value, AttowattHoursPerKilogramTolerance);
-            Assert.Equal(SpecificEnergyUnit.AttowattHourPerKilogram, attowatthourperkilogramQuantity.Unit);
 
             var btuperpoundQuantity = jouleperkilogram.ToUnit(SpecificEnergyUnit.BtuPerPound);
             AssertEx.EqualTolerance(BtuPerPoundInOneJoulePerKilogram, (double)btuperpoundQuantity.Value, BtuPerPoundTolerance);
@@ -674,18 +617,6 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(WattHoursPerKilogramInOneJoulePerKilogram, (double)watthourperkilogramQuantity.Value, WattHoursPerKilogramTolerance);
             Assert.Equal(SpecificEnergyUnit.WattHourPerKilogram, watthourperkilogramQuantity.Unit);
 
-            var yoctocaloriepergramQuantity = jouleperkilogram.ToUnit(SpecificEnergyUnit.YoctocaloriePerGram);
-            AssertEx.EqualTolerance(YoctocaloriesPerGramInOneJoulePerKilogram, (double)yoctocaloriepergramQuantity.Value, YoctocaloriesPerGramTolerance);
-            Assert.Equal(SpecificEnergyUnit.YoctocaloriePerGram, yoctocaloriepergramQuantity.Unit);
-
-            var yoctojouleperkilogramQuantity = jouleperkilogram.ToUnit(SpecificEnergyUnit.YoctojoulePerKilogram);
-            AssertEx.EqualTolerance(YoctojoulesPerKilogramInOneJoulePerKilogram, (double)yoctojouleperkilogramQuantity.Value, YoctojoulesPerKilogramTolerance);
-            Assert.Equal(SpecificEnergyUnit.YoctojoulePerKilogram, yoctojouleperkilogramQuantity.Unit);
-
-            var yoctowatthourperkilogramQuantity = jouleperkilogram.ToUnit(SpecificEnergyUnit.YoctowattHourPerKilogram);
-            AssertEx.EqualTolerance(YoctowattHoursPerKilogramInOneJoulePerKilogram, (double)yoctowatthourperkilogramQuantity.Value, YoctowattHoursPerKilogramTolerance);
-            Assert.Equal(SpecificEnergyUnit.YoctowattHourPerKilogram, yoctowatthourperkilogramQuantity.Unit);
-
             var yottacaloriepergramQuantity = jouleperkilogram.ToUnit(SpecificEnergyUnit.YottacaloriePerGram);
             AssertEx.EqualTolerance(YottacaloriesPerGramInOneJoulePerKilogram, (double)yottacaloriepergramQuantity.Value, YottacaloriesPerGramTolerance);
             Assert.Equal(SpecificEnergyUnit.YottacaloriePerGram, yottacaloriepergramQuantity.Unit);
@@ -697,18 +628,6 @@ namespace UnitsNet.Tests
             var yottawatthourperkilogramQuantity = jouleperkilogram.ToUnit(SpecificEnergyUnit.YottawattHourPerKilogram);
             AssertEx.EqualTolerance(YottawattHoursPerKilogramInOneJoulePerKilogram, (double)yottawatthourperkilogramQuantity.Value, YottawattHoursPerKilogramTolerance);
             Assert.Equal(SpecificEnergyUnit.YottawattHourPerKilogram, yottawatthourperkilogramQuantity.Unit);
-
-            var zeptocaloriepergramQuantity = jouleperkilogram.ToUnit(SpecificEnergyUnit.ZeptocaloriePerGram);
-            AssertEx.EqualTolerance(ZeptocaloriesPerGramInOneJoulePerKilogram, (double)zeptocaloriepergramQuantity.Value, ZeptocaloriesPerGramTolerance);
-            Assert.Equal(SpecificEnergyUnit.ZeptocaloriePerGram, zeptocaloriepergramQuantity.Unit);
-
-            var zeptojouleperkilogramQuantity = jouleperkilogram.ToUnit(SpecificEnergyUnit.ZeptojoulePerKilogram);
-            AssertEx.EqualTolerance(ZeptojoulesPerKilogramInOneJoulePerKilogram, (double)zeptojouleperkilogramQuantity.Value, ZeptojoulesPerKilogramTolerance);
-            Assert.Equal(SpecificEnergyUnit.ZeptojoulePerKilogram, zeptojouleperkilogramQuantity.Unit);
-
-            var zeptowatthourperkilogramQuantity = jouleperkilogram.ToUnit(SpecificEnergyUnit.ZeptowattHourPerKilogram);
-            AssertEx.EqualTolerance(ZeptowattHoursPerKilogramInOneJoulePerKilogram, (double)zeptowatthourperkilogramQuantity.Value, ZeptowattHoursPerKilogramTolerance);
-            Assert.Equal(SpecificEnergyUnit.ZeptowattHourPerKilogram, zeptowatthourperkilogramQuantity.Unit);
 
             var zettacaloriepergramQuantity = jouleperkilogram.ToUnit(SpecificEnergyUnit.ZettacaloriePerGram);
             AssertEx.EqualTolerance(ZettacaloriesPerGramInOneJoulePerKilogram, (double)zettacaloriepergramQuantity.Value, ZettacaloriesPerGramTolerance);
@@ -727,9 +646,6 @@ namespace UnitsNet.Tests
         public void ConversionRoundTrip()
         {
             SpecificEnergy jouleperkilogram = SpecificEnergy.FromJoulesPerKilogram(1);
-            AssertEx.EqualTolerance(1, SpecificEnergy.FromAttocaloriesPerGram(jouleperkilogram.AttocaloriesPerGram).JoulesPerKilogram, AttocaloriesPerGramTolerance);
-            AssertEx.EqualTolerance(1, SpecificEnergy.FromAttojoulesPerKilogram(jouleperkilogram.AttojoulesPerKilogram).JoulesPerKilogram, AttojoulesPerKilogramTolerance);
-            AssertEx.EqualTolerance(1, SpecificEnergy.FromAttowattHoursPerKilogram(jouleperkilogram.AttowattHoursPerKilogram).JoulesPerKilogram, AttowattHoursPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificEnergy.FromBtuPerPound(jouleperkilogram.BtuPerPound).JoulesPerKilogram, BtuPerPoundTolerance);
             AssertEx.EqualTolerance(1, SpecificEnergy.FromCaloriesPerGram(jouleperkilogram.CaloriesPerGram).JoulesPerKilogram, CaloriesPerGramTolerance);
             AssertEx.EqualTolerance(1, SpecificEnergy.FromCenticaloriesPerGram(jouleperkilogram.CenticaloriesPerGram).JoulesPerKilogram, CenticaloriesPerGramTolerance);
@@ -785,15 +701,9 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, SpecificEnergy.FromVettajoulesPerKilogram(jouleperkilogram.VettajoulesPerKilogram).JoulesPerKilogram, VettajoulesPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificEnergy.FromVettawattHoursPerKilogram(jouleperkilogram.VettawattHoursPerKilogram).JoulesPerKilogram, VettawattHoursPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificEnergy.FromWattHoursPerKilogram(jouleperkilogram.WattHoursPerKilogram).JoulesPerKilogram, WattHoursPerKilogramTolerance);
-            AssertEx.EqualTolerance(1, SpecificEnergy.FromYoctocaloriesPerGram(jouleperkilogram.YoctocaloriesPerGram).JoulesPerKilogram, YoctocaloriesPerGramTolerance);
-            AssertEx.EqualTolerance(1, SpecificEnergy.FromYoctojoulesPerKilogram(jouleperkilogram.YoctojoulesPerKilogram).JoulesPerKilogram, YoctojoulesPerKilogramTolerance);
-            AssertEx.EqualTolerance(1, SpecificEnergy.FromYoctowattHoursPerKilogram(jouleperkilogram.YoctowattHoursPerKilogram).JoulesPerKilogram, YoctowattHoursPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificEnergy.FromYottacaloriesPerGram(jouleperkilogram.YottacaloriesPerGram).JoulesPerKilogram, YottacaloriesPerGramTolerance);
             AssertEx.EqualTolerance(1, SpecificEnergy.FromYottajoulesPerKilogram(jouleperkilogram.YottajoulesPerKilogram).JoulesPerKilogram, YottajoulesPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificEnergy.FromYottawattHoursPerKilogram(jouleperkilogram.YottawattHoursPerKilogram).JoulesPerKilogram, YottawattHoursPerKilogramTolerance);
-            AssertEx.EqualTolerance(1, SpecificEnergy.FromZeptocaloriesPerGram(jouleperkilogram.ZeptocaloriesPerGram).JoulesPerKilogram, ZeptocaloriesPerGramTolerance);
-            AssertEx.EqualTolerance(1, SpecificEnergy.FromZeptojoulesPerKilogram(jouleperkilogram.ZeptojoulesPerKilogram).JoulesPerKilogram, ZeptojoulesPerKilogramTolerance);
-            AssertEx.EqualTolerance(1, SpecificEnergy.FromZeptowattHoursPerKilogram(jouleperkilogram.ZeptowattHoursPerKilogram).JoulesPerKilogram, ZeptowattHoursPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificEnergy.FromZettacaloriesPerGram(jouleperkilogram.ZettacaloriesPerGram).JoulesPerKilogram, ZettacaloriesPerGramTolerance);
             AssertEx.EqualTolerance(1, SpecificEnergy.FromZettajoulesPerKilogram(jouleperkilogram.ZettajoulesPerKilogram).JoulesPerKilogram, ZettajoulesPerKilogramTolerance);
             AssertEx.EqualTolerance(1, SpecificEnergy.FromZettawattHoursPerKilogram(jouleperkilogram.ZettawattHoursPerKilogram).JoulesPerKilogram, ZettawattHoursPerKilogramTolerance);

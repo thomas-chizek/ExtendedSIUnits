@@ -34,7 +34,6 @@ namespace UnitsNet.Tests
 // ReSharper disable once PartialTypeWithSinglePart
     public abstract partial class ReactivePowerTestsBase
     {
-        protected abstract double AttovoltamperesReactiveInOneVoltampereReactive { get; }
         protected abstract double CentivoltamperesReactiveInOneVoltampereReactive { get; }
         protected abstract double DecavoltamperesReactiveInOneVoltampereReactive { get; }
         protected abstract double DecivoltamperesReactiveInOneVoltampereReactive { get; }
@@ -53,13 +52,10 @@ namespace UnitsNet.Tests
         protected abstract double TeravoltamperesReactiveInOneVoltampereReactive { get; }
         protected abstract double VettavoltamperesReactiveInOneVoltampereReactive { get; }
         protected abstract double VoltamperesReactiveInOneVoltampereReactive { get; }
-        protected abstract double YoctovoltamperesReactiveInOneVoltampereReactive { get; }
         protected abstract double YottavoltamperesReactiveInOneVoltampereReactive { get; }
-        protected abstract double ZeptovoltamperesReactiveInOneVoltampereReactive { get; }
         protected abstract double ZettavoltamperesReactiveInOneVoltampereReactive { get; }
 
 // ReSharper disable VirtualMemberNeverOverriden.Global
-        protected virtual double AttovoltamperesReactiveTolerance { get { return 1e-5; } }
         protected virtual double CentivoltamperesReactiveTolerance { get { return 1e-5; } }
         protected virtual double DecavoltamperesReactiveTolerance { get { return 1e-5; } }
         protected virtual double DecivoltamperesReactiveTolerance { get { return 1e-5; } }
@@ -78,9 +74,7 @@ namespace UnitsNet.Tests
         protected virtual double TeravoltamperesReactiveTolerance { get { return 1e-5; } }
         protected virtual double VettavoltamperesReactiveTolerance { get { return 1e-5; } }
         protected virtual double VoltamperesReactiveTolerance { get { return 1e-5; } }
-        protected virtual double YoctovoltamperesReactiveTolerance { get { return 1e-5; } }
         protected virtual double YottavoltamperesReactiveTolerance { get { return 1e-5; } }
-        protected virtual double ZeptovoltamperesReactiveTolerance { get { return 1e-5; } }
         protected virtual double ZettavoltamperesReactiveTolerance { get { return 1e-5; } }
 // ReSharper restore VirtualMemberNeverOverriden.Global
 
@@ -107,7 +101,6 @@ namespace UnitsNet.Tests
         public void VoltampereReactiveToReactivePowerUnits()
         {
             ReactivePower voltamperereactive = ReactivePower.FromVoltamperesReactive(1);
-            AssertEx.EqualTolerance(AttovoltamperesReactiveInOneVoltampereReactive, voltamperereactive.AttovoltamperesReactive, AttovoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(CentivoltamperesReactiveInOneVoltampereReactive, voltamperereactive.CentivoltamperesReactive, CentivoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(DecavoltamperesReactiveInOneVoltampereReactive, voltamperereactive.DecavoltamperesReactive, DecavoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(DecivoltamperesReactiveInOneVoltampereReactive, voltamperereactive.DecivoltamperesReactive, DecivoltamperesReactiveTolerance);
@@ -126,16 +119,13 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(TeravoltamperesReactiveInOneVoltampereReactive, voltamperereactive.TeravoltamperesReactive, TeravoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(VettavoltamperesReactiveInOneVoltampereReactive, voltamperereactive.VettavoltamperesReactive, VettavoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(VoltamperesReactiveInOneVoltampereReactive, voltamperereactive.VoltamperesReactive, VoltamperesReactiveTolerance);
-            AssertEx.EqualTolerance(YoctovoltamperesReactiveInOneVoltampereReactive, voltamperereactive.YoctovoltamperesReactive, YoctovoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(YottavoltamperesReactiveInOneVoltampereReactive, voltamperereactive.YottavoltamperesReactive, YottavoltamperesReactiveTolerance);
-            AssertEx.EqualTolerance(ZeptovoltamperesReactiveInOneVoltampereReactive, voltamperereactive.ZeptovoltamperesReactive, ZeptovoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(ZettavoltamperesReactiveInOneVoltampereReactive, voltamperereactive.ZettavoltamperesReactive, ZettavoltamperesReactiveTolerance);
         }
 
         [Fact]
         public void FromValueAndUnit()
         {
-            AssertEx.EqualTolerance(1, ReactivePower.From(1, ReactivePowerUnit.AttovoltampereReactive).AttovoltamperesReactive, AttovoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(1, ReactivePower.From(1, ReactivePowerUnit.CentivoltampereReactive).CentivoltamperesReactive, CentivoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(1, ReactivePower.From(1, ReactivePowerUnit.DecavoltampereReactive).DecavoltamperesReactive, DecavoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(1, ReactivePower.From(1, ReactivePowerUnit.DecivoltampereReactive).DecivoltamperesReactive, DecivoltamperesReactiveTolerance);
@@ -154,9 +144,7 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, ReactivePower.From(1, ReactivePowerUnit.TeravoltampereReactive).TeravoltamperesReactive, TeravoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(1, ReactivePower.From(1, ReactivePowerUnit.VettavoltampereReactive).VettavoltamperesReactive, VettavoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(1, ReactivePower.From(1, ReactivePowerUnit.VoltampereReactive).VoltamperesReactive, VoltamperesReactiveTolerance);
-            AssertEx.EqualTolerance(1, ReactivePower.From(1, ReactivePowerUnit.YoctovoltampereReactive).YoctovoltamperesReactive, YoctovoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(1, ReactivePower.From(1, ReactivePowerUnit.YottavoltampereReactive).YottavoltamperesReactive, YottavoltamperesReactiveTolerance);
-            AssertEx.EqualTolerance(1, ReactivePower.From(1, ReactivePowerUnit.ZeptovoltampereReactive).ZeptovoltamperesReactive, ZeptovoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(1, ReactivePower.From(1, ReactivePowerUnit.ZettavoltampereReactive).ZettavoltamperesReactive, ZettavoltamperesReactiveTolerance);
         }
 
@@ -177,7 +165,6 @@ namespace UnitsNet.Tests
         public void As()
         {
             var voltamperereactive = ReactivePower.FromVoltamperesReactive(1);
-            AssertEx.EqualTolerance(AttovoltamperesReactiveInOneVoltampereReactive, voltamperereactive.As(ReactivePowerUnit.AttovoltampereReactive), AttovoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(CentivoltamperesReactiveInOneVoltampereReactive, voltamperereactive.As(ReactivePowerUnit.CentivoltampereReactive), CentivoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(DecavoltamperesReactiveInOneVoltampereReactive, voltamperereactive.As(ReactivePowerUnit.DecavoltampereReactive), DecavoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(DecivoltamperesReactiveInOneVoltampereReactive, voltamperereactive.As(ReactivePowerUnit.DecivoltampereReactive), DecivoltamperesReactiveTolerance);
@@ -196,9 +183,7 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(TeravoltamperesReactiveInOneVoltampereReactive, voltamperereactive.As(ReactivePowerUnit.TeravoltampereReactive), TeravoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(VettavoltamperesReactiveInOneVoltampereReactive, voltamperereactive.As(ReactivePowerUnit.VettavoltampereReactive), VettavoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(VoltamperesReactiveInOneVoltampereReactive, voltamperereactive.As(ReactivePowerUnit.VoltampereReactive), VoltamperesReactiveTolerance);
-            AssertEx.EqualTolerance(YoctovoltamperesReactiveInOneVoltampereReactive, voltamperereactive.As(ReactivePowerUnit.YoctovoltampereReactive), YoctovoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(YottavoltamperesReactiveInOneVoltampereReactive, voltamperereactive.As(ReactivePowerUnit.YottavoltampereReactive), YottavoltamperesReactiveTolerance);
-            AssertEx.EqualTolerance(ZeptovoltamperesReactiveInOneVoltampereReactive, voltamperereactive.As(ReactivePowerUnit.ZeptovoltampereReactive), ZeptovoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(ZettavoltamperesReactiveInOneVoltampereReactive, voltamperereactive.As(ReactivePowerUnit.ZettavoltampereReactive), ZettavoltamperesReactiveTolerance);
         }
 
@@ -206,10 +191,6 @@ namespace UnitsNet.Tests
         public void ToUnit()
         {
             var voltamperereactive = ReactivePower.FromVoltamperesReactive(1);
-
-            var attovoltamperereactiveQuantity = voltamperereactive.ToUnit(ReactivePowerUnit.AttovoltampereReactive);
-            AssertEx.EqualTolerance(AttovoltamperesReactiveInOneVoltampereReactive, (double)attovoltamperereactiveQuantity.Value, AttovoltamperesReactiveTolerance);
-            Assert.Equal(ReactivePowerUnit.AttovoltampereReactive, attovoltamperereactiveQuantity.Unit);
 
             var centivoltamperereactiveQuantity = voltamperereactive.ToUnit(ReactivePowerUnit.CentivoltampereReactive);
             AssertEx.EqualTolerance(CentivoltamperesReactiveInOneVoltampereReactive, (double)centivoltamperereactiveQuantity.Value, CentivoltamperesReactiveTolerance);
@@ -283,17 +264,9 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(VoltamperesReactiveInOneVoltampereReactive, (double)voltamperereactiveQuantity.Value, VoltamperesReactiveTolerance);
             Assert.Equal(ReactivePowerUnit.VoltampereReactive, voltamperereactiveQuantity.Unit);
 
-            var yoctovoltamperereactiveQuantity = voltamperereactive.ToUnit(ReactivePowerUnit.YoctovoltampereReactive);
-            AssertEx.EqualTolerance(YoctovoltamperesReactiveInOneVoltampereReactive, (double)yoctovoltamperereactiveQuantity.Value, YoctovoltamperesReactiveTolerance);
-            Assert.Equal(ReactivePowerUnit.YoctovoltampereReactive, yoctovoltamperereactiveQuantity.Unit);
-
             var yottavoltamperereactiveQuantity = voltamperereactive.ToUnit(ReactivePowerUnit.YottavoltampereReactive);
             AssertEx.EqualTolerance(YottavoltamperesReactiveInOneVoltampereReactive, (double)yottavoltamperereactiveQuantity.Value, YottavoltamperesReactiveTolerance);
             Assert.Equal(ReactivePowerUnit.YottavoltampereReactive, yottavoltamperereactiveQuantity.Unit);
-
-            var zeptovoltamperereactiveQuantity = voltamperereactive.ToUnit(ReactivePowerUnit.ZeptovoltampereReactive);
-            AssertEx.EqualTolerance(ZeptovoltamperesReactiveInOneVoltampereReactive, (double)zeptovoltamperereactiveQuantity.Value, ZeptovoltamperesReactiveTolerance);
-            Assert.Equal(ReactivePowerUnit.ZeptovoltampereReactive, zeptovoltamperereactiveQuantity.Unit);
 
             var zettavoltamperereactiveQuantity = voltamperereactive.ToUnit(ReactivePowerUnit.ZettavoltampereReactive);
             AssertEx.EqualTolerance(ZettavoltamperesReactiveInOneVoltampereReactive, (double)zettavoltamperereactiveQuantity.Value, ZettavoltamperesReactiveTolerance);
@@ -304,7 +277,6 @@ namespace UnitsNet.Tests
         public void ConversionRoundTrip()
         {
             ReactivePower voltamperereactive = ReactivePower.FromVoltamperesReactive(1);
-            AssertEx.EqualTolerance(1, ReactivePower.FromAttovoltamperesReactive(voltamperereactive.AttovoltamperesReactive).VoltamperesReactive, AttovoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(1, ReactivePower.FromCentivoltamperesReactive(voltamperereactive.CentivoltamperesReactive).VoltamperesReactive, CentivoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(1, ReactivePower.FromDecavoltamperesReactive(voltamperereactive.DecavoltamperesReactive).VoltamperesReactive, DecavoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(1, ReactivePower.FromDecivoltamperesReactive(voltamperereactive.DecivoltamperesReactive).VoltamperesReactive, DecivoltamperesReactiveTolerance);
@@ -323,9 +295,7 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, ReactivePower.FromTeravoltamperesReactive(voltamperereactive.TeravoltamperesReactive).VoltamperesReactive, TeravoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(1, ReactivePower.FromVettavoltamperesReactive(voltamperereactive.VettavoltamperesReactive).VoltamperesReactive, VettavoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(1, ReactivePower.FromVoltamperesReactive(voltamperereactive.VoltamperesReactive).VoltamperesReactive, VoltamperesReactiveTolerance);
-            AssertEx.EqualTolerance(1, ReactivePower.FromYoctovoltamperesReactive(voltamperereactive.YoctovoltamperesReactive).VoltamperesReactive, YoctovoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(1, ReactivePower.FromYottavoltamperesReactive(voltamperereactive.YottavoltamperesReactive).VoltamperesReactive, YottavoltamperesReactiveTolerance);
-            AssertEx.EqualTolerance(1, ReactivePower.FromZeptovoltamperesReactive(voltamperereactive.ZeptovoltamperesReactive).VoltamperesReactive, ZeptovoltamperesReactiveTolerance);
             AssertEx.EqualTolerance(1, ReactivePower.FromZettavoltamperesReactive(voltamperereactive.ZettavoltamperesReactive).VoltamperesReactive, ZettavoltamperesReactiveTolerance);
         }
 

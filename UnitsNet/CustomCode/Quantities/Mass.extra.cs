@@ -77,6 +77,17 @@ namespace UnitsNet
             return AmountOfSubstance.FromMoles(mass.Kilograms / molarMass.KilogramsPerMole);
         }
 
+        /// <summary>
+        /// add a multiplier operator, this should probably be added to the generator eventually but I just want to have a multiplier for now.
+        /// </summary>
+        /// <param name="mass"></param>
+        /// <param name="m2"></param>
+        /// <returns></returns>
+        public static Mass operator *(Mass mass, Mass m2)
+        {
+            return new Mass( mass.Value * m2.As(mass.Unit), mass.Unit);
+        }
+
         /// <summary>Get <see cref="Force"/> from <see cref="Mass"/> times <see cref="Acceleration"/>.</summary>
         public static Force operator *(Mass mass, Acceleration acceleration)
         {
@@ -88,6 +99,11 @@ namespace UnitsNet
         {
             return Force.FromNewtons(mass.Kilograms*acceleration.MetersPerSecondSquared);
         }
+
+        /// <summary>
+        ///     Gets an instance of this quantity with a value of 1 in the base unit Kilogram.
+        /// </summary>
+        public static Mass One { get; } = new Mass(1, MassUnit.Kilogram);
     }
 
     /// <summary>

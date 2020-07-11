@@ -166,6 +166,16 @@ namespace UnitsNet
         public double Centiamperes => As(ElectricCurrentUnit.Centiampere);
 
         /// <summary>
+        ///     Get ElectricCurrent in Decaamperes.
+        /// </summary>
+        public double Decaamperes => As(ElectricCurrentUnit.Decaampere);
+
+        /// <summary>
+        ///     Get ElectricCurrent in Deciamperes.
+        /// </summary>
+        public double Deciamperes => As(ElectricCurrentUnit.Deciampere);
+
+        /// <summary>
         ///     Get ElectricCurrent in Kiloamperes.
         /// </summary>
         public double Kiloamperes => As(ElectricCurrentUnit.Kiloampere);
@@ -244,6 +254,26 @@ namespace UnitsNet
         {
             double value = (double) centiamperes;
             return new ElectricCurrent(value, ElectricCurrentUnit.Centiampere);
+        }
+        /// <summary>
+        ///     Get ElectricCurrent from Decaamperes.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static ElectricCurrent FromDecaamperes(double decaamperes)
+        {
+            double value = (double) decaamperes;
+            return new ElectricCurrent(value, ElectricCurrentUnit.Decaampere);
+        }
+        /// <summary>
+        ///     Get ElectricCurrent from Deciamperes.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static ElectricCurrent FromDeciamperes(double deciamperes)
+        {
+            double value = (double) deciamperes;
+            return new ElectricCurrent(value, ElectricCurrentUnit.Deciampere);
         }
         /// <summary>
         ///     Get ElectricCurrent from Kiloamperes.
@@ -598,6 +628,8 @@ namespace UnitsNet
             {
                 case ElectricCurrentUnit.Ampere: return _value;
                 case ElectricCurrentUnit.Centiampere: return (_value) * 1e-2d;
+                case ElectricCurrentUnit.Decaampere: return (_value) * 1e1d;
+                case ElectricCurrentUnit.Deciampere: return (_value) * 1e-1d;
                 case ElectricCurrentUnit.Kiloampere: return (_value) * 1e3d;
                 case ElectricCurrentUnit.Megaampere: return (_value) * 1e6d;
                 case ElectricCurrentUnit.Microampere: return (_value) * 1e-6d;
@@ -620,6 +652,8 @@ namespace UnitsNet
             {
                 case ElectricCurrentUnit.Ampere: return baseUnitValue;
                 case ElectricCurrentUnit.Centiampere: return (baseUnitValue) / 1e-2d;
+                case ElectricCurrentUnit.Decaampere: return (baseUnitValue) / 1e1d;
+                case ElectricCurrentUnit.Deciampere: return (baseUnitValue) / 1e-1d;
                 case ElectricCurrentUnit.Kiloampere: return (baseUnitValue) / 1e3d;
                 case ElectricCurrentUnit.Megaampere: return (baseUnitValue) / 1e6d;
                 case ElectricCurrentUnit.Microampere: return (baseUnitValue) / 1e-6d;

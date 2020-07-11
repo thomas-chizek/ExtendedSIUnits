@@ -156,21 +156,6 @@ namespace UnitsNet
         #region Conversion Properties
 
         /// <summary>
-        ///     Get Speed in AttometersPerHour.
-        /// </summary>
-        public double AttometersPerHour => As(SpeedUnit.AttometerPerHour);
-
-        /// <summary>
-        ///     Get Speed in AttometersPerMinutes.
-        /// </summary>
-        public double AttometersPerMinutes => As(SpeedUnit.AttometerPerMinute);
-
-        /// <summary>
-        ///     Get Speed in AttometersPerSecond.
-        /// </summary>
-        public double AttometersPerSecond => As(SpeedUnit.AttometerPerSecond);
-
-        /// <summary>
         ///     Get Speed in CentimetersPerHour.
         /// </summary>
         public double CentimetersPerHour => As(SpeedUnit.CentimeterPerHour);
@@ -511,21 +496,6 @@ namespace UnitsNet
         public double YardsPerSecond => As(SpeedUnit.YardPerSecond);
 
         /// <summary>
-        ///     Get Speed in YoctometersPerHour.
-        /// </summary>
-        public double YoctometersPerHour => As(SpeedUnit.YoctometerPerHour);
-
-        /// <summary>
-        ///     Get Speed in YoctometersPerMinutes.
-        /// </summary>
-        public double YoctometersPerMinutes => As(SpeedUnit.YoctometerPerMinute);
-
-        /// <summary>
-        ///     Get Speed in YoctometersPerSecond.
-        /// </summary>
-        public double YoctometersPerSecond => As(SpeedUnit.YoctometerPerSecond);
-
-        /// <summary>
         ///     Get Speed in YottametersPerHour.
         /// </summary>
         public double YottametersPerHour => As(SpeedUnit.YottameterPerHour);
@@ -539,21 +509,6 @@ namespace UnitsNet
         ///     Get Speed in YottametersPerSecond.
         /// </summary>
         public double YottametersPerSecond => As(SpeedUnit.YottameterPerSecond);
-
-        /// <summary>
-        ///     Get Speed in ZeptometersPerHour.
-        /// </summary>
-        public double ZeptometersPerHour => As(SpeedUnit.ZeptometerPerHour);
-
-        /// <summary>
-        ///     Get Speed in ZeptometersPerMinutes.
-        /// </summary>
-        public double ZeptometersPerMinutes => As(SpeedUnit.ZeptometerPerMinute);
-
-        /// <summary>
-        ///     Get Speed in ZeptometersPerSecond.
-        /// </summary>
-        public double ZeptometersPerSecond => As(SpeedUnit.ZeptometerPerSecond);
 
         /// <summary>
         ///     Get Speed in ZettametersPerHour.
@@ -600,36 +555,6 @@ namespace UnitsNet
 
         #region Static Factory Methods
 
-        /// <summary>
-        ///     Get Speed from AttometersPerHour.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Speed FromAttometersPerHour(double attometersperhour)
-        {
-            double value = (double) attometersperhour;
-            return new Speed(value, SpeedUnit.AttometerPerHour);
-        }
-        /// <summary>
-        ///     Get Speed from AttometersPerMinutes.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Speed FromAttometersPerMinutes(double attometersperminutes)
-        {
-            double value = (double) attometersperminutes;
-            return new Speed(value, SpeedUnit.AttometerPerMinute);
-        }
-        /// <summary>
-        ///     Get Speed from AttometersPerSecond.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Speed FromAttometersPerSecond(double attometerspersecond)
-        {
-            double value = (double) attometerspersecond;
-            return new Speed(value, SpeedUnit.AttometerPerSecond);
-        }
         /// <summary>
         ///     Get Speed from CentimetersPerHour.
         /// </summary>
@@ -1311,36 +1236,6 @@ namespace UnitsNet
             return new Speed(value, SpeedUnit.YardPerSecond);
         }
         /// <summary>
-        ///     Get Speed from YoctometersPerHour.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Speed FromYoctometersPerHour(double yoctometersperhour)
-        {
-            double value = (double) yoctometersperhour;
-            return new Speed(value, SpeedUnit.YoctometerPerHour);
-        }
-        /// <summary>
-        ///     Get Speed from YoctometersPerMinutes.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Speed FromYoctometersPerMinutes(double yoctometersperminutes)
-        {
-            double value = (double) yoctometersperminutes;
-            return new Speed(value, SpeedUnit.YoctometerPerMinute);
-        }
-        /// <summary>
-        ///     Get Speed from YoctometersPerSecond.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Speed FromYoctometersPerSecond(double yoctometerspersecond)
-        {
-            double value = (double) yoctometerspersecond;
-            return new Speed(value, SpeedUnit.YoctometerPerSecond);
-        }
-        /// <summary>
         ///     Get Speed from YottametersPerHour.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -1369,36 +1264,6 @@ namespace UnitsNet
         {
             double value = (double) yottameterspersecond;
             return new Speed(value, SpeedUnit.YottameterPerSecond);
-        }
-        /// <summary>
-        ///     Get Speed from ZeptometersPerHour.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Speed FromZeptometersPerHour(double zeptometersperhour)
-        {
-            double value = (double) zeptometersperhour;
-            return new Speed(value, SpeedUnit.ZeptometerPerHour);
-        }
-        /// <summary>
-        ///     Get Speed from ZeptometersPerMinutes.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Speed FromZeptometersPerMinutes(double zeptometersperminutes)
-        {
-            double value = (double) zeptometersperminutes;
-            return new Speed(value, SpeedUnit.ZeptometerPerMinute);
-        }
-        /// <summary>
-        ///     Get Speed from ZeptometersPerSecond.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Speed FromZeptometersPerSecond(double zeptometerspersecond)
-        {
-            double value = (double) zeptometerspersecond;
-            return new Speed(value, SpeedUnit.ZeptometerPerSecond);
         }
         /// <summary>
         ///     Get Speed from ZettametersPerHour.
@@ -1721,9 +1586,6 @@ namespace UnitsNet
         {
             switch(Unit)
             {
-                case SpeedUnit.AttometerPerHour: return (_value/3600) * 1e-18d;
-                case SpeedUnit.AttometerPerMinute: return (_value/60) * 1e-18d;
-                case SpeedUnit.AttometerPerSecond: return (_value) * 1e-18d;
                 case SpeedUnit.CentimeterPerHour: return (_value/3600) * 1e-2d;
                 case SpeedUnit.CentimeterPerMinute: return (_value/60) * 1e-2d;
                 case SpeedUnit.CentimeterPerSecond: return (_value) * 1e-2d;
@@ -1792,15 +1654,9 @@ namespace UnitsNet
                 case SpeedUnit.YardPerHour: return _value*0.9144/3600;
                 case SpeedUnit.YardPerMinute: return _value*0.9144/60;
                 case SpeedUnit.YardPerSecond: return _value*0.9144;
-                case SpeedUnit.YoctometerPerHour: return (_value/3600) * 1e-24d;
-                case SpeedUnit.YoctometerPerMinute: return (_value/60) * 1e-24d;
-                case SpeedUnit.YoctometerPerSecond: return (_value) * 1e-24d;
                 case SpeedUnit.YottameterPerHour: return (_value/3600) * 1e24d;
                 case SpeedUnit.YottameterPerMinute: return (_value/60) * 1e24d;
                 case SpeedUnit.YottameterPerSecond: return (_value) * 1e24d;
-                case SpeedUnit.ZeptometerPerHour: return (_value/3600) * 1e-21d;
-                case SpeedUnit.ZeptometerPerMinute: return (_value/60) * 1e-21d;
-                case SpeedUnit.ZeptometerPerSecond: return (_value) * 1e-21d;
                 case SpeedUnit.ZettameterPerHour: return (_value/3600) * 1e21d;
                 case SpeedUnit.ZettameterPerMinute: return (_value/60) * 1e21d;
                 case SpeedUnit.ZettameterPerSecond: return (_value) * 1e21d;
@@ -1818,9 +1674,6 @@ namespace UnitsNet
 
             switch(unit)
             {
-                case SpeedUnit.AttometerPerHour: return (baseUnitValue*3600) / 1e-18d;
-                case SpeedUnit.AttometerPerMinute: return (baseUnitValue*60) / 1e-18d;
-                case SpeedUnit.AttometerPerSecond: return (baseUnitValue) / 1e-18d;
                 case SpeedUnit.CentimeterPerHour: return (baseUnitValue*3600) / 1e-2d;
                 case SpeedUnit.CentimeterPerMinute: return (baseUnitValue*60) / 1e-2d;
                 case SpeedUnit.CentimeterPerSecond: return (baseUnitValue) / 1e-2d;
@@ -1889,15 +1742,9 @@ namespace UnitsNet
                 case SpeedUnit.YardPerHour: return baseUnitValue/0.9144*3600;
                 case SpeedUnit.YardPerMinute: return baseUnitValue/0.9144*60;
                 case SpeedUnit.YardPerSecond: return baseUnitValue/0.9144;
-                case SpeedUnit.YoctometerPerHour: return (baseUnitValue*3600) / 1e-24d;
-                case SpeedUnit.YoctometerPerMinute: return (baseUnitValue*60) / 1e-24d;
-                case SpeedUnit.YoctometerPerSecond: return (baseUnitValue) / 1e-24d;
                 case SpeedUnit.YottameterPerHour: return (baseUnitValue*3600) / 1e24d;
                 case SpeedUnit.YottameterPerMinute: return (baseUnitValue*60) / 1e24d;
                 case SpeedUnit.YottameterPerSecond: return (baseUnitValue) / 1e24d;
-                case SpeedUnit.ZeptometerPerHour: return (baseUnitValue*3600) / 1e-21d;
-                case SpeedUnit.ZeptometerPerMinute: return (baseUnitValue*60) / 1e-21d;
-                case SpeedUnit.ZeptometerPerSecond: return (baseUnitValue) / 1e-21d;
                 case SpeedUnit.ZettameterPerHour: return (baseUnitValue*3600) / 1e21d;
                 case SpeedUnit.ZettameterPerMinute: return (baseUnitValue*60) / 1e21d;
                 case SpeedUnit.ZettameterPerSecond: return (baseUnitValue) / 1e21d;

@@ -161,21 +161,6 @@ namespace UnitsNet
         public double AcreFeet => As(VolumeUnit.AcreFoot);
 
         /// <summary>
-        ///     Get Volume in AttocubicFeet.
-        /// </summary>
-        public double AttocubicFeet => As(VolumeUnit.AttocubicFoot);
-
-        /// <summary>
-        ///     Get Volume in AttocubicMeters.
-        /// </summary>
-        public double AttocubicMeters => As(VolumeUnit.AttocubicMeter);
-
-        /// <summary>
-        ///     Get Volume in Attoliters.
-        /// </summary>
-        public double Attoliters => As(VolumeUnit.Attoliter);
-
-        /// <summary>
         ///     Get Volume in AuTablespoons.
         /// </summary>
         public double AuTablespoons => As(VolumeUnit.AuTablespoon);
@@ -601,21 +586,6 @@ namespace UnitsNet
         public double Vettaliters => As(VolumeUnit.Vettaliter);
 
         /// <summary>
-        ///     Get Volume in YoctocubicFeet.
-        /// </summary>
-        public double YoctocubicFeet => As(VolumeUnit.YoctocubicFoot);
-
-        /// <summary>
-        ///     Get Volume in YoctocubicMeters.
-        /// </summary>
-        public double YoctocubicMeters => As(VolumeUnit.YoctocubicMeter);
-
-        /// <summary>
-        ///     Get Volume in Yoctoliters.
-        /// </summary>
-        public double Yoctoliters => As(VolumeUnit.Yoctoliter);
-
-        /// <summary>
         ///     Get Volume in YottacubicFeet.
         /// </summary>
         public double YottacubicFeet => As(VolumeUnit.YottacubicFoot);
@@ -629,21 +599,6 @@ namespace UnitsNet
         ///     Get Volume in Yottaliters.
         /// </summary>
         public double Yottaliters => As(VolumeUnit.Yottaliter);
-
-        /// <summary>
-        ///     Get Volume in ZeptocubicFeet.
-        /// </summary>
-        public double ZeptocubicFeet => As(VolumeUnit.ZeptocubicFoot);
-
-        /// <summary>
-        ///     Get Volume in ZeptocubicMeters.
-        /// </summary>
-        public double ZeptocubicMeters => As(VolumeUnit.ZeptocubicMeter);
-
-        /// <summary>
-        ///     Get Volume in Zeptoliters.
-        /// </summary>
-        public double Zeptoliters => As(VolumeUnit.Zeptoliter);
 
         /// <summary>
         ///     Get Volume in ZettacubicFeet.
@@ -699,36 +654,6 @@ namespace UnitsNet
         {
             double value = (double) acrefeet;
             return new Volume(value, VolumeUnit.AcreFoot);
-        }
-        /// <summary>
-        ///     Get Volume from AttocubicFeet.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Volume FromAttocubicFeet(double attocubicfeet)
-        {
-            double value = (double) attocubicfeet;
-            return new Volume(value, VolumeUnit.AttocubicFoot);
-        }
-        /// <summary>
-        ///     Get Volume from AttocubicMeters.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Volume FromAttocubicMeters(double attocubicmeters)
-        {
-            double value = (double) attocubicmeters;
-            return new Volume(value, VolumeUnit.AttocubicMeter);
-        }
-        /// <summary>
-        ///     Get Volume from Attoliters.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Volume FromAttoliters(double attoliters)
-        {
-            double value = (double) attoliters;
-            return new Volume(value, VolumeUnit.Attoliter);
         }
         /// <summary>
         ///     Get Volume from AuTablespoons.
@@ -1581,36 +1506,6 @@ namespace UnitsNet
             return new Volume(value, VolumeUnit.Vettaliter);
         }
         /// <summary>
-        ///     Get Volume from YoctocubicFeet.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Volume FromYoctocubicFeet(double yoctocubicfeet)
-        {
-            double value = (double) yoctocubicfeet;
-            return new Volume(value, VolumeUnit.YoctocubicFoot);
-        }
-        /// <summary>
-        ///     Get Volume from YoctocubicMeters.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Volume FromYoctocubicMeters(double yoctocubicmeters)
-        {
-            double value = (double) yoctocubicmeters;
-            return new Volume(value, VolumeUnit.YoctocubicMeter);
-        }
-        /// <summary>
-        ///     Get Volume from Yoctoliters.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Volume FromYoctoliters(double yoctoliters)
-        {
-            double value = (double) yoctoliters;
-            return new Volume(value, VolumeUnit.Yoctoliter);
-        }
-        /// <summary>
         ///     Get Volume from YottacubicFeet.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -1639,36 +1534,6 @@ namespace UnitsNet
         {
             double value = (double) yottaliters;
             return new Volume(value, VolumeUnit.Yottaliter);
-        }
-        /// <summary>
-        ///     Get Volume from ZeptocubicFeet.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Volume FromZeptocubicFeet(double zeptocubicfeet)
-        {
-            double value = (double) zeptocubicfeet;
-            return new Volume(value, VolumeUnit.ZeptocubicFoot);
-        }
-        /// <summary>
-        ///     Get Volume from ZeptocubicMeters.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Volume FromZeptocubicMeters(double zeptocubicmeters)
-        {
-            double value = (double) zeptocubicmeters;
-            return new Volume(value, VolumeUnit.ZeptocubicMeter);
-        }
-        /// <summary>
-        ///     Get Volume from Zeptoliters.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        [Windows.Foundation.Metadata.DefaultOverload]
-        public static Volume FromZeptoliters(double zeptoliters)
-        {
-            double value = (double) zeptoliters;
-            return new Volume(value, VolumeUnit.Zeptoliter);
         }
         /// <summary>
         ///     Get Volume from ZettacubicFeet.
@@ -1992,9 +1857,6 @@ namespace UnitsNet
             switch(Unit)
             {
                 case VolumeUnit.AcreFoot: return _value/0.000810714;
-                case VolumeUnit.AttocubicFoot: return (_value*0.0283168) * 1e-18d;
-                case VolumeUnit.AttocubicMeter: return (_value) * 1e-18d;
-                case VolumeUnit.Attoliter: return (_value/1e3) * 1e-18d;
                 case VolumeUnit.AuTablespoon: return _value*2e-5;
                 case VolumeUnit.CenticubicFoot: return (_value*0.0283168) * 1e-2d;
                 case VolumeUnit.CenticubicMeter: return (_value) * 1e-2d;
@@ -2080,15 +1942,9 @@ namespace UnitsNet
                 case VolumeUnit.VettacubicFoot: return (_value*0.0283168) * 1e30d;
                 case VolumeUnit.VettacubicMeter: return (_value) * 1e30d;
                 case VolumeUnit.Vettaliter: return (_value/1e3) * 1e30d;
-                case VolumeUnit.YoctocubicFoot: return (_value*0.0283168) * 1e-24d;
-                case VolumeUnit.YoctocubicMeter: return (_value) * 1e-24d;
-                case VolumeUnit.Yoctoliter: return (_value/1e3) * 1e-24d;
                 case VolumeUnit.YottacubicFoot: return (_value*0.0283168) * 1e24d;
                 case VolumeUnit.YottacubicMeter: return (_value) * 1e24d;
                 case VolumeUnit.Yottaliter: return (_value/1e3) * 1e24d;
-                case VolumeUnit.ZeptocubicFoot: return (_value*0.0283168) * 1e-21d;
-                case VolumeUnit.ZeptocubicMeter: return (_value) * 1e-21d;
-                case VolumeUnit.Zeptoliter: return (_value/1e3) * 1e-21d;
                 case VolumeUnit.ZettacubicFoot: return (_value*0.0283168) * 1e21d;
                 case VolumeUnit.ZettacubicMeter: return (_value) * 1e21d;
                 case VolumeUnit.Zettaliter: return (_value/1e3) * 1e21d;
@@ -2107,9 +1963,6 @@ namespace UnitsNet
             switch(unit)
             {
                 case VolumeUnit.AcreFoot: return baseUnitValue*0.000810714;
-                case VolumeUnit.AttocubicFoot: return (baseUnitValue/0.0283168) / 1e-18d;
-                case VolumeUnit.AttocubicMeter: return (baseUnitValue) / 1e-18d;
-                case VolumeUnit.Attoliter: return (baseUnitValue*1e3) / 1e-18d;
                 case VolumeUnit.AuTablespoon: return baseUnitValue/2e-5;
                 case VolumeUnit.CenticubicFoot: return (baseUnitValue/0.0283168) / 1e-2d;
                 case VolumeUnit.CenticubicMeter: return (baseUnitValue) / 1e-2d;
@@ -2195,15 +2048,9 @@ namespace UnitsNet
                 case VolumeUnit.VettacubicFoot: return (baseUnitValue/0.0283168) / 1e30d;
                 case VolumeUnit.VettacubicMeter: return (baseUnitValue) / 1e30d;
                 case VolumeUnit.Vettaliter: return (baseUnitValue*1e3) / 1e30d;
-                case VolumeUnit.YoctocubicFoot: return (baseUnitValue/0.0283168) / 1e-24d;
-                case VolumeUnit.YoctocubicMeter: return (baseUnitValue) / 1e-24d;
-                case VolumeUnit.Yoctoliter: return (baseUnitValue*1e3) / 1e-24d;
                 case VolumeUnit.YottacubicFoot: return (baseUnitValue/0.0283168) / 1e24d;
                 case VolumeUnit.YottacubicMeter: return (baseUnitValue) / 1e24d;
                 case VolumeUnit.Yottaliter: return (baseUnitValue*1e3) / 1e24d;
-                case VolumeUnit.ZeptocubicFoot: return (baseUnitValue/0.0283168) / 1e-21d;
-                case VolumeUnit.ZeptocubicMeter: return (baseUnitValue) / 1e-21d;
-                case VolumeUnit.Zeptoliter: return (baseUnitValue*1e3) / 1e-21d;
                 case VolumeUnit.ZettacubicFoot: return (baseUnitValue/0.0283168) / 1e21d;
                 case VolumeUnit.ZettacubicMeter: return (baseUnitValue) / 1e21d;
                 case VolumeUnit.Zettaliter: return (baseUnitValue*1e3) / 1e21d;

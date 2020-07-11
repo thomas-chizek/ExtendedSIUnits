@@ -48,6 +48,20 @@ namespace UnitsNet.Tests.CustomCode
 
         protected override double MetricHorsepowerInOneWatt => 0.00135962161730390432342679032425;
 
+        protected override double CentiwattsInOneWatt => 1e2;
+
+        protected override double ExawattsInOneWatt => 1e-18;
+
+        protected override double HectowattsInOneWatt => 1e-2;
+
+        protected override double QutrawattsInOneWatt => 1e-27;
+
+        protected override double VettawattsInOneWatt => 1e-30;
+
+        protected override double YottawattsInOneWatt => 1e-24;
+
+        protected override double ZettawattsInOneWatt => 1e-21;
+
         [Fact]
         public void DurationTimesPowerEqualsEnergy()
         {

@@ -50,7 +50,6 @@ namespace UnitsNet
 
             Info = new QuantityInfo<MassUnit>(QuantityType.Mass,
                 new UnitInfo<MassUnit>[] {
-                    new UnitInfo<MassUnit>(MassUnit.Attogram, BaseUnits.Undefined),
                     new UnitInfo<MassUnit>(MassUnit.Centigram, BaseUnits.Undefined),
                     new UnitInfo<MassUnit>(MassUnit.Decagram, BaseUnits.Undefined),
                     new UnitInfo<MassUnit>(MassUnit.Decigram, BaseUnits.Undefined),
@@ -89,10 +88,8 @@ namespace UnitsNet
                     new UnitInfo<MassUnit>(MassUnit.Tonne, new BaseUnits(mass: MassUnit.Tonne)),
                     new UnitInfo<MassUnit>(MassUnit.Vettagram, BaseUnits.Undefined),
                     new UnitInfo<MassUnit>(MassUnit.Vettatonne, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Yoctogram, BaseUnits.Undefined),
                     new UnitInfo<MassUnit>(MassUnit.Yottagram, BaseUnits.Undefined),
                     new UnitInfo<MassUnit>(MassUnit.Yottatonne, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Zeptogram, BaseUnits.Undefined),
                     new UnitInfo<MassUnit>(MassUnit.Zettagram, BaseUnits.Undefined),
                     new UnitInfo<MassUnit>(MassUnit.Zettatonne, BaseUnits.Undefined),
                 },
@@ -206,11 +203,6 @@ namespace UnitsNet
         #endregion
 
         #region Conversion Properties
-
-        /// <summary>
-        ///     Get Mass in Attograms.
-        /// </summary>
-        public double Attograms => As(MassUnit.Attogram);
 
         /// <summary>
         ///     Get Mass in Centigrams.
@@ -403,11 +395,6 @@ namespace UnitsNet
         public double Vettatonnes => As(MassUnit.Vettatonne);
 
         /// <summary>
-        ///     Get Mass in Yoctograms.
-        /// </summary>
-        public double Yoctograms => As(MassUnit.Yoctogram);
-
-        /// <summary>
         ///     Get Mass in Yottagrams.
         /// </summary>
         public double Yottagrams => As(MassUnit.Yottagram);
@@ -416,11 +403,6 @@ namespace UnitsNet
         ///     Get Mass in Yottatonnes.
         /// </summary>
         public double Yottatonnes => As(MassUnit.Yottatonne);
-
-        /// <summary>
-        ///     Get Mass in Zeptograms.
-        /// </summary>
-        public double Zeptograms => As(MassUnit.Zeptogram);
 
         /// <summary>
         ///     Get Mass in Zettagrams.
@@ -461,15 +443,6 @@ namespace UnitsNet
 
         #region Static Factory Methods
 
-        /// <summary>
-        ///     Get Mass from Attograms.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static Mass FromAttograms(QuantityValue attograms)
-        {
-            double value = (double) attograms;
-            return new Mass(value, MassUnit.Attogram);
-        }
         /// <summary>
         ///     Get Mass from Centigrams.
         /// </summary>
@@ -813,15 +786,6 @@ namespace UnitsNet
             return new Mass(value, MassUnit.Vettatonne);
         }
         /// <summary>
-        ///     Get Mass from Yoctograms.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static Mass FromYoctograms(QuantityValue yoctograms)
-        {
-            double value = (double) yoctograms;
-            return new Mass(value, MassUnit.Yoctogram);
-        }
-        /// <summary>
         ///     Get Mass from Yottagrams.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -838,15 +802,6 @@ namespace UnitsNet
         {
             double value = (double) yottatonnes;
             return new Mass(value, MassUnit.Yottatonne);
-        }
-        /// <summary>
-        ///     Get Mass from Zeptograms.
-        /// </summary>
-        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
-        public static Mass FromZeptograms(QuantityValue zeptograms)
-        {
-            double value = (double) zeptograms;
-            return new Mass(value, MassUnit.Zeptogram);
         }
         /// <summary>
         ///     Get Mass from Zettagrams.
@@ -1295,7 +1250,6 @@ namespace UnitsNet
         {
             switch(Unit)
             {
-                case MassUnit.Attogram: return (_value/1e3) * 1e-18d;
                 case MassUnit.Centigram: return (_value/1e3) * 1e-2d;
                 case MassUnit.Decagram: return (_value/1e3) * 1e1d;
                 case MassUnit.Decigram: return (_value/1e3) * 1e-1d;
@@ -1334,10 +1288,8 @@ namespace UnitsNet
                 case MassUnit.Tonne: return _value*1e3;
                 case MassUnit.Vettagram: return (_value/1e3) * 1e30d;
                 case MassUnit.Vettatonne: return (_value*1e3) * 1e30d;
-                case MassUnit.Yoctogram: return (_value/1e3) * 1e-24d;
                 case MassUnit.Yottagram: return (_value/1e3) * 1e24d;
                 case MassUnit.Yottatonne: return (_value*1e3) * 1e24d;
-                case MassUnit.Zeptogram: return (_value/1e3) * 1e-21d;
                 case MassUnit.Zettagram: return (_value/1e3) * 1e21d;
                 case MassUnit.Zettatonne: return (_value*1e3) * 1e21d;
                 default:
@@ -1354,7 +1306,6 @@ namespace UnitsNet
 
             switch(unit)
             {
-                case MassUnit.Attogram: return (baseUnitValue*1e3) / 1e-18d;
                 case MassUnit.Centigram: return (baseUnitValue*1e3) / 1e-2d;
                 case MassUnit.Decagram: return (baseUnitValue*1e3) / 1e1d;
                 case MassUnit.Decigram: return (baseUnitValue*1e3) / 1e-1d;
@@ -1393,10 +1344,8 @@ namespace UnitsNet
                 case MassUnit.Tonne: return baseUnitValue/1e3;
                 case MassUnit.Vettagram: return (baseUnitValue*1e3) / 1e30d;
                 case MassUnit.Vettatonne: return (baseUnitValue/1e3) / 1e30d;
-                case MassUnit.Yoctogram: return (baseUnitValue*1e3) / 1e-24d;
                 case MassUnit.Yottagram: return (baseUnitValue*1e3) / 1e24d;
                 case MassUnit.Yottatonne: return (baseUnitValue/1e3) / 1e24d;
-                case MassUnit.Zeptogram: return (baseUnitValue*1e3) / 1e-21d;
                 case MassUnit.Zettagram: return (baseUnitValue*1e3) / 1e21d;
                 case MassUnit.Zettatonne: return (baseUnitValue/1e3) / 1e21d;
                 default:

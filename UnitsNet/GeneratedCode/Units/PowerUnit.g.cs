@@ -26,7 +26,6 @@ namespace UnitsNet.Units
     public enum PowerUnit
     {
         Undefined = 0,
-        Attowatt,
         BoilerHorsepower,
         BritishThermalUnitPerHour,
         Centiwatt,
@@ -52,9 +51,7 @@ namespace UnitsNet.Units
         Terawatt,
         Vettawatt,
         Watt,
-        Yoctowatt,
         Yottawatt,
-        Zeptowatt,
         Zettawatt,
     }
 

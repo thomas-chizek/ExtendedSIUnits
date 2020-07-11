@@ -18,9 +18,6 @@ namespace CodeGen
             // when creating decimal conversion functions in CodeGen.Generator.FixConversionFunctionsForDecimalValueTypes.
 
             // SI prefixes
-            new PrefixInfo(Prefix.Yocto, "1e-24d", "y"),
-            new PrefixInfo(Prefix.Zepto, "1e-21d", "z"),
-            new PrefixInfo(Prefix.Atto, "1e-18d", "a", (Russian, "а")),
             new PrefixInfo(Prefix.Femto, "1e-15d", "f", (Russian, "ф")),
             new PrefixInfo(Prefix.Pico, "1e-12d", "p", (Russian, "п")),
             new PrefixInfo(Prefix.Nano, "1e-9d", "n", (Russian, "н")),
