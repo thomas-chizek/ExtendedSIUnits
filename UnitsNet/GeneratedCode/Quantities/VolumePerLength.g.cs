@@ -32,7 +32,7 @@ namespace UnitsNet
     /// <summary>
     ///     Volume, typically of fluid, that a container can hold within a unit of length.
     /// </summary>
-    public partial struct VolumePerLength : IQuantity<VolumePerLengthUnit>, IEquatable<VolumePerLength>, IComparable, IComparable<VolumePerLength>, IConvertible, IFormattable
+    public partial class VolumePerLength : IQuantity<VolumePerLengthUnit>, IEquatable<VolumePerLength>, IComparable, IComparable<VolumePerLength>, IConvertible, IFormattable
     {
         /// <summary>
         ///     The numeric value this quantity was constructed with.
@@ -50,47 +50,47 @@ namespace UnitsNet
 
             Info = new QuantityInfo<VolumePerLengthUnit>(QuantityType.VolumePerLength,
                 new UnitInfo<VolumePerLengthUnit>[] {
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.CenticubicMeterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.CentiliterPerMeter, BaseUnits.Undefined),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.CenticubicMeterPerMeter, new BaseUnits(length: LengthUnit.Meter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.CentiliterPerMeter, new BaseUnits(length: LengthUnit.Decimeter)),
                     new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.CubicMeterPerMeter, new BaseUnits(length: LengthUnit.Meter)),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.DecacubicMeterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.DecaliterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.DecicubicMeterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.DeciliterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.ExacubicMeterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.ExaliterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.FemtocubicMeterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.FemtoliterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.GigacubicMeterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.GigaliterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.HectocubicMeterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.HectoliterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.KilocubicMeterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.KiloliterPerMeter, BaseUnits.Undefined),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.DecacubicMeterPerMeter, new BaseUnits(length: LengthUnit.Meter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.DecaliterPerMeter, new BaseUnits(length: LengthUnit.Decimeter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.DecicubicMeterPerMeter, new BaseUnits(length: LengthUnit.Meter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.DeciliterPerMeter, new BaseUnits(length: LengthUnit.Decimeter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.ExacubicMeterPerMeter, new BaseUnits(length: LengthUnit.Meter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.ExaliterPerMeter, new BaseUnits(length: LengthUnit.Decimeter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.FemtocubicMeterPerMeter, new BaseUnits(length: LengthUnit.Meter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.FemtoliterPerMeter, new BaseUnits(length: LengthUnit.Decimeter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.GigacubicMeterPerMeter, new BaseUnits(length: LengthUnit.Meter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.GigaliterPerMeter, new BaseUnits(length: LengthUnit.Decimeter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.HectocubicMeterPerMeter, new BaseUnits(length: LengthUnit.Meter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.HectoliterPerMeter, new BaseUnits(length: LengthUnit.Decimeter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.KilocubicMeterPerMeter, new BaseUnits(length: LengthUnit.Meter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.KiloliterPerMeter, new BaseUnits(length: LengthUnit.Decimeter)),
                     new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.LiterPerMeter, new BaseUnits(length: LengthUnit.Decimeter)),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.MegacubicMeterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.MegaliterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.MicrocubicMeterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.MicroliterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.MillicubicMeterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.MilliliterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.NanocubicMeterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.NanoliterPerMeter, BaseUnits.Undefined),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.MegacubicMeterPerMeter, new BaseUnits(length: LengthUnit.Meter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.MegaliterPerMeter, new BaseUnits(length: LengthUnit.Decimeter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.MicrocubicMeterPerMeter, new BaseUnits(length: LengthUnit.Meter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.MicroliterPerMeter, new BaseUnits(length: LengthUnit.Decimeter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.MillicubicMeterPerMeter, new BaseUnits(length: LengthUnit.Meter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.MilliliterPerMeter, new BaseUnits(length: LengthUnit.Decimeter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.NanocubicMeterPerMeter, new BaseUnits(length: LengthUnit.Meter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.NanoliterPerMeter, new BaseUnits(length: LengthUnit.Decimeter)),
                     new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.OilBarrelPerFoot, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.PetacubicMeterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.PetaliterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.PicocubicMeterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.PicoliterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.QutracubicMeterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.QutraliterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.TeracubicMeterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.TeraliterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.VettacubicMeterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.VettaliterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.YottacubicMeterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.YottaliterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.ZettacubicMeterPerMeter, BaseUnits.Undefined),
-                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.ZettaliterPerMeter, BaseUnits.Undefined),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.PetacubicMeterPerMeter, new BaseUnits(length: LengthUnit.Meter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.PetaliterPerMeter, new BaseUnits(length: LengthUnit.Decimeter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.PicocubicMeterPerMeter, new BaseUnits(length: LengthUnit.Meter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.PicoliterPerMeter, new BaseUnits(length: LengthUnit.Decimeter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.QutracubicMeterPerMeter, new BaseUnits(length: LengthUnit.Meter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.QutraliterPerMeter, new BaseUnits(length: LengthUnit.Decimeter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.TeracubicMeterPerMeter, new BaseUnits(length: LengthUnit.Meter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.TeraliterPerMeter, new BaseUnits(length: LengthUnit.Decimeter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.VettacubicMeterPerMeter, new BaseUnits(length: LengthUnit.Meter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.VettaliterPerMeter, new BaseUnits(length: LengthUnit.Decimeter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.YottacubicMeterPerMeter, new BaseUnits(length: LengthUnit.Meter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.YottaliterPerMeter, new BaseUnits(length: LengthUnit.Decimeter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.ZettacubicMeterPerMeter, new BaseUnits(length: LengthUnit.Meter)),
+                    new UnitInfo<VolumePerLengthUnit>(VolumePerLengthUnit.ZettaliterPerMeter, new BaseUnits(length: LengthUnit.Decimeter)),
                 },
                 BaseUnit, Zero, BaseDimensions);
         }
@@ -123,7 +123,12 @@ namespace UnitsNet
             if(unitSystem == null) throw new ArgumentNullException(nameof(unitSystem));
 
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-            var firstUnitInfo = unitInfos.FirstOrDefault();
+            var firstUnitInfo = unitInfos.FirstOrDefault(u => u.Value.Equals(BaseUnit));
+            // for custom units, sometimes we don't find the base unit, this grabs the first off the list.
+            if(Equals(firstUnitInfo, null ))
+            {
+                firstUnitInfo = unitInfos.FirstOrDefault();
+            }
 
             _value = Guard.EnsureValidNumber(numericValue, nameof(numericValue));
             _unit = firstUnitInfo?.Value ?? throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
@@ -1015,32 +1020,44 @@ namespace UnitsNet
         /// <summary>Returns true if less or equal to.</summary>
         public static bool operator <=(VolumePerLength left, VolumePerLength right)
         {
+            if(left is null || right is null )
+                return false;
             return left.Value <= right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if greater than or equal to.</summary>
         public static bool operator >=(VolumePerLength left, VolumePerLength right)
         {
-            return left.Value >= right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value >= right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if less than.</summary>
         public static bool operator <(VolumePerLength left, VolumePerLength right)
         {
-            return left.Value < right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value < right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if greater than.</summary>
         public static bool operator >(VolumePerLength left, VolumePerLength right)
         {
-            return left.Value > right.GetValueAs(left.Unit);
+              if(left is null || right is null )
+                return false;
+          return left.Value > right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if exactly equal.</summary>
         /// <remarks>Consider using <see cref="Equals(VolumePerLength, double, ComparisonType)"/> for safely comparing floating point values.</remarks>
         public static bool operator ==(VolumePerLength left, VolumePerLength right)
         {
-            return left.Equals(right);
+             if(left is null && right is null )
+                return true;
+            if( left is null )
+                return false;
+           return left.Equals(right);
         }
 
         /// <summary>Returns true if not exactly equal.</summary>
@@ -1062,6 +1079,8 @@ namespace UnitsNet
         /// <inheritdoc />
         public int CompareTo(VolumePerLength other)
         {
+            if(other is null) throw new ArgumentNullException();
+
             return _value.CompareTo(other.GetValueAs(this.Unit));
         }
 
@@ -1079,6 +1098,9 @@ namespace UnitsNet
         /// <remarks>Consider using <see cref="Equals(VolumePerLength, double, ComparisonType)"/> for safely comparing floating point values.</remarks>
         public bool Equals(VolumePerLength other)
         {
+            if(other is null)
+                return false;
+
             return _value.Equals(other.GetValueAs(this.Unit));
         }
 
@@ -1164,13 +1186,16 @@ namespace UnitsNet
         {
             if(unitSystem == null)
                 throw new ArgumentNullException(nameof(unitSystem));
-
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
+            
+            var firstUnitInfo = unitInfos.FirstOrDefault(u => u.Value.Equals(BaseUnit));
+            if (firstUnitInfo is null)
+            {
+                firstUnitInfo = unitInfos.FirstOrDefault();
+                if (firstUnitInfo is null)
                 throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
-
+            }
+            
             return As(firstUnitInfo.Value);
         }
 
@@ -1207,13 +1232,12 @@ namespace UnitsNet
         {
             if(unitSystem == null)
                 throw new ArgumentNullException(nameof(unitSystem));
-
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
+            var firstUnitInfo = unitInfos.FirstOrDefault(u=> u.Value.Equals(BaseUnit));
+            if (firstUnitInfo == null)
                 throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
 
+            
             return ToUnit(firstUnitInfo.Value);
         }
 

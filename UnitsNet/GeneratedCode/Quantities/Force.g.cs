@@ -32,7 +32,7 @@ namespace UnitsNet
     /// <summary>
     ///     In physics, a force is any influence that causes an object to undergo a certain change, either concerning its movement, direction, or geometrical construction. In other words, a force can cause an object with mass to change its velocity (which includes to begin moving from a state of rest), i.e., to accelerate, or a flexible object to deform, or both. Force can also be described by intuitive concepts such as a push or a pull. A force has both magnitude and direction, making it a vector quantity. It is measured in the SI unit of newtons and represented by the symbol F.
     /// </summary>
-    public partial struct Force : IQuantity<ForceUnit>, IEquatable<Force>, IComparable, IComparable<Force>, IConvertible, IFormattable
+    public partial class Force : IQuantity<ForceUnit>, IEquatable<Force>, IComparable, IComparable<Force>, IConvertible, IFormattable
     {
         /// <summary>
         ///     The numeric value this quantity was constructed with.
@@ -50,33 +50,33 @@ namespace UnitsNet
 
             Info = new QuantityInfo<ForceUnit>(QuantityType.Force,
                 new UnitInfo<ForceUnit>[] {
-                    new UnitInfo<ForceUnit>(ForceUnit.Centinewton, BaseUnits.Undefined),
-                    new UnitInfo<ForceUnit>(ForceUnit.Decanewton, BaseUnits.Undefined),
-                    new UnitInfo<ForceUnit>(ForceUnit.Decinewton, BaseUnits.Undefined),
+                    new UnitInfo<ForceUnit>(ForceUnit.Centinewton, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
+                    new UnitInfo<ForceUnit>(ForceUnit.Decanewton, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
+                    new UnitInfo<ForceUnit>(ForceUnit.Decinewton, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<ForceUnit>(ForceUnit.Dyn, new BaseUnits(length: LengthUnit.Centimeter, mass: MassUnit.Gram, time: DurationUnit.Second)),
-                    new UnitInfo<ForceUnit>(ForceUnit.Exanewton, BaseUnits.Undefined),
-                    new UnitInfo<ForceUnit>(ForceUnit.Femtonewton, BaseUnits.Undefined),
-                    new UnitInfo<ForceUnit>(ForceUnit.Giganewton, BaseUnits.Undefined),
-                    new UnitInfo<ForceUnit>(ForceUnit.Hectonewton, BaseUnits.Undefined),
+                    new UnitInfo<ForceUnit>(ForceUnit.Exanewton, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
+                    new UnitInfo<ForceUnit>(ForceUnit.Femtonewton, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
+                    new UnitInfo<ForceUnit>(ForceUnit.Giganewton, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
+                    new UnitInfo<ForceUnit>(ForceUnit.Hectonewton, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<ForceUnit>(ForceUnit.KilogramForce, BaseUnits.Undefined),
-                    new UnitInfo<ForceUnit>(ForceUnit.Kilonewton, BaseUnits.Undefined),
+                    new UnitInfo<ForceUnit>(ForceUnit.Kilonewton, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<ForceUnit>(ForceUnit.KiloPond, BaseUnits.Undefined),
-                    new UnitInfo<ForceUnit>(ForceUnit.Meganewton, BaseUnits.Undefined),
-                    new UnitInfo<ForceUnit>(ForceUnit.Micronewton, BaseUnits.Undefined),
-                    new UnitInfo<ForceUnit>(ForceUnit.Millinewton, BaseUnits.Undefined),
-                    new UnitInfo<ForceUnit>(ForceUnit.Nanonewton, BaseUnits.Undefined),
+                    new UnitInfo<ForceUnit>(ForceUnit.Meganewton, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
+                    new UnitInfo<ForceUnit>(ForceUnit.Micronewton, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
+                    new UnitInfo<ForceUnit>(ForceUnit.Millinewton, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
+                    new UnitInfo<ForceUnit>(ForceUnit.Nanonewton, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<ForceUnit>(ForceUnit.Newton, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<ForceUnit>(ForceUnit.OunceForce, BaseUnits.Undefined),
-                    new UnitInfo<ForceUnit>(ForceUnit.Petanewton, BaseUnits.Undefined),
-                    new UnitInfo<ForceUnit>(ForceUnit.Piconewton, BaseUnits.Undefined),
+                    new UnitInfo<ForceUnit>(ForceUnit.Petanewton, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
+                    new UnitInfo<ForceUnit>(ForceUnit.Piconewton, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<ForceUnit>(ForceUnit.Poundal, new BaseUnits(length: LengthUnit.Foot, mass: MassUnit.Pound, time: DurationUnit.Second)),
                     new UnitInfo<ForceUnit>(ForceUnit.PoundForce, BaseUnits.Undefined),
-                    new UnitInfo<ForceUnit>(ForceUnit.Qutranewton, BaseUnits.Undefined),
-                    new UnitInfo<ForceUnit>(ForceUnit.Teranewton, BaseUnits.Undefined),
+                    new UnitInfo<ForceUnit>(ForceUnit.Qutranewton, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
+                    new UnitInfo<ForceUnit>(ForceUnit.Teranewton, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<ForceUnit>(ForceUnit.TonneForce, BaseUnits.Undefined),
-                    new UnitInfo<ForceUnit>(ForceUnit.Vettanewton, BaseUnits.Undefined),
-                    new UnitInfo<ForceUnit>(ForceUnit.Yottanewton, BaseUnits.Undefined),
-                    new UnitInfo<ForceUnit>(ForceUnit.Zettanewton, BaseUnits.Undefined),
+                    new UnitInfo<ForceUnit>(ForceUnit.Vettanewton, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
+                    new UnitInfo<ForceUnit>(ForceUnit.Yottanewton, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
+                    new UnitInfo<ForceUnit>(ForceUnit.Zettanewton, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                 },
                 BaseUnit, Zero, BaseDimensions);
         }
@@ -109,7 +109,12 @@ namespace UnitsNet
             if(unitSystem == null) throw new ArgumentNullException(nameof(unitSystem));
 
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-            var firstUnitInfo = unitInfos.FirstOrDefault();
+            var firstUnitInfo = unitInfos.FirstOrDefault(u => u.Value.Equals(BaseUnit));
+            // for custom units, sometimes we don't find the base unit, this grabs the first off the list.
+            if(Equals(firstUnitInfo, null ))
+            {
+                firstUnitInfo = unitInfos.FirstOrDefault();
+            }
 
             _value = Guard.EnsureValidNumber(numericValue, nameof(numericValue));
             _unit = firstUnitInfo?.Value ?? throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
@@ -805,32 +810,44 @@ namespace UnitsNet
         /// <summary>Returns true if less or equal to.</summary>
         public static bool operator <=(Force left, Force right)
         {
+            if(left is null || right is null )
+                return false;
             return left.Value <= right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if greater than or equal to.</summary>
         public static bool operator >=(Force left, Force right)
         {
-            return left.Value >= right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value >= right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if less than.</summary>
         public static bool operator <(Force left, Force right)
         {
-            return left.Value < right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value < right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if greater than.</summary>
         public static bool operator >(Force left, Force right)
         {
-            return left.Value > right.GetValueAs(left.Unit);
+              if(left is null || right is null )
+                return false;
+          return left.Value > right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if exactly equal.</summary>
         /// <remarks>Consider using <see cref="Equals(Force, double, ComparisonType)"/> for safely comparing floating point values.</remarks>
         public static bool operator ==(Force left, Force right)
         {
-            return left.Equals(right);
+             if(left is null && right is null )
+                return true;
+            if( left is null )
+                return false;
+           return left.Equals(right);
         }
 
         /// <summary>Returns true if not exactly equal.</summary>
@@ -852,6 +869,8 @@ namespace UnitsNet
         /// <inheritdoc />
         public int CompareTo(Force other)
         {
+            if(other is null) throw new ArgumentNullException();
+
             return _value.CompareTo(other.GetValueAs(this.Unit));
         }
 
@@ -869,6 +888,9 @@ namespace UnitsNet
         /// <remarks>Consider using <see cref="Equals(Force, double, ComparisonType)"/> for safely comparing floating point values.</remarks>
         public bool Equals(Force other)
         {
+            if(other is null)
+                return false;
+
             return _value.Equals(other.GetValueAs(this.Unit));
         }
 
@@ -954,13 +976,16 @@ namespace UnitsNet
         {
             if(unitSystem == null)
                 throw new ArgumentNullException(nameof(unitSystem));
-
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
+            
+            var firstUnitInfo = unitInfos.FirstOrDefault(u => u.Value.Equals(BaseUnit));
+            if (firstUnitInfo is null)
+            {
+                firstUnitInfo = unitInfos.FirstOrDefault();
+                if (firstUnitInfo is null)
                 throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
-
+            }
+            
             return As(firstUnitInfo.Value);
         }
 
@@ -997,13 +1022,12 @@ namespace UnitsNet
         {
             if(unitSystem == null)
                 throw new ArgumentNullException(nameof(unitSystem));
-
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
+            var firstUnitInfo = unitInfos.FirstOrDefault(u=> u.Value.Equals(BaseUnit));
+            if (firstUnitInfo == null)
                 throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
 
+            
             return ToUnit(firstUnitInfo.Value);
         }
 

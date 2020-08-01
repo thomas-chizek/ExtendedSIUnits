@@ -2,7 +2,7 @@
 
 namespace UnitsNet
 {
-    public partial struct MassFraction
+    public partial class MassFraction
     {
         /// <summary>
         /// Get the <see cref="Mass"/> of the component by multiplying the <see cref="Mass"/> of the mixture and this <see cref="MassFraction"/>.

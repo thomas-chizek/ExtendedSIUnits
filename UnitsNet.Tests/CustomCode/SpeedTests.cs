@@ -3,6 +3,7 @@
 
 using System;
 using Xunit;
+using UnitsNet.Tests.Helpers;
 
 namespace UnitsNet.Tests.CustomCode
 {
@@ -86,6 +87,15 @@ namespace UnitsNet.Tests.CustomCode
         protected override double YottametersPerSecondInOneMeterPerSecond => 1e-24;
         protected override double QutrametersPerSecondInOneMeterPerSecond =>1e-27;
         protected override double VettametersPerSecondInOneMeterPerSecond => 1e-30;
+
+        protected override double NanolightsecondsPerHourInOneMeterPerSecond => PrefixMultipliers.Apply(LightsecondsPerHourInOneMeterPerSecond, Prefix.nano);
+        protected override double MicrolightsecondsPerHourInOneMeterPerSecond => PrefixMultipliers.Apply(LightsecondsPerHourInOneMeterPerSecond, Prefix.micro);
+        protected override double MillilightsecondsPerHourInOneMeterPerSecond => PrefixMultipliers.Apply(LightsecondsPerHourInOneMeterPerSecond, Prefix.milli);
+        protected override double CentilightsecondsPerHourInOneMeterPerSecond => PrefixMultipliers.Apply(LightsecondsPerHourInOneMeterPerSecond, Prefix.ceni);
+        protected override double DecilightsecondsPerHourInOneMeterPerSecond => PrefixMultipliers.Apply(LightsecondsPerHourInOneMeterPerSecond, Prefix.deci);
+        protected override double LightsecondsPerHourInOneMeterPerSecond => 83277.8147901399;
+        protected override double DecalightsecondsPerHourInOneMeterPerSecond => PrefixMultipliers.Apply(LightsecondsPerHourInOneMeterPerSecond, Prefix.deca);
+        protected override double KilolightsecondsPerHourInOneMeterPerSecond => PrefixMultipliers.Apply(LightsecondsPerHourInOneMeterPerSecond, Prefix.kilo);
 
         [Fact]
         public void DurationSpeedTimesEqualsLength()

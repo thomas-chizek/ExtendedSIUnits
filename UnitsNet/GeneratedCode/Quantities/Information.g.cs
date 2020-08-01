@@ -32,7 +32,7 @@ namespace UnitsNet
     /// <summary>
     ///     In computing and telecommunications, a unit of information is the capacity of some standard data storage system or communication channel, used to measure the capacities of other systems and channels. In information theory, units of information are also used to measure the information contents or entropy of random variables.
     /// </summary>
-    public partial struct Information : IQuantity<InformationUnit>, IEquatable<Information>, IComparable, IComparable<Information>, IConvertible, IFormattable
+    public partial class Information : IQuantity<InformationUnit>, IEquatable<Information>, IComparable, IComparable<Information>, IConvertible, IFormattable
     {
         /// <summary>
         ///     The numeric value this quantity was constructed with.
@@ -108,7 +108,12 @@ namespace UnitsNet
             if(unitSystem == null) throw new ArgumentNullException(nameof(unitSystem));
 
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-            var firstUnitInfo = unitInfos.FirstOrDefault();
+            var firstUnitInfo = unitInfos.FirstOrDefault(u => u.Value.Equals(BaseUnit));
+            // for custom units, sometimes we don't find the base unit, this grabs the first off the list.
+            if(Equals(firstUnitInfo, null ))
+            {
+                firstUnitInfo = unitInfos.FirstOrDefault();
+            }
 
             _value = numericValue;
             _unit = firstUnitInfo?.Value ?? throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
@@ -792,32 +797,44 @@ namespace UnitsNet
         /// <summary>Returns true if less or equal to.</summary>
         public static bool operator <=(Information left, Information right)
         {
+            if(left is null || right is null )
+                return false;
             return left.Value <= right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if greater than or equal to.</summary>
         public static bool operator >=(Information left, Information right)
         {
-            return left.Value >= right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value >= right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if less than.</summary>
         public static bool operator <(Information left, Information right)
         {
-            return left.Value < right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value < right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if greater than.</summary>
         public static bool operator >(Information left, Information right)
         {
-            return left.Value > right.GetValueAs(left.Unit);
+              if(left is null || right is null )
+                return false;
+          return left.Value > right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if exactly equal.</summary>
         /// <remarks>Consider using <see cref="Equals(Information, double, ComparisonType)"/> for safely comparing floating point values.</remarks>
         public static bool operator ==(Information left, Information right)
         {
-            return left.Equals(right);
+             if(left is null && right is null )
+                return true;
+            if( left is null )
+                return false;
+           return left.Equals(right);
         }
 
         /// <summary>Returns true if not exactly equal.</summary>
@@ -839,6 +856,8 @@ namespace UnitsNet
         /// <inheritdoc />
         public int CompareTo(Information other)
         {
+            if(other is null) throw new ArgumentNullException();
+
             return _value.CompareTo(other.GetValueAs(this.Unit));
         }
 
@@ -856,6 +875,9 @@ namespace UnitsNet
         /// <remarks>Consider using <see cref="Equals(Information, double, ComparisonType)"/> for safely comparing floating point values.</remarks>
         public bool Equals(Information other)
         {
+            if(other is null)
+                return false;
+
             return _value.Equals(other.GetValueAs(this.Unit));
         }
 
@@ -941,13 +963,16 @@ namespace UnitsNet
         {
             if(unitSystem == null)
                 throw new ArgumentNullException(nameof(unitSystem));
-
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
+            
+            var firstUnitInfo = unitInfos.FirstOrDefault(u => u.Value.Equals(BaseUnit));
+            if (firstUnitInfo is null)
+            {
+                firstUnitInfo = unitInfos.FirstOrDefault();
+                if (firstUnitInfo is null)
                 throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
-
+            }
+            
             return As(firstUnitInfo.Value);
         }
 
@@ -984,13 +1009,12 @@ namespace UnitsNet
         {
             if(unitSystem == null)
                 throw new ArgumentNullException(nameof(unitSystem));
-
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
+            var firstUnitInfo = unitInfos.FirstOrDefault(u=> u.Value.Equals(BaseUnit));
+            if (firstUnitInfo == null)
                 throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
 
+            
             return ToUnit(firstUnitInfo.Value);
         }
 

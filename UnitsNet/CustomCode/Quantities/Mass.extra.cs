@@ -9,8 +9,18 @@ using UnitsNet.Units;
 
 namespace UnitsNet
 {
-    public partial struct Mass
+    public partial class Mass
     {
+        /// <summary>
+        /// Copy of information
+        /// </summary>
+        /// <param name="m"></param>
+        public Mass(Mass m) : this(m.Value, m.Unit) { }
+        /// <summary>
+        /// Empty Information object
+        /// </summary>
+        public Mass() : this(Zero.Value, Zero.Unit) { }
+
         /// <summary>Get <see cref="Mass"/> from <see cref="Force"/> of gravity.</summary>
         public static Mass FromGravitationalForce(Force f)
         {

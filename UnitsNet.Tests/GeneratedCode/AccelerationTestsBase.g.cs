@@ -34,36 +34,158 @@ namespace UnitsNet.Tests
 // ReSharper disable once PartialTypeWithSinglePart
     public abstract partial class AccelerationTestsBase
     {
+        protected abstract double CentilightsecondsPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double CentimetersPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double CentimetersPerMinutesSquaredInOneMeterPerSecondSquared { get; }
         protected abstract double CentimetersPerSecondSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double DecalightsecondsPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double DecametersPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double DecametersPerMinutesSquaredInOneMeterPerSecondSquared { get; }
         protected abstract double DecametersPerSecondSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double DecilightsecondsPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double DecimetersPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double DecimetersPerMinutesSquaredInOneMeterPerSecondSquared { get; }
         protected abstract double DecimetersPerSecondSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double ExametersPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double ExametersPerMinutesSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double ExametersPerSecondSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double FemtometersPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double FemtometersPerMinutesSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double FemtometersPerSecondSquaredInOneMeterPerSecondSquared { get; }
         protected abstract double FeetPerSecondSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double GigametersPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double GigametersPerMinutesSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double GigametersPerSecondSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double HectometersPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double HectometersPerMinutesSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double HectometersPerSecondSquaredInOneMeterPerSecondSquared { get; }
         protected abstract double InchesPerSecondSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double KilolightsecondsPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double KilometersPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double KilometersPerMinutesSquaredInOneMeterPerSecondSquared { get; }
         protected abstract double KilometersPerSecondSquaredInOneMeterPerSecondSquared { get; }
         protected abstract double KnotsPerHourInOneMeterPerSecondSquared { get; }
         protected abstract double KnotsPerMinuteInOneMeterPerSecondSquared { get; }
         protected abstract double KnotsPerSecondInOneMeterPerSecondSquared { get; }
+        protected abstract double LightsecondsPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double MegametersPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double MegametersPerMinutesSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double MegametersPerSecondSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double MetersPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double MetersPerMinutesSquaredInOneMeterPerSecondSquared { get; }
         protected abstract double MetersPerSecondSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double MicrolightsecondsPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double MicrometersPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double MicrometersPerMinutesSquaredInOneMeterPerSecondSquared { get; }
         protected abstract double MicrometersPerSecondSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double MilesPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double MillilightsecondsPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double MillimetersPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double MillimetersPerMinutesSquaredInOneMeterPerSecondSquared { get; }
         protected abstract double MillimetersPerSecondSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double NanolightsecondsPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double NanometersPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double NanometersPerMinutesSquaredInOneMeterPerSecondSquared { get; }
         protected abstract double NanometersPerSecondSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double PetametersPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double PetametersPerMinutesSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double PetametersPerSecondSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double PicometersPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double PicometersPerMinutesSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double PicometersPerSecondSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double QutrametersPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double QutrametersPerMinutesSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double QutrametersPerSecondSquaredInOneMeterPerSecondSquared { get; }
         protected abstract double StandardGravityInOneMeterPerSecondSquared { get; }
+        protected abstract double TerametersPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double TerametersPerMinutesSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double TerametersPerSecondSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double VettametersPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double VettametersPerMinutesSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double VettametersPerSecondSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double YottametersPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double YottametersPerMinutesSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double YottametersPerSecondSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double ZettametersPerHourSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double ZettametersPerMinutesSquaredInOneMeterPerSecondSquared { get; }
+        protected abstract double ZettametersPerSecondSquaredInOneMeterPerSecondSquared { get; }
 
 // ReSharper disable VirtualMemberNeverOverriden.Global
+        protected virtual double CentilightsecondsPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double CentimetersPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double CentimetersPerMinutesSquaredTolerance { get { return 1e-5; } }
         protected virtual double CentimetersPerSecondSquaredTolerance { get { return 1e-5; } }
+        protected virtual double DecalightsecondsPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double DecametersPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double DecametersPerMinutesSquaredTolerance { get { return 1e-5; } }
         protected virtual double DecametersPerSecondSquaredTolerance { get { return 1e-5; } }
+        protected virtual double DecilightsecondsPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double DecimetersPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double DecimetersPerMinutesSquaredTolerance { get { return 1e-5; } }
         protected virtual double DecimetersPerSecondSquaredTolerance { get { return 1e-5; } }
+        protected virtual double ExametersPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double ExametersPerMinutesSquaredTolerance { get { return 1e-5; } }
+        protected virtual double ExametersPerSecondSquaredTolerance { get { return 1e-5; } }
+        protected virtual double FemtometersPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double FemtometersPerMinutesSquaredTolerance { get { return 1e-5; } }
+        protected virtual double FemtometersPerSecondSquaredTolerance { get { return 1e-5; } }
         protected virtual double FeetPerSecondSquaredTolerance { get { return 1e-5; } }
+        protected virtual double GigametersPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double GigametersPerMinutesSquaredTolerance { get { return 1e-5; } }
+        protected virtual double GigametersPerSecondSquaredTolerance { get { return 1e-5; } }
+        protected virtual double HectometersPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double HectometersPerMinutesSquaredTolerance { get { return 1e-5; } }
+        protected virtual double HectometersPerSecondSquaredTolerance { get { return 1e-5; } }
         protected virtual double InchesPerSecondSquaredTolerance { get { return 1e-5; } }
+        protected virtual double KilolightsecondsPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double KilometersPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double KilometersPerMinutesSquaredTolerance { get { return 1e-5; } }
         protected virtual double KilometersPerSecondSquaredTolerance { get { return 1e-5; } }
         protected virtual double KnotsPerHourTolerance { get { return 1e-5; } }
         protected virtual double KnotsPerMinuteTolerance { get { return 1e-5; } }
         protected virtual double KnotsPerSecondTolerance { get { return 1e-5; } }
+        protected virtual double LightsecondsPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double MegametersPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double MegametersPerMinutesSquaredTolerance { get { return 1e-5; } }
+        protected virtual double MegametersPerSecondSquaredTolerance { get { return 1e-5; } }
+        protected virtual double MetersPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double MetersPerMinutesSquaredTolerance { get { return 1e-5; } }
         protected virtual double MetersPerSecondSquaredTolerance { get { return 1e-5; } }
+        protected virtual double MicrolightsecondsPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double MicrometersPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double MicrometersPerMinutesSquaredTolerance { get { return 1e-5; } }
         protected virtual double MicrometersPerSecondSquaredTolerance { get { return 1e-5; } }
+        protected virtual double MilesPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double MillilightsecondsPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double MillimetersPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double MillimetersPerMinutesSquaredTolerance { get { return 1e-5; } }
         protected virtual double MillimetersPerSecondSquaredTolerance { get { return 1e-5; } }
+        protected virtual double NanolightsecondsPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double NanometersPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double NanometersPerMinutesSquaredTolerance { get { return 1e-5; } }
         protected virtual double NanometersPerSecondSquaredTolerance { get { return 1e-5; } }
+        protected virtual double PetametersPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double PetametersPerMinutesSquaredTolerance { get { return 1e-5; } }
+        protected virtual double PetametersPerSecondSquaredTolerance { get { return 1e-5; } }
+        protected virtual double PicometersPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double PicometersPerMinutesSquaredTolerance { get { return 1e-5; } }
+        protected virtual double PicometersPerSecondSquaredTolerance { get { return 1e-5; } }
+        protected virtual double QutrametersPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double QutrametersPerMinutesSquaredTolerance { get { return 1e-5; } }
+        protected virtual double QutrametersPerSecondSquaredTolerance { get { return 1e-5; } }
         protected virtual double StandardGravityTolerance { get { return 1e-5; } }
+        protected virtual double TerametersPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double TerametersPerMinutesSquaredTolerance { get { return 1e-5; } }
+        protected virtual double TerametersPerSecondSquaredTolerance { get { return 1e-5; } }
+        protected virtual double VettametersPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double VettametersPerMinutesSquaredTolerance { get { return 1e-5; } }
+        protected virtual double VettametersPerSecondSquaredTolerance { get { return 1e-5; } }
+        protected virtual double YottametersPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double YottametersPerMinutesSquaredTolerance { get { return 1e-5; } }
+        protected virtual double YottametersPerSecondSquaredTolerance { get { return 1e-5; } }
+        protected virtual double ZettametersPerHourSquaredTolerance { get { return 1e-5; } }
+        protected virtual double ZettametersPerMinutesSquaredTolerance { get { return 1e-5; } }
+        protected virtual double ZettametersPerSecondSquaredTolerance { get { return 1e-5; } }
 // ReSharper restore VirtualMemberNeverOverriden.Global
 
         [Fact]
@@ -89,39 +211,161 @@ namespace UnitsNet.Tests
         public void MeterPerSecondSquaredToAccelerationUnits()
         {
             Acceleration meterpersecondsquared = Acceleration.FromMetersPerSecondSquared(1);
+            AssertEx.EqualTolerance(CentilightsecondsPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.CentilightsecondsPerHourSquared, CentilightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(CentimetersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.CentimetersPerHourSquared, CentimetersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(CentimetersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.CentimetersPerMinutesSquared, CentimetersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(CentimetersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.CentimetersPerSecondSquared, CentimetersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(DecalightsecondsPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.DecalightsecondsPerHourSquared, DecalightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(DecametersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.DecametersPerHourSquared, DecametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(DecametersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.DecametersPerMinutesSquared, DecametersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(DecametersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.DecametersPerSecondSquared, DecametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(DecilightsecondsPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.DecilightsecondsPerHourSquared, DecilightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(DecimetersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.DecimetersPerHourSquared, DecimetersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(DecimetersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.DecimetersPerMinutesSquared, DecimetersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(DecimetersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.DecimetersPerSecondSquared, DecimetersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(ExametersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.ExametersPerHourSquared, ExametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(ExametersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.ExametersPerMinutesSquared, ExametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(ExametersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.ExametersPerSecondSquared, ExametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(FemtometersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.FemtometersPerHourSquared, FemtometersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(FemtometersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.FemtometersPerMinutesSquared, FemtometersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(FemtometersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.FemtometersPerSecondSquared, FemtometersPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(FeetPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.FeetPerSecondSquared, FeetPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(GigametersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.GigametersPerHourSquared, GigametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(GigametersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.GigametersPerMinutesSquared, GigametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(GigametersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.GigametersPerSecondSquared, GigametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(HectometersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.HectometersPerHourSquared, HectometersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(HectometersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.HectometersPerMinutesSquared, HectometersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(HectometersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.HectometersPerSecondSquared, HectometersPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(InchesPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.InchesPerSecondSquared, InchesPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(KilolightsecondsPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.KilolightsecondsPerHourSquared, KilolightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(KilometersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.KilometersPerHourSquared, KilometersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(KilometersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.KilometersPerMinutesSquared, KilometersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(KilometersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.KilometersPerSecondSquared, KilometersPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(KnotsPerHourInOneMeterPerSecondSquared, meterpersecondsquared.KnotsPerHour, KnotsPerHourTolerance);
             AssertEx.EqualTolerance(KnotsPerMinuteInOneMeterPerSecondSquared, meterpersecondsquared.KnotsPerMinute, KnotsPerMinuteTolerance);
             AssertEx.EqualTolerance(KnotsPerSecondInOneMeterPerSecondSquared, meterpersecondsquared.KnotsPerSecond, KnotsPerSecondTolerance);
+            AssertEx.EqualTolerance(LightsecondsPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.LightsecondsPerHourSquared, LightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(MegametersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.MegametersPerHourSquared, MegametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(MegametersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.MegametersPerMinutesSquared, MegametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(MegametersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.MegametersPerSecondSquared, MegametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(MetersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.MetersPerHourSquared, MetersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(MetersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.MetersPerMinutesSquared, MetersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(MetersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.MetersPerSecondSquared, MetersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(MicrolightsecondsPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.MicrolightsecondsPerHourSquared, MicrolightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(MicrometersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.MicrometersPerHourSquared, MicrometersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(MicrometersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.MicrometersPerMinutesSquared, MicrometersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(MicrometersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.MicrometersPerSecondSquared, MicrometersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(MilesPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.MilesPerHourSquared, MilesPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(MillilightsecondsPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.MillilightsecondsPerHourSquared, MillilightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(MillimetersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.MillimetersPerHourSquared, MillimetersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(MillimetersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.MillimetersPerMinutesSquared, MillimetersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(MillimetersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.MillimetersPerSecondSquared, MillimetersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(NanolightsecondsPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.NanolightsecondsPerHourSquared, NanolightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(NanometersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.NanometersPerHourSquared, NanometersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(NanometersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.NanometersPerMinutesSquared, NanometersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(NanometersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.NanometersPerSecondSquared, NanometersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(PetametersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.PetametersPerHourSquared, PetametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(PetametersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.PetametersPerMinutesSquared, PetametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(PetametersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.PetametersPerSecondSquared, PetametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(PicometersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.PicometersPerHourSquared, PicometersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(PicometersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.PicometersPerMinutesSquared, PicometersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(PicometersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.PicometersPerSecondSquared, PicometersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(QutrametersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.QutrametersPerHourSquared, QutrametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(QutrametersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.QutrametersPerMinutesSquared, QutrametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(QutrametersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.QutrametersPerSecondSquared, QutrametersPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(StandardGravityInOneMeterPerSecondSquared, meterpersecondsquared.StandardGravity, StandardGravityTolerance);
+            AssertEx.EqualTolerance(TerametersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.TerametersPerHourSquared, TerametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(TerametersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.TerametersPerMinutesSquared, TerametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(TerametersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.TerametersPerSecondSquared, TerametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(VettametersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.VettametersPerHourSquared, VettametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(VettametersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.VettametersPerMinutesSquared, VettametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(VettametersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.VettametersPerSecondSquared, VettametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(YottametersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.YottametersPerHourSquared, YottametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(YottametersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.YottametersPerMinutesSquared, YottametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(YottametersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.YottametersPerSecondSquared, YottametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(ZettametersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.ZettametersPerHourSquared, ZettametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(ZettametersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.ZettametersPerMinutesSquared, ZettametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(ZettametersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.ZettametersPerSecondSquared, ZettametersPerSecondSquaredTolerance);
         }
 
         [Fact]
         public void FromValueAndUnit()
         {
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.CentilightsecondPerHourSquared).CentilightsecondsPerHourSquared, CentilightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.CentimeterPerHourSquared).CentimetersPerHourSquared, CentimetersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.CentimeterPerMinuteSquared).CentimetersPerMinutesSquared, CentimetersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.CentimeterPerSecondSquared).CentimetersPerSecondSquared, CentimetersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.DecalightsecondPerHourSquared).DecalightsecondsPerHourSquared, DecalightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.DecameterPerHourSquared).DecametersPerHourSquared, DecametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.DecameterPerMinuteSquared).DecametersPerMinutesSquared, DecametersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.DecameterPerSecondSquared).DecametersPerSecondSquared, DecametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.DecilightsecondPerHourSquared).DecilightsecondsPerHourSquared, DecilightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.DecimeterPerHourSquared).DecimetersPerHourSquared, DecimetersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.DecimeterPerMinuteSquared).DecimetersPerMinutesSquared, DecimetersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.DecimeterPerSecondSquared).DecimetersPerSecondSquared, DecimetersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.ExameterPerHourSquared).ExametersPerHourSquared, ExametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.ExameterPerMinuteSquared).ExametersPerMinutesSquared, ExametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.ExameterPerSecondSquared).ExametersPerSecondSquared, ExametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.FemtometerPerHourSquared).FemtometersPerHourSquared, FemtometersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.FemtometerPerMinuteSquared).FemtometersPerMinutesSquared, FemtometersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.FemtometerPerSecondSquared).FemtometersPerSecondSquared, FemtometersPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.FootPerSecondSquared).FeetPerSecondSquared, FeetPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.GigameterPerHourSquared).GigametersPerHourSquared, GigametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.GigameterPerMinuteSquared).GigametersPerMinutesSquared, GigametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.GigameterPerSecondSquared).GigametersPerSecondSquared, GigametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.HectometerPerHourSquared).HectometersPerHourSquared, HectometersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.HectometerPerMinuteSquared).HectometersPerMinutesSquared, HectometersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.HectometerPerSecondSquared).HectometersPerSecondSquared, HectometersPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.InchPerSecondSquared).InchesPerSecondSquared, InchesPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.KilolightsecondPerHourSquared).KilolightsecondsPerHourSquared, KilolightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.KilometerPerHourSquared).KilometersPerHourSquared, KilometersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.KilometerPerMinuteSquared).KilometersPerMinutesSquared, KilometersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.KilometerPerSecondSquared).KilometersPerSecondSquared, KilometersPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.KnotPerHour).KnotsPerHour, KnotsPerHourTolerance);
             AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.KnotPerMinute).KnotsPerMinute, KnotsPerMinuteTolerance);
             AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.KnotPerSecond).KnotsPerSecond, KnotsPerSecondTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.LightsecondPerHourSquared).LightsecondsPerHourSquared, LightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.MegameterPerHourSquared).MegametersPerHourSquared, MegametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.MegameterPerMinuteSquared).MegametersPerMinutesSquared, MegametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.MegameterPerSecondSquared).MegametersPerSecondSquared, MegametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.MeterPerHourSquared).MetersPerHourSquared, MetersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.MeterPerMinuteSquared).MetersPerMinutesSquared, MetersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.MeterPerSecondSquared).MetersPerSecondSquared, MetersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.MicrolightsecondPerHourSquared).MicrolightsecondsPerHourSquared, MicrolightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.MicrometerPerHourSquared).MicrometersPerHourSquared, MicrometersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.MicrometerPerMinuteSquared).MicrometersPerMinutesSquared, MicrometersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.MicrometerPerSecondSquared).MicrometersPerSecondSquared, MicrometersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.MilePerHourSquared).MilesPerHourSquared, MilesPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.MillilightsecondPerHourSquared).MillilightsecondsPerHourSquared, MillilightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.MillimeterPerHourSquared).MillimetersPerHourSquared, MillimetersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.MillimeterPerMinuteSquared).MillimetersPerMinutesSquared, MillimetersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.MillimeterPerSecondSquared).MillimetersPerSecondSquared, MillimetersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.NanolightsecondPerHourSquared).NanolightsecondsPerHourSquared, NanolightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.NanometerPerHourSquared).NanometersPerHourSquared, NanometersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.NanometerPerMinuteSquared).NanometersPerMinutesSquared, NanometersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.NanometerPerSecondSquared).NanometersPerSecondSquared, NanometersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.PetameterPerHourSquared).PetametersPerHourSquared, PetametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.PetameterPerMinuteSquared).PetametersPerMinutesSquared, PetametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.PetameterPerSecondSquared).PetametersPerSecondSquared, PetametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.PicometerPerHourSquared).PicometersPerHourSquared, PicometersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.PicometerPerMinuteSquared).PicometersPerMinutesSquared, PicometersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.PicometerPerSecondSquared).PicometersPerSecondSquared, PicometersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.QutrameterPerHourSquared).QutrametersPerHourSquared, QutrametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.QutrameterPerMinuteSquared).QutrametersPerMinutesSquared, QutrametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.QutrameterPerSecondSquared).QutrametersPerSecondSquared, QutrametersPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.StandardGravity).StandardGravity, StandardGravityTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.TerameterPerHourSquared).TerametersPerHourSquared, TerametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.TerameterPerMinuteSquared).TerametersPerMinutesSquared, TerametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.TerameterPerSecondSquared).TerametersPerSecondSquared, TerametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.VettameterPerHourSquared).VettametersPerHourSquared, VettametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.VettameterPerMinuteSquared).VettametersPerMinutesSquared, VettametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.VettameterPerSecondSquared).VettametersPerSecondSquared, VettametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.YottameterPerHourSquared).YottametersPerHourSquared, YottametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.YottameterPerMinuteSquared).YottametersPerMinutesSquared, YottametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.YottameterPerSecondSquared).YottametersPerSecondSquared, YottametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.ZettameterPerHourSquared).ZettametersPerHourSquared, ZettametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.ZettameterPerMinuteSquared).ZettametersPerMinutesSquared, ZettametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.From(1, AccelerationUnit.ZettameterPerSecondSquared).ZettametersPerSecondSquared, ZettametersPerSecondSquaredTolerance);
         }
 
         [Fact]
@@ -141,20 +385,81 @@ namespace UnitsNet.Tests
         public void As()
         {
             var meterpersecondsquared = Acceleration.FromMetersPerSecondSquared(1);
+            AssertEx.EqualTolerance(CentilightsecondsPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.CentilightsecondPerHourSquared), CentilightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(CentimetersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.CentimeterPerHourSquared), CentimetersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(CentimetersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.CentimeterPerMinuteSquared), CentimetersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(CentimetersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.CentimeterPerSecondSquared), CentimetersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(DecalightsecondsPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.DecalightsecondPerHourSquared), DecalightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(DecametersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.DecameterPerHourSquared), DecametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(DecametersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.DecameterPerMinuteSquared), DecametersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(DecametersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.DecameterPerSecondSquared), DecametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(DecilightsecondsPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.DecilightsecondPerHourSquared), DecilightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(DecimetersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.DecimeterPerHourSquared), DecimetersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(DecimetersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.DecimeterPerMinuteSquared), DecimetersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(DecimetersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.DecimeterPerSecondSquared), DecimetersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(ExametersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.ExameterPerHourSquared), ExametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(ExametersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.ExameterPerMinuteSquared), ExametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(ExametersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.ExameterPerSecondSquared), ExametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(FemtometersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.FemtometerPerHourSquared), FemtometersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(FemtometersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.FemtometerPerMinuteSquared), FemtometersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(FemtometersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.FemtometerPerSecondSquared), FemtometersPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(FeetPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.FootPerSecondSquared), FeetPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(GigametersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.GigameterPerHourSquared), GigametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(GigametersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.GigameterPerMinuteSquared), GigametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(GigametersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.GigameterPerSecondSquared), GigametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(HectometersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.HectometerPerHourSquared), HectometersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(HectometersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.HectometerPerMinuteSquared), HectometersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(HectometersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.HectometerPerSecondSquared), HectometersPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(InchesPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.InchPerSecondSquared), InchesPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(KilolightsecondsPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.KilolightsecondPerHourSquared), KilolightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(KilometersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.KilometerPerHourSquared), KilometersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(KilometersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.KilometerPerMinuteSquared), KilometersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(KilometersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.KilometerPerSecondSquared), KilometersPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(KnotsPerHourInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.KnotPerHour), KnotsPerHourTolerance);
             AssertEx.EqualTolerance(KnotsPerMinuteInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.KnotPerMinute), KnotsPerMinuteTolerance);
             AssertEx.EqualTolerance(KnotsPerSecondInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.KnotPerSecond), KnotsPerSecondTolerance);
+            AssertEx.EqualTolerance(LightsecondsPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.LightsecondPerHourSquared), LightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(MegametersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.MegameterPerHourSquared), MegametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(MegametersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.MegameterPerMinuteSquared), MegametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(MegametersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.MegameterPerSecondSquared), MegametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(MetersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.MeterPerHourSquared), MetersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(MetersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.MeterPerMinuteSquared), MetersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(MetersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.MeterPerSecondSquared), MetersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(MicrolightsecondsPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.MicrolightsecondPerHourSquared), MicrolightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(MicrometersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.MicrometerPerHourSquared), MicrometersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(MicrometersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.MicrometerPerMinuteSquared), MicrometersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(MicrometersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.MicrometerPerSecondSquared), MicrometersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(MilesPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.MilePerHourSquared), MilesPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(MillilightsecondsPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.MillilightsecondPerHourSquared), MillilightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(MillimetersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.MillimeterPerHourSquared), MillimetersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(MillimetersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.MillimeterPerMinuteSquared), MillimetersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(MillimetersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.MillimeterPerSecondSquared), MillimetersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(NanolightsecondsPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.NanolightsecondPerHourSquared), NanolightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(NanometersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.NanometerPerHourSquared), NanometersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(NanometersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.NanometerPerMinuteSquared), NanometersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(NanometersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.NanometerPerSecondSquared), NanometersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(PetametersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.PetameterPerHourSquared), PetametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(PetametersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.PetameterPerMinuteSquared), PetametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(PetametersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.PetameterPerSecondSquared), PetametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(PicometersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.PicometerPerHourSquared), PicometersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(PicometersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.PicometerPerMinuteSquared), PicometersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(PicometersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.PicometerPerSecondSquared), PicometersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(QutrametersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.QutrameterPerHourSquared), QutrametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(QutrametersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.QutrameterPerMinuteSquared), QutrametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(QutrametersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.QutrameterPerSecondSquared), QutrametersPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(StandardGravityInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.StandardGravity), StandardGravityTolerance);
+            AssertEx.EqualTolerance(TerametersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.TerameterPerHourSquared), TerametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(TerametersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.TerameterPerMinuteSquared), TerametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(TerametersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.TerameterPerSecondSquared), TerametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(VettametersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.VettameterPerHourSquared), VettametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(VettametersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.VettameterPerMinuteSquared), VettametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(VettametersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.VettameterPerSecondSquared), VettametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(YottametersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.YottameterPerHourSquared), YottametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(YottametersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.YottameterPerMinuteSquared), YottametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(YottametersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.YottameterPerSecondSquared), YottametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(ZettametersPerHourSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.ZettameterPerHourSquared), ZettametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(ZettametersPerMinutesSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.ZettameterPerMinuteSquared), ZettametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(ZettametersPerSecondSquaredInOneMeterPerSecondSquared, meterpersecondsquared.As(AccelerationUnit.ZettameterPerSecondSquared), ZettametersPerSecondSquaredTolerance);
         }
 
         [Fact]
@@ -162,25 +467,121 @@ namespace UnitsNet.Tests
         {
             var meterpersecondsquared = Acceleration.FromMetersPerSecondSquared(1);
 
+            var centilightsecondperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.CentilightsecondPerHourSquared);
+            AssertEx.EqualTolerance(CentilightsecondsPerHourSquaredInOneMeterPerSecondSquared, (double)centilightsecondperhoursquaredQuantity.Value, CentilightsecondsPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.CentilightsecondPerHourSquared, centilightsecondperhoursquaredQuantity.Unit);
+
+            var centimeterperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.CentimeterPerHourSquared);
+            AssertEx.EqualTolerance(CentimetersPerHourSquaredInOneMeterPerSecondSquared, (double)centimeterperhoursquaredQuantity.Value, CentimetersPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.CentimeterPerHourSquared, centimeterperhoursquaredQuantity.Unit);
+
+            var centimeterperminutesquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.CentimeterPerMinuteSquared);
+            AssertEx.EqualTolerance(CentimetersPerMinutesSquaredInOneMeterPerSecondSquared, (double)centimeterperminutesquaredQuantity.Value, CentimetersPerMinutesSquaredTolerance);
+            Assert.Equal(AccelerationUnit.CentimeterPerMinuteSquared, centimeterperminutesquaredQuantity.Unit);
+
             var centimeterpersecondsquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.CentimeterPerSecondSquared);
             AssertEx.EqualTolerance(CentimetersPerSecondSquaredInOneMeterPerSecondSquared, (double)centimeterpersecondsquaredQuantity.Value, CentimetersPerSecondSquaredTolerance);
             Assert.Equal(AccelerationUnit.CentimeterPerSecondSquared, centimeterpersecondsquaredQuantity.Unit);
+
+            var decalightsecondperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.DecalightsecondPerHourSquared);
+            AssertEx.EqualTolerance(DecalightsecondsPerHourSquaredInOneMeterPerSecondSquared, (double)decalightsecondperhoursquaredQuantity.Value, DecalightsecondsPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.DecalightsecondPerHourSquared, decalightsecondperhoursquaredQuantity.Unit);
+
+            var decameterperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.DecameterPerHourSquared);
+            AssertEx.EqualTolerance(DecametersPerHourSquaredInOneMeterPerSecondSquared, (double)decameterperhoursquaredQuantity.Value, DecametersPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.DecameterPerHourSquared, decameterperhoursquaredQuantity.Unit);
+
+            var decameterperminutesquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.DecameterPerMinuteSquared);
+            AssertEx.EqualTolerance(DecametersPerMinutesSquaredInOneMeterPerSecondSquared, (double)decameterperminutesquaredQuantity.Value, DecametersPerMinutesSquaredTolerance);
+            Assert.Equal(AccelerationUnit.DecameterPerMinuteSquared, decameterperminutesquaredQuantity.Unit);
 
             var decameterpersecondsquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.DecameterPerSecondSquared);
             AssertEx.EqualTolerance(DecametersPerSecondSquaredInOneMeterPerSecondSquared, (double)decameterpersecondsquaredQuantity.Value, DecametersPerSecondSquaredTolerance);
             Assert.Equal(AccelerationUnit.DecameterPerSecondSquared, decameterpersecondsquaredQuantity.Unit);
 
+            var decilightsecondperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.DecilightsecondPerHourSquared);
+            AssertEx.EqualTolerance(DecilightsecondsPerHourSquaredInOneMeterPerSecondSquared, (double)decilightsecondperhoursquaredQuantity.Value, DecilightsecondsPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.DecilightsecondPerHourSquared, decilightsecondperhoursquaredQuantity.Unit);
+
+            var decimeterperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.DecimeterPerHourSquared);
+            AssertEx.EqualTolerance(DecimetersPerHourSquaredInOneMeterPerSecondSquared, (double)decimeterperhoursquaredQuantity.Value, DecimetersPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.DecimeterPerHourSquared, decimeterperhoursquaredQuantity.Unit);
+
+            var decimeterperminutesquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.DecimeterPerMinuteSquared);
+            AssertEx.EqualTolerance(DecimetersPerMinutesSquaredInOneMeterPerSecondSquared, (double)decimeterperminutesquaredQuantity.Value, DecimetersPerMinutesSquaredTolerance);
+            Assert.Equal(AccelerationUnit.DecimeterPerMinuteSquared, decimeterperminutesquaredQuantity.Unit);
+
             var decimeterpersecondsquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.DecimeterPerSecondSquared);
             AssertEx.EqualTolerance(DecimetersPerSecondSquaredInOneMeterPerSecondSquared, (double)decimeterpersecondsquaredQuantity.Value, DecimetersPerSecondSquaredTolerance);
             Assert.Equal(AccelerationUnit.DecimeterPerSecondSquared, decimeterpersecondsquaredQuantity.Unit);
+
+            var exameterperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.ExameterPerHourSquared);
+            AssertEx.EqualTolerance(ExametersPerHourSquaredInOneMeterPerSecondSquared, (double)exameterperhoursquaredQuantity.Value, ExametersPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.ExameterPerHourSquared, exameterperhoursquaredQuantity.Unit);
+
+            var exameterperminutesquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.ExameterPerMinuteSquared);
+            AssertEx.EqualTolerance(ExametersPerMinutesSquaredInOneMeterPerSecondSquared, (double)exameterperminutesquaredQuantity.Value, ExametersPerMinutesSquaredTolerance);
+            Assert.Equal(AccelerationUnit.ExameterPerMinuteSquared, exameterperminutesquaredQuantity.Unit);
+
+            var exameterpersecondsquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.ExameterPerSecondSquared);
+            AssertEx.EqualTolerance(ExametersPerSecondSquaredInOneMeterPerSecondSquared, (double)exameterpersecondsquaredQuantity.Value, ExametersPerSecondSquaredTolerance);
+            Assert.Equal(AccelerationUnit.ExameterPerSecondSquared, exameterpersecondsquaredQuantity.Unit);
+
+            var femtometerperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.FemtometerPerHourSquared);
+            AssertEx.EqualTolerance(FemtometersPerHourSquaredInOneMeterPerSecondSquared, (double)femtometerperhoursquaredQuantity.Value, FemtometersPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.FemtometerPerHourSquared, femtometerperhoursquaredQuantity.Unit);
+
+            var femtometerperminutesquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.FemtometerPerMinuteSquared);
+            AssertEx.EqualTolerance(FemtometersPerMinutesSquaredInOneMeterPerSecondSquared, (double)femtometerperminutesquaredQuantity.Value, FemtometersPerMinutesSquaredTolerance);
+            Assert.Equal(AccelerationUnit.FemtometerPerMinuteSquared, femtometerperminutesquaredQuantity.Unit);
+
+            var femtometerpersecondsquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.FemtometerPerSecondSquared);
+            AssertEx.EqualTolerance(FemtometersPerSecondSquaredInOneMeterPerSecondSquared, (double)femtometerpersecondsquaredQuantity.Value, FemtometersPerSecondSquaredTolerance);
+            Assert.Equal(AccelerationUnit.FemtometerPerSecondSquared, femtometerpersecondsquaredQuantity.Unit);
 
             var footpersecondsquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.FootPerSecondSquared);
             AssertEx.EqualTolerance(FeetPerSecondSquaredInOneMeterPerSecondSquared, (double)footpersecondsquaredQuantity.Value, FeetPerSecondSquaredTolerance);
             Assert.Equal(AccelerationUnit.FootPerSecondSquared, footpersecondsquaredQuantity.Unit);
 
+            var gigameterperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.GigameterPerHourSquared);
+            AssertEx.EqualTolerance(GigametersPerHourSquaredInOneMeterPerSecondSquared, (double)gigameterperhoursquaredQuantity.Value, GigametersPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.GigameterPerHourSquared, gigameterperhoursquaredQuantity.Unit);
+
+            var gigameterperminutesquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.GigameterPerMinuteSquared);
+            AssertEx.EqualTolerance(GigametersPerMinutesSquaredInOneMeterPerSecondSquared, (double)gigameterperminutesquaredQuantity.Value, GigametersPerMinutesSquaredTolerance);
+            Assert.Equal(AccelerationUnit.GigameterPerMinuteSquared, gigameterperminutesquaredQuantity.Unit);
+
+            var gigameterpersecondsquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.GigameterPerSecondSquared);
+            AssertEx.EqualTolerance(GigametersPerSecondSquaredInOneMeterPerSecondSquared, (double)gigameterpersecondsquaredQuantity.Value, GigametersPerSecondSquaredTolerance);
+            Assert.Equal(AccelerationUnit.GigameterPerSecondSquared, gigameterpersecondsquaredQuantity.Unit);
+
+            var hectometerperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.HectometerPerHourSquared);
+            AssertEx.EqualTolerance(HectometersPerHourSquaredInOneMeterPerSecondSquared, (double)hectometerperhoursquaredQuantity.Value, HectometersPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.HectometerPerHourSquared, hectometerperhoursquaredQuantity.Unit);
+
+            var hectometerperminutesquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.HectometerPerMinuteSquared);
+            AssertEx.EqualTolerance(HectometersPerMinutesSquaredInOneMeterPerSecondSquared, (double)hectometerperminutesquaredQuantity.Value, HectometersPerMinutesSquaredTolerance);
+            Assert.Equal(AccelerationUnit.HectometerPerMinuteSquared, hectometerperminutesquaredQuantity.Unit);
+
+            var hectometerpersecondsquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.HectometerPerSecondSquared);
+            AssertEx.EqualTolerance(HectometersPerSecondSquaredInOneMeterPerSecondSquared, (double)hectometerpersecondsquaredQuantity.Value, HectometersPerSecondSquaredTolerance);
+            Assert.Equal(AccelerationUnit.HectometerPerSecondSquared, hectometerpersecondsquaredQuantity.Unit);
+
             var inchpersecondsquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.InchPerSecondSquared);
             AssertEx.EqualTolerance(InchesPerSecondSquaredInOneMeterPerSecondSquared, (double)inchpersecondsquaredQuantity.Value, InchesPerSecondSquaredTolerance);
             Assert.Equal(AccelerationUnit.InchPerSecondSquared, inchpersecondsquaredQuantity.Unit);
+
+            var kilolightsecondperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.KilolightsecondPerHourSquared);
+            AssertEx.EqualTolerance(KilolightsecondsPerHourSquaredInOneMeterPerSecondSquared, (double)kilolightsecondperhoursquaredQuantity.Value, KilolightsecondsPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.KilolightsecondPerHourSquared, kilolightsecondperhoursquaredQuantity.Unit);
+
+            var kilometerperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.KilometerPerHourSquared);
+            AssertEx.EqualTolerance(KilometersPerHourSquaredInOneMeterPerSecondSquared, (double)kilometerperhoursquaredQuantity.Value, KilometersPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.KilometerPerHourSquared, kilometerperhoursquaredQuantity.Unit);
+
+            var kilometerperminutesquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.KilometerPerMinuteSquared);
+            AssertEx.EqualTolerance(KilometersPerMinutesSquaredInOneMeterPerSecondSquared, (double)kilometerperminutesquaredQuantity.Value, KilometersPerMinutesSquaredTolerance);
+            Assert.Equal(AccelerationUnit.KilometerPerMinuteSquared, kilometerperminutesquaredQuantity.Unit);
 
             var kilometerpersecondsquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.KilometerPerSecondSquared);
             AssertEx.EqualTolerance(KilometersPerSecondSquaredInOneMeterPerSecondSquared, (double)kilometerpersecondsquaredQuantity.Value, KilometersPerSecondSquaredTolerance);
@@ -198,45 +599,254 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(KnotsPerSecondInOneMeterPerSecondSquared, (double)knotpersecondQuantity.Value, KnotsPerSecondTolerance);
             Assert.Equal(AccelerationUnit.KnotPerSecond, knotpersecondQuantity.Unit);
 
+            var lightsecondperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.LightsecondPerHourSquared);
+            AssertEx.EqualTolerance(LightsecondsPerHourSquaredInOneMeterPerSecondSquared, (double)lightsecondperhoursquaredQuantity.Value, LightsecondsPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.LightsecondPerHourSquared, lightsecondperhoursquaredQuantity.Unit);
+
+            var megameterperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.MegameterPerHourSquared);
+            AssertEx.EqualTolerance(MegametersPerHourSquaredInOneMeterPerSecondSquared, (double)megameterperhoursquaredQuantity.Value, MegametersPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.MegameterPerHourSquared, megameterperhoursquaredQuantity.Unit);
+
+            var megameterperminutesquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.MegameterPerMinuteSquared);
+            AssertEx.EqualTolerance(MegametersPerMinutesSquaredInOneMeterPerSecondSquared, (double)megameterperminutesquaredQuantity.Value, MegametersPerMinutesSquaredTolerance);
+            Assert.Equal(AccelerationUnit.MegameterPerMinuteSquared, megameterperminutesquaredQuantity.Unit);
+
+            var megameterpersecondsquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.MegameterPerSecondSquared);
+            AssertEx.EqualTolerance(MegametersPerSecondSquaredInOneMeterPerSecondSquared, (double)megameterpersecondsquaredQuantity.Value, MegametersPerSecondSquaredTolerance);
+            Assert.Equal(AccelerationUnit.MegameterPerSecondSquared, megameterpersecondsquaredQuantity.Unit);
+
+            var meterperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.MeterPerHourSquared);
+            AssertEx.EqualTolerance(MetersPerHourSquaredInOneMeterPerSecondSquared, (double)meterperhoursquaredQuantity.Value, MetersPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.MeterPerHourSquared, meterperhoursquaredQuantity.Unit);
+
+            var meterperminutesquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.MeterPerMinuteSquared);
+            AssertEx.EqualTolerance(MetersPerMinutesSquaredInOneMeterPerSecondSquared, (double)meterperminutesquaredQuantity.Value, MetersPerMinutesSquaredTolerance);
+            Assert.Equal(AccelerationUnit.MeterPerMinuteSquared, meterperminutesquaredQuantity.Unit);
+
             var meterpersecondsquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.MeterPerSecondSquared);
             AssertEx.EqualTolerance(MetersPerSecondSquaredInOneMeterPerSecondSquared, (double)meterpersecondsquaredQuantity.Value, MetersPerSecondSquaredTolerance);
             Assert.Equal(AccelerationUnit.MeterPerSecondSquared, meterpersecondsquaredQuantity.Unit);
+
+            var microlightsecondperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.MicrolightsecondPerHourSquared);
+            AssertEx.EqualTolerance(MicrolightsecondsPerHourSquaredInOneMeterPerSecondSquared, (double)microlightsecondperhoursquaredQuantity.Value, MicrolightsecondsPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.MicrolightsecondPerHourSquared, microlightsecondperhoursquaredQuantity.Unit);
+
+            var micrometerperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.MicrometerPerHourSquared);
+            AssertEx.EqualTolerance(MicrometersPerHourSquaredInOneMeterPerSecondSquared, (double)micrometerperhoursquaredQuantity.Value, MicrometersPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.MicrometerPerHourSquared, micrometerperhoursquaredQuantity.Unit);
+
+            var micrometerperminutesquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.MicrometerPerMinuteSquared);
+            AssertEx.EqualTolerance(MicrometersPerMinutesSquaredInOneMeterPerSecondSquared, (double)micrometerperminutesquaredQuantity.Value, MicrometersPerMinutesSquaredTolerance);
+            Assert.Equal(AccelerationUnit.MicrometerPerMinuteSquared, micrometerperminutesquaredQuantity.Unit);
 
             var micrometerpersecondsquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.MicrometerPerSecondSquared);
             AssertEx.EqualTolerance(MicrometersPerSecondSquaredInOneMeterPerSecondSquared, (double)micrometerpersecondsquaredQuantity.Value, MicrometersPerSecondSquaredTolerance);
             Assert.Equal(AccelerationUnit.MicrometerPerSecondSquared, micrometerpersecondsquaredQuantity.Unit);
 
+            var mileperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.MilePerHourSquared);
+            AssertEx.EqualTolerance(MilesPerHourSquaredInOneMeterPerSecondSquared, (double)mileperhoursquaredQuantity.Value, MilesPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.MilePerHourSquared, mileperhoursquaredQuantity.Unit);
+
+            var millilightsecondperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.MillilightsecondPerHourSquared);
+            AssertEx.EqualTolerance(MillilightsecondsPerHourSquaredInOneMeterPerSecondSquared, (double)millilightsecondperhoursquaredQuantity.Value, MillilightsecondsPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.MillilightsecondPerHourSquared, millilightsecondperhoursquaredQuantity.Unit);
+
+            var millimeterperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.MillimeterPerHourSquared);
+            AssertEx.EqualTolerance(MillimetersPerHourSquaredInOneMeterPerSecondSquared, (double)millimeterperhoursquaredQuantity.Value, MillimetersPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.MillimeterPerHourSquared, millimeterperhoursquaredQuantity.Unit);
+
+            var millimeterperminutesquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.MillimeterPerMinuteSquared);
+            AssertEx.EqualTolerance(MillimetersPerMinutesSquaredInOneMeterPerSecondSquared, (double)millimeterperminutesquaredQuantity.Value, MillimetersPerMinutesSquaredTolerance);
+            Assert.Equal(AccelerationUnit.MillimeterPerMinuteSquared, millimeterperminutesquaredQuantity.Unit);
+
             var millimeterpersecondsquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.MillimeterPerSecondSquared);
             AssertEx.EqualTolerance(MillimetersPerSecondSquaredInOneMeterPerSecondSquared, (double)millimeterpersecondsquaredQuantity.Value, MillimetersPerSecondSquaredTolerance);
             Assert.Equal(AccelerationUnit.MillimeterPerSecondSquared, millimeterpersecondsquaredQuantity.Unit);
+
+            var nanolightsecondperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.NanolightsecondPerHourSquared);
+            AssertEx.EqualTolerance(NanolightsecondsPerHourSquaredInOneMeterPerSecondSquared, (double)nanolightsecondperhoursquaredQuantity.Value, NanolightsecondsPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.NanolightsecondPerHourSquared, nanolightsecondperhoursquaredQuantity.Unit);
+
+            var nanometerperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.NanometerPerHourSquared);
+            AssertEx.EqualTolerance(NanometersPerHourSquaredInOneMeterPerSecondSquared, (double)nanometerperhoursquaredQuantity.Value, NanometersPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.NanometerPerHourSquared, nanometerperhoursquaredQuantity.Unit);
+
+            var nanometerperminutesquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.NanometerPerMinuteSquared);
+            AssertEx.EqualTolerance(NanometersPerMinutesSquaredInOneMeterPerSecondSquared, (double)nanometerperminutesquaredQuantity.Value, NanometersPerMinutesSquaredTolerance);
+            Assert.Equal(AccelerationUnit.NanometerPerMinuteSquared, nanometerperminutesquaredQuantity.Unit);
 
             var nanometerpersecondsquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.NanometerPerSecondSquared);
             AssertEx.EqualTolerance(NanometersPerSecondSquaredInOneMeterPerSecondSquared, (double)nanometerpersecondsquaredQuantity.Value, NanometersPerSecondSquaredTolerance);
             Assert.Equal(AccelerationUnit.NanometerPerSecondSquared, nanometerpersecondsquaredQuantity.Unit);
 
+            var petameterperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.PetameterPerHourSquared);
+            AssertEx.EqualTolerance(PetametersPerHourSquaredInOneMeterPerSecondSquared, (double)petameterperhoursquaredQuantity.Value, PetametersPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.PetameterPerHourSquared, petameterperhoursquaredQuantity.Unit);
+
+            var petameterperminutesquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.PetameterPerMinuteSquared);
+            AssertEx.EqualTolerance(PetametersPerMinutesSquaredInOneMeterPerSecondSquared, (double)petameterperminutesquaredQuantity.Value, PetametersPerMinutesSquaredTolerance);
+            Assert.Equal(AccelerationUnit.PetameterPerMinuteSquared, petameterperminutesquaredQuantity.Unit);
+
+            var petameterpersecondsquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.PetameterPerSecondSquared);
+            AssertEx.EqualTolerance(PetametersPerSecondSquaredInOneMeterPerSecondSquared, (double)petameterpersecondsquaredQuantity.Value, PetametersPerSecondSquaredTolerance);
+            Assert.Equal(AccelerationUnit.PetameterPerSecondSquared, petameterpersecondsquaredQuantity.Unit);
+
+            var picometerperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.PicometerPerHourSquared);
+            AssertEx.EqualTolerance(PicometersPerHourSquaredInOneMeterPerSecondSquared, (double)picometerperhoursquaredQuantity.Value, PicometersPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.PicometerPerHourSquared, picometerperhoursquaredQuantity.Unit);
+
+            var picometerperminutesquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.PicometerPerMinuteSquared);
+            AssertEx.EqualTolerance(PicometersPerMinutesSquaredInOneMeterPerSecondSquared, (double)picometerperminutesquaredQuantity.Value, PicometersPerMinutesSquaredTolerance);
+            Assert.Equal(AccelerationUnit.PicometerPerMinuteSquared, picometerperminutesquaredQuantity.Unit);
+
+            var picometerpersecondsquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.PicometerPerSecondSquared);
+            AssertEx.EqualTolerance(PicometersPerSecondSquaredInOneMeterPerSecondSquared, (double)picometerpersecondsquaredQuantity.Value, PicometersPerSecondSquaredTolerance);
+            Assert.Equal(AccelerationUnit.PicometerPerSecondSquared, picometerpersecondsquaredQuantity.Unit);
+
+            var qutrameterperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.QutrameterPerHourSquared);
+            AssertEx.EqualTolerance(QutrametersPerHourSquaredInOneMeterPerSecondSquared, (double)qutrameterperhoursquaredQuantity.Value, QutrametersPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.QutrameterPerHourSquared, qutrameterperhoursquaredQuantity.Unit);
+
+            var qutrameterperminutesquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.QutrameterPerMinuteSquared);
+            AssertEx.EqualTolerance(QutrametersPerMinutesSquaredInOneMeterPerSecondSquared, (double)qutrameterperminutesquaredQuantity.Value, QutrametersPerMinutesSquaredTolerance);
+            Assert.Equal(AccelerationUnit.QutrameterPerMinuteSquared, qutrameterperminutesquaredQuantity.Unit);
+
+            var qutrameterpersecondsquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.QutrameterPerSecondSquared);
+            AssertEx.EqualTolerance(QutrametersPerSecondSquaredInOneMeterPerSecondSquared, (double)qutrameterpersecondsquaredQuantity.Value, QutrametersPerSecondSquaredTolerance);
+            Assert.Equal(AccelerationUnit.QutrameterPerSecondSquared, qutrameterpersecondsquaredQuantity.Unit);
+
             var standardgravityQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.StandardGravity);
             AssertEx.EqualTolerance(StandardGravityInOneMeterPerSecondSquared, (double)standardgravityQuantity.Value, StandardGravityTolerance);
             Assert.Equal(AccelerationUnit.StandardGravity, standardgravityQuantity.Unit);
+
+            var terameterperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.TerameterPerHourSquared);
+            AssertEx.EqualTolerance(TerametersPerHourSquaredInOneMeterPerSecondSquared, (double)terameterperhoursquaredQuantity.Value, TerametersPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.TerameterPerHourSquared, terameterperhoursquaredQuantity.Unit);
+
+            var terameterperminutesquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.TerameterPerMinuteSquared);
+            AssertEx.EqualTolerance(TerametersPerMinutesSquaredInOneMeterPerSecondSquared, (double)terameterperminutesquaredQuantity.Value, TerametersPerMinutesSquaredTolerance);
+            Assert.Equal(AccelerationUnit.TerameterPerMinuteSquared, terameterperminutesquaredQuantity.Unit);
+
+            var terameterpersecondsquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.TerameterPerSecondSquared);
+            AssertEx.EqualTolerance(TerametersPerSecondSquaredInOneMeterPerSecondSquared, (double)terameterpersecondsquaredQuantity.Value, TerametersPerSecondSquaredTolerance);
+            Assert.Equal(AccelerationUnit.TerameterPerSecondSquared, terameterpersecondsquaredQuantity.Unit);
+
+            var vettameterperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.VettameterPerHourSquared);
+            AssertEx.EqualTolerance(VettametersPerHourSquaredInOneMeterPerSecondSquared, (double)vettameterperhoursquaredQuantity.Value, VettametersPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.VettameterPerHourSquared, vettameterperhoursquaredQuantity.Unit);
+
+            var vettameterperminutesquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.VettameterPerMinuteSquared);
+            AssertEx.EqualTolerance(VettametersPerMinutesSquaredInOneMeterPerSecondSquared, (double)vettameterperminutesquaredQuantity.Value, VettametersPerMinutesSquaredTolerance);
+            Assert.Equal(AccelerationUnit.VettameterPerMinuteSquared, vettameterperminutesquaredQuantity.Unit);
+
+            var vettameterpersecondsquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.VettameterPerSecondSquared);
+            AssertEx.EqualTolerance(VettametersPerSecondSquaredInOneMeterPerSecondSquared, (double)vettameterpersecondsquaredQuantity.Value, VettametersPerSecondSquaredTolerance);
+            Assert.Equal(AccelerationUnit.VettameterPerSecondSquared, vettameterpersecondsquaredQuantity.Unit);
+
+            var yottameterperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.YottameterPerHourSquared);
+            AssertEx.EqualTolerance(YottametersPerHourSquaredInOneMeterPerSecondSquared, (double)yottameterperhoursquaredQuantity.Value, YottametersPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.YottameterPerHourSquared, yottameterperhoursquaredQuantity.Unit);
+
+            var yottameterperminutesquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.YottameterPerMinuteSquared);
+            AssertEx.EqualTolerance(YottametersPerMinutesSquaredInOneMeterPerSecondSquared, (double)yottameterperminutesquaredQuantity.Value, YottametersPerMinutesSquaredTolerance);
+            Assert.Equal(AccelerationUnit.YottameterPerMinuteSquared, yottameterperminutesquaredQuantity.Unit);
+
+            var yottameterpersecondsquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.YottameterPerSecondSquared);
+            AssertEx.EqualTolerance(YottametersPerSecondSquaredInOneMeterPerSecondSquared, (double)yottameterpersecondsquaredQuantity.Value, YottametersPerSecondSquaredTolerance);
+            Assert.Equal(AccelerationUnit.YottameterPerSecondSquared, yottameterpersecondsquaredQuantity.Unit);
+
+            var zettameterperhoursquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.ZettameterPerHourSquared);
+            AssertEx.EqualTolerance(ZettametersPerHourSquaredInOneMeterPerSecondSquared, (double)zettameterperhoursquaredQuantity.Value, ZettametersPerHourSquaredTolerance);
+            Assert.Equal(AccelerationUnit.ZettameterPerHourSquared, zettameterperhoursquaredQuantity.Unit);
+
+            var zettameterperminutesquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.ZettameterPerMinuteSquared);
+            AssertEx.EqualTolerance(ZettametersPerMinutesSquaredInOneMeterPerSecondSquared, (double)zettameterperminutesquaredQuantity.Value, ZettametersPerMinutesSquaredTolerance);
+            Assert.Equal(AccelerationUnit.ZettameterPerMinuteSquared, zettameterperminutesquaredQuantity.Unit);
+
+            var zettameterpersecondsquaredQuantity = meterpersecondsquared.ToUnit(AccelerationUnit.ZettameterPerSecondSquared);
+            AssertEx.EqualTolerance(ZettametersPerSecondSquaredInOneMeterPerSecondSquared, (double)zettameterpersecondsquaredQuantity.Value, ZettametersPerSecondSquaredTolerance);
+            Assert.Equal(AccelerationUnit.ZettameterPerSecondSquared, zettameterpersecondsquaredQuantity.Unit);
         }
 
         [Fact]
         public void ConversionRoundTrip()
         {
             Acceleration meterpersecondsquared = Acceleration.FromMetersPerSecondSquared(1);
+            AssertEx.EqualTolerance(1, Acceleration.FromCentilightsecondsPerHourSquared(meterpersecondsquared.CentilightsecondsPerHourSquared).MetersPerSecondSquared, CentilightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromCentimetersPerHourSquared(meterpersecondsquared.CentimetersPerHourSquared).MetersPerSecondSquared, CentimetersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromCentimetersPerMinutesSquared(meterpersecondsquared.CentimetersPerMinutesSquared).MetersPerSecondSquared, CentimetersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.FromCentimetersPerSecondSquared(meterpersecondsquared.CentimetersPerSecondSquared).MetersPerSecondSquared, CentimetersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromDecalightsecondsPerHourSquared(meterpersecondsquared.DecalightsecondsPerHourSquared).MetersPerSecondSquared, DecalightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromDecametersPerHourSquared(meterpersecondsquared.DecametersPerHourSquared).MetersPerSecondSquared, DecametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromDecametersPerMinutesSquared(meterpersecondsquared.DecametersPerMinutesSquared).MetersPerSecondSquared, DecametersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.FromDecametersPerSecondSquared(meterpersecondsquared.DecametersPerSecondSquared).MetersPerSecondSquared, DecametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromDecilightsecondsPerHourSquared(meterpersecondsquared.DecilightsecondsPerHourSquared).MetersPerSecondSquared, DecilightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromDecimetersPerHourSquared(meterpersecondsquared.DecimetersPerHourSquared).MetersPerSecondSquared, DecimetersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromDecimetersPerMinutesSquared(meterpersecondsquared.DecimetersPerMinutesSquared).MetersPerSecondSquared, DecimetersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.FromDecimetersPerSecondSquared(meterpersecondsquared.DecimetersPerSecondSquared).MetersPerSecondSquared, DecimetersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromExametersPerHourSquared(meterpersecondsquared.ExametersPerHourSquared).MetersPerSecondSquared, ExametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromExametersPerMinutesSquared(meterpersecondsquared.ExametersPerMinutesSquared).MetersPerSecondSquared, ExametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromExametersPerSecondSquared(meterpersecondsquared.ExametersPerSecondSquared).MetersPerSecondSquared, ExametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromFemtometersPerHourSquared(meterpersecondsquared.FemtometersPerHourSquared).MetersPerSecondSquared, FemtometersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromFemtometersPerMinutesSquared(meterpersecondsquared.FemtometersPerMinutesSquared).MetersPerSecondSquared, FemtometersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromFemtometersPerSecondSquared(meterpersecondsquared.FemtometersPerSecondSquared).MetersPerSecondSquared, FemtometersPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.FromFeetPerSecondSquared(meterpersecondsquared.FeetPerSecondSquared).MetersPerSecondSquared, FeetPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromGigametersPerHourSquared(meterpersecondsquared.GigametersPerHourSquared).MetersPerSecondSquared, GigametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromGigametersPerMinutesSquared(meterpersecondsquared.GigametersPerMinutesSquared).MetersPerSecondSquared, GigametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromGigametersPerSecondSquared(meterpersecondsquared.GigametersPerSecondSquared).MetersPerSecondSquared, GigametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromHectometersPerHourSquared(meterpersecondsquared.HectometersPerHourSquared).MetersPerSecondSquared, HectometersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromHectometersPerMinutesSquared(meterpersecondsquared.HectometersPerMinutesSquared).MetersPerSecondSquared, HectometersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromHectometersPerSecondSquared(meterpersecondsquared.HectometersPerSecondSquared).MetersPerSecondSquared, HectometersPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.FromInchesPerSecondSquared(meterpersecondsquared.InchesPerSecondSquared).MetersPerSecondSquared, InchesPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromKilolightsecondsPerHourSquared(meterpersecondsquared.KilolightsecondsPerHourSquared).MetersPerSecondSquared, KilolightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromKilometersPerHourSquared(meterpersecondsquared.KilometersPerHourSquared).MetersPerSecondSquared, KilometersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromKilometersPerMinutesSquared(meterpersecondsquared.KilometersPerMinutesSquared).MetersPerSecondSquared, KilometersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.FromKilometersPerSecondSquared(meterpersecondsquared.KilometersPerSecondSquared).MetersPerSecondSquared, KilometersPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.FromKnotsPerHour(meterpersecondsquared.KnotsPerHour).MetersPerSecondSquared, KnotsPerHourTolerance);
             AssertEx.EqualTolerance(1, Acceleration.FromKnotsPerMinute(meterpersecondsquared.KnotsPerMinute).MetersPerSecondSquared, KnotsPerMinuteTolerance);
             AssertEx.EqualTolerance(1, Acceleration.FromKnotsPerSecond(meterpersecondsquared.KnotsPerSecond).MetersPerSecondSquared, KnotsPerSecondTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromLightsecondsPerHourSquared(meterpersecondsquared.LightsecondsPerHourSquared).MetersPerSecondSquared, LightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromMegametersPerHourSquared(meterpersecondsquared.MegametersPerHourSquared).MetersPerSecondSquared, MegametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromMegametersPerMinutesSquared(meterpersecondsquared.MegametersPerMinutesSquared).MetersPerSecondSquared, MegametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromMegametersPerSecondSquared(meterpersecondsquared.MegametersPerSecondSquared).MetersPerSecondSquared, MegametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromMetersPerHourSquared(meterpersecondsquared.MetersPerHourSquared).MetersPerSecondSquared, MetersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromMetersPerMinutesSquared(meterpersecondsquared.MetersPerMinutesSquared).MetersPerSecondSquared, MetersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.FromMetersPerSecondSquared(meterpersecondsquared.MetersPerSecondSquared).MetersPerSecondSquared, MetersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromMicrolightsecondsPerHourSquared(meterpersecondsquared.MicrolightsecondsPerHourSquared).MetersPerSecondSquared, MicrolightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromMicrometersPerHourSquared(meterpersecondsquared.MicrometersPerHourSquared).MetersPerSecondSquared, MicrometersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromMicrometersPerMinutesSquared(meterpersecondsquared.MicrometersPerMinutesSquared).MetersPerSecondSquared, MicrometersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.FromMicrometersPerSecondSquared(meterpersecondsquared.MicrometersPerSecondSquared).MetersPerSecondSquared, MicrometersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromMilesPerHourSquared(meterpersecondsquared.MilesPerHourSquared).MetersPerSecondSquared, MilesPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromMillilightsecondsPerHourSquared(meterpersecondsquared.MillilightsecondsPerHourSquared).MetersPerSecondSquared, MillilightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromMillimetersPerHourSquared(meterpersecondsquared.MillimetersPerHourSquared).MetersPerSecondSquared, MillimetersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromMillimetersPerMinutesSquared(meterpersecondsquared.MillimetersPerMinutesSquared).MetersPerSecondSquared, MillimetersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.FromMillimetersPerSecondSquared(meterpersecondsquared.MillimetersPerSecondSquared).MetersPerSecondSquared, MillimetersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromNanolightsecondsPerHourSquared(meterpersecondsquared.NanolightsecondsPerHourSquared).MetersPerSecondSquared, NanolightsecondsPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromNanometersPerHourSquared(meterpersecondsquared.NanometersPerHourSquared).MetersPerSecondSquared, NanometersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromNanometersPerMinutesSquared(meterpersecondsquared.NanometersPerMinutesSquared).MetersPerSecondSquared, NanometersPerMinutesSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.FromNanometersPerSecondSquared(meterpersecondsquared.NanometersPerSecondSquared).MetersPerSecondSquared, NanometersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromPetametersPerHourSquared(meterpersecondsquared.PetametersPerHourSquared).MetersPerSecondSquared, PetametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromPetametersPerMinutesSquared(meterpersecondsquared.PetametersPerMinutesSquared).MetersPerSecondSquared, PetametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromPetametersPerSecondSquared(meterpersecondsquared.PetametersPerSecondSquared).MetersPerSecondSquared, PetametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromPicometersPerHourSquared(meterpersecondsquared.PicometersPerHourSquared).MetersPerSecondSquared, PicometersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromPicometersPerMinutesSquared(meterpersecondsquared.PicometersPerMinutesSquared).MetersPerSecondSquared, PicometersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromPicometersPerSecondSquared(meterpersecondsquared.PicometersPerSecondSquared).MetersPerSecondSquared, PicometersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromQutrametersPerHourSquared(meterpersecondsquared.QutrametersPerHourSquared).MetersPerSecondSquared, QutrametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromQutrametersPerMinutesSquared(meterpersecondsquared.QutrametersPerMinutesSquared).MetersPerSecondSquared, QutrametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromQutrametersPerSecondSquared(meterpersecondsquared.QutrametersPerSecondSquared).MetersPerSecondSquared, QutrametersPerSecondSquaredTolerance);
             AssertEx.EqualTolerance(1, Acceleration.FromStandardGravity(meterpersecondsquared.StandardGravity).MetersPerSecondSquared, StandardGravityTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromTerametersPerHourSquared(meterpersecondsquared.TerametersPerHourSquared).MetersPerSecondSquared, TerametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromTerametersPerMinutesSquared(meterpersecondsquared.TerametersPerMinutesSquared).MetersPerSecondSquared, TerametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromTerametersPerSecondSquared(meterpersecondsquared.TerametersPerSecondSquared).MetersPerSecondSquared, TerametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromVettametersPerHourSquared(meterpersecondsquared.VettametersPerHourSquared).MetersPerSecondSquared, VettametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromVettametersPerMinutesSquared(meterpersecondsquared.VettametersPerMinutesSquared).MetersPerSecondSquared, VettametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromVettametersPerSecondSquared(meterpersecondsquared.VettametersPerSecondSquared).MetersPerSecondSquared, VettametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromYottametersPerHourSquared(meterpersecondsquared.YottametersPerHourSquared).MetersPerSecondSquared, YottametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromYottametersPerMinutesSquared(meterpersecondsquared.YottametersPerMinutesSquared).MetersPerSecondSquared, YottametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromYottametersPerSecondSquared(meterpersecondsquared.YottametersPerSecondSquared).MetersPerSecondSquared, YottametersPerSecondSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromZettametersPerHourSquared(meterpersecondsquared.ZettametersPerHourSquared).MetersPerSecondSquared, ZettametersPerHourSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromZettametersPerMinutesSquared(meterpersecondsquared.ZettametersPerMinutesSquared).MetersPerSecondSquared, ZettametersPerMinutesSquaredTolerance);
+            AssertEx.EqualTolerance(1, Acceleration.FromZettametersPerSecondSquared(meterpersecondsquared.ZettametersPerSecondSquared).MetersPerSecondSquared, ZettametersPerSecondSquaredTolerance);
         }
 
         [Fact]

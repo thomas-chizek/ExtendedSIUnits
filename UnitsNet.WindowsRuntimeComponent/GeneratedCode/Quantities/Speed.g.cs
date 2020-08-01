@@ -156,6 +156,11 @@ namespace UnitsNet
         #region Conversion Properties
 
         /// <summary>
+        ///     Get Speed in CentilightsecondsPerHour.
+        /// </summary>
+        public double CentilightsecondsPerHour => As(SpeedUnit.CentilightsecondPerHour);
+
+        /// <summary>
         ///     Get Speed in CentimetersPerHour.
         /// </summary>
         public double CentimetersPerHour => As(SpeedUnit.CentimeterPerHour);
@@ -171,6 +176,11 @@ namespace UnitsNet
         public double CentimetersPerSecond => As(SpeedUnit.CentimeterPerSecond);
 
         /// <summary>
+        ///     Get Speed in DecalightsecondsPerHour.
+        /// </summary>
+        public double DecalightsecondsPerHour => As(SpeedUnit.DecalightsecondPerHour);
+
+        /// <summary>
         ///     Get Speed in DecametersPerHour.
         /// </summary>
         public double DecametersPerHour => As(SpeedUnit.DecameterPerHour);
@@ -184,6 +194,11 @@ namespace UnitsNet
         ///     Get Speed in DecametersPerSecond.
         /// </summary>
         public double DecametersPerSecond => As(SpeedUnit.DecameterPerSecond);
+
+        /// <summary>
+        ///     Get Speed in DecilightsecondsPerHour.
+        /// </summary>
+        public double DecilightsecondsPerHour => As(SpeedUnit.DecilightsecondPerHour);
 
         /// <summary>
         ///     Get Speed in DecimetersPerHour.
@@ -291,6 +306,11 @@ namespace UnitsNet
         public double InchesPerSecond => As(SpeedUnit.InchPerSecond);
 
         /// <summary>
+        ///     Get Speed in KilolightsecondsPerHour.
+        /// </summary>
+        public double KilolightsecondsPerHour => As(SpeedUnit.KilolightsecondPerHour);
+
+        /// <summary>
         ///     Get Speed in KilometersPerHour.
         /// </summary>
         public double KilometersPerHour => As(SpeedUnit.KilometerPerHour);
@@ -309,6 +329,11 @@ namespace UnitsNet
         ///     Get Speed in Knots.
         /// </summary>
         public double Knots => As(SpeedUnit.Knot);
+
+        /// <summary>
+        ///     Get Speed in LightsecondsPerHour.
+        /// </summary>
+        public double LightsecondsPerHour => As(SpeedUnit.LightsecondPerHour);
 
         /// <summary>
         ///     Get Speed in MegametersPerHour.
@@ -341,6 +366,11 @@ namespace UnitsNet
         public double MetersPerSecond => As(SpeedUnit.MeterPerSecond);
 
         /// <summary>
+        ///     Get Speed in MicrolightsecondsPerHour.
+        /// </summary>
+        public double MicrolightsecondsPerHour => As(SpeedUnit.MicrolightsecondPerHour);
+
+        /// <summary>
         ///     Get Speed in MicrometersPerHour.
         /// </summary>
         public double MicrometersPerHour => As(SpeedUnit.MicrometerPerHour);
@@ -361,6 +391,11 @@ namespace UnitsNet
         public double MilesPerHour => As(SpeedUnit.MilePerHour);
 
         /// <summary>
+        ///     Get Speed in MillilightsecondsPerHour.
+        /// </summary>
+        public double MillilightsecondsPerHour => As(SpeedUnit.MillilightsecondPerHour);
+
+        /// <summary>
         ///     Get Speed in MillimetersPerHour.
         /// </summary>
         public double MillimetersPerHour => As(SpeedUnit.MillimeterPerHour);
@@ -374,6 +409,11 @@ namespace UnitsNet
         ///     Get Speed in MillimetersPerSecond.
         /// </summary>
         public double MillimetersPerSecond => As(SpeedUnit.MillimeterPerSecond);
+
+        /// <summary>
+        ///     Get Speed in NanolightsecondsPerHour.
+        /// </summary>
+        public double NanolightsecondsPerHour => As(SpeedUnit.NanolightsecondPerHour);
 
         /// <summary>
         ///     Get Speed in NanometersPerHour.
@@ -556,6 +596,16 @@ namespace UnitsNet
         #region Static Factory Methods
 
         /// <summary>
+        ///     Get Speed from CentilightsecondsPerHour.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Speed FromCentilightsecondsPerHour(double centilightsecondsperhour)
+        {
+            double value = (double) centilightsecondsperhour;
+            return new Speed(value, SpeedUnit.CentilightsecondPerHour);
+        }
+        /// <summary>
         ///     Get Speed from CentimetersPerHour.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -586,6 +636,16 @@ namespace UnitsNet
             return new Speed(value, SpeedUnit.CentimeterPerSecond);
         }
         /// <summary>
+        ///     Get Speed from DecalightsecondsPerHour.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Speed FromDecalightsecondsPerHour(double decalightsecondsperhour)
+        {
+            double value = (double) decalightsecondsperhour;
+            return new Speed(value, SpeedUnit.DecalightsecondPerHour);
+        }
+        /// <summary>
         ///     Get Speed from DecametersPerHour.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -614,6 +674,16 @@ namespace UnitsNet
         {
             double value = (double) decameterspersecond;
             return new Speed(value, SpeedUnit.DecameterPerSecond);
+        }
+        /// <summary>
+        ///     Get Speed from DecilightsecondsPerHour.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Speed FromDecilightsecondsPerHour(double decilightsecondsperhour)
+        {
+            double value = (double) decilightsecondsperhour;
+            return new Speed(value, SpeedUnit.DecilightsecondPerHour);
         }
         /// <summary>
         ///     Get Speed from DecimetersPerHour.
@@ -826,6 +896,16 @@ namespace UnitsNet
             return new Speed(value, SpeedUnit.InchPerSecond);
         }
         /// <summary>
+        ///     Get Speed from KilolightsecondsPerHour.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Speed FromKilolightsecondsPerHour(double kilolightsecondsperhour)
+        {
+            double value = (double) kilolightsecondsperhour;
+            return new Speed(value, SpeedUnit.KilolightsecondPerHour);
+        }
+        /// <summary>
         ///     Get Speed from KilometersPerHour.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -864,6 +944,16 @@ namespace UnitsNet
         {
             double value = (double) knots;
             return new Speed(value, SpeedUnit.Knot);
+        }
+        /// <summary>
+        ///     Get Speed from LightsecondsPerHour.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Speed FromLightsecondsPerHour(double lightsecondsperhour)
+        {
+            double value = (double) lightsecondsperhour;
+            return new Speed(value, SpeedUnit.LightsecondPerHour);
         }
         /// <summary>
         ///     Get Speed from MegametersPerHour.
@@ -926,6 +1016,16 @@ namespace UnitsNet
             return new Speed(value, SpeedUnit.MeterPerSecond);
         }
         /// <summary>
+        ///     Get Speed from MicrolightsecondsPerHour.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Speed FromMicrolightsecondsPerHour(double microlightsecondsperhour)
+        {
+            double value = (double) microlightsecondsperhour;
+            return new Speed(value, SpeedUnit.MicrolightsecondPerHour);
+        }
+        /// <summary>
         ///     Get Speed from MicrometersPerHour.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -966,6 +1066,16 @@ namespace UnitsNet
             return new Speed(value, SpeedUnit.MilePerHour);
         }
         /// <summary>
+        ///     Get Speed from MillilightsecondsPerHour.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Speed FromMillilightsecondsPerHour(double millilightsecondsperhour)
+        {
+            double value = (double) millilightsecondsperhour;
+            return new Speed(value, SpeedUnit.MillilightsecondPerHour);
+        }
+        /// <summary>
         ///     Get Speed from MillimetersPerHour.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -994,6 +1104,16 @@ namespace UnitsNet
         {
             double value = (double) millimeterspersecond;
             return new Speed(value, SpeedUnit.MillimeterPerSecond);
+        }
+        /// <summary>
+        ///     Get Speed from NanolightsecondsPerHour.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Speed FromNanolightsecondsPerHour(double nanolightsecondsperhour)
+        {
+            double value = (double) nanolightsecondsperhour;
+            return new Speed(value, SpeedUnit.NanolightsecondPerHour);
         }
         /// <summary>
         ///     Get Speed from NanometersPerHour.
@@ -1586,12 +1706,15 @@ namespace UnitsNet
         {
             switch(Unit)
             {
+                case SpeedUnit.CentilightsecondPerHour: return (_value*1.2008e-5) * 1e-2d;
                 case SpeedUnit.CentimeterPerHour: return (_value/3600) * 1e-2d;
                 case SpeedUnit.CentimeterPerMinute: return (_value/60) * 1e-2d;
                 case SpeedUnit.CentimeterPerSecond: return (_value) * 1e-2d;
+                case SpeedUnit.DecalightsecondPerHour: return (_value*1.2008e-5) * 1e1d;
                 case SpeedUnit.DecameterPerHour: return (_value/3600) * 1e1d;
                 case SpeedUnit.DecameterPerMinute: return (_value/60) * 1e1d;
                 case SpeedUnit.DecameterPerSecond: return (_value) * 1e1d;
+                case SpeedUnit.DecilightsecondPerHour: return (_value*1.2008e-5) * 1e-1d;
                 case SpeedUnit.DecimeterPerHour: return (_value/3600) * 1e-1d;
                 case SpeedUnit.DecimeterPerMinute: return (_value/60) * 1e-1d;
                 case SpeedUnit.DecimeterPerSecond: return (_value) * 1e-1d;
@@ -1613,23 +1736,28 @@ namespace UnitsNet
                 case SpeedUnit.InchPerHour: return (_value/3600)*2.54e-2;
                 case SpeedUnit.InchPerMinute: return (_value/60)*2.54e-2;
                 case SpeedUnit.InchPerSecond: return _value*2.54e-2;
+                case SpeedUnit.KilolightsecondPerHour: return (_value*1.2008e-5) * 1e3d;
                 case SpeedUnit.KilometerPerHour: return (_value/3600) * 1e3d;
                 case SpeedUnit.KilometerPerMinute: return (_value/60) * 1e3d;
                 case SpeedUnit.KilometerPerSecond: return (_value) * 1e3d;
                 case SpeedUnit.Knot: return _value*0.514444;
+                case SpeedUnit.LightsecondPerHour: return _value*1.2008e-5;
                 case SpeedUnit.MegameterPerHour: return (_value/3600) * 1e6d;
                 case SpeedUnit.MegameterPerMinute: return (_value/60) * 1e6d;
                 case SpeedUnit.MegameterPerSecond: return (_value) * 1e6d;
                 case SpeedUnit.MeterPerHour: return _value/3600;
                 case SpeedUnit.MeterPerMinute: return _value/60;
                 case SpeedUnit.MeterPerSecond: return _value;
+                case SpeedUnit.MicrolightsecondPerHour: return (_value*1.2008e-5) * 1e-6d;
                 case SpeedUnit.MicrometerPerHour: return (_value/3600) * 1e-6d;
                 case SpeedUnit.MicrometerPerMinute: return (_value/60) * 1e-6d;
                 case SpeedUnit.MicrometerPerSecond: return (_value) * 1e-6d;
                 case SpeedUnit.MilePerHour: return _value*0.44704;
+                case SpeedUnit.MillilightsecondPerHour: return (_value*1.2008e-5) * 1e-3d;
                 case SpeedUnit.MillimeterPerHour: return (_value/3600) * 1e-3d;
                 case SpeedUnit.MillimeterPerMinute: return (_value/60) * 1e-3d;
                 case SpeedUnit.MillimeterPerSecond: return (_value) * 1e-3d;
+                case SpeedUnit.NanolightsecondPerHour: return (_value*1.2008e-5) * 1e-9d;
                 case SpeedUnit.NanometerPerHour: return (_value/3600) * 1e-9d;
                 case SpeedUnit.NanometerPerMinute: return (_value/60) * 1e-9d;
                 case SpeedUnit.NanometerPerSecond: return (_value) * 1e-9d;
@@ -1674,12 +1802,15 @@ namespace UnitsNet
 
             switch(unit)
             {
+                case SpeedUnit.CentilightsecondPerHour: return (baseUnitValue/1.2008e-5) / 1e-2d;
                 case SpeedUnit.CentimeterPerHour: return (baseUnitValue*3600) / 1e-2d;
                 case SpeedUnit.CentimeterPerMinute: return (baseUnitValue*60) / 1e-2d;
                 case SpeedUnit.CentimeterPerSecond: return (baseUnitValue) / 1e-2d;
+                case SpeedUnit.DecalightsecondPerHour: return (baseUnitValue/1.2008e-5) / 1e1d;
                 case SpeedUnit.DecameterPerHour: return (baseUnitValue*3600) / 1e1d;
                 case SpeedUnit.DecameterPerMinute: return (baseUnitValue*60) / 1e1d;
                 case SpeedUnit.DecameterPerSecond: return (baseUnitValue) / 1e1d;
+                case SpeedUnit.DecilightsecondPerHour: return (baseUnitValue/1.2008e-5) / 1e-1d;
                 case SpeedUnit.DecimeterPerHour: return (baseUnitValue*3600) / 1e-1d;
                 case SpeedUnit.DecimeterPerMinute: return (baseUnitValue*60) / 1e-1d;
                 case SpeedUnit.DecimeterPerSecond: return (baseUnitValue) / 1e-1d;
@@ -1701,23 +1832,28 @@ namespace UnitsNet
                 case SpeedUnit.InchPerHour: return (baseUnitValue/2.54e-2)*3600;
                 case SpeedUnit.InchPerMinute: return (baseUnitValue/2.54e-2)*60;
                 case SpeedUnit.InchPerSecond: return baseUnitValue/2.54e-2;
+                case SpeedUnit.KilolightsecondPerHour: return (baseUnitValue/1.2008e-5) / 1e3d;
                 case SpeedUnit.KilometerPerHour: return (baseUnitValue*3600) / 1e3d;
                 case SpeedUnit.KilometerPerMinute: return (baseUnitValue*60) / 1e3d;
                 case SpeedUnit.KilometerPerSecond: return (baseUnitValue) / 1e3d;
                 case SpeedUnit.Knot: return baseUnitValue/0.514444;
+                case SpeedUnit.LightsecondPerHour: return baseUnitValue/1.2008e-5;
                 case SpeedUnit.MegameterPerHour: return (baseUnitValue*3600) / 1e6d;
                 case SpeedUnit.MegameterPerMinute: return (baseUnitValue*60) / 1e6d;
                 case SpeedUnit.MegameterPerSecond: return (baseUnitValue) / 1e6d;
                 case SpeedUnit.MeterPerHour: return baseUnitValue*3600;
                 case SpeedUnit.MeterPerMinute: return baseUnitValue*60;
                 case SpeedUnit.MeterPerSecond: return baseUnitValue;
+                case SpeedUnit.MicrolightsecondPerHour: return (baseUnitValue/1.2008e-5) / 1e-6d;
                 case SpeedUnit.MicrometerPerHour: return (baseUnitValue*3600) / 1e-6d;
                 case SpeedUnit.MicrometerPerMinute: return (baseUnitValue*60) / 1e-6d;
                 case SpeedUnit.MicrometerPerSecond: return (baseUnitValue) / 1e-6d;
                 case SpeedUnit.MilePerHour: return baseUnitValue/0.44704;
+                case SpeedUnit.MillilightsecondPerHour: return (baseUnitValue/1.2008e-5) / 1e-3d;
                 case SpeedUnit.MillimeterPerHour: return (baseUnitValue*3600) / 1e-3d;
                 case SpeedUnit.MillimeterPerMinute: return (baseUnitValue*60) / 1e-3d;
                 case SpeedUnit.MillimeterPerSecond: return (baseUnitValue) / 1e-3d;
+                case SpeedUnit.NanolightsecondPerHour: return (baseUnitValue/1.2008e-5) / 1e-9d;
                 case SpeedUnit.NanometerPerHour: return (baseUnitValue*3600) / 1e-9d;
                 case SpeedUnit.NanometerPerMinute: return (baseUnitValue*60) / 1e-9d;
                 case SpeedUnit.NanometerPerSecond: return (baseUnitValue) / 1e-9d;

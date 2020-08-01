@@ -2,6 +2,7 @@
 // Copyright 2013 Andreas Gullberg Larsen (andreas.larsen84@gmail.com). Maintained at https://github.com/angularsen/UnitsNet.
 
 using Xunit;
+using UnitsNet.Tests.Helpers;
 using UnitsNet.Units;
 using System;
 
@@ -49,14 +50,17 @@ namespace UnitsNet.Tests.CustomCode
         protected override double VettametersInOneMeter => 1e-30;
 
 
-        protected override double MicrolightSecondsInOneMeter => 3.33564e-3;
-        protected override double MillilightSecondsInOneMeter => 3.33564e-6;
-        protected override double LightSecondsInOneMeter => 3.33564e-9;
-        protected override double DecalightSecondsInOneMeter => 3.33564e-10;
-        protected override double KilolightSecondsInOneMeter => 3.33564e-12;
-        protected override double MegalightSecondsInOneMeter => 3.33564e-15;
-        protected override double GigalightSecondsInOneMeter => 3.33564e-18;
-        protected override double TeralightSecondsInOneMeter => 3.33564e-21;
+        protected override double MicrolightsecondsInOneMeter => 3.33564e-3;
+        protected override double MillilightsecondsInOneMeter => 3.33564e-6;
+        protected override double CentilightsecondsInOneMeter => 3.33564e-7;
+        protected override double DecilightsecondsInOneMeter => 3.33564e-8;
+        protected override double LightsecondsInOneMeter => 3.33564e-9;
+        protected override double DecalightsecondsInOneMeter => 3.33564e-10;
+        protected override double HectolightsecondsInOneMeter => 3.33564e-11;
+        protected override double KilolightsecondsInOneMeter => 3.33564e-12;
+        protected override double MegalightsecondsInOneMeter => 3.33564e-15;
+        protected override double GigalightsecondsInOneMeter => 3.33564e-18;
+        protected override double TeralightsecondsInOneMeter => 3.33564e-21;
 
         protected override double MicroinchesInOneMeter => 39370078.74015748;
 
@@ -80,62 +84,94 @@ namespace UnitsNet.Tests.CustomCode
 
 
 
-        protected override double MicrolightYearsInOneMeter => 1.057e-10;
-        protected override double MillilightYearsInOneMeter => 1.057e-13;
-        protected override double LightYearsInOneMeter => 1.057e-16;
-        protected override double DecalightYearsInOneMeter => 1.057e-17;
-        protected override double KilolightYearsInOneMeter => 1.057e-19;
-        protected override double MegalightYearsInOneMeter => 1.057e-22;
-        protected override double GigalightYearsInOneMeter => 1.057e-25;
-        protected override double TeralightYearsInOneMeter => 1.057e-28;
-        protected override double PetalightYearsInOneMeter => 1.057e-31;
-        protected override double ExalightYearsInOneMeter => 1.057e-34;
-        protected override double ZettalightYearsInOneMeter => 1.057e-37;
-        protected override double YottalightYearsInOneMeter => 1.057e-40;
+        protected override double MicrolightyearsInOneMeter => 1.057e-10;
+        protected override double MillilightyearsInOneMeter => 1.057e-13;
+        protected override double CentilightyearsInOneMeter => 1.057e-14;
+        protected override double DecilightyearsInOneMeter => 1.057e-15;
+        protected override double LightyearsInOneMeter => 1.057e-16;
+        protected override double DecalightyearsInOneMeter => 1.057e-17;
+        protected override double HectolightyearsInOneMeter => 1.057e-18;
+        protected override double KilolightyearsInOneMeter => 1.057e-19;
+        protected override double MegalightyearsInOneMeter => 1.057e-22;
+        protected override double GigalightyearsInOneMeter => 1.057e-25;
+        protected override double TeralightyearsInOneMeter => 1.057e-28;
+        protected override double PetalightyearsInOneMeter => 1.057e-31;
+        protected override double ExalightyearsInOneMeter => 1.057e-34;
+        protected override double ZettalightyearsInOneMeter => 1.057e-37;
+        protected override double YottalightyearsInOneMeter => 1.057e-40;
 
 
 
 
         protected override double MicroaUsInOneMeter => 6.6844919e-6;
         protected override double MilliaUsInOneMeter => 6.6844919e-9;
+        protected override double CentiaUsInOneMeter => 6.6844919e-10;
+        protected override double DeciaUsInOneMeter => 6.6844919e-11;
         protected override double AUsInOneMeter => 6.6844919e-12;
         protected override double DecaaUsInOneMeter => 6.6844919e-13;
+        protected override double HectoaUsInOneMeter => 6.6844919e-14;
         protected override double KiloaUsInOneMeter => 6.6844919e-15;
         protected override double MegaaUsInOneMeter => 6.6844919e-18;
         protected override double GigaaUsInOneMeter => 6.6844919e-21;
         protected override double TeraaUsInOneMeter => 6.6844919e-24;
 
 
-        protected override double MicrolightMinutesInOneMeter => 5.5586436909e-5;
-        protected override double MillilightMinutesInOneMeter => 5.5586436909e-8;
-        protected override double LightMinutesInOneMeter => 5.5586436909e-11;
-        protected override double DecalightMinutesInOneMeter => 5.5586436909e-12;
-        protected override double KilolightMinutesInOneMeter => 5.5586436909e-14;
-        protected override double MegalightMinutesInOneMeter => 5.5586436909e-17;
-        protected override double GigalightMinutesInOneMeter => 5.5586436909e-20;
-        protected override double TeralightMinutesInOneMeter => 5.5586436909e-23;
+        protected override double MicrolightminutesInOneMeter => 5.5586436909e-5;
+        protected override double MillilightminutesInOneMeter => 5.5586436909e-8;
+        protected override double CentilightminutesInOneMeter => 5.5586436909e-9;
+        protected override double DecilightminutesInOneMeter => 5.5586436909e-10;
+        protected override double LightminutesInOneMeter => 5.5586436909e-11;
+        protected override double DecalightminutesInOneMeter => 5.5586436909e-12;
+        protected override double HectolightminutesInOneMeter => 5.5586436909e-13;
+        protected override double KilolightminutesInOneMeter => 5.5586436909e-14;
+        protected override double MegalightminutesInOneMeter => 5.5586436909e-17;
+        protected override double GigalightminutesInOneMeter => 5.5586436909e-20;
+        protected override double TeralightminutesInOneMeter => 5.5586436909e-23;
 
 
-        protected override double MicrolightHoursInOneMeter => 9.26784059e-7;
-        protected override double MillilightHoursInOneMeter => 9.26784059e-10;
-        protected override double LightHoursInOneMeter => 9.26784059e-13;
-        protected override double DecalightHoursInOneMeter => 9.26784059e-14;
-        protected override double KilolightHoursInOneMeter => 9.26784059e-16;
-        protected override double MegalightHoursInOneMeter => 9.26784059e-19;
-        protected override double GigalightHoursInOneMeter => 9.26784059e-22;
-        protected override double TeralightHoursInOneMeter => 9.26784059e-25;
+        protected override double MicrolighthoursInOneMeter => 9.26784059e-7;
+        protected override double MillilighthoursInOneMeter => 9.26784059e-10;
+        protected override double CentilighthoursInOneMeter => 9.26784059e-11;
+        protected override double DecilighthoursInOneMeter => 9.26784059e-12;
+        protected override double LighthoursInOneMeter => 9.26784059e-13;
+        protected override double DecalighthoursInOneMeter => 9.26784059e-14;
+        protected override double HectolighthoursInOneMeter => 9.26784059e-15;
+        protected override double KilolighthoursInOneMeter => 9.26784059e-16;
+        protected override double MegalighthoursInOneMeter => 9.26784059e-19;
+        protected override double GigalighthoursInOneMeter => 9.26784059e-22;
+        protected override double TeralighthoursInOneMeter => 9.26784059e-25;
 
 
-        protected override double MicrolightDaysInOneMeter => 3.8610038e-8;
-        protected override double MillilightDaysInOneMeter => 3.8610038e-11;
-        protected override double LightDaysInOneMeter => 3.8610038e-14;
-        protected override double DecalightDaysInOneMeter => 3.8610038e-15;
-        protected override double KilolightDaysInOneMeter => 3.8610038e-17;
-        protected override double MegalightDaysInOneMeter => 3.8610038e-20;
-        protected override double GigalightDaysInOneMeter => 3.8610038e-23;
-        protected override double TeralightDaysInOneMeter => 3.8610038e-26;
+        protected override double MicrolightdaysInOneMeter => 3.8610038e-8;
+        protected override double MillilightdaysInOneMeter => 3.8610038e-11;
+        protected override double CentilightdaysInOneMeter => 3.8610038e-12;
+        protected override double DecilightdaysInOneMeter => 3.8610038e-13;
+        protected override double LightdaysInOneMeter => 3.8610038e-14;
+        protected override double DecalightdaysInOneMeter => 3.8610038e-15;
+        protected override double HectolightdaysInOneMeter => 3.8610038e-16;
+        protected override double KilolightdaysInOneMeter => 3.8610038e-17;
+        protected override double MegalightdaysInOneMeter => 3.8610038e-20;
+        protected override double GigalightdaysInOneMeter => 3.8610038e-23;
+        protected override double TeralightdaysInOneMeter => 3.8610038e-26;
 
 
+
+
+        protected override double MicroparsecsInOneMeter => PrefixMultipliers.Apply(ParsecsInOneMeter, Prefix.micro);
+        protected override double MilliparsecsInOneMeter => PrefixMultipliers.Apply(ParsecsInOneMeter, Prefix.milli);
+        protected override double CentiparsecsInOneMeter => PrefixMultipliers.Apply(ParsecsInOneMeter, Prefix.ceni);
+        protected override double DeciparsecsInOneMeter => PrefixMultipliers.Apply(ParsecsInOneMeter, Prefix.deci);
+        protected override double ParsecsInOneMeter => 3.24034590442863E-17;
+        protected override double DecaparsecsInOneMeter => PrefixMultipliers.Apply(ParsecsInOneMeter, Prefix.deca);
+        protected override double HectoparsecsInOneMeter => PrefixMultipliers.Apply(ParsecsInOneMeter, Prefix.hecto);
+        protected override double KiloparsecsInOneMeter => PrefixMultipliers.Apply(ParsecsInOneMeter, Prefix.kilo);
+        protected override double TeraparsecsInOneMeter => PrefixMultipliers.Apply(ParsecsInOneMeter, Prefix.tera);
+        protected override double MegaparsecsInOneMeter => PrefixMultipliers.Apply(ParsecsInOneMeter, Prefix.mega);
+        protected override double GigaparsecsInOneMeter => PrefixMultipliers.Apply(ParsecsInOneMeter, Prefix.giga);
+        protected override double PetaparsecsInOneMeter => PrefixMultipliers.Apply(ParsecsInOneMeter, Prefix.peta);
+        protected override double ExaparsecsInOneMeter => PrefixMultipliers.Apply(ParsecsInOneMeter, Prefix.exa);
+        protected override double ZettaparsecsInOneMeter => PrefixMultipliers.Apply(ParsecsInOneMeter, Prefix.zetta);
+        protected override double YottaparsecsInOneMeter => PrefixMultipliers.Apply(ParsecsInOneMeter, Prefix.yotta);
 
         [ Fact]
         public void AreaTimesLengthEqualsVolume()

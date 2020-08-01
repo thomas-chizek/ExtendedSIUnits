@@ -18,7 +18,7 @@
 
   <!-- Assembly and msbuild properties -->
   <PropertyGroup>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion> <!-- Should reflect major part of Version -->
+    <AssemblyVersion>4.0.24.20210</AssemblyVersion> <!-- Should reflect major part of Version -->
     <LangVersion>7.3</LangVersion>
     <RootNamespace>UnitsNet.Serialization.JsonNet</RootNamespace>
     <TargetFrameworks>netstandard2.0;net40</TargetFrameworks>
@@ -37,18 +37,19 @@
     <AssemblyOriginatorKeyFile>../UnitsNet.snk</AssemblyOriginatorKeyFile>
     <DelaySign>false</DelaySign>
     <SignAssembly>true</SignAssembly>
+    <FileVersion>4.0.24.20210</FileVersion>
   </PropertyGroup>
 
   <!-- NuGet references that work for both signed and unsigned -->
   <ItemGroup>
     <PackageReference Include="JetBrains.Annotations" Version="10.4.0" PrivateAssets="All" />
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta-63127-02" PrivateAssets="All"/>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta-63127-02" PrivateAssets="All" />
     <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
   </ItemGroup>
-
-  <!-- Project references, will also generate the corresponding nuget dependencies -->
   <ItemGroup>
     <ProjectReference Include="..\UnitsNet\UnitsNet.csproj" />
   </ItemGroup>
+
+  <!-- Project references, will also generate the corresponding nuget dependencies -->
 
 </Project>

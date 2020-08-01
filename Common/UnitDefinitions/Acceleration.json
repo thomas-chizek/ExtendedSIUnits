@@ -16,11 +16,45 @@
       },
       "FromUnitToBaseFunc": "x",
       "FromBaseToUnitFunc": "x",
-      "Prefixes": [ "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Kilo" ],
+      "Prefixes": [ "Femto", "Pico", "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta", "Qutra", "Vetta" ],
       "Localization": [
         {
           "Culture": "en-US",
           "Abbreviations": [ "m/s²" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "MeterPerMinuteSquared",
+      "PluralName": "MetersPerMinutesSquared",
+      "BaseUnits": {
+        "L": "Meter",
+        "T": "Minute"
+      },
+      "FromUnitToBaseFunc": "x/60",
+      "FromBaseToUnitFunc": "x*60",
+      "Prefixes": [ "Femto", "Pico", "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta", "Qutra", "Vetta" ],
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "m/min²" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "MeterPerHourSquared",
+      "PluralName": "MetersPerHourSquared",
+      "BaseUnits": {
+        "L": "Meter",
+        "T": "Hour"
+      },
+      "FromUnitToBaseFunc": "x/3600",
+      "FromBaseToUnitFunc": "x*3600",
+      "Prefixes": [ "Femto", "Pico", "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta", "Qutra", "Vetta" ],
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "m/h²" ]
         }
       ]
     },
@@ -52,7 +86,7 @@
       "Localization": [
         {
           "Culture": "en-US",
-          "Abbreviations": [ "ft/s²" ]
+          "Abbreviations": [ "ft/s²²" ]
         }
       ]
     },
@@ -68,7 +102,7 @@
       "Localization": [
         {
           "Culture": "en-US",
-          "Abbreviations": [ "kn/s" ]
+          "Abbreviations": [ "kn/s²" ]
         }
       ]
     },
@@ -84,7 +118,7 @@
       "Localization": [
         {
           "Culture": "en-US",
-          "Abbreviations": [ "kn/min" ]
+          "Abbreviations": [ "kn/min²" ]
         }
       ]
     },
@@ -100,7 +134,7 @@
       "Localization": [
         {
           "Culture": "en-US",
-          "Abbreviations": [ "kn/h" ]
+          "Abbreviations": [ "kn/h²" ]
         }
       ]
     },
@@ -117,6 +151,39 @@
         {
           "Culture": "en-US",
           "Abbreviations": [ "g" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "MilePerHourSquared",
+      "PluralName": "MilesPerHourSquared",
+      "BaseUnits": {
+        "L": "Mile",
+        "T": "Hour"
+      },
+      "FromUnitToBaseFunc": "x*0.44704",
+      "FromBaseToUnitFunc": "x/0.44704",
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "mph²" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "LightsecondPerHourSquared",
+      "PluralName": "LightsecondsPerHourSquared",
+      "BaseUnits": {
+        "L": "Lightsecond",
+        "T": "Hour"
+      },
+      "FromUnitToBaseFunc": "x*1.2008e-5",
+      "FromBaseToUnitFunc": "x/1.2008e-5",
+      "Prefixes": [ "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Kilo" ],
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "ls/h", "ls/h²" ]
         }
       ]
     }

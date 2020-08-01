@@ -125,8 +125,18 @@ namespace UnitsNet
     ///     Units.Length Length { get; set; }
     /// </code>
     /// </example>
-    public class QuantityTypeConverter<TQuantity> : TypeConverter where TQuantity : IQuantity
+    public class QuantityTypeConverter<TQuantity> : TypeConverter where TQuantity : class, IQuantity
     {
+        TQuantity converter;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="baseType"></param>
+        public QuantityTypeConverter(TQuantity baseType)
+        {
+            converter = baseType;
+        }
         /// <summary>
         ///     Returns true if sourceType if of type <see cref="string"/>
         /// </summary>
@@ -138,7 +148,7 @@ namespace UnitsNet
             return (sourceType == typeof(string)) || base.CanConvertFrom(context, sourceType);
         }
 
-        private static TAttribute GetAttribute<TAttribute>(ITypeDescriptorContext context) where TAttribute : UnitAttributeBase
+        private static TAttribute GetAttribute<TAttribute>(QuantityType expectedType, ITypeDescriptorContext context) where TAttribute : UnitAttributeBase
         {
             TAttribute attribute = null;
             AttributeCollection ua = context?.PropertyDescriptor.Attributes;
@@ -147,7 +157,7 @@ namespace UnitsNet
 
             if (attribute != null)
             {
-                QuantityType expected = default(TQuantity).Type;
+                QuantityType expected = expectedType;
                 QuantityType actual = QuantityType.Undefined;
 
                 if (attribute.UnitType != null) actual = Quantity.From(1, attribute.UnitType).Type;
@@ -178,7 +188,9 @@ namespace UnitsNet
             {
                 if (double.TryParse(stringValue, NumberStyles.Any, culture, out double dvalue))
                 {
-                    DefaultUnitAttribute defaultUnit = GetAttribute<DefaultUnitAttribute>(context) ?? new DefaultUnitAttribute(default(TQuantity).Unit);
+                    DefaultUnitAttribute defaultUnit = GetAttribute<DefaultUnitAttribute>(converter.Type, context);
+                    if( defaultUnit == null )
+                        defaultUnit = new DefaultUnitAttribute(converter.Unit);
 
                     result = Quantity.From(dvalue, defaultUnit.UnitType);
                 }
@@ -187,7 +199,7 @@ namespace UnitsNet
                     result = Quantity.Parse(culture, typeof(TQuantity), stringValue);
                 }
 
-                ConvertToUnitAttribute convertToUnit = GetAttribute<ConvertToUnitAttribute>(context);
+                ConvertToUnitAttribute convertToUnit = GetAttribute<ConvertToUnitAttribute>(converter.Type, context);
                 if (convertToUnit != null)
                 {
                     result = ((IQuantity)result).ToUnit(convertToUnit.UnitType);
@@ -218,7 +230,7 @@ namespace UnitsNet
         {
             IQuantity qvalue = value as IQuantity;
             object result = null;
-            DisplayAsUnitAttribute displayAsUnit = GetAttribute<DisplayAsUnitAttribute>(context);
+            DisplayAsUnitAttribute displayAsUnit = GetAttribute<DisplayAsUnitAttribute>(converter.Type, context);
 
             if (destinationType == typeof(string) && qvalue != null && displayAsUnit != null)
             {

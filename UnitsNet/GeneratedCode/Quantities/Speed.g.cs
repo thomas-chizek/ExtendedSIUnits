@@ -32,7 +32,7 @@ namespace UnitsNet
     /// <summary>
     ///     In everyday use and in kinematics, the speed of an object is the magnitude of its velocity (the rate of change of its position); it is thus a scalar quantity.[1] The average speed of an object in an interval of time is the distance travelled by the object divided by the duration of the interval;[2] the instantaneous speed is the limit of the average speed as the duration of the time interval approaches zero.
     /// </summary>
-    public partial struct Speed : IQuantity<SpeedUnit>, IEquatable<Speed>, IComparable, IComparable<Speed>, IConvertible, IFormattable
+    public partial class Speed : IQuantity<SpeedUnit>, IEquatable<Speed>, IComparable, IComparable<Speed>, IConvertible, IFormattable
     {
         /// <summary>
         ///     The numeric value this quantity was constructed with.
@@ -50,80 +50,88 @@ namespace UnitsNet
 
             Info = new QuantityInfo<SpeedUnit>(QuantityType.Speed,
                 new UnitInfo<SpeedUnit>[] {
-                    new UnitInfo<SpeedUnit>(SpeedUnit.CentimeterPerHour, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.CentimeterPerMinute, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.CentimeterPerSecond, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.DecameterPerHour, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.DecameterPerMinute, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.DecameterPerSecond, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.DecimeterPerHour, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.DecimeterPerMinute, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.DecimeterPerSecond, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.ExameterPerHour, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.ExameterPerMinute, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.ExameterPerSecond, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.FemtometerPerHour, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.FemtometerPerMinute, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.FemtometerPerSecond, BaseUnits.Undefined),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.CentilightsecondPerHour, new BaseUnits(length: LengthUnit.Lightsecond, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.CentimeterPerHour, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.CentimeterPerMinute, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.CentimeterPerSecond, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.DecalightsecondPerHour, new BaseUnits(length: LengthUnit.Lightsecond, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.DecameterPerHour, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.DecameterPerMinute, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.DecameterPerSecond, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.DecilightsecondPerHour, new BaseUnits(length: LengthUnit.Lightsecond, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.DecimeterPerHour, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.DecimeterPerMinute, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.DecimeterPerSecond, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.ExameterPerHour, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.ExameterPerMinute, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.ExameterPerSecond, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.FemtometerPerHour, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.FemtometerPerMinute, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.FemtometerPerSecond, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
                     new UnitInfo<SpeedUnit>(SpeedUnit.FootPerHour, new BaseUnits(length: LengthUnit.Foot, time: DurationUnit.Hour)),
                     new UnitInfo<SpeedUnit>(SpeedUnit.FootPerMinute, new BaseUnits(length: LengthUnit.Foot, time: DurationUnit.Minute)),
                     new UnitInfo<SpeedUnit>(SpeedUnit.FootPerSecond, new BaseUnits(length: LengthUnit.Foot, time: DurationUnit.Second)),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.GigameterPerHour, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.GigameterPerMinute, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.GigameterPerSecond, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.HectometerPerHour, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.HectometerPerMinute, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.HectometerPerSecond, BaseUnits.Undefined),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.GigameterPerHour, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.GigameterPerMinute, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.GigameterPerSecond, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.HectometerPerHour, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.HectometerPerMinute, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.HectometerPerSecond, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
                     new UnitInfo<SpeedUnit>(SpeedUnit.InchPerHour, new BaseUnits(length: LengthUnit.Inch, time: DurationUnit.Hour)),
                     new UnitInfo<SpeedUnit>(SpeedUnit.InchPerMinute, new BaseUnits(length: LengthUnit.Inch, time: DurationUnit.Minute)),
                     new UnitInfo<SpeedUnit>(SpeedUnit.InchPerSecond, new BaseUnits(length: LengthUnit.Inch, time: DurationUnit.Second)),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.KilometerPerHour, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.KilometerPerMinute, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.KilometerPerSecond, BaseUnits.Undefined),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.KilolightsecondPerHour, new BaseUnits(length: LengthUnit.Lightsecond, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.KilometerPerHour, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.KilometerPerMinute, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.KilometerPerSecond, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
                     new UnitInfo<SpeedUnit>(SpeedUnit.Knot, new BaseUnits(length: LengthUnit.NauticalMile, time: DurationUnit.Hour)),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.MegameterPerHour, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.MegameterPerMinute, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.MegameterPerSecond, BaseUnits.Undefined),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.LightsecondPerHour, new BaseUnits(length: LengthUnit.Lightsecond, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.MegameterPerHour, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.MegameterPerMinute, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.MegameterPerSecond, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
                     new UnitInfo<SpeedUnit>(SpeedUnit.MeterPerHour, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
                     new UnitInfo<SpeedUnit>(SpeedUnit.MeterPerMinute, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
                     new UnitInfo<SpeedUnit>(SpeedUnit.MeterPerSecond, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.MicrometerPerHour, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.MicrometerPerMinute, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.MicrometerPerSecond, BaseUnits.Undefined),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.MicrolightsecondPerHour, new BaseUnits(length: LengthUnit.Lightsecond, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.MicrometerPerHour, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.MicrometerPerMinute, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.MicrometerPerSecond, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
                     new UnitInfo<SpeedUnit>(SpeedUnit.MilePerHour, new BaseUnits(length: LengthUnit.Mile, time: DurationUnit.Hour)),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.MillimeterPerHour, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.MillimeterPerMinute, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.MillimeterPerSecond, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.NanometerPerHour, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.NanometerPerMinute, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.NanometerPerSecond, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.PetameterPerHour, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.PetameterPerMinute, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.PetameterPerSecond, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.PicometerPerHour, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.PicometerPerMinute, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.PicometerPerSecond, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.QutrameterPerHour, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.QutrameterPerMinute, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.QutrameterPerSecond, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.TerameterPerHour, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.TerameterPerMinute, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.TerameterPerSecond, BaseUnits.Undefined),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.MillilightsecondPerHour, new BaseUnits(length: LengthUnit.Lightsecond, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.MillimeterPerHour, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.MillimeterPerMinute, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.MillimeterPerSecond, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.NanolightsecondPerHour, new BaseUnits(length: LengthUnit.Lightsecond, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.NanometerPerHour, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.NanometerPerMinute, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.NanometerPerSecond, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.PetameterPerHour, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.PetameterPerMinute, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.PetameterPerSecond, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.PicometerPerHour, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.PicometerPerMinute, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.PicometerPerSecond, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.QutrameterPerHour, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.QutrameterPerMinute, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.QutrameterPerSecond, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.TerameterPerHour, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.TerameterPerMinute, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.TerameterPerSecond, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
                     new UnitInfo<SpeedUnit>(SpeedUnit.UsSurveyFootPerHour, new BaseUnits(length: LengthUnit.UsSurveyFoot, time: DurationUnit.Hour)),
                     new UnitInfo<SpeedUnit>(SpeedUnit.UsSurveyFootPerMinute, new BaseUnits(length: LengthUnit.UsSurveyFoot, time: DurationUnit.Minute)),
                     new UnitInfo<SpeedUnit>(SpeedUnit.UsSurveyFootPerSecond, new BaseUnits(length: LengthUnit.UsSurveyFoot, time: DurationUnit.Second)),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.VettameterPerHour, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.VettameterPerMinute, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.VettameterPerSecond, BaseUnits.Undefined),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.VettameterPerHour, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.VettameterPerMinute, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.VettameterPerSecond, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
                     new UnitInfo<SpeedUnit>(SpeedUnit.YardPerHour, new BaseUnits(length: LengthUnit.Yard, time: DurationUnit.Hour)),
                     new UnitInfo<SpeedUnit>(SpeedUnit.YardPerMinute, new BaseUnits(length: LengthUnit.Yard, time: DurationUnit.Minute)),
                     new UnitInfo<SpeedUnit>(SpeedUnit.YardPerSecond, new BaseUnits(length: LengthUnit.Yard, time: DurationUnit.Second)),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.YottameterPerHour, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.YottameterPerMinute, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.YottameterPerSecond, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.ZettameterPerHour, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.ZettameterPerMinute, BaseUnits.Undefined),
-                    new UnitInfo<SpeedUnit>(SpeedUnit.ZettameterPerSecond, BaseUnits.Undefined),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.YottameterPerHour, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.YottameterPerMinute, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.YottameterPerSecond, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.ZettameterPerHour, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.ZettameterPerMinute, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<SpeedUnit>(SpeedUnit.ZettameterPerSecond, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
                 },
                 BaseUnit, Zero, BaseDimensions);
         }
@@ -156,7 +164,12 @@ namespace UnitsNet
             if(unitSystem == null) throw new ArgumentNullException(nameof(unitSystem));
 
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-            var firstUnitInfo = unitInfos.FirstOrDefault();
+            var firstUnitInfo = unitInfos.FirstOrDefault(u => u.Value.Equals(BaseUnit));
+            // for custom units, sometimes we don't find the base unit, this grabs the first off the list.
+            if(Equals(firstUnitInfo, null ))
+            {
+                firstUnitInfo = unitInfos.FirstOrDefault();
+            }
 
             _value = Guard.EnsureValidNumber(numericValue, nameof(numericValue));
             _unit = firstUnitInfo?.Value ?? throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
@@ -237,6 +250,11 @@ namespace UnitsNet
         #region Conversion Properties
 
         /// <summary>
+        ///     Get Speed in CentilightsecondsPerHour.
+        /// </summary>
+        public double CentilightsecondsPerHour => As(SpeedUnit.CentilightsecondPerHour);
+
+        /// <summary>
         ///     Get Speed in CentimetersPerHour.
         /// </summary>
         public double CentimetersPerHour => As(SpeedUnit.CentimeterPerHour);
@@ -252,6 +270,11 @@ namespace UnitsNet
         public double CentimetersPerSecond => As(SpeedUnit.CentimeterPerSecond);
 
         /// <summary>
+        ///     Get Speed in DecalightsecondsPerHour.
+        /// </summary>
+        public double DecalightsecondsPerHour => As(SpeedUnit.DecalightsecondPerHour);
+
+        /// <summary>
         ///     Get Speed in DecametersPerHour.
         /// </summary>
         public double DecametersPerHour => As(SpeedUnit.DecameterPerHour);
@@ -265,6 +288,11 @@ namespace UnitsNet
         ///     Get Speed in DecametersPerSecond.
         /// </summary>
         public double DecametersPerSecond => As(SpeedUnit.DecameterPerSecond);
+
+        /// <summary>
+        ///     Get Speed in DecilightsecondsPerHour.
+        /// </summary>
+        public double DecilightsecondsPerHour => As(SpeedUnit.DecilightsecondPerHour);
 
         /// <summary>
         ///     Get Speed in DecimetersPerHour.
@@ -372,6 +400,11 @@ namespace UnitsNet
         public double InchesPerSecond => As(SpeedUnit.InchPerSecond);
 
         /// <summary>
+        ///     Get Speed in KilolightsecondsPerHour.
+        /// </summary>
+        public double KilolightsecondsPerHour => As(SpeedUnit.KilolightsecondPerHour);
+
+        /// <summary>
         ///     Get Speed in KilometersPerHour.
         /// </summary>
         public double KilometersPerHour => As(SpeedUnit.KilometerPerHour);
@@ -390,6 +423,11 @@ namespace UnitsNet
         ///     Get Speed in Knots.
         /// </summary>
         public double Knots => As(SpeedUnit.Knot);
+
+        /// <summary>
+        ///     Get Speed in LightsecondsPerHour.
+        /// </summary>
+        public double LightsecondsPerHour => As(SpeedUnit.LightsecondPerHour);
 
         /// <summary>
         ///     Get Speed in MegametersPerHour.
@@ -422,6 +460,11 @@ namespace UnitsNet
         public double MetersPerSecond => As(SpeedUnit.MeterPerSecond);
 
         /// <summary>
+        ///     Get Speed in MicrolightsecondsPerHour.
+        /// </summary>
+        public double MicrolightsecondsPerHour => As(SpeedUnit.MicrolightsecondPerHour);
+
+        /// <summary>
         ///     Get Speed in MicrometersPerHour.
         /// </summary>
         public double MicrometersPerHour => As(SpeedUnit.MicrometerPerHour);
@@ -442,6 +485,11 @@ namespace UnitsNet
         public double MilesPerHour => As(SpeedUnit.MilePerHour);
 
         /// <summary>
+        ///     Get Speed in MillilightsecondsPerHour.
+        /// </summary>
+        public double MillilightsecondsPerHour => As(SpeedUnit.MillilightsecondPerHour);
+
+        /// <summary>
         ///     Get Speed in MillimetersPerHour.
         /// </summary>
         public double MillimetersPerHour => As(SpeedUnit.MillimeterPerHour);
@@ -455,6 +503,11 @@ namespace UnitsNet
         ///     Get Speed in MillimetersPerSecond.
         /// </summary>
         public double MillimetersPerSecond => As(SpeedUnit.MillimeterPerSecond);
+
+        /// <summary>
+        ///     Get Speed in NanolightsecondsPerHour.
+        /// </summary>
+        public double NanolightsecondsPerHour => As(SpeedUnit.NanolightsecondPerHour);
 
         /// <summary>
         ///     Get Speed in NanometersPerHour.
@@ -636,6 +689,15 @@ namespace UnitsNet
         #region Static Factory Methods
 
         /// <summary>
+        ///     Get Speed from CentilightsecondsPerHour.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Speed FromCentilightsecondsPerHour(QuantityValue centilightsecondsperhour)
+        {
+            double value = (double) centilightsecondsperhour;
+            return new Speed(value, SpeedUnit.CentilightsecondPerHour);
+        }
+        /// <summary>
         ///     Get Speed from CentimetersPerHour.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -663,6 +725,15 @@ namespace UnitsNet
             return new Speed(value, SpeedUnit.CentimeterPerSecond);
         }
         /// <summary>
+        ///     Get Speed from DecalightsecondsPerHour.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Speed FromDecalightsecondsPerHour(QuantityValue decalightsecondsperhour)
+        {
+            double value = (double) decalightsecondsperhour;
+            return new Speed(value, SpeedUnit.DecalightsecondPerHour);
+        }
+        /// <summary>
         ///     Get Speed from DecametersPerHour.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -688,6 +759,15 @@ namespace UnitsNet
         {
             double value = (double) decameterspersecond;
             return new Speed(value, SpeedUnit.DecameterPerSecond);
+        }
+        /// <summary>
+        ///     Get Speed from DecilightsecondsPerHour.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Speed FromDecilightsecondsPerHour(QuantityValue decilightsecondsperhour)
+        {
+            double value = (double) decilightsecondsperhour;
+            return new Speed(value, SpeedUnit.DecilightsecondPerHour);
         }
         /// <summary>
         ///     Get Speed from DecimetersPerHour.
@@ -879,6 +959,15 @@ namespace UnitsNet
             return new Speed(value, SpeedUnit.InchPerSecond);
         }
         /// <summary>
+        ///     Get Speed from KilolightsecondsPerHour.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Speed FromKilolightsecondsPerHour(QuantityValue kilolightsecondsperhour)
+        {
+            double value = (double) kilolightsecondsperhour;
+            return new Speed(value, SpeedUnit.KilolightsecondPerHour);
+        }
+        /// <summary>
         ///     Get Speed from KilometersPerHour.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -913,6 +1002,15 @@ namespace UnitsNet
         {
             double value = (double) knots;
             return new Speed(value, SpeedUnit.Knot);
+        }
+        /// <summary>
+        ///     Get Speed from LightsecondsPerHour.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Speed FromLightsecondsPerHour(QuantityValue lightsecondsperhour)
+        {
+            double value = (double) lightsecondsperhour;
+            return new Speed(value, SpeedUnit.LightsecondPerHour);
         }
         /// <summary>
         ///     Get Speed from MegametersPerHour.
@@ -969,6 +1067,15 @@ namespace UnitsNet
             return new Speed(value, SpeedUnit.MeterPerSecond);
         }
         /// <summary>
+        ///     Get Speed from MicrolightsecondsPerHour.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Speed FromMicrolightsecondsPerHour(QuantityValue microlightsecondsperhour)
+        {
+            double value = (double) microlightsecondsperhour;
+            return new Speed(value, SpeedUnit.MicrolightsecondPerHour);
+        }
+        /// <summary>
         ///     Get Speed from MicrometersPerHour.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -1005,6 +1112,15 @@ namespace UnitsNet
             return new Speed(value, SpeedUnit.MilePerHour);
         }
         /// <summary>
+        ///     Get Speed from MillilightsecondsPerHour.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Speed FromMillilightsecondsPerHour(QuantityValue millilightsecondsperhour)
+        {
+            double value = (double) millilightsecondsperhour;
+            return new Speed(value, SpeedUnit.MillilightsecondPerHour);
+        }
+        /// <summary>
         ///     Get Speed from MillimetersPerHour.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -1030,6 +1146,15 @@ namespace UnitsNet
         {
             double value = (double) millimeterspersecond;
             return new Speed(value, SpeedUnit.MillimeterPerSecond);
+        }
+        /// <summary>
+        ///     Get Speed from NanolightsecondsPerHour.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Speed FromNanolightsecondsPerHour(QuantityValue nanolightsecondsperhour)
+        {
+            double value = (double) nanolightsecondsperhour;
+            return new Speed(value, SpeedUnit.NanolightsecondPerHour);
         }
         /// <summary>
         ///     Get Speed from NanometersPerHour.
@@ -1510,32 +1635,44 @@ namespace UnitsNet
         /// <summary>Returns true if less or equal to.</summary>
         public static bool operator <=(Speed left, Speed right)
         {
+            if(left is null || right is null )
+                return false;
             return left.Value <= right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if greater than or equal to.</summary>
         public static bool operator >=(Speed left, Speed right)
         {
-            return left.Value >= right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value >= right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if less than.</summary>
         public static bool operator <(Speed left, Speed right)
         {
-            return left.Value < right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value < right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if greater than.</summary>
         public static bool operator >(Speed left, Speed right)
         {
-            return left.Value > right.GetValueAs(left.Unit);
+              if(left is null || right is null )
+                return false;
+          return left.Value > right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if exactly equal.</summary>
         /// <remarks>Consider using <see cref="Equals(Speed, double, ComparisonType)"/> for safely comparing floating point values.</remarks>
         public static bool operator ==(Speed left, Speed right)
         {
-            return left.Equals(right);
+             if(left is null && right is null )
+                return true;
+            if( left is null )
+                return false;
+           return left.Equals(right);
         }
 
         /// <summary>Returns true if not exactly equal.</summary>
@@ -1557,6 +1694,8 @@ namespace UnitsNet
         /// <inheritdoc />
         public int CompareTo(Speed other)
         {
+            if(other is null) throw new ArgumentNullException();
+
             return _value.CompareTo(other.GetValueAs(this.Unit));
         }
 
@@ -1574,6 +1713,9 @@ namespace UnitsNet
         /// <remarks>Consider using <see cref="Equals(Speed, double, ComparisonType)"/> for safely comparing floating point values.</remarks>
         public bool Equals(Speed other)
         {
+            if(other is null)
+                return false;
+
             return _value.Equals(other.GetValueAs(this.Unit));
         }
 
@@ -1659,13 +1801,16 @@ namespace UnitsNet
         {
             if(unitSystem == null)
                 throw new ArgumentNullException(nameof(unitSystem));
-
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
+            
+            var firstUnitInfo = unitInfos.FirstOrDefault(u => u.Value.Equals(BaseUnit));
+            if (firstUnitInfo is null)
+            {
+                firstUnitInfo = unitInfos.FirstOrDefault();
+                if (firstUnitInfo is null)
                 throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
-
+            }
+            
             return As(firstUnitInfo.Value);
         }
 
@@ -1702,13 +1847,12 @@ namespace UnitsNet
         {
             if(unitSystem == null)
                 throw new ArgumentNullException(nameof(unitSystem));
-
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
+            var firstUnitInfo = unitInfos.FirstOrDefault(u=> u.Value.Equals(BaseUnit));
+            if (firstUnitInfo == null)
                 throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
 
+            
             return ToUnit(firstUnitInfo.Value);
         }
 
@@ -1730,12 +1874,15 @@ namespace UnitsNet
         {
             switch(Unit)
             {
+                case SpeedUnit.CentilightsecondPerHour: return (_value*1.2008e-5) * 1e-2d;
                 case SpeedUnit.CentimeterPerHour: return (_value/3600) * 1e-2d;
                 case SpeedUnit.CentimeterPerMinute: return (_value/60) * 1e-2d;
                 case SpeedUnit.CentimeterPerSecond: return (_value) * 1e-2d;
+                case SpeedUnit.DecalightsecondPerHour: return (_value*1.2008e-5) * 1e1d;
                 case SpeedUnit.DecameterPerHour: return (_value/3600) * 1e1d;
                 case SpeedUnit.DecameterPerMinute: return (_value/60) * 1e1d;
                 case SpeedUnit.DecameterPerSecond: return (_value) * 1e1d;
+                case SpeedUnit.DecilightsecondPerHour: return (_value*1.2008e-5) * 1e-1d;
                 case SpeedUnit.DecimeterPerHour: return (_value/3600) * 1e-1d;
                 case SpeedUnit.DecimeterPerMinute: return (_value/60) * 1e-1d;
                 case SpeedUnit.DecimeterPerSecond: return (_value) * 1e-1d;
@@ -1757,23 +1904,28 @@ namespace UnitsNet
                 case SpeedUnit.InchPerHour: return (_value/3600)*2.54e-2;
                 case SpeedUnit.InchPerMinute: return (_value/60)*2.54e-2;
                 case SpeedUnit.InchPerSecond: return _value*2.54e-2;
+                case SpeedUnit.KilolightsecondPerHour: return (_value*1.2008e-5) * 1e3d;
                 case SpeedUnit.KilometerPerHour: return (_value/3600) * 1e3d;
                 case SpeedUnit.KilometerPerMinute: return (_value/60) * 1e3d;
                 case SpeedUnit.KilometerPerSecond: return (_value) * 1e3d;
                 case SpeedUnit.Knot: return _value*0.514444;
+                case SpeedUnit.LightsecondPerHour: return _value*1.2008e-5;
                 case SpeedUnit.MegameterPerHour: return (_value/3600) * 1e6d;
                 case SpeedUnit.MegameterPerMinute: return (_value/60) * 1e6d;
                 case SpeedUnit.MegameterPerSecond: return (_value) * 1e6d;
                 case SpeedUnit.MeterPerHour: return _value/3600;
                 case SpeedUnit.MeterPerMinute: return _value/60;
                 case SpeedUnit.MeterPerSecond: return _value;
+                case SpeedUnit.MicrolightsecondPerHour: return (_value*1.2008e-5) * 1e-6d;
                 case SpeedUnit.MicrometerPerHour: return (_value/3600) * 1e-6d;
                 case SpeedUnit.MicrometerPerMinute: return (_value/60) * 1e-6d;
                 case SpeedUnit.MicrometerPerSecond: return (_value) * 1e-6d;
                 case SpeedUnit.MilePerHour: return _value*0.44704;
+                case SpeedUnit.MillilightsecondPerHour: return (_value*1.2008e-5) * 1e-3d;
                 case SpeedUnit.MillimeterPerHour: return (_value/3600) * 1e-3d;
                 case SpeedUnit.MillimeterPerMinute: return (_value/60) * 1e-3d;
                 case SpeedUnit.MillimeterPerSecond: return (_value) * 1e-3d;
+                case SpeedUnit.NanolightsecondPerHour: return (_value*1.2008e-5) * 1e-9d;
                 case SpeedUnit.NanometerPerHour: return (_value/3600) * 1e-9d;
                 case SpeedUnit.NanometerPerMinute: return (_value/60) * 1e-9d;
                 case SpeedUnit.NanometerPerSecond: return (_value) * 1e-9d;
@@ -1818,12 +1970,15 @@ namespace UnitsNet
 
             switch(unit)
             {
+                case SpeedUnit.CentilightsecondPerHour: return (baseUnitValue/1.2008e-5) / 1e-2d;
                 case SpeedUnit.CentimeterPerHour: return (baseUnitValue*3600) / 1e-2d;
                 case SpeedUnit.CentimeterPerMinute: return (baseUnitValue*60) / 1e-2d;
                 case SpeedUnit.CentimeterPerSecond: return (baseUnitValue) / 1e-2d;
+                case SpeedUnit.DecalightsecondPerHour: return (baseUnitValue/1.2008e-5) / 1e1d;
                 case SpeedUnit.DecameterPerHour: return (baseUnitValue*3600) / 1e1d;
                 case SpeedUnit.DecameterPerMinute: return (baseUnitValue*60) / 1e1d;
                 case SpeedUnit.DecameterPerSecond: return (baseUnitValue) / 1e1d;
+                case SpeedUnit.DecilightsecondPerHour: return (baseUnitValue/1.2008e-5) / 1e-1d;
                 case SpeedUnit.DecimeterPerHour: return (baseUnitValue*3600) / 1e-1d;
                 case SpeedUnit.DecimeterPerMinute: return (baseUnitValue*60) / 1e-1d;
                 case SpeedUnit.DecimeterPerSecond: return (baseUnitValue) / 1e-1d;
@@ -1845,23 +2000,28 @@ namespace UnitsNet
                 case SpeedUnit.InchPerHour: return (baseUnitValue/2.54e-2)*3600;
                 case SpeedUnit.InchPerMinute: return (baseUnitValue/2.54e-2)*60;
                 case SpeedUnit.InchPerSecond: return baseUnitValue/2.54e-2;
+                case SpeedUnit.KilolightsecondPerHour: return (baseUnitValue/1.2008e-5) / 1e3d;
                 case SpeedUnit.KilometerPerHour: return (baseUnitValue*3600) / 1e3d;
                 case SpeedUnit.KilometerPerMinute: return (baseUnitValue*60) / 1e3d;
                 case SpeedUnit.KilometerPerSecond: return (baseUnitValue) / 1e3d;
                 case SpeedUnit.Knot: return baseUnitValue/0.514444;
+                case SpeedUnit.LightsecondPerHour: return baseUnitValue/1.2008e-5;
                 case SpeedUnit.MegameterPerHour: return (baseUnitValue*3600) / 1e6d;
                 case SpeedUnit.MegameterPerMinute: return (baseUnitValue*60) / 1e6d;
                 case SpeedUnit.MegameterPerSecond: return (baseUnitValue) / 1e6d;
                 case SpeedUnit.MeterPerHour: return baseUnitValue*3600;
                 case SpeedUnit.MeterPerMinute: return baseUnitValue*60;
                 case SpeedUnit.MeterPerSecond: return baseUnitValue;
+                case SpeedUnit.MicrolightsecondPerHour: return (baseUnitValue/1.2008e-5) / 1e-6d;
                 case SpeedUnit.MicrometerPerHour: return (baseUnitValue*3600) / 1e-6d;
                 case SpeedUnit.MicrometerPerMinute: return (baseUnitValue*60) / 1e-6d;
                 case SpeedUnit.MicrometerPerSecond: return (baseUnitValue) / 1e-6d;
                 case SpeedUnit.MilePerHour: return baseUnitValue/0.44704;
+                case SpeedUnit.MillilightsecondPerHour: return (baseUnitValue/1.2008e-5) / 1e-3d;
                 case SpeedUnit.MillimeterPerHour: return (baseUnitValue*3600) / 1e-3d;
                 case SpeedUnit.MillimeterPerMinute: return (baseUnitValue*60) / 1e-3d;
                 case SpeedUnit.MillimeterPerSecond: return (baseUnitValue) / 1e-3d;
+                case SpeedUnit.NanolightsecondPerHour: return (baseUnitValue/1.2008e-5) / 1e-9d;
                 case SpeedUnit.NanometerPerHour: return (baseUnitValue*3600) / 1e-9d;
                 case SpeedUnit.NanometerPerMinute: return (baseUnitValue*60) / 1e-9d;
                 case SpeedUnit.NanometerPerSecond: return (baseUnitValue) / 1e-9d;

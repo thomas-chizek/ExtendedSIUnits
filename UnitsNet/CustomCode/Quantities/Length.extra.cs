@@ -10,8 +10,19 @@ using UnitsNet.Units;
 
 namespace UnitsNet
 {
-    public partial struct Length
+    public partial class Length
     {
+        /// <summary>
+        /// Copy a Length
+        /// </summary>
+        /// <param name="l"></param>
+        public Length(Length l) : this(l.Value, l.Unit) { }
+
+        /// <summary>
+        /// Empty Length
+        /// </summary>
+        public Length() : this(Zero.Value, Zero.Unit) { }
+
         private const double InchesInOneFoot = 12;
 
         /// <summary>
@@ -73,7 +84,7 @@ namespace UnitsNet
         {
             if (str == null)
             {
-                result = default;
+                result = Zero;
                 return false;
             }
 
@@ -91,7 +102,11 @@ namespace UnitsNet
             string pattern = $@"^(?<feet>{footRegex})\s?(?<inches>{inchRegex})$";
 
             var match = new Regex(pattern, RegexOptions.Singleline).Match(str);
-            if (!match.Success) return false;
+            if (!match.Success)
+            {
+                result = Zero;
+                return false;
+            }
 
             var feetGroup = match.Groups["feet"];
             var inchesGroup = match.Groups["inches"];
@@ -102,7 +117,7 @@ namespace UnitsNet
                 return true;
             }
 
-            result = default;
+            result = Zero;
             return false;
         }
 

@@ -6,8 +6,20 @@ using UnitsNet.Units;
 
 namespace UnitsNet
 {
-    public partial struct AmplitudeRatio
+    public partial class AmplitudeRatio
     {
+
+        /// <summary>
+        /// Copy of an AplitudeRatio
+        /// </summary>
+        /// <param name="r"></param>
+        public AmplitudeRatio(AmplitudeRatio r) : this(r.Value, r.Unit) { }
+
+        /// <summary>
+        /// Empty AmplitudeRatio
+        /// </summary>
+        public AmplitudeRatio() : this(Zero.Value, Zero.Unit) { }
+
         /// <summary>
         ///     Initializes a new instance of the <see cref="AmplitudeRatio" /> struct from the specified electric potential
         ///     referenced to one volt RMS. This assumes both the specified electric potential and the one volt reference have the

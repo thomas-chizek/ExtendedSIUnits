@@ -5,7 +5,7 @@ using UnitsNet.Units;
 
 namespace UnitsNet
 {
-    public partial struct MassConcentration
+    public partial class MassConcentration
     {
         /// <summary>
         ///     Get <see cref="Molarity" /> from this <see cref="MassConcentration" /> using the known component <see cref="MolarMass" />.

@@ -32,7 +32,7 @@ namespace UnitsNet
     /// <summary>
     ///     Acceleration, in physics, is the rate at which the velocity of an object changes over time. An object's acceleration is the net result of any and all forces acting on the object, as described by Newton's Second Law. The SI unit for acceleration is the Meter per second squared (m/s²). Accelerations are vector quantities (they have magnitude and direction) and add according to the parallelogram law. As a vector, the calculated net force is equal to the product of the object's mass (a scalar quantity) and the acceleration.
     /// </summary>
-    public partial struct Acceleration : IQuantity<AccelerationUnit>, IEquatable<Acceleration>, IComparable, IComparable<Acceleration>, IConvertible, IFormattable
+    public partial class Acceleration : IQuantity<AccelerationUnit>, IEquatable<Acceleration>, IComparable, IComparable<Acceleration>, IConvertible, IFormattable
     {
         /// <summary>
         ///     The numeric value this quantity was constructed with.
@@ -50,20 +50,81 @@ namespace UnitsNet
 
             Info = new QuantityInfo<AccelerationUnit>(QuantityType.Acceleration,
                 new UnitInfo<AccelerationUnit>[] {
-                    new UnitInfo<AccelerationUnit>(AccelerationUnit.CentimeterPerSecondSquared, BaseUnits.Undefined),
-                    new UnitInfo<AccelerationUnit>(AccelerationUnit.DecameterPerSecondSquared, BaseUnits.Undefined),
-                    new UnitInfo<AccelerationUnit>(AccelerationUnit.DecimeterPerSecondSquared, BaseUnits.Undefined),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.CentilightsecondPerHourSquared, new BaseUnits(length: LengthUnit.Lightsecond, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.CentimeterPerHourSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.CentimeterPerMinuteSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.CentimeterPerSecondSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.DecalightsecondPerHourSquared, new BaseUnits(length: LengthUnit.Lightsecond, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.DecameterPerHourSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.DecameterPerMinuteSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.DecameterPerSecondSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.DecilightsecondPerHourSquared, new BaseUnits(length: LengthUnit.Lightsecond, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.DecimeterPerHourSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.DecimeterPerMinuteSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.DecimeterPerSecondSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.ExameterPerHourSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.ExameterPerMinuteSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.ExameterPerSecondSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.FemtometerPerHourSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.FemtometerPerMinuteSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.FemtometerPerSecondSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
                     new UnitInfo<AccelerationUnit>(AccelerationUnit.FootPerSecondSquared, new BaseUnits(length: LengthUnit.Foot, time: DurationUnit.Second)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.GigameterPerHourSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.GigameterPerMinuteSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.GigameterPerSecondSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.HectometerPerHourSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.HectometerPerMinuteSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.HectometerPerSecondSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
                     new UnitInfo<AccelerationUnit>(AccelerationUnit.InchPerSecondSquared, new BaseUnits(length: LengthUnit.Inch, time: DurationUnit.Second)),
-                    new UnitInfo<AccelerationUnit>(AccelerationUnit.KilometerPerSecondSquared, BaseUnits.Undefined),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.KilolightsecondPerHourSquared, new BaseUnits(length: LengthUnit.Lightsecond, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.KilometerPerHourSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.KilometerPerMinuteSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.KilometerPerSecondSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
                     new UnitInfo<AccelerationUnit>(AccelerationUnit.KnotPerHour, new BaseUnits(length: LengthUnit.NauticalMile, time: DurationUnit.Hour)),
                     new UnitInfo<AccelerationUnit>(AccelerationUnit.KnotPerMinute, new BaseUnits(length: LengthUnit.NauticalMile, time: DurationUnit.Minute)),
                     new UnitInfo<AccelerationUnit>(AccelerationUnit.KnotPerSecond, new BaseUnits(length: LengthUnit.NauticalMile, time: DurationUnit.Second)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.LightsecondPerHourSquared, new BaseUnits(length: LengthUnit.Lightsecond, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.MegameterPerHourSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.MegameterPerMinuteSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.MegameterPerSecondSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.MeterPerHourSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.MeterPerMinuteSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
                     new UnitInfo<AccelerationUnit>(AccelerationUnit.MeterPerSecondSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
-                    new UnitInfo<AccelerationUnit>(AccelerationUnit.MicrometerPerSecondSquared, BaseUnits.Undefined),
-                    new UnitInfo<AccelerationUnit>(AccelerationUnit.MillimeterPerSecondSquared, BaseUnits.Undefined),
-                    new UnitInfo<AccelerationUnit>(AccelerationUnit.NanometerPerSecondSquared, BaseUnits.Undefined),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.MicrolightsecondPerHourSquared, new BaseUnits(length: LengthUnit.Lightsecond, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.MicrometerPerHourSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.MicrometerPerMinuteSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.MicrometerPerSecondSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.MilePerHourSquared, new BaseUnits(length: LengthUnit.Mile, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.MillilightsecondPerHourSquared, new BaseUnits(length: LengthUnit.Lightsecond, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.MillimeterPerHourSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.MillimeterPerMinuteSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.MillimeterPerSecondSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.NanolightsecondPerHourSquared, new BaseUnits(length: LengthUnit.Lightsecond, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.NanometerPerHourSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.NanometerPerMinuteSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.NanometerPerSecondSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.PetameterPerHourSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.PetameterPerMinuteSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.PetameterPerSecondSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.PicometerPerHourSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.PicometerPerMinuteSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.PicometerPerSecondSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.QutrameterPerHourSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.QutrameterPerMinuteSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.QutrameterPerSecondSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
                     new UnitInfo<AccelerationUnit>(AccelerationUnit.StandardGravity, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.TerameterPerHourSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.TerameterPerMinuteSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.TerameterPerSecondSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.VettameterPerHourSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.VettameterPerMinuteSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.VettameterPerSecondSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.YottameterPerHourSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.YottameterPerMinuteSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.YottameterPerSecondSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.ZettameterPerHourSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Hour)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.ZettameterPerMinuteSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Minute)),
+                    new UnitInfo<AccelerationUnit>(AccelerationUnit.ZettameterPerSecondSquared, new BaseUnits(length: LengthUnit.Meter, time: DurationUnit.Second)),
                 },
                 BaseUnit, Zero, BaseDimensions);
         }
@@ -96,7 +157,12 @@ namespace UnitsNet
             if(unitSystem == null) throw new ArgumentNullException(nameof(unitSystem));
 
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-            var firstUnitInfo = unitInfos.FirstOrDefault();
+            var firstUnitInfo = unitInfos.FirstOrDefault(u => u.Value.Equals(BaseUnit));
+            // for custom units, sometimes we don't find the base unit, this grabs the first off the list.
+            if(Equals(firstUnitInfo, null ))
+            {
+                firstUnitInfo = unitInfos.FirstOrDefault();
+            }
 
             _value = Guard.EnsureValidNumber(numericValue, nameof(numericValue));
             _unit = firstUnitInfo?.Value ?? throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
@@ -177,9 +243,39 @@ namespace UnitsNet
         #region Conversion Properties
 
         /// <summary>
+        ///     Get Acceleration in CentilightsecondsPerHourSquared.
+        /// </summary>
+        public double CentilightsecondsPerHourSquared => As(AccelerationUnit.CentilightsecondPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in CentimetersPerHourSquared.
+        /// </summary>
+        public double CentimetersPerHourSquared => As(AccelerationUnit.CentimeterPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in CentimetersPerMinutesSquared.
+        /// </summary>
+        public double CentimetersPerMinutesSquared => As(AccelerationUnit.CentimeterPerMinuteSquared);
+
+        /// <summary>
         ///     Get Acceleration in CentimetersPerSecondSquared.
         /// </summary>
         public double CentimetersPerSecondSquared => As(AccelerationUnit.CentimeterPerSecondSquared);
+
+        /// <summary>
+        ///     Get Acceleration in DecalightsecondsPerHourSquared.
+        /// </summary>
+        public double DecalightsecondsPerHourSquared => As(AccelerationUnit.DecalightsecondPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in DecametersPerHourSquared.
+        /// </summary>
+        public double DecametersPerHourSquared => As(AccelerationUnit.DecameterPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in DecametersPerMinutesSquared.
+        /// </summary>
+        public double DecametersPerMinutesSquared => As(AccelerationUnit.DecameterPerMinuteSquared);
 
         /// <summary>
         ///     Get Acceleration in DecametersPerSecondSquared.
@@ -187,9 +283,54 @@ namespace UnitsNet
         public double DecametersPerSecondSquared => As(AccelerationUnit.DecameterPerSecondSquared);
 
         /// <summary>
+        ///     Get Acceleration in DecilightsecondsPerHourSquared.
+        /// </summary>
+        public double DecilightsecondsPerHourSquared => As(AccelerationUnit.DecilightsecondPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in DecimetersPerHourSquared.
+        /// </summary>
+        public double DecimetersPerHourSquared => As(AccelerationUnit.DecimeterPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in DecimetersPerMinutesSquared.
+        /// </summary>
+        public double DecimetersPerMinutesSquared => As(AccelerationUnit.DecimeterPerMinuteSquared);
+
+        /// <summary>
         ///     Get Acceleration in DecimetersPerSecondSquared.
         /// </summary>
         public double DecimetersPerSecondSquared => As(AccelerationUnit.DecimeterPerSecondSquared);
+
+        /// <summary>
+        ///     Get Acceleration in ExametersPerHourSquared.
+        /// </summary>
+        public double ExametersPerHourSquared => As(AccelerationUnit.ExameterPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in ExametersPerMinutesSquared.
+        /// </summary>
+        public double ExametersPerMinutesSquared => As(AccelerationUnit.ExameterPerMinuteSquared);
+
+        /// <summary>
+        ///     Get Acceleration in ExametersPerSecondSquared.
+        /// </summary>
+        public double ExametersPerSecondSquared => As(AccelerationUnit.ExameterPerSecondSquared);
+
+        /// <summary>
+        ///     Get Acceleration in FemtometersPerHourSquared.
+        /// </summary>
+        public double FemtometersPerHourSquared => As(AccelerationUnit.FemtometerPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in FemtometersPerMinutesSquared.
+        /// </summary>
+        public double FemtometersPerMinutesSquared => As(AccelerationUnit.FemtometerPerMinuteSquared);
+
+        /// <summary>
+        ///     Get Acceleration in FemtometersPerSecondSquared.
+        /// </summary>
+        public double FemtometersPerSecondSquared => As(AccelerationUnit.FemtometerPerSecondSquared);
 
         /// <summary>
         ///     Get Acceleration in FeetPerSecondSquared.
@@ -197,9 +338,54 @@ namespace UnitsNet
         public double FeetPerSecondSquared => As(AccelerationUnit.FootPerSecondSquared);
 
         /// <summary>
+        ///     Get Acceleration in GigametersPerHourSquared.
+        /// </summary>
+        public double GigametersPerHourSquared => As(AccelerationUnit.GigameterPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in GigametersPerMinutesSquared.
+        /// </summary>
+        public double GigametersPerMinutesSquared => As(AccelerationUnit.GigameterPerMinuteSquared);
+
+        /// <summary>
+        ///     Get Acceleration in GigametersPerSecondSquared.
+        /// </summary>
+        public double GigametersPerSecondSquared => As(AccelerationUnit.GigameterPerSecondSquared);
+
+        /// <summary>
+        ///     Get Acceleration in HectometersPerHourSquared.
+        /// </summary>
+        public double HectometersPerHourSquared => As(AccelerationUnit.HectometerPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in HectometersPerMinutesSquared.
+        /// </summary>
+        public double HectometersPerMinutesSquared => As(AccelerationUnit.HectometerPerMinuteSquared);
+
+        /// <summary>
+        ///     Get Acceleration in HectometersPerSecondSquared.
+        /// </summary>
+        public double HectometersPerSecondSquared => As(AccelerationUnit.HectometerPerSecondSquared);
+
+        /// <summary>
         ///     Get Acceleration in InchesPerSecondSquared.
         /// </summary>
         public double InchesPerSecondSquared => As(AccelerationUnit.InchPerSecondSquared);
+
+        /// <summary>
+        ///     Get Acceleration in KilolightsecondsPerHourSquared.
+        /// </summary>
+        public double KilolightsecondsPerHourSquared => As(AccelerationUnit.KilolightsecondPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in KilometersPerHourSquared.
+        /// </summary>
+        public double KilometersPerHourSquared => As(AccelerationUnit.KilometerPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in KilometersPerMinutesSquared.
+        /// </summary>
+        public double KilometersPerMinutesSquared => As(AccelerationUnit.KilometerPerMinuteSquared);
 
         /// <summary>
         ///     Get Acceleration in KilometersPerSecondSquared.
@@ -222,9 +408,54 @@ namespace UnitsNet
         public double KnotsPerSecond => As(AccelerationUnit.KnotPerSecond);
 
         /// <summary>
+        ///     Get Acceleration in LightsecondsPerHourSquared.
+        /// </summary>
+        public double LightsecondsPerHourSquared => As(AccelerationUnit.LightsecondPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in MegametersPerHourSquared.
+        /// </summary>
+        public double MegametersPerHourSquared => As(AccelerationUnit.MegameterPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in MegametersPerMinutesSquared.
+        /// </summary>
+        public double MegametersPerMinutesSquared => As(AccelerationUnit.MegameterPerMinuteSquared);
+
+        /// <summary>
+        ///     Get Acceleration in MegametersPerSecondSquared.
+        /// </summary>
+        public double MegametersPerSecondSquared => As(AccelerationUnit.MegameterPerSecondSquared);
+
+        /// <summary>
+        ///     Get Acceleration in MetersPerHourSquared.
+        /// </summary>
+        public double MetersPerHourSquared => As(AccelerationUnit.MeterPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in MetersPerMinutesSquared.
+        /// </summary>
+        public double MetersPerMinutesSquared => As(AccelerationUnit.MeterPerMinuteSquared);
+
+        /// <summary>
         ///     Get Acceleration in MetersPerSecondSquared.
         /// </summary>
         public double MetersPerSecondSquared => As(AccelerationUnit.MeterPerSecondSquared);
+
+        /// <summary>
+        ///     Get Acceleration in MicrolightsecondsPerHourSquared.
+        /// </summary>
+        public double MicrolightsecondsPerHourSquared => As(AccelerationUnit.MicrolightsecondPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in MicrometersPerHourSquared.
+        /// </summary>
+        public double MicrometersPerHourSquared => As(AccelerationUnit.MicrometerPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in MicrometersPerMinutesSquared.
+        /// </summary>
+        public double MicrometersPerMinutesSquared => As(AccelerationUnit.MicrometerPerMinuteSquared);
 
         /// <summary>
         ///     Get Acceleration in MicrometersPerSecondSquared.
@@ -232,9 +463,44 @@ namespace UnitsNet
         public double MicrometersPerSecondSquared => As(AccelerationUnit.MicrometerPerSecondSquared);
 
         /// <summary>
+        ///     Get Acceleration in MilesPerHourSquared.
+        /// </summary>
+        public double MilesPerHourSquared => As(AccelerationUnit.MilePerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in MillilightsecondsPerHourSquared.
+        /// </summary>
+        public double MillilightsecondsPerHourSquared => As(AccelerationUnit.MillilightsecondPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in MillimetersPerHourSquared.
+        /// </summary>
+        public double MillimetersPerHourSquared => As(AccelerationUnit.MillimeterPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in MillimetersPerMinutesSquared.
+        /// </summary>
+        public double MillimetersPerMinutesSquared => As(AccelerationUnit.MillimeterPerMinuteSquared);
+
+        /// <summary>
         ///     Get Acceleration in MillimetersPerSecondSquared.
         /// </summary>
         public double MillimetersPerSecondSquared => As(AccelerationUnit.MillimeterPerSecondSquared);
+
+        /// <summary>
+        ///     Get Acceleration in NanolightsecondsPerHourSquared.
+        /// </summary>
+        public double NanolightsecondsPerHourSquared => As(AccelerationUnit.NanolightsecondPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in NanometersPerHourSquared.
+        /// </summary>
+        public double NanometersPerHourSquared => As(AccelerationUnit.NanometerPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in NanometersPerMinutesSquared.
+        /// </summary>
+        public double NanometersPerMinutesSquared => As(AccelerationUnit.NanometerPerMinuteSquared);
 
         /// <summary>
         ///     Get Acceleration in NanometersPerSecondSquared.
@@ -242,9 +508,114 @@ namespace UnitsNet
         public double NanometersPerSecondSquared => As(AccelerationUnit.NanometerPerSecondSquared);
 
         /// <summary>
+        ///     Get Acceleration in PetametersPerHourSquared.
+        /// </summary>
+        public double PetametersPerHourSquared => As(AccelerationUnit.PetameterPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in PetametersPerMinutesSquared.
+        /// </summary>
+        public double PetametersPerMinutesSquared => As(AccelerationUnit.PetameterPerMinuteSquared);
+
+        /// <summary>
+        ///     Get Acceleration in PetametersPerSecondSquared.
+        /// </summary>
+        public double PetametersPerSecondSquared => As(AccelerationUnit.PetameterPerSecondSquared);
+
+        /// <summary>
+        ///     Get Acceleration in PicometersPerHourSquared.
+        /// </summary>
+        public double PicometersPerHourSquared => As(AccelerationUnit.PicometerPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in PicometersPerMinutesSquared.
+        /// </summary>
+        public double PicometersPerMinutesSquared => As(AccelerationUnit.PicometerPerMinuteSquared);
+
+        /// <summary>
+        ///     Get Acceleration in PicometersPerSecondSquared.
+        /// </summary>
+        public double PicometersPerSecondSquared => As(AccelerationUnit.PicometerPerSecondSquared);
+
+        /// <summary>
+        ///     Get Acceleration in QutrametersPerHourSquared.
+        /// </summary>
+        public double QutrametersPerHourSquared => As(AccelerationUnit.QutrameterPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in QutrametersPerMinutesSquared.
+        /// </summary>
+        public double QutrametersPerMinutesSquared => As(AccelerationUnit.QutrameterPerMinuteSquared);
+
+        /// <summary>
+        ///     Get Acceleration in QutrametersPerSecondSquared.
+        /// </summary>
+        public double QutrametersPerSecondSquared => As(AccelerationUnit.QutrameterPerSecondSquared);
+
+        /// <summary>
         ///     Get Acceleration in StandardGravity.
         /// </summary>
         public double StandardGravity => As(AccelerationUnit.StandardGravity);
+
+        /// <summary>
+        ///     Get Acceleration in TerametersPerHourSquared.
+        /// </summary>
+        public double TerametersPerHourSquared => As(AccelerationUnit.TerameterPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in TerametersPerMinutesSquared.
+        /// </summary>
+        public double TerametersPerMinutesSquared => As(AccelerationUnit.TerameterPerMinuteSquared);
+
+        /// <summary>
+        ///     Get Acceleration in TerametersPerSecondSquared.
+        /// </summary>
+        public double TerametersPerSecondSquared => As(AccelerationUnit.TerameterPerSecondSquared);
+
+        /// <summary>
+        ///     Get Acceleration in VettametersPerHourSquared.
+        /// </summary>
+        public double VettametersPerHourSquared => As(AccelerationUnit.VettameterPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in VettametersPerMinutesSquared.
+        /// </summary>
+        public double VettametersPerMinutesSquared => As(AccelerationUnit.VettameterPerMinuteSquared);
+
+        /// <summary>
+        ///     Get Acceleration in VettametersPerSecondSquared.
+        /// </summary>
+        public double VettametersPerSecondSquared => As(AccelerationUnit.VettameterPerSecondSquared);
+
+        /// <summary>
+        ///     Get Acceleration in YottametersPerHourSquared.
+        /// </summary>
+        public double YottametersPerHourSquared => As(AccelerationUnit.YottameterPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in YottametersPerMinutesSquared.
+        /// </summary>
+        public double YottametersPerMinutesSquared => As(AccelerationUnit.YottameterPerMinuteSquared);
+
+        /// <summary>
+        ///     Get Acceleration in YottametersPerSecondSquared.
+        /// </summary>
+        public double YottametersPerSecondSquared => As(AccelerationUnit.YottameterPerSecondSquared);
+
+        /// <summary>
+        ///     Get Acceleration in ZettametersPerHourSquared.
+        /// </summary>
+        public double ZettametersPerHourSquared => As(AccelerationUnit.ZettameterPerHourSquared);
+
+        /// <summary>
+        ///     Get Acceleration in ZettametersPerMinutesSquared.
+        /// </summary>
+        public double ZettametersPerMinutesSquared => As(AccelerationUnit.ZettameterPerMinuteSquared);
+
+        /// <summary>
+        ///     Get Acceleration in ZettametersPerSecondSquared.
+        /// </summary>
+        public double ZettametersPerSecondSquared => As(AccelerationUnit.ZettameterPerSecondSquared);
 
         #endregion
 
@@ -276,6 +647,33 @@ namespace UnitsNet
         #region Static Factory Methods
 
         /// <summary>
+        ///     Get Acceleration from CentilightsecondsPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromCentilightsecondsPerHourSquared(QuantityValue centilightsecondsperhoursquared)
+        {
+            double value = (double) centilightsecondsperhoursquared;
+            return new Acceleration(value, AccelerationUnit.CentilightsecondPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from CentimetersPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromCentimetersPerHourSquared(QuantityValue centimetersperhoursquared)
+        {
+            double value = (double) centimetersperhoursquared;
+            return new Acceleration(value, AccelerationUnit.CentimeterPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from CentimetersPerMinutesSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromCentimetersPerMinutesSquared(QuantityValue centimetersperminutessquared)
+        {
+            double value = (double) centimetersperminutessquared;
+            return new Acceleration(value, AccelerationUnit.CentimeterPerMinuteSquared);
+        }
+        /// <summary>
         ///     Get Acceleration from CentimetersPerSecondSquared.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -283,6 +681,33 @@ namespace UnitsNet
         {
             double value = (double) centimeterspersecondsquared;
             return new Acceleration(value, AccelerationUnit.CentimeterPerSecondSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from DecalightsecondsPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromDecalightsecondsPerHourSquared(QuantityValue decalightsecondsperhoursquared)
+        {
+            double value = (double) decalightsecondsperhoursquared;
+            return new Acceleration(value, AccelerationUnit.DecalightsecondPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from DecametersPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromDecametersPerHourSquared(QuantityValue decametersperhoursquared)
+        {
+            double value = (double) decametersperhoursquared;
+            return new Acceleration(value, AccelerationUnit.DecameterPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from DecametersPerMinutesSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromDecametersPerMinutesSquared(QuantityValue decametersperminutessquared)
+        {
+            double value = (double) decametersperminutessquared;
+            return new Acceleration(value, AccelerationUnit.DecameterPerMinuteSquared);
         }
         /// <summary>
         ///     Get Acceleration from DecametersPerSecondSquared.
@@ -294,6 +719,33 @@ namespace UnitsNet
             return new Acceleration(value, AccelerationUnit.DecameterPerSecondSquared);
         }
         /// <summary>
+        ///     Get Acceleration from DecilightsecondsPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromDecilightsecondsPerHourSquared(QuantityValue decilightsecondsperhoursquared)
+        {
+            double value = (double) decilightsecondsperhoursquared;
+            return new Acceleration(value, AccelerationUnit.DecilightsecondPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from DecimetersPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromDecimetersPerHourSquared(QuantityValue decimetersperhoursquared)
+        {
+            double value = (double) decimetersperhoursquared;
+            return new Acceleration(value, AccelerationUnit.DecimeterPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from DecimetersPerMinutesSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromDecimetersPerMinutesSquared(QuantityValue decimetersperminutessquared)
+        {
+            double value = (double) decimetersperminutessquared;
+            return new Acceleration(value, AccelerationUnit.DecimeterPerMinuteSquared);
+        }
+        /// <summary>
         ///     Get Acceleration from DecimetersPerSecondSquared.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -301,6 +753,60 @@ namespace UnitsNet
         {
             double value = (double) decimeterspersecondsquared;
             return new Acceleration(value, AccelerationUnit.DecimeterPerSecondSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from ExametersPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromExametersPerHourSquared(QuantityValue exametersperhoursquared)
+        {
+            double value = (double) exametersperhoursquared;
+            return new Acceleration(value, AccelerationUnit.ExameterPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from ExametersPerMinutesSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromExametersPerMinutesSquared(QuantityValue exametersperminutessquared)
+        {
+            double value = (double) exametersperminutessquared;
+            return new Acceleration(value, AccelerationUnit.ExameterPerMinuteSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from ExametersPerSecondSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromExametersPerSecondSquared(QuantityValue exameterspersecondsquared)
+        {
+            double value = (double) exameterspersecondsquared;
+            return new Acceleration(value, AccelerationUnit.ExameterPerSecondSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from FemtometersPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromFemtometersPerHourSquared(QuantityValue femtometersperhoursquared)
+        {
+            double value = (double) femtometersperhoursquared;
+            return new Acceleration(value, AccelerationUnit.FemtometerPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from FemtometersPerMinutesSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromFemtometersPerMinutesSquared(QuantityValue femtometersperminutessquared)
+        {
+            double value = (double) femtometersperminutessquared;
+            return new Acceleration(value, AccelerationUnit.FemtometerPerMinuteSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from FemtometersPerSecondSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromFemtometersPerSecondSquared(QuantityValue femtometerspersecondsquared)
+        {
+            double value = (double) femtometerspersecondsquared;
+            return new Acceleration(value, AccelerationUnit.FemtometerPerSecondSquared);
         }
         /// <summary>
         ///     Get Acceleration from FeetPerSecondSquared.
@@ -312,6 +818,60 @@ namespace UnitsNet
             return new Acceleration(value, AccelerationUnit.FootPerSecondSquared);
         }
         /// <summary>
+        ///     Get Acceleration from GigametersPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromGigametersPerHourSquared(QuantityValue gigametersperhoursquared)
+        {
+            double value = (double) gigametersperhoursquared;
+            return new Acceleration(value, AccelerationUnit.GigameterPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from GigametersPerMinutesSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromGigametersPerMinutesSquared(QuantityValue gigametersperminutessquared)
+        {
+            double value = (double) gigametersperminutessquared;
+            return new Acceleration(value, AccelerationUnit.GigameterPerMinuteSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from GigametersPerSecondSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromGigametersPerSecondSquared(QuantityValue gigameterspersecondsquared)
+        {
+            double value = (double) gigameterspersecondsquared;
+            return new Acceleration(value, AccelerationUnit.GigameterPerSecondSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from HectometersPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromHectometersPerHourSquared(QuantityValue hectometersperhoursquared)
+        {
+            double value = (double) hectometersperhoursquared;
+            return new Acceleration(value, AccelerationUnit.HectometerPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from HectometersPerMinutesSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromHectometersPerMinutesSquared(QuantityValue hectometersperminutessquared)
+        {
+            double value = (double) hectometersperminutessquared;
+            return new Acceleration(value, AccelerationUnit.HectometerPerMinuteSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from HectometersPerSecondSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromHectometersPerSecondSquared(QuantityValue hectometerspersecondsquared)
+        {
+            double value = (double) hectometerspersecondsquared;
+            return new Acceleration(value, AccelerationUnit.HectometerPerSecondSquared);
+        }
+        /// <summary>
         ///     Get Acceleration from InchesPerSecondSquared.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -319,6 +879,33 @@ namespace UnitsNet
         {
             double value = (double) inchespersecondsquared;
             return new Acceleration(value, AccelerationUnit.InchPerSecondSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from KilolightsecondsPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromKilolightsecondsPerHourSquared(QuantityValue kilolightsecondsperhoursquared)
+        {
+            double value = (double) kilolightsecondsperhoursquared;
+            return new Acceleration(value, AccelerationUnit.KilolightsecondPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from KilometersPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromKilometersPerHourSquared(QuantityValue kilometersperhoursquared)
+        {
+            double value = (double) kilometersperhoursquared;
+            return new Acceleration(value, AccelerationUnit.KilometerPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from KilometersPerMinutesSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromKilometersPerMinutesSquared(QuantityValue kilometersperminutessquared)
+        {
+            double value = (double) kilometersperminutessquared;
+            return new Acceleration(value, AccelerationUnit.KilometerPerMinuteSquared);
         }
         /// <summary>
         ///     Get Acceleration from KilometersPerSecondSquared.
@@ -357,6 +944,60 @@ namespace UnitsNet
             return new Acceleration(value, AccelerationUnit.KnotPerSecond);
         }
         /// <summary>
+        ///     Get Acceleration from LightsecondsPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromLightsecondsPerHourSquared(QuantityValue lightsecondsperhoursquared)
+        {
+            double value = (double) lightsecondsperhoursquared;
+            return new Acceleration(value, AccelerationUnit.LightsecondPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from MegametersPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromMegametersPerHourSquared(QuantityValue megametersperhoursquared)
+        {
+            double value = (double) megametersperhoursquared;
+            return new Acceleration(value, AccelerationUnit.MegameterPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from MegametersPerMinutesSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromMegametersPerMinutesSquared(QuantityValue megametersperminutessquared)
+        {
+            double value = (double) megametersperminutessquared;
+            return new Acceleration(value, AccelerationUnit.MegameterPerMinuteSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from MegametersPerSecondSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromMegametersPerSecondSquared(QuantityValue megameterspersecondsquared)
+        {
+            double value = (double) megameterspersecondsquared;
+            return new Acceleration(value, AccelerationUnit.MegameterPerSecondSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from MetersPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromMetersPerHourSquared(QuantityValue metersperhoursquared)
+        {
+            double value = (double) metersperhoursquared;
+            return new Acceleration(value, AccelerationUnit.MeterPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from MetersPerMinutesSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromMetersPerMinutesSquared(QuantityValue metersperminutessquared)
+        {
+            double value = (double) metersperminutessquared;
+            return new Acceleration(value, AccelerationUnit.MeterPerMinuteSquared);
+        }
+        /// <summary>
         ///     Get Acceleration from MetersPerSecondSquared.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -364,6 +1005,33 @@ namespace UnitsNet
         {
             double value = (double) meterspersecondsquared;
             return new Acceleration(value, AccelerationUnit.MeterPerSecondSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from MicrolightsecondsPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromMicrolightsecondsPerHourSquared(QuantityValue microlightsecondsperhoursquared)
+        {
+            double value = (double) microlightsecondsperhoursquared;
+            return new Acceleration(value, AccelerationUnit.MicrolightsecondPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from MicrometersPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromMicrometersPerHourSquared(QuantityValue micrometersperhoursquared)
+        {
+            double value = (double) micrometersperhoursquared;
+            return new Acceleration(value, AccelerationUnit.MicrometerPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from MicrometersPerMinutesSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromMicrometersPerMinutesSquared(QuantityValue micrometersperminutessquared)
+        {
+            double value = (double) micrometersperminutessquared;
+            return new Acceleration(value, AccelerationUnit.MicrometerPerMinuteSquared);
         }
         /// <summary>
         ///     Get Acceleration from MicrometersPerSecondSquared.
@@ -375,6 +1043,42 @@ namespace UnitsNet
             return new Acceleration(value, AccelerationUnit.MicrometerPerSecondSquared);
         }
         /// <summary>
+        ///     Get Acceleration from MilesPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromMilesPerHourSquared(QuantityValue milesperhoursquared)
+        {
+            double value = (double) milesperhoursquared;
+            return new Acceleration(value, AccelerationUnit.MilePerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from MillilightsecondsPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromMillilightsecondsPerHourSquared(QuantityValue millilightsecondsperhoursquared)
+        {
+            double value = (double) millilightsecondsperhoursquared;
+            return new Acceleration(value, AccelerationUnit.MillilightsecondPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from MillimetersPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromMillimetersPerHourSquared(QuantityValue millimetersperhoursquared)
+        {
+            double value = (double) millimetersperhoursquared;
+            return new Acceleration(value, AccelerationUnit.MillimeterPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from MillimetersPerMinutesSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromMillimetersPerMinutesSquared(QuantityValue millimetersperminutessquared)
+        {
+            double value = (double) millimetersperminutessquared;
+            return new Acceleration(value, AccelerationUnit.MillimeterPerMinuteSquared);
+        }
+        /// <summary>
         ///     Get Acceleration from MillimetersPerSecondSquared.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -382,6 +1086,33 @@ namespace UnitsNet
         {
             double value = (double) millimeterspersecondsquared;
             return new Acceleration(value, AccelerationUnit.MillimeterPerSecondSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from NanolightsecondsPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromNanolightsecondsPerHourSquared(QuantityValue nanolightsecondsperhoursquared)
+        {
+            double value = (double) nanolightsecondsperhoursquared;
+            return new Acceleration(value, AccelerationUnit.NanolightsecondPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from NanometersPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromNanometersPerHourSquared(QuantityValue nanometersperhoursquared)
+        {
+            double value = (double) nanometersperhoursquared;
+            return new Acceleration(value, AccelerationUnit.NanometerPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from NanometersPerMinutesSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromNanometersPerMinutesSquared(QuantityValue nanometersperminutessquared)
+        {
+            double value = (double) nanometersperminutessquared;
+            return new Acceleration(value, AccelerationUnit.NanometerPerMinuteSquared);
         }
         /// <summary>
         ///     Get Acceleration from NanometersPerSecondSquared.
@@ -393,6 +1124,87 @@ namespace UnitsNet
             return new Acceleration(value, AccelerationUnit.NanometerPerSecondSquared);
         }
         /// <summary>
+        ///     Get Acceleration from PetametersPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromPetametersPerHourSquared(QuantityValue petametersperhoursquared)
+        {
+            double value = (double) petametersperhoursquared;
+            return new Acceleration(value, AccelerationUnit.PetameterPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from PetametersPerMinutesSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromPetametersPerMinutesSquared(QuantityValue petametersperminutessquared)
+        {
+            double value = (double) petametersperminutessquared;
+            return new Acceleration(value, AccelerationUnit.PetameterPerMinuteSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from PetametersPerSecondSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromPetametersPerSecondSquared(QuantityValue petameterspersecondsquared)
+        {
+            double value = (double) petameterspersecondsquared;
+            return new Acceleration(value, AccelerationUnit.PetameterPerSecondSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from PicometersPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromPicometersPerHourSquared(QuantityValue picometersperhoursquared)
+        {
+            double value = (double) picometersperhoursquared;
+            return new Acceleration(value, AccelerationUnit.PicometerPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from PicometersPerMinutesSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromPicometersPerMinutesSquared(QuantityValue picometersperminutessquared)
+        {
+            double value = (double) picometersperminutessquared;
+            return new Acceleration(value, AccelerationUnit.PicometerPerMinuteSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from PicometersPerSecondSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromPicometersPerSecondSquared(QuantityValue picometerspersecondsquared)
+        {
+            double value = (double) picometerspersecondsquared;
+            return new Acceleration(value, AccelerationUnit.PicometerPerSecondSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from QutrametersPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromQutrametersPerHourSquared(QuantityValue qutrametersperhoursquared)
+        {
+            double value = (double) qutrametersperhoursquared;
+            return new Acceleration(value, AccelerationUnit.QutrameterPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from QutrametersPerMinutesSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromQutrametersPerMinutesSquared(QuantityValue qutrametersperminutessquared)
+        {
+            double value = (double) qutrametersperminutessquared;
+            return new Acceleration(value, AccelerationUnit.QutrameterPerMinuteSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from QutrametersPerSecondSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromQutrametersPerSecondSquared(QuantityValue qutrameterspersecondsquared)
+        {
+            double value = (double) qutrameterspersecondsquared;
+            return new Acceleration(value, AccelerationUnit.QutrameterPerSecondSquared);
+        }
+        /// <summary>
         ///     Get Acceleration from StandardGravity.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -400,6 +1212,114 @@ namespace UnitsNet
         {
             double value = (double) standardgravity;
             return new Acceleration(value, AccelerationUnit.StandardGravity);
+        }
+        /// <summary>
+        ///     Get Acceleration from TerametersPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromTerametersPerHourSquared(QuantityValue terametersperhoursquared)
+        {
+            double value = (double) terametersperhoursquared;
+            return new Acceleration(value, AccelerationUnit.TerameterPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from TerametersPerMinutesSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromTerametersPerMinutesSquared(QuantityValue terametersperminutessquared)
+        {
+            double value = (double) terametersperminutessquared;
+            return new Acceleration(value, AccelerationUnit.TerameterPerMinuteSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from TerametersPerSecondSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromTerametersPerSecondSquared(QuantityValue terameterspersecondsquared)
+        {
+            double value = (double) terameterspersecondsquared;
+            return new Acceleration(value, AccelerationUnit.TerameterPerSecondSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from VettametersPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromVettametersPerHourSquared(QuantityValue vettametersperhoursquared)
+        {
+            double value = (double) vettametersperhoursquared;
+            return new Acceleration(value, AccelerationUnit.VettameterPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from VettametersPerMinutesSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromVettametersPerMinutesSquared(QuantityValue vettametersperminutessquared)
+        {
+            double value = (double) vettametersperminutessquared;
+            return new Acceleration(value, AccelerationUnit.VettameterPerMinuteSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from VettametersPerSecondSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromVettametersPerSecondSquared(QuantityValue vettameterspersecondsquared)
+        {
+            double value = (double) vettameterspersecondsquared;
+            return new Acceleration(value, AccelerationUnit.VettameterPerSecondSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from YottametersPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromYottametersPerHourSquared(QuantityValue yottametersperhoursquared)
+        {
+            double value = (double) yottametersperhoursquared;
+            return new Acceleration(value, AccelerationUnit.YottameterPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from YottametersPerMinutesSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromYottametersPerMinutesSquared(QuantityValue yottametersperminutessquared)
+        {
+            double value = (double) yottametersperminutessquared;
+            return new Acceleration(value, AccelerationUnit.YottameterPerMinuteSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from YottametersPerSecondSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromYottametersPerSecondSquared(QuantityValue yottameterspersecondsquared)
+        {
+            double value = (double) yottameterspersecondsquared;
+            return new Acceleration(value, AccelerationUnit.YottameterPerSecondSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from ZettametersPerHourSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromZettametersPerHourSquared(QuantityValue zettametersperhoursquared)
+        {
+            double value = (double) zettametersperhoursquared;
+            return new Acceleration(value, AccelerationUnit.ZettameterPerHourSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from ZettametersPerMinutesSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromZettametersPerMinutesSquared(QuantityValue zettametersperminutessquared)
+        {
+            double value = (double) zettametersperminutessquared;
+            return new Acceleration(value, AccelerationUnit.ZettameterPerMinuteSquared);
+        }
+        /// <summary>
+        ///     Get Acceleration from ZettametersPerSecondSquared.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Acceleration FromZettametersPerSecondSquared(QuantityValue zettameterspersecondsquared)
+        {
+            double value = (double) zettameterspersecondsquared;
+            return new Acceleration(value, AccelerationUnit.ZettameterPerSecondSquared);
         }
 
         /// <summary>
@@ -610,32 +1530,44 @@ namespace UnitsNet
         /// <summary>Returns true if less or equal to.</summary>
         public static bool operator <=(Acceleration left, Acceleration right)
         {
+            if(left is null || right is null )
+                return false;
             return left.Value <= right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if greater than or equal to.</summary>
         public static bool operator >=(Acceleration left, Acceleration right)
         {
-            return left.Value >= right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value >= right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if less than.</summary>
         public static bool operator <(Acceleration left, Acceleration right)
         {
-            return left.Value < right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value < right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if greater than.</summary>
         public static bool operator >(Acceleration left, Acceleration right)
         {
-            return left.Value > right.GetValueAs(left.Unit);
+              if(left is null || right is null )
+                return false;
+          return left.Value > right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if exactly equal.</summary>
         /// <remarks>Consider using <see cref="Equals(Acceleration, double, ComparisonType)"/> for safely comparing floating point values.</remarks>
         public static bool operator ==(Acceleration left, Acceleration right)
         {
-            return left.Equals(right);
+             if(left is null && right is null )
+                return true;
+            if( left is null )
+                return false;
+           return left.Equals(right);
         }
 
         /// <summary>Returns true if not exactly equal.</summary>
@@ -657,6 +1589,8 @@ namespace UnitsNet
         /// <inheritdoc />
         public int CompareTo(Acceleration other)
         {
+            if(other is null) throw new ArgumentNullException();
+
             return _value.CompareTo(other.GetValueAs(this.Unit));
         }
 
@@ -674,6 +1608,9 @@ namespace UnitsNet
         /// <remarks>Consider using <see cref="Equals(Acceleration, double, ComparisonType)"/> for safely comparing floating point values.</remarks>
         public bool Equals(Acceleration other)
         {
+            if(other is null)
+                return false;
+
             return _value.Equals(other.GetValueAs(this.Unit));
         }
 
@@ -759,13 +1696,16 @@ namespace UnitsNet
         {
             if(unitSystem == null)
                 throw new ArgumentNullException(nameof(unitSystem));
-
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
+            
+            var firstUnitInfo = unitInfos.FirstOrDefault(u => u.Value.Equals(BaseUnit));
+            if (firstUnitInfo is null)
+            {
+                firstUnitInfo = unitInfos.FirstOrDefault();
+                if (firstUnitInfo is null)
                 throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
-
+            }
+            
             return As(firstUnitInfo.Value);
         }
 
@@ -802,13 +1742,12 @@ namespace UnitsNet
         {
             if(unitSystem == null)
                 throw new ArgumentNullException(nameof(unitSystem));
-
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
+            var firstUnitInfo = unitInfos.FirstOrDefault(u=> u.Value.Equals(BaseUnit));
+            if (firstUnitInfo == null)
                 throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
 
+            
             return ToUnit(firstUnitInfo.Value);
         }
 
@@ -830,20 +1769,81 @@ namespace UnitsNet
         {
             switch(Unit)
             {
+                case AccelerationUnit.CentilightsecondPerHourSquared: return (_value*1.2008e-5) * 1e-2d;
+                case AccelerationUnit.CentimeterPerHourSquared: return (_value/3600) * 1e-2d;
+                case AccelerationUnit.CentimeterPerMinuteSquared: return (_value/60) * 1e-2d;
                 case AccelerationUnit.CentimeterPerSecondSquared: return (_value) * 1e-2d;
+                case AccelerationUnit.DecalightsecondPerHourSquared: return (_value*1.2008e-5) * 1e1d;
+                case AccelerationUnit.DecameterPerHourSquared: return (_value/3600) * 1e1d;
+                case AccelerationUnit.DecameterPerMinuteSquared: return (_value/60) * 1e1d;
                 case AccelerationUnit.DecameterPerSecondSquared: return (_value) * 1e1d;
+                case AccelerationUnit.DecilightsecondPerHourSquared: return (_value*1.2008e-5) * 1e-1d;
+                case AccelerationUnit.DecimeterPerHourSquared: return (_value/3600) * 1e-1d;
+                case AccelerationUnit.DecimeterPerMinuteSquared: return (_value/60) * 1e-1d;
                 case AccelerationUnit.DecimeterPerSecondSquared: return (_value) * 1e-1d;
+                case AccelerationUnit.ExameterPerHourSquared: return (_value/3600) * 1e18d;
+                case AccelerationUnit.ExameterPerMinuteSquared: return (_value/60) * 1e18d;
+                case AccelerationUnit.ExameterPerSecondSquared: return (_value) * 1e18d;
+                case AccelerationUnit.FemtometerPerHourSquared: return (_value/3600) * 1e-15d;
+                case AccelerationUnit.FemtometerPerMinuteSquared: return (_value/60) * 1e-15d;
+                case AccelerationUnit.FemtometerPerSecondSquared: return (_value) * 1e-15d;
                 case AccelerationUnit.FootPerSecondSquared: return _value*0.304800;
+                case AccelerationUnit.GigameterPerHourSquared: return (_value/3600) * 1e9d;
+                case AccelerationUnit.GigameterPerMinuteSquared: return (_value/60) * 1e9d;
+                case AccelerationUnit.GigameterPerSecondSquared: return (_value) * 1e9d;
+                case AccelerationUnit.HectometerPerHourSquared: return (_value/3600) * 1e2d;
+                case AccelerationUnit.HectometerPerMinuteSquared: return (_value/60) * 1e2d;
+                case AccelerationUnit.HectometerPerSecondSquared: return (_value) * 1e2d;
                 case AccelerationUnit.InchPerSecondSquared: return _value*0.0254;
+                case AccelerationUnit.KilolightsecondPerHourSquared: return (_value*1.2008e-5) * 1e3d;
+                case AccelerationUnit.KilometerPerHourSquared: return (_value/3600) * 1e3d;
+                case AccelerationUnit.KilometerPerMinuteSquared: return (_value/60) * 1e3d;
                 case AccelerationUnit.KilometerPerSecondSquared: return (_value) * 1e3d;
                 case AccelerationUnit.KnotPerHour: return _value*0.5144444444444/3600;
                 case AccelerationUnit.KnotPerMinute: return _value*0.5144444444444/60;
                 case AccelerationUnit.KnotPerSecond: return _value*0.5144444444444;
+                case AccelerationUnit.LightsecondPerHourSquared: return _value*1.2008e-5;
+                case AccelerationUnit.MegameterPerHourSquared: return (_value/3600) * 1e6d;
+                case AccelerationUnit.MegameterPerMinuteSquared: return (_value/60) * 1e6d;
+                case AccelerationUnit.MegameterPerSecondSquared: return (_value) * 1e6d;
+                case AccelerationUnit.MeterPerHourSquared: return _value/3600;
+                case AccelerationUnit.MeterPerMinuteSquared: return _value/60;
                 case AccelerationUnit.MeterPerSecondSquared: return _value;
+                case AccelerationUnit.MicrolightsecondPerHourSquared: return (_value*1.2008e-5) * 1e-6d;
+                case AccelerationUnit.MicrometerPerHourSquared: return (_value/3600) * 1e-6d;
+                case AccelerationUnit.MicrometerPerMinuteSquared: return (_value/60) * 1e-6d;
                 case AccelerationUnit.MicrometerPerSecondSquared: return (_value) * 1e-6d;
+                case AccelerationUnit.MilePerHourSquared: return _value*0.44704;
+                case AccelerationUnit.MillilightsecondPerHourSquared: return (_value*1.2008e-5) * 1e-3d;
+                case AccelerationUnit.MillimeterPerHourSquared: return (_value/3600) * 1e-3d;
+                case AccelerationUnit.MillimeterPerMinuteSquared: return (_value/60) * 1e-3d;
                 case AccelerationUnit.MillimeterPerSecondSquared: return (_value) * 1e-3d;
+                case AccelerationUnit.NanolightsecondPerHourSquared: return (_value*1.2008e-5) * 1e-9d;
+                case AccelerationUnit.NanometerPerHourSquared: return (_value/3600) * 1e-9d;
+                case AccelerationUnit.NanometerPerMinuteSquared: return (_value/60) * 1e-9d;
                 case AccelerationUnit.NanometerPerSecondSquared: return (_value) * 1e-9d;
+                case AccelerationUnit.PetameterPerHourSquared: return (_value/3600) * 1e15d;
+                case AccelerationUnit.PetameterPerMinuteSquared: return (_value/60) * 1e15d;
+                case AccelerationUnit.PetameterPerSecondSquared: return (_value) * 1e15d;
+                case AccelerationUnit.PicometerPerHourSquared: return (_value/3600) * 1e-12d;
+                case AccelerationUnit.PicometerPerMinuteSquared: return (_value/60) * 1e-12d;
+                case AccelerationUnit.PicometerPerSecondSquared: return (_value) * 1e-12d;
+                case AccelerationUnit.QutrameterPerHourSquared: return (_value/3600) * 1e27d;
+                case AccelerationUnit.QutrameterPerMinuteSquared: return (_value/60) * 1e27d;
+                case AccelerationUnit.QutrameterPerSecondSquared: return (_value) * 1e27d;
                 case AccelerationUnit.StandardGravity: return _value*9.80665;
+                case AccelerationUnit.TerameterPerHourSquared: return (_value/3600) * 1e12d;
+                case AccelerationUnit.TerameterPerMinuteSquared: return (_value/60) * 1e12d;
+                case AccelerationUnit.TerameterPerSecondSquared: return (_value) * 1e12d;
+                case AccelerationUnit.VettameterPerHourSquared: return (_value/3600) * 1e30d;
+                case AccelerationUnit.VettameterPerMinuteSquared: return (_value/60) * 1e30d;
+                case AccelerationUnit.VettameterPerSecondSquared: return (_value) * 1e30d;
+                case AccelerationUnit.YottameterPerHourSquared: return (_value/3600) * 1e24d;
+                case AccelerationUnit.YottameterPerMinuteSquared: return (_value/60) * 1e24d;
+                case AccelerationUnit.YottameterPerSecondSquared: return (_value) * 1e24d;
+                case AccelerationUnit.ZettameterPerHourSquared: return (_value/3600) * 1e21d;
+                case AccelerationUnit.ZettameterPerMinuteSquared: return (_value/60) * 1e21d;
+                case AccelerationUnit.ZettameterPerSecondSquared: return (_value) * 1e21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to base units.");
             }
@@ -858,20 +1858,81 @@ namespace UnitsNet
 
             switch(unit)
             {
+                case AccelerationUnit.CentilightsecondPerHourSquared: return (baseUnitValue/1.2008e-5) / 1e-2d;
+                case AccelerationUnit.CentimeterPerHourSquared: return (baseUnitValue*3600) / 1e-2d;
+                case AccelerationUnit.CentimeterPerMinuteSquared: return (baseUnitValue*60) / 1e-2d;
                 case AccelerationUnit.CentimeterPerSecondSquared: return (baseUnitValue) / 1e-2d;
+                case AccelerationUnit.DecalightsecondPerHourSquared: return (baseUnitValue/1.2008e-5) / 1e1d;
+                case AccelerationUnit.DecameterPerHourSquared: return (baseUnitValue*3600) / 1e1d;
+                case AccelerationUnit.DecameterPerMinuteSquared: return (baseUnitValue*60) / 1e1d;
                 case AccelerationUnit.DecameterPerSecondSquared: return (baseUnitValue) / 1e1d;
+                case AccelerationUnit.DecilightsecondPerHourSquared: return (baseUnitValue/1.2008e-5) / 1e-1d;
+                case AccelerationUnit.DecimeterPerHourSquared: return (baseUnitValue*3600) / 1e-1d;
+                case AccelerationUnit.DecimeterPerMinuteSquared: return (baseUnitValue*60) / 1e-1d;
                 case AccelerationUnit.DecimeterPerSecondSquared: return (baseUnitValue) / 1e-1d;
+                case AccelerationUnit.ExameterPerHourSquared: return (baseUnitValue*3600) / 1e18d;
+                case AccelerationUnit.ExameterPerMinuteSquared: return (baseUnitValue*60) / 1e18d;
+                case AccelerationUnit.ExameterPerSecondSquared: return (baseUnitValue) / 1e18d;
+                case AccelerationUnit.FemtometerPerHourSquared: return (baseUnitValue*3600) / 1e-15d;
+                case AccelerationUnit.FemtometerPerMinuteSquared: return (baseUnitValue*60) / 1e-15d;
+                case AccelerationUnit.FemtometerPerSecondSquared: return (baseUnitValue) / 1e-15d;
                 case AccelerationUnit.FootPerSecondSquared: return baseUnitValue/0.304800;
+                case AccelerationUnit.GigameterPerHourSquared: return (baseUnitValue*3600) / 1e9d;
+                case AccelerationUnit.GigameterPerMinuteSquared: return (baseUnitValue*60) / 1e9d;
+                case AccelerationUnit.GigameterPerSecondSquared: return (baseUnitValue) / 1e9d;
+                case AccelerationUnit.HectometerPerHourSquared: return (baseUnitValue*3600) / 1e2d;
+                case AccelerationUnit.HectometerPerMinuteSquared: return (baseUnitValue*60) / 1e2d;
+                case AccelerationUnit.HectometerPerSecondSquared: return (baseUnitValue) / 1e2d;
                 case AccelerationUnit.InchPerSecondSquared: return baseUnitValue/0.0254;
+                case AccelerationUnit.KilolightsecondPerHourSquared: return (baseUnitValue/1.2008e-5) / 1e3d;
+                case AccelerationUnit.KilometerPerHourSquared: return (baseUnitValue*3600) / 1e3d;
+                case AccelerationUnit.KilometerPerMinuteSquared: return (baseUnitValue*60) / 1e3d;
                 case AccelerationUnit.KilometerPerSecondSquared: return (baseUnitValue) / 1e3d;
                 case AccelerationUnit.KnotPerHour: return baseUnitValue/0.5144444444444*3600;
                 case AccelerationUnit.KnotPerMinute: return baseUnitValue/0.5144444444444*60;
                 case AccelerationUnit.KnotPerSecond: return baseUnitValue/0.5144444444444;
+                case AccelerationUnit.LightsecondPerHourSquared: return baseUnitValue/1.2008e-5;
+                case AccelerationUnit.MegameterPerHourSquared: return (baseUnitValue*3600) / 1e6d;
+                case AccelerationUnit.MegameterPerMinuteSquared: return (baseUnitValue*60) / 1e6d;
+                case AccelerationUnit.MegameterPerSecondSquared: return (baseUnitValue) / 1e6d;
+                case AccelerationUnit.MeterPerHourSquared: return baseUnitValue*3600;
+                case AccelerationUnit.MeterPerMinuteSquared: return baseUnitValue*60;
                 case AccelerationUnit.MeterPerSecondSquared: return baseUnitValue;
+                case AccelerationUnit.MicrolightsecondPerHourSquared: return (baseUnitValue/1.2008e-5) / 1e-6d;
+                case AccelerationUnit.MicrometerPerHourSquared: return (baseUnitValue*3600) / 1e-6d;
+                case AccelerationUnit.MicrometerPerMinuteSquared: return (baseUnitValue*60) / 1e-6d;
                 case AccelerationUnit.MicrometerPerSecondSquared: return (baseUnitValue) / 1e-6d;
+                case AccelerationUnit.MilePerHourSquared: return baseUnitValue/0.44704;
+                case AccelerationUnit.MillilightsecondPerHourSquared: return (baseUnitValue/1.2008e-5) / 1e-3d;
+                case AccelerationUnit.MillimeterPerHourSquared: return (baseUnitValue*3600) / 1e-3d;
+                case AccelerationUnit.MillimeterPerMinuteSquared: return (baseUnitValue*60) / 1e-3d;
                 case AccelerationUnit.MillimeterPerSecondSquared: return (baseUnitValue) / 1e-3d;
+                case AccelerationUnit.NanolightsecondPerHourSquared: return (baseUnitValue/1.2008e-5) / 1e-9d;
+                case AccelerationUnit.NanometerPerHourSquared: return (baseUnitValue*3600) / 1e-9d;
+                case AccelerationUnit.NanometerPerMinuteSquared: return (baseUnitValue*60) / 1e-9d;
                 case AccelerationUnit.NanometerPerSecondSquared: return (baseUnitValue) / 1e-9d;
+                case AccelerationUnit.PetameterPerHourSquared: return (baseUnitValue*3600) / 1e15d;
+                case AccelerationUnit.PetameterPerMinuteSquared: return (baseUnitValue*60) / 1e15d;
+                case AccelerationUnit.PetameterPerSecondSquared: return (baseUnitValue) / 1e15d;
+                case AccelerationUnit.PicometerPerHourSquared: return (baseUnitValue*3600) / 1e-12d;
+                case AccelerationUnit.PicometerPerMinuteSquared: return (baseUnitValue*60) / 1e-12d;
+                case AccelerationUnit.PicometerPerSecondSquared: return (baseUnitValue) / 1e-12d;
+                case AccelerationUnit.QutrameterPerHourSquared: return (baseUnitValue*3600) / 1e27d;
+                case AccelerationUnit.QutrameterPerMinuteSquared: return (baseUnitValue*60) / 1e27d;
+                case AccelerationUnit.QutrameterPerSecondSquared: return (baseUnitValue) / 1e27d;
                 case AccelerationUnit.StandardGravity: return baseUnitValue/9.80665;
+                case AccelerationUnit.TerameterPerHourSquared: return (baseUnitValue*3600) / 1e12d;
+                case AccelerationUnit.TerameterPerMinuteSquared: return (baseUnitValue*60) / 1e12d;
+                case AccelerationUnit.TerameterPerSecondSquared: return (baseUnitValue) / 1e12d;
+                case AccelerationUnit.VettameterPerHourSquared: return (baseUnitValue*3600) / 1e30d;
+                case AccelerationUnit.VettameterPerMinuteSquared: return (baseUnitValue*60) / 1e30d;
+                case AccelerationUnit.VettameterPerSecondSquared: return (baseUnitValue) / 1e30d;
+                case AccelerationUnit.YottameterPerHourSquared: return (baseUnitValue*3600) / 1e24d;
+                case AccelerationUnit.YottameterPerMinuteSquared: return (baseUnitValue*60) / 1e24d;
+                case AccelerationUnit.YottameterPerSecondSquared: return (baseUnitValue) / 1e24d;
+                case AccelerationUnit.ZettameterPerHourSquared: return (baseUnitValue*3600) / 1e21d;
+                case AccelerationUnit.ZettameterPerMinuteSquared: return (baseUnitValue*60) / 1e21d;
+                case AccelerationUnit.ZettameterPerSecondSquared: return (baseUnitValue) / 1e21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to {unit}.");
             }

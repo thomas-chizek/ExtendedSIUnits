@@ -40,23 +40,36 @@ namespace UnitsNet
             formatProvider = formatProvider ?? CultureInfo.CurrentUICulture;
 
             var number = 0;
-            var formatString = format;
+            // as far as the .Net formatter is concerned upper and lower case formats do the same thing
+            // do make this formatter as case agnostic as we can.
+            var formatString = format.ToLower();
 
             if(string.IsNullOrEmpty(formatString))
                 formatString = "g";
 
-            if(formatString.StartsWith("a") || formatString.StartsWith("s"))
-            {
-                if(formatString.Length > 1 && !int.TryParse(formatString.Substring(1), out number))
-                    throw new FormatException($"The {format} format string is not supported.");
+            if (formatString.Length > 1 && !int.TryParse(formatString.Substring(1), out number))
+                throw new FormatException($"The {format} format string is not supported.");
 
-                formatString = formatString.Substring(0, 1);
-            }
+            formatString = formatString.Substring(0, 1);
+
+            //if (formatString.StartsWith("a") || formatString.StartsWith("s"))
+            //{
+            //    if(formatString.Length > 1 && !int.TryParse(formatString.Substring(1), out number))
+            //        throw new FormatException($"The {format} format string is not supported.");
+
+            //    formatString = formatString.Substring(0, 1);
+            //}
 
             switch(formatString)
             {
+                case "c":
+                case "d":
+                case "f":
+                case "n":
+                case "p":
+                case "s":
                 case "g":
-                    return ToStringWithSignificantDigitsAfterRadix(quantity, formatProvider, 2);
+                    return ToStringWithSignificantDigitsAfterRadix(quantity, formatProvider, number);
                 case "a":
                     var abbreviations = UnitAbbreviationsCache.Default.GetUnitAbbreviations(quantity.Unit, formatProvider);
 
@@ -65,13 +78,11 @@ namespace UnitsNet
 
                     return abbreviations[number];
                 case "v":
-                    return quantity.Value.ToString(formatProvider);
+                    return quantity.Value.ToString($"g{number}", formatProvider);
                 case "u":
                     return quantity.Unit.ToString();
                 case "q":
                     return quantity.QuantityInfo.Name;
-                case "s":
-                    return ToStringWithSignificantDigitsAfterRadix(quantity, formatProvider, number);
                 default:
                     throw new FormatException($"The {format} format string is not supported.");
             }

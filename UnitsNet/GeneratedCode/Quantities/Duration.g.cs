@@ -32,7 +32,7 @@ namespace UnitsNet
     /// <summary>
     ///     Time is a dimension in which events can be ordered from the past through the present into the future, and also the measure of durations of events and the intervals between them.
     /// </summary>
-    public partial struct Duration : IQuantity<DurationUnit>, IEquatable<Duration>, IComparable, IComparable<Duration>, IConvertible, IFormattable
+    public partial class Duration : IQuantity<DurationUnit>, IEquatable<Duration>, IComparable, IComparable<Duration>, IConvertible, IFormattable
     {
         /// <summary>
         ///     The numeric value this quantity was constructed with.
@@ -52,11 +52,11 @@ namespace UnitsNet
                 new UnitInfo<DurationUnit>[] {
                     new UnitInfo<DurationUnit>(DurationUnit.Day, new BaseUnits(time: DurationUnit.Day)),
                     new UnitInfo<DurationUnit>(DurationUnit.Hour, new BaseUnits(time: DurationUnit.Hour)),
-                    new UnitInfo<DurationUnit>(DurationUnit.Microsecond, BaseUnits.Undefined),
-                    new UnitInfo<DurationUnit>(DurationUnit.Millisecond, BaseUnits.Undefined),
+                    new UnitInfo<DurationUnit>(DurationUnit.Microsecond, new BaseUnits(time: DurationUnit.Second)),
+                    new UnitInfo<DurationUnit>(DurationUnit.Millisecond, new BaseUnits(time: DurationUnit.Second)),
                     new UnitInfo<DurationUnit>(DurationUnit.Minute, new BaseUnits(time: DurationUnit.Minute)),
                     new UnitInfo<DurationUnit>(DurationUnit.Month30, new BaseUnits(time: DurationUnit.Month30)),
-                    new UnitInfo<DurationUnit>(DurationUnit.Nanosecond, BaseUnits.Undefined),
+                    new UnitInfo<DurationUnit>(DurationUnit.Nanosecond, new BaseUnits(time: DurationUnit.Second)),
                     new UnitInfo<DurationUnit>(DurationUnit.Second, new BaseUnits(time: DurationUnit.Second)),
                     new UnitInfo<DurationUnit>(DurationUnit.Week, new BaseUnits(time: DurationUnit.Week)),
                     new UnitInfo<DurationUnit>(DurationUnit.Year365, new BaseUnits(time: DurationUnit.Year365)),
@@ -92,7 +92,12 @@ namespace UnitsNet
             if(unitSystem == null) throw new ArgumentNullException(nameof(unitSystem));
 
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-            var firstUnitInfo = unitInfos.FirstOrDefault();
+            var firstUnitInfo = unitInfos.FirstOrDefault(u => u.Value.Equals(BaseUnit));
+            // for custom units, sometimes we don't find the base unit, this grabs the first off the list.
+            if(Equals(firstUnitInfo, null ))
+            {
+                firstUnitInfo = unitInfos.FirstOrDefault();
+            }
 
             _value = Guard.EnsureValidNumber(numericValue, nameof(numericValue));
             _unit = firstUnitInfo?.Value ?? throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
@@ -550,32 +555,44 @@ namespace UnitsNet
         /// <summary>Returns true if less or equal to.</summary>
         public static bool operator <=(Duration left, Duration right)
         {
+            if(left is null || right is null )
+                return false;
             return left.Value <= right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if greater than or equal to.</summary>
         public static bool operator >=(Duration left, Duration right)
         {
-            return left.Value >= right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value >= right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if less than.</summary>
         public static bool operator <(Duration left, Duration right)
         {
-            return left.Value < right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value < right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if greater than.</summary>
         public static bool operator >(Duration left, Duration right)
         {
-            return left.Value > right.GetValueAs(left.Unit);
+              if(left is null || right is null )
+                return false;
+          return left.Value > right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if exactly equal.</summary>
         /// <remarks>Consider using <see cref="Equals(Duration, double, ComparisonType)"/> for safely comparing floating point values.</remarks>
         public static bool operator ==(Duration left, Duration right)
         {
-            return left.Equals(right);
+             if(left is null && right is null )
+                return true;
+            if( left is null )
+                return false;
+           return left.Equals(right);
         }
 
         /// <summary>Returns true if not exactly equal.</summary>
@@ -597,6 +614,8 @@ namespace UnitsNet
         /// <inheritdoc />
         public int CompareTo(Duration other)
         {
+            if(other is null) throw new ArgumentNullException();
+
             return _value.CompareTo(other.GetValueAs(this.Unit));
         }
 
@@ -614,6 +633,9 @@ namespace UnitsNet
         /// <remarks>Consider using <see cref="Equals(Duration, double, ComparisonType)"/> for safely comparing floating point values.</remarks>
         public bool Equals(Duration other)
         {
+            if(other is null)
+                return false;
+
             return _value.Equals(other.GetValueAs(this.Unit));
         }
 
@@ -699,13 +721,16 @@ namespace UnitsNet
         {
             if(unitSystem == null)
                 throw new ArgumentNullException(nameof(unitSystem));
+            var firstUnitInfo = Info.BaseUnitInfo;
+            if (firstUnitInfo == null)
+            {
+              var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
+              firstUnitInfo = unitInfos.FirstOrDefault(u=> u.Value.Equals(BaseUnit));
+                if (firstUnitInfo == null)
+                    throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
+            }
 
-            var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
-                throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
-
+            
             return As(firstUnitInfo.Value);
         }
 
@@ -742,13 +767,16 @@ namespace UnitsNet
         {
             if(unitSystem == null)
                 throw new ArgumentNullException(nameof(unitSystem));
+            var firstUnitInfo = Info.BaseUnitInfo;
+            if (firstUnitInfo == null)
+            {
+              var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
+              firstUnitInfo = unitInfos.FirstOrDefault(u=> u.Value.Equals(BaseUnit));
+                if (firstUnitInfo == null)
+                    throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
+            }
 
-            var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
-                throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
-
+            
             return ToUnit(firstUnitInfo.Value);
         }
 

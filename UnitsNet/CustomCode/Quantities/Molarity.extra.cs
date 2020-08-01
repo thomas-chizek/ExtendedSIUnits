@@ -3,8 +3,21 @@ using UnitsNet.Units;
 
 namespace UnitsNet
 {
-    public partial struct Molarity
+    public partial class Molarity
     {
+
+        /// <summary>
+        /// copy of a molarity
+        /// </summary>
+        /// <param name="m"></param>
+        public Molarity(Molarity m) : this(m.Value, m.Unit) { }
+
+        /// <summary>
+        /// Empty Molarity
+        /// </summary>
+        public Molarity() : this(Zero.Value, Zero.Unit) { }
+
+
         /// <summary>
         ///     Construct from <see cref="Density"/> divided by <see cref="Mass"/>.
         /// </summary>

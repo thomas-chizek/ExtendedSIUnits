@@ -32,7 +32,7 @@ namespace UnitsNet
     /// <summary>
     ///     The amount of power in a volume.
     /// </summary>
-    public partial struct PowerDensity : IQuantity<PowerDensityUnit>, IEquatable<PowerDensity>, IComparable, IComparable<PowerDensity>, IConvertible, IFormattable
+    public partial class PowerDensity : IQuantity<PowerDensityUnit>, IEquatable<PowerDensity>, IComparable, IComparable<PowerDensity>, IConvertible, IFormattable
     {
         /// <summary>
         ///     The numeric value this quantity was constructed with.
@@ -52,71 +52,71 @@ namespace UnitsNet
                 new UnitInfo<PowerDensityUnit>[] {
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.CentiwattPerCubicFoot, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.CentiwattPerCubicInch, BaseUnits.Undefined),
-                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.CentiwattPerCubicMeter, BaseUnits.Undefined),
+                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.CentiwattPerCubicMeter, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.CentiwattPerLiter, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.DecawattPerCubicFoot, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.DecawattPerCubicInch, BaseUnits.Undefined),
-                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.DecawattPerCubicMeter, BaseUnits.Undefined),
+                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.DecawattPerCubicMeter, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.DecawattPerLiter, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.DeciwattPerCubicFoot, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.DeciwattPerCubicInch, BaseUnits.Undefined),
-                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.DeciwattPerCubicMeter, BaseUnits.Undefined),
+                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.DeciwattPerCubicMeter, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.DeciwattPerLiter, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.ExawattPerCubicFoot, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.ExawattPerCubicInch, BaseUnits.Undefined),
-                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.ExawattPerCubicMeter, BaseUnits.Undefined),
+                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.ExawattPerCubicMeter, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.ExawattPerLiter, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.FemtowattPerCubicFoot, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.FemtowattPerCubicInch, BaseUnits.Undefined),
-                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.FemtowattPerCubicMeter, BaseUnits.Undefined),
+                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.FemtowattPerCubicMeter, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.FemtowattPerLiter, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.GigawattPerCubicFoot, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.GigawattPerCubicInch, BaseUnits.Undefined),
-                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.GigawattPerCubicMeter, BaseUnits.Undefined),
+                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.GigawattPerCubicMeter, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.GigawattPerLiter, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.HectowattPerCubicFoot, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.HectowattPerCubicInch, BaseUnits.Undefined),
-                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.HectowattPerCubicMeter, BaseUnits.Undefined),
+                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.HectowattPerCubicMeter, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.HectowattPerLiter, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.KilowattPerCubicFoot, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.KilowattPerCubicInch, BaseUnits.Undefined),
-                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.KilowattPerCubicMeter, BaseUnits.Undefined),
+                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.KilowattPerCubicMeter, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.KilowattPerLiter, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.MegawattPerCubicFoot, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.MegawattPerCubicInch, BaseUnits.Undefined),
-                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.MegawattPerCubicMeter, BaseUnits.Undefined),
+                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.MegawattPerCubicMeter, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.MegawattPerLiter, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.MicrowattPerCubicFoot, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.MicrowattPerCubicInch, BaseUnits.Undefined),
-                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.MicrowattPerCubicMeter, BaseUnits.Undefined),
+                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.MicrowattPerCubicMeter, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.MicrowattPerLiter, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.MilliwattPerCubicFoot, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.MilliwattPerCubicInch, BaseUnits.Undefined),
-                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.MilliwattPerCubicMeter, BaseUnits.Undefined),
+                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.MilliwattPerCubicMeter, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.MilliwattPerLiter, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.NanowattPerCubicFoot, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.NanowattPerCubicInch, BaseUnits.Undefined),
-                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.NanowattPerCubicMeter, BaseUnits.Undefined),
+                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.NanowattPerCubicMeter, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.NanowattPerLiter, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.PetawattPerCubicFoot, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.PetawattPerCubicInch, BaseUnits.Undefined),
-                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.PetawattPerCubicMeter, BaseUnits.Undefined),
+                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.PetawattPerCubicMeter, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.PetawattPerLiter, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.PicowattPerCubicFoot, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.PicowattPerCubicInch, BaseUnits.Undefined),
-                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.PicowattPerCubicMeter, BaseUnits.Undefined),
+                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.PicowattPerCubicMeter, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.PicowattPerLiter, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.QutrawattPerCubicFoot, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.QutrawattPerCubicInch, BaseUnits.Undefined),
-                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.QutrawattPerCubicMeter, BaseUnits.Undefined),
+                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.QutrawattPerCubicMeter, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.QutrawattPerLiter, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.TerawattPerCubicFoot, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.TerawattPerCubicInch, BaseUnits.Undefined),
-                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.TerawattPerCubicMeter, BaseUnits.Undefined),
+                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.TerawattPerCubicMeter, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.TerawattPerLiter, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.VettawattPerCubicFoot, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.VettawattPerCubicInch, BaseUnits.Undefined),
-                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.VettawattPerCubicMeter, BaseUnits.Undefined),
+                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.VettawattPerCubicMeter, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.VettawattPerLiter, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.WattPerCubicFoot, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.WattPerCubicInch, BaseUnits.Undefined),
@@ -124,11 +124,11 @@ namespace UnitsNet
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.WattPerLiter, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.YottawattPerCubicFoot, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.YottawattPerCubicInch, BaseUnits.Undefined),
-                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.YottawattPerCubicMeter, BaseUnits.Undefined),
+                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.YottawattPerCubicMeter, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.YottawattPerLiter, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.ZettawattPerCubicFoot, BaseUnits.Undefined),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.ZettawattPerCubicInch, BaseUnits.Undefined),
-                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.ZettawattPerCubicMeter, BaseUnits.Undefined),
+                    new UnitInfo<PowerDensityUnit>(PowerDensityUnit.ZettawattPerCubicMeter, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<PowerDensityUnit>(PowerDensityUnit.ZettawattPerLiter, BaseUnits.Undefined),
                 },
                 BaseUnit, Zero, BaseDimensions);
@@ -162,7 +162,12 @@ namespace UnitsNet
             if(unitSystem == null) throw new ArgumentNullException(nameof(unitSystem));
 
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-            var firstUnitInfo = unitInfos.FirstOrDefault();
+            var firstUnitInfo = unitInfos.FirstOrDefault(u => u.Value.Equals(BaseUnit));
+            // for custom units, sometimes we don't find the base unit, this grabs the first off the list.
+            if(Equals(firstUnitInfo, null ))
+            {
+                firstUnitInfo = unitInfos.FirstOrDefault();
+            }
 
             _value = Guard.EnsureValidNumber(numericValue, nameof(numericValue));
             _unit = firstUnitInfo?.Value ?? throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
@@ -1600,32 +1605,44 @@ namespace UnitsNet
         /// <summary>Returns true if less or equal to.</summary>
         public static bool operator <=(PowerDensity left, PowerDensity right)
         {
+            if(left is null || right is null )
+                return false;
             return left.Value <= right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if greater than or equal to.</summary>
         public static bool operator >=(PowerDensity left, PowerDensity right)
         {
-            return left.Value >= right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value >= right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if less than.</summary>
         public static bool operator <(PowerDensity left, PowerDensity right)
         {
-            return left.Value < right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value < right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if greater than.</summary>
         public static bool operator >(PowerDensity left, PowerDensity right)
         {
-            return left.Value > right.GetValueAs(left.Unit);
+              if(left is null || right is null )
+                return false;
+          return left.Value > right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if exactly equal.</summary>
         /// <remarks>Consider using <see cref="Equals(PowerDensity, double, ComparisonType)"/> for safely comparing floating point values.</remarks>
         public static bool operator ==(PowerDensity left, PowerDensity right)
         {
-            return left.Equals(right);
+             if(left is null && right is null )
+                return true;
+            if( left is null )
+                return false;
+           return left.Equals(right);
         }
 
         /// <summary>Returns true if not exactly equal.</summary>
@@ -1647,6 +1664,8 @@ namespace UnitsNet
         /// <inheritdoc />
         public int CompareTo(PowerDensity other)
         {
+            if(other is null) throw new ArgumentNullException();
+
             return _value.CompareTo(other.GetValueAs(this.Unit));
         }
 
@@ -1664,6 +1683,9 @@ namespace UnitsNet
         /// <remarks>Consider using <see cref="Equals(PowerDensity, double, ComparisonType)"/> for safely comparing floating point values.</remarks>
         public bool Equals(PowerDensity other)
         {
+            if(other is null)
+                return false;
+
             return _value.Equals(other.GetValueAs(this.Unit));
         }
 
@@ -1749,13 +1771,16 @@ namespace UnitsNet
         {
             if(unitSystem == null)
                 throw new ArgumentNullException(nameof(unitSystem));
-
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
+            
+            var firstUnitInfo = unitInfos.FirstOrDefault(u => u.Value.Equals(BaseUnit));
+            if (firstUnitInfo is null)
+            {
+                firstUnitInfo = unitInfos.FirstOrDefault();
+                if (firstUnitInfo is null)
                 throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
-
+            }
+            
             return As(firstUnitInfo.Value);
         }
 
@@ -1792,13 +1817,12 @@ namespace UnitsNet
         {
             if(unitSystem == null)
                 throw new ArgumentNullException(nameof(unitSystem));
-
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
+            var firstUnitInfo = unitInfos.FirstOrDefault(u=> u.Value.Equals(BaseUnit));
+            if (firstUnitInfo == null)
                 throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
 
+            
             return ToUnit(firstUnitInfo.Value);
         }
 

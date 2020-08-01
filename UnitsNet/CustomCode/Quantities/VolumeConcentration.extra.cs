@@ -2,7 +2,7 @@
 
 namespace UnitsNet
 {
-    public partial struct VolumeConcentration
+    public partial class VolumeConcentration
     {
         /// <summary>
         /// Get <see cref="MassConcentration" /> from this <see cref="VolumeConcentration" /> and component <see cref="Density" /> .

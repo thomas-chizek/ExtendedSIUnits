@@ -5,8 +5,19 @@ using System;
 
 namespace UnitsNet
 {
-    public partial struct Speed
+    public partial class Speed
     {
+        /// <summary>
+        /// Copy a Speed
+        /// </summary>
+        /// <param name="l"></param>
+        public Speed(Speed l) : this(l.Value, l.Unit) { }
+
+        /// <summary>
+        /// Empty Speed
+        /// </summary>
+        public Speed() : this(Zero.Value, Zero.Unit) { }
+
         /// <summary>Get <see cref="Acceleration"/> from <see cref="Speed"/> divided by <see cref="TimeSpan"/>.</summary>
         public static Acceleration operator /(Speed speed, TimeSpan timeSpan)
         {

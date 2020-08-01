@@ -35,7 +35,7 @@ namespace UnitsNet
     /// <remarks>
     ///     http://en.wikipedia.org/wiki/Density
     /// </remarks>
-    public partial struct Density : IQuantity<DensityUnit>, IEquatable<Density>, IComparable, IComparable<Density>, IConvertible, IFormattable
+    public partial class Density : IQuantity<DensityUnit>, IEquatable<Density>, IComparable, IComparable<Density>, IConvertible, IFormattable
     {
         /// <summary>
         ///     The numeric value this quantity was constructed with.
@@ -65,17 +65,17 @@ namespace UnitsNet
                     new UnitInfo<DensityUnit>(DensityUnit.GramPerDeciliter, BaseUnits.Undefined),
                     new UnitInfo<DensityUnit>(DensityUnit.GramPerLiter, BaseUnits.Undefined),
                     new UnitInfo<DensityUnit>(DensityUnit.GramPerMilliliter, BaseUnits.Undefined),
-                    new UnitInfo<DensityUnit>(DensityUnit.KilogramPerCubicCentimeter, BaseUnits.Undefined),
-                    new UnitInfo<DensityUnit>(DensityUnit.KilogramPerCubicMeter, BaseUnits.Undefined),
-                    new UnitInfo<DensityUnit>(DensityUnit.KilogramPerCubicMillimeter, BaseUnits.Undefined),
+                    new UnitInfo<DensityUnit>(DensityUnit.KilogramPerCubicCentimeter, new BaseUnits(length: LengthUnit.Centimeter, mass: MassUnit.Gram)),
+                    new UnitInfo<DensityUnit>(DensityUnit.KilogramPerCubicMeter, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Gram)),
+                    new UnitInfo<DensityUnit>(DensityUnit.KilogramPerCubicMillimeter, new BaseUnits(length: LengthUnit.Millimeter, mass: MassUnit.Gram)),
                     new UnitInfo<DensityUnit>(DensityUnit.KilogramPerLiter, new BaseUnits(length: LengthUnit.Decimeter, mass: MassUnit.Kilogram)),
-                    new UnitInfo<DensityUnit>(DensityUnit.KilopoundPerCubicFoot, BaseUnits.Undefined),
-                    new UnitInfo<DensityUnit>(DensityUnit.KilopoundPerCubicInch, BaseUnits.Undefined),
-                    new UnitInfo<DensityUnit>(DensityUnit.MicrogramPerCubicMeter, BaseUnits.Undefined),
+                    new UnitInfo<DensityUnit>(DensityUnit.KilopoundPerCubicFoot, new BaseUnits(length: LengthUnit.Foot, mass: MassUnit.Pound)),
+                    new UnitInfo<DensityUnit>(DensityUnit.KilopoundPerCubicInch, new BaseUnits(length: LengthUnit.Inch, mass: MassUnit.Pound)),
+                    new UnitInfo<DensityUnit>(DensityUnit.MicrogramPerCubicMeter, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Gram)),
                     new UnitInfo<DensityUnit>(DensityUnit.MicrogramPerDeciliter, BaseUnits.Undefined),
                     new UnitInfo<DensityUnit>(DensityUnit.MicrogramPerLiter, BaseUnits.Undefined),
                     new UnitInfo<DensityUnit>(DensityUnit.MicrogramPerMilliliter, BaseUnits.Undefined),
-                    new UnitInfo<DensityUnit>(DensityUnit.MilligramPerCubicMeter, BaseUnits.Undefined),
+                    new UnitInfo<DensityUnit>(DensityUnit.MilligramPerCubicMeter, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Gram)),
                     new UnitInfo<DensityUnit>(DensityUnit.MilligramPerDeciliter, BaseUnits.Undefined),
                     new UnitInfo<DensityUnit>(DensityUnit.MilligramPerLiter, BaseUnits.Undefined),
                     new UnitInfo<DensityUnit>(DensityUnit.MilligramPerMilliliter, BaseUnits.Undefined),
@@ -125,7 +125,12 @@ namespace UnitsNet
             if(unitSystem == null) throw new ArgumentNullException(nameof(unitSystem));
 
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-            var firstUnitInfo = unitInfos.FirstOrDefault();
+            var firstUnitInfo = unitInfos.FirstOrDefault(u => u.Value.Equals(BaseUnit));
+            // for custom units, sometimes we don't find the base unit, this grabs the first off the list.
+            if(Equals(firstUnitInfo, null ))
+            {
+                firstUnitInfo = unitInfos.FirstOrDefault();
+            }
 
             _value = Guard.EnsureValidNumber(numericValue, nameof(numericValue));
             _unit = firstUnitInfo?.Value ?? throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
@@ -1003,32 +1008,44 @@ namespace UnitsNet
         /// <summary>Returns true if less or equal to.</summary>
         public static bool operator <=(Density left, Density right)
         {
+            if(left is null || right is null )
+                return false;
             return left.Value <= right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if greater than or equal to.</summary>
         public static bool operator >=(Density left, Density right)
         {
-            return left.Value >= right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value >= right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if less than.</summary>
         public static bool operator <(Density left, Density right)
         {
-            return left.Value < right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value < right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if greater than.</summary>
         public static bool operator >(Density left, Density right)
         {
-            return left.Value > right.GetValueAs(left.Unit);
+              if(left is null || right is null )
+                return false;
+          return left.Value > right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if exactly equal.</summary>
         /// <remarks>Consider using <see cref="Equals(Density, double, ComparisonType)"/> for safely comparing floating point values.</remarks>
         public static bool operator ==(Density left, Density right)
         {
-            return left.Equals(right);
+             if(left is null && right is null )
+                return true;
+            if( left is null )
+                return false;
+           return left.Equals(right);
         }
 
         /// <summary>Returns true if not exactly equal.</summary>
@@ -1050,6 +1067,8 @@ namespace UnitsNet
         /// <inheritdoc />
         public int CompareTo(Density other)
         {
+            if(other is null) throw new ArgumentNullException();
+
             return _value.CompareTo(other.GetValueAs(this.Unit));
         }
 
@@ -1067,6 +1086,9 @@ namespace UnitsNet
         /// <remarks>Consider using <see cref="Equals(Density, double, ComparisonType)"/> for safely comparing floating point values.</remarks>
         public bool Equals(Density other)
         {
+            if(other is null)
+                return false;
+
             return _value.Equals(other.GetValueAs(this.Unit));
         }
 
@@ -1152,13 +1174,16 @@ namespace UnitsNet
         {
             if(unitSystem == null)
                 throw new ArgumentNullException(nameof(unitSystem));
-
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
+            
+            var firstUnitInfo = unitInfos.FirstOrDefault(u => u.Value.Equals(BaseUnit));
+            if (firstUnitInfo is null)
+            {
+                firstUnitInfo = unitInfos.FirstOrDefault();
+                if (firstUnitInfo is null)
                 throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
-
+            }
+            
             return As(firstUnitInfo.Value);
         }
 
@@ -1195,13 +1220,12 @@ namespace UnitsNet
         {
             if(unitSystem == null)
                 throw new ArgumentNullException(nameof(unitSystem));
-
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
+            var firstUnitInfo = unitInfos.FirstOrDefault(u=> u.Value.Equals(BaseUnit));
+            if (firstUnitInfo == null)
                 throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
 
+            
             return ToUnit(firstUnitInfo.Value);
         }
 

@@ -32,7 +32,7 @@ namespace UnitsNet
     /// <summary>
     ///     The joule, symbol J, is a derived unit of energy, work, or amount of heat in the International System of Units. It is equal to the energy transferred (or work done) when applying a force of one newton through a distance of one metre (1 newton metre or N·m), or in passing an electric current of one ampere through a resistance of one ohm for one second. Many other units of energy are included. Please do not confuse this definition of the calorie with the one colloquially used by the food industry, the large calorie, which is equivalent to 1 kcal. Thermochemical definition of the calorie is used. For BTU, the IT definition is used.
     /// </summary>
-    public partial struct Energy : IQuantity<EnergyUnit>, IEquatable<Energy>, IComparable, IComparable<Energy>, IConvertible, IFormattable
+    public partial class Energy : IQuantity<EnergyUnit>, IEquatable<Energy>, IComparable, IComparable<Energy>, IConvertible, IFormattable
     {
         /// <summary>
         ///     The numeric value this quantity was constructed with.
@@ -58,41 +58,41 @@ namespace UnitsNet
                     new UnitInfo<EnergyUnit>(EnergyUnit.ElectronVolt, BaseUnits.Undefined),
                     new UnitInfo<EnergyUnit>(EnergyUnit.Erg, BaseUnits.Undefined),
                     new UnitInfo<EnergyUnit>(EnergyUnit.ExabritishThermalUnit, BaseUnits.Undefined),
-                    new UnitInfo<EnergyUnit>(EnergyUnit.Exajoule, BaseUnits.Undefined),
+                    new UnitInfo<EnergyUnit>(EnergyUnit.Exajoule, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<EnergyUnit>(EnergyUnit.ExawattHour, BaseUnits.Undefined),
                     new UnitInfo<EnergyUnit>(EnergyUnit.FootPound, BaseUnits.Undefined),
                     new UnitInfo<EnergyUnit>(EnergyUnit.GigabritishThermalUnit, BaseUnits.Undefined),
-                    new UnitInfo<EnergyUnit>(EnergyUnit.Gigajoule, BaseUnits.Undefined),
+                    new UnitInfo<EnergyUnit>(EnergyUnit.Gigajoule, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<EnergyUnit>(EnergyUnit.GigawattHour, BaseUnits.Undefined),
                     new UnitInfo<EnergyUnit>(EnergyUnit.Joule, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<EnergyUnit>(EnergyUnit.KilobritishThermalUnit, BaseUnits.Undefined),
                     new UnitInfo<EnergyUnit>(EnergyUnit.Kilocalorie, BaseUnits.Undefined),
-                    new UnitInfo<EnergyUnit>(EnergyUnit.Kilojoule, BaseUnits.Undefined),
+                    new UnitInfo<EnergyUnit>(EnergyUnit.Kilojoule, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<EnergyUnit>(EnergyUnit.KilowattHour, BaseUnits.Undefined),
                     new UnitInfo<EnergyUnit>(EnergyUnit.MegabritishThermalUnit, BaseUnits.Undefined),
-                    new UnitInfo<EnergyUnit>(EnergyUnit.Megajoule, BaseUnits.Undefined),
+                    new UnitInfo<EnergyUnit>(EnergyUnit.Megajoule, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<EnergyUnit>(EnergyUnit.MegawattHour, BaseUnits.Undefined),
                     new UnitInfo<EnergyUnit>(EnergyUnit.PetabritishThermalUnit, BaseUnits.Undefined),
-                    new UnitInfo<EnergyUnit>(EnergyUnit.Petajoule, BaseUnits.Undefined),
+                    new UnitInfo<EnergyUnit>(EnergyUnit.Petajoule, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<EnergyUnit>(EnergyUnit.PetawattHour, BaseUnits.Undefined),
                     new UnitInfo<EnergyUnit>(EnergyUnit.QutrabritishThermalUnit, BaseUnits.Undefined),
-                    new UnitInfo<EnergyUnit>(EnergyUnit.Qutrajoule, BaseUnits.Undefined),
+                    new UnitInfo<EnergyUnit>(EnergyUnit.Qutrajoule, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<EnergyUnit>(EnergyUnit.QutrawattHour, BaseUnits.Undefined),
                     new UnitInfo<EnergyUnit>(EnergyUnit.TerabritishThermalUnit, BaseUnits.Undefined),
-                    new UnitInfo<EnergyUnit>(EnergyUnit.Terajoule, BaseUnits.Undefined),
+                    new UnitInfo<EnergyUnit>(EnergyUnit.Terajoule, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<EnergyUnit>(EnergyUnit.TerawattHour, BaseUnits.Undefined),
                     new UnitInfo<EnergyUnit>(EnergyUnit.ThermEc, BaseUnits.Undefined),
                     new UnitInfo<EnergyUnit>(EnergyUnit.ThermImperial, BaseUnits.Undefined),
                     new UnitInfo<EnergyUnit>(EnergyUnit.ThermUs, BaseUnits.Undefined),
                     new UnitInfo<EnergyUnit>(EnergyUnit.VettabritishThermalUnit, BaseUnits.Undefined),
-                    new UnitInfo<EnergyUnit>(EnergyUnit.Vettajoule, BaseUnits.Undefined),
+                    new UnitInfo<EnergyUnit>(EnergyUnit.Vettajoule, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<EnergyUnit>(EnergyUnit.VettawattHour, BaseUnits.Undefined),
                     new UnitInfo<EnergyUnit>(EnergyUnit.WattHour, BaseUnits.Undefined),
                     new UnitInfo<EnergyUnit>(EnergyUnit.YottabritishThermalUnit, BaseUnits.Undefined),
-                    new UnitInfo<EnergyUnit>(EnergyUnit.Yottajoule, BaseUnits.Undefined),
+                    new UnitInfo<EnergyUnit>(EnergyUnit.Yottajoule, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<EnergyUnit>(EnergyUnit.YottawattHour, BaseUnits.Undefined),
                     new UnitInfo<EnergyUnit>(EnergyUnit.ZettabritishThermalUnit, BaseUnits.Undefined),
-                    new UnitInfo<EnergyUnit>(EnergyUnit.Zettajoule, BaseUnits.Undefined),
+                    new UnitInfo<EnergyUnit>(EnergyUnit.Zettajoule, new BaseUnits(length: LengthUnit.Meter, mass: MassUnit.Kilogram, time: DurationUnit.Second)),
                     new UnitInfo<EnergyUnit>(EnergyUnit.ZettawattHour, BaseUnits.Undefined),
                 },
                 BaseUnit, Zero, BaseDimensions);
@@ -126,7 +126,12 @@ namespace UnitsNet
             if(unitSystem == null) throw new ArgumentNullException(nameof(unitSystem));
 
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-            var firstUnitInfo = unitInfos.FirstOrDefault();
+            var firstUnitInfo = unitInfos.FirstOrDefault(u => u.Value.Equals(BaseUnit));
+            // for custom units, sometimes we don't find the base unit, this grabs the first off the list.
+            if(Equals(firstUnitInfo, null ))
+            {
+                firstUnitInfo = unitInfos.FirstOrDefault();
+            }
 
             _value = Guard.EnsureValidNumber(numericValue, nameof(numericValue));
             _unit = firstUnitInfo?.Value ?? throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
@@ -1060,32 +1065,44 @@ namespace UnitsNet
         /// <summary>Returns true if less or equal to.</summary>
         public static bool operator <=(Energy left, Energy right)
         {
+            if(left is null || right is null )
+                return false;
             return left.Value <= right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if greater than or equal to.</summary>
         public static bool operator >=(Energy left, Energy right)
         {
-            return left.Value >= right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value >= right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if less than.</summary>
         public static bool operator <(Energy left, Energy right)
         {
-            return left.Value < right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value < right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if greater than.</summary>
         public static bool operator >(Energy left, Energy right)
         {
-            return left.Value > right.GetValueAs(left.Unit);
+              if(left is null || right is null )
+                return false;
+          return left.Value > right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if exactly equal.</summary>
         /// <remarks>Consider using <see cref="Equals(Energy, double, ComparisonType)"/> for safely comparing floating point values.</remarks>
         public static bool operator ==(Energy left, Energy right)
         {
-            return left.Equals(right);
+             if(left is null && right is null )
+                return true;
+            if( left is null )
+                return false;
+           return left.Equals(right);
         }
 
         /// <summary>Returns true if not exactly equal.</summary>
@@ -1107,6 +1124,8 @@ namespace UnitsNet
         /// <inheritdoc />
         public int CompareTo(Energy other)
         {
+            if(other is null) throw new ArgumentNullException();
+
             return _value.CompareTo(other.GetValueAs(this.Unit));
         }
 
@@ -1124,6 +1143,9 @@ namespace UnitsNet
         /// <remarks>Consider using <see cref="Equals(Energy, double, ComparisonType)"/> for safely comparing floating point values.</remarks>
         public bool Equals(Energy other)
         {
+            if(other is null)
+                return false;
+
             return _value.Equals(other.GetValueAs(this.Unit));
         }
 
@@ -1209,13 +1231,16 @@ namespace UnitsNet
         {
             if(unitSystem == null)
                 throw new ArgumentNullException(nameof(unitSystem));
-
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
+            
+            var firstUnitInfo = unitInfos.FirstOrDefault(u => u.Value.Equals(BaseUnit));
+            if (firstUnitInfo is null)
+            {
+                firstUnitInfo = unitInfos.FirstOrDefault();
+                if (firstUnitInfo is null)
                 throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
-
+            }
+            
             return As(firstUnitInfo.Value);
         }
 
@@ -1252,13 +1277,12 @@ namespace UnitsNet
         {
             if(unitSystem == null)
                 throw new ArgumentNullException(nameof(unitSystem));
-
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
+            var firstUnitInfo = unitInfos.FirstOrDefault(u=> u.Value.Equals(BaseUnit));
+            if (firstUnitInfo == null)
                 throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
 
+            
             return ToUnit(firstUnitInfo.Value);
         }
 

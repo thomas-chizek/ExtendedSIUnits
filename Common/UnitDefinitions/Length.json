@@ -302,91 +302,107 @@
       },
       "FromUnitToBaseFunc": "x*1.496e11",
       "FromBaseToUnitFunc": "x/1.496e11",
-      "Prefixes": [ "Micro", "Milli", "Deca", "Kilo", "Mega", "Giga", "Tera" ],
+      "Prefixes": [ "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera" ],
       "Localization": [
         {
           "Culture": "en-US",
-          "Abbreviations": [ "ls" ]
+          "Abbreviations": [ "au" ]
         }
       ]
     },
     {
-      "SingularName": "LightSecond",
-      "PluralName": "LightSeconds",
+      "SingularName": "Lightsecond",
+      "PluralName": "Lightseconds",
       "BaseUnits": {
-        "L": "LightSecond"
+        "L": "Lightsecond"
       },
       "FromUnitToBaseFunc": "x*299792458",
       "FromBaseToUnitFunc": "x/299792458",
-      "Prefixes": [ "Micro", "Milli", "Deca", "Kilo", "Mega", "Giga", "Tera" ],
+      "Prefixes": [ "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera" ],
       "Localization": [
         {
           "Culture": "en-US",
-          "Abbreviations": [ "ls" ]
+          "Abbreviations": [ "ls", "lightsecond" ]
         }
       ]
     },
     {
-      "SingularName": "LightMinute",
-      "PluralName": "LightMinutes",
+      "SingularName": "Lightminute",
+      "PluralName": "Lightminutes",
       "BaseUnits": {
-        "L": "LightMinute"
+        "L": "Lightminute"
       },
       "FromUnitToBaseFunc": "x*1.799e10",
       "FromBaseToUnitFunc": "x/1.799e10",
-      "Prefixes": [ "Micro", "Milli", "Deca", "Kilo", "Mega", "Giga", "Tera" ],
+      "Prefixes": [ "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera" ],
       "Localization": [
         {
           "Culture": "en-US",
-          "Abbreviations": [ "ls" ]
+          "Abbreviations": [ "lm", "lightminute" ]
         }
       ]
     },
     {
-      "SingularName": "LightHour",
-      "PluralName": "LightHours",
+      "SingularName": "Lighthour",
+      "PluralName": "Lighthours",
       "BaseUnits": {
-        "L": "LightHour"
+        "L": "Lighthour"
       },
       "FromUnitToBaseFunc": "x*1.079e12",
       "FromBaseToUnitFunc": "x/1.079e12",
-      "Prefixes": [ "Micro", "Milli", "Deca", "Kilo", "Mega", "Giga", "Tera" ],
+      "Prefixes": [ "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera" ],
       "Localization": [
         {
           "Culture": "en-US",
-          "Abbreviations": [ "ls" ]
+          "Abbreviations": [ "lh", "lighthour" ]
         }
       ]
     },
     {
-      "SingularName": "LightDay",
-      "PluralName": "LightDays",
+      "SingularName": "Lightday",
+      "PluralName": "Lightdays",
       "BaseUnits": {
-        "L": "LightDay"
+        "L": "Lightday"
       },
       "FromUnitToBaseFunc": "x*2.59e13",
       "FromBaseToUnitFunc": "x/2.59e13",
-      "Prefixes": [ "Micro", "Milli", "Deca", "Kilo", "Mega", "Giga", "Tera" ],
+      "Prefixes": [ "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera" ],
       "Localization": [
         {
           "Culture": "en-US",
-          "Abbreviations": [ "ls" ]
+          "Abbreviations": [ "ld", "lightday" ]
         }
       ]
     },
     {
-      "SingularName": "LightYear",
-      "PluralName": "LightYears",
+      "SingularName": "Lightyear",
+      "PluralName": "Lightyears",
       "BaseUnits": {
-        "L": "LightYear"
+        "L": "Lightyear"
       },
       "FromUnitToBaseFunc": "x*9.4607304725808E15",
       "FromBaseToUnitFunc": "x/9.4607304725808E15",
-      "Prefixes": [ "Micro", "Milli", "Deca", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta" ],
+      "Prefixes": [ "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta" ],
       "Localization": [
         {
           "Culture": "en-US",
-          "Abbreviations": [ "ls" ]
+          "Abbreviations": [ "ly", "lightyear" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "Parsec",
+      "PluralName": "Parsecs",
+      "BaseUnits": {
+        "P": "Parsec"
+      },
+      "FromUnitToBaseFunc": "x*3.086090280155857E16",
+      "FromBaseToUnitFunc": "x/3.086090280155857E16",
+      "Prefixes": [ "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta" ],
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "ps", "parsec" ]
         }
       ]
     }

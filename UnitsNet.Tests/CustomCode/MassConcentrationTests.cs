@@ -124,7 +124,7 @@ namespace UnitsNet.Tests.CustomCode
         }
 
 
-        [Fact(Skip = "No BaseUnit defined: see https://github.com/angularsen/UnitsNet/issues/651")]
+        [Fact(Skip = "No BaseUnit defined: see https://github.com/angularsen/UnitsNet/issues/651")] //
         public void DefaultSIUnitIsKgPerCubicMeter()
         {
             var massConcentration = new MassConcentration(1, UnitSystem.SI);

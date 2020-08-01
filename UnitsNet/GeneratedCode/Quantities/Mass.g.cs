@@ -32,7 +32,7 @@ namespace UnitsNet
     /// <summary>
     ///     In physics, mass (from Greek μᾶζα "barley cake, lump [of dough]") is a property of a physical system or body, giving rise to the phenomena of the body's resistance to being accelerated by a force and the strength of its mutual gravitational attraction with other bodies. Instruments such as mass balances or scales use those phenomena to measure mass. The SI unit of mass is the kilogram (kg).
     /// </summary>
-    public partial struct Mass : IQuantity<MassUnit>, IEquatable<Mass>, IComparable, IComparable<Mass>, IConvertible, IFormattable
+    public partial class Mass : IQuantity<MassUnit>, IEquatable<Mass>, IComparable, IComparable<Mass>, IConvertible, IFormattable
     {
         /// <summary>
         ///     The numeric value this quantity was constructed with.
@@ -50,48 +50,48 @@ namespace UnitsNet
 
             Info = new QuantityInfo<MassUnit>(QuantityType.Mass,
                 new UnitInfo<MassUnit>[] {
-                    new UnitInfo<MassUnit>(MassUnit.Centigram, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Decagram, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Decigram, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Exagram, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Exatonne, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Femtogram, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Gigagram, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Gigatonne, BaseUnits.Undefined),
+                    new UnitInfo<MassUnit>(MassUnit.Centigram, new BaseUnits(mass: MassUnit.Gram)),
+                    new UnitInfo<MassUnit>(MassUnit.Decagram, new BaseUnits(mass: MassUnit.Gram)),
+                    new UnitInfo<MassUnit>(MassUnit.Decigram, new BaseUnits(mass: MassUnit.Gram)),
+                    new UnitInfo<MassUnit>(MassUnit.Exagram, new BaseUnits(mass: MassUnit.Gram)),
+                    new UnitInfo<MassUnit>(MassUnit.Exatonne, new BaseUnits(mass: MassUnit.Tonne)),
+                    new UnitInfo<MassUnit>(MassUnit.Femtogram, new BaseUnits(mass: MassUnit.Gram)),
+                    new UnitInfo<MassUnit>(MassUnit.Gigagram, new BaseUnits(mass: MassUnit.Gram)),
+                    new UnitInfo<MassUnit>(MassUnit.Gigatonne, new BaseUnits(mass: MassUnit.Tonne)),
                     new UnitInfo<MassUnit>(MassUnit.Grain, new BaseUnits(mass: MassUnit.Grain)),
                     new UnitInfo<MassUnit>(MassUnit.Gram, new BaseUnits(mass: MassUnit.Gram)),
-                    new UnitInfo<MassUnit>(MassUnit.Hectogram, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Kilogram, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Kilopound, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Kilotonne, BaseUnits.Undefined),
+                    new UnitInfo<MassUnit>(MassUnit.Hectogram, new BaseUnits(mass: MassUnit.Gram)),
+                    new UnitInfo<MassUnit>(MassUnit.Kilogram, new BaseUnits(mass: MassUnit.Gram)),
+                    new UnitInfo<MassUnit>(MassUnit.Kilopound, new BaseUnits(mass: MassUnit.Pound)),
+                    new UnitInfo<MassUnit>(MassUnit.Kilotonne, new BaseUnits(mass: MassUnit.Tonne)),
                     new UnitInfo<MassUnit>(MassUnit.LongHundredweight, new BaseUnits(mass: MassUnit.LongHundredweight)),
                     new UnitInfo<MassUnit>(MassUnit.LongTon, new BaseUnits(mass: MassUnit.LongTon)),
-                    new UnitInfo<MassUnit>(MassUnit.Megagram, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Megapound, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Megatonne, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Microgram, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Milligram, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Nanogram, BaseUnits.Undefined),
+                    new UnitInfo<MassUnit>(MassUnit.Megagram, new BaseUnits(mass: MassUnit.Gram)),
+                    new UnitInfo<MassUnit>(MassUnit.Megapound, new BaseUnits(mass: MassUnit.Pound)),
+                    new UnitInfo<MassUnit>(MassUnit.Megatonne, new BaseUnits(mass: MassUnit.Tonne)),
+                    new UnitInfo<MassUnit>(MassUnit.Microgram, new BaseUnits(mass: MassUnit.Gram)),
+                    new UnitInfo<MassUnit>(MassUnit.Milligram, new BaseUnits(mass: MassUnit.Gram)),
+                    new UnitInfo<MassUnit>(MassUnit.Nanogram, new BaseUnits(mass: MassUnit.Gram)),
                     new UnitInfo<MassUnit>(MassUnit.Ounce, new BaseUnits(mass: MassUnit.Ounce)),
-                    new UnitInfo<MassUnit>(MassUnit.Petagram, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Petatonne, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Picogram, BaseUnits.Undefined),
+                    new UnitInfo<MassUnit>(MassUnit.Petagram, new BaseUnits(mass: MassUnit.Gram)),
+                    new UnitInfo<MassUnit>(MassUnit.Petatonne, new BaseUnits(mass: MassUnit.Tonne)),
+                    new UnitInfo<MassUnit>(MassUnit.Picogram, new BaseUnits(mass: MassUnit.Gram)),
                     new UnitInfo<MassUnit>(MassUnit.Pound, new BaseUnits(mass: MassUnit.Pound)),
-                    new UnitInfo<MassUnit>(MassUnit.Qutragram, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Qutratonne, BaseUnits.Undefined),
+                    new UnitInfo<MassUnit>(MassUnit.Qutragram, new BaseUnits(mass: MassUnit.Gram)),
+                    new UnitInfo<MassUnit>(MassUnit.Qutratonne, new BaseUnits(mass: MassUnit.Tonne)),
                     new UnitInfo<MassUnit>(MassUnit.ShortHundredweight, new BaseUnits(mass: MassUnit.ShortHundredweight)),
                     new UnitInfo<MassUnit>(MassUnit.ShortTon, new BaseUnits(mass: MassUnit.ShortTon)),
                     new UnitInfo<MassUnit>(MassUnit.Slug, new BaseUnits(mass: MassUnit.Slug)),
                     new UnitInfo<MassUnit>(MassUnit.Stone, new BaseUnits(mass: MassUnit.Stone)),
-                    new UnitInfo<MassUnit>(MassUnit.Teragram, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Teratonne, BaseUnits.Undefined),
+                    new UnitInfo<MassUnit>(MassUnit.Teragram, new BaseUnits(mass: MassUnit.Gram)),
+                    new UnitInfo<MassUnit>(MassUnit.Teratonne, new BaseUnits(mass: MassUnit.Tonne)),
                     new UnitInfo<MassUnit>(MassUnit.Tonne, new BaseUnits(mass: MassUnit.Tonne)),
-                    new UnitInfo<MassUnit>(MassUnit.Vettagram, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Vettatonne, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Yottagram, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Yottatonne, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Zettagram, BaseUnits.Undefined),
-                    new UnitInfo<MassUnit>(MassUnit.Zettatonne, BaseUnits.Undefined),
+                    new UnitInfo<MassUnit>(MassUnit.Vettagram, new BaseUnits(mass: MassUnit.Gram)),
+                    new UnitInfo<MassUnit>(MassUnit.Vettatonne, new BaseUnits(mass: MassUnit.Tonne)),
+                    new UnitInfo<MassUnit>(MassUnit.Yottagram, new BaseUnits(mass: MassUnit.Gram)),
+                    new UnitInfo<MassUnit>(MassUnit.Yottatonne, new BaseUnits(mass: MassUnit.Tonne)),
+                    new UnitInfo<MassUnit>(MassUnit.Zettagram, new BaseUnits(mass: MassUnit.Gram)),
+                    new UnitInfo<MassUnit>(MassUnit.Zettatonne, new BaseUnits(mass: MassUnit.Tonne)),
                 },
                 BaseUnit, Zero, BaseDimensions);
         }
@@ -124,7 +124,12 @@ namespace UnitsNet
             if(unitSystem == null) throw new ArgumentNullException(nameof(unitSystem));
 
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-            var firstUnitInfo = unitInfos.FirstOrDefault();
+            var firstUnitInfo = unitInfos.FirstOrDefault(u => u.Value.Equals(BaseUnit));
+            // for custom units, sometimes we don't find the base unit, this grabs the first off the list.
+            if(Equals(firstUnitInfo, null ))
+            {
+                firstUnitInfo = unitInfos.FirstOrDefault();
+            }
 
             _value = Guard.EnsureValidNumber(numericValue, nameof(numericValue));
             _unit = firstUnitInfo?.Value ?? throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
@@ -1030,32 +1035,44 @@ namespace UnitsNet
         /// <summary>Returns true if less or equal to.</summary>
         public static bool operator <=(Mass left, Mass right)
         {
+            if(left is null || right is null )
+                return false;
             return left.Value <= right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if greater than or equal to.</summary>
         public static bool operator >=(Mass left, Mass right)
         {
-            return left.Value >= right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value >= right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if less than.</summary>
         public static bool operator <(Mass left, Mass right)
         {
-            return left.Value < right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value < right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if greater than.</summary>
         public static bool operator >(Mass left, Mass right)
         {
-            return left.Value > right.GetValueAs(left.Unit);
+              if(left is null || right is null )
+                return false;
+          return left.Value > right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if exactly equal.</summary>
         /// <remarks>Consider using <see cref="Equals(Mass, double, ComparisonType)"/> for safely comparing floating point values.</remarks>
         public static bool operator ==(Mass left, Mass right)
         {
-            return left.Equals(right);
+             if(left is null && right is null )
+                return true;
+            if( left is null )
+                return false;
+           return left.Equals(right);
         }
 
         /// <summary>Returns true if not exactly equal.</summary>
@@ -1077,6 +1094,8 @@ namespace UnitsNet
         /// <inheritdoc />
         public int CompareTo(Mass other)
         {
+            if(other is null) throw new ArgumentNullException();
+
             return _value.CompareTo(other.GetValueAs(this.Unit));
         }
 
@@ -1094,6 +1113,9 @@ namespace UnitsNet
         /// <remarks>Consider using <see cref="Equals(Mass, double, ComparisonType)"/> for safely comparing floating point values.</remarks>
         public bool Equals(Mass other)
         {
+            if(other is null)
+                return false;
+
             return _value.Equals(other.GetValueAs(this.Unit));
         }
 
@@ -1179,13 +1201,16 @@ namespace UnitsNet
         {
             if(unitSystem == null)
                 throw new ArgumentNullException(nameof(unitSystem));
+            var firstUnitInfo = Info.BaseUnitInfo;
+            if (firstUnitInfo == null)
+            {
+              var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
+              firstUnitInfo = unitInfos.FirstOrDefault(u=> u.Value.Equals(BaseUnit));
+                if (firstUnitInfo == null)
+                    throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
+            }
 
-            var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
-                throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
-
+            
             return As(firstUnitInfo.Value);
         }
 
@@ -1222,13 +1247,16 @@ namespace UnitsNet
         {
             if(unitSystem == null)
                 throw new ArgumentNullException(nameof(unitSystem));
+            var firstUnitInfo = Info.BaseUnitInfo;
+            if (firstUnitInfo == null)
+            {
+              var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
+              firstUnitInfo = unitInfos.FirstOrDefault(u=> u.Value.Equals(BaseUnit));
+                if (firstUnitInfo == null)
+                    throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
+            }
 
-            var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
-                throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
-
+            
             return ToUnit(firstUnitInfo.Value);
         }
 

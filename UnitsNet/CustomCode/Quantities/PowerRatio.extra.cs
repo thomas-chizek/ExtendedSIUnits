@@ -6,8 +6,21 @@ using UnitsNet.Units;
 
 namespace UnitsNet
 {
-    public partial struct PowerRatio
+    public partial class PowerRatio
     {
+
+        /// <summary>
+        /// Copy of a PowerRatio
+        /// </summary>
+        /// <param name="pr"></param>
+        public PowerRatio(PowerRatio pr) : this(pr.Value, pr.Unit) { }
+
+        /// <summary>
+        /// Empty PowerRatio
+        /// </summary>
+        public PowerRatio() : this(Zero.Value, Zero.Unit) { }
+
+
         /// <summary>
         ///     Initializes a new instance of the <see cref="PowerRatio" /> struct from the specified power referenced to one watt.
         /// </summary>

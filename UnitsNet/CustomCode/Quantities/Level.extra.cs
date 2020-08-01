@@ -6,8 +6,20 @@ using UnitsNet.Units;
 
 namespace UnitsNet
 {
-    public partial struct Level
+    public partial class Level
     {
+
+        /// <summary>
+        /// Copy of a level
+        /// </summary>
+        /// <param name="l"></param>
+        public Level(Level l) : this(l.Value, l.Unit) { }
+
+        /// <summary>
+        /// Empty Level
+        /// </summary>
+        public Level() : this(Zero.Value, Zero.Unit) { }
+
         /// <summary>
         ///     Initializes a new instance of the logarithmic <see cref="Level" /> struct which is the ratio of a quantity Q to a
         ///     reference value of that quantity Q0.

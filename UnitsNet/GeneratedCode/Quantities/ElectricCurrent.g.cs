@@ -32,7 +32,7 @@ namespace UnitsNet
     /// <summary>
     ///     An electric current is a flow of electric charge. In electric circuits this charge is often carried by moving electrons in a wire. It can also be carried by ions in an electrolyte, or by both ions and electrons such as in a plasma.
     /// </summary>
-    public partial struct ElectricCurrent : IQuantity<ElectricCurrentUnit>, IEquatable<ElectricCurrent>, IComparable, IComparable<ElectricCurrent>, IConvertible, IFormattable
+    public partial class ElectricCurrent : IQuantity<ElectricCurrentUnit>, IEquatable<ElectricCurrent>, IComparable, IComparable<ElectricCurrent>, IConvertible, IFormattable
     {
         /// <summary>
         ///     The numeric value this quantity was constructed with.
@@ -51,15 +51,15 @@ namespace UnitsNet
             Info = new QuantityInfo<ElectricCurrentUnit>(QuantityType.ElectricCurrent,
                 new UnitInfo<ElectricCurrentUnit>[] {
                     new UnitInfo<ElectricCurrentUnit>(ElectricCurrentUnit.Ampere, new BaseUnits(current: ElectricCurrentUnit.Ampere)),
-                    new UnitInfo<ElectricCurrentUnit>(ElectricCurrentUnit.Centiampere, BaseUnits.Undefined),
-                    new UnitInfo<ElectricCurrentUnit>(ElectricCurrentUnit.Decaampere, BaseUnits.Undefined),
-                    new UnitInfo<ElectricCurrentUnit>(ElectricCurrentUnit.Deciampere, BaseUnits.Undefined),
-                    new UnitInfo<ElectricCurrentUnit>(ElectricCurrentUnit.Kiloampere, BaseUnits.Undefined),
-                    new UnitInfo<ElectricCurrentUnit>(ElectricCurrentUnit.Megaampere, BaseUnits.Undefined),
-                    new UnitInfo<ElectricCurrentUnit>(ElectricCurrentUnit.Microampere, BaseUnits.Undefined),
-                    new UnitInfo<ElectricCurrentUnit>(ElectricCurrentUnit.Milliampere, BaseUnits.Undefined),
-                    new UnitInfo<ElectricCurrentUnit>(ElectricCurrentUnit.Nanoampere, BaseUnits.Undefined),
-                    new UnitInfo<ElectricCurrentUnit>(ElectricCurrentUnit.Picoampere, BaseUnits.Undefined),
+                    new UnitInfo<ElectricCurrentUnit>(ElectricCurrentUnit.Centiampere, new BaseUnits(current: ElectricCurrentUnit.Ampere)),
+                    new UnitInfo<ElectricCurrentUnit>(ElectricCurrentUnit.Decaampere, new BaseUnits(current: ElectricCurrentUnit.Ampere)),
+                    new UnitInfo<ElectricCurrentUnit>(ElectricCurrentUnit.Deciampere, new BaseUnits(current: ElectricCurrentUnit.Ampere)),
+                    new UnitInfo<ElectricCurrentUnit>(ElectricCurrentUnit.Kiloampere, new BaseUnits(current: ElectricCurrentUnit.Ampere)),
+                    new UnitInfo<ElectricCurrentUnit>(ElectricCurrentUnit.Megaampere, new BaseUnits(current: ElectricCurrentUnit.Ampere)),
+                    new UnitInfo<ElectricCurrentUnit>(ElectricCurrentUnit.Microampere, new BaseUnits(current: ElectricCurrentUnit.Ampere)),
+                    new UnitInfo<ElectricCurrentUnit>(ElectricCurrentUnit.Milliampere, new BaseUnits(current: ElectricCurrentUnit.Ampere)),
+                    new UnitInfo<ElectricCurrentUnit>(ElectricCurrentUnit.Nanoampere, new BaseUnits(current: ElectricCurrentUnit.Ampere)),
+                    new UnitInfo<ElectricCurrentUnit>(ElectricCurrentUnit.Picoampere, new BaseUnits(current: ElectricCurrentUnit.Ampere)),
                 },
                 BaseUnit, Zero, BaseDimensions);
         }
@@ -92,7 +92,12 @@ namespace UnitsNet
             if(unitSystem == null) throw new ArgumentNullException(nameof(unitSystem));
 
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-            var firstUnitInfo = unitInfos.FirstOrDefault();
+            var firstUnitInfo = unitInfos.FirstOrDefault(u => u.Value.Equals(BaseUnit));
+            // for custom units, sometimes we don't find the base unit, this grabs the first off the list.
+            if(Equals(firstUnitInfo, null ))
+            {
+                firstUnitInfo = unitInfos.FirstOrDefault();
+            }
 
             _value = Guard.EnsureValidNumber(numericValue, nameof(numericValue));
             _unit = firstUnitInfo?.Value ?? throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
@@ -550,32 +555,44 @@ namespace UnitsNet
         /// <summary>Returns true if less or equal to.</summary>
         public static bool operator <=(ElectricCurrent left, ElectricCurrent right)
         {
+            if(left is null || right is null )
+                return false;
             return left.Value <= right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if greater than or equal to.</summary>
         public static bool operator >=(ElectricCurrent left, ElectricCurrent right)
         {
-            return left.Value >= right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value >= right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if less than.</summary>
         public static bool operator <(ElectricCurrent left, ElectricCurrent right)
         {
-            return left.Value < right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value < right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if greater than.</summary>
         public static bool operator >(ElectricCurrent left, ElectricCurrent right)
         {
-            return left.Value > right.GetValueAs(left.Unit);
+              if(left is null || right is null )
+                return false;
+          return left.Value > right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if exactly equal.</summary>
         /// <remarks>Consider using <see cref="Equals(ElectricCurrent, double, ComparisonType)"/> for safely comparing floating point values.</remarks>
         public static bool operator ==(ElectricCurrent left, ElectricCurrent right)
         {
-            return left.Equals(right);
+             if(left is null && right is null )
+                return true;
+            if( left is null )
+                return false;
+           return left.Equals(right);
         }
 
         /// <summary>Returns true if not exactly equal.</summary>
@@ -597,6 +614,8 @@ namespace UnitsNet
         /// <inheritdoc />
         public int CompareTo(ElectricCurrent other)
         {
+            if(other is null) throw new ArgumentNullException();
+
             return _value.CompareTo(other.GetValueAs(this.Unit));
         }
 
@@ -614,6 +633,9 @@ namespace UnitsNet
         /// <remarks>Consider using <see cref="Equals(ElectricCurrent, double, ComparisonType)"/> for safely comparing floating point values.</remarks>
         public bool Equals(ElectricCurrent other)
         {
+            if(other is null)
+                return false;
+
             return _value.Equals(other.GetValueAs(this.Unit));
         }
 
@@ -699,13 +721,16 @@ namespace UnitsNet
         {
             if(unitSystem == null)
                 throw new ArgumentNullException(nameof(unitSystem));
+            var firstUnitInfo = Info.BaseUnitInfo;
+            if (firstUnitInfo == null)
+            {
+              var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
+              firstUnitInfo = unitInfos.FirstOrDefault(u=> u.Value.Equals(BaseUnit));
+                if (firstUnitInfo == null)
+                    throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
+            }
 
-            var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
-                throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
-
+            
             return As(firstUnitInfo.Value);
         }
 
@@ -742,13 +767,16 @@ namespace UnitsNet
         {
             if(unitSystem == null)
                 throw new ArgumentNullException(nameof(unitSystem));
+            var firstUnitInfo = Info.BaseUnitInfo;
+            if (firstUnitInfo == null)
+            {
+              var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
+              firstUnitInfo = unitInfos.FirstOrDefault(u=> u.Value.Equals(BaseUnit));
+                if (firstUnitInfo == null)
+                    throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
+            }
 
-            var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
-                throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
-
+            
             return ToUnit(firstUnitInfo.Value);
         }
 

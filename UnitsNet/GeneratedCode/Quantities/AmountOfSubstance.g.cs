@@ -32,7 +32,7 @@ namespace UnitsNet
     /// <summary>
     ///     Mole is the amount of substance containing Avagadro's Number (6.02 x 10 ^ 23) of real particles such as molecules,atoms, ions or radicals.
     /// </summary>
-    public partial struct AmountOfSubstance : IQuantity<AmountOfSubstanceUnit>, IEquatable<AmountOfSubstance>, IComparable, IComparable<AmountOfSubstance>, IConvertible, IFormattable
+    public partial class AmountOfSubstance : IQuantity<AmountOfSubstanceUnit>, IEquatable<AmountOfSubstance>, IComparable, IComparable<AmountOfSubstance>, IConvertible, IFormattable
     {
         /// <summary>
         ///     The numeric value this quantity was constructed with.
@@ -50,21 +50,21 @@ namespace UnitsNet
 
             Info = new QuantityInfo<AmountOfSubstanceUnit>(QuantityType.AmountOfSubstance,
                 new UnitInfo<AmountOfSubstanceUnit>[] {
-                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.Centimole, BaseUnits.Undefined),
-                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.CentipoundMole, BaseUnits.Undefined),
-                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.DecapoundMole, BaseUnits.Undefined),
-                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.Decimole, BaseUnits.Undefined),
-                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.DecipoundMole, BaseUnits.Undefined),
-                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.Kilomole, BaseUnits.Undefined),
-                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.KilopoundMole, BaseUnits.Undefined),
-                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.Megamole, BaseUnits.Undefined),
-                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.Micromole, BaseUnits.Undefined),
-                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.MicropoundMole, BaseUnits.Undefined),
-                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.Millimole, BaseUnits.Undefined),
-                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.MillipoundMole, BaseUnits.Undefined),
+                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.Centimole, new BaseUnits(amount: AmountOfSubstanceUnit.Mole)),
+                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.CentipoundMole, new BaseUnits(amount: AmountOfSubstanceUnit.PoundMole)),
+                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.DecapoundMole, new BaseUnits(amount: AmountOfSubstanceUnit.PoundMole)),
+                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.Decimole, new BaseUnits(amount: AmountOfSubstanceUnit.Mole)),
+                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.DecipoundMole, new BaseUnits(amount: AmountOfSubstanceUnit.PoundMole)),
+                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.Kilomole, new BaseUnits(amount: AmountOfSubstanceUnit.Mole)),
+                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.KilopoundMole, new BaseUnits(amount: AmountOfSubstanceUnit.PoundMole)),
+                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.Megamole, new BaseUnits(amount: AmountOfSubstanceUnit.Mole)),
+                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.Micromole, new BaseUnits(amount: AmountOfSubstanceUnit.Mole)),
+                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.MicropoundMole, new BaseUnits(amount: AmountOfSubstanceUnit.PoundMole)),
+                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.Millimole, new BaseUnits(amount: AmountOfSubstanceUnit.Mole)),
+                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.MillipoundMole, new BaseUnits(amount: AmountOfSubstanceUnit.PoundMole)),
                     new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.Mole, new BaseUnits(amount: AmountOfSubstanceUnit.Mole)),
-                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.Nanomole, BaseUnits.Undefined),
-                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.NanopoundMole, BaseUnits.Undefined),
+                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.Nanomole, new BaseUnits(amount: AmountOfSubstanceUnit.Mole)),
+                    new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.NanopoundMole, new BaseUnits(amount: AmountOfSubstanceUnit.PoundMole)),
                     new UnitInfo<AmountOfSubstanceUnit>(AmountOfSubstanceUnit.PoundMole, new BaseUnits(amount: AmountOfSubstanceUnit.PoundMole)),
                 },
                 BaseUnit, Zero, BaseDimensions);
@@ -98,7 +98,12 @@ namespace UnitsNet
             if(unitSystem == null) throw new ArgumentNullException(nameof(unitSystem));
 
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-            var firstUnitInfo = unitInfos.FirstOrDefault();
+            var firstUnitInfo = unitInfos.FirstOrDefault(u => u.Value.Equals(BaseUnit));
+            // for custom units, sometimes we don't find the base unit, this grabs the first off the list.
+            if(Equals(firstUnitInfo, null ))
+            {
+                firstUnitInfo = unitInfos.FirstOrDefault();
+            }
 
             _value = Guard.EnsureValidNumber(numericValue, nameof(numericValue));
             _unit = firstUnitInfo?.Value ?? throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
@@ -640,32 +645,44 @@ namespace UnitsNet
         /// <summary>Returns true if less or equal to.</summary>
         public static bool operator <=(AmountOfSubstance left, AmountOfSubstance right)
         {
+            if(left is null || right is null )
+                return false;
             return left.Value <= right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if greater than or equal to.</summary>
         public static bool operator >=(AmountOfSubstance left, AmountOfSubstance right)
         {
-            return left.Value >= right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value >= right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if less than.</summary>
         public static bool operator <(AmountOfSubstance left, AmountOfSubstance right)
         {
-            return left.Value < right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value < right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if greater than.</summary>
         public static bool operator >(AmountOfSubstance left, AmountOfSubstance right)
         {
-            return left.Value > right.GetValueAs(left.Unit);
+              if(left is null || right is null )
+                return false;
+          return left.Value > right.GetValueAs(left.Unit);
         }
 
         /// <summary>Returns true if exactly equal.</summary>
         /// <remarks>Consider using <see cref="Equals(AmountOfSubstance, double, ComparisonType)"/> for safely comparing floating point values.</remarks>
         public static bool operator ==(AmountOfSubstance left, AmountOfSubstance right)
         {
-            return left.Equals(right);
+             if(left is null && right is null )
+                return true;
+            if( left is null )
+                return false;
+           return left.Equals(right);
         }
 
         /// <summary>Returns true if not exactly equal.</summary>
@@ -687,6 +704,8 @@ namespace UnitsNet
         /// <inheritdoc />
         public int CompareTo(AmountOfSubstance other)
         {
+            if(other is null) throw new ArgumentNullException();
+
             return _value.CompareTo(other.GetValueAs(this.Unit));
         }
 
@@ -704,6 +723,9 @@ namespace UnitsNet
         /// <remarks>Consider using <see cref="Equals(AmountOfSubstance, double, ComparisonType)"/> for safely comparing floating point values.</remarks>
         public bool Equals(AmountOfSubstance other)
         {
+            if(other is null)
+                return false;
+
             return _value.Equals(other.GetValueAs(this.Unit));
         }
 
@@ -789,13 +811,16 @@ namespace UnitsNet
         {
             if(unitSystem == null)
                 throw new ArgumentNullException(nameof(unitSystem));
+            var firstUnitInfo = Info.BaseUnitInfo;
+            if (firstUnitInfo == null)
+            {
+              var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
+              firstUnitInfo = unitInfos.FirstOrDefault(u=> u.Value.Equals(BaseUnit));
+                if (firstUnitInfo == null)
+                    throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
+            }
 
-            var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
-                throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
-
+            
             return As(firstUnitInfo.Value);
         }
 
@@ -832,13 +857,16 @@ namespace UnitsNet
         {
             if(unitSystem == null)
                 throw new ArgumentNullException(nameof(unitSystem));
+            var firstUnitInfo = Info.BaseUnitInfo;
+            if (firstUnitInfo == null)
+            {
+              var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
+              firstUnitInfo = unitInfos.FirstOrDefault(u=> u.Value.Equals(BaseUnit));
+                if (firstUnitInfo == null)
+                    throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
+            }
 
-            var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
-                throw new ArgumentException("No units were found for the given UnitSystem.", nameof(unitSystem));
-
+            
             return ToUnit(firstUnitInfo.Value);
         }
 

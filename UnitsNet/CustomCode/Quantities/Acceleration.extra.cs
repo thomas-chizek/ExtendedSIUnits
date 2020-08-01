@@ -5,7 +5,7 @@ using UnitsNet.Units;
 
 namespace UnitsNet
 {
-    public partial struct Acceleration
+    public partial class Acceleration
     {
         /// <summary>
         ///     Gets an instance of this quantity with a value of 0 in the base unit MeterPerSecondSquared.

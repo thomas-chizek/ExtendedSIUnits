@@ -1,4 +1,4 @@
-// Licensed under MIT No Attribution, see LICENSE file at the root.
+﻿// Licensed under MIT No Attribution, see LICENSE file at the root.
 // Copyright 2013 Andreas Gullberg Larsen (andreas.larsen84@gmail.com). Maintained at https://github.com/angularsen/UnitsNet.
 
 using System;
@@ -68,7 +68,7 @@ namespace UnitsNet
     /// </remarks>");
 
             Writer.WL($@"
-    public partial struct {_quantity.Name} : IQuantity<{_unitEnumName}>, IEquatable<{_quantity.Name}>, IComparable, IComparable<{_quantity.Name}>, IConvertible, IFormattable
+    public partial class {_quantity.Name} : IQuantity<{_unitEnumName}>, IEquatable<{_quantity.Name}>, IComparable, IComparable<{_quantity.Name}>, IConvertible, IFormattable
     {{
         /// <summary>
         ///     The numeric value this quantity was constructed with.
@@ -189,7 +189,12 @@ namespace UnitsNet
             if(unitSystem == null) throw new ArgumentNullException(nameof(unitSystem));
 
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-            var firstUnitInfo = unitInfos.FirstOrDefault();
+            var firstUnitInfo = unitInfos.FirstOrDefault(u => u.Value.Equals(BaseUnit));
+            // for custom units, sometimes we don't find the base unit, this grabs the first off the list.
+            if(Equals(firstUnitInfo, null ))
+            {{
+                firstUnitInfo = unitInfos.FirstOrDefault();
+            }}
 ");
 
             Writer.WL(_quantity.BaseType == "double"
@@ -666,32 +671,44 @@ namespace UnitsNet
         /// <summary>Returns true if less or equal to.</summary>
         public static bool operator <=({_quantity.Name} left, {_quantity.Name} right)
         {{
+            if(left is null || right is null )
+                return false;
             return left.Value <= right.GetValueAs(left.Unit);
         }}
 
         /// <summary>Returns true if greater than or equal to.</summary>
         public static bool operator >=({_quantity.Name} left, {_quantity.Name} right)
         {{
-            return left.Value >= right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value >= right.GetValueAs(left.Unit);
         }}
 
         /// <summary>Returns true if less than.</summary>
         public static bool operator <({_quantity.Name} left, {_quantity.Name} right)
         {{
-            return left.Value < right.GetValueAs(left.Unit);
+             if(left is null || right is null )
+                return false;
+           return left.Value < right.GetValueAs(left.Unit);
         }}
 
         /// <summary>Returns true if greater than.</summary>
         public static bool operator >({_quantity.Name} left, {_quantity.Name} right)
         {{
-            return left.Value > right.GetValueAs(left.Unit);
+              if(left is null || right is null )
+                return false;
+          return left.Value > right.GetValueAs(left.Unit);
         }}
 
         /// <summary>Returns true if exactly equal.</summary>
         /// <remarks>Consider using <see cref=""Equals({_quantity.Name}, double, ComparisonType)""/> for safely comparing floating point values.</remarks>
         public static bool operator ==({_quantity.Name} left, {_quantity.Name} right)
         {{
-            return left.Equals(right);
+             if(left is null && right is null )
+                return true;
+            if( left is null )
+                return false;
+           return left.Equals(right);
         }}
 
         /// <summary>Returns true if not exactly equal.</summary>
@@ -713,6 +730,8 @@ namespace UnitsNet
         /// <inheritdoc />
         public int CompareTo({_quantity.Name} other)
         {{
+            if(other is null) throw new ArgumentNullException();
+
             return _value.CompareTo(other.GetValueAs(this.Unit));
         }}
 
@@ -730,6 +749,9 @@ namespace UnitsNet
         /// <remarks>Consider using <see cref=""Equals({_quantity.Name}, double, ComparisonType)""/> for safely comparing floating point values.</remarks>
         public bool Equals({_quantity.Name} other)
         {{
+            if(other is null)
+                return false;
+
             return _value.Equals(other.GetValueAs(this.Unit));
         }}
 
@@ -819,14 +841,39 @@ namespace UnitsNet
         public double As(UnitSystem unitSystem)
         {{
             if(unitSystem == null)
-                throw new ArgumentNullException(nameof(unitSystem));
+                throw new ArgumentNullException(nameof(unitSystem));");
 
+            if(_unitEnumName.Equals("LengthUnit") || _unitEnumName.Equals("MassUnit")  || _unitEnumName.Equals("TemperatureUnit") ||  _unitEnumName.Equals("LuminousIntensityUnit") ||
+               _unitEnumName.Equals("AmountOfSubstanceUnit") || _unitEnumName.Equals("DurationUnit") || _unitEnumName.Equals("ElectricCurrentUnit"))
+            {
+                Writer.WL($@"
+
+            var firstUnitInfo = Info.BaseUnitInfo;
+            if (firstUnitInfo == null)
+            {{
+              var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
+              firstUnitInfo = unitInfos.FirstOrDefault(u=> u.Value.Equals(BaseUnit));
+                if (firstUnitInfo == null)
+                    throw new ArgumentException(""No units were found for the given UnitSystem."", nameof(unitSystem));
+            }}
+
+            ");
+            }
+            else
+            {
+                Writer.WL($@"
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
+            
+            var firstUnitInfo = unitInfos.FirstOrDefault(u => u.Value.Equals(BaseUnit));
+            if (firstUnitInfo is null)
+            {{
+                firstUnitInfo = unitInfos.FirstOrDefault();
+                if (firstUnitInfo is null)
                 throw new ArgumentException(""No units were found for the given UnitSystem."", nameof(unitSystem));
-
+            }}
+            ");
+            }
+           Writer.WL($@"
             return As(firstUnitInfo.Value);
         }}
 
@@ -862,14 +909,35 @@ namespace UnitsNet
         public {_quantity.Name} ToUnit(UnitSystem unitSystem)
         {{
             if(unitSystem == null)
-                throw new ArgumentNullException(nameof(unitSystem));
+                throw new ArgumentNullException(nameof(unitSystem));");
 
+            if (_unitEnumName.Equals("LengthUnit") || _unitEnumName.Equals("MassUnit") || _unitEnumName.Equals("TemperatureUnit") || _unitEnumName.Equals("LuminousIntensityUnit") ||
+               _unitEnumName.Equals("AmountOfSubstanceUnit") || _unitEnumName.Equals("DurationUnit") || _unitEnumName.Equals("ElectricCurrentUnit"))
+            {
+                Writer.WL($@"
+
+            var firstUnitInfo = Info.BaseUnitInfo;
+            if (firstUnitInfo == null)
+            {{
+              var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
+              firstUnitInfo = unitInfos.FirstOrDefault(u=> u.Value.Equals(BaseUnit));
+                if (firstUnitInfo == null)
+                    throw new ArgumentException(""No units were found for the given UnitSystem."", nameof(unitSystem));
+            }}
+
+            ");
+            }
+            else
+            {
+Writer.WL($@"
             var unitInfos = Info.GetUnitInfosFor(unitSystem.BaseUnits);
-
-            var firstUnitInfo = unitInfos.FirstOrDefault();
-            if(firstUnitInfo == null)
+            var firstUnitInfo = unitInfos.FirstOrDefault(u=> u.Value.Equals(BaseUnit));
+            if (firstUnitInfo == null)
                 throw new ArgumentException(""No units were found for the given UnitSystem."", nameof(unitSystem));
 
+            ");
+            }
+            Writer.WL($@"
             return ToUnit(firstUnitInfo.Value);
         }}
 
