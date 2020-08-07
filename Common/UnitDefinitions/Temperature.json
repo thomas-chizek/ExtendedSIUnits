@@ -33,7 +33,7 @@
       "Localization": [
         {
           "Culture": "en-US",
-          "Abbreviations": [ "°C" ]
+          "Abbreviations": [ "°C", "C" ]
         }
       ]
     },
@@ -48,7 +48,7 @@
       "Localization": [
         {
           "Culture": "en-US",
-          "Abbreviations": [ "°De" ]
+          "Abbreviations": [ "°De", "De" ]
         }
       ]
     },
@@ -63,7 +63,7 @@
       "Localization": [
         {
           "Culture": "en-US",
-          "Abbreviations": [ "°F" ]
+          "Abbreviations": ["°F", "F" ]
         }
       ]
     },
@@ -78,7 +78,7 @@
       "Localization": [
         {
           "Culture": "en-US",
-          "Abbreviations": [ "°N" ]
+          "Abbreviations": [ "°N", "N" ]
         }
       ]
     },
@@ -93,7 +93,7 @@
       "Localization": [
         {
           "Culture": "en-US",
-          "Abbreviations": [ "°R" ]
+          "Abbreviations": [ "°R", "R" ]
         }
       ]
     },
@@ -108,7 +108,7 @@
       "Localization": [
         {
           "Culture": "en-US",
-          "Abbreviations": [ "°Ré" ]
+          "Abbreviations": [ "°Ré", "Re" ]
         }
       ]
     },
@@ -123,7 +123,7 @@
       "Localization": [
         {
           "Culture": "en-US",
-          "Abbreviations": [ "°Rø" ]
+          "Abbreviations": [ "°Rø", "Ro" ]
         }
       ]
     }

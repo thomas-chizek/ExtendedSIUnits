@@ -123,5 +123,19 @@ namespace UnitsNet.Tests.CustomCode
             Temperature resultTemp = temperature + delta;
             Assert.True(expected.Equals(resultTemp, 1e-5, ComparisonType.Absolute));
         }
+
+        [Fact]
+        public void TemperatureToStringTesting()
+        {
+            Temperature t1 = Temperature.Zero;
+            string expected = "0 K";
+
+            Assert.Equal(expected, t1.ToString());
+
+            t1 = Temperature.ZeroC;
+            expected = "0 °C";
+            Assert.Equal(expected, t1.ToString());
+
+        }
     }
 }

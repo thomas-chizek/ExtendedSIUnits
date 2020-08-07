@@ -86,7 +86,7 @@
       "Localization": [
         {
           "Culture": "en-US",
-          "Abbreviations": [ "ft/s²²" ]
+          "Abbreviations": [ "ft/s²" ]
         }
       ]
     },
@@ -183,7 +183,7 @@
       "Localization": [
         {
           "Culture": "en-US",
-          "Abbreviations": [ "ls/h", "ls/h²" ]
+          "Abbreviations": [ "ls/h²"]
         }
       ]
     }
