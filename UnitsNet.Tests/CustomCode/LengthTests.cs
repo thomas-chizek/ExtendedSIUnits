@@ -173,6 +173,45 @@ namespace UnitsNet.Tests.CustomCode
         protected override double ZettaparsecsInOneMeter => PrefixMultipliers.Apply(ParsecsInOneMeter, Prefix.zetta);
         protected override double YottaparsecsInOneMeter => PrefixMultipliers.Apply(ParsecsInOneMeter, Prefix.yotta);
 
+        protected override double MicroearthRadiInOneMeter => PrefixMultipliers.Apply(EarthRadiInOneMeter, Prefix.micro);
+        protected override double MilliearthRadiInOneMeter => PrefixMultipliers.Apply(EarthRadiInOneMeter, Prefix.milli);
+        protected override double CentiearthRadiInOneMeter => PrefixMultipliers.Apply(EarthRadiInOneMeter, Prefix.ceni);
+        protected override double DeciearthRadiInOneMeter => PrefixMultipliers.Apply(EarthRadiInOneMeter, Prefix.deci);
+        protected override double EarthRadiInOneMeter => 1.56961230576048E-07;
+        protected override double DecaearthRadiInOneMeter => PrefixMultipliers.Apply(EarthRadiInOneMeter, Prefix.deca);
+        protected override double HectoearthRadiInOneMeter => PrefixMultipliers.Apply(EarthRadiInOneMeter, Prefix.hecto);
+        protected override double KiloearthRadiInOneMeter => PrefixMultipliers.Apply(EarthRadiInOneMeter, Prefix.kilo);
+        protected override double MegaearthRadiInOneMeter => PrefixMultipliers.Apply(EarthRadiInOneMeter, Prefix.mega);
+        protected override double GigaearthRadiInOneMeter => PrefixMultipliers.Apply(EarthRadiInOneMeter, Prefix.giga);
+        protected override double TeraearthRadiInOneMeter => PrefixMultipliers.Apply(EarthRadiInOneMeter, Prefix.tera);
+
+
+        protected override double CentijupiterRadiInOneMeter => PrefixMultipliers.Apply(JupiterRadiInOneMeter, Prefix.ceni);
+        protected override double DecijupiterRadiInOneMeter => PrefixMultipliers.Apply(JupiterRadiInOneMeter, Prefix.deci);
+        protected override double JupiterRadiInOneMeter => 1.39875790298215E-08;
+        protected override double DecajupiterRadiInOneMeter => PrefixMultipliers.Apply(JupiterRadiInOneMeter, Prefix.deca);
+        protected override double HectojupiterRadiInOneMeter => PrefixMultipliers.Apply(JupiterRadiInOneMeter, Prefix.hecto);
+        protected override double KilojupiterRadiInOneMeter => PrefixMultipliers.Apply(JupiterRadiInOneMeter, Prefix.kilo);
+        protected override double MegajupiterRadiInOneMeter => PrefixMultipliers.Apply(JupiterRadiInOneMeter, Prefix.mega);
+        protected override double GigajupiterRadiInOneMeter => PrefixMultipliers.Apply(JupiterRadiInOneMeter, Prefix.giga);
+        protected override double TerajupiterRadiInOneMeter => PrefixMultipliers.Apply(JupiterRadiInOneMeter, Prefix.tera);
+
+
+        protected override double CentisolarRadiInOneMeter => PrefixMultipliers.Apply(SolarRadiInOneMeter, Prefix.ceni);
+        protected override double DecisolarRadiInOneMeter => PrefixMultipliers.Apply(SolarRadiInOneMeter, Prefix.deci);
+        protected override double SolarRadiInOneMeter => 1.43740117866897E-09;
+        protected override double DecasolarRadiInOneMeter => PrefixMultipliers.Apply(SolarRadiInOneMeter, Prefix.deca);
+        protected override double HectosolarRadiInOneMeter => PrefixMultipliers.Apply(SolarRadiInOneMeter, Prefix.hecto);
+        protected override double KilosolarRadiInOneMeter => PrefixMultipliers.Apply(SolarRadiInOneMeter, Prefix.kilo);
+        protected override double MegasolarRadiInOneMeter => PrefixMultipliers.Apply(SolarRadiInOneMeter, Prefix.mega);
+        protected override double GigasolarRadiInOneMeter => PrefixMultipliers.Apply(SolarRadiInOneMeter, Prefix.giga);
+        protected override double TerasolarRadiInOneMeter => PrefixMultipliers.Apply(SolarRadiInOneMeter, Prefix.tera);
+        protected override double PetasolarRadiInOneMeter => PrefixMultipliers.Apply(SolarRadiInOneMeter, Prefix.peta);
+        protected override double ExasolarRadiInOneMeter => PrefixMultipliers.Apply(SolarRadiInOneMeter, Prefix.exa);
+        protected override double ZettasolarRadiInOneMeter => PrefixMultipliers.Apply(SolarRadiInOneMeter, Prefix.zetta);
+        protected override double YottasolarRadiInOneMeter => PrefixMultipliers.Apply(SolarRadiInOneMeter, Prefix.yotta);
+
+
         [ Fact]
         public void AreaTimesLengthEqualsVolume()
         {

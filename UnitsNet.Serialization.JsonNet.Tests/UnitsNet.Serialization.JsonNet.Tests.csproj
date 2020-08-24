@@ -5,8 +5,8 @@
     <RootNamespace>UnitsNet.Serialization.JsonNet.Tests</RootNamespace>
     <LangVersion>8.0</LangVersion>
     <MSBuildTreatWarningsAsErrors>true</MSBuildTreatWarningsAsErrors>
-    <AssemblyVersion>1.0.27.20214</AssemblyVersion>
-    <FileVersion>1.0.27.20214</FileVersion>
+    <AssemblyVersion>1.0.27.20222</AssemblyVersion>
+    <FileVersion>1.0.27.20222</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

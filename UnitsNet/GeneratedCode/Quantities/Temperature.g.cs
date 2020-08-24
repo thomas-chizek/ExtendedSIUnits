@@ -474,6 +474,52 @@ namespace UnitsNet
 
         #endregion
 
+        #region Arithmetic Operators
+
+        /// <summary>Negate the value.</summary>
+        public static Temperature operator -(Temperature right)
+        {
+            return new Temperature(-right.Value, right.Unit);
+        }
+
+        /// <summary>Get <see cref="Temperature"/> from adding two <see cref="Temperature"/>.</summary>
+        public static Temperature operator +(Temperature left, Temperature right)
+        {
+            return new Temperature(left.Value + right.GetValueAs(left.Unit), left.Unit);
+        }
+
+        /// <summary>Get <see cref="Temperature"/> from subtracting two <see cref="Temperature"/>.</summary>
+        public static Temperature operator -(Temperature left, Temperature right)
+        {
+            return new Temperature(left.Value - right.GetValueAs(left.Unit), left.Unit);
+        }
+
+        /// <summary>Get <see cref="Temperature"/> from multiplying value and <see cref="Temperature"/>.</summary>
+        public static Temperature operator *(double left, Temperature right)
+        {
+            return new Temperature(left * right.Value, right.Unit);
+        }
+
+        /// <summary>Get <see cref="Temperature"/> from multiplying value and <see cref="Temperature"/>.</summary>
+        public static Temperature operator *(Temperature left, double right)
+        {
+            return new Temperature(left.Value * right, left.Unit);
+        }
+
+        /// <summary>Get <see cref="Temperature"/> from dividing <see cref="Temperature"/> by value.</summary>
+        public static Temperature operator /(Temperature left, double right)
+        {
+            return new Temperature(left.Value / right, left.Unit);
+        }
+
+        /// <summary>Get ratio value from dividing <see cref="Temperature"/> by <see cref="Temperature"/>.</summary>
+        public static double operator /(Temperature left, Temperature right)
+        {
+            return left.Kelvins / right.Kelvins;
+        }
+
+        #endregion
+
         #region Equality / IComparable
 
         /// <summary>Returns true if less or equal to.</summary>

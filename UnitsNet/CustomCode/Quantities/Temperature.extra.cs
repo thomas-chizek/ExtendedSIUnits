@@ -42,7 +42,7 @@ namespace UnitsNet
         /// </summary>
         /// <remarks>Due to temperature units having different scales, the arithmetic must be performed on the same scale.</remarks>
         /// <returns>The delta temperature (difference).</returns>
-        public static TemperatureDelta operator -(Temperature left, Temperature right)
+        public static TemperatureDelta operator -(TemperatureDelta left, Temperature right)
         {
             return new TemperatureDelta(left.Kelvins - right.Kelvins, TemperatureDeltaUnit.Kelvin);
         }

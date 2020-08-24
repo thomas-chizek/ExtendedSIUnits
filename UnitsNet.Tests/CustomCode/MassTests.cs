@@ -2,6 +2,7 @@
 // Copyright 2013 Andreas Gullberg Larsen (andreas.larsen84@gmail.com). Maintained at https://github.com/angularsen/UnitsNet.
 
 using System;
+using UnitsNet.Tests.Helpers;
 using UnitsNet.Units;
 using Xunit;
 
@@ -63,22 +64,43 @@ namespace UnitsNet.Tests.CustomCode
 
 
 
+        protected override double MicroearthMassInOneKilogram => PrefixMultipliers.Apply(EarthMassInOneKilogram, Prefix.micro);
+        protected override double MilliearthMassInOneKilogram => PrefixMultipliers.Apply(EarthMassInOneKilogram, Prefix.milli);
+        protected override double CentiearthMassInOneKilogram => PrefixMultipliers.Apply(EarthMassInOneKilogram, Prefix.ceni);
+        protected override double DeciearthMassInOneKilogram => PrefixMultipliers.Apply(EarthMassInOneKilogram, Prefix.deci);
+        protected override double EarthMassInOneKilogram => 1.67442763877238E-25;
+        protected override double DecaearthMassInOneKilogram => PrefixMultipliers.Apply(EarthMassInOneKilogram, Prefix.deca);
+        protected override double HectoearthMassInOneKilogram => PrefixMultipliers.Apply(EarthMassInOneKilogram, Prefix.hecto);
+        protected override double KiloearthMassInOneKilogram => PrefixMultipliers.Apply(EarthMassInOneKilogram, Prefix.kilo);
+        protected override double MegaearthMassInOneKilogram => PrefixMultipliers.Apply(EarthMassInOneKilogram, Prefix.mega);
 
 
+        protected override double CentijupiterMassInOneKilogram => PrefixMultipliers.Apply(JupiterMassInOneKilogram, Prefix.ceni);
+        protected override double DecijupiterMassInOneKilogram => PrefixMultipliers.Apply(JupiterMassInOneKilogram, Prefix.deci);
+        protected override double JupiterMassInOneKilogram => 5.26703887074687E-28;
+        protected override double DecajupiterMassInOneKilogram => PrefixMultipliers.Apply(JupiterMassInOneKilogram, Prefix.deca);
+        protected override double HectojupiterMassInOneKilogram => PrefixMultipliers.Apply(JupiterMassInOneKilogram, Prefix.hecto);
+        protected override double KilojupiterMassInOneKilogram => PrefixMultipliers.Apply(JupiterMassInOneKilogram, Prefix.kilo);
+        protected override double MegajupiterMassInOneKilogram => PrefixMultipliers.Apply(JupiterMassInOneKilogram, Prefix.mega);
+        protected override double GigajupiterMassInOneKilogram => PrefixMultipliers.Apply(JupiterMassInOneKilogram, Prefix.giga);
+        protected override double TerajupiterMassInOneKilogram => PrefixMultipliers.Apply(JupiterMassInOneKilogram, Prefix.tera);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+        protected override double MicrosolarMassInOneKilogram => PrefixMultipliers.Apply(SolarMassInOneKilogram, Prefix.micro);
+        protected override double MillisolarMassInOneKilogram => PrefixMultipliers.Apply(SolarMassInOneKilogram, Prefix.milli);
+        protected override double CentisolarMassInOneKilogram => PrefixMultipliers.Apply(SolarMassInOneKilogram, Prefix.ceni);
+        protected override double DecisolarMassInOneKilogram => PrefixMultipliers.Apply(SolarMassInOneKilogram, Prefix.deci);
+        protected override double SolarMassInOneKilogram => 5.0278543101127E-31;
+        protected override double DecasolarMassInOneKilogram => PrefixMultipliers.Apply(SolarMassInOneKilogram, Prefix.deca);
+        protected override double HectosolarMassInOneKilogram => PrefixMultipliers.Apply(SolarMassInOneKilogram, Prefix.hecto);
+        protected override double KilosolarMassInOneKilogram => PrefixMultipliers.Apply(SolarMassInOneKilogram, Prefix.kilo);
+        protected override double MegasolarMassInOneKilogram => PrefixMultipliers.Apply(SolarMassInOneKilogram, Prefix.mega);
+        protected override double GigasolarMassInOneKilogram => PrefixMultipliers.Apply(SolarMassInOneKilogram, Prefix.giga);
+        protected override double TerasolarMassInOneKilogram => PrefixMultipliers.Apply(SolarMassInOneKilogram, Prefix.tera);
+        protected override double PetasolarMassInOneKilogram => PrefixMultipliers.Apply(SolarMassInOneKilogram, Prefix.peta);
+        protected override double ExasolarMassInOneKilogram => PrefixMultipliers.Apply(SolarMassInOneKilogram, Prefix.exa);
+        protected override double ZettasolarMassInOneKilogram => PrefixMultipliers.Apply(SolarMassInOneKilogram, Prefix.zetta);
+        protected override double YottasolarMassInOneKilogram => PrefixMultipliers.Apply(SolarMassInOneKilogram, Prefix.yotta);
 
 
         [Fact]

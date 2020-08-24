@@ -179,6 +179,18 @@ namespace UnitsNet.Tests
             AssertEx.EqualTolerance(1, Temperature.FromKelvins(kelvin.Kelvins).Kelvins, KelvinsTolerance);
         }
 
+        [Fact]
+        public void ArithmeticOperators()
+        {
+            Temperature v = Temperature.FromKelvins(1);
+            AssertEx.EqualTolerance(-1, -v.Kelvins, KelvinsTolerance);
+            AssertEx.EqualTolerance(2, (Temperature.FromKelvins(3)-v).Kelvins, KelvinsTolerance);
+            AssertEx.EqualTolerance(2, (v + v).Kelvins, KelvinsTolerance);
+            AssertEx.EqualTolerance(10, (v*10).Kelvins, KelvinsTolerance);
+            AssertEx.EqualTolerance(10, (10*v).Kelvins, KelvinsTolerance);
+            AssertEx.EqualTolerance(2, (Temperature.FromKelvins(10)/5).Kelvins, KelvinsTolerance);
+            AssertEx.EqualTolerance(2, Temperature.FromKelvins(10)/Temperature.FromKelvins(5), KelvinsTolerance);
+        }
 
         [Fact]
         public void ComparisonOperators()

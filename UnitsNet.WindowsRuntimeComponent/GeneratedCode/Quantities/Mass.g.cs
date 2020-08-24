@@ -156,9 +156,29 @@ namespace UnitsNet
         #region Conversion Properties
 
         /// <summary>
+        ///     Get Mass in CentiearthMass.
+        /// </summary>
+        public double CentiearthMass => As(MassUnit.CentiearthMass);
+
+        /// <summary>
         ///     Get Mass in Centigrams.
         /// </summary>
         public double Centigrams => As(MassUnit.Centigram);
+
+        /// <summary>
+        ///     Get Mass in CentijupiterMass.
+        /// </summary>
+        public double CentijupiterMass => As(MassUnit.CentijupiterMass);
+
+        /// <summary>
+        ///     Get Mass in CentisolarMass.
+        /// </summary>
+        public double CentisolarMass => As(MassUnit.CentisolarMass);
+
+        /// <summary>
+        ///     Get Mass in DecaearthMass.
+        /// </summary>
+        public double DecaearthMass => As(MassUnit.DecaearthMass);
 
         /// <summary>
         ///     Get Mass in Decagrams.
@@ -166,14 +186,49 @@ namespace UnitsNet
         public double Decagrams => As(MassUnit.Decagram);
 
         /// <summary>
+        ///     Get Mass in DecajupiterMass.
+        /// </summary>
+        public double DecajupiterMass => As(MassUnit.DecajupiterMass);
+
+        /// <summary>
+        ///     Get Mass in DecasolarMass.
+        /// </summary>
+        public double DecasolarMass => As(MassUnit.DecasolarMass);
+
+        /// <summary>
+        ///     Get Mass in DeciearthMass.
+        /// </summary>
+        public double DeciearthMass => As(MassUnit.DeciearthMass);
+
+        /// <summary>
         ///     Get Mass in Decigrams.
         /// </summary>
         public double Decigrams => As(MassUnit.Decigram);
 
         /// <summary>
+        ///     Get Mass in DecijupiterMass.
+        /// </summary>
+        public double DecijupiterMass => As(MassUnit.DecijupiterMass);
+
+        /// <summary>
+        ///     Get Mass in DecisolarMass.
+        /// </summary>
+        public double DecisolarMass => As(MassUnit.DecisolarMass);
+
+        /// <summary>
+        ///     Get Mass in EarthMass.
+        /// </summary>
+        public double EarthMass => As(MassUnit.EarthMass);
+
+        /// <summary>
         ///     Get Mass in Exagrams.
         /// </summary>
         public double Exagrams => As(MassUnit.Exagram);
+
+        /// <summary>
+        ///     Get Mass in ExasolarMass.
+        /// </summary>
+        public double ExasolarMass => As(MassUnit.ExasolarMass);
 
         /// <summary>
         ///     Get Mass in Exatonnes.
@@ -191,6 +246,16 @@ namespace UnitsNet
         public double Gigagrams => As(MassUnit.Gigagram);
 
         /// <summary>
+        ///     Get Mass in GigajupiterMass.
+        /// </summary>
+        public double GigajupiterMass => As(MassUnit.GigajupiterMass);
+
+        /// <summary>
+        ///     Get Mass in GigasolarMass.
+        /// </summary>
+        public double GigasolarMass => As(MassUnit.GigasolarMass);
+
+        /// <summary>
         ///     Get Mass in Gigatonnes.
         /// </summary>
         public double Gigatonnes => As(MassUnit.Gigatonne);
@@ -206,9 +271,34 @@ namespace UnitsNet
         public double Grams => As(MassUnit.Gram);
 
         /// <summary>
+        ///     Get Mass in HectoearthMass.
+        /// </summary>
+        public double HectoearthMass => As(MassUnit.HectoearthMass);
+
+        /// <summary>
         ///     Get Mass in Hectograms.
         /// </summary>
         public double Hectograms => As(MassUnit.Hectogram);
+
+        /// <summary>
+        ///     Get Mass in HectojupiterMass.
+        /// </summary>
+        public double HectojupiterMass => As(MassUnit.HectojupiterMass);
+
+        /// <summary>
+        ///     Get Mass in HectosolarMass.
+        /// </summary>
+        public double HectosolarMass => As(MassUnit.HectosolarMass);
+
+        /// <summary>
+        ///     Get Mass in JupiterMass.
+        /// </summary>
+        public double JupiterMass => As(MassUnit.JupiterMass);
+
+        /// <summary>
+        ///     Get Mass in KiloearthMass.
+        /// </summary>
+        public double KiloearthMass => As(MassUnit.KiloearthMass);
 
         /// <summary>
         ///     Get Mass in Kilograms.
@@ -216,9 +306,19 @@ namespace UnitsNet
         public double Kilograms => As(MassUnit.Kilogram);
 
         /// <summary>
+        ///     Get Mass in KilojupiterMass.
+        /// </summary>
+        public double KilojupiterMass => As(MassUnit.KilojupiterMass);
+
+        /// <summary>
         ///     Get Mass in Kilopounds.
         /// </summary>
         public double Kilopounds => As(MassUnit.Kilopound);
+
+        /// <summary>
+        ///     Get Mass in KilosolarMass.
+        /// </summary>
+        public double KilosolarMass => As(MassUnit.KilosolarMass);
 
         /// <summary>
         ///     Get Mass in Kilotonnes.
@@ -236,9 +336,19 @@ namespace UnitsNet
         public double LongTons => As(MassUnit.LongTon);
 
         /// <summary>
+        ///     Get Mass in MegaearthMass.
+        /// </summary>
+        public double MegaearthMass => As(MassUnit.MegaearthMass);
+
+        /// <summary>
         ///     Get Mass in Megagrams.
         /// </summary>
         public double Megagrams => As(MassUnit.Megagram);
+
+        /// <summary>
+        ///     Get Mass in MegajupiterMass.
+        /// </summary>
+        public double MegajupiterMass => As(MassUnit.MegajupiterMass);
 
         /// <summary>
         ///     Get Mass in Megapounds.
@@ -246,9 +356,19 @@ namespace UnitsNet
         public double Megapounds => As(MassUnit.Megapound);
 
         /// <summary>
+        ///     Get Mass in MegasolarMass.
+        /// </summary>
+        public double MegasolarMass => As(MassUnit.MegasolarMass);
+
+        /// <summary>
         ///     Get Mass in Megatonnes.
         /// </summary>
         public double Megatonnes => As(MassUnit.Megatonne);
+
+        /// <summary>
+        ///     Get Mass in MicroearthMass.
+        /// </summary>
+        public double MicroearthMass => As(MassUnit.MicroearthMass);
 
         /// <summary>
         ///     Get Mass in Micrograms.
@@ -256,9 +376,24 @@ namespace UnitsNet
         public double Micrograms => As(MassUnit.Microgram);
 
         /// <summary>
+        ///     Get Mass in MicrosolarMass.
+        /// </summary>
+        public double MicrosolarMass => As(MassUnit.MicrosolarMass);
+
+        /// <summary>
+        ///     Get Mass in MilliearthMass.
+        /// </summary>
+        public double MilliearthMass => As(MassUnit.MilliearthMass);
+
+        /// <summary>
         ///     Get Mass in Milligrams.
         /// </summary>
         public double Milligrams => As(MassUnit.Milligram);
+
+        /// <summary>
+        ///     Get Mass in MillisolarMass.
+        /// </summary>
+        public double MillisolarMass => As(MassUnit.MillisolarMass);
 
         /// <summary>
         ///     Get Mass in Nanograms.
@@ -274,6 +409,11 @@ namespace UnitsNet
         ///     Get Mass in Petagrams.
         /// </summary>
         public double Petagrams => As(MassUnit.Petagram);
+
+        /// <summary>
+        ///     Get Mass in PetasolarMass.
+        /// </summary>
+        public double PetasolarMass => As(MassUnit.PetasolarMass);
 
         /// <summary>
         ///     Get Mass in Petatonnes.
@@ -316,6 +456,11 @@ namespace UnitsNet
         public double Slugs => As(MassUnit.Slug);
 
         /// <summary>
+        ///     Get Mass in SolarMass.
+        /// </summary>
+        public double SolarMass => As(MassUnit.SolarMass);
+
+        /// <summary>
         ///     Get Mass in Stone.
         /// </summary>
         public double Stone => As(MassUnit.Stone);
@@ -324,6 +469,16 @@ namespace UnitsNet
         ///     Get Mass in Teragrams.
         /// </summary>
         public double Teragrams => As(MassUnit.Teragram);
+
+        /// <summary>
+        ///     Get Mass in TerajupiterMass.
+        /// </summary>
+        public double TerajupiterMass => As(MassUnit.TerajupiterMass);
+
+        /// <summary>
+        ///     Get Mass in TerasolarMass.
+        /// </summary>
+        public double TerasolarMass => As(MassUnit.TerasolarMass);
 
         /// <summary>
         ///     Get Mass in Teratonnes.
@@ -351,6 +506,11 @@ namespace UnitsNet
         public double Yottagrams => As(MassUnit.Yottagram);
 
         /// <summary>
+        ///     Get Mass in YottasolarMass.
+        /// </summary>
+        public double YottasolarMass => As(MassUnit.YottasolarMass);
+
+        /// <summary>
         ///     Get Mass in Yottatonnes.
         /// </summary>
         public double Yottatonnes => As(MassUnit.Yottatonne);
@@ -359,6 +519,11 @@ namespace UnitsNet
         ///     Get Mass in Zettagrams.
         /// </summary>
         public double Zettagrams => As(MassUnit.Zettagram);
+
+        /// <summary>
+        ///     Get Mass in ZettasolarMass.
+        /// </summary>
+        public double ZettasolarMass => As(MassUnit.ZettasolarMass);
 
         /// <summary>
         ///     Get Mass in Zettatonnes.
@@ -396,6 +561,16 @@ namespace UnitsNet
         #region Static Factory Methods
 
         /// <summary>
+        ///     Get Mass from CentiearthMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromCentiearthMass(double centiearthmass)
+        {
+            double value = (double) centiearthmass;
+            return new Mass(value, MassUnit.CentiearthMass);
+        }
+        /// <summary>
         ///     Get Mass from Centigrams.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -404,6 +579,36 @@ namespace UnitsNet
         {
             double value = (double) centigrams;
             return new Mass(value, MassUnit.Centigram);
+        }
+        /// <summary>
+        ///     Get Mass from CentijupiterMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromCentijupiterMass(double centijupitermass)
+        {
+            double value = (double) centijupitermass;
+            return new Mass(value, MassUnit.CentijupiterMass);
+        }
+        /// <summary>
+        ///     Get Mass from CentisolarMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromCentisolarMass(double centisolarmass)
+        {
+            double value = (double) centisolarmass;
+            return new Mass(value, MassUnit.CentisolarMass);
+        }
+        /// <summary>
+        ///     Get Mass from DecaearthMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromDecaearthMass(double decaearthmass)
+        {
+            double value = (double) decaearthmass;
+            return new Mass(value, MassUnit.DecaearthMass);
         }
         /// <summary>
         ///     Get Mass from Decagrams.
@@ -416,6 +621,36 @@ namespace UnitsNet
             return new Mass(value, MassUnit.Decagram);
         }
         /// <summary>
+        ///     Get Mass from DecajupiterMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromDecajupiterMass(double decajupitermass)
+        {
+            double value = (double) decajupitermass;
+            return new Mass(value, MassUnit.DecajupiterMass);
+        }
+        /// <summary>
+        ///     Get Mass from DecasolarMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromDecasolarMass(double decasolarmass)
+        {
+            double value = (double) decasolarmass;
+            return new Mass(value, MassUnit.DecasolarMass);
+        }
+        /// <summary>
+        ///     Get Mass from DeciearthMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromDeciearthMass(double deciearthmass)
+        {
+            double value = (double) deciearthmass;
+            return new Mass(value, MassUnit.DeciearthMass);
+        }
+        /// <summary>
         ///     Get Mass from Decigrams.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -426,6 +661,36 @@ namespace UnitsNet
             return new Mass(value, MassUnit.Decigram);
         }
         /// <summary>
+        ///     Get Mass from DecijupiterMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromDecijupiterMass(double decijupitermass)
+        {
+            double value = (double) decijupitermass;
+            return new Mass(value, MassUnit.DecijupiterMass);
+        }
+        /// <summary>
+        ///     Get Mass from DecisolarMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromDecisolarMass(double decisolarmass)
+        {
+            double value = (double) decisolarmass;
+            return new Mass(value, MassUnit.DecisolarMass);
+        }
+        /// <summary>
+        ///     Get Mass from EarthMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromEarthMass(double earthmass)
+        {
+            double value = (double) earthmass;
+            return new Mass(value, MassUnit.EarthMass);
+        }
+        /// <summary>
         ///     Get Mass from Exagrams.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -434,6 +699,16 @@ namespace UnitsNet
         {
             double value = (double) exagrams;
             return new Mass(value, MassUnit.Exagram);
+        }
+        /// <summary>
+        ///     Get Mass from ExasolarMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromExasolarMass(double exasolarmass)
+        {
+            double value = (double) exasolarmass;
+            return new Mass(value, MassUnit.ExasolarMass);
         }
         /// <summary>
         ///     Get Mass from Exatonnes.
@@ -466,6 +741,26 @@ namespace UnitsNet
             return new Mass(value, MassUnit.Gigagram);
         }
         /// <summary>
+        ///     Get Mass from GigajupiterMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromGigajupiterMass(double gigajupitermass)
+        {
+            double value = (double) gigajupitermass;
+            return new Mass(value, MassUnit.GigajupiterMass);
+        }
+        /// <summary>
+        ///     Get Mass from GigasolarMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromGigasolarMass(double gigasolarmass)
+        {
+            double value = (double) gigasolarmass;
+            return new Mass(value, MassUnit.GigasolarMass);
+        }
+        /// <summary>
         ///     Get Mass from Gigatonnes.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -496,6 +791,16 @@ namespace UnitsNet
             return new Mass(value, MassUnit.Gram);
         }
         /// <summary>
+        ///     Get Mass from HectoearthMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromHectoearthMass(double hectoearthmass)
+        {
+            double value = (double) hectoearthmass;
+            return new Mass(value, MassUnit.HectoearthMass);
+        }
+        /// <summary>
         ///     Get Mass from Hectograms.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -504,6 +809,46 @@ namespace UnitsNet
         {
             double value = (double) hectograms;
             return new Mass(value, MassUnit.Hectogram);
+        }
+        /// <summary>
+        ///     Get Mass from HectojupiterMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromHectojupiterMass(double hectojupitermass)
+        {
+            double value = (double) hectojupitermass;
+            return new Mass(value, MassUnit.HectojupiterMass);
+        }
+        /// <summary>
+        ///     Get Mass from HectosolarMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromHectosolarMass(double hectosolarmass)
+        {
+            double value = (double) hectosolarmass;
+            return new Mass(value, MassUnit.HectosolarMass);
+        }
+        /// <summary>
+        ///     Get Mass from JupiterMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromJupiterMass(double jupitermass)
+        {
+            double value = (double) jupitermass;
+            return new Mass(value, MassUnit.JupiterMass);
+        }
+        /// <summary>
+        ///     Get Mass from KiloearthMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromKiloearthMass(double kiloearthmass)
+        {
+            double value = (double) kiloearthmass;
+            return new Mass(value, MassUnit.KiloearthMass);
         }
         /// <summary>
         ///     Get Mass from Kilograms.
@@ -516,6 +861,16 @@ namespace UnitsNet
             return new Mass(value, MassUnit.Kilogram);
         }
         /// <summary>
+        ///     Get Mass from KilojupiterMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromKilojupiterMass(double kilojupitermass)
+        {
+            double value = (double) kilojupitermass;
+            return new Mass(value, MassUnit.KilojupiterMass);
+        }
+        /// <summary>
         ///     Get Mass from Kilopounds.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -524,6 +879,16 @@ namespace UnitsNet
         {
             double value = (double) kilopounds;
             return new Mass(value, MassUnit.Kilopound);
+        }
+        /// <summary>
+        ///     Get Mass from KilosolarMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromKilosolarMass(double kilosolarmass)
+        {
+            double value = (double) kilosolarmass;
+            return new Mass(value, MassUnit.KilosolarMass);
         }
         /// <summary>
         ///     Get Mass from Kilotonnes.
@@ -556,6 +921,16 @@ namespace UnitsNet
             return new Mass(value, MassUnit.LongTon);
         }
         /// <summary>
+        ///     Get Mass from MegaearthMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromMegaearthMass(double megaearthmass)
+        {
+            double value = (double) megaearthmass;
+            return new Mass(value, MassUnit.MegaearthMass);
+        }
+        /// <summary>
         ///     Get Mass from Megagrams.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -564,6 +939,16 @@ namespace UnitsNet
         {
             double value = (double) megagrams;
             return new Mass(value, MassUnit.Megagram);
+        }
+        /// <summary>
+        ///     Get Mass from MegajupiterMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromMegajupiterMass(double megajupitermass)
+        {
+            double value = (double) megajupitermass;
+            return new Mass(value, MassUnit.MegajupiterMass);
         }
         /// <summary>
         ///     Get Mass from Megapounds.
@@ -576,6 +961,16 @@ namespace UnitsNet
             return new Mass(value, MassUnit.Megapound);
         }
         /// <summary>
+        ///     Get Mass from MegasolarMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromMegasolarMass(double megasolarmass)
+        {
+            double value = (double) megasolarmass;
+            return new Mass(value, MassUnit.MegasolarMass);
+        }
+        /// <summary>
         ///     Get Mass from Megatonnes.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -584,6 +979,16 @@ namespace UnitsNet
         {
             double value = (double) megatonnes;
             return new Mass(value, MassUnit.Megatonne);
+        }
+        /// <summary>
+        ///     Get Mass from MicroearthMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromMicroearthMass(double microearthmass)
+        {
+            double value = (double) microearthmass;
+            return new Mass(value, MassUnit.MicroearthMass);
         }
         /// <summary>
         ///     Get Mass from Micrograms.
@@ -596,6 +1001,26 @@ namespace UnitsNet
             return new Mass(value, MassUnit.Microgram);
         }
         /// <summary>
+        ///     Get Mass from MicrosolarMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromMicrosolarMass(double microsolarmass)
+        {
+            double value = (double) microsolarmass;
+            return new Mass(value, MassUnit.MicrosolarMass);
+        }
+        /// <summary>
+        ///     Get Mass from MilliearthMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromMilliearthMass(double milliearthmass)
+        {
+            double value = (double) milliearthmass;
+            return new Mass(value, MassUnit.MilliearthMass);
+        }
+        /// <summary>
         ///     Get Mass from Milligrams.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -604,6 +1029,16 @@ namespace UnitsNet
         {
             double value = (double) milligrams;
             return new Mass(value, MassUnit.Milligram);
+        }
+        /// <summary>
+        ///     Get Mass from MillisolarMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromMillisolarMass(double millisolarmass)
+        {
+            double value = (double) millisolarmass;
+            return new Mass(value, MassUnit.MillisolarMass);
         }
         /// <summary>
         ///     Get Mass from Nanograms.
@@ -634,6 +1069,16 @@ namespace UnitsNet
         {
             double value = (double) petagrams;
             return new Mass(value, MassUnit.Petagram);
+        }
+        /// <summary>
+        ///     Get Mass from PetasolarMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromPetasolarMass(double petasolarmass)
+        {
+            double value = (double) petasolarmass;
+            return new Mass(value, MassUnit.PetasolarMass);
         }
         /// <summary>
         ///     Get Mass from Petatonnes.
@@ -716,6 +1161,16 @@ namespace UnitsNet
             return new Mass(value, MassUnit.Slug);
         }
         /// <summary>
+        ///     Get Mass from SolarMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromSolarMass(double solarmass)
+        {
+            double value = (double) solarmass;
+            return new Mass(value, MassUnit.SolarMass);
+        }
+        /// <summary>
         ///     Get Mass from Stone.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -734,6 +1189,26 @@ namespace UnitsNet
         {
             double value = (double) teragrams;
             return new Mass(value, MassUnit.Teragram);
+        }
+        /// <summary>
+        ///     Get Mass from TerajupiterMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromTerajupiterMass(double terajupitermass)
+        {
+            double value = (double) terajupitermass;
+            return new Mass(value, MassUnit.TerajupiterMass);
+        }
+        /// <summary>
+        ///     Get Mass from TerasolarMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromTerasolarMass(double terasolarmass)
+        {
+            double value = (double) terasolarmass;
+            return new Mass(value, MassUnit.TerasolarMass);
         }
         /// <summary>
         ///     Get Mass from Teratonnes.
@@ -786,6 +1261,16 @@ namespace UnitsNet
             return new Mass(value, MassUnit.Yottagram);
         }
         /// <summary>
+        ///     Get Mass from YottasolarMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromYottasolarMass(double yottasolarmass)
+        {
+            double value = (double) yottasolarmass;
+            return new Mass(value, MassUnit.YottasolarMass);
+        }
+        /// <summary>
         ///     Get Mass from Yottatonnes.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -804,6 +1289,16 @@ namespace UnitsNet
         {
             double value = (double) zettagrams;
             return new Mass(value, MassUnit.Zettagram);
+        }
+        /// <summary>
+        ///     Get Mass from ZettasolarMass.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        [Windows.Foundation.Metadata.DefaultOverload]
+        public static Mass FromZettasolarMass(double zettasolarmass)
+        {
+            double value = (double) zettasolarmass;
+            return new Mass(value, MassUnit.ZettasolarMass);
         }
         /// <summary>
         ///     Get Mass from Zettatonnes.
@@ -1106,30 +1601,58 @@ namespace UnitsNet
         {
             switch(Unit)
             {
+                case MassUnit.CentiearthMass: return (_value*5.97219e+24) * 1e-2d;
                 case MassUnit.Centigram: return (_value/1e3) * 1e-2d;
+                case MassUnit.CentijupiterMass: return (_value*1.8986e+27) * 1e-2d;
+                case MassUnit.CentisolarMass: return (_value*1.9889200011e+30) * 1e-2d;
+                case MassUnit.DecaearthMass: return (_value*5.97219e+24) * 1e1d;
                 case MassUnit.Decagram: return (_value/1e3) * 1e1d;
+                case MassUnit.DecajupiterMass: return (_value*1.8986e+27) * 1e1d;
+                case MassUnit.DecasolarMass: return (_value*1.9889200011e+30) * 1e1d;
+                case MassUnit.DeciearthMass: return (_value*5.97219e+24) * 1e-1d;
                 case MassUnit.Decigram: return (_value/1e3) * 1e-1d;
+                case MassUnit.DecijupiterMass: return (_value*1.8986e+27) * 1e-1d;
+                case MassUnit.DecisolarMass: return (_value*1.9889200011e+30) * 1e-1d;
+                case MassUnit.EarthMass: return _value*5.97219e+24;
                 case MassUnit.Exagram: return (_value/1e3) * 1e18d;
+                case MassUnit.ExasolarMass: return (_value*1.9889200011e+30) * 1e18d;
                 case MassUnit.Exatonne: return (_value*1e3) * 1e18d;
                 case MassUnit.Femtogram: return (_value/1e3) * 1e-15d;
                 case MassUnit.Gigagram: return (_value/1e3) * 1e9d;
+                case MassUnit.GigajupiterMass: return (_value*1.8986e+27) * 1e9d;
+                case MassUnit.GigasolarMass: return (_value*1.9889200011e+30) * 1e9d;
                 case MassUnit.Gigatonne: return (_value*1e3) * 1e9d;
                 case MassUnit.Grain: return _value/15432.358352941431;
                 case MassUnit.Gram: return _value/1e3;
+                case MassUnit.HectoearthMass: return (_value*5.97219e+24) * 1e2d;
                 case MassUnit.Hectogram: return (_value/1e3) * 1e2d;
+                case MassUnit.HectojupiterMass: return (_value*1.8986e+27) * 1e2d;
+                case MassUnit.HectosolarMass: return (_value*1.9889200011e+30) * 1e2d;
+                case MassUnit.JupiterMass: return _value*1.8986e+27;
+                case MassUnit.KiloearthMass: return (_value*5.97219e+24) * 1e3d;
                 case MassUnit.Kilogram: return (_value/1e3) * 1e3d;
+                case MassUnit.KilojupiterMass: return (_value*1.8986e+27) * 1e3d;
                 case MassUnit.Kilopound: return (_value*0.45359237) * 1e3d;
+                case MassUnit.KilosolarMass: return (_value*1.9889200011e+30) * 1e3d;
                 case MassUnit.Kilotonne: return (_value*1e3) * 1e3d;
                 case MassUnit.LongHundredweight: return _value/0.01968413055222121;
                 case MassUnit.LongTon: return _value*1.0160469088e3;
+                case MassUnit.MegaearthMass: return (_value*5.97219e+24) * 1e6d;
                 case MassUnit.Megagram: return (_value/1e3) * 1e6d;
+                case MassUnit.MegajupiterMass: return (_value*1.8986e+27) * 1e6d;
                 case MassUnit.Megapound: return (_value*0.45359237) * 1e6d;
+                case MassUnit.MegasolarMass: return (_value*1.9889200011e+30) * 1e6d;
                 case MassUnit.Megatonne: return (_value*1e3) * 1e6d;
+                case MassUnit.MicroearthMass: return (_value*5.97219e+24) * 1e-6d;
                 case MassUnit.Microgram: return (_value/1e3) * 1e-6d;
+                case MassUnit.MicrosolarMass: return (_value*1.9889200011e+30) * 1e-6d;
+                case MassUnit.MilliearthMass: return (_value*5.97219e+24) * 1e-3d;
                 case MassUnit.Milligram: return (_value/1e3) * 1e-3d;
+                case MassUnit.MillisolarMass: return (_value*1.9889200011e+30) * 1e-3d;
                 case MassUnit.Nanogram: return (_value/1e3) * 1e-9d;
                 case MassUnit.Ounce: return _value/35.2739619;
                 case MassUnit.Petagram: return (_value/1e3) * 1e15d;
+                case MassUnit.PetasolarMass: return (_value*1.9889200011e+30) * 1e15d;
                 case MassUnit.Petatonne: return (_value*1e3) * 1e15d;
                 case MassUnit.Picogram: return (_value/1e3) * 1e-12d;
                 case MassUnit.Pound: return _value*0.45359237;
@@ -1138,15 +1661,20 @@ namespace UnitsNet
                 case MassUnit.ShortHundredweight: return _value/0.022046226218487758;
                 case MassUnit.ShortTon: return _value*9.0718474e2;
                 case MassUnit.Slug: return _value/6.852176556196105e-2;
+                case MassUnit.SolarMass: return _value*1.9889200011e+30;
                 case MassUnit.Stone: return _value/0.1574731728702698;
                 case MassUnit.Teragram: return (_value/1e3) * 1e12d;
+                case MassUnit.TerajupiterMass: return (_value*1.8986e+27) * 1e12d;
+                case MassUnit.TerasolarMass: return (_value*1.9889200011e+30) * 1e12d;
                 case MassUnit.Teratonne: return (_value*1e3) * 1e12d;
                 case MassUnit.Tonne: return _value*1e3;
                 case MassUnit.Vettagram: return (_value/1e3) * 1e30d;
                 case MassUnit.Vettatonne: return (_value*1e3) * 1e30d;
                 case MassUnit.Yottagram: return (_value/1e3) * 1e24d;
+                case MassUnit.YottasolarMass: return (_value*1.9889200011e+30) * 1e24d;
                 case MassUnit.Yottatonne: return (_value*1e3) * 1e24d;
                 case MassUnit.Zettagram: return (_value/1e3) * 1e21d;
+                case MassUnit.ZettasolarMass: return (_value*1.9889200011e+30) * 1e21d;
                 case MassUnit.Zettatonne: return (_value*1e3) * 1e21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to base units.");
@@ -1162,30 +1690,58 @@ namespace UnitsNet
 
             switch(unit)
             {
+                case MassUnit.CentiearthMass: return (baseUnitValue/5.97219e+24) / 1e-2d;
                 case MassUnit.Centigram: return (baseUnitValue*1e3) / 1e-2d;
+                case MassUnit.CentijupiterMass: return (baseUnitValue/1.8986e+27) / 1e-2d;
+                case MassUnit.CentisolarMass: return (baseUnitValue/1.9889200011e+30) / 1e-2d;
+                case MassUnit.DecaearthMass: return (baseUnitValue/5.97219e+24) / 1e1d;
                 case MassUnit.Decagram: return (baseUnitValue*1e3) / 1e1d;
+                case MassUnit.DecajupiterMass: return (baseUnitValue/1.8986e+27) / 1e1d;
+                case MassUnit.DecasolarMass: return (baseUnitValue/1.9889200011e+30) / 1e1d;
+                case MassUnit.DeciearthMass: return (baseUnitValue/5.97219e+24) / 1e-1d;
                 case MassUnit.Decigram: return (baseUnitValue*1e3) / 1e-1d;
+                case MassUnit.DecijupiterMass: return (baseUnitValue/1.8986e+27) / 1e-1d;
+                case MassUnit.DecisolarMass: return (baseUnitValue/1.9889200011e+30) / 1e-1d;
+                case MassUnit.EarthMass: return baseUnitValue/5.97219e+24;
                 case MassUnit.Exagram: return (baseUnitValue*1e3) / 1e18d;
+                case MassUnit.ExasolarMass: return (baseUnitValue/1.9889200011e+30) / 1e18d;
                 case MassUnit.Exatonne: return (baseUnitValue/1e3) / 1e18d;
                 case MassUnit.Femtogram: return (baseUnitValue*1e3) / 1e-15d;
                 case MassUnit.Gigagram: return (baseUnitValue*1e3) / 1e9d;
+                case MassUnit.GigajupiterMass: return (baseUnitValue/1.8986e+27) / 1e9d;
+                case MassUnit.GigasolarMass: return (baseUnitValue/1.9889200011e+30) / 1e9d;
                 case MassUnit.Gigatonne: return (baseUnitValue/1e3) / 1e9d;
                 case MassUnit.Grain: return baseUnitValue*15432.358352941431;
                 case MassUnit.Gram: return baseUnitValue*1e3;
+                case MassUnit.HectoearthMass: return (baseUnitValue/5.97219e+24) / 1e2d;
                 case MassUnit.Hectogram: return (baseUnitValue*1e3) / 1e2d;
+                case MassUnit.HectojupiterMass: return (baseUnitValue/1.8986e+27) / 1e2d;
+                case MassUnit.HectosolarMass: return (baseUnitValue/1.9889200011e+30) / 1e2d;
+                case MassUnit.JupiterMass: return baseUnitValue/1.8986e+27;
+                case MassUnit.KiloearthMass: return (baseUnitValue/5.97219e+24) / 1e3d;
                 case MassUnit.Kilogram: return (baseUnitValue*1e3) / 1e3d;
+                case MassUnit.KilojupiterMass: return (baseUnitValue/1.8986e+27) / 1e3d;
                 case MassUnit.Kilopound: return (baseUnitValue/0.45359237) / 1e3d;
+                case MassUnit.KilosolarMass: return (baseUnitValue/1.9889200011e+30) / 1e3d;
                 case MassUnit.Kilotonne: return (baseUnitValue/1e3) / 1e3d;
                 case MassUnit.LongHundredweight: return baseUnitValue*0.01968413055222121;
                 case MassUnit.LongTon: return baseUnitValue/1.0160469088e3;
+                case MassUnit.MegaearthMass: return (baseUnitValue/5.97219e+24) / 1e6d;
                 case MassUnit.Megagram: return (baseUnitValue*1e3) / 1e6d;
+                case MassUnit.MegajupiterMass: return (baseUnitValue/1.8986e+27) / 1e6d;
                 case MassUnit.Megapound: return (baseUnitValue/0.45359237) / 1e6d;
+                case MassUnit.MegasolarMass: return (baseUnitValue/1.9889200011e+30) / 1e6d;
                 case MassUnit.Megatonne: return (baseUnitValue/1e3) / 1e6d;
+                case MassUnit.MicroearthMass: return (baseUnitValue/5.97219e+24) / 1e-6d;
                 case MassUnit.Microgram: return (baseUnitValue*1e3) / 1e-6d;
+                case MassUnit.MicrosolarMass: return (baseUnitValue/1.9889200011e+30) / 1e-6d;
+                case MassUnit.MilliearthMass: return (baseUnitValue/5.97219e+24) / 1e-3d;
                 case MassUnit.Milligram: return (baseUnitValue*1e3) / 1e-3d;
+                case MassUnit.MillisolarMass: return (baseUnitValue/1.9889200011e+30) / 1e-3d;
                 case MassUnit.Nanogram: return (baseUnitValue*1e3) / 1e-9d;
                 case MassUnit.Ounce: return baseUnitValue*35.2739619;
                 case MassUnit.Petagram: return (baseUnitValue*1e3) / 1e15d;
+                case MassUnit.PetasolarMass: return (baseUnitValue/1.9889200011e+30) / 1e15d;
                 case MassUnit.Petatonne: return (baseUnitValue/1e3) / 1e15d;
                 case MassUnit.Picogram: return (baseUnitValue*1e3) / 1e-12d;
                 case MassUnit.Pound: return baseUnitValue/0.45359237;
@@ -1194,15 +1750,20 @@ namespace UnitsNet
                 case MassUnit.ShortHundredweight: return baseUnitValue*0.022046226218487758;
                 case MassUnit.ShortTon: return baseUnitValue/9.0718474e2;
                 case MassUnit.Slug: return baseUnitValue*6.852176556196105e-2;
+                case MassUnit.SolarMass: return baseUnitValue/1.9889200011e+30;
                 case MassUnit.Stone: return baseUnitValue*0.1574731728702698;
                 case MassUnit.Teragram: return (baseUnitValue*1e3) / 1e12d;
+                case MassUnit.TerajupiterMass: return (baseUnitValue/1.8986e+27) / 1e12d;
+                case MassUnit.TerasolarMass: return (baseUnitValue/1.9889200011e+30) / 1e12d;
                 case MassUnit.Teratonne: return (baseUnitValue/1e3) / 1e12d;
                 case MassUnit.Tonne: return baseUnitValue/1e3;
                 case MassUnit.Vettagram: return (baseUnitValue*1e3) / 1e30d;
                 case MassUnit.Vettatonne: return (baseUnitValue/1e3) / 1e30d;
                 case MassUnit.Yottagram: return (baseUnitValue*1e3) / 1e24d;
+                case MassUnit.YottasolarMass: return (baseUnitValue/1.9889200011e+30) / 1e24d;
                 case MassUnit.Yottatonne: return (baseUnitValue/1e3) / 1e24d;
                 case MassUnit.Zettagram: return (baseUnitValue*1e3) / 1e21d;
+                case MassUnit.ZettasolarMass: return (baseUnitValue/1.9889200011e+30) / 1e21d;
                 case MassUnit.Zettatonne: return (baseUnitValue/1e3) / 1e21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to {unit}.");

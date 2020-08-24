@@ -405,6 +405,54 @@
           "Abbreviations": [ "ps", "parsec" ]
         }
       ]
+    },
+    {
+      "SingularName": "EarthRadius",
+      "PluralName": "EarthRadi",
+      "BaseUnits": {
+        "P": "EarthRadius"
+      },
+      "FromUnitToBaseFunc": "x*6.371e6",
+      "FromBaseToUnitFunc": "x/6.371e6",
+      "Prefixes": [ "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera" ],
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "R⊕", "RE", "EarthRadius", "REarth" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "SolarRadius",
+      "PluralName": "SolarRadi",
+      "BaseUnits": {
+        "P": "SolarRadius"
+      },
+      "FromUnitToBaseFunc": "x*6.957e8",
+      "FromBaseToUnitFunc": "x/6.957e8",
+      "Prefixes": [ "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta" ],
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "R☉", "RS", "SolarRadius", "RSol" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "JupiterRadius",
+      "PluralName": "JupiterRadi",
+      "BaseUnits": {
+        "P": "JupiterRadius"
+      },
+      "FromUnitToBaseFunc": "x*7.1492e7",
+      "FromBaseToUnitFunc": "x/7.1492e7",
+      "Prefixes": [ "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera"],
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "R♃", "RJ", "JupiterRadius", "RJup" ]
+        }
+      ]
     }
   ]
 }

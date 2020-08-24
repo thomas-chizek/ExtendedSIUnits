@@ -13,8 +13,8 @@
     <DelaySign>false</DelaySign>
     <SignAssembly>true</SignAssembly>
     <AssemblyName>UnitsNet.Tests</AssemblyName>
-    <AssemblyVersion>1.0.58.20217</AssemblyVersion>
-    <FileVersion>1.0.58.20217</FileVersion>
+    <AssemblyVersion>1.0.58.20222</AssemblyVersion>
+    <FileVersion>1.0.58.20222</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

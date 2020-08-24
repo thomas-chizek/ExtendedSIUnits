@@ -2,6 +2,7 @@
 // Copyright 2013 Andreas Gullberg Larsen (andreas.larsen84@gmail.com). Maintained at https://github.com/angularsen/UnitsNet.
 
 using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using UnitsNet.Units;
@@ -40,27 +41,21 @@ namespace UnitsNet
             formatProvider = formatProvider ?? CultureInfo.CurrentUICulture;
 
             var number = 0;
+
+            if(string.IsNullOrEmpty(format))
+                format = "g";
+
             // as far as the .Net formatter is concerned upper and lower case formats do the same thing
             // do make this formatter as case agnostic as we can.
             var formatString = format.ToLower();
-
-            if(string.IsNullOrEmpty(formatString))
-                formatString = "g";
 
             if (formatString.Length > 1 && !int.TryParse(formatString.Substring(1), out number))
                 throw new FormatException($"The {format} format string is not supported.");
 
             formatString = formatString.Substring(0, 1);
 
-            //if (formatString.StartsWith("a") || formatString.StartsWith("s"))
-            //{
-            //    if(formatString.Length > 1 && !int.TryParse(formatString.Substring(1), out number))
-            //        throw new FormatException($"The {format} format string is not supported.");
 
-            //    formatString = formatString.Substring(0, 1);
-            //}
-
-            switch(formatString)
+            switch (formatString)
             {
                 case "c":
                 case "d":
@@ -69,6 +64,13 @@ namespace UnitsNet
                 case "p":
                 case "s":
                 case "g":
+                    // Only set the format digits Number of digits for numeric values.
+                    if (number == 0 && formatProvider is CultureInfo)
+                    {
+                        CultureInfo culture = (CultureInfo)formatProvider;
+                        number = culture.NumberFormat.NumberDecimalDigits;
+                    }
+
                     return ToStringWithSignificantDigitsAfterRadix(quantity, formatProvider, number);
                 case "a":
                     var abbreviations = UnitAbbreviationsCache.Default.GetUnitAbbreviations(quantity.Unit, formatProvider);
@@ -78,6 +80,13 @@ namespace UnitsNet
 
                     return abbreviations[number];
                 case "v":
+                    // Only set the format digits Number of digits for numeric values.
+                    //if (number == 0 && formatProvider is CultureInfo)
+                    //{
+                    //    CultureInfo culture = (CultureInfo)formatProvider;
+                    //    number = culture.NumberFormat.NumberDecimalDigits;
+                    //}
+
                     return quantity.Value.ToString($"g{number}", formatProvider);
                 case "u":
                     return quantity.Unit.ToString();

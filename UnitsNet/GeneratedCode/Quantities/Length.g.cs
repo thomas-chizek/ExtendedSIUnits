@@ -52,6 +52,8 @@ namespace UnitsNet
                 new UnitInfo<LengthUnit>[] {
                     new UnitInfo<LengthUnit>(LengthUnit.AU, new BaseUnits(length: LengthUnit.AU)),
                     new UnitInfo<LengthUnit>(LengthUnit.CentiaU, new BaseUnits(length: LengthUnit.AU)),
+                    new UnitInfo<LengthUnit>(LengthUnit.CentiearthRadius, new BaseUnits()),
+                    new UnitInfo<LengthUnit>(LengthUnit.CentijupiterRadius, new BaseUnits()),
                     new UnitInfo<LengthUnit>(LengthUnit.Centilightday, new BaseUnits(length: LengthUnit.Lightday)),
                     new UnitInfo<LengthUnit>(LengthUnit.Centilighthour, new BaseUnits(length: LengthUnit.Lighthour)),
                     new UnitInfo<LengthUnit>(LengthUnit.Centilightminute, new BaseUnits(length: LengthUnit.Lightminute)),
@@ -59,7 +61,10 @@ namespace UnitsNet
                     new UnitInfo<LengthUnit>(LengthUnit.Centilightyear, new BaseUnits(length: LengthUnit.Lightyear)),
                     new UnitInfo<LengthUnit>(LengthUnit.Centimeter, new BaseUnits(length: LengthUnit.Meter)),
                     new UnitInfo<LengthUnit>(LengthUnit.Centiparsec, new BaseUnits()),
+                    new UnitInfo<LengthUnit>(LengthUnit.CentisolarRadius, new BaseUnits()),
                     new UnitInfo<LengthUnit>(LengthUnit.DecaaU, new BaseUnits(length: LengthUnit.AU)),
+                    new UnitInfo<LengthUnit>(LengthUnit.DecaearthRadius, new BaseUnits()),
+                    new UnitInfo<LengthUnit>(LengthUnit.DecajupiterRadius, new BaseUnits()),
                     new UnitInfo<LengthUnit>(LengthUnit.Decalightday, new BaseUnits(length: LengthUnit.Lightday)),
                     new UnitInfo<LengthUnit>(LengthUnit.Decalighthour, new BaseUnits(length: LengthUnit.Lighthour)),
                     new UnitInfo<LengthUnit>(LengthUnit.Decalightminute, new BaseUnits(length: LengthUnit.Lightminute)),
@@ -67,7 +72,10 @@ namespace UnitsNet
                     new UnitInfo<LengthUnit>(LengthUnit.Decalightyear, new BaseUnits(length: LengthUnit.Lightyear)),
                     new UnitInfo<LengthUnit>(LengthUnit.Decameter, new BaseUnits(length: LengthUnit.Meter)),
                     new UnitInfo<LengthUnit>(LengthUnit.Decaparsec, new BaseUnits()),
+                    new UnitInfo<LengthUnit>(LengthUnit.DecasolarRadius, new BaseUnits()),
                     new UnitInfo<LengthUnit>(LengthUnit.DeciaU, new BaseUnits(length: LengthUnit.AU)),
+                    new UnitInfo<LengthUnit>(LengthUnit.DeciearthRadius, new BaseUnits()),
+                    new UnitInfo<LengthUnit>(LengthUnit.DecijupiterRadius, new BaseUnits()),
                     new UnitInfo<LengthUnit>(LengthUnit.Decilightday, new BaseUnits(length: LengthUnit.Lightday)),
                     new UnitInfo<LengthUnit>(LengthUnit.Decilighthour, new BaseUnits(length: LengthUnit.Lighthour)),
                     new UnitInfo<LengthUnit>(LengthUnit.Decilightminute, new BaseUnits(length: LengthUnit.Lightminute)),
@@ -75,15 +83,20 @@ namespace UnitsNet
                     new UnitInfo<LengthUnit>(LengthUnit.Decilightyear, new BaseUnits(length: LengthUnit.Lightyear)),
                     new UnitInfo<LengthUnit>(LengthUnit.Decimeter, new BaseUnits(length: LengthUnit.Meter)),
                     new UnitInfo<LengthUnit>(LengthUnit.Deciparsec, new BaseUnits()),
+                    new UnitInfo<LengthUnit>(LengthUnit.DecisolarRadius, new BaseUnits()),
                     new UnitInfo<LengthUnit>(LengthUnit.DtpPica, new BaseUnits(length: LengthUnit.DtpPica)),
                     new UnitInfo<LengthUnit>(LengthUnit.DtpPoint, new BaseUnits(length: LengthUnit.DtpPoint)),
+                    new UnitInfo<LengthUnit>(LengthUnit.EarthRadius, new BaseUnits()),
                     new UnitInfo<LengthUnit>(LengthUnit.Exalightyear, new BaseUnits(length: LengthUnit.Lightyear)),
                     new UnitInfo<LengthUnit>(LengthUnit.Exameter, new BaseUnits(length: LengthUnit.Meter)),
                     new UnitInfo<LengthUnit>(LengthUnit.Exaparsec, new BaseUnits()),
+                    new UnitInfo<LengthUnit>(LengthUnit.ExasolarRadius, new BaseUnits()),
                     new UnitInfo<LengthUnit>(LengthUnit.Fathom, new BaseUnits(length: LengthUnit.Fathom)),
                     new UnitInfo<LengthUnit>(LengthUnit.Femtometer, new BaseUnits(length: LengthUnit.Meter)),
                     new UnitInfo<LengthUnit>(LengthUnit.Foot, new BaseUnits(length: LengthUnit.Foot)),
                     new UnitInfo<LengthUnit>(LengthUnit.GigaaU, new BaseUnits(length: LengthUnit.AU)),
+                    new UnitInfo<LengthUnit>(LengthUnit.GigaearthRadius, new BaseUnits()),
+                    new UnitInfo<LengthUnit>(LengthUnit.GigajupiterRadius, new BaseUnits()),
                     new UnitInfo<LengthUnit>(LengthUnit.Gigalightday, new BaseUnits(length: LengthUnit.Lightday)),
                     new UnitInfo<LengthUnit>(LengthUnit.Gigalighthour, new BaseUnits(length: LengthUnit.Lighthour)),
                     new UnitInfo<LengthUnit>(LengthUnit.Gigalightminute, new BaseUnits(length: LengthUnit.Lightminute)),
@@ -91,8 +104,11 @@ namespace UnitsNet
                     new UnitInfo<LengthUnit>(LengthUnit.Gigalightyear, new BaseUnits(length: LengthUnit.Lightyear)),
                     new UnitInfo<LengthUnit>(LengthUnit.Gigameter, new BaseUnits(length: LengthUnit.Meter)),
                     new UnitInfo<LengthUnit>(LengthUnit.Gigaparsec, new BaseUnits()),
+                    new UnitInfo<LengthUnit>(LengthUnit.GigasolarRadius, new BaseUnits()),
                     new UnitInfo<LengthUnit>(LengthUnit.Hand, new BaseUnits(length: LengthUnit.Hand)),
                     new UnitInfo<LengthUnit>(LengthUnit.HectoaU, new BaseUnits(length: LengthUnit.AU)),
+                    new UnitInfo<LengthUnit>(LengthUnit.HectoearthRadius, new BaseUnits()),
+                    new UnitInfo<LengthUnit>(LengthUnit.HectojupiterRadius, new BaseUnits()),
                     new UnitInfo<LengthUnit>(LengthUnit.Hectolightday, new BaseUnits(length: LengthUnit.Lightday)),
                     new UnitInfo<LengthUnit>(LengthUnit.Hectolighthour, new BaseUnits(length: LengthUnit.Lighthour)),
                     new UnitInfo<LengthUnit>(LengthUnit.Hectolightminute, new BaseUnits(length: LengthUnit.Lightminute)),
@@ -100,8 +116,12 @@ namespace UnitsNet
                     new UnitInfo<LengthUnit>(LengthUnit.Hectolightyear, new BaseUnits(length: LengthUnit.Lightyear)),
                     new UnitInfo<LengthUnit>(LengthUnit.Hectometer, new BaseUnits(length: LengthUnit.Meter)),
                     new UnitInfo<LengthUnit>(LengthUnit.Hectoparsec, new BaseUnits()),
+                    new UnitInfo<LengthUnit>(LengthUnit.HectosolarRadius, new BaseUnits()),
                     new UnitInfo<LengthUnit>(LengthUnit.Inch, new BaseUnits(length: LengthUnit.Inch)),
+                    new UnitInfo<LengthUnit>(LengthUnit.JupiterRadius, new BaseUnits()),
                     new UnitInfo<LengthUnit>(LengthUnit.KiloaU, new BaseUnits(length: LengthUnit.AU)),
+                    new UnitInfo<LengthUnit>(LengthUnit.KiloearthRadius, new BaseUnits()),
+                    new UnitInfo<LengthUnit>(LengthUnit.KilojupiterRadius, new BaseUnits()),
                     new UnitInfo<LengthUnit>(LengthUnit.Kilolightday, new BaseUnits(length: LengthUnit.Lightday)),
                     new UnitInfo<LengthUnit>(LengthUnit.Kilolighthour, new BaseUnits(length: LengthUnit.Lighthour)),
                     new UnitInfo<LengthUnit>(LengthUnit.Kilolightminute, new BaseUnits(length: LengthUnit.Lightminute)),
@@ -109,12 +129,15 @@ namespace UnitsNet
                     new UnitInfo<LengthUnit>(LengthUnit.Kilolightyear, new BaseUnits(length: LengthUnit.Lightyear)),
                     new UnitInfo<LengthUnit>(LengthUnit.Kilometer, new BaseUnits(length: LengthUnit.Meter)),
                     new UnitInfo<LengthUnit>(LengthUnit.Kiloparsec, new BaseUnits()),
+                    new UnitInfo<LengthUnit>(LengthUnit.KilosolarRadius, new BaseUnits()),
                     new UnitInfo<LengthUnit>(LengthUnit.Lightday, new BaseUnits(length: LengthUnit.Lightday)),
                     new UnitInfo<LengthUnit>(LengthUnit.Lighthour, new BaseUnits(length: LengthUnit.Lighthour)),
                     new UnitInfo<LengthUnit>(LengthUnit.Lightminute, new BaseUnits(length: LengthUnit.Lightminute)),
                     new UnitInfo<LengthUnit>(LengthUnit.Lightsecond, new BaseUnits(length: LengthUnit.Lightsecond)),
                     new UnitInfo<LengthUnit>(LengthUnit.Lightyear, new BaseUnits(length: LengthUnit.Lightyear)),
                     new UnitInfo<LengthUnit>(LengthUnit.MegaaU, new BaseUnits(length: LengthUnit.AU)),
+                    new UnitInfo<LengthUnit>(LengthUnit.MegaearthRadius, new BaseUnits()),
+                    new UnitInfo<LengthUnit>(LengthUnit.MegajupiterRadius, new BaseUnits()),
                     new UnitInfo<LengthUnit>(LengthUnit.Megalightday, new BaseUnits(length: LengthUnit.Lightday)),
                     new UnitInfo<LengthUnit>(LengthUnit.Megalighthour, new BaseUnits(length: LengthUnit.Lighthour)),
                     new UnitInfo<LengthUnit>(LengthUnit.Megalightminute, new BaseUnits(length: LengthUnit.Lightminute)),
@@ -122,8 +145,10 @@ namespace UnitsNet
                     new UnitInfo<LengthUnit>(LengthUnit.Megalightyear, new BaseUnits(length: LengthUnit.Lightyear)),
                     new UnitInfo<LengthUnit>(LengthUnit.Megameter, new BaseUnits(length: LengthUnit.Meter)),
                     new UnitInfo<LengthUnit>(LengthUnit.Megaparsec, new BaseUnits()),
+                    new UnitInfo<LengthUnit>(LengthUnit.MegasolarRadius, new BaseUnits()),
                     new UnitInfo<LengthUnit>(LengthUnit.Meter, new BaseUnits(length: LengthUnit.Meter)),
                     new UnitInfo<LengthUnit>(LengthUnit.MicroaU, new BaseUnits(length: LengthUnit.AU)),
+                    new UnitInfo<LengthUnit>(LengthUnit.MicroearthRadius, new BaseUnits()),
                     new UnitInfo<LengthUnit>(LengthUnit.Microinch, new BaseUnits(length: LengthUnit.Microinch)),
                     new UnitInfo<LengthUnit>(LengthUnit.Microlightday, new BaseUnits(length: LengthUnit.Lightday)),
                     new UnitInfo<LengthUnit>(LengthUnit.Microlighthour, new BaseUnits(length: LengthUnit.Lighthour)),
@@ -135,6 +160,7 @@ namespace UnitsNet
                     new UnitInfo<LengthUnit>(LengthUnit.Mil, new BaseUnits(length: LengthUnit.Mil)),
                     new UnitInfo<LengthUnit>(LengthUnit.Mile, new BaseUnits(length: LengthUnit.Mile)),
                     new UnitInfo<LengthUnit>(LengthUnit.MilliaU, new BaseUnits(length: LengthUnit.AU)),
+                    new UnitInfo<LengthUnit>(LengthUnit.MilliearthRadius, new BaseUnits()),
                     new UnitInfo<LengthUnit>(LengthUnit.Millilightday, new BaseUnits(length: LengthUnit.Lightday)),
                     new UnitInfo<LengthUnit>(LengthUnit.Millilighthour, new BaseUnits(length: LengthUnit.Lighthour)),
                     new UnitInfo<LengthUnit>(LengthUnit.Millilightminute, new BaseUnits(length: LengthUnit.Lightminute)),
@@ -148,12 +174,16 @@ namespace UnitsNet
                     new UnitInfo<LengthUnit>(LengthUnit.Petalightyear, new BaseUnits(length: LengthUnit.Lightyear)),
                     new UnitInfo<LengthUnit>(LengthUnit.Petameter, new BaseUnits(length: LengthUnit.Meter)),
                     new UnitInfo<LengthUnit>(LengthUnit.Petaparsec, new BaseUnits()),
+                    new UnitInfo<LengthUnit>(LengthUnit.PetasolarRadius, new BaseUnits()),
                     new UnitInfo<LengthUnit>(LengthUnit.Picometer, new BaseUnits(length: LengthUnit.Meter)),
                     new UnitInfo<LengthUnit>(LengthUnit.PrinterPica, new BaseUnits(length: LengthUnit.PrinterPica)),
                     new UnitInfo<LengthUnit>(LengthUnit.PrinterPoint, new BaseUnits(length: LengthUnit.PrinterPoint)),
                     new UnitInfo<LengthUnit>(LengthUnit.Qutrameter, new BaseUnits(length: LengthUnit.Meter)),
                     new UnitInfo<LengthUnit>(LengthUnit.Shackle, new BaseUnits(length: LengthUnit.Shackle)),
+                    new UnitInfo<LengthUnit>(LengthUnit.SolarRadius, new BaseUnits()),
                     new UnitInfo<LengthUnit>(LengthUnit.TeraaU, new BaseUnits(length: LengthUnit.AU)),
+                    new UnitInfo<LengthUnit>(LengthUnit.TeraearthRadius, new BaseUnits()),
+                    new UnitInfo<LengthUnit>(LengthUnit.TerajupiterRadius, new BaseUnits()),
                     new UnitInfo<LengthUnit>(LengthUnit.Teralightday, new BaseUnits(length: LengthUnit.Lightday)),
                     new UnitInfo<LengthUnit>(LengthUnit.Teralighthour, new BaseUnits(length: LengthUnit.Lighthour)),
                     new UnitInfo<LengthUnit>(LengthUnit.Teralightminute, new BaseUnits(length: LengthUnit.Lightminute)),
@@ -161,6 +191,7 @@ namespace UnitsNet
                     new UnitInfo<LengthUnit>(LengthUnit.Teralightyear, new BaseUnits(length: LengthUnit.Lightyear)),
                     new UnitInfo<LengthUnit>(LengthUnit.Terameter, new BaseUnits(length: LengthUnit.Meter)),
                     new UnitInfo<LengthUnit>(LengthUnit.Teraparsec, new BaseUnits()),
+                    new UnitInfo<LengthUnit>(LengthUnit.TerasolarRadius, new BaseUnits()),
                     new UnitInfo<LengthUnit>(LengthUnit.Twip, new BaseUnits(length: LengthUnit.Twip)),
                     new UnitInfo<LengthUnit>(LengthUnit.UsSurveyFoot, new BaseUnits(length: LengthUnit.UsSurveyFoot)),
                     new UnitInfo<LengthUnit>(LengthUnit.Vettameter, new BaseUnits(length: LengthUnit.Meter)),
@@ -168,9 +199,11 @@ namespace UnitsNet
                     new UnitInfo<LengthUnit>(LengthUnit.Yottalightyear, new BaseUnits(length: LengthUnit.Lightyear)),
                     new UnitInfo<LengthUnit>(LengthUnit.Yottameter, new BaseUnits(length: LengthUnit.Meter)),
                     new UnitInfo<LengthUnit>(LengthUnit.Yottaparsec, new BaseUnits()),
+                    new UnitInfo<LengthUnit>(LengthUnit.YottasolarRadius, new BaseUnits()),
                     new UnitInfo<LengthUnit>(LengthUnit.Zettalightyear, new BaseUnits(length: LengthUnit.Lightyear)),
                     new UnitInfo<LengthUnit>(LengthUnit.Zettameter, new BaseUnits(length: LengthUnit.Meter)),
                     new UnitInfo<LengthUnit>(LengthUnit.Zettaparsec, new BaseUnits()),
+                    new UnitInfo<LengthUnit>(LengthUnit.ZettasolarRadius, new BaseUnits()),
                 },
                 BaseUnit, Zero, BaseDimensions);
         }
@@ -299,6 +332,16 @@ namespace UnitsNet
         public double CentiaUs => As(LengthUnit.CentiaU);
 
         /// <summary>
+        ///     Get Length in CentiearthRadi.
+        /// </summary>
+        public double CentiearthRadi => As(LengthUnit.CentiearthRadius);
+
+        /// <summary>
+        ///     Get Length in CentijupiterRadi.
+        /// </summary>
+        public double CentijupiterRadi => As(LengthUnit.CentijupiterRadius);
+
+        /// <summary>
         ///     Get Length in Centilightdays.
         /// </summary>
         public double Centilightdays => As(LengthUnit.Centilightday);
@@ -334,9 +377,24 @@ namespace UnitsNet
         public double Centiparsecs => As(LengthUnit.Centiparsec);
 
         /// <summary>
+        ///     Get Length in CentisolarRadi.
+        /// </summary>
+        public double CentisolarRadi => As(LengthUnit.CentisolarRadius);
+
+        /// <summary>
         ///     Get Length in DecaaUs.
         /// </summary>
         public double DecaaUs => As(LengthUnit.DecaaU);
+
+        /// <summary>
+        ///     Get Length in DecaearthRadi.
+        /// </summary>
+        public double DecaearthRadi => As(LengthUnit.DecaearthRadius);
+
+        /// <summary>
+        ///     Get Length in DecajupiterRadi.
+        /// </summary>
+        public double DecajupiterRadi => As(LengthUnit.DecajupiterRadius);
 
         /// <summary>
         ///     Get Length in Decalightdays.
@@ -374,9 +432,24 @@ namespace UnitsNet
         public double Decaparsecs => As(LengthUnit.Decaparsec);
 
         /// <summary>
+        ///     Get Length in DecasolarRadi.
+        /// </summary>
+        public double DecasolarRadi => As(LengthUnit.DecasolarRadius);
+
+        /// <summary>
         ///     Get Length in DeciaUs.
         /// </summary>
         public double DeciaUs => As(LengthUnit.DeciaU);
+
+        /// <summary>
+        ///     Get Length in DeciearthRadi.
+        /// </summary>
+        public double DeciearthRadi => As(LengthUnit.DeciearthRadius);
+
+        /// <summary>
+        ///     Get Length in DecijupiterRadi.
+        /// </summary>
+        public double DecijupiterRadi => As(LengthUnit.DecijupiterRadius);
 
         /// <summary>
         ///     Get Length in Decilightdays.
@@ -414,6 +487,11 @@ namespace UnitsNet
         public double Deciparsecs => As(LengthUnit.Deciparsec);
 
         /// <summary>
+        ///     Get Length in DecisolarRadi.
+        /// </summary>
+        public double DecisolarRadi => As(LengthUnit.DecisolarRadius);
+
+        /// <summary>
         ///     Get Length in DtpPicas.
         /// </summary>
         public double DtpPicas => As(LengthUnit.DtpPica);
@@ -422,6 +500,11 @@ namespace UnitsNet
         ///     Get Length in DtpPoints.
         /// </summary>
         public double DtpPoints => As(LengthUnit.DtpPoint);
+
+        /// <summary>
+        ///     Get Length in EarthRadi.
+        /// </summary>
+        public double EarthRadi => As(LengthUnit.EarthRadius);
 
         /// <summary>
         ///     Get Length in Exalightyears.
@@ -437,6 +520,11 @@ namespace UnitsNet
         ///     Get Length in Exaparsecs.
         /// </summary>
         public double Exaparsecs => As(LengthUnit.Exaparsec);
+
+        /// <summary>
+        ///     Get Length in ExasolarRadi.
+        /// </summary>
+        public double ExasolarRadi => As(LengthUnit.ExasolarRadius);
 
         /// <summary>
         ///     Get Length in Fathoms.
@@ -457,6 +545,16 @@ namespace UnitsNet
         ///     Get Length in GigaaUs.
         /// </summary>
         public double GigaaUs => As(LengthUnit.GigaaU);
+
+        /// <summary>
+        ///     Get Length in GigaearthRadi.
+        /// </summary>
+        public double GigaearthRadi => As(LengthUnit.GigaearthRadius);
+
+        /// <summary>
+        ///     Get Length in GigajupiterRadi.
+        /// </summary>
+        public double GigajupiterRadi => As(LengthUnit.GigajupiterRadius);
 
         /// <summary>
         ///     Get Length in Gigalightdays.
@@ -494,6 +592,11 @@ namespace UnitsNet
         public double Gigaparsecs => As(LengthUnit.Gigaparsec);
 
         /// <summary>
+        ///     Get Length in GigasolarRadi.
+        /// </summary>
+        public double GigasolarRadi => As(LengthUnit.GigasolarRadius);
+
+        /// <summary>
         ///     Get Length in Hands.
         /// </summary>
         public double Hands => As(LengthUnit.Hand);
@@ -502,6 +605,16 @@ namespace UnitsNet
         ///     Get Length in HectoaUs.
         /// </summary>
         public double HectoaUs => As(LengthUnit.HectoaU);
+
+        /// <summary>
+        ///     Get Length in HectoearthRadi.
+        /// </summary>
+        public double HectoearthRadi => As(LengthUnit.HectoearthRadius);
+
+        /// <summary>
+        ///     Get Length in HectojupiterRadi.
+        /// </summary>
+        public double HectojupiterRadi => As(LengthUnit.HectojupiterRadius);
 
         /// <summary>
         ///     Get Length in Hectolightdays.
@@ -539,14 +652,34 @@ namespace UnitsNet
         public double Hectoparsecs => As(LengthUnit.Hectoparsec);
 
         /// <summary>
+        ///     Get Length in HectosolarRadi.
+        /// </summary>
+        public double HectosolarRadi => As(LengthUnit.HectosolarRadius);
+
+        /// <summary>
         ///     Get Length in Inches.
         /// </summary>
         public double Inches => As(LengthUnit.Inch);
 
         /// <summary>
+        ///     Get Length in JupiterRadi.
+        /// </summary>
+        public double JupiterRadi => As(LengthUnit.JupiterRadius);
+
+        /// <summary>
         ///     Get Length in KiloaUs.
         /// </summary>
         public double KiloaUs => As(LengthUnit.KiloaU);
+
+        /// <summary>
+        ///     Get Length in KiloearthRadi.
+        /// </summary>
+        public double KiloearthRadi => As(LengthUnit.KiloearthRadius);
+
+        /// <summary>
+        ///     Get Length in KilojupiterRadi.
+        /// </summary>
+        public double KilojupiterRadi => As(LengthUnit.KilojupiterRadius);
 
         /// <summary>
         ///     Get Length in Kilolightdays.
@@ -584,6 +717,11 @@ namespace UnitsNet
         public double Kiloparsecs => As(LengthUnit.Kiloparsec);
 
         /// <summary>
+        ///     Get Length in KilosolarRadi.
+        /// </summary>
+        public double KilosolarRadi => As(LengthUnit.KilosolarRadius);
+
+        /// <summary>
         ///     Get Length in Lightdays.
         /// </summary>
         public double Lightdays => As(LengthUnit.Lightday);
@@ -612,6 +750,16 @@ namespace UnitsNet
         ///     Get Length in MegaaUs.
         /// </summary>
         public double MegaaUs => As(LengthUnit.MegaaU);
+
+        /// <summary>
+        ///     Get Length in MegaearthRadi.
+        /// </summary>
+        public double MegaearthRadi => As(LengthUnit.MegaearthRadius);
+
+        /// <summary>
+        ///     Get Length in MegajupiterRadi.
+        /// </summary>
+        public double MegajupiterRadi => As(LengthUnit.MegajupiterRadius);
 
         /// <summary>
         ///     Get Length in Megalightdays.
@@ -649,6 +797,11 @@ namespace UnitsNet
         public double Megaparsecs => As(LengthUnit.Megaparsec);
 
         /// <summary>
+        ///     Get Length in MegasolarRadi.
+        /// </summary>
+        public double MegasolarRadi => As(LengthUnit.MegasolarRadius);
+
+        /// <summary>
         ///     Get Length in Meters.
         /// </summary>
         public double Meters => As(LengthUnit.Meter);
@@ -657,6 +810,11 @@ namespace UnitsNet
         ///     Get Length in MicroaUs.
         /// </summary>
         public double MicroaUs => As(LengthUnit.MicroaU);
+
+        /// <summary>
+        ///     Get Length in MicroearthRadi.
+        /// </summary>
+        public double MicroearthRadi => As(LengthUnit.MicroearthRadius);
 
         /// <summary>
         ///     Get Length in Microinches.
@@ -712,6 +870,11 @@ namespace UnitsNet
         ///     Get Length in MilliaUs.
         /// </summary>
         public double MilliaUs => As(LengthUnit.MilliaU);
+
+        /// <summary>
+        ///     Get Length in MilliearthRadi.
+        /// </summary>
+        public double MilliearthRadi => As(LengthUnit.MilliearthRadius);
 
         /// <summary>
         ///     Get Length in Millilightdays.
@@ -779,6 +942,11 @@ namespace UnitsNet
         public double Petaparsecs => As(LengthUnit.Petaparsec);
 
         /// <summary>
+        ///     Get Length in PetasolarRadi.
+        /// </summary>
+        public double PetasolarRadi => As(LengthUnit.PetasolarRadius);
+
+        /// <summary>
         ///     Get Length in Picometers.
         /// </summary>
         public double Picometers => As(LengthUnit.Picometer);
@@ -804,9 +972,24 @@ namespace UnitsNet
         public double Shackles => As(LengthUnit.Shackle);
 
         /// <summary>
+        ///     Get Length in SolarRadi.
+        /// </summary>
+        public double SolarRadi => As(LengthUnit.SolarRadius);
+
+        /// <summary>
         ///     Get Length in TeraaUs.
         /// </summary>
         public double TeraaUs => As(LengthUnit.TeraaU);
+
+        /// <summary>
+        ///     Get Length in TeraearthRadi.
+        /// </summary>
+        public double TeraearthRadi => As(LengthUnit.TeraearthRadius);
+
+        /// <summary>
+        ///     Get Length in TerajupiterRadi.
+        /// </summary>
+        public double TerajupiterRadi => As(LengthUnit.TerajupiterRadius);
 
         /// <summary>
         ///     Get Length in Teralightdays.
@@ -844,6 +1027,11 @@ namespace UnitsNet
         public double Teraparsecs => As(LengthUnit.Teraparsec);
 
         /// <summary>
+        ///     Get Length in TerasolarRadi.
+        /// </summary>
+        public double TerasolarRadi => As(LengthUnit.TerasolarRadius);
+
+        /// <summary>
         ///     Get Length in Twips.
         /// </summary>
         public double Twips => As(LengthUnit.Twip);
@@ -879,6 +1067,11 @@ namespace UnitsNet
         public double Yottaparsecs => As(LengthUnit.Yottaparsec);
 
         /// <summary>
+        ///     Get Length in YottasolarRadi.
+        /// </summary>
+        public double YottasolarRadi => As(LengthUnit.YottasolarRadius);
+
+        /// <summary>
         ///     Get Length in Zettalightyears.
         /// </summary>
         public double Zettalightyears => As(LengthUnit.Zettalightyear);
@@ -892,6 +1085,11 @@ namespace UnitsNet
         ///     Get Length in Zettaparsecs.
         /// </summary>
         public double Zettaparsecs => As(LengthUnit.Zettaparsec);
+
+        /// <summary>
+        ///     Get Length in ZettasolarRadi.
+        /// </summary>
+        public double ZettasolarRadi => As(LengthUnit.ZettasolarRadius);
 
         #endregion
 
@@ -939,6 +1137,24 @@ namespace UnitsNet
         {
             double value = (double) centiaus;
             return new Length(value, LengthUnit.CentiaU);
+        }
+        /// <summary>
+        ///     Get Length from CentiearthRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromCentiearthRadi(QuantityValue centiearthradi)
+        {
+            double value = (double) centiearthradi;
+            return new Length(value, LengthUnit.CentiearthRadius);
+        }
+        /// <summary>
+        ///     Get Length from CentijupiterRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromCentijupiterRadi(QuantityValue centijupiterradi)
+        {
+            double value = (double) centijupiterradi;
+            return new Length(value, LengthUnit.CentijupiterRadius);
         }
         /// <summary>
         ///     Get Length from Centilightdays.
@@ -1004,6 +1220,15 @@ namespace UnitsNet
             return new Length(value, LengthUnit.Centiparsec);
         }
         /// <summary>
+        ///     Get Length from CentisolarRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromCentisolarRadi(QuantityValue centisolarradi)
+        {
+            double value = (double) centisolarradi;
+            return new Length(value, LengthUnit.CentisolarRadius);
+        }
+        /// <summary>
         ///     Get Length from DecaaUs.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -1011,6 +1236,24 @@ namespace UnitsNet
         {
             double value = (double) decaaus;
             return new Length(value, LengthUnit.DecaaU);
+        }
+        /// <summary>
+        ///     Get Length from DecaearthRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromDecaearthRadi(QuantityValue decaearthradi)
+        {
+            double value = (double) decaearthradi;
+            return new Length(value, LengthUnit.DecaearthRadius);
+        }
+        /// <summary>
+        ///     Get Length from DecajupiterRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromDecajupiterRadi(QuantityValue decajupiterradi)
+        {
+            double value = (double) decajupiterradi;
+            return new Length(value, LengthUnit.DecajupiterRadius);
         }
         /// <summary>
         ///     Get Length from Decalightdays.
@@ -1076,6 +1319,15 @@ namespace UnitsNet
             return new Length(value, LengthUnit.Decaparsec);
         }
         /// <summary>
+        ///     Get Length from DecasolarRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromDecasolarRadi(QuantityValue decasolarradi)
+        {
+            double value = (double) decasolarradi;
+            return new Length(value, LengthUnit.DecasolarRadius);
+        }
+        /// <summary>
         ///     Get Length from DeciaUs.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -1083,6 +1335,24 @@ namespace UnitsNet
         {
             double value = (double) deciaus;
             return new Length(value, LengthUnit.DeciaU);
+        }
+        /// <summary>
+        ///     Get Length from DeciearthRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromDeciearthRadi(QuantityValue deciearthradi)
+        {
+            double value = (double) deciearthradi;
+            return new Length(value, LengthUnit.DeciearthRadius);
+        }
+        /// <summary>
+        ///     Get Length from DecijupiterRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromDecijupiterRadi(QuantityValue decijupiterradi)
+        {
+            double value = (double) decijupiterradi;
+            return new Length(value, LengthUnit.DecijupiterRadius);
         }
         /// <summary>
         ///     Get Length from Decilightdays.
@@ -1148,6 +1418,15 @@ namespace UnitsNet
             return new Length(value, LengthUnit.Deciparsec);
         }
         /// <summary>
+        ///     Get Length from DecisolarRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromDecisolarRadi(QuantityValue decisolarradi)
+        {
+            double value = (double) decisolarradi;
+            return new Length(value, LengthUnit.DecisolarRadius);
+        }
+        /// <summary>
         ///     Get Length from DtpPicas.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -1164,6 +1443,15 @@ namespace UnitsNet
         {
             double value = (double) dtppoints;
             return new Length(value, LengthUnit.DtpPoint);
+        }
+        /// <summary>
+        ///     Get Length from EarthRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromEarthRadi(QuantityValue earthradi)
+        {
+            double value = (double) earthradi;
+            return new Length(value, LengthUnit.EarthRadius);
         }
         /// <summary>
         ///     Get Length from Exalightyears.
@@ -1191,6 +1479,15 @@ namespace UnitsNet
         {
             double value = (double) exaparsecs;
             return new Length(value, LengthUnit.Exaparsec);
+        }
+        /// <summary>
+        ///     Get Length from ExasolarRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromExasolarRadi(QuantityValue exasolarradi)
+        {
+            double value = (double) exasolarradi;
+            return new Length(value, LengthUnit.ExasolarRadius);
         }
         /// <summary>
         ///     Get Length from Fathoms.
@@ -1227,6 +1524,24 @@ namespace UnitsNet
         {
             double value = (double) gigaaus;
             return new Length(value, LengthUnit.GigaaU);
+        }
+        /// <summary>
+        ///     Get Length from GigaearthRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromGigaearthRadi(QuantityValue gigaearthradi)
+        {
+            double value = (double) gigaearthradi;
+            return new Length(value, LengthUnit.GigaearthRadius);
+        }
+        /// <summary>
+        ///     Get Length from GigajupiterRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromGigajupiterRadi(QuantityValue gigajupiterradi)
+        {
+            double value = (double) gigajupiterradi;
+            return new Length(value, LengthUnit.GigajupiterRadius);
         }
         /// <summary>
         ///     Get Length from Gigalightdays.
@@ -1292,6 +1607,15 @@ namespace UnitsNet
             return new Length(value, LengthUnit.Gigaparsec);
         }
         /// <summary>
+        ///     Get Length from GigasolarRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromGigasolarRadi(QuantityValue gigasolarradi)
+        {
+            double value = (double) gigasolarradi;
+            return new Length(value, LengthUnit.GigasolarRadius);
+        }
+        /// <summary>
         ///     Get Length from Hands.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -1308,6 +1632,24 @@ namespace UnitsNet
         {
             double value = (double) hectoaus;
             return new Length(value, LengthUnit.HectoaU);
+        }
+        /// <summary>
+        ///     Get Length from HectoearthRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromHectoearthRadi(QuantityValue hectoearthradi)
+        {
+            double value = (double) hectoearthradi;
+            return new Length(value, LengthUnit.HectoearthRadius);
+        }
+        /// <summary>
+        ///     Get Length from HectojupiterRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromHectojupiterRadi(QuantityValue hectojupiterradi)
+        {
+            double value = (double) hectojupiterradi;
+            return new Length(value, LengthUnit.HectojupiterRadius);
         }
         /// <summary>
         ///     Get Length from Hectolightdays.
@@ -1373,6 +1715,15 @@ namespace UnitsNet
             return new Length(value, LengthUnit.Hectoparsec);
         }
         /// <summary>
+        ///     Get Length from HectosolarRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromHectosolarRadi(QuantityValue hectosolarradi)
+        {
+            double value = (double) hectosolarradi;
+            return new Length(value, LengthUnit.HectosolarRadius);
+        }
+        /// <summary>
         ///     Get Length from Inches.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -1382,6 +1733,15 @@ namespace UnitsNet
             return new Length(value, LengthUnit.Inch);
         }
         /// <summary>
+        ///     Get Length from JupiterRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromJupiterRadi(QuantityValue jupiterradi)
+        {
+            double value = (double) jupiterradi;
+            return new Length(value, LengthUnit.JupiterRadius);
+        }
+        /// <summary>
         ///     Get Length from KiloaUs.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -1389,6 +1749,24 @@ namespace UnitsNet
         {
             double value = (double) kiloaus;
             return new Length(value, LengthUnit.KiloaU);
+        }
+        /// <summary>
+        ///     Get Length from KiloearthRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromKiloearthRadi(QuantityValue kiloearthradi)
+        {
+            double value = (double) kiloearthradi;
+            return new Length(value, LengthUnit.KiloearthRadius);
+        }
+        /// <summary>
+        ///     Get Length from KilojupiterRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromKilojupiterRadi(QuantityValue kilojupiterradi)
+        {
+            double value = (double) kilojupiterradi;
+            return new Length(value, LengthUnit.KilojupiterRadius);
         }
         /// <summary>
         ///     Get Length from Kilolightdays.
@@ -1454,6 +1832,15 @@ namespace UnitsNet
             return new Length(value, LengthUnit.Kiloparsec);
         }
         /// <summary>
+        ///     Get Length from KilosolarRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromKilosolarRadi(QuantityValue kilosolarradi)
+        {
+            double value = (double) kilosolarradi;
+            return new Length(value, LengthUnit.KilosolarRadius);
+        }
+        /// <summary>
         ///     Get Length from Lightdays.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -1506,6 +1893,24 @@ namespace UnitsNet
         {
             double value = (double) megaaus;
             return new Length(value, LengthUnit.MegaaU);
+        }
+        /// <summary>
+        ///     Get Length from MegaearthRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromMegaearthRadi(QuantityValue megaearthradi)
+        {
+            double value = (double) megaearthradi;
+            return new Length(value, LengthUnit.MegaearthRadius);
+        }
+        /// <summary>
+        ///     Get Length from MegajupiterRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromMegajupiterRadi(QuantityValue megajupiterradi)
+        {
+            double value = (double) megajupiterradi;
+            return new Length(value, LengthUnit.MegajupiterRadius);
         }
         /// <summary>
         ///     Get Length from Megalightdays.
@@ -1571,6 +1976,15 @@ namespace UnitsNet
             return new Length(value, LengthUnit.Megaparsec);
         }
         /// <summary>
+        ///     Get Length from MegasolarRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromMegasolarRadi(QuantityValue megasolarradi)
+        {
+            double value = (double) megasolarradi;
+            return new Length(value, LengthUnit.MegasolarRadius);
+        }
+        /// <summary>
         ///     Get Length from Meters.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -1587,6 +2001,15 @@ namespace UnitsNet
         {
             double value = (double) microaus;
             return new Length(value, LengthUnit.MicroaU);
+        }
+        /// <summary>
+        ///     Get Length from MicroearthRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromMicroearthRadi(QuantityValue microearthradi)
+        {
+            double value = (double) microearthradi;
+            return new Length(value, LengthUnit.MicroearthRadius);
         }
         /// <summary>
         ///     Get Length from Microinches.
@@ -1686,6 +2109,15 @@ namespace UnitsNet
         {
             double value = (double) milliaus;
             return new Length(value, LengthUnit.MilliaU);
+        }
+        /// <summary>
+        ///     Get Length from MilliearthRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromMilliearthRadi(QuantityValue milliearthradi)
+        {
+            double value = (double) milliearthradi;
+            return new Length(value, LengthUnit.MilliearthRadius);
         }
         /// <summary>
         ///     Get Length from Millilightdays.
@@ -1805,6 +2237,15 @@ namespace UnitsNet
             return new Length(value, LengthUnit.Petaparsec);
         }
         /// <summary>
+        ///     Get Length from PetasolarRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromPetasolarRadi(QuantityValue petasolarradi)
+        {
+            double value = (double) petasolarradi;
+            return new Length(value, LengthUnit.PetasolarRadius);
+        }
+        /// <summary>
         ///     Get Length from Picometers.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -1850,6 +2291,15 @@ namespace UnitsNet
             return new Length(value, LengthUnit.Shackle);
         }
         /// <summary>
+        ///     Get Length from SolarRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromSolarRadi(QuantityValue solarradi)
+        {
+            double value = (double) solarradi;
+            return new Length(value, LengthUnit.SolarRadius);
+        }
+        /// <summary>
         ///     Get Length from TeraaUs.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -1857,6 +2307,24 @@ namespace UnitsNet
         {
             double value = (double) teraaus;
             return new Length(value, LengthUnit.TeraaU);
+        }
+        /// <summary>
+        ///     Get Length from TeraearthRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromTeraearthRadi(QuantityValue teraearthradi)
+        {
+            double value = (double) teraearthradi;
+            return new Length(value, LengthUnit.TeraearthRadius);
+        }
+        /// <summary>
+        ///     Get Length from TerajupiterRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromTerajupiterRadi(QuantityValue terajupiterradi)
+        {
+            double value = (double) terajupiterradi;
+            return new Length(value, LengthUnit.TerajupiterRadius);
         }
         /// <summary>
         ///     Get Length from Teralightdays.
@@ -1922,6 +2390,15 @@ namespace UnitsNet
             return new Length(value, LengthUnit.Teraparsec);
         }
         /// <summary>
+        ///     Get Length from TerasolarRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromTerasolarRadi(QuantityValue terasolarradi)
+        {
+            double value = (double) terasolarradi;
+            return new Length(value, LengthUnit.TerasolarRadius);
+        }
+        /// <summary>
         ///     Get Length from Twips.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -1985,6 +2462,15 @@ namespace UnitsNet
             return new Length(value, LengthUnit.Yottaparsec);
         }
         /// <summary>
+        ///     Get Length from YottasolarRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromYottasolarRadi(QuantityValue yottasolarradi)
+        {
+            double value = (double) yottasolarradi;
+            return new Length(value, LengthUnit.YottasolarRadius);
+        }
+        /// <summary>
         ///     Get Length from Zettalightyears.
         /// </summary>
         /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
@@ -2010,6 +2496,15 @@ namespace UnitsNet
         {
             double value = (double) zettaparsecs;
             return new Length(value, LengthUnit.Zettaparsec);
+        }
+        /// <summary>
+        ///     Get Length from ZettasolarRadi.
+        /// </summary>
+        /// <exception cref="ArgumentException">If value is NaN or Infinity.</exception>
+        public static Length FromZettasolarRadi(QuantityValue zettasolarradi)
+        {
+            double value = (double) zettasolarradi;
+            return new Length(value, LengthUnit.ZettasolarRadius);
         }
 
         /// <summary>
@@ -2465,6 +2960,8 @@ namespace UnitsNet
             {
                 case LengthUnit.AU: return _value*1.496e11;
                 case LengthUnit.CentiaU: return (_value*1.496e11) * 1e-2d;
+                case LengthUnit.CentiearthRadius: return (_value*6.371e6) * 1e-2d;
+                case LengthUnit.CentijupiterRadius: return (_value*7.1492e7) * 1e-2d;
                 case LengthUnit.Centilightday: return (_value*2.59e13) * 1e-2d;
                 case LengthUnit.Centilighthour: return (_value*1.079e12) * 1e-2d;
                 case LengthUnit.Centilightminute: return (_value*1.799e10) * 1e-2d;
@@ -2472,7 +2969,10 @@ namespace UnitsNet
                 case LengthUnit.Centilightyear: return (_value*9.4607304725808E15) * 1e-2d;
                 case LengthUnit.Centimeter: return (_value) * 1e-2d;
                 case LengthUnit.Centiparsec: return (_value*3.086090280155857E16) * 1e-2d;
+                case LengthUnit.CentisolarRadius: return (_value*6.957e8) * 1e-2d;
                 case LengthUnit.DecaaU: return (_value*1.496e11) * 1e1d;
+                case LengthUnit.DecaearthRadius: return (_value*6.371e6) * 1e1d;
+                case LengthUnit.DecajupiterRadius: return (_value*7.1492e7) * 1e1d;
                 case LengthUnit.Decalightday: return (_value*2.59e13) * 1e1d;
                 case LengthUnit.Decalighthour: return (_value*1.079e12) * 1e1d;
                 case LengthUnit.Decalightminute: return (_value*1.799e10) * 1e1d;
@@ -2480,7 +2980,10 @@ namespace UnitsNet
                 case LengthUnit.Decalightyear: return (_value*9.4607304725808E15) * 1e1d;
                 case LengthUnit.Decameter: return (_value) * 1e1d;
                 case LengthUnit.Decaparsec: return (_value*3.086090280155857E16) * 1e1d;
+                case LengthUnit.DecasolarRadius: return (_value*6.957e8) * 1e1d;
                 case LengthUnit.DeciaU: return (_value*1.496e11) * 1e-1d;
+                case LengthUnit.DeciearthRadius: return (_value*6.371e6) * 1e-1d;
+                case LengthUnit.DecijupiterRadius: return (_value*7.1492e7) * 1e-1d;
                 case LengthUnit.Decilightday: return (_value*2.59e13) * 1e-1d;
                 case LengthUnit.Decilighthour: return (_value*1.079e12) * 1e-1d;
                 case LengthUnit.Decilightminute: return (_value*1.799e10) * 1e-1d;
@@ -2488,15 +2991,20 @@ namespace UnitsNet
                 case LengthUnit.Decilightyear: return (_value*9.4607304725808E15) * 1e-1d;
                 case LengthUnit.Decimeter: return (_value) * 1e-1d;
                 case LengthUnit.Deciparsec: return (_value*3.086090280155857E16) * 1e-1d;
+                case LengthUnit.DecisolarRadius: return (_value*6.957e8) * 1e-1d;
                 case LengthUnit.DtpPica: return _value/236.220472441;
                 case LengthUnit.DtpPoint: return (_value/72)*2.54e-2;
+                case LengthUnit.EarthRadius: return _value*6.371e6;
                 case LengthUnit.Exalightyear: return (_value*9.4607304725808E15) * 1e18d;
                 case LengthUnit.Exameter: return (_value) * 1e18d;
                 case LengthUnit.Exaparsec: return (_value*3.086090280155857E16) * 1e18d;
+                case LengthUnit.ExasolarRadius: return (_value*6.957e8) * 1e18d;
                 case LengthUnit.Fathom: return _value*1.8288;
                 case LengthUnit.Femtometer: return (_value) * 1e-15d;
                 case LengthUnit.Foot: return _value*0.3048;
                 case LengthUnit.GigaaU: return (_value*1.496e11) * 1e9d;
+                case LengthUnit.GigaearthRadius: return (_value*6.371e6) * 1e9d;
+                case LengthUnit.GigajupiterRadius: return (_value*7.1492e7) * 1e9d;
                 case LengthUnit.Gigalightday: return (_value*2.59e13) * 1e9d;
                 case LengthUnit.Gigalighthour: return (_value*1.079e12) * 1e9d;
                 case LengthUnit.Gigalightminute: return (_value*1.799e10) * 1e9d;
@@ -2504,8 +3012,11 @@ namespace UnitsNet
                 case LengthUnit.Gigalightyear: return (_value*9.4607304725808E15) * 1e9d;
                 case LengthUnit.Gigameter: return (_value) * 1e9d;
                 case LengthUnit.Gigaparsec: return (_value*3.086090280155857E16) * 1e9d;
+                case LengthUnit.GigasolarRadius: return (_value*6.957e8) * 1e9d;
                 case LengthUnit.Hand: return _value * 1.016e-1;
                 case LengthUnit.HectoaU: return (_value*1.496e11) * 1e2d;
+                case LengthUnit.HectoearthRadius: return (_value*6.371e6) * 1e2d;
+                case LengthUnit.HectojupiterRadius: return (_value*7.1492e7) * 1e2d;
                 case LengthUnit.Hectolightday: return (_value*2.59e13) * 1e2d;
                 case LengthUnit.Hectolighthour: return (_value*1.079e12) * 1e2d;
                 case LengthUnit.Hectolightminute: return (_value*1.799e10) * 1e2d;
@@ -2513,8 +3024,12 @@ namespace UnitsNet
                 case LengthUnit.Hectolightyear: return (_value*9.4607304725808E15) * 1e2d;
                 case LengthUnit.Hectometer: return (_value) * 1e2d;
                 case LengthUnit.Hectoparsec: return (_value*3.086090280155857E16) * 1e2d;
+                case LengthUnit.HectosolarRadius: return (_value*6.957e8) * 1e2d;
                 case LengthUnit.Inch: return _value*2.54e-2;
+                case LengthUnit.JupiterRadius: return _value*7.1492e7;
                 case LengthUnit.KiloaU: return (_value*1.496e11) * 1e3d;
+                case LengthUnit.KiloearthRadius: return (_value*6.371e6) * 1e3d;
+                case LengthUnit.KilojupiterRadius: return (_value*7.1492e7) * 1e3d;
                 case LengthUnit.Kilolightday: return (_value*2.59e13) * 1e3d;
                 case LengthUnit.Kilolighthour: return (_value*1.079e12) * 1e3d;
                 case LengthUnit.Kilolightminute: return (_value*1.799e10) * 1e3d;
@@ -2522,12 +3037,15 @@ namespace UnitsNet
                 case LengthUnit.Kilolightyear: return (_value*9.4607304725808E15) * 1e3d;
                 case LengthUnit.Kilometer: return (_value) * 1e3d;
                 case LengthUnit.Kiloparsec: return (_value*3.086090280155857E16) * 1e3d;
+                case LengthUnit.KilosolarRadius: return (_value*6.957e8) * 1e3d;
                 case LengthUnit.Lightday: return _value*2.59e13;
                 case LengthUnit.Lighthour: return _value*1.079e12;
                 case LengthUnit.Lightminute: return _value*1.799e10;
                 case LengthUnit.Lightsecond: return _value*299792458;
                 case LengthUnit.Lightyear: return _value*9.4607304725808E15;
                 case LengthUnit.MegaaU: return (_value*1.496e11) * 1e6d;
+                case LengthUnit.MegaearthRadius: return (_value*6.371e6) * 1e6d;
+                case LengthUnit.MegajupiterRadius: return (_value*7.1492e7) * 1e6d;
                 case LengthUnit.Megalightday: return (_value*2.59e13) * 1e6d;
                 case LengthUnit.Megalighthour: return (_value*1.079e12) * 1e6d;
                 case LengthUnit.Megalightminute: return (_value*1.799e10) * 1e6d;
@@ -2535,8 +3053,10 @@ namespace UnitsNet
                 case LengthUnit.Megalightyear: return (_value*9.4607304725808E15) * 1e6d;
                 case LengthUnit.Megameter: return (_value) * 1e6d;
                 case LengthUnit.Megaparsec: return (_value*3.086090280155857E16) * 1e6d;
+                case LengthUnit.MegasolarRadius: return (_value*6.957e8) * 1e6d;
                 case LengthUnit.Meter: return _value;
                 case LengthUnit.MicroaU: return (_value*1.496e11) * 1e-6d;
+                case LengthUnit.MicroearthRadius: return (_value*6.371e6) * 1e-6d;
                 case LengthUnit.Microinch: return _value*2.54e-8;
                 case LengthUnit.Microlightday: return (_value*2.59e13) * 1e-6d;
                 case LengthUnit.Microlighthour: return (_value*1.079e12) * 1e-6d;
@@ -2548,6 +3068,7 @@ namespace UnitsNet
                 case LengthUnit.Mil: return _value*2.54e-5;
                 case LengthUnit.Mile: return _value*1609.34;
                 case LengthUnit.MilliaU: return (_value*1.496e11) * 1e-3d;
+                case LengthUnit.MilliearthRadius: return (_value*6.371e6) * 1e-3d;
                 case LengthUnit.Millilightday: return (_value*2.59e13) * 1e-3d;
                 case LengthUnit.Millilighthour: return (_value*1.079e12) * 1e-3d;
                 case LengthUnit.Millilightminute: return (_value*1.799e10) * 1e-3d;
@@ -2561,12 +3082,16 @@ namespace UnitsNet
                 case LengthUnit.Petalightyear: return (_value*9.4607304725808E15) * 1e15d;
                 case LengthUnit.Petameter: return (_value) * 1e15d;
                 case LengthUnit.Petaparsec: return (_value*3.086090280155857E16) * 1e15d;
+                case LengthUnit.PetasolarRadius: return (_value*6.957e8) * 1e15d;
                 case LengthUnit.Picometer: return (_value) * 1e-12d;
                 case LengthUnit.PrinterPica: return _value/237.106301584;
                 case LengthUnit.PrinterPoint: return (_value/72.27)*2.54e-2;
                 case LengthUnit.Qutrameter: return (_value) * 1e27d;
                 case LengthUnit.Shackle: return _value*27.432;
+                case LengthUnit.SolarRadius: return _value*6.957e8;
                 case LengthUnit.TeraaU: return (_value*1.496e11) * 1e12d;
+                case LengthUnit.TeraearthRadius: return (_value*6.371e6) * 1e12d;
+                case LengthUnit.TerajupiterRadius: return (_value*7.1492e7) * 1e12d;
                 case LengthUnit.Teralightday: return (_value*2.59e13) * 1e12d;
                 case LengthUnit.Teralighthour: return (_value*1.079e12) * 1e12d;
                 case LengthUnit.Teralightminute: return (_value*1.799e10) * 1e12d;
@@ -2574,6 +3099,7 @@ namespace UnitsNet
                 case LengthUnit.Teralightyear: return (_value*9.4607304725808E15) * 1e12d;
                 case LengthUnit.Terameter: return (_value) * 1e12d;
                 case LengthUnit.Teraparsec: return (_value*3.086090280155857E16) * 1e12d;
+                case LengthUnit.TerasolarRadius: return (_value*6.957e8) * 1e12d;
                 case LengthUnit.Twip: return _value/56692.913385826;
                 case LengthUnit.UsSurveyFoot: return _value*1200/3937;
                 case LengthUnit.Vettameter: return (_value) * 1e30d;
@@ -2581,9 +3107,11 @@ namespace UnitsNet
                 case LengthUnit.Yottalightyear: return (_value*9.4607304725808E15) * 1e24d;
                 case LengthUnit.Yottameter: return (_value) * 1e24d;
                 case LengthUnit.Yottaparsec: return (_value*3.086090280155857E16) * 1e24d;
+                case LengthUnit.YottasolarRadius: return (_value*6.957e8) * 1e24d;
                 case LengthUnit.Zettalightyear: return (_value*9.4607304725808E15) * 1e21d;
                 case LengthUnit.Zettameter: return (_value) * 1e21d;
                 case LengthUnit.Zettaparsec: return (_value*3.086090280155857E16) * 1e21d;
+                case LengthUnit.ZettasolarRadius: return (_value*6.957e8) * 1e21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to base units.");
             }
@@ -2600,6 +3128,8 @@ namespace UnitsNet
             {
                 case LengthUnit.AU: return baseUnitValue/1.496e11;
                 case LengthUnit.CentiaU: return (baseUnitValue/1.496e11) / 1e-2d;
+                case LengthUnit.CentiearthRadius: return (baseUnitValue/6.371e6) / 1e-2d;
+                case LengthUnit.CentijupiterRadius: return (baseUnitValue/7.1492e7) / 1e-2d;
                 case LengthUnit.Centilightday: return (baseUnitValue/2.59e13) / 1e-2d;
                 case LengthUnit.Centilighthour: return (baseUnitValue/1.079e12) / 1e-2d;
                 case LengthUnit.Centilightminute: return (baseUnitValue/1.799e10) / 1e-2d;
@@ -2607,7 +3137,10 @@ namespace UnitsNet
                 case LengthUnit.Centilightyear: return (baseUnitValue/9.4607304725808E15) / 1e-2d;
                 case LengthUnit.Centimeter: return (baseUnitValue) / 1e-2d;
                 case LengthUnit.Centiparsec: return (baseUnitValue/3.086090280155857E16) / 1e-2d;
+                case LengthUnit.CentisolarRadius: return (baseUnitValue/6.957e8) / 1e-2d;
                 case LengthUnit.DecaaU: return (baseUnitValue/1.496e11) / 1e1d;
+                case LengthUnit.DecaearthRadius: return (baseUnitValue/6.371e6) / 1e1d;
+                case LengthUnit.DecajupiterRadius: return (baseUnitValue/7.1492e7) / 1e1d;
                 case LengthUnit.Decalightday: return (baseUnitValue/2.59e13) / 1e1d;
                 case LengthUnit.Decalighthour: return (baseUnitValue/1.079e12) / 1e1d;
                 case LengthUnit.Decalightminute: return (baseUnitValue/1.799e10) / 1e1d;
@@ -2615,7 +3148,10 @@ namespace UnitsNet
                 case LengthUnit.Decalightyear: return (baseUnitValue/9.4607304725808E15) / 1e1d;
                 case LengthUnit.Decameter: return (baseUnitValue) / 1e1d;
                 case LengthUnit.Decaparsec: return (baseUnitValue/3.086090280155857E16) / 1e1d;
+                case LengthUnit.DecasolarRadius: return (baseUnitValue/6.957e8) / 1e1d;
                 case LengthUnit.DeciaU: return (baseUnitValue/1.496e11) / 1e-1d;
+                case LengthUnit.DeciearthRadius: return (baseUnitValue/6.371e6) / 1e-1d;
+                case LengthUnit.DecijupiterRadius: return (baseUnitValue/7.1492e7) / 1e-1d;
                 case LengthUnit.Decilightday: return (baseUnitValue/2.59e13) / 1e-1d;
                 case LengthUnit.Decilighthour: return (baseUnitValue/1.079e12) / 1e-1d;
                 case LengthUnit.Decilightminute: return (baseUnitValue/1.799e10) / 1e-1d;
@@ -2623,15 +3159,20 @@ namespace UnitsNet
                 case LengthUnit.Decilightyear: return (baseUnitValue/9.4607304725808E15) / 1e-1d;
                 case LengthUnit.Decimeter: return (baseUnitValue) / 1e-1d;
                 case LengthUnit.Deciparsec: return (baseUnitValue/3.086090280155857E16) / 1e-1d;
+                case LengthUnit.DecisolarRadius: return (baseUnitValue/6.957e8) / 1e-1d;
                 case LengthUnit.DtpPica: return baseUnitValue*236.220472441;
                 case LengthUnit.DtpPoint: return (baseUnitValue/2.54e-2)*72;
+                case LengthUnit.EarthRadius: return baseUnitValue/6.371e6;
                 case LengthUnit.Exalightyear: return (baseUnitValue/9.4607304725808E15) / 1e18d;
                 case LengthUnit.Exameter: return (baseUnitValue) / 1e18d;
                 case LengthUnit.Exaparsec: return (baseUnitValue/3.086090280155857E16) / 1e18d;
+                case LengthUnit.ExasolarRadius: return (baseUnitValue/6.957e8) / 1e18d;
                 case LengthUnit.Fathom: return baseUnitValue/1.8288;
                 case LengthUnit.Femtometer: return (baseUnitValue) / 1e-15d;
                 case LengthUnit.Foot: return baseUnitValue/0.3048;
                 case LengthUnit.GigaaU: return (baseUnitValue/1.496e11) / 1e9d;
+                case LengthUnit.GigaearthRadius: return (baseUnitValue/6.371e6) / 1e9d;
+                case LengthUnit.GigajupiterRadius: return (baseUnitValue/7.1492e7) / 1e9d;
                 case LengthUnit.Gigalightday: return (baseUnitValue/2.59e13) / 1e9d;
                 case LengthUnit.Gigalighthour: return (baseUnitValue/1.079e12) / 1e9d;
                 case LengthUnit.Gigalightminute: return (baseUnitValue/1.799e10) / 1e9d;
@@ -2639,8 +3180,11 @@ namespace UnitsNet
                 case LengthUnit.Gigalightyear: return (baseUnitValue/9.4607304725808E15) / 1e9d;
                 case LengthUnit.Gigameter: return (baseUnitValue) / 1e9d;
                 case LengthUnit.Gigaparsec: return (baseUnitValue/3.086090280155857E16) / 1e9d;
+                case LengthUnit.GigasolarRadius: return (baseUnitValue/6.957e8) / 1e9d;
                 case LengthUnit.Hand: return baseUnitValue / 1.016e-1;
                 case LengthUnit.HectoaU: return (baseUnitValue/1.496e11) / 1e2d;
+                case LengthUnit.HectoearthRadius: return (baseUnitValue/6.371e6) / 1e2d;
+                case LengthUnit.HectojupiterRadius: return (baseUnitValue/7.1492e7) / 1e2d;
                 case LengthUnit.Hectolightday: return (baseUnitValue/2.59e13) / 1e2d;
                 case LengthUnit.Hectolighthour: return (baseUnitValue/1.079e12) / 1e2d;
                 case LengthUnit.Hectolightminute: return (baseUnitValue/1.799e10) / 1e2d;
@@ -2648,8 +3192,12 @@ namespace UnitsNet
                 case LengthUnit.Hectolightyear: return (baseUnitValue/9.4607304725808E15) / 1e2d;
                 case LengthUnit.Hectometer: return (baseUnitValue) / 1e2d;
                 case LengthUnit.Hectoparsec: return (baseUnitValue/3.086090280155857E16) / 1e2d;
+                case LengthUnit.HectosolarRadius: return (baseUnitValue/6.957e8) / 1e2d;
                 case LengthUnit.Inch: return baseUnitValue/2.54e-2;
+                case LengthUnit.JupiterRadius: return baseUnitValue/7.1492e7;
                 case LengthUnit.KiloaU: return (baseUnitValue/1.496e11) / 1e3d;
+                case LengthUnit.KiloearthRadius: return (baseUnitValue/6.371e6) / 1e3d;
+                case LengthUnit.KilojupiterRadius: return (baseUnitValue/7.1492e7) / 1e3d;
                 case LengthUnit.Kilolightday: return (baseUnitValue/2.59e13) / 1e3d;
                 case LengthUnit.Kilolighthour: return (baseUnitValue/1.079e12) / 1e3d;
                 case LengthUnit.Kilolightminute: return (baseUnitValue/1.799e10) / 1e3d;
@@ -2657,12 +3205,15 @@ namespace UnitsNet
                 case LengthUnit.Kilolightyear: return (baseUnitValue/9.4607304725808E15) / 1e3d;
                 case LengthUnit.Kilometer: return (baseUnitValue) / 1e3d;
                 case LengthUnit.Kiloparsec: return (baseUnitValue/3.086090280155857E16) / 1e3d;
+                case LengthUnit.KilosolarRadius: return (baseUnitValue/6.957e8) / 1e3d;
                 case LengthUnit.Lightday: return baseUnitValue/2.59e13;
                 case LengthUnit.Lighthour: return baseUnitValue/1.079e12;
                 case LengthUnit.Lightminute: return baseUnitValue/1.799e10;
                 case LengthUnit.Lightsecond: return baseUnitValue/299792458;
                 case LengthUnit.Lightyear: return baseUnitValue/9.4607304725808E15;
                 case LengthUnit.MegaaU: return (baseUnitValue/1.496e11) / 1e6d;
+                case LengthUnit.MegaearthRadius: return (baseUnitValue/6.371e6) / 1e6d;
+                case LengthUnit.MegajupiterRadius: return (baseUnitValue/7.1492e7) / 1e6d;
                 case LengthUnit.Megalightday: return (baseUnitValue/2.59e13) / 1e6d;
                 case LengthUnit.Megalighthour: return (baseUnitValue/1.079e12) / 1e6d;
                 case LengthUnit.Megalightminute: return (baseUnitValue/1.799e10) / 1e6d;
@@ -2670,8 +3221,10 @@ namespace UnitsNet
                 case LengthUnit.Megalightyear: return (baseUnitValue/9.4607304725808E15) / 1e6d;
                 case LengthUnit.Megameter: return (baseUnitValue) / 1e6d;
                 case LengthUnit.Megaparsec: return (baseUnitValue/3.086090280155857E16) / 1e6d;
+                case LengthUnit.MegasolarRadius: return (baseUnitValue/6.957e8) / 1e6d;
                 case LengthUnit.Meter: return baseUnitValue;
                 case LengthUnit.MicroaU: return (baseUnitValue/1.496e11) / 1e-6d;
+                case LengthUnit.MicroearthRadius: return (baseUnitValue/6.371e6) / 1e-6d;
                 case LengthUnit.Microinch: return baseUnitValue/2.54e-8;
                 case LengthUnit.Microlightday: return (baseUnitValue/2.59e13) / 1e-6d;
                 case LengthUnit.Microlighthour: return (baseUnitValue/1.079e12) / 1e-6d;
@@ -2683,6 +3236,7 @@ namespace UnitsNet
                 case LengthUnit.Mil: return baseUnitValue/2.54e-5;
                 case LengthUnit.Mile: return baseUnitValue/1609.34;
                 case LengthUnit.MilliaU: return (baseUnitValue/1.496e11) / 1e-3d;
+                case LengthUnit.MilliearthRadius: return (baseUnitValue/6.371e6) / 1e-3d;
                 case LengthUnit.Millilightday: return (baseUnitValue/2.59e13) / 1e-3d;
                 case LengthUnit.Millilighthour: return (baseUnitValue/1.079e12) / 1e-3d;
                 case LengthUnit.Millilightminute: return (baseUnitValue/1.799e10) / 1e-3d;
@@ -2696,12 +3250,16 @@ namespace UnitsNet
                 case LengthUnit.Petalightyear: return (baseUnitValue/9.4607304725808E15) / 1e15d;
                 case LengthUnit.Petameter: return (baseUnitValue) / 1e15d;
                 case LengthUnit.Petaparsec: return (baseUnitValue/3.086090280155857E16) / 1e15d;
+                case LengthUnit.PetasolarRadius: return (baseUnitValue/6.957e8) / 1e15d;
                 case LengthUnit.Picometer: return (baseUnitValue) / 1e-12d;
                 case LengthUnit.PrinterPica: return baseUnitValue*237.106301584;
                 case LengthUnit.PrinterPoint: return (baseUnitValue/2.54e-2)*72.27;
                 case LengthUnit.Qutrameter: return (baseUnitValue) / 1e27d;
                 case LengthUnit.Shackle: return baseUnitValue/27.432;
+                case LengthUnit.SolarRadius: return baseUnitValue/6.957e8;
                 case LengthUnit.TeraaU: return (baseUnitValue/1.496e11) / 1e12d;
+                case LengthUnit.TeraearthRadius: return (baseUnitValue/6.371e6) / 1e12d;
+                case LengthUnit.TerajupiterRadius: return (baseUnitValue/7.1492e7) / 1e12d;
                 case LengthUnit.Teralightday: return (baseUnitValue/2.59e13) / 1e12d;
                 case LengthUnit.Teralighthour: return (baseUnitValue/1.079e12) / 1e12d;
                 case LengthUnit.Teralightminute: return (baseUnitValue/1.799e10) / 1e12d;
@@ -2709,6 +3267,7 @@ namespace UnitsNet
                 case LengthUnit.Teralightyear: return (baseUnitValue/9.4607304725808E15) / 1e12d;
                 case LengthUnit.Terameter: return (baseUnitValue) / 1e12d;
                 case LengthUnit.Teraparsec: return (baseUnitValue/3.086090280155857E16) / 1e12d;
+                case LengthUnit.TerasolarRadius: return (baseUnitValue/6.957e8) / 1e12d;
                 case LengthUnit.Twip: return baseUnitValue*56692.913385826;
                 case LengthUnit.UsSurveyFoot: return baseUnitValue*3937/1200;
                 case LengthUnit.Vettameter: return (baseUnitValue) / 1e30d;
@@ -2716,9 +3275,11 @@ namespace UnitsNet
                 case LengthUnit.Yottalightyear: return (baseUnitValue/9.4607304725808E15) / 1e24d;
                 case LengthUnit.Yottameter: return (baseUnitValue) / 1e24d;
                 case LengthUnit.Yottaparsec: return (baseUnitValue/3.086090280155857E16) / 1e24d;
+                case LengthUnit.YottasolarRadius: return (baseUnitValue/6.957e8) / 1e24d;
                 case LengthUnit.Zettalightyear: return (baseUnitValue/9.4607304725808E15) / 1e21d;
                 case LengthUnit.Zettameter: return (baseUnitValue) / 1e21d;
                 case LengthUnit.Zettaparsec: return (baseUnitValue/3.086090280155857E16) / 1e21d;
+                case LengthUnit.ZettasolarRadius: return (baseUnitValue/6.957e8) / 1e21d;
                 default:
                     throw new NotImplementedException($"Can not convert {Unit} to {unit}.");
             }

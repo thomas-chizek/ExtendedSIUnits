@@ -26,13 +26,31 @@ namespace UnitsNet.Units
     public enum MassUnit
     {
         Undefined = 0,
+        CentiearthMass,
         Centigram,
+        CentijupiterMass,
+        CentisolarMass,
+        DecaearthMass,
         Decagram,
+        DecajupiterMass,
+        DecasolarMass,
+        DeciearthMass,
         Decigram,
+        DecijupiterMass,
+        DecisolarMass,
+
+        /// <summary>
+        ///     An Earth Mass is the mass of the Earth in Kilograms, used in Astronomy to measure objects similarly sized to Earth, smaller than gas giants but larger than comfortable to measure in Kilotons. For reference it is approximately equal to 5.98 yotta-tonnes (if that helps).
+        /// </summary>
+        /// <remarks>https://en.wikipedia.org/wiki/Earth_mass</remarks>
+        EarthMass,
         Exagram,
+        ExasolarMass,
         Exatonne,
         Femtogram,
         Gigagram,
+        GigajupiterMass,
+        GigasolarMass,
         Gigatonne,
 
         /// <summary>
@@ -41,9 +59,21 @@ namespace UnitsNet.Units
         /// <remarks>https://en.wikipedia.org/wiki/Grain_(unit)</remarks>
         Grain,
         Gram,
+        HectoearthMass,
         Hectogram,
+        HectojupiterMass,
+        HectosolarMass,
+
+        /// <summary>
+        ///     An Jupiter Mass is the mass of the Jupiter in Kilograms, used in Astronomy to measure Jupiter sized objects, gas giants and objects that are larger than Earth but smaller than a convenient SolarMass. For reference it is approximately equal to 1,898 yotta-tonnes (if that helps).
+        /// </summary>
+        /// <remarks>https://en.wikipedia.org/wiki/Jupiter_mass</remarks>
+        JupiterMass,
+        KiloearthMass,
         Kilogram,
+        KilojupiterMass,
         Kilopound,
+        KilosolarMass,
         Kilotonne,
 
         /// <summary>
@@ -57,11 +87,18 @@ namespace UnitsNet.Units
         /// </summary>
         /// <remarks>http://en.wikipedia.org/wiki/Long_ton</remarks>
         LongTon,
+        MegaearthMass,
         Megagram,
+        MegajupiterMass,
         Megapound,
+        MegasolarMass,
         Megatonne,
+        MicroearthMass,
         Microgram,
+        MicrosolarMass,
+        MilliearthMass,
         Milligram,
+        MillisolarMass,
         Nanogram,
 
         /// <summary>
@@ -70,6 +107,7 @@ namespace UnitsNet.Units
         /// <remarks>http://en.wikipedia.org/wiki/Ounce</remarks>
         Ounce,
         Petagram,
+        PetasolarMass,
         Petatonne,
         Picogram,
 
@@ -99,18 +137,28 @@ namespace UnitsNet.Units
         Slug,
 
         /// <summary>
+        ///     A Solar mass is the mass of Sol in Kilograms, used in Astronomy to measure star sized and larger objects. For reference it is approximately equal to 1,988 yotta-tonnes (if that helps).
+        /// </summary>
+        /// <remarks>https://en.wikipedia.org/wiki/Solar_mass</remarks>
+        SolarMass,
+
+        /// <summary>
         ///     The stone (abbreviation st) is a unit of mass equal to 14 pounds avoirdupois (about 6.35 kilograms) used in Great Britain and Ireland for measuring human body weight.
         /// </summary>
         /// <remarks>http://en.wikipedia.org/wiki/Stone_(unit)</remarks>
         Stone,
         Teragram,
+        TerajupiterMass,
+        TerasolarMass,
         Teratonne,
         Tonne,
         Vettagram,
         Vettatonne,
         Yottagram,
+        YottasolarMass,
         Yottatonne,
         Zettagram,
+        ZettasolarMass,
         Zettatonne,
     }
 

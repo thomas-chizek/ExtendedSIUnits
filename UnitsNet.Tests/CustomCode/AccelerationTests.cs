@@ -32,7 +32,6 @@ namespace UnitsNet.Tests.CustomCode
         protected override double VettametersPerSecondSquaredInOneMeterPerSecondSquared => 1E-30;
 
 
-        protected override double StandardGravityInOneMeterPerSecondSquared => 1.019716212977928e-1;
 
         protected override double InchesPerSecondSquaredInOneMeterPerSecondSquared => 39.3700787;
 
@@ -95,6 +94,21 @@ namespace UnitsNet.Tests.CustomCode
         protected override double YottametersPerMinutesSquaredInOneMeterPerSecondSquared => PrefixMultipliers.Apply(MetersPerMinutesSquaredInOneMeterPerSecondSquared, Prefix.yotta);
         protected override double QutrametersPerMinutesSquaredInOneMeterPerSecondSquared => PrefixMultipliers.Apply(MetersPerMinutesSquaredInOneMeterPerSecondSquared, Prefix.qutra);
         protected override double VettametersPerMinutesSquaredInOneMeterPerSecondSquared => PrefixMultipliers.Apply(MetersPerMinutesSquaredInOneMeterPerSecondSquared, Prefix.vetta);
+
+
+
+        protected override double NanostandardGravityInOneMeterPerSecondSquared => PrefixMultipliers.Apply(StandardGravityInOneMeterPerSecondSquared, Prefix.nano);
+        protected override double MicrostandardGravityInOneMeterPerSecondSquared => PrefixMultipliers.Apply(StandardGravityInOneMeterPerSecondSquared, Prefix.micro);
+        protected override double MillistandardGravityInOneMeterPerSecondSquared => PrefixMultipliers.Apply(StandardGravityInOneMeterPerSecondSquared, Prefix.milli);
+        protected override double CentistandardGravityInOneMeterPerSecondSquared => PrefixMultipliers.Apply(StandardGravityInOneMeterPerSecondSquared, Prefix.ceni);
+        protected override double DecistandardGravityInOneMeterPerSecondSquared => PrefixMultipliers.Apply(StandardGravityInOneMeterPerSecondSquared, Prefix.deci);
+        protected override double StandardGravityInOneMeterPerSecondSquared => 0.101971621297793;
+        protected override double DecastandardGravityInOneMeterPerSecondSquared => PrefixMultipliers.Apply(StandardGravityInOneMeterPerSecondSquared, Prefix.deca);
+        protected override double HectostandardGravityInOneMeterPerSecondSquared => PrefixMultipliers.Apply(StandardGravityInOneMeterPerSecondSquared, Prefix.hecto);
+        protected override double KilostandardGravityInOneMeterPerSecondSquared => PrefixMultipliers.Apply(StandardGravityInOneMeterPerSecondSquared, Prefix.kilo);
+        protected override double MegastandardGravityInOneMeterPerSecondSquared => PrefixMultipliers.Apply(StandardGravityInOneMeterPerSecondSquared, Prefix.mega);
+        protected override double GigastandardGravityInOneMeterPerSecondSquared => PrefixMultipliers.Apply(StandardGravityInOneMeterPerSecondSquared, Prefix.giga);
+        protected override double TerastandardGravityInOneMeterPerSecondSquared => PrefixMultipliers.Apply(StandardGravityInOneMeterPerSecondSquared, Prefix.tera);
 
         [Fact]
         public void AccelerationTimesDensityEqualsSpecificWeight()

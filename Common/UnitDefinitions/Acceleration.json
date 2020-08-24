@@ -147,6 +147,7 @@
       },
       "FromUnitToBaseFunc": "x*9.80665",
       "FromBaseToUnitFunc": "x/9.80665",
+      "Prefixes": [ "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera" ],
       "Localization": [
         {
           "Culture": "en-US",

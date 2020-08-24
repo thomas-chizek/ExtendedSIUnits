@@ -14,7 +14,7 @@
       },
       "FromUnitToBaseFunc": "x/1e3",
       "FromBaseToUnitFunc": "x*1e3",
-      "Prefixes": ["Femto","Pico", "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta", "Qutra", "Vetta" ],
+      "Prefixes": [ "Femto", "Pico", "Nano", "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta", "Qutra", "Vetta" ],
       "Localization": [
         {
           "Culture": "en-US",
@@ -208,6 +208,60 @@
         {
           "Culture": "en-US",
           "Abbreviations": [ "gr" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "SolarMass",
+      "PluralName": "SolarMass",
+      "BaseUnits": {
+        "M": "SolarMass"
+      },
+      "FromUnitToBaseFunc": "x*1.9889200011e+30",
+      "FromBaseToUnitFunc": "x/1.9889200011e+30",
+      "Prefixes": [ "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera", "Peta", "Exa", "Zetta", "Yotta" ],
+      "XmlDocSummary": "A Solar mass is the mass of Sol in Kilograms, used in Astronomy to measure star sized and larger objects. For reference it is approximately equal to 1,988 yotta-tonnes (if that helps).",
+      "XmlDocRemarks": "https://en.wikipedia.org/wiki/Solar_mass",
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "M☉", "MS", "MSol", "SolarMass" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "EarthMass",
+      "PluralName": "EarthMass",
+      "BaseUnits": {
+        "M": "EarthMass"
+      },
+      "FromUnitToBaseFunc": "x*5.97219e+24",
+      "FromBaseToUnitFunc": "x/5.97219e+24",
+      "Prefixes": [ "Micro", "Milli", "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega",  ],
+      "XmlDocSummary": "An Earth Mass is the mass of the Earth in Kilograms, used in Astronomy to measure objects similarly sized to Earth, smaller than gas giants but larger than comfortable to measure in Kilotons. For reference it is approximately equal to 5.98 yotta-tonnes (if that helps).",
+      "XmlDocRemarks": "https://en.wikipedia.org/wiki/Earth_mass",
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "M⊕", "ME", "MEarth", "EarthMass" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "JupiterMass",
+      "PluralName": "JupiterMass",
+      "BaseUnits": {
+        "M": "JupiterMass"
+      },
+      "FromUnitToBaseFunc": "x*1.8986e+27",
+      "FromBaseToUnitFunc": "x/1.8986e+27",
+      "Prefixes": [ "Centi", "Deci", "Deca", "Hecto", "Kilo", "Mega", "Giga", "Tera",  ],
+      "XmlDocSummary": "An Jupiter Mass is the mass of the Jupiter in Kilograms, used in Astronomy to measure Jupiter sized objects, gas giants and objects that are larger than Earth but smaller than a convenient SolarMass. For reference it is approximately equal to 1,898 yotta-tonnes (if that helps).",
+      "XmlDocRemarks": "https://en.wikipedia.org/wiki/Jupiter_mass",
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "M♃", "MJ", "MJup", "JupiterMass" ]
         }
       ]
     }

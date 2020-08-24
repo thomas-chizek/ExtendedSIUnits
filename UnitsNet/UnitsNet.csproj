@@ -18,7 +18,7 @@ Modified by Thomas Chizek for local use to handle massive units needed for astro
 
   <!-- Assembly and msbuild properties -->
   <PropertyGroup>
-    <AssemblyVersion>5.0.2.20218</AssemblyVersion> <!-- Should reflect major part of Version -->
+    <AssemblyVersion>5.1.0.20222</AssemblyVersion> <!-- Should reflect major part of Version -->
     <PackageVersionSettings>AssemblyVersion.IncrementWithAutoReset.None</PackageVersionSettings>
     <LangVersion>7.3</LangVersion>
     <RootNamespace>UnitsNet</RootNamespace>
@@ -40,11 +40,11 @@ Modified by Thomas Chizek for local use to handle massive units needed for astro
     <SignAssembly>true</SignAssembly>
     <AssemblyName>UnitsNet</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <FileVersion>5.0.2.20218</FileVersion>
+    <FileVersion>5.1.0.20222</FileVersion>
     <Product>ExtendedUnitsNet</Product>
     <Company>Chizek Consulting</Company>
     <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
-    <Version>5.0.2.0</Version>
+    <Version>5.1.0</Version>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
     <ShouldCreateLogs>True</ShouldCreateLogs>
